@@ -19,13 +19,13 @@
 define('DB_NAME', 'dev_vanburenyouthcamp_or');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'devvanburenyouth');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'NWiBUxtq');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.dev.vanburenyouthcamp.org');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
