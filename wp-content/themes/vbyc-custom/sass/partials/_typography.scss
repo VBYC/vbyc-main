@@ -9,8 +9,48 @@ body {
 	font-size: $font-size-base;
 }
 a {
-	color: #37BC9B;
+	color: $link-color;
+    &:after {
+        bottom: 0;
+        content: ' ';
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid $link-color;
+    }
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+	&:focus,
+	&:active {
+		color: $link-focus-color;
+		text-decoration: $link-focus-decoration;
+	}
 }
+
+
+.link-primary {
+    @extend a;
+    text-decoration: none; 
+    &:hover {
+        border-bottom: 2px solid $link-color;
+        animation: width 0% > 100%; 
+        text-decoration: none; 
+    }
+    &:focus,
+    &:active {
+        border-bottom: none;
+    }
+}
+.link-jump {
+    margin-bottom: 20px;
+    display: inline-block;
+    &:hover {
+        // To compensate for the 2px border
+        margin-bottom: 18px;
+    }
+}
+
 
 h1,
 .h1 {

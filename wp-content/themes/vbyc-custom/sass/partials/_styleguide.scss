@@ -1,0 +1,17 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	VBYC CUSTOM STYLEGUIDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.sg-link-hover {
+    @extend a:hover;
+}
+.sg-link-focus {
+    @extend a:focus;
+}
+.sg-link-primary-hover {
+    @extend a:hover;
+}
+.sg-link-primary-focus {
+    @extend a:focus;
+}
