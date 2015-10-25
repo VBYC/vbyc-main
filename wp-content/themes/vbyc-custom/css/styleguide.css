@@ -1,10 +1,19 @@
 @charset "UTF-8";
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	FONTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700,500italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700,500italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
 /* line 9, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -64,8 +73,13 @@ a, .link-primary {
 a:active, .link-primary:active,
 a:hover,
 .link-primary:hover,
-.sg-link-hover,
-.sg-link-primary-hover {
+.sg-link-primary-hover .link-primary,
+.sg-link-hover a,
+.sg-link-hover .link-primary,
+.sg-link-primary-hover .link-primary:hover,
+.sg-link-primary-focus .link-primary:hover,
+.sg-link-primary-focus .sg-link-primary-hover .link-primary,
+.sg-link-primary-hover .sg-link-primary-focus .link-primary {
   outline: 0;
 }
 
@@ -1745,12 +1759,12 @@ a, .link-primary {
   text-decoration: none;
 }
 /* line 52, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-a:hover, .link-primary:hover, .sg-link-hover, .sg-link-primary-hover, a:focus, .link-primary:focus, .sg-link-focus, .sg-link-primary-focus {
+a:hover, .link-primary:hover, .sg-link-primary-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary, .sg-link-primary-hover .link-primary:hover, .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary, a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary {
   color: #37BC98;
   text-decoration: underline;
 }
 /* line 58, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-a:focus, .link-primary:focus, .sg-link-focus, .sg-link-primary-focus {
+a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -2014,11 +2028,12 @@ mark,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-primary:hover, .text-primary.link-primary:hover, .text-primary.sg-link-hover, .text-primary.sg-link-primary-hover,
+a.text-primary:hover, .text-primary.link-primary:hover, .sg-link-primary-hover .text-primary.link-primary, .sg-link-hover a.text-primary, .sg-link-hover .text-primary.link-primary,
 a.text-primary:focus,
 .text-primary.link-primary:focus,
-.text-primary.sg-link-focus,
-.text-primary.sg-link-primary-focus {
+.sg-link-primary-focus .text-primary.link-primary,
+.sg-link-focus a.text-primary,
+.sg-link-focus .text-primary.link-primary {
   color: #286090;
 }
 
@@ -2028,11 +2043,12 @@ a.text-primary:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-success:hover, .text-success.link-primary:hover, .text-success.sg-link-hover, .text-success.sg-link-primary-hover,
+a.text-success:hover, .text-success.link-primary:hover, .sg-link-primary-hover .text-success.link-primary, .sg-link-hover a.text-success, .sg-link-hover .text-success.link-primary,
 a.text-success:focus,
 .text-success.link-primary:focus,
-.text-success.sg-link-focus,
-.text-success.sg-link-primary-focus {
+.sg-link-primary-focus .text-success.link-primary,
+.sg-link-focus a.text-success,
+.sg-link-focus .text-success.link-primary {
   color: #2b542c;
 }
 
@@ -2042,11 +2058,12 @@ a.text-success:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-info:hover, .text-info.link-primary:hover, .text-info.sg-link-hover, .text-info.sg-link-primary-hover,
+a.text-info:hover, .text-info.link-primary:hover, .sg-link-primary-hover .text-info.link-primary, .sg-link-hover a.text-info, .sg-link-hover .text-info.link-primary,
 a.text-info:focus,
 .text-info.link-primary:focus,
-.text-info.sg-link-focus,
-.text-info.sg-link-primary-focus {
+.sg-link-primary-focus .text-info.link-primary,
+.sg-link-focus a.text-info,
+.sg-link-focus .text-info.link-primary {
   color: #245269;
 }
 
@@ -2056,11 +2073,12 @@ a.text-info:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-warning:hover, .text-warning.link-primary:hover, .text-warning.sg-link-hover, .text-warning.sg-link-primary-hover,
+a.text-warning:hover, .text-warning.link-primary:hover, .sg-link-primary-hover .text-warning.link-primary, .sg-link-hover a.text-warning, .sg-link-hover .text-warning.link-primary,
 a.text-warning:focus,
 .text-warning.link-primary:focus,
-.text-warning.sg-link-focus,
-.text-warning.sg-link-primary-focus {
+.sg-link-primary-focus .text-warning.link-primary,
+.sg-link-focus a.text-warning,
+.sg-link-focus .text-warning.link-primary {
   color: #66512c;
 }
 
@@ -2070,11 +2088,12 @@ a.text-warning:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-danger:hover, .text-danger.link-primary:hover, .text-danger.sg-link-hover, .text-danger.sg-link-primary-hover,
+a.text-danger:hover, .text-danger.link-primary:hover, .sg-link-primary-hover .text-danger.link-primary, .sg-link-hover a.text-danger, .sg-link-hover .text-danger.link-primary,
 a.text-danger:focus,
 .text-danger.link-primary:focus,
-.text-danger.sg-link-focus,
-.text-danger.sg-link-primary-focus {
+.sg-link-primary-focus .text-danger.link-primary,
+.sg-link-focus a.text-danger,
+.sg-link-focus .text-danger.link-primary {
   color: #843534;
 }
 
@@ -2089,11 +2108,12 @@ a.text-danger:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-primary:hover, .bg-primary.link-primary:hover, .bg-primary.sg-link-hover, .bg-primary.sg-link-primary-hover,
+a.bg-primary:hover, .bg-primary.link-primary:hover, .sg-link-primary-hover .bg-primary.link-primary, .sg-link-hover a.bg-primary, .sg-link-hover .bg-primary.link-primary,
 a.bg-primary:focus,
 .bg-primary.link-primary:focus,
-.bg-primary.sg-link-focus,
-.bg-primary.sg-link-primary-focus {
+.sg-link-primary-focus .bg-primary.link-primary,
+.sg-link-focus a.bg-primary,
+.sg-link-focus .bg-primary.link-primary {
   background-color: #286090;
 }
 
@@ -2103,11 +2123,12 @@ a.bg-primary:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-success:hover, .bg-success.link-primary:hover, .bg-success.sg-link-hover, .bg-success.sg-link-primary-hover,
+a.bg-success:hover, .bg-success.link-primary:hover, .sg-link-primary-hover .bg-success.link-primary, .sg-link-hover a.bg-success, .sg-link-hover .bg-success.link-primary,
 a.bg-success:focus,
 .bg-success.link-primary:focus,
-.bg-success.sg-link-focus,
-.bg-success.sg-link-primary-focus {
+.sg-link-primary-focus .bg-success.link-primary,
+.sg-link-focus a.bg-success,
+.sg-link-focus .bg-success.link-primary {
   background-color: #c1e2b3;
 }
 
@@ -2117,11 +2138,12 @@ a.bg-success:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-info:hover, .bg-info.link-primary:hover, .bg-info.sg-link-hover, .bg-info.sg-link-primary-hover,
+a.bg-info:hover, .bg-info.link-primary:hover, .sg-link-primary-hover .bg-info.link-primary, .sg-link-hover a.bg-info, .sg-link-hover .bg-info.link-primary,
 a.bg-info:focus,
 .bg-info.link-primary:focus,
-.bg-info.sg-link-focus,
-.bg-info.sg-link-primary-focus {
+.sg-link-primary-focus .bg-info.link-primary,
+.sg-link-focus a.bg-info,
+.sg-link-focus .bg-info.link-primary {
   background-color: #afd9ee;
 }
 
@@ -2131,11 +2153,12 @@ a.bg-info:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-warning:hover, .bg-warning.link-primary:hover, .bg-warning.sg-link-hover, .bg-warning.sg-link-primary-hover,
+a.bg-warning:hover, .bg-warning.link-primary:hover, .sg-link-primary-hover .bg-warning.link-primary, .sg-link-hover a.bg-warning, .sg-link-hover .bg-warning.link-primary,
 a.bg-warning:focus,
 .bg-warning.link-primary:focus,
-.bg-warning.sg-link-focus,
-.bg-warning.sg-link-primary-focus {
+.sg-link-primary-focus .bg-warning.link-primary,
+.sg-link-focus a.bg-warning,
+.sg-link-focus .bg-warning.link-primary {
   background-color: #f7ecb5;
 }
 
@@ -2145,11 +2168,12 @@ a.bg-warning:focus,
 }
 
 /* line 8, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-danger:hover, .bg-danger.link-primary:hover, .bg-danger.sg-link-hover, .bg-danger.sg-link-primary-hover,
+a.bg-danger:hover, .bg-danger.link-primary:hover, .sg-link-primary-hover .bg-danger.link-primary, .sg-link-hover a.bg-danger, .sg-link-hover .bg-danger.link-primary,
 a.bg-danger:focus,
 .bg-danger.link-primary:focus,
-.bg-danger.sg-link-focus,
-.bg-danger.sg-link-primary-focus {
+.sg-link-primary-focus .bg-danger.link-primary,
+.sg-link-focus a.bg-danger,
+.sg-link-focus .bg-danger.link-primary {
   background-color: #e4b9b9;
 }
 
@@ -4952,14 +4976,14 @@ tbody.collapse.in {
 }
 
 /* line 78, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu > li > a:hover, .dropdown-menu > li > .link-primary:hover, .dropdown-menu > li > .sg-link-hover, .dropdown-menu > li > .sg-link-primary-hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > .link-primary:focus, .dropdown-menu > li > .sg-link-focus, .dropdown-menu > li > .sg-link-primary-focus {
+.dropdown-menu > li > a:hover, .dropdown-menu > li > .link-primary:hover, .sg-link-primary-hover .dropdown-menu > li > .link-primary, .sg-link-hover .dropdown-menu > li > a, .sg-link-hover .dropdown-menu > li > .link-primary, .dropdown-menu > li > a:focus, .dropdown-menu > li > .link-primary:focus, .sg-link-primary-focus .dropdown-menu > li > .link-primary, .sg-link-focus .dropdown-menu > li > a, .sg-link-focus .dropdown-menu > li > .link-primary {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5;
 }
 
 /* line 88, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu > .active > a, .dropdown-menu > .active > .link-primary, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > .link-primary:hover, .dropdown-menu > .active > .sg-link-hover, .dropdown-menu > .active > .sg-link-primary-hover, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > .link-primary:focus, .dropdown-menu > .active > .sg-link-focus, .dropdown-menu > .active > .sg-link-primary-focus {
+.dropdown-menu > .active > a, .dropdown-menu > .active > .link-primary, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > .link-primary:hover, .sg-link-primary-hover .dropdown-menu > .active > .link-primary, .sg-link-hover .dropdown-menu > .active > a, .sg-link-hover .dropdown-menu > .active > .link-primary, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > .link-primary:focus, .sg-link-primary-focus .dropdown-menu > .active > .link-primary, .sg-link-focus .dropdown-menu > .active > a, .sg-link-focus .dropdown-menu > .active > .link-primary {
   color: #fff;
   text-decoration: none;
   outline: 0;
@@ -4967,11 +4991,11 @@ tbody.collapse.in {
 }
 
 /* line 103, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > .link-primary, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .link-primary:hover, .dropdown-menu > .disabled > .sg-link-hover, .dropdown-menu > .disabled > .sg-link-primary-hover, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .link-primary:focus, .dropdown-menu > .disabled > .sg-link-focus, .dropdown-menu > .disabled > .sg-link-primary-focus {
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > .link-primary, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .link-primary:hover, .sg-link-primary-hover .dropdown-menu > .disabled > .link-primary, .sg-link-hover .dropdown-menu > .disabled > a, .sg-link-hover .dropdown-menu > .disabled > .link-primary, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .link-primary:focus, .sg-link-primary-focus .dropdown-menu > .disabled > .link-primary, .sg-link-focus .dropdown-menu > .disabled > a, .sg-link-focus .dropdown-menu > .disabled > .link-primary {
   color: #777777;
 }
 /* line 110, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_dropdowns.scss */
-.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .link-primary:hover, .dropdown-menu > .disabled > .sg-link-hover, .dropdown-menu > .disabled > .sg-link-primary-hover, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .link-primary:focus, .dropdown-menu > .disabled > .sg-link-focus, .dropdown-menu > .disabled > .sg-link-primary-focus {
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > .link-primary:hover, .sg-link-primary-hover .dropdown-menu > .disabled > .link-primary, .sg-link-hover .dropdown-menu > .disabled > a, .sg-link-hover .dropdown-menu > .disabled > .link-primary, .dropdown-menu > .disabled > a:focus, .dropdown-menu > .disabled > .link-primary:focus, .sg-link-primary-focus .dropdown-menu > .disabled > .link-primary, .sg-link-focus .dropdown-menu > .disabled > a, .sg-link-focus .dropdown-menu > .disabled > .link-primary {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
@@ -5466,7 +5490,7 @@ tbody.collapse.in {
   padding: 10px 15px;
 }
 /* line 23, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li > a:hover, .nav > li > .link-primary:hover, .nav > li > .sg-link-hover, .nav > li > .sg-link-primary-hover, .nav > li > a:focus, .nav > li > .link-primary:focus, .nav > li > .sg-link-focus, .nav > li > .sg-link-primary-focus {
+.nav > li > a:hover, .nav > li > .link-primary:hover, .sg-link-primary-hover .nav > li > .link-primary, .sg-link-hover .nav > li > a, .sg-link-hover .nav > li > .link-primary, .nav > li > a:focus, .nav > li > .link-primary:focus, .sg-link-primary-focus .nav > li > .link-primary, .sg-link-focus .nav > li > a, .sg-link-focus .nav > li > .link-primary {
   text-decoration: none;
   background-color: #eeeeee;
 }
@@ -5475,14 +5499,14 @@ tbody.collapse.in {
   color: #777777;
 }
 /* line 34, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav > li.disabled > a:hover, .nav > li.disabled > .link-primary:hover, .nav > li.disabled > .sg-link-hover, .nav > li.disabled > .sg-link-primary-hover, .nav > li.disabled > a:focus, .nav > li.disabled > .link-primary:focus, .nav > li.disabled > .sg-link-focus, .nav > li.disabled > .sg-link-primary-focus {
+.nav > li.disabled > a:hover, .nav > li.disabled > .link-primary:hover, .sg-link-primary-hover .nav > li.disabled > .link-primary, .sg-link-hover .nav > li.disabled > a, .sg-link-hover .nav > li.disabled > .link-primary, .nav > li.disabled > a:focus, .nav > li.disabled > .link-primary:focus, .sg-link-primary-focus .nav > li.disabled > .link-primary, .sg-link-focus .nav > li.disabled > a, .sg-link-focus .nav > li.disabled > .link-primary {
   color: #777777;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
 /* line 46, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav .open > a, .nav .open > .link-primary, .nav .open > a:hover, .nav .open > .link-primary:hover, .nav .open > .sg-link-hover, .nav .open > .sg-link-primary-hover, .nav .open > a:focus, .nav .open > .link-primary:focus, .nav .open > .sg-link-focus, .nav .open > .sg-link-primary-focus {
+.nav .open > a, .nav .open > .link-primary, .nav .open > a:hover, .nav .open > .link-primary:hover, .nav .sg-link-primary-hover .open > .link-primary, .sg-link-primary-hover .nav .open > .link-primary, .nav .sg-link-hover .open > a, .sg-link-hover .nav .open > a, .nav .sg-link-hover .open > .link-primary, .sg-link-hover .nav .open > .link-primary, .nav .sg-link-primary-focus .open > .link-primary:hover, .nav .sg-link-primary-hover .sg-link-primary-focus .open > .link-primary, .nav .open > a:focus, .nav .open > .link-primary:focus, .nav .sg-link-primary-focus .open > .link-primary, .sg-link-primary-focus .nav .open > .link-primary, .nav .sg-link-focus .open > a, .sg-link-focus .nav .open > a, .nav .sg-link-focus .open > .link-primary, .sg-link-focus .nav .open > .link-primary {
   background-color: #eeeeee;
   border-color: #37BC98;
 }
@@ -5515,11 +5539,11 @@ tbody.collapse.in {
   border-radius: 4px 4px 0 0;
 }
 /* line 89, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav-tabs > li > a:hover, .nav-tabs > li > .link-primary:hover, .nav-tabs > li > .sg-link-hover, .nav-tabs > li > .sg-link-primary-hover {
+.nav-tabs > li > a:hover, .nav-tabs > li > .link-primary:hover, .sg-link-primary-hover .nav-tabs > li > .link-primary, .sg-link-hover .nav-tabs > li > a, .sg-link-hover .nav-tabs > li > .link-primary {
   border-color: #eeeeee #eeeeee #ddd;
 }
 /* line 96, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav-tabs > li.active > a, .nav-tabs > li.active > .link-primary, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > .link-primary:hover, .nav-tabs > li.active > .sg-link-hover, .nav-tabs > li.active > .sg-link-primary-hover, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > .link-primary:focus, .nav-tabs > li.active > .sg-link-focus, .nav-tabs > li.active > .sg-link-primary-focus {
+.nav-tabs > li.active > a, .nav-tabs > li.active > .link-primary, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > .link-primary:hover, .sg-link-primary-hover .nav-tabs > li.active > .link-primary, .sg-link-hover .nav-tabs > li.active > a, .sg-link-hover .nav-tabs > li.active > .link-primary, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > .link-primary:focus, .sg-link-primary-focus .nav-tabs > li.active > .link-primary, .sg-link-focus .nav-tabs > li.active > a, .sg-link-focus .nav-tabs > li.active > .link-primary {
   color: #555555;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -5540,7 +5564,7 @@ tbody.collapse.in {
   margin-left: 2px;
 }
 /* line 131, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
-.nav-pills > li.active > a, .nav-pills > li.active > .link-primary, .nav-pills > li.active > a:hover, .nav-pills > li.active > .link-primary:hover, .nav-pills > li.active > .sg-link-hover, .nav-pills > li.active > .sg-link-primary-hover, .nav-pills > li.active > a:focus, .nav-pills > li.active > .link-primary:focus, .nav-pills > li.active > .sg-link-focus, .nav-pills > li.active > .sg-link-primary-focus {
+.nav-pills > li.active > a, .nav-pills > li.active > .link-primary, .nav-pills > li.active > a:hover, .nav-pills > li.active > .link-primary:hover, .sg-link-primary-hover .nav-pills > li.active > .link-primary, .sg-link-hover .nav-pills > li.active > a, .sg-link-hover .nav-pills > li.active > .link-primary, .nav-pills > li.active > a:focus, .nav-pills > li.active > .link-primary:focus, .sg-link-primary-focus .nav-pills > li.active > .link-primary, .sg-link-focus .nav-pills > li.active > a, .sg-link-focus .nav-pills > li.active > .link-primary {
   color: #fff;
   background-color: #337ab7;
 }
@@ -5600,18 +5624,22 @@ tbody.collapse.in {
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs-justified > .active > .link-primary:hover,
 .nav-tabs.nav-justified > .active > .link-primary:hover,
-.nav-tabs-justified > .active > .sg-link-hover,
-.nav-tabs.nav-justified > .active > .sg-link-hover,
-.nav-tabs-justified > .active > .sg-link-primary-hover,
-.nav-tabs.nav-justified > .active > .sg-link-primary-hover,
+.sg-link-primary-hover .nav-tabs-justified > .active > .link-primary,
+.sg-link-primary-hover .nav-tabs.nav-justified > .active > .link-primary,
+.sg-link-hover .nav-tabs-justified > .active > a,
+.sg-link-hover .nav-tabs.nav-justified > .active > a,
+.sg-link-hover .nav-tabs-justified > .active > .link-primary,
+.sg-link-hover .nav-tabs.nav-justified > .active > .link-primary,
 .nav-tabs-justified > .active > a:focus,
 .nav-tabs.nav-justified > .active > a:focus,
 .nav-tabs-justified > .active > .link-primary:focus,
 .nav-tabs.nav-justified > .active > .link-primary:focus,
-.nav-tabs-justified > .active > .sg-link-focus,
-.nav-tabs.nav-justified > .active > .sg-link-focus,
-.nav-tabs-justified > .active > .sg-link-primary-focus,
-.nav-tabs.nav-justified > .active > .sg-link-primary-focus {
+.sg-link-primary-focus .nav-tabs-justified > .active > .link-primary,
+.sg-link-primary-focus .nav-tabs.nav-justified > .active > .link-primary,
+.sg-link-focus .nav-tabs-justified > .active > a,
+.sg-link-focus .nav-tabs.nav-justified > .active > a,
+.sg-link-focus .nav-tabs-justified > .active > .link-primary,
+.sg-link-focus .nav-tabs.nav-justified > .active > .link-primary {
   border: 1px solid #ddd;
 }
 @media (min-width: 768px) {
@@ -5626,18 +5654,22 @@ tbody.collapse.in {
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs-justified > .active > .link-primary:hover,
   .nav-tabs.nav-justified > .active > .link-primary:hover,
-  .nav-tabs-justified > .active > .sg-link-hover,
-  .nav-tabs.nav-justified > .active > .sg-link-hover,
-  .nav-tabs-justified > .active > .sg-link-primary-hover,
-  .nav-tabs.nav-justified > .active > .sg-link-primary-hover,
+  .sg-link-primary-hover .nav-tabs-justified > .active > .link-primary,
+  .sg-link-primary-hover .nav-tabs.nav-justified > .active > .link-primary,
+  .sg-link-hover .nav-tabs-justified > .active > a,
+  .sg-link-hover .nav-tabs.nav-justified > .active > a,
+  .sg-link-hover .nav-tabs-justified > .active > .link-primary,
+  .sg-link-hover .nav-tabs.nav-justified > .active > .link-primary,
   .nav-tabs-justified > .active > a:focus,
   .nav-tabs.nav-justified > .active > a:focus,
   .nav-tabs-justified > .active > .link-primary:focus,
   .nav-tabs.nav-justified > .active > .link-primary:focus,
-  .nav-tabs-justified > .active > .sg-link-focus,
-  .nav-tabs.nav-justified > .active > .sg-link-focus,
-  .nav-tabs-justified > .active > .sg-link-primary-focus,
-  .nav-tabs.nav-justified > .active > .sg-link-primary-focus {
+  .sg-link-primary-focus .nav-tabs-justified > .active > .link-primary,
+  .sg-link-primary-focus .nav-tabs.nav-justified > .active > .link-primary,
+  .sg-link-focus .nav-tabs-justified > .active > a,
+  .sg-link-focus .nav-tabs.nav-justified > .active > a,
+  .sg-link-focus .nav-tabs-justified > .active > .link-primary,
+  .sg-link-focus .nav-tabs.nav-justified > .active > .link-primary {
     border-bottom-color: #fff;
   }
 }
@@ -5906,7 +5938,7 @@ tbody.collapse.in {
     line-height: 22px;
   }
   /* line 257, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-nav .open .dropdown-menu > li > .sg-link-hover, .navbar-nav .open .dropdown-menu > li > .sg-link-primary-hover, .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-nav .open .dropdown-menu > li > .sg-link-focus, .navbar-nav .open .dropdown-menu > li > .sg-link-primary-focus {
+  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-nav .open .sg-link-primary-hover .dropdown-menu > li > .link-primary, .sg-link-primary-hover .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-nav .open .sg-link-hover .dropdown-menu > li > a, .sg-link-hover .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .sg-link-hover .dropdown-menu > li > .link-primary, .sg-link-hover .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-nav .open .sg-link-primary-focus .dropdown-menu > li > .link-primary, .sg-link-primary-focus .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-nav .open .sg-link-focus .dropdown-menu > li > a, .sg-link-focus .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .sg-link-focus .dropdown-menu > li > .link-primary, .sg-link-focus .navbar-nav .open .dropdown-menu > li > .link-primary {
     background-image: none;
   }
 }
@@ -6109,17 +6141,17 @@ tbody.collapse.in {
   color: #777;
 }
 /* line 418, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > .link-primary:hover, .navbar-default .navbar-nav > li > .sg-link-hover, .navbar-default .navbar-nav > li > .sg-link-primary-hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > .link-primary:focus, .navbar-default .navbar-nav > li > .sg-link-focus, .navbar-default .navbar-nav > li > .sg-link-primary-focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > .link-primary:hover, .navbar-default .sg-link-primary-hover .navbar-nav > li > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav > li > .link-primary, .navbar-default .sg-link-hover .navbar-nav > li > a, .sg-link-hover .navbar-default .navbar-nav > li > a, .navbar-default .sg-link-hover .navbar-nav > li > .link-primary, .sg-link-hover .navbar-default .navbar-nav > li > .link-primary, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > .link-primary:focus, .navbar-default .sg-link-primary-focus .navbar-nav > li > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav > li > .link-primary, .navbar-default .sg-link-focus .navbar-nav > li > a, .sg-link-focus .navbar-default .navbar-nav > li > a, .navbar-default .sg-link-focus .navbar-nav > li > .link-primary, .sg-link-focus .navbar-default .navbar-nav > li > .link-primary {
   color: #333;
   background-color: transparent;
 }
 /* line 425, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .link-primary, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > .link-primary:hover, .navbar-default .navbar-nav > .active > .sg-link-hover, .navbar-default .navbar-nav > .active > .sg-link-primary-hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > .link-primary:focus, .navbar-default .navbar-nav > .active > .sg-link-focus, .navbar-default .navbar-nav > .active > .sg-link-primary-focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > .link-primary, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > .link-primary:hover, .navbar-default .sg-link-primary-hover .navbar-nav > .active > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav > .active > .link-primary, .navbar-default .sg-link-hover .navbar-nav > .active > a, .sg-link-hover .navbar-default .navbar-nav > .active > a, .navbar-default .sg-link-hover .navbar-nav > .active > .link-primary, .sg-link-hover .navbar-default .navbar-nav > .active > .link-primary, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > .link-primary:focus, .navbar-default .sg-link-primary-focus .navbar-nav > .active > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav > .active > .link-primary, .navbar-default .sg-link-focus .navbar-nav > .active > a, .sg-link-focus .navbar-default .navbar-nav > .active > a, .navbar-default .sg-link-focus .navbar-nav > .active > .link-primary, .sg-link-focus .navbar-default .navbar-nav > .active > .link-primary {
   color: #555;
   background-color: #e7e7e7;
 }
 /* line 433, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > .link-primary, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > .link-primary:hover, .navbar-default .navbar-nav > .disabled > .sg-link-hover, .navbar-default .navbar-nav > .disabled > .sg-link-primary-hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > .link-primary:focus, .navbar-default .navbar-nav > .disabled > .sg-link-focus, .navbar-default .navbar-nav > .disabled > .sg-link-primary-focus {
+.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > .link-primary, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > .link-primary:hover, .navbar-default .sg-link-primary-hover .navbar-nav > .disabled > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav > .disabled > .link-primary, .navbar-default .sg-link-hover .navbar-nav > .disabled > a, .sg-link-hover .navbar-default .navbar-nav > .disabled > a, .navbar-default .sg-link-hover .navbar-nav > .disabled > .link-primary, .sg-link-hover .navbar-default .navbar-nav > .disabled > .link-primary, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default .navbar-nav > .disabled > .link-primary:focus, .navbar-default .sg-link-primary-focus .navbar-nav > .disabled > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav > .disabled > .link-primary, .navbar-default .sg-link-focus .navbar-nav > .disabled > a, .sg-link-focus .navbar-default .navbar-nav > .disabled > a, .navbar-default .sg-link-focus .navbar-nav > .disabled > .link-primary, .sg-link-focus .navbar-default .navbar-nav > .disabled > .link-primary {
   color: #ccc;
   background-color: transparent;
 }
@@ -6141,7 +6173,7 @@ tbody.collapse.in {
   border-color: #e7e7e7;
 }
 /* line 462, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > .link-primary, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > .link-primary:hover, .navbar-default .navbar-nav > .open > .sg-link-hover, .navbar-default .navbar-nav > .open > .sg-link-primary-hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > .link-primary:focus, .navbar-default .navbar-nav > .open > .sg-link-focus, .navbar-default .navbar-nav > .open > .sg-link-primary-focus {
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > .link-primary, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > .link-primary:hover, .navbar-default .sg-link-primary-hover .navbar-nav > .open > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav > .open > .link-primary, .navbar-default .sg-link-hover .navbar-nav > .open > a, .sg-link-hover .navbar-default .navbar-nav > .open > a, .navbar-default .sg-link-hover .navbar-nav > .open > .link-primary, .sg-link-hover .navbar-default .navbar-nav > .open > .link-primary, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > .link-primary:focus, .navbar-default .sg-link-primary-focus .navbar-nav > .open > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav > .open > .link-primary, .navbar-default .sg-link-focus .navbar-nav > .open > a, .sg-link-focus .navbar-default .navbar-nav > .open > a, .navbar-default .sg-link-focus .navbar-nav > .open > .link-primary, .sg-link-focus .navbar-default .navbar-nav > .open > .link-primary {
   background-color: #e7e7e7;
   color: #555;
 }
@@ -6151,17 +6183,17 @@ tbody.collapse.in {
     color: #777;
   }
   /* line 475, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > .sg-link-hover, .navbar-default .navbar-nav .open .dropdown-menu > li > .sg-link-primary-hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > .sg-link-focus, .navbar-default .navbar-nav .open .dropdown-menu > li > .sg-link-primary-focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-default .navbar-nav .open .sg-link-primary-hover .dropdown-menu > li > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > li > a, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > li > .link-primary, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-default .navbar-nav .open .sg-link-primary-focus .dropdown-menu > li > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > li > a, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > li > .link-primary, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > li > .link-primary {
     color: #333;
     background-color: transparent;
   }
   /* line 482, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > .sg-link-hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > .sg-link-primary-hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > .sg-link-focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > .sg-link-primary-focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary:hover, .navbar-default .navbar-nav .open .sg-link-primary-hover .dropdown-menu > .active > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > .active > a, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > .active > .link-primary, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary:focus, .navbar-default .navbar-nav .open .sg-link-primary-focus .dropdown-menu > .active > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > .active > a, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > .active > .link-primary, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > .active > .link-primary {
     color: #555;
     background-color: #e7e7e7;
   }
   /* line 490, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .sg-link-hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .sg-link-primary-hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .sg-link-focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .sg-link-primary-focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary:hover, .navbar-default .navbar-nav .open .sg-link-primary-hover .dropdown-menu > .disabled > .link-primary, .sg-link-primary-hover .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > .disabled > a, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .sg-link-hover .dropdown-menu > .disabled > .link-primary, .sg-link-hover .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary:focus, .navbar-default .navbar-nav .open .sg-link-primary-focus .dropdown-menu > .disabled > .link-primary, .sg-link-primary-focus .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > .disabled > a, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .sg-link-focus .dropdown-menu > .disabled > .link-primary, .sg-link-focus .navbar-default .navbar-nav .open .dropdown-menu > .disabled > .link-primary {
     color: #ccc;
     background-color: transparent;
   }
@@ -6210,17 +6242,17 @@ tbody.collapse.in {
   color: #9d9d9d;
 }
 /* line 552, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > .link-primary:hover, .navbar-inverse .navbar-nav > li > .sg-link-hover, .navbar-inverse .navbar-nav > li > .sg-link-primary-hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > .link-primary:focus, .navbar-inverse .navbar-nav > li > .sg-link-focus, .navbar-inverse .navbar-nav > li > .sg-link-primary-focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > .link-primary:hover, .navbar-inverse .sg-link-primary-hover .navbar-nav > li > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav > li > .link-primary, .navbar-inverse .sg-link-hover .navbar-nav > li > a, .sg-link-hover .navbar-inverse .navbar-nav > li > a, .navbar-inverse .sg-link-hover .navbar-nav > li > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav > li > .link-primary, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > .link-primary:focus, .navbar-inverse .sg-link-primary-focus .navbar-nav > li > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav > li > .link-primary, .navbar-inverse .sg-link-focus .navbar-nav > li > a, .sg-link-focus .navbar-inverse .navbar-nav > li > a, .navbar-inverse .sg-link-focus .navbar-nav > li > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav > li > .link-primary {
   color: #fff;
   background-color: transparent;
 }
 /* line 559, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > .link-primary, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > .link-primary:hover, .navbar-inverse .navbar-nav > .active > .sg-link-hover, .navbar-inverse .navbar-nav > .active > .sg-link-primary-hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > .link-primary:focus, .navbar-inverse .navbar-nav > .active > .sg-link-focus, .navbar-inverse .navbar-nav > .active > .sg-link-primary-focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > .link-primary, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > .link-primary:hover, .navbar-inverse .sg-link-primary-hover .navbar-nav > .active > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav > .active > .link-primary, .navbar-inverse .sg-link-hover .navbar-nav > .active > a, .sg-link-hover .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .sg-link-hover .navbar-nav > .active > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav > .active > .link-primary, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > .link-primary:focus, .navbar-inverse .sg-link-primary-focus .navbar-nav > .active > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav > .active > .link-primary, .navbar-inverse .sg-link-focus .navbar-nav > .active > a, .sg-link-focus .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .sg-link-focus .navbar-nav > .active > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav > .active > .link-primary {
   color: #fff;
   background-color: #090909;
 }
 /* line 567, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > .link-primary, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > .link-primary:hover, .navbar-inverse .navbar-nav > .disabled > .sg-link-hover, .navbar-inverse .navbar-nav > .disabled > .sg-link-primary-hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > .link-primary:focus, .navbar-inverse .navbar-nav > .disabled > .sg-link-focus, .navbar-inverse .navbar-nav > .disabled > .sg-link-primary-focus {
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > .link-primary, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > .link-primary:hover, .navbar-inverse .sg-link-primary-hover .navbar-nav > .disabled > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav > .disabled > .link-primary, .navbar-inverse .sg-link-hover .navbar-nav > .disabled > a, .sg-link-hover .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .sg-link-hover .navbar-nav > .disabled > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav > .disabled > .link-primary, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse .navbar-nav > .disabled > .link-primary:focus, .navbar-inverse .sg-link-primary-focus .navbar-nav > .disabled > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav > .disabled > .link-primary, .navbar-inverse .sg-link-focus .navbar-nav > .disabled > a, .sg-link-focus .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .sg-link-focus .navbar-nav > .disabled > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav > .disabled > .link-primary {
   color: #444;
   background-color: transparent;
 }
@@ -6242,7 +6274,7 @@ tbody.collapse.in {
   border-color: #101010;
 }
 /* line 596, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > .link-primary, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > .link-primary:hover, .navbar-inverse .navbar-nav > .open > .sg-link-hover, .navbar-inverse .navbar-nav > .open > .sg-link-primary-hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > .link-primary:focus, .navbar-inverse .navbar-nav > .open > .sg-link-focus, .navbar-inverse .navbar-nav > .open > .sg-link-primary-focus {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > .link-primary, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > .link-primary:hover, .navbar-inverse .sg-link-primary-hover .navbar-nav > .open > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav > .open > .link-primary, .navbar-inverse .sg-link-hover .navbar-nav > .open > a, .sg-link-hover .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .sg-link-hover .navbar-nav > .open > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav > .open > .link-primary, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > .link-primary:focus, .navbar-inverse .sg-link-primary-focus .navbar-nav > .open > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav > .open > .link-primary, .navbar-inverse .sg-link-focus .navbar-nav > .open > a, .sg-link-focus .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .sg-link-focus .navbar-nav > .open > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav > .open > .link-primary {
   background-color: #090909;
   color: #fff;
 }
@@ -6260,17 +6292,17 @@ tbody.collapse.in {
     color: #9d9d9d;
   }
   /* line 615, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .sg-link-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .sg-link-primary-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .sg-link-focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .sg-link-primary-focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary:hover, .navbar-inverse .navbar-nav .open .sg-link-primary-hover .dropdown-menu > li > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > li > a, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > li > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary:focus, .navbar-inverse .navbar-nav .open .sg-link-primary-focus .dropdown-menu > li > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > li > a, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > li > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > li > .link-primary {
     color: #fff;
     background-color: transparent;
   }
   /* line 622, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .sg-link-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .sg-link-primary-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .sg-link-focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .sg-link-primary-focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary:hover, .navbar-inverse .navbar-nav .open .sg-link-primary-hover .dropdown-menu > .active > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > .active > a, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > .active > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary:focus, .navbar-inverse .navbar-nav .open .sg-link-primary-focus .dropdown-menu > .active > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > .active > a, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > .active > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .active > .link-primary {
     color: #fff;
     background-color: #090909;
   }
   /* line 630, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .sg-link-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .sg-link-primary-hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .sg-link-focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .sg-link-primary-focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary:hover, .navbar-inverse .navbar-nav .open .sg-link-primary-hover .dropdown-menu > .disabled > .link-primary, .sg-link-primary-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > .disabled > a, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .sg-link-hover .dropdown-menu > .disabled > .link-primary, .sg-link-hover .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary:focus, .navbar-inverse .navbar-nav .open .sg-link-primary-focus .dropdown-menu > .disabled > .link-primary, .sg-link-primary-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > .disabled > a, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .sg-link-focus .dropdown-menu > .disabled > .link-primary, .sg-link-focus .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > .link-primary {
     color: #444;
     background-color: transparent;
   }
@@ -6357,7 +6389,7 @@ tbody.collapse.in {
   border-top-right-radius: 4px;
 }
 /* line 41, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pagination.scss */
-.pagination > li > a:hover, .pagination > li > .link-primary:hover, .pagination > li > .sg-link-hover, .pagination > li > .sg-link-primary-hover, .pagination > li > a:focus, .pagination > li > .link-primary:focus, .pagination > li > .sg-link-focus, .pagination > li > .sg-link-primary-focus,
+.pagination > li > a:hover, .pagination > li > .link-primary:hover, .sg-link-primary-hover .pagination > li > .link-primary, .sg-link-hover .pagination > li > a, .sg-link-hover .pagination > li > .link-primary, .pagination > li > a:focus, .pagination > li > .link-primary:focus, .sg-link-primary-focus .pagination > li > .link-primary, .sg-link-focus .pagination > li > a, .sg-link-focus .pagination > li > .link-primary,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 3;
@@ -6366,7 +6398,7 @@ tbody.collapse.in {
   border-color: #ddd;
 }
 /* line 52, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pagination.scss */
-.pagination > .active > a, .pagination > .active > .link-primary, .pagination > .active > a:hover, .pagination > .active > .link-primary:hover, .pagination > .active > .sg-link-hover, .pagination > .active > .sg-link-primary-hover, .pagination > .active > a:focus, .pagination > .active > .link-primary:focus, .pagination > .active > .sg-link-focus, .pagination > .active > .sg-link-primary-focus,
+.pagination > .active > a, .pagination > .active > .link-primary, .pagination > .active > a:hover, .pagination > .active > .link-primary:hover, .sg-link-primary-hover .pagination > .active > .link-primary, .sg-link-hover .pagination > .active > a, .sg-link-hover .pagination > .active > .link-primary, .pagination > .active > a:focus, .pagination > .active > .link-primary:focus, .sg-link-primary-focus .pagination > .active > .link-primary, .sg-link-focus .pagination > .active > a, .sg-link-focus .pagination > .active > .link-primary,
 .pagination > .active > span,
 .pagination > .active > span:hover,
 .pagination > .active > span:focus {
@@ -6384,12 +6416,14 @@ tbody.collapse.in {
 .pagination > .disabled > .link-primary,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > .link-primary:hover,
-.pagination > .disabled > .sg-link-hover,
-.pagination > .disabled > .sg-link-primary-hover,
+.sg-link-primary-hover .pagination > .disabled > .link-primary,
+.sg-link-hover .pagination > .disabled > a,
+.sg-link-hover .pagination > .disabled > .link-primary,
 .pagination > .disabled > a:focus,
 .pagination > .disabled > .link-primary:focus,
-.pagination > .disabled > .sg-link-focus,
-.pagination > .disabled > .sg-link-primary-focus {
+.sg-link-primary-focus .pagination > .disabled > .link-primary,
+.sg-link-focus .pagination > .disabled > a,
+.sg-link-focus .pagination > .disabled > .link-primary {
   color: #777777;
   background-color: #fff;
   border-color: #ddd;
@@ -6466,11 +6500,15 @@ tbody.collapse.in {
   border-radius: 15px;
 }
 /* line 23, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_pager.scss */
-.pager li > a:hover, .pager li > .link-primary:hover, .pager li > .sg-link-hover, .pager li > .sg-link-primary-hover,
+.pager li > a:hover, .pager li > .link-primary:hover, .pager .sg-link-primary-hover li > .link-primary, .sg-link-primary-hover .pager li > .link-primary, .pager .sg-link-hover li > a, .sg-link-hover .pager li > a, .pager .sg-link-hover li > .link-primary, .sg-link-hover .pager li > .link-primary, .pager .sg-link-primary-focus li > .link-primary:hover, .pager .sg-link-primary-hover .sg-link-primary-focus li > .link-primary,
 .pager li > a:focus,
 .pager li > .link-primary:focus,
-.pager li > .sg-link-focus,
-.pager li > .sg-link-primary-focus {
+.pager .sg-link-primary-focus li > .link-primary,
+.sg-link-primary-focus .pager li > .link-primary,
+.pager .sg-link-focus li > a,
+.sg-link-focus .pager li > a,
+.pager .sg-link-focus li > .link-primary,
+.sg-link-focus .pager li > .link-primary {
   text-decoration: none;
   background-color: #eeeeee;
 }
@@ -6488,12 +6526,22 @@ tbody.collapse.in {
 .pager .disabled > a, .pager .disabled > .link-primary,
 .pager .disabled > a:hover,
 .pager .disabled > .link-primary:hover,
-.pager .disabled > .sg-link-hover,
-.pager .disabled > .sg-link-primary-hover,
+.pager .sg-link-primary-hover .disabled > .link-primary,
+.sg-link-primary-hover .pager .disabled > .link-primary,
+.pager .sg-link-hover .disabled > a,
+.sg-link-hover .pager .disabled > a,
+.pager .sg-link-hover .disabled > .link-primary,
+.sg-link-hover .pager .disabled > .link-primary,
+.pager .sg-link-primary-focus .disabled > .link-primary:hover,
+.pager .sg-link-primary-hover .sg-link-primary-focus .disabled > .link-primary,
 .pager .disabled > a:focus,
 .pager .disabled > .link-primary:focus,
-.pager .disabled > .sg-link-focus,
-.pager .disabled > .sg-link-primary-focus,
+.pager .sg-link-primary-focus .disabled > .link-primary,
+.sg-link-primary-focus .pager .disabled > .link-primary,
+.pager .sg-link-focus .disabled > a,
+.sg-link-focus .pager .disabled > a,
+.pager .sg-link-focus .disabled > .link-primary,
+.sg-link-focus .pager .disabled > .link-primary,
 .pager .disabled > span {
   color: #777777;
   background-color: #fff;
@@ -6524,7 +6572,7 @@ tbody.collapse.in {
 }
 
 /* line 33, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_labels.scss */
-a.label:hover, .label.link-primary:hover, .label.sg-link-hover, .label.sg-link-primary-hover, a.label:focus, .label.link-primary:focus, .label.sg-link-focus, .label.sg-link-primary-focus {
+a.label:hover, .label.link-primary:hover, .sg-link-primary-hover .label.link-primary, .sg-link-hover a.label, .sg-link-hover .label.link-primary, a.label:focus, .label.link-primary:focus, .sg-link-primary-focus .label.link-primary, .sg-link-focus a.label, .sg-link-focus .label.link-primary {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -6632,7 +6680,7 @@ a.label:hover, .label.link-primary:hover, .label.sg-link-hover, .label.sg-link-p
 }
 
 /* line 62, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_badges.scss */
-a.badge:hover, .badge.link-primary:hover, .badge.sg-link-hover, .badge.sg-link-primary-hover, a.badge:focus, .badge.link-primary:focus, .badge.sg-link-focus, .badge.sg-link-primary-focus {
+a.badge:hover, .badge.link-primary:hover, .sg-link-primary-hover .badge.link-primary, .sg-link-hover a.badge, .sg-link-hover .badge.link-primary, a.badge:focus, .badge.link-primary:focus, .sg-link-primary-focus .badge.link-primary, .sg-link-focus a.badge, .sg-link-focus .badge.link-primary {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -6717,11 +6765,12 @@ a.badge:hover, .badge.link-primary:hover, .badge.sg-link-hover, .badge.sg-link-p
 }
 
 /* line 34, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_thumbnails.scss */
-a.thumbnail:hover, .thumbnail.link-primary:hover, .thumbnail.sg-link-hover, .thumbnail.sg-link-primary-hover,
+a.thumbnail:hover, .thumbnail.link-primary:hover, .sg-link-primary-hover .thumbnail.link-primary, .sg-link-hover a.thumbnail, .sg-link-hover .thumbnail.link-primary,
 a.thumbnail:focus,
 .thumbnail.link-primary:focus,
-.thumbnail.sg-link-focus,
-.thumbnail.sg-link-primary-focus,
+.sg-link-primary-focus .thumbnail.link-primary,
+.sg-link-focus a.thumbnail,
+.sg-link-focus .thumbnail.link-primary,
 a.thumbnail.active,
 .thumbnail.active.link-primary {
   border-color: #37BC98;
@@ -7042,7 +7091,7 @@ button.list-group-item .list-group-item-heading {
   color: #333;
 }
 /* line 55, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_list-group.scss */
-a.list-group-item:hover, .list-group-item.link-primary:hover, .list-group-item.sg-link-hover, .list-group-item.sg-link-primary-hover, a.list-group-item:focus, .list-group-item.link-primary:focus, .list-group-item.sg-link-focus, .list-group-item.sg-link-primary-focus,
+a.list-group-item:hover, .list-group-item.link-primary:hover, .sg-link-primary-hover .list-group-item.link-primary, .sg-link-hover a.list-group-item, .sg-link-hover .list-group-item.link-primary, a.list-group-item:focus, .list-group-item.link-primary:focus, .sg-link-primary-focus .list-group-item.link-primary, .sg-link-focus a.list-group-item, .sg-link-focus .list-group-item.link-primary,
 button.list-group-item:hover,
 button.list-group-item:focus {
   text-decoration: none;
@@ -7109,14 +7158,14 @@ button.list-group-item-success .list-group-item-heading {
   color: inherit;
 }
 /* line 19, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-success:hover, .list-group-item-success.link-primary:hover, .list-group-item-success.sg-link-hover, .list-group-item-success.sg-link-primary-hover, a.list-group-item-success:focus, .list-group-item-success.link-primary:focus, .list-group-item-success.sg-link-focus, .list-group-item-success.sg-link-primary-focus,
+a.list-group-item-success:hover, .list-group-item-success.link-primary:hover, .sg-link-primary-hover .list-group-item-success.link-primary, .sg-link-hover a.list-group-item-success, .sg-link-hover .list-group-item-success.link-primary, a.list-group-item-success:focus, .list-group-item-success.link-primary:focus, .sg-link-primary-focus .list-group-item-success.link-primary, .sg-link-focus a.list-group-item-success, .sg-link-focus .list-group-item-success.link-primary,
 button.list-group-item-success:hover,
 button.list-group-item-success:focus {
   color: #3c763d;
   background-color: #d0e9c6;
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-success.active, .list-group-item-success.active.link-primary, a.list-group-item-success.active:hover, .list-group-item-success.active.link-primary:hover, .list-group-item-success.active.sg-link-hover, .list-group-item-success.active.sg-link-primary-hover, a.list-group-item-success.active:focus, .list-group-item-success.active.link-primary:focus, .list-group-item-success.active.sg-link-focus, .list-group-item-success.active.sg-link-primary-focus,
+a.list-group-item-success.active, .list-group-item-success.active.link-primary, a.list-group-item-success.active:hover, .list-group-item-success.active.link-primary:hover, .sg-link-primary-hover .list-group-item-success.active.link-primary, .sg-link-hover a.list-group-item-success.active, .sg-link-hover .list-group-item-success.active.link-primary, a.list-group-item-success.active:focus, .list-group-item-success.active.link-primary:focus, .sg-link-primary-focus .list-group-item-success.active.link-primary, .sg-link-focus a.list-group-item-success.active, .sg-link-focus .list-group-item-success.active.link-primary,
 button.list-group-item-success.active,
 button.list-group-item-success.active:hover,
 button.list-group-item-success.active:focus {
@@ -7142,14 +7191,14 @@ button.list-group-item-info .list-group-item-heading {
   color: inherit;
 }
 /* line 19, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-info:hover, .list-group-item-info.link-primary:hover, .list-group-item-info.sg-link-hover, .list-group-item-info.sg-link-primary-hover, a.list-group-item-info:focus, .list-group-item-info.link-primary:focus, .list-group-item-info.sg-link-focus, .list-group-item-info.sg-link-primary-focus,
+a.list-group-item-info:hover, .list-group-item-info.link-primary:hover, .sg-link-primary-hover .list-group-item-info.link-primary, .sg-link-hover a.list-group-item-info, .sg-link-hover .list-group-item-info.link-primary, a.list-group-item-info:focus, .list-group-item-info.link-primary:focus, .sg-link-primary-focus .list-group-item-info.link-primary, .sg-link-focus a.list-group-item-info, .sg-link-focus .list-group-item-info.link-primary,
 button.list-group-item-info:hover,
 button.list-group-item-info:focus {
   color: #31708f;
   background-color: #c4e3f3;
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-info.active, .list-group-item-info.active.link-primary, a.list-group-item-info.active:hover, .list-group-item-info.active.link-primary:hover, .list-group-item-info.active.sg-link-hover, .list-group-item-info.active.sg-link-primary-hover, a.list-group-item-info.active:focus, .list-group-item-info.active.link-primary:focus, .list-group-item-info.active.sg-link-focus, .list-group-item-info.active.sg-link-primary-focus,
+a.list-group-item-info.active, .list-group-item-info.active.link-primary, a.list-group-item-info.active:hover, .list-group-item-info.active.link-primary:hover, .sg-link-primary-hover .list-group-item-info.active.link-primary, .sg-link-hover a.list-group-item-info.active, .sg-link-hover .list-group-item-info.active.link-primary, a.list-group-item-info.active:focus, .list-group-item-info.active.link-primary:focus, .sg-link-primary-focus .list-group-item-info.active.link-primary, .sg-link-focus a.list-group-item-info.active, .sg-link-focus .list-group-item-info.active.link-primary,
 button.list-group-item-info.active,
 button.list-group-item-info.active:hover,
 button.list-group-item-info.active:focus {
@@ -7175,14 +7224,14 @@ button.list-group-item-warning .list-group-item-heading {
   color: inherit;
 }
 /* line 19, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-warning:hover, .list-group-item-warning.link-primary:hover, .list-group-item-warning.sg-link-hover, .list-group-item-warning.sg-link-primary-hover, a.list-group-item-warning:focus, .list-group-item-warning.link-primary:focus, .list-group-item-warning.sg-link-focus, .list-group-item-warning.sg-link-primary-focus,
+a.list-group-item-warning:hover, .list-group-item-warning.link-primary:hover, .sg-link-primary-hover .list-group-item-warning.link-primary, .sg-link-hover a.list-group-item-warning, .sg-link-hover .list-group-item-warning.link-primary, a.list-group-item-warning:focus, .list-group-item-warning.link-primary:focus, .sg-link-primary-focus .list-group-item-warning.link-primary, .sg-link-focus a.list-group-item-warning, .sg-link-focus .list-group-item-warning.link-primary,
 button.list-group-item-warning:hover,
 button.list-group-item-warning:focus {
   color: #8a6d3b;
   background-color: #faf2cc;
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-warning.active, .list-group-item-warning.active.link-primary, a.list-group-item-warning.active:hover, .list-group-item-warning.active.link-primary:hover, .list-group-item-warning.active.sg-link-hover, .list-group-item-warning.active.sg-link-primary-hover, a.list-group-item-warning.active:focus, .list-group-item-warning.active.link-primary:focus, .list-group-item-warning.active.sg-link-focus, .list-group-item-warning.active.sg-link-primary-focus,
+a.list-group-item-warning.active, .list-group-item-warning.active.link-primary, a.list-group-item-warning.active:hover, .list-group-item-warning.active.link-primary:hover, .sg-link-primary-hover .list-group-item-warning.active.link-primary, .sg-link-hover a.list-group-item-warning.active, .sg-link-hover .list-group-item-warning.active.link-primary, a.list-group-item-warning.active:focus, .list-group-item-warning.active.link-primary:focus, .sg-link-primary-focus .list-group-item-warning.active.link-primary, .sg-link-focus a.list-group-item-warning.active, .sg-link-focus .list-group-item-warning.active.link-primary,
 button.list-group-item-warning.active,
 button.list-group-item-warning.active:hover,
 button.list-group-item-warning.active:focus {
@@ -7208,14 +7257,14 @@ button.list-group-item-danger .list-group-item-heading {
   color: inherit;
 }
 /* line 19, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-danger:hover, .list-group-item-danger.link-primary:hover, .list-group-item-danger.sg-link-hover, .list-group-item-danger.sg-link-primary-hover, a.list-group-item-danger:focus, .list-group-item-danger.link-primary:focus, .list-group-item-danger.sg-link-focus, .list-group-item-danger.sg-link-primary-focus,
+a.list-group-item-danger:hover, .list-group-item-danger.link-primary:hover, .sg-link-primary-hover .list-group-item-danger.link-primary, .sg-link-hover a.list-group-item-danger, .sg-link-hover .list-group-item-danger.link-primary, a.list-group-item-danger:focus, .list-group-item-danger.link-primary:focus, .sg-link-primary-focus .list-group-item-danger.link-primary, .sg-link-focus a.list-group-item-danger, .sg-link-focus .list-group-item-danger.link-primary,
 button.list-group-item-danger:hover,
 button.list-group-item-danger:focus {
   color: #a94442;
   background-color: #ebcccc;
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_list-group.scss */
-a.list-group-item-danger.active, .list-group-item-danger.active.link-primary, a.list-group-item-danger.active:hover, .list-group-item-danger.active.link-primary:hover, .list-group-item-danger.active.sg-link-hover, .list-group-item-danger.active.sg-link-primary-hover, a.list-group-item-danger.active:focus, .list-group-item-danger.active.link-primary:focus, .list-group-item-danger.active.sg-link-focus, .list-group-item-danger.active.sg-link-primary-focus,
+a.list-group-item-danger.active, .list-group-item-danger.active.link-primary, a.list-group-item-danger.active:hover, .list-group-item-danger.active.link-primary:hover, .sg-link-primary-hover .list-group-item-danger.active.link-primary, .sg-link-hover a.list-group-item-danger.active, .sg-link-hover .list-group-item-danger.active.link-primary, a.list-group-item-danger.active:focus, .list-group-item-danger.active.link-primary:focus, .sg-link-primary-focus .list-group-item-danger.active.link-primary, .sg-link-focus a.list-group-item-danger.active, .sg-link-focus .list-group-item-danger.active.link-primary,
 button.list-group-item-danger.active,
 button.list-group-item-danger.active:hover,
 button.list-group-item-danger.active:focus {
@@ -8853,6 +8902,9 @@ button.close {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	FONTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	TYPOGRAPHY
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_typography.scss */
@@ -8865,8 +8917,9 @@ body {
 /* line 11, ../sass/partials/_typography.scss */
 a, .link-primary {
   color: #37BC98;
+  font-family: "Varela Round", sans-serif;
 }
-/* line 13, ../sass/partials/_typography.scss */
+/* line 14, ../sass/partials/_typography.scss */
 a:after, .link-primary:after {
   bottom: 0;
   content: ' ';
@@ -8874,43 +8927,43 @@ a:after, .link-primary:after {
   right: 0;
   border-bottom: 2px solid #37BC98;
 }
-/* line 20, ../sass/partials/_typography.scss */
-a:hover, .link-primary:hover, .sg-link-hover, .sg-link-primary-hover {
+/* line 21, ../sass/partials/_typography.scss */
+a:hover, .link-primary:hover, .sg-link-primary-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary, .sg-link-primary-hover .link-primary:hover, .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary {
   color: #37BC98;
   text-decoration: underline;
 }
-/* line 24, ../sass/partials/_typography.scss */
-a:focus, .link-primary:focus, .sg-link-focus, .sg-link-primary-focus, a:active, .link-primary:active {
+/* line 25, ../sass/partials/_typography.scss */
+a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary, a:active, .link-primary:active {
   color: #2C3E50;
   text-decoration: none;
 }
 
-/* line 32, ../sass/partials/_typography.scss */
+/* line 33, ../sass/partials/_typography.scss */
 .link-primary {
   text-decoration: none;
 }
-/* line 35, ../sass/partials/_typography.scss */
-.link-primary:hover {
+/* line 36, ../sass/partials/_typography.scss */
+.link-primary:hover, .sg-link-primary-hover .link-primary {
   border-bottom: 2px solid #37BC98;
   animation: width false;
   text-decoration: none;
 }
-/* line 40, ../sass/partials/_typography.scss */
-.link-primary:focus, .link-primary:active {
+/* line 41, ../sass/partials/_typography.scss */
+.link-primary:focus, .sg-link-primary-focus .link-primary, .link-primary:active {
   border-bottom: none;
 }
 
-/* line 45, ../sass/partials/_typography.scss */
+/* line 46, ../sass/partials/_typography.scss */
 .link-jump {
   margin-bottom: 20px;
   display: inline-block;
 }
-/* line 48, ../sass/partials/_typography.scss */
+/* line 49, ../sass/partials/_typography.scss */
 .link-jump:hover {
   margin-bottom: 18px;
 }
 
-/* line 55, ../sass/partials/_typography.scss */
+/* line 56, ../sass/partials/_typography.scss */
 h1,
 .h1 {
   color: #0595E5;
@@ -8918,7 +8971,7 @@ h1,
   font-size: 64px;
 }
 
-/* line 61, ../sass/partials/_typography.scss */
+/* line 62, ../sass/partials/_typography.scss */
 h2,
 .h2 {
   color: #2C3E50;
@@ -8926,7 +8979,7 @@ h2,
   font-size: 34px;
 }
 
-/* line 67, ../sass/partials/_typography.scss */
+/* line 68, ../sass/partials/_typography.scss */
 h3,
 .h3 {
   color: #E74C3C;
@@ -8934,19 +8987,19 @@ h3,
   font-size: 24px;
 }
 
-/* line 73, ../sass/partials/_typography.scss */
+/* line 74, ../sass/partials/_typography.scss */
 h4,
 .h4 {
   font-size: 18px;
 }
 
-/* line 77, ../sass/partials/_typography.scss */
+/* line 78, ../sass/partials/_typography.scss */
 h5,
 .h5 {
   font-size: 14px;
 }
 
-/* line 81, ../sass/partials/_typography.scss */
+/* line 82, ../sass/partials/_typography.scss */
 h6,
 .h6 {
   font-size: 12px;
@@ -9119,17 +9172,62 @@ h6,
 	HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_header.scss */
-.navbar {
+.header-main {
   /*	height: 100px;*/
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 /* line 11, ../sass/partials/_header.scss */
-.main-nav {
+.navbar-list {
   line-height: 46px;
+}
+/* line 13, ../sass/partials/_header.scss */
+.navbar-list .emphasize {
+  background-color: #E74C3C;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  line-height: 1;
+}
+/* line 20, ../sass/partials/_header.scss */
+.navbar-list .emphasize-secondary {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  line-height: 1;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VBYC CUSTOM STYLEGUIDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 8, ../sass/partials/_styleguide.scss */
+.sg-link-hover a:hover, .sg-link-hover .link-primary:hover, .sg-link-hover .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary {
+  text-decoration: underline;
+  border-bottom: none;
+}
+
+/* line 15, ../sass/partials/_styleguide.scss */
+.sg-link-focus a:hover, .sg-link-focus .link-primary:hover, .sg-link-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-focus .link-primary, .sg-link-focus .sg-link-hover a, .sg-link-hover .sg-link-focus a, .sg-link-focus .sg-link-hover .link-primary, .sg-link-hover .sg-link-focus .link-primary {
+  text-decoration: none;
+}
+
+/* line 20, ../sass/partials/_styleguide.scss */
+.sg-link-primary-hover .link-primary {
+  text-decoration: none;
+}
+/* line 23, ../sass/partials/_styleguide.scss */
+.sg-link-primary-hover .link-primary:hover, .sg-link-primary-hover .link-primary {
+  text-decoration: none;
+}
+
+/* line 28, ../sass/partials/_styleguide.scss */
+.sg-link-primary-focus .link-primary {
+  text-decoration: none;
+}
+/* line 31, ../sass/partials/_styleguide.scss */
+.sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary {
+  text-decoration: none;
+  border-bottom: none;
+}

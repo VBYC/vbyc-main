@@ -3,15 +3,34 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-.sg-link-hover {
+.sg-link-hover a {
     @extend a:hover;
+    &:hover {
+    	text-decoration: underline;
+    	border-bottom: none;
+    }
 }
-.sg-link-focus {
+.sg-link-focus a  {
     @extend a:focus;
+    &:hover {
+    	text-decoration: none;
+    }
+    
 }
-.sg-link-primary-hover {
-    @extend a:hover;
+.sg-link-primary-hover .link-primary {
+    @extend .link-primary:hover;
+    text-decoration: none;
+    &:hover {
+    	@extend a:hover;
+    	text-decoration: none;
+    }
 }
-.sg-link-primary-focus {
-    @extend a:focus;
+.sg-link-primary-focus .link-primary  {
+    @extend .link-primary:focus;
+    text-decoration: none;
+    &:hover {
+    	@extend a:hover;
+    	text-decoration: none;
+    	border-bottom: none;
+    }
 }

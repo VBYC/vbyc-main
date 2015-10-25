@@ -1,3 +1,7 @@
+// VBYC Custom
+@import "partials/fonts";
+
+// Bootstrap
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
@@ -8,7 +12,8 @@
 @import "bootstrap";
 
 
-/// VBYC Custom
+// VBYC Custom
+@import "partials/fonts";
 @import "partials/typography";
 @import "partials/template-helpers";
 @import "partials/header";
