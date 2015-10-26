@@ -8,18 +8,25 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-// $gray-base:              #000
-// $gray-darker:            lighten($gray-base, 13.5%) // #222
-// $gray-dark:              lighten($gray-base, 20%)   // #333
-// $gray:                   lighten($gray-base, 33.5%) // #555
-// $gray-light:             lighten($gray-base, 46.7%) // #777
-// $gray-lighter:           lighten($gray-base, 93.5%) // #eee
+$gray-base:              #000;
+
 
 // $brand-primary:         darken(#428bca, 6.5%) // #337ab7;
-   $color-blue-bright:      #0595E5;
-   $color-slate:            #2C3E50;
-   $color-red:              #E74C3C;
-   $color-green-bright:     #37BC98;
+$color-blue-bright:      #0595E5;
+$color-gray-darker:      lighten($gray-base, 13.5%); // #222
+$color-gray-dark:        lighten($gray-base, 20%);   // #333
+$color-gray:             lighten($gray-base, 33.5%); // #555
+$color-gray-light:       lighten($gray-base, 46.7%); // #777
+$color-gray-lighter:     lighten($gray-base, 93.5%); // #eee
+$color-green-bright:     #37BC98;
+$color-green-bright:     #37BC98;
+$color-slate:            #2C3E50;
+$color-slate-lighter:    #f5f5f5; 
+$color-red:              #E74C3C;
+   
+
+
+  
    
 
 // $brand-success:         #5cb85c
@@ -46,6 +53,10 @@ $link-hover-decoration:     underline;
 
 $link-focus-color:          $color-slate;
 $link-focus-decoration:     none;
+
+$list-striped-bg-color:     $color-gray-lighter;
+
+$navbar-sub-graphic-color:  $color-slate-lighter;
 
 //== Typography
 //

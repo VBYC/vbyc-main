@@ -11,13 +11,6 @@ body {
 a {
 	color: $link-color;
     font-family: $font-family-link;
-    &:after {
-        bottom: 0;
-        content: ' ';
-        left: 0;
-        right: 0;
-        border-bottom: 2px solid $link-color;
-    }
 	&:hover {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;

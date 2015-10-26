@@ -8830,50 +8830,42 @@ a, .link-primary {
   font-family: "Varela Round", sans-serif;
 }
 /* line 14, ../sass/partials/_typography.scss */
-a:after, .link-primary:after {
-  bottom: 0;
-  content: ' ';
-  left: 0;
-  right: 0;
-  border-bottom: 2px solid #37BC98;
-}
-/* line 21, ../sass/partials/_typography.scss */
 a:hover, .link-primary:hover {
   color: #37BC98;
   text-decoration: underline;
 }
-/* line 25, ../sass/partials/_typography.scss */
+/* line 18, ../sass/partials/_typography.scss */
 a:focus, .link-primary:focus, a:active, .link-primary:active {
   color: #2C3E50;
   text-decoration: none;
 }
 
-/* line 33, ../sass/partials/_typography.scss */
+/* line 26, ../sass/partials/_typography.scss */
 .link-primary {
   text-decoration: none;
 }
-/* line 36, ../sass/partials/_typography.scss */
+/* line 29, ../sass/partials/_typography.scss */
 .link-primary:hover {
   border-bottom: 2px solid #37BC98;
   animation: width false;
   text-decoration: none;
 }
-/* line 41, ../sass/partials/_typography.scss */
+/* line 34, ../sass/partials/_typography.scss */
 .link-primary:focus, .link-primary:active {
   border-bottom: none;
 }
 
-/* line 46, ../sass/partials/_typography.scss */
+/* line 39, ../sass/partials/_typography.scss */
 .link-jump {
   margin-bottom: 20px;
   display: inline-block;
 }
-/* line 49, ../sass/partials/_typography.scss */
+/* line 42, ../sass/partials/_typography.scss */
 .link-jump:hover {
   margin-bottom: 18px;
 }
 
-/* line 56, ../sass/partials/_typography.scss */
+/* line 49, ../sass/partials/_typography.scss */
 h1,
 .h1 {
   color: #0595E5;
@@ -8881,7 +8873,7 @@ h1,
   font-size: 64px;
 }
 
-/* line 62, ../sass/partials/_typography.scss */
+/* line 55, ../sass/partials/_typography.scss */
 h2,
 .h2 {
   color: #2C3E50;
@@ -8889,7 +8881,7 @@ h2,
   font-size: 34px;
 }
 
-/* line 68, ../sass/partials/_typography.scss */
+/* line 61, ../sass/partials/_typography.scss */
 h3,
 .h3 {
   color: #E74C3C;
@@ -8897,19 +8889,19 @@ h3,
   font-size: 24px;
 }
 
-/* line 74, ../sass/partials/_typography.scss */
+/* line 67, ../sass/partials/_typography.scss */
 h4,
 .h4 {
   font-size: 18px;
 }
 
-/* line 78, ../sass/partials/_typography.scss */
+/* line 71, ../sass/partials/_typography.scss */
 h5,
 .h5 {
   font-size: 14px;
 }
 
-/* line 82, ../sass/partials/_typography.scss */
+/* line 75, ../sass/partials/_typography.scss */
 h6,
 .h6 {
   font-size: 12px;
@@ -9083,28 +9075,88 @@ h6,
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_header.scss */
 .header-main {
-  /*	height: 100px;*/
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 11, ../sass/partials/_header.scss */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NAVIGATION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 5, ../sass/partials/_navigation.scss */
 .navbar-list {
-  line-height: 46px;
+  font-size: 14px;
+  font-family: "Varela Round", sans-serif;
 }
-/* line 13, ../sass/partials/_header.scss */
+/* line 8, ../sass/partials/_navigation.scss */
+.navbar-list > .item {
+  float: left;
+}
+/* line 11, ../sass/partials/_navigation.scss */
+.navbar-list > .item:not(:last-child) {
+  margin-right: 20px;
+}
+/* line 15, ../sass/partials/_navigation.scss */
+.navbar-list .link {
+  padding: 10px;
+  line-height: 1;
+  display: block;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+/* line 23, ../sass/partials/_navigation.scss */
+.navbar-list .link.normal:hover {
+  border-bottom-color: #37BC98;
+  animation: width false;
+  text-decoration: none;
+}
+/* line 28, ../sass/partials/_navigation.scss */
+.navbar-list .link.normal:focus, .navbar-list .link.normal:active {
+  border-bottom: none;
+}
+/* line 34, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize {
   background-color: #E74C3C;
   color: #fff;
-  padding: 10px;
-  display: block;
-  line-height: 1;
 }
-/* line 20, ../sass/partials/_header.scss */
+/* line 38, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize-secondary {
   background-color: #2C3E50;
   color: #fff;
   padding: 10px;
   display: block;
   line-height: 1;
+}
+
+/* line 50, ../sass/partials/_navigation.scss */
+.navbar-list-sub {
+  position: absolute;
+  background-color: #fff;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  margin-top: 2px;
+}
+/* line 56, ../sass/partials/_navigation.scss */
+.navbar-list-sub .link-sub {
+  padding: 10px;
+  display: block;
+  color: #2C3E50;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 61, ../sass/partials/_navigation.scss */
+.navbar-list-sub .link-sub:hover {
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	LISTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_lists.scss */
+.list-striped > li:nth-of-type(odd) {
+  background-color: #eeeeee;
+}
+
+/* line 12, ../sass/partials/_lists.scss */
+.list-striped-reversed > li:nth-of-type(even) {
+  background-color: #eeeeee;
 }

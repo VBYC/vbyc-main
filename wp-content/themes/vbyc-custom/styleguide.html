@@ -10,7 +10,7 @@
 </title>
 
 
-<link href="css/main.css" rel="stylesheet">
+
 <link href="css/styleguide.css" rel="stylesheet">
 
 
@@ -86,7 +86,7 @@
     <h1 id="type" class="page-header">Typography</h1>
 
     <!--Links -->
-    <h2 id="type-link">Default Links</h2>
+    <h2 id="type-links-default">Default Links</h2>
     <p>Any <code>&lt;a&gt;</code> tag.</p>
     <div class="bs-example bs-example-type" data-example-id="simple-headings">
         <table class="table">
@@ -123,7 +123,7 @@
     </div>
 
     <!-- Links -->
-    <h2 id="type-link-primary">Primary Links</h2>
+    <h2 id="type-links-primary">Primary Links</h2>
     <p>Add <code>.link-primary</code> to any element.</p>
     <div class="bs-example bs-example-type" data-example-id="simple-headings">
         <table class="table">
@@ -180,20 +180,44 @@
     </div>
 
     <!-- Navigation -->
-    <h2 id="type-link-navigation">Navigation</h2>
-    <p>Add <code>.nav-primary</code></p>
+    <h2 id="type-navigation">Navigation</h2>
+    <p>Add <code>.nav-primary.list-inline</code>. For the colored box items use <code>a.link.emphasize</code> and <code>a.link.emphasize-secondary</code> </p>
     <div class="bs-example bs-example-type" data-example-id="simple-headings">
         <table class="table">
             <tbody>
                 <tr>
-                    <td colspan="2">
-                        <nav class="navbar text-right v-offset-bot-0 col-md-8" role="navigation">
-                            <ul class="navbar-list list-inline">
-                                <li class="item"><a href="#" class="link">Sessions</a></li>
-                                <li class="item"><a href="#" class="link">Camp Life</a></li>
-                                <li class="item"><a href="#" class="link">About Us</a></li>
-                                <li class="item"><a href="#" class="link">Alumni</a></li>
-                                <li class="item"><a href="#" class="link">Contact</a></li>
+                    <td class="sg-navbar" colspan="2">
+                        <nav class="navbar pull-right" role="navigation">
+                            <ul class="navbar-list list-unstyled clearfix">
+                                <li class="item">
+                                    <a href="#" class="link">Sessions</a>
+                                    <ul class="navbar-list-sub list-unstyled">
+                                         <li class="item-sub">
+                                            <a href="#" class="link-sub">
+                                                Sessions List
+                                            </a>
+                                         </li>
+                                         <li class="item-sub">
+                                            <a href="#" class="link-sub">
+                                                What To Bring
+                                            </a>
+                                         </li>
+                                         <li class="item-sub">
+                                            <a href="#" class="link-sub">
+                                                Preparing For Camp
+                                            </a>
+                                         </li>
+                                         <li class="item-sub">
+                                            <a href="#" class="link-sub">
+                                                Financial Aid
+                                            </a>
+                                         </li>
+                                    </ul>
+                                </li>
+                                <li class="item"><a href="#" class="link normal">Camp Life</a></li>
+                                <li class="item"><a href="#" class="link normal">About Us</a></li>
+                                <li class="item"><a href="#" class="link normal">Alumni</a></li>
+                                <li class="item"><a href="#" class="link normal">Contact</a></li>
                                 <li class="item"><a href="#" class="link emphasize-secondary">Donate</a></li>
                                 <li class="item"><a href="#" class="link emphasize">Register</a></li>
                             </ul>                        
@@ -201,51 +225,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="type-info" colspan="2">
-                        Valera Round<br> 
-                        Medium<br> 
-                        #37BC98<br>
-                        <code>$link-color</code><br>
-                        <code>.link-primary</code>
-                    </td>
-                </tr>
-                <tr>
-                    <td><a href="#" class="link-primary sg-link-primary-hover">Primary Links (Hover)</a></td>
+                    <td class="sq-navigation-dropdown"></td>
                     <td class="type-info">
-                        Valera Round<br> 
-                        Medium<br> 
-                        #37BC98<br>
-                        border-bottom: 2px solid $link-color<br>
-                        animation: width 0% > 100%<br>
-                        <code>$link-color</code><br>
-                        <code>.link-primary</code>
+                   
                     </td>
                 </tr>
-                <tr>
-                    <td><a href="#" class="link-primary sg-link-primary-focus">Primary Links (Focus &amp; Selected)</a></td>
-                    <td class="type-info">
-                        Valera Round<br> 
-                        Medium<br> 
-                        #2C3E50<br>
-                        <code>$link-slate</code><br>
-                        <code>.link-primary</code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="#" class="link-primary link-jump">Jump Link</a><br>
-                        <a href="#" class="link-primary link-jump">Jump Link</a><br>
-                        <a href="#" class="link-primary link-jump">Jump Link</a><br>
-                    </td>
-                    <td class="type-info">
-                        Valera Round<br> 
-                        Medium<br> 
-                        #2C3E50<br>
-                        <code>$link-color</code><br>
-                        <code>.link-primary.link-jump</code>
-                    </td>
-                </tr>
-                
+
             </tbody>
         </table>
     </div>
@@ -3422,6 +3407,9 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 <li>
     <a href="#type">Typography</a>
     <ul class="nav">
+        <li><a href="#type-links-default">Default Links</a></li>
+        <li><a href="#type-links-primary">Primary Links</a></li>
+        <li><a href="#type-navigation">Navigation</a></li>
         <li><a href="#type-headings">Headings</a></li>
         <li><a href="#type-body-copy">Body copy</a></li>
         <li><a href="#type-inline-text">Inline text elements</a></li>

@@ -1,0 +1,15 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	LISTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.list-striped {
+	> li:nth-of-type(odd) {
+		background-color: $list-striped-bg-color;
+	}
+}
+
+.list-striped-reversed {
+	> li:nth-of-type(even) {
+		background-color: $list-striped-bg-color;
+	}
+}
