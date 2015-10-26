@@ -379,8 +379,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1445601490);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1445601490#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1445601490) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1445601490) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1445601490) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1445601490#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1445823798);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1445823798#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1445823798) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1445823798) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1445823798) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1445823798#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -9090,12 +9090,17 @@ h6,
 /* line 8, ../sass/partials/_navigation.scss */
 .navbar-list > .item {
   float: left;
+  position: relative;
 }
 /* line 11, ../sass/partials/_navigation.scss */
 .navbar-list > .item:not(:last-child) {
   margin-right: 20px;
 }
 /* line 15, ../sass/partials/_navigation.scss */
+.navbar-list > .item:hover .navbar-list-sub {
+  display: block;
+}
+/* line 20, ../sass/partials/_navigation.scss */
 .navbar-list .link {
   padding: 10px;
   line-height: 1;
@@ -9103,22 +9108,22 @@ h6,
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
-/* line 23, ../sass/partials/_navigation.scss */
+/* line 27, ../sass/partials/_navigation.scss */
 .navbar-list .link.normal:hover {
   border-bottom-color: #37BC98;
   animation: width false;
   text-decoration: none;
 }
-/* line 28, ../sass/partials/_navigation.scss */
+/* line 32, ../sass/partials/_navigation.scss */
 .navbar-list .link.normal:focus, .navbar-list .link.normal:active {
   border-bottom: none;
 }
-/* line 34, ../sass/partials/_navigation.scss */
+/* line 38, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize {
   background-color: #E74C3C;
   color: #fff;
 }
-/* line 38, ../sass/partials/_navigation.scss */
+/* line 42, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize-secondary {
   background-color: #2C3E50;
   color: #fff;
@@ -9127,22 +9132,27 @@ h6,
   line-height: 1;
 }
 
-/* line 50, ../sass/partials/_navigation.scss */
+/* line 54, ../sass/partials/_navigation.scss */
 .navbar-list-sub {
   position: absolute;
   background-color: #fff;
   border-left: 1px solid #f5f5f5;
   border-right: 1px solid #f5f5f5;
-  margin-top: 2px;
+  border-top: 2px solid #37BC98;
+  margin-top: -2px;
+  left: -50%;
+  right: -50%;
+  display: none;
 }
-/* line 56, ../sass/partials/_navigation.scss */
+/* line 64, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub {
   padding: 10px;
   display: block;
+  white-space: nowrap;
   color: #2C3E50;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 61, ../sass/partials/_navigation.scss */
+/* line 70, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #f5f5f5;
   text-decoration: none;

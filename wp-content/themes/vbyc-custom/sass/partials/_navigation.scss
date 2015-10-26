@@ -7,9 +7,14 @@
     font-family: $font-family-link;
     > .item {
         float: left;
-        
+        position: relative;
         &:not(:last-child) {
             margin-right: 20px;
+        }
+        &:hover {
+            .navbar-list-sub {
+                display: block;
+            }
         }
     }
     .link {
@@ -19,7 +24,6 @@
         text-decoration: none; 
         border-bottom: 2px solid transparent;
         &.normal {
-            
             &:hover {
                 border-bottom-color: $link-color;
                 animation: width 0% > 100%; 
@@ -52,10 +56,15 @@
     background-color: #fff;
     border-left: 1px solid $navbar-sub-graphic-color;
     border-right: 1px solid $navbar-sub-graphic-color;
-    margin-top: 2px;
+    border-top: 2px solid $link-color;
+    margin-top: -2px;
+    left: -50%;
+    right: -50%;
+    display: none;
     .link-sub {
         padding: 10px;
         display: block;
+        white-space: nowrap;
         color: $color-slate;
         border-bottom: 1px solid $navbar-sub-graphic-color;
         &:hover {
