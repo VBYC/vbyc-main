@@ -9313,3 +9313,22 @@ h6,
 .sq-navigation-dropdown {
   height: 230px;
 }
+
+/* line 56, ../sass/partials/_styleguide.scss */
+.sg-color-pallets div {
+  height: 100px;
+  padding: 20px 15px;
+  display: inline-block;
+}
+/* line 61, ../sass/partials/_styleguide.scss */
+.sg-color-pallets .sg-dark-bg {
+  color: #fff;
+}
+/* line 64, ../sass/partials/_styleguide.scss */
+.sg-color-pallets .sg-color-slate {
+  background-color: #2C3E50;
+}
+/* line 68, ../sass/partials/_styleguide.scss */
+.sg-color-pallets .sg-color-red {
+  background-color: #E74C3C;
+}

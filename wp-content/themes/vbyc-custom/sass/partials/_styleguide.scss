@@ -52,6 +52,25 @@
     height: 230px;
 }
 
+.sg-color-pallets {
+    div {
+        height: 100px;
+        padding: 20px 15px;
+        display: inline-block;
+    }
+    .sg-dark-bg {
+        color: #fff;
+    }
+    .sg-color-slate {
+        background-color: $color-slate;
+
+    }
+    .sg-color-red {
+        background-color: $color-red;
+
+    }
+}
+
 
 
 
