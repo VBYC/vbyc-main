@@ -16,9 +16,17 @@
                 display: block;
             }
         }
+
     }
+    .selected {
+        .link {
+            color: $color-slate;
+            border-bottom-color: $link-color;
+        }
+    }
+    
     .link {
-        padding: 10px;
+        padding: 7px 10px ;
         line-height: 1;
         display: block;
         text-decoration: none; 
@@ -31,9 +39,10 @@
             }
             &:focus,
             &:active {
-                border-bottom: none;
+                border-bottom-color: transparent;
             }
         }
+        
     }
     .emphasize {
         background-color: $color-red;
@@ -58,6 +67,7 @@
     border-right: 1px solid $navbar-sub-graphic-color;
     border-top: 2px solid $link-color;
     margin-top: -2px;
+
     left: -50%;
     right: -50%;
     display: none;
