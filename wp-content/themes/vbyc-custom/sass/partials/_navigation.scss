@@ -47,9 +47,16 @@
     .emphasize {
         background-color: $color-red;
         color: #fff;
+        &:hover {
+            background-color: $color-red-darker;
+        }
+        &:focus,
+        &:active {
+             background-color: $link-focus-color;
+        }
     }
     .emphasize-secondary {
-        background-color: $color-slate;
+        background-color: $link-color;
         color: #fff;
         padding: 10px;
         display: block;
