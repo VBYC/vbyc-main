@@ -47,6 +47,7 @@
     .emphasize {
         background-color: $color-red;
         color: #fff;
+        padding-top: 10px;
         &:hover {
             background-color: $color-red-darker;
         }

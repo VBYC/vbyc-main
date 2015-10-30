@@ -3,7 +3,7 @@
 	FONTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,700,500italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -12,7 +12,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,700,500italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 /* line 9, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -1732,7 +1732,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #2C3E50;
+  color: #555555;
   background-color: #fff;
 }
 
@@ -4312,7 +4312,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #597ea2;
+  color: #959595;
 }
 
 @media (min-width: 768px) {
@@ -6674,7 +6674,7 @@ a.badge:hover, .badge.link-primary:hover, a.badge:focus, .badge.link-primary:foc
 /* line 27, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #2C3E50;
+  color: #555555;
 }
 
 /* line 34, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_thumbnails.scss */
@@ -8819,7 +8819,7 @@ button.close {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_typography.scss */
 body {
-  color: #2C3E50;
+  color: #555555;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -8876,7 +8876,7 @@ h1,
 /* line 55, ../sass/partials/_typography.scss */
 h2,
 .h2 {
-  color: #2C3E50;
+  color: #555555;
   font-family: "Roboto Slab", serif;
   font-size: 34px;
 }
@@ -9135,16 +9135,17 @@ h6,
 .navbar-list .emphasize {
   background-color: #E74C3C;
   color: #fff;
+  padding-top: 10px;
 }
-/* line 50, ../sass/partials/_navigation.scss */
+/* line 51, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize:hover {
   background-color: #CB1300;
 }
-/* line 53, ../sass/partials/_navigation.scss */
+/* line 54, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize:focus, .navbar-list .emphasize:active {
   background-color: #2C3E50;
 }
-/* line 58, ../sass/partials/_navigation.scss */
+/* line 59, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize-secondary {
   background-color: #37BC98;
   color: #fff;
@@ -9153,7 +9154,7 @@ h6,
   line-height: 1;
 }
 
-/* line 70, ../sass/partials/_navigation.scss */
+/* line 71, ../sass/partials/_navigation.scss */
 .navbar-list-sub {
   position: absolute;
   background-color: #fff;
@@ -9165,7 +9166,7 @@ h6,
   right: -50%;
   display: none;
 }
-/* line 81, ../sass/partials/_navigation.scss */
+/* line 82, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub {
   padding: 10px;
   display: block;
@@ -9173,7 +9174,7 @@ h6,
   color: #2C3E50;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 87, ../sass/partials/_navigation.scss */
+/* line 88, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #f5f5f5;
   text-decoration: none;
