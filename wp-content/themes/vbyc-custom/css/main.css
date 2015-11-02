@@ -6605,7 +6605,7 @@ a.badge:hover, .badge.link-primary:hover, a.badge:focus, .badge.link-primary:foc
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: transparent;
 }
 /* line 13, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron h1,
@@ -6620,7 +6620,7 @@ a.badge:hover, .badge.link-primary:hover, a.badge:focus, .badge.link-primary:foc
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_jumbotron.scss */
 .jumbotron > hr {
-  border-top-color: #d5d5d5;
+  border-top-color: transparent;
 }
 /* line 28, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_jumbotron.scss */
 .container .jumbotron, .container-fluid .jumbotron {
@@ -8937,136 +8937,191 @@ h6,
 
 /* line 9, ../sass/partials/_template-helpers.scss */
 .v-offset-5 {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* line 10, ../sass/partials/_template-helpers.scss */
 .v-offset-6 {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 /* line 11, ../sass/partials/_template-helpers.scss */
 .v-offset-7 {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 /* line 12, ../sass/partials/_template-helpers.scss */
 .v-offset-8 {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 /* line 13, ../sass/partials/_template-helpers.scss */
 .v-offset-9 {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 /* line 14, ../sass/partials/_template-helpers.scss */
 .v-offset-10 {
-  margin-top: 150px;
+  margin-top: 80px;
+}
+
+/* line 15, ../sass/partials/_template-helpers.scss */
+.v-offset-11 {
+  margin-top: 90px;
 }
 
 /* line 16, ../sass/partials/_template-helpers.scss */
+.v-offset-12 {
+  margin-top: 100px;
+}
+
+/* line 17, ../sass/partials/_template-helpers.scss */
+.v-offset-13 {
+  margin-top: 150px;
+}
+
+/* line 19, ../sass/partials/_template-helpers.scss */
 .v-offset-bot-0 {
   margin-bottom: 0;
 }
 
-/* line 18, ../sass/partials/_template-helpers.scss */
+/* line 21, ../sass/partials/_template-helpers.scss */
+.pad-top-0 {
+  padding-top: 0;
+}
+
+/* line 22, ../sass/partials/_template-helpers.scss */
 .pad-top-1 {
   padding-top: 2px;
 }
 
-/* line 19, ../sass/partials/_template-helpers.scss */
+/* line 23, ../sass/partials/_template-helpers.scss */
 .pad-top-2 {
   padding-top: 5px;
 }
 
-/* line 20, ../sass/partials/_template-helpers.scss */
+/* line 24, ../sass/partials/_template-helpers.scss */
 .pad-top-3 {
   padding-top: 10px;
 }
 
-/* line 21, ../sass/partials/_template-helpers.scss */
+/* line 25, ../sass/partials/_template-helpers.scss */
 .pad-top-4 {
   padding-top: 15px;
 }
 
-/* line 22, ../sass/partials/_template-helpers.scss */
-.pad-top-5 {
-  padding-top: 30px;
-}
-
-/* line 23, ../sass/partials/_template-helpers.scss */
-.pad-top-6 {
-  padding-top: 40px;
-}
-
-/* line 24, ../sass/partials/_template-helpers.scss */
-.pad-top-7 {
-  padding-top: 60px;
-}
-
-/* line 25, ../sass/partials/_template-helpers.scss */
-.pad-top-8 {
-  padding-top: 80px;
-}
-
 /* line 26, ../sass/partials/_template-helpers.scss */
-.pad-top-9 {
-  padding-top: 100px;
+.pad-top-5 {
+  padding-top: 20px;
 }
 
 /* line 27, ../sass/partials/_template-helpers.scss */
-.pad-top-10 {
-  padding-top: 150px;
+.pad-top-6 {
+  padding-top: 30px;
+}
+
+/* line 28, ../sass/partials/_template-helpers.scss */
+.pad-top-7 {
+  padding-top: 40px;
 }
 
 /* line 29, ../sass/partials/_template-helpers.scss */
+.pad-top-8 {
+  padding-top: 50px;
+}
+
+/* line 30, ../sass/partials/_template-helpers.scss */
+.pad-top-9 {
+  padding-top: 60px;
+}
+
+/* line 31, ../sass/partials/_template-helpers.scss */
+.pad-top-10 {
+  padding-top: 80px;
+}
+
+/* line 32, ../sass/partials/_template-helpers.scss */
+.pad-top-11 {
+  padding-top: 90px;
+}
+
+/* line 33, ../sass/partials/_template-helpers.scss */
+.pad-top-12 {
+  padding-top: 100px;
+}
+
+/* line 34, ../sass/partials/_template-helpers.scss */
+.pad-top-13 {
+  padding-top: 150px;
+}
+
+/* line 36, ../sass/partials/_template-helpers.scss */
+.pad-bot-0 {
+  padding-bottom: 0;
+}
+
+/* line 37, ../sass/partials/_template-helpers.scss */
 .pad-bot-1 {
   padding-bottom: 2px;
 }
 
-/* line 30, ../sass/partials/_template-helpers.scss */
+/* line 38, ../sass/partials/_template-helpers.scss */
 .pad-bot-2 {
   padding-bottom: 5px;
 }
 
-/* line 31, ../sass/partials/_template-helpers.scss */
+/* line 39, ../sass/partials/_template-helpers.scss */
 .pad-bot-3 {
   padding-bottom: 10px;
 }
 
-/* line 32, ../sass/partials/_template-helpers.scss */
+/* line 40, ../sass/partials/_template-helpers.scss */
 .pad-bot-4 {
   padding-bottom: 15px;
 }
 
-/* line 33, ../sass/partials/_template-helpers.scss */
+/* line 41, ../sass/partials/_template-helpers.scss */
 .pad-bot-5 {
+  padding-bottom: 20px;
+}
+
+/* line 42, ../sass/partials/_template-helpers.scss */
+.pad-bot-6 {
   padding-bottom: 30px;
 }
 
-/* line 34, ../sass/partials/_template-helpers.scss */
-.pad-bot-6 {
+/* line 43, ../sass/partials/_template-helpers.scss */
+.pad-bot-7 {
   padding-bottom: 40px;
 }
 
-/* line 35, ../sass/partials/_template-helpers.scss */
-.pad-bot-7 {
+/* line 44, ../sass/partials/_template-helpers.scss */
+.pad-bot-8 {
+  padding-bottom: 50px;
+}
+
+/* line 45, ../sass/partials/_template-helpers.scss */
+.pad-bot-9 {
   padding-bottom: 60px;
 }
 
-/* line 36, ../sass/partials/_template-helpers.scss */
-.pad-bot-8 {
+/* line 46, ../sass/partials/_template-helpers.scss */
+.pad-bot-10 {
   padding-bottom: 80px;
 }
 
-/* line 37, ../sass/partials/_template-helpers.scss */
-.pad-bot-9 {
+/* line 47, ../sass/partials/_template-helpers.scss */
+.pad-bot-11 {
+  padding-bottom: 90px;
+}
+
+/* line 48, ../sass/partials/_template-helpers.scss */
+.pad-bot-12 {
   padding-bottom: 100px;
 }
 
-/* line 38, ../sass/partials/_template-helpers.scss */
-.pad-bot-10 {
+/* line 49, ../sass/partials/_template-helpers.scss */
+.pad-bot-13 {
   padding-bottom: 150px;
 }
 
@@ -9191,4 +9246,17 @@ h6,
 /* line 12, ../sass/partials/_lists.scss */
 .list-striped-reversed > li:nth-of-type(even) {
   background-color: #eeeeee;
+}
+
+/* line 1, ../sass/partials/_layout.scss */
+.hero {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #EEE;
+}
+
+/* line 2, ../sass/partials/pages/_classes.scss */
+.page-classes .hero {
+  background-image: url("../images/template/hero.jpg");
 }
