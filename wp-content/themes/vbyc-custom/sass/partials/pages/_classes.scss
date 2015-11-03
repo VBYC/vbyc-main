@@ -1,5 +1,20 @@
 .page-classes {
 	.hero {
-		background-image: url("../images/template/hero.jpg");
+		
 	}
+}
+
+
+
+@media (max-width: $screen-sm-max) {
+
+	.hero {
+		
+	}
+	.hero-image {
+		img {
+			width: 150%;
+		}
+	}	
+
 }

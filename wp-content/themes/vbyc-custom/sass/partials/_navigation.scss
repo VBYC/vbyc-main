@@ -2,6 +2,14 @@
     NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+.navbar-toggle {
+    .icon-bar {
+        background-color: $color-red;
+    }  
+} 
+
+
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;

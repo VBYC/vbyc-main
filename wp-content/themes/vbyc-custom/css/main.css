@@ -9134,6 +9134,23 @@ h6,
   padding-bottom: 25px;
 }
 
+/* line 9, ../sass/partials/_header.scss */
+.navbar-list {
+  display: inline-block;
+}
+
+/* line 12, ../sass/partials/_header.scss */
+.main-logo {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+@media (min-width: 992px) {
+  /* line 25, ../sass/partials/_header.scss */
+  .main-logo {
+    margin-bottom: 0;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -9145,30 +9162,35 @@ h6,
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 5, ../sass/partials/_navigation.scss */
+/* line 7, ../sass/partials/_navigation.scss */
+.navbar-toggle .icon-bar {
+  background-color: #E74C3C;
+}
+
+/* line 13, ../sass/partials/_navigation.scss */
 .navbar-list {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
 }
-/* line 8, ../sass/partials/_navigation.scss */
+/* line 16, ../sass/partials/_navigation.scss */
 .navbar-list > .item {
   float: left;
   position: relative;
 }
-/* line 11, ../sass/partials/_navigation.scss */
+/* line 19, ../sass/partials/_navigation.scss */
 .navbar-list > .item:not(:last-child) {
   margin-right: 20px;
 }
-/* line 15, ../sass/partials/_navigation.scss */
+/* line 23, ../sass/partials/_navigation.scss */
 .navbar-list > .item:hover .navbar-list-sub {
   display: block;
 }
-/* line 22, ../sass/partials/_navigation.scss */
+/* line 30, ../sass/partials/_navigation.scss */
 .navbar-list .selected .link {
   color: #2C3E50;
   border-bottom-color: #37BC98;
 }
-/* line 28, ../sass/partials/_navigation.scss */
+/* line 36, ../sass/partials/_navigation.scss */
 .navbar-list .link {
   padding: 7px 10px;
   line-height: 1;
@@ -9176,31 +9198,31 @@ h6,
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
-/* line 35, ../sass/partials/_navigation.scss */
+/* line 43, ../sass/partials/_navigation.scss */
 .navbar-list .link.normal:hover {
   border-bottom-color: #37BC98;
   animation: width false;
   text-decoration: none;
 }
-/* line 40, ../sass/partials/_navigation.scss */
+/* line 48, ../sass/partials/_navigation.scss */
 .navbar-list .link.normal:focus, .navbar-list .link.normal:active {
   border-bottom-color: transparent;
 }
-/* line 47, ../sass/partials/_navigation.scss */
+/* line 55, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize {
   background-color: #E74C3C;
   color: #fff;
   padding-top: 10px;
 }
-/* line 51, ../sass/partials/_navigation.scss */
+/* line 59, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize:hover {
   background-color: #CB1300;
 }
-/* line 54, ../sass/partials/_navigation.scss */
+/* line 62, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize:focus, .navbar-list .emphasize:active {
   background-color: #2C3E50;
 }
-/* line 59, ../sass/partials/_navigation.scss */
+/* line 67, ../sass/partials/_navigation.scss */
 .navbar-list .emphasize-secondary {
   background-color: #37BC98;
   color: #fff;
@@ -9209,7 +9231,7 @@ h6,
   line-height: 1;
 }
 
-/* line 71, ../sass/partials/_navigation.scss */
+/* line 79, ../sass/partials/_navigation.scss */
 .navbar-list-sub {
   position: absolute;
   background-color: #fff;
@@ -9221,7 +9243,7 @@ h6,
   right: -50%;
   display: none;
 }
-/* line 82, ../sass/partials/_navigation.scss */
+/* line 90, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub {
   padding: 10px;
   display: block;
@@ -9229,7 +9251,7 @@ h6,
   color: #2C3E50;
   border-bottom: 1px solid #f5f5f5;
 }
-/* line 88, ../sass/partials/_navigation.scss */
+/* line 96, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #f5f5f5;
   text-decoration: none;
@@ -9250,13 +9272,26 @@ h6,
 
 /* line 1, ../sass/partials/_layout.scss */
 .hero {
-  height: 400px;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
   background-position: 50% 50%;
-  background-color: #EEE;
 }
 
-/* line 2, ../sass/partials/pages/_classes.scss */
-.page-classes .hero {
-  background-image: url("../images/template/hero.jpg");
+/* line 10, ../sass/partials/_layout.scss */
+.hero-image img {
+  margin-left: -50%;
+  margin-right: -50%;
+}
+
+@media (max-width: 991px) {
+  /* line 24, ../sass/partials/_layout.scss */
+  .hero-image img {
+    width: 150%;
+  }
+}
+@media (max-width: 991px) {
+  /* line 15, ../sass/partials/pages/_classes.scss */
+  .hero-image img {
+    width: 150%;
+  }
 }

@@ -6,3 +6,26 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
+.navbar-list {
+	display: inline-block;
+}
+.main-logo {
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+
+
+@media (min-width: $screen-md-min) {
+
+//	.main-logo {
+//		text-align: left;
+//	}
+
+	.main-logo {
+		margin-bottom: 0;
+	}
+
+
+}
+

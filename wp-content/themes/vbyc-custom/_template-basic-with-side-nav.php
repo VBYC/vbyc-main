@@ -22,88 +22,96 @@
     <header class="header-main v-offset-bot-0">
         <div class="container">
             <div class="row">
-                <div class="main-logo col-md-4">
+                <div class="main-logo-container col-xs-12 col-md-4 text-center">
                     <a href="/" title="Home">
-                        <img src="images/header/vbyc-logo.png" alt="VBYC logo">
+                        <img src="images/header/vbyc-logo.png" alt="VBYC logo" class="main-logo img-responsive">
                     </a>
                 </div>
-                <nav class="navbar pull-right" role="navigation">
-                    <ul class="navbar-list list-unstyled clearfix">
-                        <li class="item">
-                            <a href="#" class="link normal">Sessions</a>
-                            <ul class="navbar-list-sub list-unstyled">
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Schedule
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        What To Bring
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Preparing For Camp
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Financial Aid
-                                    </a>
-                                 </li>
-                            </ul>
-                        </li>
-                        <li class="item selected">
-                            <a href="#" class="link normal">Camp Life</a>
-                            <ul class="navbar-list-sub list-unstyled">
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Typical Day
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Classes
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Activities
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Gallery
-                                    </a>
-                                 </li>
-                            </ul>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="link normal">About Us</a>
-                            <ul class="navbar-list-sub list-unstyled">
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        News
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="Who's In Charge?" class="link-sub">
-                                        Classes
-                                    </a>
-                                 </li>
-                                 <li class="item-sub">
-                                    <a href="#" class="link-sub">
-                                        Accredidations
-                                    </a>
-                                 </li>
-                            </ul>
-                        </li>
-                        <li class="item"><a href="#" class="link normal">Alumni</a></li>
-                        <li class="item"><a href="#" class="link normal">Donate</a></li>
-                        <li class="item"><a href="#" class="link emphasize">Register</a></li>
-                    </ul>                        
-                </nav>
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-xs-12 col-md-8">
+                    <nav class="navbar  text-center collapse navbar-collapse" role="navigation">
+                        <ul class="navbar-list list-unstyled clearfix">
+                            <li class="item">
+                                <a href="#" class="link normal">Sessions</a>
+                                <ul class="navbar-list-sub list-unstyled">
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Schedule
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            What To Bring
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Preparing For Camp
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Financial Aid
+                                        </a>
+                                     </li>
+                                </ul>
+                            </li>
+                            <li class="item selected">
+                                <a href="#" class="link normal">Camp Life</a>
+                                <ul class="navbar-list-sub list-unstyled">
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Typical Day
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Classes
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Activities
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Gallery
+                                        </a>
+                                     </li>
+                                </ul>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link normal">About Us</a>
+                                <ul class="navbar-list-sub list-unstyled">
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            News
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="Who's In Charge?" class="link-sub">
+                                            Classes
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Accredidations
+                                        </a>
+                                     </li>
+                                </ul>
+                            </li>
+                            <li class="item"><a href="#" class="link normal">Alumni</a></li>
+                            <li class="item"><a href="#" class="link normal">Donate</a></li>
+                            <li class="item"><a href="#" class="link emphasize">Register</a></li>
+                        </ul>                        
+                    </nav>
+                </div>
             </div><!-- /.row -->
 
         </div>
@@ -112,8 +120,8 @@
     <section class="hero">
         <div class="container-fluid">
             <div class="row">
-                <div class="content col-md-12">
-
+                <div class="content col-sm-12">
+                    <div class="hero-image"><img src="images/template/hero.jpg"></div>
                 </div>
             </div><!-- /.row -->
         </div>
@@ -136,7 +144,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> 
                     <aside class="sidenav">
                         <ul class="sidenav-list list-unstyled">
                             <li class="item">
@@ -170,7 +178,7 @@
                     </aside>
                 </div><!-- /column -->
 
-                <div class="col-md-8">
+                <div class="col-xs-12 col-sm-8">
                     <article>
                         <ul class="content-list list-unstyled">
                             <li  id="archery" class="item">
@@ -179,15 +187,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-md-4 ">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-xs-12 col-md-8 ">
                                         <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                         <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>

@@ -1,6 +1,29 @@
 .hero {
-	height: 400px;
-	background-repeat: no-repeat;
+	overflow: hidden;
+	text-align: center;
+//	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-color: #EEE;
+//	background-color: #EEE;
+
+}
+.hero-image {
+	img {
+		margin-left: -50%;
+		margin-right: -50%;
+	}
+}
+
+
+
+@media (max-width: $screen-sm-max) {
+
+	.hero {
+		
+	}
+	.hero-image {
+		img {
+			width: 150%;
+		}
+	}	
+
 }
