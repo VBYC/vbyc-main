@@ -4,15 +4,16 @@
 
 
 .navbar-toggle {
+    margin: 7px 0 0;
     .icon-bar {
         background-color: $color-red;
     }  
 } 
 
-
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;
+    display: inline-block;
     > .item {
         float: left;
         position: relative;
