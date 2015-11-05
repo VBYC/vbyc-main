@@ -36,9 +36,9 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div>
-                <div class="col-xs-12 col-md-8 ">
+                <div class="col-xs-12 col-md-8">
                     
-                    <nav class="navbar navbar-nav text-center collapseX navbar-collapse" role="navigation">
+                    <nav id="bs-navbar" class="navbar navbar-nav text-center collapse navbar-collapse" role="navigation">
                         <ul class="navbar-list list-unstyled clearfix">
                             <li class="item">
                                 <a href="#" class="link normal">Sessions</a>
