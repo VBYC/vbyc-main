@@ -47,3 +47,28 @@
 .pad-bot-11 { padding-bottom: 90px;  } 
 .pad-bot-12 { padding-bottom: 100px; } 
 .pad-bot-13 { padding-bottom: 150px; } 
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	CUSTOM BREAKPOINT CLASSES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.img-sm-fluid {
+	
+}
+
+@media (max-width: $screen-sm-max) {
+
+	.hero {
+		
+	}
+	.hero-image {
+		img {
+			width: 150%;
+		}
+	}	
+
+}
+
+

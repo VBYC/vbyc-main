@@ -10,96 +10,209 @@
     }  
 } 
 
+.navbar-nav {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;
-    display: inline-block;
+    margin-top: 30px;
+//    display: inline-block;
     > .item {
-        float: left;
-        position: relative;
+//        float: left;
+//        position: relative;
         &:not(:last-child) {
-            margin-right: 20px;
-        }
-        &:hover {
-            .navbar-list-sub {
-                display: block;
+//            margin-right: 20px;
+            .link {
+                border-bottom: none;
             }
         }
-
+//        &:hover {
+//            .navbar-list-sub {
+//                display: block;
+//            }
+//        }
     }
     .selected {
-        .link {
-            color: $color-slate;
-            border-bottom-color: $link-color;
-        }
+//        .link {
+//            color: $color-slate;
+//            border-bottom-color: $link-color;
+//        }
     }
-    
     .link {
-        padding: 7px 10px ;
+        padding: 18px 10px ;
         line-height: 1;
         display: block;
+        border-top: 2px solid $link-color;
+        border-bottom: 2px solid $link-color;
         text-decoration: none; 
-        border-bottom: 2px solid transparent;
+//        border-bottom: 2px solid transparent;
         &.normal {
             &:hover {
-                border-bottom-color: $link-color;
-                animation: width 0% > 100%; 
+//                border-bottom-color: $link-color;
+//                animation: width 0% > 100%; 
                 text-decoration: none;
+                background-color: $navbar-sub-graphic-color;
             }
             &:focus,
             &:active {
-                border-bottom-color: transparent;
+//                border-bottom-color: transparent;
             }
         }
-        
     }
     .emphasize {
-        background-color: $color-red;
-        color: #fff;
-        padding-top: 10px;
-        &:hover {
-            background-color: $color-red-darker;
-        }
-        &:focus,
-        &:active {
-             background-color: $link-focus-color;
-        }
+//        background-color: $color-red;
+//        color: #fff;
+//        padding-top: 10px;
+//        &:hover {
+//            background-color: $color-red-darker;
+//        }
+//        &:focus,
+//        &:active {
+//             background-color: $link-focus-color;
+//        }
     }
     .emphasize-secondary {
-        background-color: $link-color;
-        color: #fff;
-        padding: 10px;
-        display: block;
-        line-height: 1;
+//        background-color: $link-color;
+//        color: #fff;
+//        padding: 10px;
+//        display: block;
+//        line-height: 1;
     }
 }
-
-
-
-
 .navbar-list-sub {
-    position: absolute;
-    background-color: #fff;
-    border-left: 1px solid $navbar-sub-graphic-color;
-    border-right: 1px solid $navbar-sub-graphic-color;
-    border-top: 2px solid $link-color;
-    margin-top: -2px;
-
-    left: -50%;
-    right: -50%;
     display: none;
+//    position: absolute;
+//    background-color: #fff;
+//    border-left: 1px solid $navbar-sub-graphic-color;
+//    border-right: 1px solid $navbar-sub-graphic-color;
+    border-top: 2px solid $navbar-sub-graphic-color;
+      
+//    margin-top: -2px;
+
+//    left: -50%;
+//    right: -50%;
+//    
+
+
     .link-sub {
-        padding: 10px;
-        display: block;
-        white-space: nowrap;
-        color: $color-slate;
-        border-bottom: 1px solid $navbar-sub-graphic-color;
+            padding: 10px;
+            display: block;
+            //        white-space: nowrap;
+            color: $color-slate;
+            border-bottom: 2px solid $navbar-sub-graphic-color;
         &:hover {
             background-color: $navbar-sub-graphic-color;
             text-decoration: none;
         }
     }
 }
+
+
+
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+  
+}
+
+@media (min-width: $screen-sm-min) {
+    .navbar-nav {
+        float: none;
+    }
+    .navbar-list {
+        display: inline-block;
+        > .item {
+            float: left;
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &:hover {
+                .navbar-list-sub {
+                    display: block;
+                }
+            }
+        }
+        .selected {
+            .link {
+                color: $color-slate;
+                border-bottom-color: $link-color;
+            }
+        }
+        .link {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-top: 0;
+            border-bottom-color: transparent;
+            &.normal {
+                &:hover {
+                    border-bottom-color: $link-color;
+                    animation: width 0% > 100%; 
+                    background-color: transparent;
+                }
+                &:focus,
+                &:active {
+                    border-bottom-color: transparent;
+                }
+            }
+            
+        }
+        .emphasize {
+            background-color: $color-red;
+            color: #fff;
+            padding-top: 10px;
+            &:hover {
+                background-color: $color-red-darker;
+            }
+            &:focus,
+            &:active {
+                 background-color: $link-focus-color;
+            }
+        }
+        .emphasize-secondary {
+            background-color: $link-color;
+            color: #fff;
+            padding: 10px;
+            display: block;
+            line-height: 1;
+        }
+    }
+    .navbar-list-sub {
+
+
+        position: absolute;
+        background-color: #fff;
+        border-left: 1px solid $navbar-sub-graphic-color;
+        border-right: 1px solid $navbar-sub-graphic-color;
+        border-top: 2px solid $link-color;
+        margin-top: -2px;
+
+        left: -50%;
+        right: -50%;
+        z-index: 1;
+  
+        .link-sub {
+            white-space: nowrap;
+            color: $color-slate;
+            border-bottom-width: 1px;
+            &:hover {
+                background-color: $navbar-sub-graphic-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    .navbar-list {
+        margin-top: 10px;
+    }   
+}
+
+
+
 
 
 
