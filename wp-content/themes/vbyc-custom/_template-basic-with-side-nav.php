@@ -37,7 +37,6 @@
                     </button>
                 </div>
                 <div class="col-xs-12 col-md-8">
-                    
                     <nav id="bs-navbar" class="navbar navbar-nav text-center collapse navbar-collapse" role="navigation">
                         <ul class="navbar-list list-unstyled clearfix">
                             <li class="item">
@@ -182,7 +181,7 @@
                     </aside>
                 </div><!-- /column -->
 
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-12 col-sm-8 ">
                     <article>
                         <ul class="content-list list-unstyled">
                             <li  id="archery" class="item">
@@ -191,14 +190,14 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>
                                 <figure class="row">
-                                    <div class="col-xs-12 col-md-4 ">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
                                         <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-xs-12 col-md-8 ">
-                                        <div class="row">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
                                             <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
+                                        <div class="v-offset-5">
                                             <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
@@ -211,15 +210,15 @@
 
                                 </div> 
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                           
@@ -230,15 +229,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>  
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                          
@@ -249,15 +248,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>  
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                          
@@ -268,15 +267,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>   
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                         
@@ -287,15 +286,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div> 
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                          
@@ -306,15 +305,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>  
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                          
@@ -325,15 +324,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div> 
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                           
@@ -344,15 +343,15 @@
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div>  
                                 <figure class="row">
-                                    <div class="col-md-4">
-                                        <img src="images/template/content-figure-portrait.jpg">
+                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
+                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                        <div>
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
-                                        <div class="row v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg">
+                                        <div class="v-offset-5">
+                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                 </figure>                          
