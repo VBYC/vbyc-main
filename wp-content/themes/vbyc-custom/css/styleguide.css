@@ -9219,7 +9219,7 @@ h6,
 	CUSTOM BREAKPOINT CLASSES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 991px) {
-  /* line 67, ../sass/partials/_template-helpers.scss */
+  /* line 59, ../sass/partials/_template-helpers.scss */
   .hero-image img {
     width: 150%;
   }
@@ -9230,39 +9230,43 @@ h6,
 /* line 5, ../sass/partials/_header.scss */
 .header-main {
   padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 /* line 10, ../sass/partials/_header.scss */
+.main-logo-container {
+  margin-bottom: 25px;
+}
+
+/* line 14, ../sass/partials/_header.scss */
 .main-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 15, ../sass/partials/_header.scss */
+/* line 19, ../sass/partials/_header.scss */
 .main-logo-icon {
   display: none;
 }
 
 @media (max-width: 300px) {
-  /* line 28, ../sass/partials/_header.scss */
+  /* line 32, ../sass/partials/_header.scss */
   .main-logo-icon {
     display: inline-block;
   }
 
-  /* line 31, ../sass/partials/_header.scss */
+  /* line 35, ../sass/partials/_header.scss */
   .main-logo-normal {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  /* line 38, ../sass/partials/_header.scss */
+  /* line 42, ../sass/partials/_header.scss */
   .hero-image img {
     width: 150%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 45, ../sass/partials/_header.scss */
+  /* line 49, ../sass/partials/_header.scss */
   .main-logo {
     float: none;
   }
@@ -9287,23 +9291,23 @@ h6,
   background-color: #E74C3C;
 }
 
-/* line 13, ../sass/partials/_navigation.scss */
+/* line 14, ../sass/partials/_navigation.scss */
 .navbar-nav {
-  margin-left: -30px;
-  margin-right: -30px;
+  margin: 0 -30px;
+  border: none;
 }
 
-/* line 18, ../sass/partials/_navigation.scss */
+/* line 19, ../sass/partials/_navigation.scss */
 .navbar-list {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
-  margin-top: 30px;
+  margin-bottom: 0;
 }
-/* line 28, ../sass/partials/_navigation.scss */
+/* line 30, ../sass/partials/_navigation.scss */
 .navbar-list > .item:not(:last-child) .link {
   border-bottom: none;
 }
-/* line 44, ../sass/partials/_navigation.scss */
+/* line 46, ../sass/partials/_navigation.scss */
 .navbar-list .link {
   padding: 18px 10px;
   line-height: 1;
@@ -9312,90 +9316,90 @@ h6,
   border-bottom: 2px solid #37BC98;
   text-decoration: none;
 }
-/* line 53, ../sass/partials/_navigation.scss */
+/* line 55, ../sass/partials/_navigation.scss */
 .navbar-list .link.normal:hover {
   text-decoration: none;
   background-color: #f5f5f5;
 }
 
-/* line 85, ../sass/partials/_navigation.scss */
+/* line 87, ../sass/partials/_navigation.scss */
 .navbar-list-sub {
   display: none;
   border-top: 2px solid #f5f5f5;
 }
-/* line 100, ../sass/partials/_navigation.scss */
+/* line 102, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub {
   padding: 10px;
   display: block;
   color: #2C3E50;
   border-bottom: 2px solid #f5f5f5;
 }
-/* line 106, ../sass/partials/_navigation.scss */
+/* line 108, ../sass/partials/_navigation.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #f5f5f5;
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  /* line 121, ../sass/partials/_navigation.scss */
+  /* line 123, ../sass/partials/_navigation.scss */
   .navbar-nav {
     float: none;
   }
 
-  /* line 124, ../sass/partials/_navigation.scss */
+  /* line 126, ../sass/partials/_navigation.scss */
   .navbar-list {
     display: inline-block;
   }
-  /* line 126, ../sass/partials/_navigation.scss */
+  /* line 128, ../sass/partials/_navigation.scss */
   .navbar-list > .item {
     float: left;
     position: relative;
   }
-  /* line 129, ../sass/partials/_navigation.scss */
+  /* line 131, ../sass/partials/_navigation.scss */
   .navbar-list > .item:not(:last-child) {
     margin-right: 20px;
   }
-  /* line 133, ../sass/partials/_navigation.scss */
+  /* line 135, ../sass/partials/_navigation.scss */
   .navbar-list > .item:hover .navbar-list-sub {
     display: block;
   }
-  /* line 139, ../sass/partials/_navigation.scss */
+  /* line 141, ../sass/partials/_navigation.scss */
   .navbar-list .selected .link {
     color: #2C3E50;
     border-bottom-color: #37BC98;
   }
-  /* line 144, ../sass/partials/_navigation.scss */
+  /* line 146, ../sass/partials/_navigation.scss */
   .navbar-list .link {
     padding-top: 7px;
     padding-bottom: 7px;
     border-top: 0;
     border-bottom-color: transparent;
   }
-  /* line 150, ../sass/partials/_navigation.scss */
+  /* line 152, ../sass/partials/_navigation.scss */
   .navbar-list .link.normal:hover {
     border-bottom-color: #37BC98;
     animation: width false;
     background-color: transparent;
   }
-  /* line 155, ../sass/partials/_navigation.scss */
+  /* line 157, ../sass/partials/_navigation.scss */
   .navbar-list .link.normal:focus, .navbar-list .link.normal:active {
     border-bottom-color: transparent;
   }
-  /* line 162, ../sass/partials/_navigation.scss */
+  /* line 164, ../sass/partials/_navigation.scss */
   .navbar-list .emphasize {
     background-color: #E74C3C;
     color: #fff;
     padding-top: 10px;
   }
-  /* line 166, ../sass/partials/_navigation.scss */
+  /* line 168, ../sass/partials/_navigation.scss */
   .navbar-list .emphasize:hover {
     background-color: #CB1300;
   }
-  /* line 169, ../sass/partials/_navigation.scss */
+  /* line 171, ../sass/partials/_navigation.scss */
   .navbar-list .emphasize:focus, .navbar-list .emphasize:active {
     background-color: #2C3E50;
   }
-  /* line 174, ../sass/partials/_navigation.scss */
+  /* line 176, ../sass/partials/_navigation.scss */
   .navbar-list .emphasize-secondary {
     background-color: #37BC98;
     color: #fff;
@@ -9404,7 +9408,7 @@ h6,
     line-height: 1;
   }
 
-  /* line 182, ../sass/partials/_navigation.scss */
+  /* line 184, ../sass/partials/_navigation.scss */
   .navbar-list-sub {
     position: absolute;
     background-color: #fff;
@@ -9416,20 +9420,20 @@ h6,
     right: -50%;
     z-index: 1;
   }
-  /* line 196, ../sass/partials/_navigation.scss */
+  /* line 198, ../sass/partials/_navigation.scss */
   .navbar-list-sub .link-sub {
     white-space: nowrap;
     color: #2C3E50;
     border-bottom-width: 1px;
   }
-  /* line 200, ../sass/partials/_navigation.scss */
+  /* line 202, ../sass/partials/_navigation.scss */
   .navbar-list-sub .link-sub:hover {
     background-color: #f5f5f5;
     text-decoration: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 209, ../sass/partials/_navigation.scss */
+  /* line 211, ../sass/partials/_navigation.scss */
   .navbar-list {
     margin-top: 10px;
   }

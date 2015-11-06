@@ -54,21 +54,12 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-.img-sm-fluid {
-	
-}
-
 @media (max-width: $screen-sm-max) {
-
-	.hero {
-		
-	}
 	.hero-image {
 		img {
 			width: 150%;
 		}
 	}	
-
 }
 
 

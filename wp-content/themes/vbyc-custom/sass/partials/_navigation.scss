@@ -10,15 +10,17 @@
     }  
 } 
 
+
 .navbar-nav {
-    margin-left: -30px;
-    margin-right: -30px;
+    margin: 0 -30px;
+    border: none;
 }
 
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;
-    margin-top: 30px;
+//    margin-top: 25px;
+    margin-bottom: 0;
 //    display: inline-block;
     > .item {
 //        float: left;
