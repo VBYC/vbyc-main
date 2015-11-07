@@ -134,7 +134,7 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="hero-text">
-                            <p class="h4 section-name text-uppercase">Sessions</p>
+                            <p class="h4 section-name text-uppercase">Camp Life</p>
                             <h1 class="page-name">Classes</h1>
                             <div class="description">
                                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
