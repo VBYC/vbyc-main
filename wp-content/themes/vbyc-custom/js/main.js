@@ -4,7 +4,9 @@
 			var subNavSelector = '.navbar-list-sub';
 			var navbarSiblingsSelector  = '.navbar-list .link';
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
+			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
+			vbyc.util.initSidenav();
+			
 		},
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			$( ".navbar-toggle" ).on( "click", function() {
@@ -51,6 +53,16 @@
 				}
 			});
 		}
+		// initSidenav: function(subNavSelector,navbarSiblingsSelector) {
+		// 	$('#sidenav').affix({
+		// 		offset: {
+		// 			top: 100,
+		// 			bottom: function () {
+		// 				return (this.bottom = $('.footer').outerHeight(true))
+		// 			}
+		// 		}
+		// 	})
+		// }
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));
 

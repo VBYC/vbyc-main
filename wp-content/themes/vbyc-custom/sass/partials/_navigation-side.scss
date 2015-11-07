@@ -1,0 +1,22 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SIDE NAVIGATION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.sidenav {
+    &.affix {
+        position: fixed;
+        top: 40px;
+    }
+}
+.sidenav-list {
+    
+    > .item {
+        margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 1.2;
+    }  
+    
+
+} 
+
+

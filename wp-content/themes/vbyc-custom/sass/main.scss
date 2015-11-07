@@ -1,7 +1,13 @@
-// VBYC Custom
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	VBYC CUSTOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @import "partials/fonts";
 
-// Bootstrap
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	BOOTSTRAP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
@@ -12,14 +18,21 @@
 @import "bootstrap";
 
 
-// VBYC Custom
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	VBYC CUSTOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+// GLOBAL
+@import "partials/template-helpers";
+@import "partials/layout";
 @import "partials/fonts";
 @import "partials/typography";
-@import "partials/template-helpers";
 @import "partials/header";
 @import "partials/footer";
-@import "partials/navigation";
+@import "partials/navigation-main";
+@import "partials/navigation-side";
 @import "partials/lists";
-@import "partials/layout";
+@import "partials/hero";
 
+// PAGES
 @import "partials/pages/classes";

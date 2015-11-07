@@ -1,0 +1,31 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	HERO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.hero {
+	overflow: hidden;
+	text-align: center;
+	background-position: 50% 50%;
+	.hero-image {
+		img {
+			margin-left: -50%;
+			margin-right: -50%;
+		}
+	}
+	.section-name {
+		border-top: 1px solid $line-color;
+		border-bottom: 1px solid $line-color;
+		padding: $padding-base-vertical;
+		margin-top: $padding-base-vertical*6;
+		display: inline-block;
+		font-weight: bold;
+		+ .page-name  {
+			margin-top: $padding-base-vertical*2;
+		}
+	}
+	.description {
+		margin-top: $padding-base-vertical*3;
+	}
+
+}

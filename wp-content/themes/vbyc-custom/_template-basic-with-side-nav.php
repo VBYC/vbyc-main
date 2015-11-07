@@ -15,7 +15,7 @@
 
             <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="page-classes">
+    <body class="page-classes template-basic template-side-nav">
             <!--[if lt IE 8]>
                     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -119,249 +119,270 @@
 
         </div>
     </header>
-    
-    <section class="hero">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="content col-sm-12">
-                    <div class="hero-image"><img src="images/template/hero.jpg"></div>
-                </div>
-            </div><!-- /.row -->
-        </div>
-    </section>
-
-    <section class="content">
-       
-    
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container">
-                <h2 class="section-header">Sessions</h2>
-                <h1 class="page-name">Classes</h1>
-                <div class="description">
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                </div>            
+    <main>
+        <section class="hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="hero-image">
+                            <img src="images/template/hero.jpg">
+                        </div>
+                    </div>
+                </div><!-- /.row -->
             </div>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+                        <div class="hero-text">
+                            <p class="h4 section-name text-uppercase">Sessions</p>
+                            <h1 class="page-name">Classes</h1>
+                            <div class="description">
+                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                            </div>   
+                        </div> 
+                    </div>         
+                </div><!-- /.row -->
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-sm-4 col-md-3"> 
 
-        <div class="container">
-            <div class="row">
-                <div class="hidden-xs col-sm-4 col-md-3 col-lg-2"> 
-                    <aside class="sidenav">
-                        <ul class="sidenav-list list-unstyled">
-                            <li class="item">
-                                <a href="#archery" class="link sidenav-archery">Archery</a>
-                            </li>
-                            <li class="item">
-                                <a href="#arts-and-crafts" class="link sidenav-arts-and-crafts">Arts &amp; Crafts</a>
-                            </li>
-                            <li class="item">
-                                <a href="#canoeing-and-kayaking" class="link sidenav-canoeing-and-kayaking">Canoeing &amp; Kayaking</a>
-                            </li>
-                            <li class="item">
-                                <a href="#low-ropes" class="link sidenav-low-ropes">Low Ropes</a>
-                            </li>
-                            <li class="item">
-                                <a href="#nature" class="link sidenav-nature">Nature</a>
-                            </li>
-                            <li class="item">
-                                <a href="#rifelry" class="link sidenav-rifelry">Rifelry</a>
-                            </li>
-                            <li class="item">
-                                <a href="#song-and-dance" class="link sidenav-song-and-dance">Song &amp; Dance</a>
-                            </li>
-                            <li class="item">
-                                <a href="#sports" class="link sidenav-sports">Sports</a>
-                            </li>
-                            <li class="item">
-                                <a href="#swimming" class="link sidenav-swimming">Swimming</a>
-                            </li>
-                        </ul>
-                    </aside>
-                </div><!-- /column -->
 
-                <div class="col-xs-12 col-sm-8 ">
-                    <article>
-                        <ul class="content-list list-unstyled">
-                            <li  id="archery" class="item">
-                                <h3 class="link archery">Archery</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li id="arts-and-crafts" class="item">
-                                <h3 class="link arts-and-crafts">Arts &amp; Crafts</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                        <aside id="sidenav" class="sidenav affix" data-spy="affix" data-offset-top="800" data-offset-bottom="200">
+                            <ul class="nav sidenav-list list-unstyled">
+                                <li class="item">
+                                    <a href="#archery" class="link sidenav-archery">Archery</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#arts-and-crafts" class="link sidenav-arts-and-crafts">Arts &amp; Crafts</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#canoeing-and-kayaking" class="link sidenav-canoeing-and-kayaking">Canoeing &amp; Kayaking</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#low-ropes" class="link sidenav-low-ropes">Low Ropes</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#nature" class="link sidenav-nature">Nature</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#rifelry" class="link sidenav-rifelry">Rifelry</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#song-and-dance" class="link sidenav-song-and-dance">Song &amp; Dance</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#sports" class="link sidenav-sports">Sports</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#swimming" class="link sidenav-swimming">Swimming</a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div><!-- /column -->
 
-                                </div> 
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
+                    <div class="col-xs-12 col-sm-8">
+                        <article class="main-article">
+                            <ul class="content-list list-unstyled">
+                                <li id="archery" class="item">
+                                    <h3 class="heading archery">Archery</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                     </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>
+                                </li>
+                                <li id="arts-and-crafts" class="item">
+                                    <h3 class="heading arts-and-crafts">Arts &amp; Crafts</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+
+                                    </div> 
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </figure>                           
-                            </li>
-                            <li id="canoeing-and-kayaking" class="item">
-                                <h3 class="link canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>  
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                           
+                                </li>
+                                <li id="canoeing-and-kayaking" class="item">
+                                    <h3 class="heading canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div>  
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                          
+                                </li>
+                                <li id="low-ropes" class="item">
+                                    <h3 class="heading low-ropes">Low Ropes</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div>  
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </figure>                          
-                            </li>
-                            <li id="low-ropes" class="item">
-                                <h3 class="link low-ropes">Low Ropes</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>  
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                          
+                                </li>
+                                <li id="nature" class="item">
+                                    <h3 class="heading nature">Nature</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div>   
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                         
+                                </li>
+                                <li id="rifelry" class="item">
+                                    <h3 class="heading rifelry">Rifelry</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div> 
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </figure>                          
-                            </li>
-                            <li id="nature" class="item">
-                                <h3 class="link nature">Nature</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>   
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                          
+                                </li>
+                                <li id="song-and-dance" class="item">
+                                    <h3 class="heading song-and-dance">Song &amp; Dance</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div>  
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                          
+                                </li>
+                                <li id="sports" class="item">
+                                    <h3 class="heading sports">Sports</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div> 
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </figure>                         
-                            </li>
-                            <li id="rifelry" class="item">
-                                <h3 class="link rifelry">Rifelry</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div> 
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
+                                    </figure>                           
+                                </li>
+                                <li id="swimming" class="item">
+                                    <h3 class="heading swimming">Swimming</h3>
+                                    <div class="description">
+                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    </div>  
+                                    <figure class="figure-images">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5 col-md-4">
+                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                                <div>
+                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </figure>                          
-                            </li>
-                            <li id="song-and-dance" class="item">
-                                <h3 class="link song-and-dance">Song &amp; Dance</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>  
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </figure>                          
-                            </li>
-                            <li id="sports" class="item">
-                                <h3 class="link sports">Sports</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div> 
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </figure>                           
-                            </li>
-                            <li id="swimming" class="item">
-                                <h3 class="link swimming">Swimming</h3>
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div>  
-                                <figure class="row">
-                                    <div class="col-xs-12 col-sm-5 col-md-4 pad-bot-5">
-                                        <img src="images/template/content-figure-portrait.jpg" class="img-responsive">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                        <div>
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                        <div class="v-offset-5">
-                                            <img src="images/template/content-figure-landscape.jpg" class="img-responsive">
-                                        </div>
-                                    </div>
-                                </figure>                          
-                            </li>
-                        </ul>
-                    </article> 
-                </div><!-- /column -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section>
+                                    </figure>                          
+                                </li>
+                            </ul>
+                        </article> 
+                    </div><!-- /column -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section>
+    </main>
 
 
     <footer class="footer pad-top-7 pad-bot-5 v-offset-6">

@@ -1,10 +1,16 @@
 @charset "UTF-8";
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	VBYC CUSTOM
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	FONTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	BOOTSTRAP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -8902,101 +8908,8 @@ button.close {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	FONTS
+	VBYC CUSTOM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	TYPOGRAPHY
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, ../sass/partials/_typography.scss */
-body {
-  color: #555555;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-
-/* line 11, ../sass/partials/_typography.scss */
-a, .link-primary {
-  color: #37BC98;
-  font-family: "Varela Round", sans-serif;
-}
-/* line 14, ../sass/partials/_typography.scss */
-a:hover, .link-primary:hover, .sg-link-primary-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary, .sg-link-primary-hover .link-primary:hover, .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary {
-  color: #37BC98;
-  text-decoration: underline;
-}
-/* line 18, ../sass/partials/_typography.scss */
-a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary, a:active, .link-primary:active {
-  color: #2C3E50;
-  text-decoration: none;
-}
-
-/* line 26, ../sass/partials/_typography.scss */
-.link-primary {
-  text-decoration: none;
-}
-/* line 29, ../sass/partials/_typography.scss */
-.link-primary:hover, .sg-link-primary-hover .link-primary {
-  border-bottom: 2px solid #37BC98;
-  animation: width false;
-  text-decoration: none;
-}
-/* line 34, ../sass/partials/_typography.scss */
-.link-primary:focus, .sg-link-primary-focus .link-primary, .link-primary:active {
-  border-bottom: none;
-}
-
-/* line 39, ../sass/partials/_typography.scss */
-.link-jump {
-  margin-bottom: 20px;
-  display: inline-block;
-}
-/* line 42, ../sass/partials/_typography.scss */
-.link-jump:hover {
-  margin-bottom: 18px;
-}
-
-/* line 49, ../sass/partials/_typography.scss */
-h1,
-.h1 {
-  color: #0595E5;
-  font-family: "Roboto Slab", serif;
-  font-size: 64px;
-}
-
-/* line 55, ../sass/partials/_typography.scss */
-h2,
-.h2 {
-  color: #555555;
-  font-family: "Roboto Slab", serif;
-  font-size: 34px;
-}
-
-/* line 61, ../sass/partials/_typography.scss */
-h3,
-.h3 {
-  color: #E74C3C;
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-}
-
-/* line 67, ../sass/partials/_typography.scss */
-h4,
-.h4 {
-  font-size: 18px;
-}
-
-/* line 71, ../sass/partials/_typography.scss */
-h5,
-.h5 {
-  font-size: 14px;
-}
-
-/* line 75, ../sass/partials/_typography.scss */
-h6,
-.h6 {
-  font-size: 12px;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	CUSTOM TEMPLATE HELPERS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -9225,6 +9138,131 @@ h6,
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	LAYOUT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 5, ../sass/partials/_layout.scss */
+.main-content {
+  margin-top: 48px;
+}
+
+/* line 23, ../sass/partials/_layout.scss */
+.content-list > .item:not(:first-child) {
+  margin-top: 60px;
+}
+/* line 27, ../sass/partials/_layout.scss */
+.content-list > .item:first-child .heading {
+  margin-top: 0;
+}
+/* line 32, ../sass/partials/_layout.scss */
+.content-list .description {
+  margin-top: 30px;
+}
+/* line 35, ../sass/partials/_layout.scss */
+.content-list .figure-images {
+  margin-top: 10px;
+}
+/* line 37, ../sass/partials/_layout.scss */
+.content-list .figure-images .item {
+  margin-top: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	FONTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	TYPOGRAPHY
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_typography.scss */
+body {
+  color: #555555;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* line 11, ../sass/partials/_typography.scss */
+a, .link-primary {
+  color: #37BC98;
+  font-family: "Varela Round", sans-serif;
+}
+/* line 14, ../sass/partials/_typography.scss */
+a:hover, .link-primary:hover, .sg-link-primary-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary, .sg-link-primary-hover .link-primary:hover, .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary {
+  color: #37BC98;
+  text-decoration: underline;
+}
+/* line 18, ../sass/partials/_typography.scss */
+a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary, a:active, .link-primary:active {
+  color: #2C3E50;
+  text-decoration: none;
+}
+
+/* line 26, ../sass/partials/_typography.scss */
+.link-primary {
+  text-decoration: none;
+}
+/* line 29, ../sass/partials/_typography.scss */
+.link-primary:hover, .sg-link-primary-hover .link-primary {
+  border-bottom: 2px solid #37BC98;
+  animation: width false;
+  text-decoration: none;
+}
+/* line 34, ../sass/partials/_typography.scss */
+.link-primary:focus, .sg-link-primary-focus .link-primary, .link-primary:active {
+  border-bottom: none;
+}
+
+/* line 39, ../sass/partials/_typography.scss */
+.link-jump {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+/* line 42, ../sass/partials/_typography.scss */
+.link-jump:hover {
+  margin-bottom: 18px;
+}
+
+/* line 49, ../sass/partials/_typography.scss */
+h1,
+.h1 {
+  color: #0595E5;
+  font-family: "Roboto Slab", serif;
+  font-size: 64px;
+}
+
+/* line 55, ../sass/partials/_typography.scss */
+h2,
+.h2 {
+  color: #555555;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+/* line 61, ../sass/partials/_typography.scss */
+h3,
+.h3 {
+  color: #E74C3C;
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+}
+
+/* line 67, ../sass/partials/_typography.scss */
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+/* line 71, ../sass/partials/_typography.scss */
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+/* line 75, ../sass/partials/_typography.scss */
+h6,
+.h6 {
+  font-size: 12px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_header.scss */
@@ -9280,34 +9318,34 @@ h6,
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    NAVIGATION
+    MAIN - NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, ../sass/partials/_navigation.scss */
+/* line 6, ../sass/partials/_navigation-main.scss */
 .navbar-toggle {
   margin: 7px 0 0;
 }
-/* line 8, ../sass/partials/_navigation.scss */
+/* line 8, ../sass/partials/_navigation-main.scss */
 .navbar-toggle .icon-bar {
   background-color: #E74C3C;
 }
 
-/* line 14, ../sass/partials/_navigation.scss */
+/* line 14, ../sass/partials/_navigation-main.scss */
 .navbar-nav {
   margin: 0 -30px;
   border: none;
 }
 
-/* line 19, ../sass/partials/_navigation.scss */
+/* line 19, ../sass/partials/_navigation-main.scss */
 .navbar-list {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
   margin-bottom: 0;
 }
-/* line 30, ../sass/partials/_navigation.scss */
+/* line 30, ../sass/partials/_navigation-main.scss */
 .navbar-list > .item:not(:last-child) .link {
   border-bottom: none;
 }
-/* line 46, ../sass/partials/_navigation.scss */
+/* line 46, ../sass/partials/_navigation-main.scss */
 .navbar-list .link {
   padding: 18px 10px;
   line-height: 1;
@@ -9316,90 +9354,90 @@ h6,
   border-bottom: 2px solid #37BC98;
   text-decoration: none;
 }
-/* line 55, ../sass/partials/_navigation.scss */
+/* line 55, ../sass/partials/_navigation-main.scss */
 .navbar-list .link.normal:hover {
   text-decoration: none;
   background-color: #f5f5f5;
 }
 
-/* line 87, ../sass/partials/_navigation.scss */
+/* line 87, ../sass/partials/_navigation-main.scss */
 .navbar-list-sub {
   display: none;
   border-top: 2px solid #f5f5f5;
 }
-/* line 102, ../sass/partials/_navigation.scss */
+/* line 102, ../sass/partials/_navigation-main.scss */
 .navbar-list-sub .link-sub {
   padding: 10px;
   display: block;
   color: #2C3E50;
   border-bottom: 2px solid #f5f5f5;
 }
-/* line 108, ../sass/partials/_navigation.scss */
+/* line 108, ../sass/partials/_navigation-main.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #f5f5f5;
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  /* line 123, ../sass/partials/_navigation.scss */
+  /* line 123, ../sass/partials/_navigation-main.scss */
   .navbar-nav {
     float: none;
   }
 
-  /* line 126, ../sass/partials/_navigation.scss */
+  /* line 126, ../sass/partials/_navigation-main.scss */
   .navbar-list {
     display: inline-block;
   }
-  /* line 128, ../sass/partials/_navigation.scss */
+  /* line 128, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item {
     float: left;
     position: relative;
   }
-  /* line 131, ../sass/partials/_navigation.scss */
+  /* line 131, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item:not(:last-child) {
     margin-right: 20px;
   }
-  /* line 135, ../sass/partials/_navigation.scss */
+  /* line 135, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item:hover .navbar-list-sub {
     display: block;
   }
-  /* line 141, ../sass/partials/_navigation.scss */
+  /* line 141, ../sass/partials/_navigation-main.scss */
   .navbar-list .selected .link {
     color: #2C3E50;
     border-bottom-color: #37BC98;
   }
-  /* line 146, ../sass/partials/_navigation.scss */
+  /* line 146, ../sass/partials/_navigation-main.scss */
   .navbar-list .link {
     padding-top: 7px;
     padding-bottom: 7px;
     border-top: 0;
     border-bottom-color: transparent;
   }
-  /* line 152, ../sass/partials/_navigation.scss */
+  /* line 152, ../sass/partials/_navigation-main.scss */
   .navbar-list .link.normal:hover {
     border-bottom-color: #37BC98;
     animation: width false;
     background-color: transparent;
   }
-  /* line 157, ../sass/partials/_navigation.scss */
+  /* line 157, ../sass/partials/_navigation-main.scss */
   .navbar-list .link.normal:focus, .navbar-list .link.normal:active {
     border-bottom-color: transparent;
   }
-  /* line 164, ../sass/partials/_navigation.scss */
+  /* line 164, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize {
     background-color: #E74C3C;
     color: #fff;
     padding-top: 10px;
   }
-  /* line 168, ../sass/partials/_navigation.scss */
+  /* line 168, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize:hover {
     background-color: #CB1300;
   }
-  /* line 171, ../sass/partials/_navigation.scss */
+  /* line 171, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize:focus, .navbar-list .emphasize:active {
     background-color: #2C3E50;
   }
-  /* line 176, ../sass/partials/_navigation.scss */
+  /* line 176, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize-secondary {
     background-color: #37BC98;
     color: #fff;
@@ -9408,7 +9446,7 @@ h6,
     line-height: 1;
   }
 
-  /* line 184, ../sass/partials/_navigation.scss */
+  /* line 184, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub {
     position: absolute;
     background-color: #fff;
@@ -9420,24 +9458,40 @@ h6,
     right: -50%;
     z-index: 1;
   }
-  /* line 198, ../sass/partials/_navigation.scss */
+  /* line 198, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub .link-sub {
     white-space: nowrap;
     color: #2C3E50;
     border-bottom-width: 1px;
   }
-  /* line 202, ../sass/partials/_navigation.scss */
+  /* line 202, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub .link-sub:hover {
     background-color: #f5f5f5;
     text-decoration: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 211, ../sass/partials/_navigation.scss */
+  /* line 211, ../sass/partials/_navigation-main.scss */
   .navbar-list {
     margin-top: 10px;
   }
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SIDE NAVIGATION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_navigation-side.scss */
+.sidenav.affix {
+  position: fixed;
+  top: 40px;
+}
+
+/* line 13, ../sass/partials/_navigation-side.scss */
+.sidenav-list > .item {
+  margin-bottom: 18px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	LISTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -9451,17 +9505,36 @@ h6,
   background-color: #eeeeee;
 }
 
-/* line 1, ../sass/partials/_layout.scss */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	HERO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_hero.scss */
 .hero {
   overflow: hidden;
   text-align: center;
   background-position: 50% 50%;
 }
-
-/* line 10, ../sass/partials/_layout.scss */
-.hero-image img {
+/* line 11, ../sass/partials/_hero.scss */
+.hero .hero-image img {
   margin-left: -50%;
   margin-right: -50%;
+}
+/* line 16, ../sass/partials/_hero.scss */
+.hero .section-name {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 6px;
+  margin-top: 36px;
+  display: inline-block;
+  font-weight: bold;
+}
+/* line 23, ../sass/partials/_hero.scss */
+.hero .section-name + .page-name {
+  margin-top: 12px;
+}
+/* line 27, ../sass/partials/_hero.scss */
+.hero .description {
+  margin-top: 18px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
