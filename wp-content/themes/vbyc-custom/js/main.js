@@ -5,7 +5,7 @@
 			var navbarSiblingsSelector  = '.navbar-list .link';
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
-			vbyc.util.initSidenav();
+			// vbyc.util.initSidenav();
 			
 		},
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
@@ -52,17 +52,17 @@
 					}
 				}
 			});
+		},
+		initSidenav: function(subNavSelector,navbarSiblingsSelector) {
+			$('#sidenav').affix({
+				offset: {
+					top: 100,
+					bottom: function () {
+						return (this.bottom = $('.footer').outerHeight(true))
+					}
+				}
+			})
 		}
-		// initSidenav: function(subNavSelector,navbarSiblingsSelector) {
-		// 	$('#sidenav').affix({
-		// 		offset: {
-		// 			top: 100,
-		// 			bottom: function () {
-		// 				return (this.bottom = $('.footer').outerHeight(true))
-		// 			}
-		// 		}
-		// 	})
-		// }
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));
 

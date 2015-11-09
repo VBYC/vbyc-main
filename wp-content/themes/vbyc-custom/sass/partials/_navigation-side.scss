@@ -14,6 +14,13 @@
         margin-bottom: 18px;
         font-size: 18px;
         line-height: 1.2;
+        &.active {
+            .link {
+                color: $link-focus-color;
+                text-decoration: none;
+                background-color: $navbar-sub-graphic-color;
+            }
+        }
     }  
     
 

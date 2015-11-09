@@ -15,7 +15,7 @@
 
             <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="page-classes template-basic template-side-nav">
+    <body class="page-classes template-basic template-side-nav" data-spy="scroll" data-target="#sidenav" data-offset="50">
             <!--[if lt IE 8]>
                     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -74,17 +74,22 @@
                                      </li>
                                      <li class="item-sub">
                                         <a href="#" class="link-sub">
-                                            Classes
-                                        </a>
-                                     </li>
-                                     <li class="item-sub">
-                                        <a href="#" class="link-sub">
                                             Activities
                                         </a>
                                      </li>
                                      <li class="item-sub">
                                         <a href="#" class="link-sub">
-                                            Gallery
+                                            Classes
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Facilities
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <a href="#" class="link-sub">
+                                            Map
                                         </a>
                                      </li>
                                 </ul>
@@ -99,7 +104,7 @@
                                      </li>
                                      <li class="item-sub">
                                         <a href="Who's In Charge?" class="link-sub">
-                                            Classes
+                                            Who's in Charge?
                                         </a>
                                      </li>
                                      <li class="item-sub">
@@ -152,31 +157,31 @@
 
                         <aside id="sidenav" class="sidenav affix" data-spy="affix" data-offset-top="800" data-offset-bottom="200">
                             <ul class="nav sidenav-list list-unstyled">
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#archery" class="link sidenav-archery">Archery</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#arts-and-crafts" class="link sidenav-arts-and-crafts">Arts &amp; Crafts</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#canoeing-and-kayaking" class="link sidenav-canoeing-and-kayaking">Canoeing &amp; Kayaking</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#low-ropes" class="link sidenav-low-ropes">Low Ropes</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#nature" class="link sidenav-nature">Nature</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#rifelry" class="link sidenav-rifelry">Rifelry</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#song-and-dance" class="link sidenav-song-and-dance">Song &amp; Dance</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#sports" class="link sidenav-sports">Sports</a>
                                 </li>
-                                <li class="item">
+                                <li class="item" role="presentation">
                                     <a href="#swimming" class="link sidenav-swimming">Swimming</a>
                                 </li>
                             </ul>
@@ -388,7 +393,7 @@
     <footer class="footer pad-top-7 pad-bot-5 v-offset-6">
         <div class="container">
             <div class="row">
-                <div class="main-logo col-md-3">  
+                <div class="item main-logo col-xs-12 col-md-3">  
                     Van Buren Youth Camp<br>
                     <a href="#">
                         12370 45th St.<br>
@@ -397,21 +402,22 @@
                     <a href="#">Get Directions</a>
                 </div>
 
-                <div class="col-md-2">  
+                <div class="item col-xs-12 col-md-2">  
                     Call Us<br>
                     <a href="#">269-521-3855</a>
                 </div>
 
-                <div class="col-md-2">  
+                <div class="item col-xs-12  col-md-2">  
                     Email Us<br>
                     <a href="#">hello@vbyc.org</a>
                 </div>
 
-                <div class="col-md-5 text-right">  
+                <div class="item col-xs-12 col-md-5 text-right">  
                     <ul class="list-inline">
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Rend for Events</a></li>
+                        <li><a href="#">Contact</a></li>
                         <li><a href="#">FAQ</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Rent for Events</a></li>
                         <li><a href="#">Shop</a></li>
                         <li><a href="#">Work Here</a></li>
                     </ul>
