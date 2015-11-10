@@ -5,7 +5,7 @@
 			var navbarSiblingsSelector  = '.navbar-list .link';
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
-			// vbyc.util.initSidenav();
+			vbyc.util.initSidenav();
 			
 		},
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
@@ -53,10 +53,15 @@
 				}
 			});
 		},
-		initSidenav: function(subNavSelector,navbarSiblingsSelector) {
-			$('#sidenav').affix({
+		initSidenav: function() {
+			
+			var sideNav = $('#sidenav');
+			var distanceFromTop = sideNav.offset();
+			distanceFromTop = distanceFromTop.top;
+
+			$(sideNav).affix({
 				offset: {
-					top: 100,
+					top: distanceFromTop,
 					bottom: function () {
 						return (this.bottom = $('.footer').outerHeight(true))
 					}

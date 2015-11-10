@@ -6,6 +6,33 @@
 	border-top: 5px solid $color-red;
 	.item {
 		margin-bottom: 20px;
+		&:not(last-child) {
+			.stack {
+				margin-bottom: 20px;
+			}
+			
+		}
 	}
 
+
+
+}
+
+
+
+
+@media (max-width: 300px) {	
+	
+}
+
+@media (max-width: $screen-sm-max) {
+	
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+	.footer {
+		.stack {
+			padding-left: 0;
+		}
+	}
 }

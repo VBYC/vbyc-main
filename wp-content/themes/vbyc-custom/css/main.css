@@ -9230,7 +9230,17 @@ h6,
 .footer .item {
   margin-bottom: 20px;
 }
+/* line 10, ../sass/partials/_footer.scss */
+.footer .item:not(last-child) .stack {
+  margin-bottom: 20px;
+}
 
+@media (min-width: 480px) and (max-width: 991px) {
+  /* line 34, ../sass/partials/_footer.scss */
+  .footer .stack {
+    padding-left: 0;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MAIN - NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -15,7 +15,7 @@
 
             <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="page-classes template-basic template-side-nav" data-spy="scroll" data-target="#sidenav" data-offset="50">
+    <body class="page-classes template-basic template-side-nav">
             <!--[if lt IE 8]>
                     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -155,7 +155,7 @@
                     <div class="hidden-xs col-sm-4 col-md-3"> 
 
 
-                        <aside id="sidenav" class="sidenav affix" data-spy="affix" data-offset-top="800" data-offset-bottom="200">
+                        <aside id="sidenav" class="sidenav" >
                             <ul class="nav sidenav-list list-unstyled">
                                 <li class="item" role="presentation">
                                     <a href="#archery" class="link sidenav-archery">Archery</a>
@@ -402,25 +402,31 @@
                     <a href="#">Get Directions</a>
                 </div>
 
-                <div class="item col-xs-12 col-md-2">  
-                    Call Us<br>
-                    <a href="#">269-521-3855</a>
+                <div class="item col-xs-12 col-md-2">
+                    <div class="stack col-lg-6">  
+                        Call Us<br>
+                        <a href="#">269-521-3855</a>
+                    </div>
+
+                    <div class="stack col-lg-6">  
+                        Email Us<br>
+                        <a href="#">hello@vbyc.org</a>
+                    </div>
                 </div>
 
-                <div class="item col-xs-12  col-md-2">  
-                    Email Us<br>
-                    <a href="#">hello@vbyc.org</a>
-                </div>
+                
 
-                <div class="item col-xs-12 col-md-5 text-right">  
-                    <ul class="list-inline">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Rent for Events</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Work Here</a></li>
-                    </ul>
+                <div class="item col-xs-12 col-md-7 text-right"> 
+                    <nav> 
+                        <ul class="list-inline footer-nav">
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Rent for Events</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Work Here</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
