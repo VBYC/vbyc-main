@@ -9,7 +9,6 @@
     }
 }
 .sidenav-list {
-    
     > .item {
         margin-bottom: 18px;
         font-size: 18px;
@@ -22,8 +21,41 @@
             }
         }
     }  
-    
-
 } 
+
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .sidenav {
+        &.affix {
+            $col-width: 56.75px;
+            $col-count: 4;
+            width: ($col-width * $col-count); 
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .sidenav {
+        &.affix {
+            $col-width: 73.3333px;
+            $col-count: 3;
+            width: ($col-width * $col-count); 
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .sidenav {
+        &.affix {
+            $col-width: 90px;
+            $col-count: 3;
+            width: ($col-width * $col-count);
+        }
+    }
+}
+
+
+
 
 

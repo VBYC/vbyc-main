@@ -6,7 +6,7 @@
     <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <title></title>
+            <title>VBYC</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -15,7 +15,7 @@
 
             <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body class="page-classes template-basic template-side-nav">
+    <body class="page-classes template-basic template-side-nav" data-spy="scroll">
             <!--[if lt IE 8]>
                     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
@@ -103,7 +103,7 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <a href="Who's In Charge?" class="link-sub">
+                                        <a href="#" class="link-sub">
                                             Who's in Charge?
                                         </a>
                                      </li>
@@ -130,7 +130,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="images/template/hero.jpg">
+                            <img src="images/template/hero.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -150,7 +150,7 @@
             </div>
         </section>
         <section class="main-content">
-            <div class="container">
+            <div class="container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
 
@@ -184,6 +184,12 @@
                                 <li class="item" role="presentation">
                                     <a href="#swimming" class="link sidenav-swimming">Swimming</a>
                                 </li>
+                                <li class="item" role="presentation">
+                                    <a href="#demo" class="link sidenav-archery">Leadership &amp; Counselor Workshop</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#demo" class="link sidenav-archery">White Pine - Early Leadership</a>
+                                </li>
                             </ul>
                         </aside>
                     </div><!-- /column -->
@@ -193,193 +199,39 @@
                             <ul class="content-list list-unstyled">
                                 <li id="archery" class="item">
                                     <h3 class="heading archery">Archery</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>
+                                    <? include("_template-includes/classes-content.php"); ?>
                                 </li>
                                 <li id="arts-and-crafts" class="item">
                                     <h3 class="heading arts-and-crafts">Arts &amp; Crafts</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-
-                                    </div> 
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                           
+                                    <? include("_template-includes/classes-content.php"); ?>                           
                                 </li>
                                 <li id="canoeing-and-kayaking" class="item">
                                     <h3 class="heading canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>  
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                          
+                                    <? include("_template-includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="low-ropes" class="item">
                                     <h3 class="heading low-ropes">Low Ropes</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>  
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                          
+                                    <? include("_template-includes/classes-content.php"); ?>                          
                                 </li>
                                 <li id="nature" class="item">
-                                    <h3 class="heading nature">Nature</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>   
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                         
+                                    <h3 class="heading nature">Nature</h3>  
+                                    <? include("_template-includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="rifelry" class="item">
                                     <h3 class="heading rifelry">Rifelry</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div> 
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                          
+                                    <? include("_template-includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="song-and-dance" class="item">
                                     <h3 class="heading song-and-dance">Song &amp; Dance</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>  
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                          
+                                    <? include("_template-includes/classes-content.php"); ?>                        
                                 </li>
                                 <li id="sports" class="item">
                                     <h3 class="heading sports">Sports</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div> 
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                           
+                                    <? include("_template-includes/classes-content.php"); ?>                          
                                 </li>
                                 <li id="swimming" class="item">
                                     <h3 class="heading swimming">Swimming</h3>
-                                    <div class="description">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    </div>  
-                                    <figure class="figure-images">
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-5 col-md-4">
-                                                <img src="images/template/content-figure-portrait.jpg" class="item img-responsive">
-                                            </div>
-                                            <div class="col-xs-12 col-sm-7 col-md-8 ">
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                                <div>
-                                                    <img src="images/template/content-figure-landscape.jpg" class="item img-responsive">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure>                          
+                                    <? include("_template-includes/classes-content.php"); ?>                         
                                 </li>
                             </ul>
                         </article> 
@@ -393,7 +245,7 @@
     <footer class="footer pad-top-7 pad-bot-5 v-offset-6">
         <div class="container">
             <div class="row">
-                <div class="item main-logo col-xs-12 col-md-3">  
+                <div class="item col-xs-12 col-sm-4 col-md-3">  
                     Van Buren Youth Camp<br>
                     <a href="#">
                         12370 45th St.<br>
@@ -402,29 +254,29 @@
                     <a href="#">Get Directions</a>
                 </div>
 
-                <div class="item col-xs-12 col-md-2">
-                    <div class="stack col-lg-6">  
+
+                <div class="item footer-contact col-xs-12 col-sm-7 col-md-2">
+                    <p class="contact-item">  
                         Call Us<br>
                         <a href="#">269-521-3855</a>
-                    </div>
+                    </p>
 
-                    <div class="stack col-lg-6">  
+                    <p class="contact-item">  
                         Email Us<br>
                         <a href="#">hello@vbyc.org</a>
-                    </div>
+                    </p>
                 </div>
 
                 
 
-                <div class="item col-xs-12 col-md-7 text-right"> 
+                <div class="item col-xs-12 col-md-6"> 
                     <nav> 
-                        <ul class="list-inline footer-nav">
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Rent for Events</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Work Here</a></li>
+                        <ul class="footer-nav">
+                            <li class="nav-item"><a href="#">Contact</a></li>
+                            <li class="nav-item"><a href="#">FAQ</a></li>
+                            <li class="nav-item"><a href="#">News</a></li>
+                            <li class="nav-item"><a href="#">Rent for Events</a></li>
+                            <li class="nav-item"><a href="#">Work Here</a></li>
                         </ul>
                     </nav>
                 </div>

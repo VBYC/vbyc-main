@@ -3,36 +3,24 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .footer {
-	border-top: 5px solid $color-red;
-	.item {
-		margin-bottom: 20px;
-		&:not(last-child) {
-			.stack {
-				margin-bottom: 20px;
-			}
-			
-		}
-	}
+    border-top: 5px solid $color-red;
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
 
-
-
+    }
+    .item {
+        margin-bottom: 20px;
+        .contact-item {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 
 
-
-@media (max-width: 300px) {	
-	
-}
-
-@media (max-width: $screen-sm-max) {
-	
-}
-
-@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
-	.footer {
-		.stack {
-			padding-left: 0;
-		}
-	}
-}

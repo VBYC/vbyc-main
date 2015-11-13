@@ -38,12 +38,12 @@
 								$(target).removeClass('visible-xs-block').css('display','');
 							});
 						} else  {
-							// If the one just clicked is NOT the one expanded, deselect the expanded one. 
+							// If the one just clicked is NOT the one expanded, find the expanded one and deselect it. 
 							$(navbarSiblingsSelector + '.expanded' ).removeClass('expanded');
 							$(subNavSelector + '.visible-xs-block' ).slideUp( 200, function() {
 								$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
 							});
-							// And select the one just clicked. 
+							// Select the one just clicked. 
 							$(this).addClass('expanded');
 							$(target).slideDown( 200, function() {
 								$(target).addClass('visible-xs-block').css('display','');
@@ -54,7 +54,6 @@
 			});
 		},
 		initSidenav: function() {
-			
 			var sideNav = $('#sidenav');
 			var distanceFromTop = sideNav.offset();
 			distanceFromTop = distanceFromTop.top;
@@ -67,6 +66,8 @@
 					}
 				}
 			})
+
+		
 		}
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));
