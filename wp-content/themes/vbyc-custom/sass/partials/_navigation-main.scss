@@ -5,8 +5,9 @@
 
 .navbar-toggle {
     margin: 7px 0 0;
+    border: 2px solid $link-color;
     .icon-bar {
-        background-color: $color-red;
+        background-color: $link-color;
     }  
 } 
 
@@ -14,100 +15,55 @@
 .navbar-nav {
     margin: 0 -30px;
     border: none;
+    background-color: $link-color;
 }
+
 
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;
-//    margin-top: 25px;
     margin-bottom: 0;
-//    display: inline-block;
     > .item {
-//        float: left;
-//        position: relative;
         &:not(:last-child) {
-//            margin-right: 20px;
             .link {
                 border-bottom: none;
             }
         }
-//        &:hover {
-//            .navbar-list-sub {
-//                display: block;
-//            }
-//        }
     }
-    .selected {
-//        .link {
-//            color: $color-slate;
-//            border-bottom-color: $link-color;
-//        }
-    }
+
     .link {
+        color: $color-white;
         padding: 18px 10px ;
         line-height: 1;
         display: block;
-        border-top: 2px solid $link-color;
-        border-bottom: 2px solid $link-color;
+        border-top: 2px solid $color-brand-green-dark;;
+        border-bottom: 2px solid $color-brand-green-dark;;
         text-decoration: none; 
-//        border-bottom: 2px solid transparent;
         &.normal {
             &:hover {
-//                border-bottom-color: $link-color;
-//                animation: width 0% > 100%; 
                 text-decoration: none;
-                background-color: $navbar-sub-graphic-color;
+                background-color: $color-brand-green-dark;
             }
             &:focus,
             &:active {
-//                border-bottom-color: transparent;
+
             }
         }
     }
-    .emphasize {
-//        background-color: $color-red;
-//        color: #fff;
-//        padding-top: 10px;
-//        &:hover {
-//            background-color: $color-red-darker;
-//        }
-//        &:focus,
-//        &:active {
-//             background-color: $link-focus-color;
-//        }
-    }
-    .emphasize-secondary {
-//        background-color: $link-color;
-//        color: #fff;
-//        padding: 10px;
-//        display: block;
-//        line-height: 1;
-    }
 }
 .navbar-list-sub {
-    display: none;
-//    position: absolute;
-//    background-color: #fff;
-//    border-left: 1px solid $navbar-sub-graphic-color;
-//    border-right: 1px solid $navbar-sub-graphic-color;
-    border-top: 2px solid $navbar-sub-graphic-color;
-      
-//    margin-top: -2px;
-
-//    left: -50%;
-//    right: -50%;
-//    
+//    display: none;
+//    border-top: 2px solid $navbar-sub-graphic-color;
 
 
     .link-sub {
-            padding: 10px;
-            display: block;
-            //        white-space: nowrap;
-            color: $color-slate;
-            border-bottom: 2px solid $navbar-sub-graphic-color;
+//            padding: 10px;
+//            display: block;
+//            color: $color-slate;
+//            border-bottom: 2px solid $navbar-sub-graphic-color;
         &:hover {
-            background-color: $navbar-sub-graphic-color;
-            text-decoration: none;
+//            background-color: $navbar-sub-graphic-color;
+//            text-decoration: none;
         }
     }
 }
@@ -122,7 +78,8 @@
 @media (min-width: $screen-sm-min) {
     .navbar-nav {
         float: none;
-    }
+        background-color: $color-white;
+    } 
     .navbar-list {
         display: inline-block;
         > .item {
@@ -140,10 +97,17 @@
         .selected {
             .link {
                 color: $color-slate;
-                border-bottom-color: $link-color;
+                .navbar & {
+                    border-bottom: 2px solid $link-color;
+                }
+                
+            }
+            .navbar-list-sub {
+                display: block;
             }
         }
         .link {
+            color: $link-color;
             padding-top: 7px;
             padding-bottom: 7px;
             border-top: 0;
@@ -185,27 +149,28 @@
 
 
         position: absolute;
-        background-color: #fff;
-        border-left: 1px solid $navbar-sub-graphic-color;
-        border-right: 1px solid $navbar-sub-graphic-color;
-        border-top: 2px solid $link-color;
+        background-color: $color-brand-green;
+        
         margin-top: -2px;
+        top: 50px;
 
         left: -50%;
         right: -50%;
         z-index: 1;
-  
+        
         .link-sub {
             white-space: nowrap;
-            color: $color-slate;
+            color: $color-white;
             border-bottom-width: 1px;
             &:hover {
-                background-color: $navbar-sub-graphic-color;
+                background-color: $link-color-dark;
                 text-decoration: none;
             }
         }
     }
 }
+
+
 
 @media (min-width: $screen-md-min) {
     .navbar-list {

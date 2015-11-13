@@ -1754,12 +1754,12 @@ textarea {
 
 /* line 48, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
 a, .link-primary {
-  color: #37BC98;
+  color: #37BC78;
   text-decoration: none;
 }
 /* line 52, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, .link-primary:hover, a:focus, .link-primary:focus {
-  color: #37BC98;
+  color: #37BC78;
   text-decoration: underline;
 }
 /* line 58, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -4763,7 +4763,7 @@ a.btn.disabled, .btn.disabled.link-primary, fieldset[disabled] a.btn, fieldset[d
 
 /* line 96, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link {
-  color: #37BC98;
+  color: #37BC78;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4779,7 +4779,7 @@ a.btn.disabled, .btn.disabled.link-primary, fieldset[disabled] a.btn, fieldset[d
 }
 /* line 115, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #37BC98;
+  color: #37BC78;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -5477,7 +5477,7 @@ tbody.collapse.in {
 /* line 46, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > .link-primary, .nav .open > a:hover, .nav .open > .link-primary:hover, .nav .open > a:focus, .nav .open > .link-primary:focus {
   background-color: #eeeeee;
-  border-color: #37BC98;
+  border-color: #37BC78;
 }
 /* line 59, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -6315,7 +6315,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #37BC98;
+  color: #37BC78;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6338,7 +6338,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #37BC98;
+  color: #37BC78;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6582,7 +6582,7 @@ a.label:hover, .label.link-primary:hover, a.label:focus, .label.link-primary:foc
 }
 /* line 41, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge, .nav-pills > .active > .link-primary > .badge {
-  color: #37BC98;
+  color: #37BC78;
   background-color: #fff;
 }
 /* line 47, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_badges.scss */
@@ -6689,7 +6689,7 @@ a.thumbnail:focus,
 .thumbnail.link-primary:focus,
 a.thumbnail.active,
 .thumbnail.active.link-primary {
-  border-color: #37BC98;
+  border-color: #37BC78;
 }
 
 /* line 9, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_alerts.scss */
@@ -9094,12 +9094,12 @@ body {
 
 /* line 11, ../sass/partials/_typography.scss */
 a, .link-primary {
-  color: #37BC98;
+  color: #37BC78;
   font-family: "Varela Round", sans-serif;
 }
 /* line 14, ../sass/partials/_typography.scss */
 a:hover, .link-primary:hover {
-  color: #37BC98;
+  color: #37BC78;
   text-decoration: underline;
 }
 /* line 18, ../sass/partials/_typography.scss */
@@ -9114,7 +9114,7 @@ a:focus, .link-primary:focus, a:active, .link-primary:active {
 }
 /* line 29, ../sass/partials/_typography.scss */
 .link-primary:hover {
-  border-bottom: 2px solid #37BC98;
+  border-bottom: 2px solid #37BC78;
   animation: width false;
   text-decoration: none;
 }
@@ -9256,155 +9256,147 @@ h6,
 /* line 6, ../sass/partials/_navigation-main.scss */
 .navbar-toggle {
   margin: 7px 0 0;
+  border: 2px solid #37BC78;
 }
-/* line 8, ../sass/partials/_navigation-main.scss */
+/* line 9, ../sass/partials/_navigation-main.scss */
 .navbar-toggle .icon-bar {
-  background-color: #E74C3C;
+  background-color: #37BC78;
 }
 
-/* line 14, ../sass/partials/_navigation-main.scss */
+/* line 15, ../sass/partials/_navigation-main.scss */
 .navbar-nav {
   margin: 0 -30px;
   border: none;
+  background-color: #37BC78;
 }
 
-/* line 19, ../sass/partials/_navigation-main.scss */
+/* line 22, ../sass/partials/_navigation-main.scss */
 .navbar-list {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
   margin-bottom: 0;
 }
-/* line 30, ../sass/partials/_navigation-main.scss */
+/* line 28, ../sass/partials/_navigation-main.scss */
 .navbar-list > .item:not(:last-child) .link {
   border-bottom: none;
 }
-/* line 46, ../sass/partials/_navigation-main.scss */
+/* line 34, ../sass/partials/_navigation-main.scss */
 .navbar-list .link {
+  color: #FFF;
   padding: 18px 10px;
   line-height: 1;
   display: block;
-  border-top: 2px solid #37BC98;
-  border-bottom: 2px solid #37BC98;
+  border-top: 2px solid #1FA660;
+  border-bottom: 2px solid #1FA660;
   text-decoration: none;
 }
-/* line 55, ../sass/partials/_navigation-main.scss */
+/* line 43, ../sass/partials/_navigation-main.scss */
 .navbar-list .link.normal:hover {
   text-decoration: none;
-  background-color: #f5f5f5;
-}
-
-/* line 87, ../sass/partials/_navigation-main.scss */
-.navbar-list-sub {
-  display: none;
-  border-top: 2px solid #f5f5f5;
-}
-/* line 102, ../sass/partials/_navigation-main.scss */
-.navbar-list-sub .link-sub {
-  padding: 10px;
-  display: block;
-  color: #2C3E50;
-  border-bottom: 2px solid #f5f5f5;
-}
-/* line 108, ../sass/partials/_navigation-main.scss */
-.navbar-list-sub .link-sub:hover {
-  background-color: #f5f5f5;
-  text-decoration: none;
+  background-color: #1FA660;
 }
 
 @media (min-width: 768px) {
-  /* line 123, ../sass/partials/_navigation-main.scss */
+  /* line 79, ../sass/partials/_navigation-main.scss */
   .navbar-nav {
     float: none;
+    background-color: #FFF;
   }
 
-  /* line 126, ../sass/partials/_navigation-main.scss */
+  /* line 83, ../sass/partials/_navigation-main.scss */
   .navbar-list {
     display: inline-block;
   }
-  /* line 128, ../sass/partials/_navigation-main.scss */
+  /* line 85, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item {
     float: left;
     position: relative;
   }
-  /* line 131, ../sass/partials/_navigation-main.scss */
+  /* line 88, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item:not(:last-child) {
     margin-right: 20px;
   }
-  /* line 135, ../sass/partials/_navigation-main.scss */
+  /* line 92, ../sass/partials/_navigation-main.scss */
   .navbar-list > .item:hover .navbar-list-sub {
     display: block;
   }
-  /* line 141, ../sass/partials/_navigation-main.scss */
+  /* line 98, ../sass/partials/_navigation-main.scss */
   .navbar-list .selected .link {
     color: #2C3E50;
-    border-bottom-color: #37BC98;
   }
-  /* line 146, ../sass/partials/_navigation-main.scss */
+  /* line 100, ../sass/partials/_navigation-main.scss */
+  .navbar .navbar-list .selected .link {
+    border-bottom: 2px solid #37BC78;
+  }
+  /* line 105, ../sass/partials/_navigation-main.scss */
+  .navbar-list .selected .navbar-list-sub {
+    display: block;
+  }
+  /* line 109, ../sass/partials/_navigation-main.scss */
   .navbar-list .link {
+    color: #37BC78;
     padding-top: 7px;
     padding-bottom: 7px;
     border-top: 0;
     border-bottom-color: transparent;
   }
-  /* line 152, ../sass/partials/_navigation-main.scss */
+  /* line 116, ../sass/partials/_navigation-main.scss */
   .navbar-list .link.normal:hover {
-    border-bottom-color: #37BC98;
+    border-bottom-color: #37BC78;
     animation: width false;
     background-color: transparent;
   }
-  /* line 157, ../sass/partials/_navigation-main.scss */
+  /* line 121, ../sass/partials/_navigation-main.scss */
   .navbar-list .link.normal:focus, .navbar-list .link.normal:active {
     border-bottom-color: transparent;
   }
-  /* line 164, ../sass/partials/_navigation-main.scss */
+  /* line 128, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize {
     background-color: #E74C3C;
     color: #fff;
     padding-top: 10px;
   }
-  /* line 168, ../sass/partials/_navigation-main.scss */
+  /* line 132, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize:hover {
     background-color: #CB1300;
   }
-  /* line 171, ../sass/partials/_navigation-main.scss */
+  /* line 135, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize:focus, .navbar-list .emphasize:active {
     background-color: #2C3E50;
   }
-  /* line 176, ../sass/partials/_navigation-main.scss */
+  /* line 140, ../sass/partials/_navigation-main.scss */
   .navbar-list .emphasize-secondary {
-    background-color: #37BC98;
+    background-color: #37BC78;
     color: #fff;
     padding: 10px;
     display: block;
     line-height: 1;
   }
 
-  /* line 184, ../sass/partials/_navigation-main.scss */
+  /* line 148, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub {
     position: absolute;
-    background-color: #fff;
-    border-left: 1px solid #f5f5f5;
-    border-right: 1px solid #f5f5f5;
-    border-top: 2px solid #37BC98;
+    background-color: #37BC78;
     margin-top: -2px;
+    top: 50px;
     left: -50%;
     right: -50%;
     z-index: 1;
   }
-  /* line 198, ../sass/partials/_navigation-main.scss */
+  /* line 161, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub .link-sub {
     white-space: nowrap;
-    color: #2C3E50;
+    color: #FFF;
     border-bottom-width: 1px;
   }
-  /* line 202, ../sass/partials/_navigation-main.scss */
+  /* line 165, ../sass/partials/_navigation-main.scss */
   .navbar-list-sub .link-sub:hover {
-    background-color: #f5f5f5;
+    background-color: #1FA660;
     text-decoration: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 211, ../sass/partials/_navigation-main.scss */
+  /* line 176, ../sass/partials/_navigation-main.scss */
   .navbar-list {
     margin-top: 10px;
   }
