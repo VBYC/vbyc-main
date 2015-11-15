@@ -9599,9 +9599,9 @@ h6,
 
 /* line 12, ../sass/partials/_nav-side.scss */
 .sidenav-list > .item {
-  margin-bottom: 18px;
-  font-size: 18px;
-  line-height: 1.2;
+  margin-bottom: 3px;
+  font-size: 15px;
+  line-height: 1.4;
 }
 /* line 17, ../sass/partials/_nav-side.scss */
 .sidenav-list > .item .link:hover {
