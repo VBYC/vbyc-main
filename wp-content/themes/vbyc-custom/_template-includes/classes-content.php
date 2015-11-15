@@ -17,7 +17,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row row-secondary">
+                                        <div class="row row-secondary hidden-xs">
                                             <div class="col-xs-12 col-sm-11 col-md-12">
                                                 <div class="image-container">
                                                     <img src="images/template/content-figure-landscape-full.jpg" alt=" " class="img-item img-responsive">

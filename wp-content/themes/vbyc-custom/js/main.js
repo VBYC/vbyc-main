@@ -1,19 +1,27 @@
 (function( vbyc, $, undefined ) { 
+	var subNavSelector = '.navbar-list-sub';
+	var navbarSiblingsSelector  = '.navbar-list .link';
+	var sideNav = $('#sidenav');
+	
+
+	
+
 	vbyc.util = {
 		init: function() {
-			var subNavSelector = '.navbar-list-sub';
-			var navbarSiblingsSelector  = '.navbar-list .link';
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
-			vbyc.util.initSidenav();
+			vbyc.util.sidebarScrollSpy();
+			vbyc.util.sidebarScrollTo();
 			
 		},
+
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			$( ".navbar-toggle" ).on( "click", function() {
 				$(navbarSiblingsSelector + '.expanded' ).removeClass('expanded');
 				$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
 			});
 		},
+
 		initNavbar: function(subNavSelector,navbarSiblingsSelector) {
 			$( ".navbar-list .link" ).on( "click", function() {
 				var navbarToggle = $('.navbar-toggle');
@@ -53,11 +61,13 @@
 				}
 			});
 		},
-		initSidenav: function() {
-			var sideNav = $('#sidenav');
+
+		sidebarScrollSpy: function() {
+			var mainContent = $('.main-content');
 			var distanceFromTop = sideNav.offset();
 			distanceFromTop = distanceFromTop.top;
 
+			// Initiate Scroll Spy
 			$(sideNav).affix({
 				offset: {
 					top: distanceFromTop,
@@ -65,9 +75,31 @@
 						return (this.bottom = $('.footer').outerHeight(true))
 					}
 				}
-			})
+			});
+		},
 
-		
+		sidebarScrollTo: function() {
+			var mainContent = $('.main-content');
+			var parent = sideNav;
+			
+			// Add this selector so the anchors will be a nice distance from the top
+			$(mainContent).addClass('has-sidenav');
+
+			// Set up scroll
+	        $('a[href^="#"]',parent).on('click',function (e) {
+	            e.preventDefault();
+
+	            var target = this.hash;
+	            var $target = $(target);
+	            var scrollToCoordinate = $target.offset().top;
+
+
+	            $('html, body').stop().animate({
+	                'scrollTop': scrollToCoordinate
+	            }, 500, 'swing', function () {
+	                window.location.hash = target;
+	            });
+	        });
 		}
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));

@@ -2,12 +2,13 @@
     MAIN - NAVIGATION  (COMMON - SM & MD+)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-//.item:first-child {
-//    .navbar-list-sub {
-//        display: block; // TESTING
-//    }
-//}
+// TESTING - SHOW SUB NAV
+//.item:first-child .navbar-list-sub { display: block; } 
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+// Parent nav links container
 .navbar-list {
     font-size: 14px;
     font-family: $font-family-link;
@@ -19,6 +20,8 @@
             }
         }
     }
+
+    // Parent nav links
     .link {
         padding: 18px 10px;
         line-height: 1;
@@ -28,6 +31,8 @@
             text-decoration: none;
         }
     }
+
+    // Special nav link
     .emphasize {
         background-color: $color-red;
         color: $color-white;
@@ -40,11 +45,14 @@
         }
     }
 }
+
+// Sub nav links container
 .navbar-list-sub {
     display: none;
     position: relative;
+    
+    // Arrow op top
     &:before {
-        // Arrow
         color: $link-color;
         content: '▲';
         width: 14px;
@@ -55,6 +63,8 @@
         line-height: 1;
         @include scale(1.75, 1);
     }
+
+    // Sub nav links
     .link-sub {
         display: block;
         padding: 18px;

@@ -5,7 +5,7 @@
 .sidenav {
     &.affix {
         position: fixed;
-        top: 40px;
+        top: 0;
     }
 }
 .sidenav-list {
@@ -13,11 +13,20 @@
         margin-bottom: 18px;
         font-size: 18px;
         line-height: 1.2;
+        .link {
+            &:hover {
+                background-color:  $navbar-sub-graphic-color;
+                color: $link-color-dark;
+            }
+        }
         &.active {
             .link {
                 color: $link-focus-color;
                 text-decoration: none;
-                background-color: $navbar-sub-graphic-color;
+                background-color:  transparent;
+                &:hover {
+                    background-color: transparent;
+                }
             }
         }
     }  
