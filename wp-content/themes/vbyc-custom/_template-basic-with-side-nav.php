@@ -39,7 +39,7 @@
                 <div class="col-xs-12 col-md-8">
                     <nav id="bs-navbar" class="navbar navbar-nav text-center collapse navbar-collapse" role="navigation">
                         <ul class="navbar-list list-unstyled clearfix">
-                            <li class="item  selected">
+                            <li class="item">
                                 <a href="#" class="link normal">Sessions</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
@@ -53,7 +53,7 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <a href="#" class="link-sub  selected">
+                                        <a href="#" class="link-sub">
                                             Preparing For Camp
                                         </a>
                                      </li>
@@ -64,7 +64,7 @@
                                      </li>
                                 </ul>
                             </li>
-                            <li class="item">
+                            <li class="item  selected">
                                 <a href="#" class="link normal">Camp Life</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
@@ -78,7 +78,7 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <a href="#" class="link-sub">
+                                        <a href="#" class="link-sub  selected">
                                             Classes
                                         </a>
                                      </li>

@@ -34,23 +34,26 @@
         // Parent nav links
         .link {
             font-size: 18px;
-            border-bottom: 1px solid $color-slate;
+            &:not(.expanded) {
+                border-bottom: 1px solid $color-slate;
+            }
+            
 
             // Use normal so don't have to override with .emphasized
             &.normal {
                 background-color: $color-white;
                 &:hover {
                     color: $link-color-dark;
-                    @include box-shadow(inset 5px 0 0 0 $link-color-dark, inset -5px 0 0 0 $link-color-dark);
                 }
             }
+//            &.expanded {
+//                border-bottom: none;
+//            }
         }
         > .selected {
             .link {
                 @include box-shadow(inset 5px 0 0 0 $link-color, inset -5px 0 0 0 $link-color);
-                &.expanded {
-                    border-bottom: none;
-                }
+                
             }
         }
     }
