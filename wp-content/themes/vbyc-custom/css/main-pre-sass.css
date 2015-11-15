@@ -16,7 +16,7 @@ a {
 
 h1,
 .h1 {
-	color: $color-blue-bright;
+	color: $color-blue;
 	font-family: 'Roboto Slab', serif;
 	font-size: 64px;
 }

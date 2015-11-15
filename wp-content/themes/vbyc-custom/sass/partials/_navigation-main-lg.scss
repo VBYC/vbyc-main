@@ -1,0 +1,106 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MAIN - NAVIGATION (MEDIUM+)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+$link-sub-padding: 12px;
+
+// Below nav
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .navbar-nav {
+        float: none;
+    } 
+}
+
+// Rght of nav
+@media (min-width: $screen-sm-min) {
+    
+    .navbar-nav {
+        float: right;
+    } 
+    .navbar-list {
+        display: inline-block;
+
+        > .item {
+            float: left;
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &:hover {
+                .navbar-list-sub {
+                    display: block;
+                }
+            }
+        }
+        
+        .link {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-bottom: 2px solid transparent;
+            &.normal {
+
+                &:hover {
+                    
+                    color: $link-color-dark;
+                    animation: width 0% > 100%; 
+                    background-color: transparent;
+                    border-bottom-color: $link-color-dark;
+                }
+                &:focus,
+                &:active {
+                    border-bottom-color: transparent;
+                }
+            }
+            
+        }
+        > .selected {
+            .link {
+                .navbar & {
+                    border-bottom: 2px solid $link-color;
+                }
+            }
+        }
+        .emphasize {
+            padding-top: 9px;
+            padding-bottom: 6px;
+            margin-top: -2px;
+        }
+    }
+    .navbar-list-sub {
+        position: absolute;
+        margin-top: -2px;
+        padding-top: 20px;
+        left: -50%;
+        right: -50%;
+        z-index: 1;
+        &:before {
+            // Arrow
+            top: 10px;
+            margin-left: -7px;
+        }
+        .item-sub  {
+            $link-sub-padding-extra: ($link-sub-padding * 1.5);
+            &:first-child {
+                .link-sub {
+                    padding-top: $link-sub-padding-extra;
+                }
+            }
+            &:last-child {
+                .link-sub {
+                    padding-bottom: $link-sub-padding-extra;
+                }
+            }
+        }
+        .link-sub {
+            white-space: nowrap;
+            padding: $link-sub-padding;
+        }
+    }
+}
+
+
+
+@media (min-width: $screen-md-min) {
+    .navbar-list {
+        margin-top: 10px;
+    }   
+}

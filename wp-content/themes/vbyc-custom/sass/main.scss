@@ -23,6 +23,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 // GLOBAL
+@import "mixins/mixins";
 @import "partials/template-helpers";
 @import "partials/layout";
 @import "partials/fonts";
@@ -30,6 +31,8 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/navigation-main";
+@import "partials/navigation-main-sm";
+@import "partials/navigation-main-lg";
 @import "partials/navigation-side";
 @import "partials/navigation-footer";
 @import "partials/lists";
