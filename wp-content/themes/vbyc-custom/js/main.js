@@ -4,31 +4,37 @@
 	var subNavSelector = '.navbar-list-sub';
 	var navbarSiblingsSelector  = '.navbar-list .link';
 	var sideNav = $('#sidenav');
+	var hasSidenav;
 	
 
 	
 
 	vbyc.util = {
 		init: function(customValues) {
+			// If there are custom values passed in, do stuff with them
+			if (customValues) {
+				vbyc.util.initCustomValues(customValues);
+			}
 			
-			vbyc.util.initializeCustomValues(customValues);
-
+			// Set up main nav
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
 
-			console.table( customValues  );
-			if (customValues.hasSideNav === true) {
+			// Set up side nav with anchor links
+			if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
 				vbyc.util.sidebarScrollTo();
 			}
-			
-			
 		},
-		initializeCustomValues: function(customValues) {
-			
+		initCustomValues: function(customValues) {
+			// Make this variable global inside this function
+			if (customValues.hasSidenav) {
+				hasSidenav = customValues.hasSidenav ;
+			}
 		},
 
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
+			// Click the hamburger and expand the main nav
 			$( ".navbar-toggle" ).on( "click", function() {
 				$(navbarSiblingsSelector + '.expanded' ).removeClass('expanded');
 				$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
@@ -36,6 +42,7 @@
 		},
 
 		initNavbar: function(subNavSelector,navbarSiblingsSelector) {
+			// Main nav
 			$( ".navbar-list .link" ).on( "click", function() {
 				var navbarToggle = $('.navbar-toggle');
 				var parent = $(this).parents('.item');

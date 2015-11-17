@@ -1738,7 +1738,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #2C3E50;
   background-color: #fff;
 }
 
@@ -4318,7 +4318,7 @@ select[multiple].input-lg,
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #959595;
+  color: #597ea2;
 }
 
 @media (min-width: 768px) {
@@ -6680,7 +6680,7 @@ a.badge:hover, .badge.link-primary:hover, a.badge:focus, .badge.link-primary:foc
 /* line 27, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_thumbnails.scss */
 .thumbnail .caption {
   padding: 9px;
-  color: #555555;
+  color: #2C3E50;
 }
 
 /* line 34, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_thumbnails.scss */
@@ -9097,7 +9097,7 @@ button.close {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_typography.scss */
 body {
-  color: #555555;
+  color: #2C3E50;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
@@ -9154,7 +9154,7 @@ h1,
 /* line 55, ../sass/partials/_typography.scss */
 h2,
 .h2 {
-  color: #555555;
+  color: #2C3E50;
   font-family: "Roboto Slab", serif;
   font-size: 34px;
 }
@@ -9595,7 +9595,7 @@ h6,
     content: "|";
     display: inline-block;
     margin-left: 10px;
-    color: #555555;
+    color: #2C3E50;
   }
 }
 @media (min-width: 992px) {

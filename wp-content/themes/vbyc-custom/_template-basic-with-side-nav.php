@@ -122,7 +122,7 @@
     <script>
     $(document).ready(function() {
         vbyc.util.init({
-            hasSideNav : true
+            hasSidenav : true
         });
     });
   </script>
