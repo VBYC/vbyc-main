@@ -34,42 +34,51 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-unstyled">
+                            <ul class="content-list list-single-details list-unstyled">
                                 <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                                 <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                                 <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                            </ul>
-                        </div><!-- /column -->
-                        <div class="col-xs-12 col-sm-4">
-                            <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-unstyled">
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                             </ul>
                         </div><!-- /column -->
                         <div class="col-xs-12 col-sm-4">
                             <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-unstyled">
+                            <ul class="content-list list-single-details list-unstyled">
                                 <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                                 <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                                 <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                                    Bag for dirty laundry
+                                </li>
+                            </ul>
+                        </div><!-- /column -->
+                        <div class="col-xs-12 col-sm-4">
+                            <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
+                            <ul class="content-list list-single-details list-unstyled">
+                                <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                                    Bag for dirty laundry
+                                </li>
+                                <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                                    Bag for dirty laundry
+                                </li>
+                                <li id="XXX" class="item">
+                                    <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
                                     Bag for dirty laundry
                                 </li>
                             </ul>

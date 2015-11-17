@@ -72,7 +72,7 @@
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                            <ul class="content-list sidenav-anchor-target list-unstyled">
+                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="archery" class="item">
                                     <h3 class="heading archery">Archery</h3>
                                     <? include("_template-includes/classes-content.php"); ?>
