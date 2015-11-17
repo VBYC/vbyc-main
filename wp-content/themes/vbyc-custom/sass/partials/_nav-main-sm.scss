@@ -46,15 +46,6 @@
                     color: $link-color-dark;
                 }
             }
-//            &.expanded {
-//                border-bottom: none;
-//            }
-        }
-        > .selected {
-            .link {
-                @include box-shadow(inset 5px 0 0 0 $link-color, inset -5px 0 0 0 $link-color);
-                
-            }
         }
     }
 

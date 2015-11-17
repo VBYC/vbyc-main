@@ -9329,27 +9329,33 @@ h6,
 .footer {
   border-top: 5px solid #E74C3C;
 }
-/* line 7, ../sass/partials/_footer.scss */
+/* line 8, ../sass/partials/_footer.scss */
 .footer a, .footer .link-primary {
   text-decoration: underline;
 }
-/* line 9, ../sass/partials/_footer.scss */
+/* line 10, ../sass/partials/_footer.scss */
 .footer a:hover, .footer .link-primary:hover, .footer .sg-link-primary-hover .link-primary, .sg-link-primary-hover .footer .link-primary, .footer .sg-link-hover a, .sg-link-hover .footer a, .footer .sg-link-hover .link-primary, .sg-link-hover .footer .link-primary {
   text-decoration: none;
 }
-/* line 14, ../sass/partials/_footer.scss */
+/* line 15, ../sass/partials/_footer.scss */
 .footer .item {
   margin-bottom: 20px;
 }
-/* line 16, ../sass/partials/_footer.scss */
+/* line 17, ../sass/partials/_footer.scss */
 .footer .item .contact-item {
   margin-bottom: 20px;
 }
-/* line 18, ../sass/partials/_footer.scss */
+/* line 19, ../sass/partials/_footer.scss */
 .footer .item .contact-item:last-child {
   margin-bottom: 0;
 }
 
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 28, ../sass/partials/_footer.scss */
+  .footer {
+    text-align: center;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MAIN - NAVIGATION  (COMMON - SM & MD+)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -9471,22 +9477,17 @@ h6,
   .navbar-list .link.normal:hover {
     color: #1FA660;
   }
-  /* line 54, ../sass/partials/_nav-main-sm.scss */
-  .navbar-list > .selected .link {
-    -webkit-box-shadow: inset 5px 0 0 0 #37BC78, inset -5px 0 0 0 #37BC78;
-    box-shadow: inset 5px 0 0 0 #37BC78, inset -5px 0 0 0 #37BC78;
-  }
 
-  /* line 62, ../sass/partials/_nav-main-sm.scss */
+  /* line 53, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub {
     border-bottom: 1px solid #2C3E50;
   }
-  /* line 66, ../sass/partials/_nav-main-sm.scss */
+  /* line 57, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub:before {
     text-shadow: #1FA660 0 -1px 0;
     top: -8px;
   }
-  /* line 72, ../sass/partials/_nav-main-sm.scss */
+  /* line 63, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub .link-sub {
     border-top: 1px solid #1FA660;
   }
@@ -9637,21 +9638,49 @@ h6,
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     FOOTER NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 7, ../sass/partials/_nav-footer.scss */
+  .footer-nav {
+    margin: 20px -10px;
+    border-top: 1px solid #2C3E50;
+  }
+  /* line 10, ../sass/partials/_nav-footer.scss */
+  .footer-nav .nav-item {
+    display: block;
+    padding: 0;
+  }
+  /* line 16, ../sass/partials/_nav-footer.scss */
+  .footer-nav .nav-link {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #2C3E50;
+    text-decoration: none;
+  }
+  /* line 22, ../sass/partials/_nav-footer.scss */
+  .footer-nav .nav-link:hover {
+    color: #1FA660;
+  }
+}
+@media (min-width: 480px) and (max-width: 991px) {
+  /* line 30, ../sass/partials/_nav-footer.scss */
+  .footer-nav {
+    margin-top: 20px;
+  }
+}
 @media (min-width: 768px) {
-  /* line 8, ../sass/partials/_nav-footer.scss */
+  /* line 37, ../sass/partials/_nav-footer.scss */
   .footer-nav {
     padding-left: 0;
-    list-style: none;
     margin-left: -5px;
   }
-  /* line 12, ../sass/partials/_nav-footer.scss */
-  .footer-nav > li {
-    display: inline-block;
+  /* line 40, ../sass/partials/_nav-footer.scss */
+  .footer-nav .nav-item {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 22, ../sass/partials/_nav-footer.scss */
+  /* line 48, ../sass/partials/_nav-footer.scss */
   .nav-item:not(:last-child) a:after, .nav-item:not(:last-child) .link-primary:after {
     content: "|";
     display: inline-block;
@@ -9660,7 +9689,7 @@ h6,
   }
 }
 @media (min-width: 992px) {
-  /* line 33, ../sass/partials/_nav-footer.scss */
+  /* line 60, ../sass/partials/_nav-footer.scss */
   .footer-nav {
     float: right;
   }

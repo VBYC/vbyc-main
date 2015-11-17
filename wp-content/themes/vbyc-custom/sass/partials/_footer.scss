@@ -4,6 +4,7 @@
 
 .footer {
     border-top: 5px solid $color-red;
+
     a {
         text-decoration: underline;
         &:hover {
@@ -23,4 +24,9 @@
 }
 
 
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    .footer {
+       text-align: center;
+    }
+}
 

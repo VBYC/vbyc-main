@@ -1,4 +1,6 @@
 (function( vbyc, $, undefined ) { 
+	
+
 	var subNavSelector = '.navbar-list-sub';
 	var navbarSiblingsSelector  = '.navbar-list .link';
 	var sideNav = $('#sidenav');
@@ -7,11 +9,22 @@
 	
 
 	vbyc.util = {
-		init: function() {
+		init: function(customValues) {
+			
+			vbyc.util.initializeCustomValues(customValues);
+
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
-			vbyc.util.sidebarScrollSpy();
-			vbyc.util.sidebarScrollTo();
+
+			console.table( customValues  );
+			if (customValues.hasSideNav === true) {
+				vbyc.util.sidebarScrollSpy();
+				vbyc.util.sidebarScrollTo();
+			}
+			
+			
+		},
+		initializeCustomValues: function(customValues) {
 			
 		},
 
@@ -104,5 +117,5 @@
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));
 
-vbyc.util.init();
+
 
