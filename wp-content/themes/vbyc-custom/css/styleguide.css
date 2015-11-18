@@ -392,8 +392,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1445823798);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1445823798#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1445823798) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1445823798) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1445823798) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1445823798#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.eot);
+  src: url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.woff2) format("woff2"), url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.woff) format("woff"), url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.ttf) format("truetype"), url(/fonts/../wp-content/themes/vbyc-custom/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -9181,17 +9181,39 @@ button.close {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 59, ../sass/partials/_layout.scss */
+/* line 54, ../sass/partials/_layout.scss */
 .content-list.list-single-details .description {
   margin-top: 15px;
 }
-/* line 62, ../sass/partials/_layout.scss */
+/* line 57, ../sass/partials/_layout.scss */
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
+/* line 61, ../sass/partials/_layout.scss */
+.content-list .list-single-details-nested-1 {
+  margin: 0;
+  padding-left: 30px;
+}
+/* line 64, ../sass/partials/_layout.scss */
+.content-list .list-single-details-nested-1 > .item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 71, ../sass/partials/_layout.scss */
+.content-list .list-bullet-plus > li:before {
+  content: "+";
+  display: inline-block;
+  color: #2C3E50;
+}
+/* line 80, ../sass/partials/_layout.scss */
+.content-list .list-bullet-minus > li:before {
+  content: "-";
+  display: inline-block;
+  color: #2C3E50;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 71, ../sass/partials/_layout.scss */
+  /* line 92, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;

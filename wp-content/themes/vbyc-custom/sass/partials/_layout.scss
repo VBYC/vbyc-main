@@ -48,19 +48,40 @@
 		> .item {
 			margin-top: 10px;
 			margin-bottom: 10px;
+
 			
-//			&:after {
-//                content: "+";
-//                display: inline-block;
-//                margin-left: 10px;
-//                color: $text-color;
-//            }
 		}
 		.description {
 			margin-top: 15px;
 		}
 		.img-item {
 			margin-top: 15px;
+		}
+	}
+	.list-single-details-nested-1 {
+		margin: 0;
+		padding-left: 30px;
+		> .item {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	.list-bullet-plus {
+		> li {
+			&:before {
+	            content: "+";
+	            display: inline-block;
+	            color: $text-color;
+	        }
+		}
+	}
+	.list-bullet-minus {
+		> li {
+			&:before {
+	            content: "-";
+	            display: inline-block;
+	            color: $text-color;
+	        }
 		}
 	}
 }
