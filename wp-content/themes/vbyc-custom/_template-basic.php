@@ -32,59 +32,63 @@
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-single-details list-bullet-plus list-unstyled">
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                    <ul class="content-list list-single-details list-nested-1 list-bullet-minus list-unstyled">
-                                        <li id="XXX" class="item">
-                                            Bag for dirty laundry
-                                        </li>
-                                        <li id="XXX" class="item">
-                                            Bag for dirty laundry
-                                        </li>
-                                        <li id="XXX" class="item">
-                                            Bag for dirty laundry
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                            </ul>
-                        </div><!-- /column -->
-                        <div class="col-xs-12 col-sm-4">
-                            <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-single-details list-bullet-plus  list-unstyled">
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                            </ul>
-                        </div><!-- /column -->
-                        <div class="col-xs-12 col-sm-4">
-                            <h3 class="heading bed-and-bath">Bed &amp; Bath</h3>
-                            <ul class="content-list list-single-details list-bullet-plus  list-unstyled">
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                                <li id="XXX" class="item">
-                                    Bag for dirty laundry
-                                </li>
-                            </ul>
-                        </div><!-- /column -->
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-2.php"); ?> 
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+
+                            </dl>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-2.php"); ?> 
+
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+
+                            </dl>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+                            </dl>
+                        </div>
+                        <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
+                            <dl class="content-list-definition">
+                                <? include("_template-includes/basic-template-content-1.php"); ?> 
+
+                            </dl>
+                        </div>
                     </div><!-- /.row -->
                 </article> 
             </div><!-- /.container -->

@@ -44,7 +44,7 @@
 	// With Large Section
 	&.list-single-details {
 		margin-top: 30px;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		> .item {
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -58,31 +58,40 @@
 			margin-top: 15px;
 		}
 	}
-	.list-single-details-nested-1 {
+	.list-nested-1 {
 		margin: 0;
-		padding-left: 30px;
+		padding-left: 20px;
 		> .item {
 			margin-top: 10px;
 			margin-bottom: 10px;
 		}
 	}
-	.list-bullet-plus {
-		> li {
-			&:before {
-	            content: "+";
-	            display: inline-block;
-	            color: $text-color;
-	        }
-		}
+	
+}
+
+.list-bullet-plus,
+.list-bullet-minus {
+	> li {
+		padding-left: 10px;
+		&:before {
+            display: inline-block;
+            color: $text-color;
+            margin-left: -10px;
+        }
 	}
-	.list-bullet-minus {
-		> li {
-			&:before {
-	            content: "-";
-	            display: inline-block;
-	            color: $text-color;
-	        }
-		}
+}
+.list-bullet-plus {
+	> li {
+		&:before {
+            content: "+";
+        }
+	}
+}
+.list-bullet-minus {
+	> li {
+		&:before {
+            content: "-";
+        }
 	}
 }
 

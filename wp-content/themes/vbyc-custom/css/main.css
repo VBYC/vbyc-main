@@ -9084,7 +9084,7 @@ button.close {
 /* line 45, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 /* line 48, ../sass/partials/_layout.scss */
 .content-list.list-single-details > .item {
@@ -9100,30 +9100,41 @@ button.close {
   margin-top: 15px;
 }
 /* line 61, ../sass/partials/_layout.scss */
-.content-list .list-single-details-nested-1 {
+.content-list .list-nested-1 {
   margin: 0;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 /* line 64, ../sass/partials/_layout.scss */
-.content-list .list-single-details-nested-1 > .item {
+.content-list .list-nested-1 > .item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 71, ../sass/partials/_layout.scss */
-.content-list .list-bullet-plus > li:before {
-  content: "+";
-  display: inline-block;
-  color: #2C3E50;
+
+/* line 74, ../sass/partials/_layout.scss */
+.list-bullet-plus > li,
+.list-bullet-minus > li {
+  padding-left: 10px;
 }
-/* line 80, ../sass/partials/_layout.scss */
-.content-list .list-bullet-minus > li:before {
-  content: "-";
+/* line 76, ../sass/partials/_layout.scss */
+.list-bullet-plus > li:before,
+.list-bullet-minus > li:before {
   display: inline-block;
   color: #2C3E50;
+  margin-left: -10px;
+}
+
+/* line 85, ../sass/partials/_layout.scss */
+.list-bullet-plus > li:before {
+  content: "+";
+}
+
+/* line 92, ../sass/partials/_layout.scss */
+.list-bullet-minus > li:before {
+  content: "-";
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 92, ../sass/partials/_layout.scss */
+  /* line 101, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
