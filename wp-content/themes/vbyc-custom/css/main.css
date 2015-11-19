@@ -9038,11 +9038,16 @@ button.close {
   padding-bottom: 150px;
 }
 
+/* line 51, ../sass/partials/_template-helpers.scss */
+.grid-item {
+  margin-bottom: 20px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	CUSTOM BREAKPOINT CLASSES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 991px) {
-  /* line 59, ../sass/partials/_template-helpers.scss */
+  /* line 62, ../sass/partials/_template-helpers.scss */
   .hero-image img {
     width: 150%;
   }

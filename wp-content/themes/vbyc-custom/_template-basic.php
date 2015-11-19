@@ -35,7 +35,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-1.php"); ?> 
-
                             </dl>
                         </div>
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
@@ -46,7 +45,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-1.php"); ?> 
-
                             </dl>
                         </div>
                     </div><!-- /.row -->
@@ -55,7 +53,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-2.php"); ?> 
-
                             </dl>
                         </div>
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
@@ -66,7 +63,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-1.php"); ?> 
-
                             </dl>
                         </div>
                     </div><!-- /.row -->
@@ -75,7 +71,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-1.php"); ?> 
-
                             </dl>
                         </div>
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
@@ -86,7 +81,6 @@
                         <div class="col-xs-offset-1 col-xs-11 col-sm-4 col-sm-offset-0">
                             <dl class="content-list-definition">
                                 <? include("_template-includes/basic-template-content-1.php"); ?> 
-
                             </dl>
                         </div>
                     </div><!-- /.row -->
