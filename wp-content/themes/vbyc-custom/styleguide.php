@@ -180,90 +180,50 @@
     </div>
 
     <!-- Navigation -->
-    <h2 id="type-navigation">Navigation</h2>
-    <p>Add <code>.nav-primary.list-inline</code>. For the colored box items use <code>a.link.emphasize</code> and <code>a.link.emphasize-secondary</code> </p>
+    <h1 id="navigation">Navigation</h1>
+    
+    <h2 id="navigation-main">Main Navigation</h2>
     <div class="bs-example bs-example-type" data-example-id="simple-headings">
         <table class="table">
             <tbody>
                 <tr>
                     <td class="sg-navbar sq-navigation-dropdown" colspan="2">
-                        <nav class="navbar pull-right" role="navigation">
-                            <ul class="navbar-list list-unstyled clearfix">
-                                <li class="item">
-                                    <a href="#" class="link normal">Sessions</a>
-                                    <ul class="navbar-list-sub list-unstyled">
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Schedule
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                What To Bring
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Preparing For Camp
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Financial Aid
-                                            </a>
-                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="item selected">
-                                    <a href="#" class="link normal">Camp Life</a>
-                                    <ul class="navbar-list-sub list-unstyled">
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Typical Day
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Classes
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Activities
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Gallery
-                                            </a>
-                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="item">
-                                    <a href="#" class="link normal">About Us</a>
-                                    <ul class="navbar-list-sub list-unstyled">
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                News
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="Who's In Charge?" class="link-sub">
-                                                Classes
-                                            </a>
-                                         </li>
-                                         <li class="item-sub">
-                                            <a href="#" class="link-sub">
-                                                Accredidations
-                                            </a>
-                                         </li>
-                                    </ul>
-                                </li>
-                                <li class="item"><a href="#" class="link normal">Alumni</a></li>
-                                <li class="item"><a href="#" class="link normal">Donate</a></li>
-                                <li class="item"><a href="#" class="link emphasize">Register</a></li>
-                            </ul>                        
-                        </nav>
+                   
+                        <? include("_template-includes/nav-main-toggle.php"); ?> 
+                        <? include("_template-includes/nav-main.php"); ?> 
+              
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <h2 id="navigation-footer">Footer Navigation</h2>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                   
+                        <? include("_template-includes/nav-footer.php"); ?> 
+              
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <h2 id="navigation-side">Side Navigation</h2>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                   
+                        <? include("_template-includes/nav-side.php"); ?> 
+              
                     </td>
                 </tr>
 
@@ -606,6 +566,35 @@
     <span class="nt">&lt;li&gt;</span>...<span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
+
+<h3>Styled</h3>
+    <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+    <div class="bs-example" data-example-id="simple-ol">
+        <ul class="list-styled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+                <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+        </ul>
+
+        
+    </div>
+
+
+
+
+
     <h3>Ordered</h3>
     <p>A list of items in which the order <em>does</em> explicitly matter.</p>
     <div class="bs-example" data-example-id="simple-ol">
@@ -707,6 +696,10 @@
 </div>
 
 
+<div class="bs-docs-section">
+    <h1 id="tables" class="page-header">Navigation</h1>
+
+</div>
 
 <div class="bs-docs-section">
     <h1 id="tables" class="page-header">Tables</h1>
@@ -3471,7 +3464,6 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     <ul class="nav">
         <li><a href="#type-links-default">Default Links</a></li>
         <li><a href="#type-links-primary">Primary Links</a></li>
-        <li><a href="#type-navigation">Navigation</a></li>
         <li><a href="#type-headings">Headings</a></li>
         <li><a href="#type-colors">Colors</a></li>
         <li><a href="#type-body-copy">Body copy</a></li>
@@ -3485,6 +3477,14 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     </ul>
 </li>
 
+<li>
+    <a href="#navigation">Navigation</a>
+    <ul class="nav">
+        <li><a href="#navigation-main-main">Main Nav</a></li>
+        <li><a href="#navigation-main-footer">Footer Nav</a></li>
+        <li><a href="#navigation-main-side">Side Nav</a></li>
+    </ul>
+</li>
 <li>
     <a href="#tables">Tables</a>
     <ul class="nav">

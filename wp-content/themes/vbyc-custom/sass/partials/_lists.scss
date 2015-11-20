@@ -13,3 +13,25 @@
 		background-color: $list-striped-bg-color;
 	}
 }
+
+.list-styled {
+	
+	ul {
+//		margin: 0 0 0 20px;
+	}
+	li {
+		padding-left: 10px;
+		list-style: none;
+		&:before {
+            content: "-";
+            display: inline-block;
+            color: $text-color;
+            margin-left: -10px;
+        }
+	}
+	> li {
+		&:before {
+            content: "+";
+        }
+	}
+}

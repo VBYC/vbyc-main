@@ -9763,6 +9763,23 @@ h6,
   background-color: #eeeeee;
 }
 
+/* line 22, ../sass/partials/_lists.scss */
+.list-styled li {
+  padding-left: 10px;
+  list-style: none;
+}
+/* line 25, ../sass/partials/_lists.scss */
+.list-styled li:before {
+  content: "-";
+  display: inline-block;
+  color: #2C3E50;
+  margin-left: -10px;
+}
+/* line 33, ../sass/partials/_lists.scss */
+.list-styled > li:before {
+  content: "+";
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HERO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
