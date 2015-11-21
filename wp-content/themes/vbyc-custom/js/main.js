@@ -18,13 +18,16 @@
 			
 			// Set up main nav
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector)
+			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
 
 			// Set up side nav with anchor links
 			if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
 				vbyc.util.sidebarScrollTo();
 			}
+
+			// Set up lightbox
+			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -81,6 +84,71 @@
 				}
 			});
 		},
+		initLightbox: function() {
+			// Lightbox for Bootstrap 3 - http://ashleydw.github.io/lightbox/
+			// $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+			//     event.preventDefault();
+			//     // $(this).ekkoLightbox();
+			// }); 
+
+ 			$('.gallery').click(function (e) {
+                e.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+			console.log('Hello');
+
+			// delegate calls to data-toggle="lightbox"
+                // $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
+                //     event.preventDefault();
+                //     return $(this).ekkoLightbox({
+                //         onShown: function() {
+                //             if (window.console) {
+                //                 return console.log('Checking our the events huh?');
+                //             }
+                //         },
+                //         onNavigate: function(direction, itemIndex) {
+                //             if (window.console) {
+                //                 return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+                //             }
+                //         }
+                //     });
+                // });
+
+                // //Programatically call
+                // $('#open-image').click(function (e) {
+                //     e.preventDefault();
+                //     $(this).ekkoLightbox();
+                // });
+                // $('#open-youtube').click(function (e) {
+                //     e.preventDefault();
+                //     $(this).ekkoLightbox();
+                // });
+
+                // // navigateTo
+                // $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
+                //     event.preventDefault();
+
+                //     var lb;
+                //     return $(this).ekkoLightbox({
+                //         onShown: function() {
+
+                //             lb = this;
+
+                //             $(lb.modal_content).on('click', '.modal-footer a', function(e) {
+
+                //                 e.preventDefault();
+                //                 lb.navigateTo(2);
+
+                //             });
+
+                //         }
+                //     });
+                // });
+		},
+
+
+		
 
 		sidebarScrollSpy: function() {
 			var mainContent = $('.main-content');

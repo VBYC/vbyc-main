@@ -33,37 +33,56 @@
                 <article class="main-article">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-1.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-2.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-3.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                     </div><!-- /.row -->
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-3.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-1.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="images/template/grid-sample.jpg" class="img-responsive grid-item" alt=" " >
+                            <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-2.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
+                        </div>
+                        
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-2.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-3.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+                                <img src="images/template/grid-sample-1.jpg" class="img-responsive grid-item" alt=" " >
+                            </a>
                         </div>
                     </div><!-- /.row -->
                 </article> 
