@@ -8,7 +8,6 @@
     <? include("_template-includes/header-markup.php"); ?>  
     <main>
         <section class="hero">
-            <? /* 
             <div class="container-fluid hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -18,7 +17,6 @@
                     </div>
                 </div><!-- /.row -->
             </div>
-            */ ?>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">

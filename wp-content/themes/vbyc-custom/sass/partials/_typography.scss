@@ -45,34 +45,60 @@ a {
     }
 }
 
-
+$headline-reduce-ratio: .75;
 h1,
 .h1 {
 	color: $color-blue;
 	font-family: $font-family-serif;
-	font-size: 64px;
+	font-size:  $font-size-h1 * ($headline-reduce-ratio - .125);
 }
 h2,
 .h2 {
     color: $text-color;
     font-family: $font-family-serif;
-    font-size: 34px;
+    font-size:  $font-size-h2 * $headline-reduce-ratio;
 }
 h3,
 .h3 {
 	color: $color-red;
 	font-family: $font-family-serif;
-    font-size: 24px;
+    font-size:  $font-size-h3 * $headline-reduce-ratio;
 }
 h4,
 .h4 {
-    font-size: 18px;
+    font-size:  $font-size-h4 * $headline-reduce-ratio;
 }
 h5,
 .h5 {
-    font-size: 14px;
+    font-size:  $font-size-h5
 }
 h6,
 .h6 {
-    font-size: 12px;
+    font-size:  $font-size-h6;
+}
+
+@media (min-width: $screen-sm-min) {
+    h1,
+    .h1 {
+        font-size:  $font-size-h1 * $headline-reduce-ratio;
+    }
+    h2,
+    .h2 {
+        font-size:  $font-size-h2;
+    }
+    h3,
+    .h3 {
+        font-size:  $font-size-h3;
+    }
+    h4,
+    .h4 {
+        font-size:  $font-size-h4;
+    } 
+}
+
+@media (min-width: $screen-md-min) {
+    h1,
+    .h1 {
+        font-size:  $font-size-h1;
+    } 
 }

@@ -4,7 +4,6 @@
 
 .header-main {
 	padding-top: 25px;
-//	padding-bottom: 25px;
 }
 
 .main-logo-container {
@@ -37,6 +36,8 @@
 	}
 }
 
+
+
 @media (max-width: $screen-sm-max) {
 	.hero-image {
 		img {
@@ -46,9 +47,18 @@
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.header-main {
+		padding-bottom: 20px;
+	}
 	.main-logo {
 		float: none;
 	}	
+}
+
+@media (min-width: $screen-md-min) {
+	.header-main {
+		padding-bottom: 10px;
+	}
 }
 
 

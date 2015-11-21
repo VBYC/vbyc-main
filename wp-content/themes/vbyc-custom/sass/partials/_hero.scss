@@ -17,7 +17,6 @@
 		border-top: 1px solid $line-color;
 		border-bottom: 1px solid $line-color;
 		padding: $padding-base-vertical;
-		margin-top: $padding-base-vertical*6;
 		display: inline-block;
 		font-weight: bold;
 		+ .page-name  {
@@ -28,4 +27,10 @@
 		margin-top: $padding-base-vertical*3;
 	}
 
+}
+
+.hero-text-container {
+	background: #FAFAFA url('../images/heros/hero-text-bg.png') left top repeat;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
