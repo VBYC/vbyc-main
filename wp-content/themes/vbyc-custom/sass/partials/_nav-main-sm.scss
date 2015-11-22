@@ -29,13 +29,13 @@
     // Parent nav links container
     .navbar-list {
         margin-bottom: 0;
-        border-top: 1px solid $color-slate;
+        border-top: 1px solid $color-gray-lighter;
 
         // Parent nav links
         .link {
             font-size: 18px;
             &:not(.expanded) {
-                border-bottom: 1px solid $color-slate;
+                border-bottom: 1px solid $color-gray-lighter;
             }
             
 
@@ -51,7 +51,7 @@
 
     // Sub nav links container
     .navbar-list-sub {
-        border-bottom: 1px solid $color-slate;
+        border-bottom: 1px solid $color-gray-lighter;
         
         
         &:before {

@@ -9548,7 +9548,7 @@ h6,
   /* line 30, ../sass/partials/_nav-main-sm.scss */
   .navbar-list {
     margin-bottom: 0;
-    border-top: 1px solid #2C3E50;
+    border-top: 1px solid #eeeeee;
   }
   /* line 35, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link {
@@ -9556,7 +9556,7 @@ h6,
   }
   /* line 37, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link:not(.expanded) {
-    border-bottom: 1px solid #2C3E50;
+    border-bottom: 1px solid #eeeeee;
   }
   /* line 43, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal {
@@ -9569,7 +9569,7 @@ h6,
 
   /* line 53, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub {
-    border-bottom: 1px solid #2C3E50;
+    border-bottom: 1px solid #eeeeee;
   }
   /* line 57, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub:before {
@@ -9796,19 +9796,27 @@ h6,
   background-color: #eeeeee;
 }
 
-/* line 22, ../sass/partials/_lists.scss */
+/* line 17, ../sass/partials/_lists.scss */
+.list-styled {
+  padding-left: 0;
+}
+/* line 20, ../sass/partials/_lists.scss */
+.list-styled ul {
+  margin: 0 0 0 20px;
+}
+/* line 23, ../sass/partials/_lists.scss */
 .list-styled li {
   padding-left: 10px;
   list-style: none;
 }
-/* line 25, ../sass/partials/_lists.scss */
+/* line 26, ../sass/partials/_lists.scss */
 .list-styled li:before {
   content: "-";
   display: inline-block;
   color: #2C3E50;
   margin-left: -10px;
 }
-/* line 33, ../sass/partials/_lists.scss */
+/* line 34, ../sass/partials/_lists.scss */
 .list-styled > li:before {
   content: "+";
 }
