@@ -73,7 +73,7 @@
                     </div><!-- /.row -->
 
 
-                    <hr class="divider-accent">
+                    <hr class="divider-styled">
 
 
 
@@ -155,7 +155,7 @@
 
 
 
-                    <hr class="divider-accent">
+                    <hr class="divider-styled">
 
                     
 
@@ -255,7 +255,7 @@
 
 
 
-                    <hr class="divider-accent">
+                    <hr class="divider-styled">
 
 
                     <!-- three columns -->
@@ -286,7 +286,7 @@
                     </div><!-- /.row -->
 
 
-                    <hr class="divider-accent">
+                    <hr class="divider-styled">
                     
                     
                     <div class="row">

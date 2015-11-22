@@ -151,7 +151,7 @@
                     </div><!-- /.row -->
 
 
-                    <hr class="divider-accent">
+                    <hr class="divider-styled">
 
 
                     
@@ -161,6 +161,9 @@
                             <h3 class="heading">Re-flow columns - two columns</h3>
                             <div>
                                 <div style="-webkit-column-count:2;  margin-bottom: 50px"> 
+                                    <figure class="figure-images figure-inline sg-figure-inline pull-right">
+                                        <img src="images/template/figure-square.jpg" alt=" " class="img-item img-responsive ">
+                                    </figure>
                                     <p>
                                         <?=$lorem?>
                                         <?=$lorem2?>

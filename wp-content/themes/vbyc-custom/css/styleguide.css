@@ -9440,7 +9440,7 @@ h6,
 	GRAPHIC ELEMENTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_graphic-elements.scss */
-.divider-accent {
+.divider-styled {
   width: 100px;
   border-top: 2px solid #E74C3C;
   margin-top: 100px;

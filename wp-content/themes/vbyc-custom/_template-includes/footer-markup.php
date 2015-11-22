@@ -26,7 +26,7 @@
                 
 
                 <div class="item col-xs-12 col-md-6"> 
-                    <? include("_template-includes/footer-nav.php"); ?> 
+                    <? include("nav-footer.php"); ?> 
                 </div>
             </div>
         </div>
