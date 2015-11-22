@@ -17,8 +17,8 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="hero-text">
-                            <p class="h4 section-name text-uppercase">Schedule</p>
-                            <h1 class="page-name">What to Bring</h1>
+                            <p class="h4 section-name text-uppercase">Section</p>
+                            <h1 class="page-name">Template - Grid</h1>
                             <div class="description">
                                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                             </div> 

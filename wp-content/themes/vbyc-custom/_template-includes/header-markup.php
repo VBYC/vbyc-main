@@ -3,8 +3,8 @@
             <div class="row">
                 <div class="main-logo-container col-xs-9 col-sm-12 col-md-4 text-center">
                     <a href="/" title="Home">
-                        <img src="images/header/vbyc-logo-icon.png" alt="VBYC logo" class="main-logo main-logo-icon">
-                        <img src="images/header/vbyc-logo.png" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
+                        <img src="images/logos/vbyc-logo-icon.svg" alt="VBYC logo" class="main-logo main-logo-icon">
+                        <img src="images/logos/vbyc-logo.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-3 col-sm-12 col-md-8">

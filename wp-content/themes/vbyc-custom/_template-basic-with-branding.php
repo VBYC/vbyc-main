@@ -19,11 +19,13 @@
             </div>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
+                    <div class="hero-text">
+                        <p class="h4 section-name text-uppercase">Section</p>
+                        <h1 class="page-name">Template - Basic with Branding</h1>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-10 col-md-offset-1">
                             <div class="hero-text">
-                                <p class="h4 section-name text-uppercase">Section</p>
-                                <h1 class="page-name">Template - Basic</h1>
                                 <div class="description">
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                 </div> 
@@ -41,8 +43,47 @@
                     <!-- 1 column -->
                     <div class="row">
                         <div class="col-xs-12 col-md-offset-1 col-md-10">
-                            <h3 class="heading">One column - with padding</h3>
+                            <h3 class="heading">Square image - right</h3>
                             <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-right">
+                                    <img src="images/template/figure-square.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
+                                <p>
+                                    <?=$lorem?>
+                                    <?=$lorem2?>
+                                </p>
+                                <p>
+                                    <?=$lorem?>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-offset-1 col-md-10">
+                            <h3 class="heading">Portrait image - right</h3>
+                            <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-right">
+                                    <img src="images/template/figure-portrait.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
+                                <p>
+                                    <?=$lorem?>
+                                    <?=$lorem2?>
+                                </p>
+                                <p>
+                                    <?=$lorem?>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-offset-1 col-md-10">
+                            <h3 class="heading">Landscape image - right</h3>
+                            <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-right">
+                                    <img src="images/template/figure-landscape.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
                                 <p>
                                     <?=$lorem?>
                                     <?=$lorem2?>
@@ -57,8 +98,47 @@
                     <!-- 1 column -->
                     <div class="row">
                         <div class="col-xs-12">
-                            <h3 class="heading">One column - full</h3>
+                            <h3 class="heading">Square image - left</h3>
                             <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-left">
+                                    <img src="images/template/figure-square.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
+                                <p>
+                                    <?=$lorem?>
+                                    <?=$lorem2?>
+                                </p>
+                                <p>
+                                    <?=$lorem?>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="heading">Square portrait - left</h3>
+                            <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-left">
+                                    <img src="images/template/figure-portrait.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
+                                <p>
+                                    <?=$lorem?>
+                                    <?=$lorem2?>
+                                </p>
+                                <p>
+                                    <?=$lorem?>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="heading">Square landscape - left</h3>
+                            <div>
+                                <figure class="figure-images figure-inline sg-figure-inline pull-left">
+                                    <img src="images/template/figure-landscape.jpg" alt=" " class="img-item img-responsive ">
+                                </figure>
                                 <p>
                                     <?=$lorem?>
                                     <?=$lorem2?>
@@ -73,87 +153,6 @@
 
                     <hr class="divider-accent">
 
-
-
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <h3 class="heading">Grid - two columns</h3>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <!-- three columns -->
-                    <div class="row">
-                        <h3 class="heading">Grid - three columns</h3>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <!-- 4 columns -->
-                    <div class="row">
-                        <h3 class="heading">Grid - four columns</h3>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="">
-                                
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-
-                    
-
-
-
-                    <hr class="divider-accent">
 
                     
 
@@ -248,69 +247,6 @@
 
 
                     
-
-
-
-
-
-                    <hr class="divider-accent">
-
-
-                    <!-- three columns -->
-                    <div class="row">
-                        <h3 class="heading">Grid - three columns - list content</h3>
-                        <div class="col-xs-12 col-sm-4">
-                            <dl class="content-list-definition">
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                <? include("_template-includes/basic-template-content-2.php"); ?> 
-                            </dl>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <dl class="content-list-definition">
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                <? include("_template-includes/basic-template-content-2.php"); ?> 
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                            </dl>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <dl class="content-list-definition">
-                                <? include("_template-includes/basic-template-content-2.php"); ?> 
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                <? include("_template-includes/basic-template-content-1.php"); ?> 
-                            </dl>
-                        </div>
-                    </div><!-- /.row -->
-
-
-                    <hr class="divider-accent">
-                    
-                    
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - three columns - list content</h3>
-                            <div>
-                                <div style="-webkit-column-count:3;  margin-bottom: 50px"> 
-                                    <dl class="content-list-definition">
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-2.php"); ?>
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-2.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-2.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-
-
 
 
 

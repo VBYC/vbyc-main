@@ -9309,17 +9309,6 @@ button.close {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	LAYOUT
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 5, ../sass/partials/_graphics.scss */
-.divider-accent {
-  width: 100px;
-  border-top: 2px solid #E74C3C;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	FONTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9448,6 +9437,26 @@ h6,
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GRAPHIC ELEMENTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_graphic-elements.scss */
+.divider-accent {
+  width: 100px;
+  border-top: 2px solid #E74C3C;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* line 17, ../sass/partials/_graphic-elements.scss */
+.figure-images.pull-right {
+  margin-left: 20px;
+}
+/* line 20, ../sass/partials/_graphic-elements.scss */
+.figure-images.pull-left {
+  margin-right: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_header.scss */
@@ -9455,52 +9464,52 @@ h6,
   padding-top: 25px;
 }
 
-/* line 9, ../sass/partials/_header.scss */
+/* line 8, ../sass/partials/_header.scss */
 .main-logo-container {
   margin-bottom: 25px;
 }
 
-/* line 13, ../sass/partials/_header.scss */
+/* line 11, ../sass/partials/_header.scss */
 .main-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 18, ../sass/partials/_header.scss */
+/* line 15, ../sass/partials/_header.scss */
 .main-logo-icon {
   display: none;
 }
 
 @media (max-width: 300px) {
-  /* line 31, ../sass/partials/_header.scss */
+  /* line 21, ../sass/partials/_header.scss */
   .main-logo-icon {
     display: inline-block;
   }
 
-  /* line 34, ../sass/partials/_header.scss */
+  /* line 24, ../sass/partials/_header.scss */
   .main-logo-normal {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  /* line 43, ../sass/partials/_header.scss */
+  /* line 30, ../sass/partials/_header.scss */
   .hero-image img {
     width: 150%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 50, ../sass/partials/_header.scss */
+  /* line 36, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 20px;
   }
 
-  /* line 53, ../sass/partials/_header.scss */
+  /* line 39, ../sass/partials/_header.scss */
   .main-logo {
     float: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 59, ../sass/partials/_header.scss */
+  /* line 44, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 10px;
   }
@@ -9910,18 +9919,18 @@ h6,
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HERO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, ../sass/partials/_hero.scss */
+/* line 5, ../sass/partials/_hero.scss */
 .hero {
   overflow: hidden;
   text-align: center;
   background-position: 50% 50%;
 }
-/* line 11, ../sass/partials/_hero.scss */
+/* line 10, ../sass/partials/_hero.scss */
 .hero .hero-image img {
   margin-left: -50%;
   margin-right: -50%;
 }
-/* line 16, ../sass/partials/_hero.scss */
+/* line 15, ../sass/partials/_hero.scss */
 .hero .section-name {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -9929,16 +9938,16 @@ h6,
   display: inline-block;
   font-weight: bold;
 }
-/* line 22, ../sass/partials/_hero.scss */
+/* line 21, ../sass/partials/_hero.scss */
 .hero .section-name + .page-name {
   margin-top: 12px;
 }
-/* line 26, ../sass/partials/_hero.scss */
+/* line 25, ../sass/partials/_hero.scss */
 .hero .description {
   margin-top: 18px;
 }
 
-/* line 32, ../sass/partials/_hero.scss */
+/* line 30, ../sass/partials/_hero.scss */
 .hero-text-container {
   background: #FAFAFA url("../images/heros/hero-text-bg.png") left top repeat;
   padding-top: 40px;
