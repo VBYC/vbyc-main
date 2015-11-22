@@ -10,14 +10,27 @@
 	margin-bottom: 100px;
 }
 
-
-
 // Figures
 .figure-images {
 	&.pull-right {
-		margin-left: 20px;
+		margin-left: $grid-gutter-width;
 	}
 	&.pull-left {
-		margin-right: 20px;
+		margin-right: $grid-gutter-width;
 	}
+	&.figure-zig-zag {
+		.figure-row {
+			.img-container:nth-of-type(even) {
+					margin-top: $grid-gutter-width;
+				
+			}
+		}
+		
+	}
+}
+
+// Callout box
+.content-callout {
+	background-color: $color-gray-lighter;
+	padding: $padding-large-horizontal $padding-large-horizontal $padding-large-vertical; 
 }

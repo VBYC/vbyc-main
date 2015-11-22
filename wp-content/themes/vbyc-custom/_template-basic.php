@@ -313,6 +313,20 @@
 
 
 
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="heading">Callout text</h3>
+                            <div class="content-callout">
+                                <p>
+                                    <?=$lorem?>
+                                    <?=$lorem2?>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+
+
 
 
 

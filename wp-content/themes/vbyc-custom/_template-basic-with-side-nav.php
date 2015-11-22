@@ -13,7 +13,7 @@
                     </div>
                 </div><!-- /.row -->
             </div>
-            <div class="container">
+            <div class="container-fluid hero-text-container clearfix">
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="hero-text">

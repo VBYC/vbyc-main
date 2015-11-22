@@ -151,7 +151,7 @@
                     </div><!-- /.row -->
 
 
-                    <hr class="divider-styled">
+                    <hr class="divider-accent">
 
 
                     

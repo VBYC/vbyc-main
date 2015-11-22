@@ -13,7 +13,7 @@
                     </div>
                 </div><!-- /.row -->
             </div>
-            <div class="container">
+            <div class="container-fluid hero-text-container clearfix">
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="hero-text">
@@ -661,7 +661,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div>
-                                <div style="-webkit-column-count:5;  margin-bottom: 50px"> 
+                                <div style="-webkit-column-count:5;  margin-bottom: 50px" class="sg-temp-images-same"> 
                                     <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
                                         <img src="images/template/grid-sample-1.jpg" class="img-responsive grid-item" alt=" " >
                                     </a>

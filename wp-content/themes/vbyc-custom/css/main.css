@@ -3836,7 +3836,7 @@ input[type="checkbox"]:focus {
 /* line 83, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 output {
   display: block;
-  padding-top: 7px;
+  padding-top: 6px;
   font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
@@ -3846,8 +3846,8 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 36px;
-  padding: 6px 12px;
+  height: 34px;
+  padding: 5px 10px;
   font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
@@ -3907,7 +3907,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 36px;
+    line-height: 34px;
   }
   /* line 191, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
   input[type="date"].input-sm, .input-group-sm > input[type="date"].form-control,
@@ -3949,7 +3949,7 @@ input[type="search"] {
   .input-group-lg > input[type="month"].input-group-addon,
   .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
   input[type="month"] {
-    line-height: 49px;
+    line-height: 79px;
   }
 }
 /* line 209, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
@@ -4034,8 +4034,8 @@ input[type="checkbox"] {
 
 /* line 301, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   margin-bottom: 0;
   min-height: 38px;
 }
@@ -4110,8 +4110,8 @@ select[multiple].input-sm,
 .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 49px;
-  padding: 10px 16px;
+  height: 79px;
+  padding: 25px 30px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -4121,8 +4121,8 @@ select[multiple].input-sm,
 select.input-lg, .input-group-lg > select.form-control,
 .input-group-lg > select.input-group-addon,
 .input-group-lg > .input-group-btn > select.btn {
-  height: 49px;
-  line-height: 49px;
+  height: 79px;
+  line-height: 79px;
 }
 
 /* line 84, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -4138,16 +4138,16 @@ select[multiple].input-lg,
 
 /* line 353, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control {
-  height: 49px;
-  padding: 10px 16px;
+  height: 79px;
+  padding: 25px 30px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
 /* line 360, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg select.form-control {
-  height: 49px;
-  line-height: 49px;
+  height: 79px;
+  line-height: 79px;
 }
 /* line 364, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg textarea.form-control,
@@ -4156,9 +4156,9 @@ select[multiple].input-lg,
 }
 /* line 368, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-group-lg .form-control-static {
-  height: 49px;
+  height: 79px;
   min-height: 42px;
-  padding: 11px 16px;
+  padding: 26px 30px;
   font-size: 20px;
   line-height: 1.3333333;
 }
@@ -4169,7 +4169,7 @@ select[multiple].input-lg,
 }
 /* line 387, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .has-feedback .form-control {
-  padding-right: 45px;
+  padding-right: 42.5px;
 }
 
 /* line 392, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
@@ -4179,9 +4179,9 @@ select[multiple].input-lg,
   right: 0;
   z-index: 2;
   display: block;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
   text-align: center;
   pointer-events: none;
 }
@@ -4192,9 +4192,9 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  width: 49px;
-  height: 49px;
-  line-height: 49px;
+  width: 79px;
+  height: 79px;
+  line-height: 79px;
 }
 
 /* line 411, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
@@ -4390,12 +4390,12 @@ select[multiple].input-lg,
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 7px;
+  padding-top: 6px;
 }
 /* line 563, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 29px;
+  min-height: 28px;
 }
 /* line 569, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
 .form-horizontal .form-group {
@@ -4416,7 +4416,7 @@ select[multiple].input-lg,
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 6px;
   }
 }
 /* line 587, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
@@ -4426,7 +4426,7 @@ select[multiple].input-lg,
 @media (min-width: 768px) {
   /* line 597, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 14.333333px;
+    padding-top: 34.3333325px;
     font-size: 20px;
   }
 }
@@ -4450,7 +4450,7 @@ select[multiple].input-lg,
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 5px 10px;
   font-size: 16px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -4791,7 +4791,7 @@ a.btn.disabled, .btn.disabled.link-primary, fieldset[disabled] a.btn, fieldset[d
 
 /* line 135, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-lg, .btn-group-lg > .btn {
-  padding: 10px 16px;
+  padding: 25px 30px;
   font-size: 20px;
   line-height: 1.3333333;
   border-radius: 6px;
@@ -5336,7 +5336,7 @@ tbody.collapse.in {
 
 /* line 73, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_input-groups.scss */
 .input-group-addon {
-  padding: 6px 12px;
+  padding: 5px 10px;
   font-size: 16px;
   font-weight: normal;
   line-height: 1;
@@ -5358,7 +5358,7 @@ tbody.collapse.in {
 .input-group-addon.input-lg,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn {
-  padding: 10px 16px;
+  padding: 25px 30px;
   font-size: 20px;
   border-radius: 6px;
 }
@@ -5913,8 +5913,8 @@ tbody.collapse.in {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 @media (min-width: 768px) {
   /* line 472, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_forms.scss */
@@ -6019,8 +6019,8 @@ tbody.collapse.in {
 
 /* line 343, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 /* line 346, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn {
@@ -6312,7 +6312,7 @@ tbody.collapse.in {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 5px 10px;
   line-height: 1.42857143;
   text-decoration: none;
   color: #37BC78;
@@ -6372,7 +6372,7 @@ tbody.collapse.in {
 /* line 5, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_pagination.scss */
 .pagination-lg > li > a, .pagination-lg > li > .link-primary,
 .pagination-lg > li > span {
-  padding: 10px 16px;
+  padding: 25px 30px;
   font-size: 20px;
   line-height: 1.3333333;
 }
@@ -9130,7 +9130,7 @@ button.close {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_layout.scss */
 .main-content {
-  margin-top: 48px;
+  margin-top: 40px;
 }
 /* line 7, ../sass/partials/_layout.scss */
 .main-content.has-sidenav {
@@ -9140,12 +9140,12 @@ button.close {
 /* line 13, ../sass/partials/_layout.scss */
 .has-sidenav .sidenav,
 .has-sidenav .content-list > .item {
-  padding-top: 48px;
+  padding-top: 40px;
 }
 
 /* line 24, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item {
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 /* line 32, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item .heading {
@@ -9188,31 +9188,8 @@ button.close {
   margin-bottom: 10px;
 }
 
-/* line 74, ../sass/partials/_layout.scss */
-.list-bullet-plus > li,
-.list-bullet-minus > li {
-  padding-left: 10px;
-}
-/* line 76, ../sass/partials/_layout.scss */
-.list-bullet-plus > li:before,
-.list-bullet-minus > li:before {
-  display: inline-block;
-  color: #2C3E50;
-  margin-left: -10px;
-}
-
-/* line 85, ../sass/partials/_layout.scss */
-.list-bullet-plus > li:before {
-  content: "+";
-}
-
-/* line 92, ../sass/partials/_layout.scss */
-.list-bullet-minus > li:before {
-  content: "-";
-}
-
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 101, ../sass/partials/_layout.scss */
+  /* line 76, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
@@ -9357,13 +9334,23 @@ h6,
   margin-bottom: 100px;
 }
 
-/* line 17, ../sass/partials/_graphic-elements.scss */
+/* line 15, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-right {
   margin-left: 20px;
 }
-/* line 20, ../sass/partials/_graphic-elements.scss */
+/* line 18, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-left {
   margin-right: 20px;
+}
+/* line 23, ../sass/partials/_graphic-elements.scss */
+.figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
+  margin-top: 20px;
+}
+
+/* line 33, ../sass/partials/_graphic-elements.scss */
+.content-callout {
+  background-color: #eeeeee;
+  padding: 30px 30px 25px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9844,20 +9831,21 @@ h6,
 .hero .section-name {
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding: 6px;
+  margin-top: 0;
+  padding: 5px;
   display: inline-block;
   font-weight: bold;
 }
-/* line 21, ../sass/partials/_hero.scss */
+/* line 22, ../sass/partials/_hero.scss */
 .hero .section-name + .page-name {
-  margin-top: 12px;
+  margin-top: 10px;
 }
-/* line 25, ../sass/partials/_hero.scss */
+/* line 26, ../sass/partials/_hero.scss */
 .hero .description {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
-/* line 30, ../sass/partials/_hero.scss */
+/* line 31, ../sass/partials/_hero.scss */
 .hero-text-container {
   background: #FAFAFA url("../images/heros/hero-text-bg.png") left top repeat;
   padding-top: 40px;

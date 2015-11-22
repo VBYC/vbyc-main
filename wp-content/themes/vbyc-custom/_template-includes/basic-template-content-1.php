@@ -2,7 +2,7 @@
                                     <h3 class="heading">List Headline</h3>
                                 </dt>
                                 <dd class="list-definition">
-                                    <ul class="content-list list-single-details list-bullet-plus list-unstyled">
+                                    <ul class="content-list list-single-details list-styled">
                                         <li id="XXX" class="item">
                                             List item, one line
                                         </li>

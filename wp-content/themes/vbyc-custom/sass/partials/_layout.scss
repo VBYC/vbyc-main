@@ -69,31 +69,6 @@
 	
 }
 
-.list-bullet-plus,
-.list-bullet-minus {
-	> li {
-		padding-left: 10px;
-		&:before {
-            display: inline-block;
-            color: $text-color;
-            margin-left: -10px;
-        }
-	}
-}
-.list-bullet-plus {
-	> li {
-		&:before {
-            content: "+";
-        }
-	}
-}
-.list-bullet-minus {
-	> li {
-		&:before {
-            content: "-";
-        }
-	}
-}
 
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
