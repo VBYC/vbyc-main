@@ -3,22 +3,17 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+@media (max-width: $screen-xs-max) {
+    
     .footer-nav {
-        margin: 20px -10px;
-        border-top: 1px solid $color-slate;
+        padding-left: 25px;
+        list-style-type: disc;
+     
         .nav-item {
-          
-            display: block;
+            display: list-item;
             padding: 0;
-            
         }
         .nav-link {
-            display: block;
-            padding: 10px;
-            margin: 10px 0;
-            border-bottom: 1px solid $color-slate;
-            text-decoration: none;
             &:hover {
                 color: $link-color-dark;
             }
@@ -57,7 +52,7 @@
 }
 
 @media (min-width: $screen-md-min) {
-    .footer-nav {
-        float: right;
-    }
+//    .footer-nav {
+//        float: right;
+//    }
 }

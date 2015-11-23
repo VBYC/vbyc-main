@@ -1,4 +1,5 @@
 					<nav id="footer-nav"> 
+						<div class="visible-xs-block title">Quick Links</div>
                         <ul class="footer-nav list-inline">
                             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>

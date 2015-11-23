@@ -9116,11 +9116,16 @@ button.close {
   margin-bottom: 20px;
 }
 
+/* line 55, ../sass/partials/_template-helpers.scss */
+.list-unstyled {
+  list-style-type: disc;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	CUSTOM BREAKPOINT CLASSES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 991px) {
-  /* line 62, ../sass/partials/_template-helpers.scss */
+  /* line 66, ../sass/partials/_template-helpers.scss */
   .hero-image img {
     width: 150%;
   }
@@ -9417,32 +9422,38 @@ h6,
 /* line 5, ../sass/partials/_footer.scss */
 .footer {
   border-top: 5px solid #E74C3C;
-}
-/* line 8, ../sass/partials/_footer.scss */
-.footer a, .footer .link-primary {
-  text-decoration: underline;
-}
-/* line 10, ../sass/partials/_footer.scss */
-.footer a:hover, .footer .link-primary:hover {
-  text-decoration: none;
-}
-/* line 15, ../sass/partials/_footer.scss */
-.footer .item {
-  margin-bottom: 20px;
-}
-/* line 17, ../sass/partials/_footer.scss */
-.footer .item .contact-item {
-  margin-bottom: 20px;
-}
-/* line 19, ../sass/partials/_footer.scss */
-.footer .item .contact-item:last-child {
-  margin-bottom: 0;
+  text-align: left;
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  /* line 28, ../sass/partials/_footer.scss */
+/* line 13, ../sass/partials/_footer.scss */
+.footer-message {
+  color: #0595E5;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 21, ../sass/partials/_footer.scss */
+.footer-content .item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../sass/partials/_footer.scss */
   .footer {
     text-align: center;
+  }
+  /* line 32, ../sass/partials/_footer.scss */
+  .footer .item {
+    margin: 0 20px;
+    float: left;
+    display: inline-block;
+    text-align: left;
+  }
+
+  /* line 39, ../sass/partials/_footer.scss */
+  .footer-content {
+    text-align: left;
+    display: inline-block;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9578,6 +9589,7 @@ h6,
   }
   /* line 63, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub .link-sub {
+    font-size: 18px;
     border-top: 1px solid #1FA660;
   }
 }
@@ -9727,60 +9739,46 @@ h6,
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     FOOTER NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@media (min-width: 480px) and (max-width: 767px) {
-  /* line 7, ../sass/partials/_nav-footer.scss */
+@media (max-width: 767px) {
+  /* line 8, ../sass/partials/_nav-footer.scss */
   .footer-nav {
-    margin: 20px -10px;
-    border-top: 1px solid #2C3E50;
+    padding-left: 25px;
+    list-style-type: disc;
   }
-  /* line 10, ../sass/partials/_nav-footer.scss */
+  /* line 12, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-item {
-    display: block;
+    display: list-item;
     padding: 0;
   }
-  /* line 16, ../sass/partials/_nav-footer.scss */
-  .footer-nav .nav-link {
-    display: block;
-    padding: 10px;
-    margin: 10px 0;
-    border-bottom: 1px solid #2C3E50;
-    text-decoration: none;
-  }
-  /* line 22, ../sass/partials/_nav-footer.scss */
+  /* line 17, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-link:hover {
     color: #1FA660;
   }
 }
 @media (min-width: 480px) and (max-width: 991px) {
-  /* line 30, ../sass/partials/_nav-footer.scss */
+  /* line 25, ../sass/partials/_nav-footer.scss */
   .footer-nav {
     margin-top: 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 37, ../sass/partials/_nav-footer.scss */
+  /* line 32, ../sass/partials/_nav-footer.scss */
   .footer-nav {
     padding-left: 0;
     margin-left: -5px;
   }
-  /* line 40, ../sass/partials/_nav-footer.scss */
+  /* line 35, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-item {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 48, ../sass/partials/_nav-footer.scss */
+  /* line 43, ../sass/partials/_nav-footer.scss */
   .nav-item:not(:last-child) a:after, .nav-item:not(:last-child) .link-primary:after {
     content: "|";
     display: inline-block;
     margin-left: 10px;
     color: #2C3E50;
-  }
-}
-@media (min-width: 992px) {
-  /* line 60, ../sass/partials/_nav-footer.scss */
-  .footer-nav {
-    float: right;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
