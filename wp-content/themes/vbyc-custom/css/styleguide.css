@@ -9272,19 +9272,9 @@ button.close {
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
-/* line 61, ../sass/partials/_layout.scss */
-.content-list .list-nested-1 {
-  margin: 0;
-  padding-left: 20px;
-}
-/* line 64, ../sass/partials/_layout.scss */
-.content-list .list-nested-1 > .item {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 76, ../sass/partials/_layout.scss */
+  /* line 69, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
@@ -9890,28 +9880,13 @@ h6,
 }
 
 /* line 17, ../sass/partials/_lists.scss */
-.list-styled {
-  padding-left: 0;
+.list-no-indent {
+  padding-left: 17px;
 }
-/* line 20, ../sass/partials/_lists.scss */
-.list-styled ul {
-  margin: 0 0 0 20px;
-}
-/* line 23, ../sass/partials/_lists.scss */
-.list-styled li {
-  padding-left: 10px;
-  list-style: none;
-}
-/* line 26, ../sass/partials/_lists.scss */
-.list-styled li:before {
-  content: "-";
-  display: inline-block;
-  color: #2C3E50;
-  margin-left: -10px;
-}
-/* line 34, ../sass/partials/_lists.scss */
-.list-styled > li:before {
-  content: "+";
+
+/* line 22, ../sass/partials/_lists.scss */
+.list-styled > .item {
+  margin: 0 10px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

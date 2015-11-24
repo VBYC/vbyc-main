@@ -14,25 +14,12 @@
 	}
 }
 
-.list-styled {
-	padding-left: 0;
+.list-no-indent  {
+	padding-left: 17px;
+}
 
-	ul {
-		margin: 0 0 0 20px;
-			}
-	li {
-		padding-left: 10px;
-		list-style: none;
-		&:before {
-            content: "-";
-            display: inline-block;
-            color: $text-color;
-            margin-left: -10px;
-        }
-	}
-	> li {
-		&:before {
-            content: "+";
-        }
+.list-styled {
+	> .item {
+		margin: 10px 0;
 	}
 }

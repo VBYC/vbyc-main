@@ -570,7 +570,7 @@
 <h3>Styled</h3>
     <p>A list of items in which the order <em>does</em> explicitly matter.</p>
     <div class="bs-example" data-example-id="simple-ol">
-        <ul class="list-styled">
+        <ul class="list-styled list-no-indent  ">
             <li>Lorem ipsum dolor sit amet</li>
             <li>Consectetur adipiscing elit</li>
             <li>Integer molestie lorem at massa</li>

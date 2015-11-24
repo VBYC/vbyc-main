@@ -2,13 +2,13 @@
                                     <h3 class="heading">List Headline</h3>
                                 </dt>
                                 <dd class="list-definition">
-                                    <ul class="content-list list-single-details list-styled">
+                                    <ul class="list-styled list-no-indent  ">
                                         <li id="XXX" class="item">
                                             List item with one line?!
                                         </li>
                                         <li id="XXX" class="item">
                                             List item with one line for example
-                                            <ul class="content-list list-single-details list-nested-1 list-styled">
+                                            <ul class="list-styled list-no-indent  ">
                                                 <li id="XXX" class="item">
                                                     Child list item, one line
                                                 </li>

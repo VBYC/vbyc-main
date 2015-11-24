@@ -13,7 +13,7 @@
                     </div>
                 </div><!-- /.row -->
             </div>
-            <div class="container-fluid hero-text-container clearfix">
+            <div class="container-fluid hero-text-container clearfix ">
                 <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-1">
                         <div class="hero-text">
@@ -38,6 +38,7 @@
                         <article class="main-article">
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="archery" class="item">
+                                    
                                     <h3 class="heading archery">Archery</h3>
                                     <? include("_template-includes/classes-content.php"); ?>
                                 </li>
