@@ -8,7 +8,7 @@
     <? include("_template-includes/header-markup.php"); ?>  
     <main>
         <section class="hero">
-            <? /* 
+            <? if ($show_hero_image) { ?>
             <div class="container-fluid hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -18,7 +18,7 @@
                     </div>
                 </div><!-- /.row -->
             </div>
-            */ ?>
+            <? } ?>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
@@ -45,6 +45,27 @@
             <div class="container"> 
                 <article class="main-article">
 
+                    <? if ($show_content_hero_image) { ?>
+                    <div class="row">
+                        <figure class="figure-images figure-zig-zag">
+                            <!-- 1 column -->
+                            <div class="row figure-row">
+                                <div class="col-sm-2 img-container">
+                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-4 img-container">
+                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-4 img-container">
+                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-2 img-container">
+                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                </div>         
+                            </div><!-- /.row -->
+                        </figure>
+                    </div><!-- /.row -->
+                    <? } ?>
 
                     <div class="row">
                         <div class="col-xs-8 col-md-offset-2">
