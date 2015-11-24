@@ -29,7 +29,7 @@
                         </div>         
                     </div><!-- /.row -->
                     <div class="row">
-                        <div class="col-xs-8 col-md-offset-2">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
                                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
@@ -68,7 +68,7 @@
                     <? } ?>
 
                     <div class="row">
-                        <div class="col-xs-8 col-md-offset-2">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">One column</h3>
                             <div>
                                 <p>
@@ -179,7 +179,7 @@
                  
 
                     <div class="row">
-                        <div class="col-xs-8 col-md-offset-2">
+                        <div class="col-xs-8 col-xs-offset-2">
                             <h3 class="heading">Callout text</h3>
                             <div class="content-callout">
                                 <p>

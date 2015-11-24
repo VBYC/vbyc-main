@@ -4,29 +4,30 @@
     <? include("_template-includes/header-markup.php"); ?>  
     <main>
         <section class="hero">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="hero-image">
-                            <img src="images/template/hero.jpg" alt=" ">
-                        </div>
-                    </div>
-                </div><!-- /.row -->
-            </div>
-            <div class="container-fluid hero-text-container clearfix ">
-                <div class="row">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                        <div class="hero-text">
-                            <p class="h4 section-name text-uppercase">Camp Life</p>
-                            <h1 class="page-name">Classes</h1>
-                            <div class="description">
-                                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                            </div>   
-                        </div> 
-                    </div>         
-                </div><!-- /.row -->
+            <div class="container-fluid hero-text-container clearfix">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="hero-text">
+                                <p class="h4 section-name text-uppercase">Section</p>
+                                <h1 class="page-name">Template - Basic with Side Nav</h1>
+                        </div>         
+                    </div><!-- /.row -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <div class="hero-text">
+                                <div class="description">
+                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                </div> 
+                                <a href="#" class="hero-cta">Call to action</a>  
+                            </div> 
+                        </div>         
+                    </div><!-- /.row -->
+                </div>
             </div>
         </section>
+
+        
         <section class="main-content">
             <div class="container"> 
                 <div class="row">
