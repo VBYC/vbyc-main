@@ -91,7 +91,11 @@
 
                     <!-- 2 columns -->
                     <div class="row">
-                        <h3 class="heading">Two columns</h3>
+                        <div class="col-xs-12 col-sm-6">
+                            <h3 class="heading">Two columns</h3>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-xs-12 col-sm-6">
                             <div class="">
                                 <?=$lorem?>
@@ -180,7 +184,7 @@
                  
 
                     <div class="row">
-                        <div class="col-xs-8 col-xs-offset-2">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Callout text</h3>
                             <div class="content-callout">
                                 <p>
