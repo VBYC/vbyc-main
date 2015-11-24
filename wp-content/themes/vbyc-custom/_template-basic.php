@@ -26,6 +26,7 @@
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Section</p>
                                 <h1 class="page-name">Template - Basic</h1>
+                            </div>
                         </div>         
                     </div><!-- /.row -->
                     <div class="row">

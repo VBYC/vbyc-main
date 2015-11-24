@@ -4,6 +4,15 @@
     <? include("_template-includes/header-markup.php"); ?>  
     <main>
         <section class="hero">
+            <div class="container-fluid hero-image-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="hero-image">
+                            <img src="images/template/hero-basic.jpg" alt=" ">
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
@@ -11,6 +20,7 @@
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Section</p>
                                 <h1 class="page-name">Template - Basic with Side Nav</h1>
+                            </div>
                         </div>         
                     </div><!-- /.row -->
                     <div class="row">
