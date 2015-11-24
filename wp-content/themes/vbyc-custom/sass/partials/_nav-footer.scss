@@ -8,7 +8,7 @@
     .footer-nav {
         padding-left: 25px;
         list-style-type: disc;
-     
+
         .nav-item {
             display: list-item;
             padding: 0;
@@ -19,19 +19,23 @@
             }
         }
     }
+    .footer-content {
+        padding-left: 20px;
+        
+    }
 }
 
-@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
-    .footer-nav {
-        margin-top: 20px;
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    .footer-content {
+        padding-left: 20px;
         
     }
 }
 
 @media (min-width: $screen-sm-min) {
     .footer-nav {
-        padding-left: 0;
-        margin-left: -5px;
+        margin-top: 5px;
+        margin-bottom: 30px;
         .nav-item {
             padding-left: 5px;
             padding-right: 5px;

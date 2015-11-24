@@ -9835,35 +9835,40 @@ h6,
     padding-left: 25px;
     list-style-type: disc;
   }
-  /* line 11, ../sass/partials/_nav-footer.scss */
+  /* line 12, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-item {
     display: list-item;
     padding: 0;
   }
-  /* line 16, ../sass/partials/_nav-footer.scss */
+  /* line 17, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-link:hover {
     color: #1FA660;
   }
+
+  /* line 22, ../sass/partials/_nav-footer.scss */
+  .footer-content {
+    padding-left: 20px;
+  }
 }
-@media (min-width: 480px) and (max-width: 991px) {
-  /* line 24, ../sass/partials/_nav-footer.scss */
-  .footer-nav {
-    margin-top: 20px;
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 29, ../sass/partials/_nav-footer.scss */
+  .footer-content {
+    padding-left: 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 31, ../sass/partials/_nav-footer.scss */
+  /* line 36, ../sass/partials/_nav-footer.scss */
   .footer-nav {
-    padding-left: 0;
-    margin-left: -5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
   }
-  /* line 34, ../sass/partials/_nav-footer.scss */
+  /* line 39, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-item {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 42, ../sass/partials/_nav-footer.scss */
+  /* line 47, ../sass/partials/_nav-footer.scss */
   .nav-item:not(:last-child) a:after, .nav-item:not(:last-child) .link-primary:after {
     content: "|";
     display: inline-block;

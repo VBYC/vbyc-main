@@ -9754,26 +9754,31 @@ h6,
   .footer-nav .nav-link:hover {
     color: #1FA660;
   }
+
+  /* line 22, ../sass/partials/_nav-footer.scss */
+  .footer-content {
+    padding-left: 20px;
+  }
 }
-@media (min-width: 480px) and (max-width: 991px) {
-  /* line 25, ../sass/partials/_nav-footer.scss */
-  .footer-nav {
-    margin-top: 20px;
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 29, ../sass/partials/_nav-footer.scss */
+  .footer-content {
+    padding-left: 20px;
   }
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/partials/_nav-footer.scss */
+  /* line 36, ../sass/partials/_nav-footer.scss */
   .footer-nav {
-    padding-left: 0;
-    margin-left: -5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
   }
-  /* line 35, ../sass/partials/_nav-footer.scss */
+  /* line 39, ../sass/partials/_nav-footer.scss */
   .footer-nav .nav-item {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 43, ../sass/partials/_nav-footer.scss */
+  /* line 47, ../sass/partials/_nav-footer.scss */
   .nav-item:not(:last-child) a:after, .nav-item:not(:last-child) .link-primary:after {
     content: "|";
     display: inline-block;
