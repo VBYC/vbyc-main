@@ -9206,16 +9206,11 @@ button.close {
   margin-bottom: 20px;
 }
 
-/* line 55, ../sass/partials/_template-helpers.scss */
-.list-unstyled {
-  list-style-type: disc;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	CUSTOM BREAKPOINT CLASSES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 991px) {
-  /* line 66, ../sass/partials/_template-helpers.scss */
+  /* line 62, ../sass/partials/_template-helpers.scss */
   .hero-image img {
     width: 150%;
   }
@@ -9886,7 +9881,7 @@ h6,
 
 /* line 22, ../sass/partials/_lists.scss */
 .list-styled > .item {
-  margin: 0 10px;
+  margin: 10px 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

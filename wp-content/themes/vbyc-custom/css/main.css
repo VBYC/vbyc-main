@@ -9116,16 +9116,11 @@ button.close {
   margin-bottom: 20px;
 }
 
-/* line 55, ../sass/partials/_template-helpers.scss */
-.list-unstyled {
-  list-style-type: disc;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	CUSTOM BREAKPOINT CLASSES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 991px) {
-  /* line 66, ../sass/partials/_template-helpers.scss */
+  /* line 62, ../sass/partials/_template-helpers.scss */
   .hero-image img {
     width: 150%;
   }
