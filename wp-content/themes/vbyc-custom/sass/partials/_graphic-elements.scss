@@ -34,3 +34,16 @@
 	background-color: $color-gray-lighter;
 	padding: $padding-large-horizontal $padding-large-horizontal $padding-large-vertical; 
 }
+
+// Make images go full width, beyond its own width 
+
+
+@media (max-width: $screen-xs-max) {
+    .img-responsive  {
+		&.img-fluid {
+		    max-width: auto;
+		    width: 100%;
+		}
+	}
+
+}

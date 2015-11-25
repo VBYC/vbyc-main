@@ -1848,7 +1848,7 @@ hr {
 
 /* line 9, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .modal-title, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -1864,8 +1864,9 @@ h5 .small, h6 small,
 h6 .small,
 .h1 small,
 .h1 .small, .h2 small,
-.h2 .small, .h3 small,
-.h3 .small, .h4 small,
+.h2 .small, .h3 small, .modal-title small,
+.h3 .small,
+.modal-title .small, .h4 small,
 .h4 .small, .h5 small,
 .h5 .small, .h6 small,
 .h6 .small {
@@ -1877,7 +1878,7 @@ h6 .small,
 /* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
 h1, .h1,
 h2, .h2,
-h3, .h3 {
+h3, .h3, .modal-title {
   margin-top: 22px;
   margin-bottom: 11px;
 }
@@ -1889,8 +1890,9 @@ h2 small,
 h2 .small, .h2 small,
 .h2 .small,
 h3 small,
-h3 .small, .h3 small,
-.h3 .small {
+h3 .small, .h3 small, .modal-title small,
+.h3 .small,
+.modal-title .small {
   font-size: 65%;
 }
 
@@ -1925,7 +1927,7 @@ h2, .h2 {
 }
 
 /* line 49, ../../../../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_type.scss */
-h3, .h3 {
+h3, .h3, .modal-title {
   font-size: 24px;
 }
 
@@ -9257,7 +9259,8 @@ h2,
 
 /* line 61, ../sass/partials/_typography.scss */
 h3,
-.h3 {
+.h3,
+.modal-title {
   color: #E74C3C;
   font-family: "Roboto Slab", serif;
   font-size: 18px;
@@ -9296,7 +9299,8 @@ h6,
 
   /* line 89, ../sass/partials/_typography.scss */
   h3,
-  .h3 {
+  .h3,
+  .modal-title {
     font-size: 24px;
   }
 
@@ -9339,10 +9343,17 @@ h6,
 
 /* line 33, ../sass/partials/_graphic-elements.scss */
 .content-callout {
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
   padding: 30px 30px 25px;
 }
 
+@media (max-width: 767px) {
+  /* line 43, ../sass/partials/_graphic-elements.scss */
+  .img-responsive.img-fluid {
+    max-width: auto;
+    width: 100%;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HEADER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -9544,7 +9555,7 @@ h6,
   /* line 30, ../sass/partials/_nav-main-sm.scss */
   .navbar-list {
     margin-bottom: 0;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #f5f5f5;
   }
   /* line 35, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link {
@@ -9552,7 +9563,7 @@ h6,
   }
   /* line 37, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link:not(.expanded) {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #f5f5f5;
   }
   /* line 43, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal {
@@ -9565,7 +9576,7 @@ h6,
 
   /* line 53, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub {
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #f5f5f5;
   }
   /* line 57, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub:before {
@@ -9776,12 +9787,12 @@ h6,
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_lists.scss */
 .list-striped > li:nth-of-type(odd) {
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
 }
 
 /* line 12, ../sass/partials/_lists.scss */
 .list-striped-reversed > li:nth-of-type(even) {
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
 }
 
 /* line 17, ../sass/partials/_lists.scss */
@@ -9810,8 +9821,8 @@ h6,
 }
 /* line 15, ../sass/partials/_hero.scss */
 .hero .section-name {
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
   margin-top: 0;
   padding: 5px;
   display: inline-block;
@@ -9833,6 +9844,9 @@ h6,
   padding-bottom: 40px;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MODALS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VENDOR OVERRIDES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

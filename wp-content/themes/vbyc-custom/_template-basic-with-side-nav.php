@@ -47,9 +47,9 @@
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
+                            <h2 class="heading-category">Category</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                <li id="archery" class="item">
-                                    
+                                <li id="archery" class="item">                                    
                                     <h3 class="heading archery">Archery</h3>
                                     <? include("_template-includes/classes-content.php"); ?>
                                 </li>
@@ -69,6 +69,9 @@
                                     <h3 class="heading nature">Nature</h3>  
                                     <? include("_template-includes/classes-content.php"); ?>                         
                                 </li>
+                            </ul>
+                            <h2 class="heading-category">Category</h2>
+                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="rifelry" class="item">
                                     <h3 class="heading rifelry">Rifelry</h3>
                                     <? include("_template-includes/classes-content.php"); ?>                         

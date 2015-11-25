@@ -179,57 +179,7 @@
         </table>
     </div>
 
-    <!-- Navigation -->
-    <h1 id="navigation">Navigation</h1>
     
-    <h2 id="navigation-main">Main Navigation</h2>
-    <div class="bs-example bs-example-type" data-example-id="simple-headings">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
-                   
-                        <? include("_template-includes/nav-main-toggle.php"); ?> 
-                        <? include("_template-includes/nav-main.php"); ?> 
-              
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <h2 id="navigation-footer">Footer Navigation</h2>
-    <div class="bs-example bs-example-type" data-example-id="simple-headings">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
-                   
-                        <? include("_template-includes/nav-footer.php"); ?> 
-              
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-    <h2 id="navigation-side">Side Navigation</h2>
-    <div class="bs-example bs-example-type" data-example-id="simple-headings">
-        <table class="table">
-            <tbody>
-                <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
-                   
-                        <? include("_template-includes/nav-side.php"); ?> 
-              
-                    </td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
 
     <!-- Colors -->
     <h2 id="type-colors">Colors</h2>
@@ -248,7 +198,6 @@
                         <div class="           sg-color-gray-lighter">Gray - Lighter    <br> #E74C3C <br>$color-gray-lighter </div>
                         <div class="sg-dark-bg sg-color-green-bright">Green - Bright    <br> #37BC98 <br>$color-green </div>
                         <div class="sg-dark-bg sg-color-slate">Slate                    <br> #2C3E50 <br>$color-slate </div>
-                        <div class="           sg-color-slate-lighter ">Slate - Lighter <br> #f5f5f5 <br>$color-slate-lighter </div>
                         <div class="sg-dark-bg sg-color-red">Red                        <br> #E74C3C <br>$color-red </div>
                         <div class="sg-dark-bg sg-color-red-darker">Red - Darker        <br> #CB1300 <br>$color-red-darker </div>
                     </td>
@@ -696,10 +645,96 @@
 </div>
 
 
+
+
+
+
+
+
 <div class="bs-docs-section">
-    <h1 id="tables" class="page-header">Navigation</h1>
+     <h1 id="navigation" class="page-header">Navigation</h1>
+    <h2 id="navigation-main-main">Main Navigation</h2>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                   
+                        <? include("_template-includes/nav-main-toggle.php"); ?> 
+                        <? include("_template-includes/nav-main.php"); ?> 
+              
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <h2 id="navigation-main-footer">Footer Navigation</h2>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                   
+                        <? include("_template-includes/nav-footer.php"); ?> 
+              
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <h2 id="navigation-main-side">Side Navigation</h2>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                   
+                        <? include("_template-includes/nav-side.php"); ?> 
+              
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
 
 </div>
+
+
+
+
+<div class="bs-docs-section">
+    <h1 id="modals" class="page-header">Modals</h1>
+    <h2 id="modals-gallery">Gallery</h2>
+    <p>Galleries use the <a href="http://getbootstrap.com/javascript/#modals-examples" target="_blank">default Bootstrap modal</a> extended by the third party utility <a href="http://ashleydw.github.io/lightbox/" target="_blank">Lightbox for Bootstrap 3</a>.</p> 
+        <p>Galleries can be implemented via data attributes or JavaScript. See <a href="http://ashleydw.github.io/lightbox/" target="_blank">Lightbox for Bootstrap 3</a> for details.</p>
+    <div class="bs-example bs-example-type" data-example-id="simple-headings">
+        <a href="http://placehold.it/700x500" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+            <img src="http://placehold.it/150x150">
+        </a>
+        <a href="http://placehold.it/750x400" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+            <img src="http://placehold.it/150x150">
+        </a>
+        <a href="http://placehold.it/800x600" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
+            <img src="http://placehold.it/150x150">
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+
+
+
 
 <div class="bs-docs-section">
     <h1 id="tables" class="page-header">Tables</h1>
@@ -3353,7 +3388,7 @@
 </div>
 
 
-<div class="bs-docs-section">
+<!-- <div class="bs-docs-section">
     <h1 id="code" class="page-header">Code</h1>
 
     <h2 id="code-inline">Inline</h2>
@@ -3394,11 +3429,11 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
         <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
     </div>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></div>
-</div>
+</div> -->
 
 
 
-<div class="bs-docs-section">
+<!-- <div class="bs-docs-section">
     <h1 id="sass" class="page-header">Using Sass</h1>
     <p class="lead">While Bootstrap is built on Less, it also has an <a href="https://github.com/twbs/bootstrap-sass">official Sass port</a>. We maintain it in a separate GitHub repository and handle updates with a conversion script.</p>
 
@@ -3449,7 +3484,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     <p>
         <a class="btn btn-lg btn-outline" href="https://github.com/twbs/bootstrap-sass">Bootstrap for Sass</a>
     </p>
-</div>
+</div> -->
 
 
                 </div>
@@ -3458,7 +3493,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
                     <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
                         <ul class="nav bs-docs-sidenav">
 
-                             
+
 <li>
     <a href="#type">Typography</a>
     <ul class="nav">
@@ -3581,7 +3616,7 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
         <li><a href="#responsive-utilities-tests">Test cases</a></li>
     </ul>
 </li>
-<li>
+<!-- <li>
     <a href="#code">Code</a>
     <ul class="nav">
         <li><a href="#code-inline">Inline</a></li>
@@ -3597,17 +3632,17 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
         <li><a href="#sass-contents">What's included</a></li>
         <li><a href="#sass-installation">Installation</a></li>
     </ul>
-</li>
+</li> -->
 
 
-                        </ul>
+<!--                         </ul>
                         <a class="back-to-top" href="#top">
                             Back to top
-                        </a>
-
+                        </a> -->
+<!-- 
                         <a href="#" class="bs-docs-theme-toggle" role="button">
                             Preview theme
-                        </a>
+                        </a> -->
 
                     </nav>
                 </div>
@@ -3690,20 +3725,16 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
     }(document, "script", "twitter-wjs"));
 </script>
 
-<!-- Analytics
-================================================== -->
+
+<!-- START -  VBYC Javascript files -->
+<script src="js/vendor/ekko-lightbox.js"></script>
+<script src="js/main.js"></script>
 <script>
-    var _gauges = _gauges || [];
-    (function() {
-        var t     = document.createElement('script');
-        t.async = true;
-        t.id        = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4f0dc9fef5a1f55508000013');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-    })();
+    $(document).ready(function() {
+        vbyc.util.init();
+    });
 </script>
+<!-- END -  VBYC Javascript files -->
 
     <script type="text/javascript">
 /* <![CDATA[ */
