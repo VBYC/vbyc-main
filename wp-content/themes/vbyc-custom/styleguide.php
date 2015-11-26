@@ -2,35 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+                VBYC Styleguide - based on Bootsrap
+        </title>
+        <link href="css/styleguide.css" rel="stylesheet">
 
-<title>
-        VBYC Styleguide - based on Bootsrap
-</title>
+        <!-- Documentation extras -->
+        <link href="css/bootstrap-styleguide/docs.min.css" rel="stylesheet">
 
+        <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-
-<link href="css/styleguide.css" rel="stylesheet">
-
-
-
-
-
-<!-- Documentation extras -->
-
-<link href="css/bootstrap-styleguide/docs.min.css" rel="stylesheet">
-
-<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-
-
-
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body class="sg-styleguide">
         <a id="skippy" class="sr-only sr-only-focusable" href="#content"><div class="container"><span class="skiplink-text">Skip to main content</span></div></a>
@@ -188,7 +176,7 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <td class="sg-color-pallets" colspan="2">
+                    <td class="sg-color-pallets">
                         
                         <div class="sg-dark-bg sg-color-blue-bright">Blue - Bright      <br> #0595E5 <br>$color-blue: </div>
                         <!-- <div class="sg-dark-bg sg-color-gray-darker">Gray - Darker      <br> # <br>$color-gray-darker </div>
@@ -658,7 +646,7 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                    <td class="sg-navbar sq-navigation-dropdown">
                    
                         <? include("_template-includes/nav-main-toggle.php"); ?> 
                         <? include("_template-includes/nav-main.php"); ?> 
@@ -675,7 +663,7 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                    <td class="sg-navbar sq-navigation-dropdown">
                    
                         <? include("_template-includes/nav-footer.php"); ?> 
               
@@ -691,7 +679,7 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <td class="sg-navbar sq-navigation-dropdown" colspan="2">
+                    <td class="sg-navbar sq-navigation-dropdown">
                    
                         <? include("_template-includes/nav-side.php"); ?> 
               
@@ -2355,7 +2343,104 @@
         <h4>SVG images and IE 8-10</h4>
         <p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p>
     </div>
+
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive"</span> <span class="na">alt=</span><span class="s">"Responsive image"</span><span class="nt">&gt;</span></code></pre></div>
+
+
+
+<h2 id="images-responsive-fluid">Responsive images - fluid</h2>
+    <p>To allow images that are more narrow than the parent container that container,  use both classes <code>.img-responsive .img-fluid</code> together. This applies <code>max-width: auto;</code> and <code>width: 100%;</code> </p>
+
+    <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-responsive img-fluid"</span> <span class="na">alt=</span><span class="s">"Responsive image - fluid"</span><span class="nt">&gt;</span></code></pre></div>
+
+
+
+<h2 id="images-figure-2col">Images layout pattern - Two columns</h2>
+<p>For row with 8 columns.</p>
+<div class="bs-example bs-example-images" data-example-id="image-shapes">
+    <figure class="figure-images figure-">
+        <div class="row row-main">
+            <div class="col-xs-12 col-sm-11 col-md-7">
+                <div class="image-container">
+                    <img src="images/template/content-figure-square.jpg" alt=" " class="img-item img-responsive img-fluid">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-11 col-md-5">
+                <div class="multi-image-column">
+                    <div class="image-container">
+                        <img src="images/template/content-figure-landscape.jpg" alt=" " class="img-item img-responsive img-fluid">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/template/content-figure-landscape.jpg" alt=" " class="img-item img-responsive img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </figure>
+</div>
+
+
+<h2 id="images-figure-2col+secondary-row">Images layout pattern - Two columns + secondary row</h2>
+<p>For row with 8 columns.</p>
+<div class="bs-example bs-example-images" data-example-id="image-shapes">
+    <figure class="figure-images figure-">
+        <div class="row row-main">
+            <div class="col-xs-12 col-sm-11 col-md-7">
+                <div class="image-container">
+                    <img src="images/template/content-figure-square.jpg" alt=" " class="img-item img-responsive img-fluid">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-11 col-md-5">
+                <div class="multi-image-column">
+                    <div class="image-container">
+                        <img src="images/template/content-figure-landscape.jpg" alt=" " class="img-item img-responsive img-fluid">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/template/content-figure-landscape.jpg" alt=" " class="img-item img-responsive img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-secondary hidden-xs">
+            <div class="col-xs-12 col-sm-11 col-md-12">
+                <div class="image-container">
+                    <img src="images/template/content-figure-landscape-full.jpg" alt=" " class="img-item img-responsive img-fluid">
+                </div>
+            </div>
+        </div>
+    </figure>
+</div>
+
+
+<h2 id="images-figure-zigzag">Images layout pattern - zig zag</h2>
+<p>For row with 12 columns.</p>
+<div class="bs-example bs-example-images" data-example-id="image-shapes">
+    <figure class="figure-images figure-zig-zag">
+        <div class="row figure-row">
+            <div class="col-sm-2 img-container">
+                <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+            </div> 
+            <div class="col-sm-4 img-container">
+                <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+            </div> 
+            <div class="col-sm-4 img-container">
+                <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+            </div> 
+            <div class="col-sm-2 img-container">
+                <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+            </div>         
+        </div>
+    </figure>
+   
+</div>
+
+
+
+
+
+
+
+
 
     <h2 id="images-shapes">Image shapes</h2>
     <p>Add classes to an <code>&lt;img&gt;</code> element to easily style images in any project.</p>
@@ -3388,290 +3473,162 @@
 </div>
 
 
-<!-- <div class="bs-docs-section">
-    <h1 id="code" class="page-header">Code</h1>
-
-    <h2 id="code-inline">Inline</h2>
-    <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
-<div class="bs-example" data-example-id="inline-code">
-    For example, <code>&lt;section&gt;</code> should be wrapped as inline.
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html">For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.</code></pre></div>
-
-    <h2 id="code-user-input">User input</h2>
-    <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
-<div class="bs-example" data-example-id="simple-kbd">
-    To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-    To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html">To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.<span class="nt">&lt;br&gt;</span>
-To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span class="nt">&lt;/kbd&gt;</span> + <span class="nt">&lt;kbd&gt;</span>,<span class="nt">&lt;/kbd&gt;&lt;/kbd&gt;</span></code></pre></div>
-
-    <h2 id="code-block">Basic block</h2>
-    <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
-<div class="bs-example" data-example-id="simple-pre">
-    <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
-</div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Sample text here...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span></code></pre></div>
-
-    <p>You may optionally add the <code>.pre-scrollable</code> class, which will set a max-height of 350px and provide a y-axis scrollbar.</p>
-    <h2 id="code-variables">Variables</h2>
-    <p>For indicating variables use the <code>&lt;var&gt;</code> tag.</p>
-    <div class="bs-example" data-example-id="simple-var">
-        <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
-
-    </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;var&gt;</span>y<span class="nt">&lt;/var&gt;</span> = <span class="nt">&lt;var&gt;</span>m<span class="nt">&lt;/var&gt;&lt;var&gt;</span>x<span class="nt">&lt;/var&gt;</span> + <span class="nt">&lt;var&gt;</span>b<span class="nt">&lt;/var&gt;</span></code></pre></div>
-
-    <h2 id="code-sample-output">Sample output</h2>
-    <p>For indicating blocks sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
-    <div class="bs-example" data-example-id="simple-samp">
-        <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
-    </div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;samp&gt;</span>This text is meant to be treated as sample output from a computer program.<span class="nt">&lt;/samp&gt;</span></code></pre></div>
-</div> -->
-
-
-
-<!-- <div class="bs-docs-section">
-    <h1 id="sass" class="page-header">Using Sass</h1>
-    <p class="lead">While Bootstrap is built on Less, it also has an <a href="https://github.com/twbs/bootstrap-sass">official Sass port</a>. We maintain it in a separate GitHub repository and handle updates with a conversion script.</p>
-
-    <h2 id="sass-contents">What's included</h2>
-    <p>Since the Sass port has a separate repo and serves a slightly different audience, the contents of the project differ greatly from the main Bootstrap project. This ensures the Sass port is as compatible with as many Sass-based systems as possible.</p>
-
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Path</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"><code>lib/</code></th>
-                    <td>Ruby gem code (Sass configuration, Rails and Compass integrations)</td>
-                </tr>
-                <tr>
-                    <th scope="row"><code>tasks/</code></th>
-                    <td>Converter scripts (turning upstream Less to Sass)</td>
-                </tr>
-                <tr>
-                    <th scope="row"><code>test/</code></th>
-                    <td>Compilation tests</td>
-                </tr>
-                <tr>
-                    <th scope="row"><code>templates/</code></th>
-                    <td>Compass package manifest</td>
-                </tr>
-                <tr>
-                    <th scope="row"><code>vendor/assets/</code></th>
-                    <td>Sass, JavaScript, and font files</td>
-                </tr>
-                <tr>
-                    <th scope="row"><code>Rakefile</code></th>
-                    <td>Internal tasks, such as rake and convert</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p>Visit the <a href="https://github.com/twbs/bootstrap-sass">Sass port's GitHub repository</a> to see these files in action.</p>
-
-
-    <h2 id="sass-installation">Installation</h2>
-    <p>For information on how to install and use Bootstrap for Sass, consult the <a href="https://github.com/twbs/bootstrap-sass">GitHub repository readme</a>. It's the most up to date source and includes information for use with Rails, Compass, and standard Sass projects.</p>
-    <p>
-        <a class="btn btn-lg btn-outline" href="https://github.com/twbs/bootstrap-sass">Bootstrap for Sass</a>
-    </p>
-</div> -->
-
 
                 </div>
 
                 <div class="col-md-3" role="complementary">
                     <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
                         <ul class="nav bs-docs-sidenav">
+                            <li>
+                                <a href="#type">Typography</a>
+                                <ul class="nav">
+                                    <li><a href="#type-links-default">Default Links</a></li>
+                                    <li><a href="#type-links-primary">Primary Links</a></li>
+                                    <li><a href="#type-headings">Headings</a></li>
+                                    <li><a href="#type-colors">Colors</a></li>
+                                    <li><a href="#type-body-copy">Body copy</a></li>
+                                    <li><a href="#type-inline-text">Inline text elements</a></li>
+                                    <li><a href="#type-alignment">Alignment classes</a></li>
+                                    <li><a href="#type-transformation">Transformation classes</a></li>
+                                    <li><a href="#type-abbreviations">Abbreviations</a></li>
+                                    <li><a href="#type-addresses">Addresses</a></li>
+                                    <li><a href="#type-blockquotes">Blockquotes</a></li>
+                                    <li><a href="#type-lists">Lists</a></li>
+                                </ul>
+                            </li>
 
-
-<li>
-    <a href="#type">Typography</a>
-    <ul class="nav">
-        <li><a href="#type-links-default">Default Links</a></li>
-        <li><a href="#type-links-primary">Primary Links</a></li>
-        <li><a href="#type-headings">Headings</a></li>
-        <li><a href="#type-colors">Colors</a></li>
-        <li><a href="#type-body-copy">Body copy</a></li>
-        <li><a href="#type-inline-text">Inline text elements</a></li>
-        <li><a href="#type-alignment">Alignment classes</a></li>
-        <li><a href="#type-transformation">Transformation classes</a></li>
-        <li><a href="#type-abbreviations">Abbreviations</a></li>
-        <li><a href="#type-addresses">Addresses</a></li>
-        <li><a href="#type-blockquotes">Blockquotes</a></li>
-        <li><a href="#type-lists">Lists</a></li>
-    </ul>
-</li>
-
-<li>
-    <a href="#navigation">Navigation</a>
-    <ul class="nav">
-        <li><a href="#navigation-main-main">Main Nav</a></li>
-        <li><a href="#navigation-main-footer">Footer Nav</a></li>
-        <li><a href="#navigation-main-side">Side Nav</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#tables">Tables</a>
-    <ul class="nav">
-        <li><a href="#tables-example">Basic example</a></li>
-        <li><a href="#tables-striped">Striped rows</a></li>
-        <li><a href="#tables-bordered">Bordered table</a></li>
-        <li><a href="#tables-hover-rows">Hover rows</a></li>
-        <li><a href="#tables-condensed">Condensed table</a></li>
-        <li><a href="#tables-contextual-classes">Contextual classes</a></li>
-        <li><a href="#tables-responsive">Responsive tables</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#forms">Forms</a>
-    <ul class="nav">
-        <li><a href="#forms-example">Basic example</a></li>
-        <li><a href="#forms-inline">Inline form</a></li>
-        <li><a href="#forms-horizontal">Horizontal form</a></li>
-        <li><a href="#forms-controls">Supported controls</a></li>
-        <li><a href="#forms-controls-static">Static control</a></li>
-        <li><a href="#forms-control-focus">Focus state</a></li>
-        <li><a href="#forms-control-disabled">Disabled state</a></li>
-        <li><a href="#forms-control-readonly">Readonly state</a></li>
-        <li><a href="#forms-help-text">Help text</a></li>
-        <li><a href="#forms-control-validation">Validation states</a></li>
-        <li><a href="#forms-control-sizes">Control sizing</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#buttons">Buttons</a>
-    <ul class="nav">
-        <li><a href="#buttons-tags">Button tags</a></li>
-        <li><a href="#buttons-options">Options</a></li>
-        <li><a href="#buttons-sizes">Sizes</a></li>
-        <li><a href="#buttons-active">Active state</a></li>
-        <li><a href="#buttons-disabled">Disabled state</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#images">Images</a>
-    <ul class="nav">
-        <li><a href="#images-responsive">Responsive images</a></li>
-        <li><a href="#images-shapes">Image shapes</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#helper-classes">Helper classes</a>
-    <ul class="nav">
-        <li><a href="#helper-classes-colors">Contextual colors</a></li>
-        <li><a href="#helper-classes-backgrounds">Contextual backgrounds</a></li>
-        <li><a href="#helper-classes-close">Close icon</a></li>
-        <li><a href="#helper-classes-carets">Carets</a></li>
-        <li><a href="#helper-classes-floats">Quick floats</a></li>
-        <li><a href="#helper-classes-center">Center content blocks</a></li>
-        <li><a href="#helper-classes-clearfix">Clearfix</a></li>
-        <li><a href="#helper-classes-show-hide">Showing and hiding content</a></li>
-        <li><a href="#helper-classes-screen-readers">Screen reader and keyboard navigation content</a></li>
-        <li><a href="#helper-classes-image-replacement">Image replacement</a></li>
-    </ul>
-</li>
- <li>
-    <a href="#overview">Overview</a>
-    <ul class="nav">
-        <li><a href="#overview-doctype">HTML5 doctype</a></li>
-        <li><a href="#overview-mobile">Mobile first</a></li>
-        <li><a href="#overview-type-links">Typography and links</a></li>
-        <li><a href="#overview-normalize">Normalize.css</a></li>
-        <li><a href="#overview-container">Containers</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#grid">Grid system</a>
-    <ul class="nav">
-        <li><a href="#grid-intro">Introduction</a></li>
-        <li><a href="#grid-media-queries">Media queries</a></li>
-        <li><a href="#grid-options">Grid options</a></li>
-        <li><a href="#grid-example-basic">Ex: Stacked-to-horizontal</a></li>
-        <li><a href="#grid-example-fluid">Ex: Fluid container</a></li>
-        <li><a href="#grid-example-mixed">Ex: Mobile and desktop</a></li>
-        <li><a href="#grid-example-mixed-complete">Ex: Mobile, tablet, desktop</a></li>
-        <li><a href="#grid-example-wrapping">Ex: Column wrapping</a></li>
-        <li><a href="#grid-responsive-resets">Responsive column resets</a></li>
-        <li><a href="#grid-offsetting">Offsetting columns</a></li>
-        <li><a href="#grid-nesting">Nesting columns</a></li>
-        <li><a href="#grid-column-ordering">Column ordering</a></li>
-        <li><a href="#grid-less">Less mixins and variables</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#responsive-utilities">Responsive utilities</a>
-    <ul class="nav">
-        <li><a href="#responsive-utilities-classes">Available classes</a></li>
-        <li><a href="#responsive-utilities-print">Print classes</a></li>
-        <li><a href="#responsive-utilities-tests">Test cases</a></li>
-    </ul>
-</li>
-<!-- <li>
-    <a href="#code">Code</a>
-    <ul class="nav">
-        <li><a href="#code-inline">Inline</a></li>
-        <li><a href="#code-user-input">User input</a></li>
-        <li><a href="#code-block">Basic block</a></li>
-        <li><a href="#code-variables">Variables</a></li>
-        <li><a href="#code-sample-output">Sample output</a></li>
-    </ul>
-</li>
-<li>
-    <a href="#sass">Using Sass</a>
-    <ul class="nav">
-        <li><a href="#sass-contents">What's included</a></li>
-        <li><a href="#sass-installation">Installation</a></li>
-    </ul>
-</li> -->
-
-
-<!--                         </ul>
-                        <a class="back-to-top" href="#top">
-                            Back to top
-                        </a> -->
-<!-- 
-                        <a href="#" class="bs-docs-theme-toggle" role="button">
-                            Preview theme
-                        </a> -->
-
+                            <li>
+                                <a href="#navigation">Navigation</a>
+                                <ul class="nav">
+                                    <li><a href="#navigation-main-main">Main Nav</a></li>
+                                    <li><a href="#navigation-main-footer">Footer Nav</a></li>
+                                    <li><a href="#navigation-main-side">Side Nav</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#tables">Tables</a>
+                                <ul class="nav">
+                                    <li><a href="#tables-example">Basic example</a></li>
+                                    <li><a href="#tables-striped">Striped rows</a></li>
+                                    <li><a href="#tables-bordered">Bordered table</a></li>
+                                    <li><a href="#tables-hover-rows">Hover rows</a></li>
+                                    <li><a href="#tables-condensed">Condensed table</a></li>
+                                    <li><a href="#tables-contextual-classes">Contextual classes</a></li>
+                                    <li><a href="#tables-responsive">Responsive tables</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#forms">Forms</a>
+                                <ul class="nav">
+                                    <li><a href="#forms-example">Basic example</a></li>
+                                    <li><a href="#forms-inline">Inline form</a></li>
+                                    <li><a href="#forms-horizontal">Horizontal form</a></li>
+                                    <li><a href="#forms-controls">Supported controls</a></li>
+                                    <li><a href="#forms-controls-static">Static control</a></li>
+                                    <li><a href="#forms-control-focus">Focus state</a></li>
+                                    <li><a href="#forms-control-disabled">Disabled state</a></li>
+                                    <li><a href="#forms-control-readonly">Readonly state</a></li>
+                                    <li><a href="#forms-help-text">Help text</a></li>
+                                    <li><a href="#forms-control-validation">Validation states</a></li>
+                                    <li><a href="#forms-control-sizes">Control sizing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#buttons">Buttons</a>
+                                <ul class="nav">
+                                    <li><a href="#buttons-tags">Button tags</a></li>
+                                    <li><a href="#buttons-options">Options</a></li>
+                                    <li><a href="#buttons-sizes">Sizes</a></li>
+                                    <li><a href="#buttons-active">Active state</a></li>
+                                    <li><a href="#buttons-disabled">Disabled state</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#images">Images</a>
+                                <ul class="nav">
+                                    <li><a href="#images-responsive">Responsive images</a></li>
+                                    <li><a href="#images-responsive">Responsive images - fluid</a></li>
+                                    <li><a href="#images-shapes">Image shapes</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#helper-classes">Helper classes</a>
+                                <ul class="nav">
+                                    <li><a href="#helper-classes-colors">Contextual colors</a></li>
+                                    <li><a href="#helper-classes-backgrounds">Contextual backgrounds</a></li>
+                                    <li><a href="#helper-classes-close">Close icon</a></li>
+                                    <li><a href="#helper-classes-carets">Carets</a></li>
+                                    <li><a href="#helper-classes-floats">Quick floats</a></li>
+                                    <li><a href="#helper-classes-center">Center content blocks</a></li>
+                                    <li><a href="#helper-classes-clearfix">Clearfix</a></li>
+                                    <li><a href="#helper-classes-show-hide">Showing and hiding content</a></li>
+                                    <li><a href="#helper-classes-screen-readers">Screen reader and keyboard navigation content</a></li>
+                                    <li><a href="#helper-classes-image-replacement">Image replacement</a></li>
+                                </ul>
+                            </li>
+                             <li>
+                                <a href="#overview">Overview</a>
+                                <ul class="nav">
+                                    <li><a href="#overview-doctype">HTML5 doctype</a></li>
+                                    <li><a href="#overview-mobile">Mobile first</a></li>
+                                    <li><a href="#overview-type-links">Typography and links</a></li>
+                                    <li><a href="#overview-normalize">Normalize.css</a></li>
+                                    <li><a href="#overview-container">Containers</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#grid">Grid system</a>
+                                <ul class="nav">
+                                    <li><a href="#grid-intro">Introduction</a></li>
+                                    <li><a href="#grid-media-queries">Media queries</a></li>
+                                    <li><a href="#grid-options">Grid options</a></li>
+                                    <li><a href="#grid-example-basic">Ex: Stacked-to-horizontal</a></li>
+                                    <li><a href="#grid-example-fluid">Ex: Fluid container</a></li>
+                                    <li><a href="#grid-example-mixed">Ex: Mobile and desktop</a></li>
+                                    <li><a href="#grid-example-mixed-complete">Ex: Mobile, tablet, desktop</a></li>
+                                    <li><a href="#grid-example-wrapping">Ex: Column wrapping</a></li>
+                                    <li><a href="#grid-responsive-resets">Responsive column resets</a></li>
+                                    <li><a href="#grid-offsetting">Offsetting columns</a></li>
+                                    <li><a href="#grid-nesting">Nesting columns</a></li>
+                                    <li><a href="#grid-column-ordering">Column ordering</a></li>
+                                    <li><a href="#grid-less">Less mixins and variables</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#responsive-utilities">Responsive utilities</a>
+                                <ul class="nav">
+                                    <li><a href="#responsive-utilities-classes">Available classes</a></li>
+                                    <li><a href="#responsive-utilities-print">Print classes</a></li>
+                                    <li><a href="#responsive-utilities-tests">Test cases</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
 
             </div>
         </div>
 
-        <!-- Footer
+<!-- Footer
 ================================================== -->
 <footer class="bs-docs-footer" role="contentinfo">
     <div class="container">
         <div class="bs-docs-social">
-    <ul class="bs-docs-social-buttons">
-        <li>
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-        </li>
-        <li>
-            <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-        </li>
-        <li class="follow-btn">
-            <a href="https://twitter.com/getbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @getbootstrap</a>
-        </li>
-        <li class="tweet-btn">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="getbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
-        </li>
-    </ul>
-</div>
-
-
+            <ul class="bs-docs-social-buttons">
+                <li>
+                    <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+                </li>
+                <li>
+                    <iframe class="github-btn" src="https://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+                </li>
+                <li class="follow-btn">
+                    <a href="https://twitter.com/getbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @getbootstrap</a>
+                </li>
+                <li class="tweet-btn">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://getbootstrap.com/" data-count="horizontal" data-via="getbootstrap" data-related="mdo:Creator of Bootstrap">Tweet</a>
+                </li>
+            </ul>
+        </div>
         <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
         <p>Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
         <p>Code licensed under <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, documentation under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
@@ -3701,15 +3658,8 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-
-
-
-    <script src="js/bootstrap-styleguide/docs.min.js"></script>
-
-
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/bootstrap-styleguide/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

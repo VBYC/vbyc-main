@@ -9247,31 +9247,27 @@ button.close {
 .content-list.list-multiple-details .description {
   margin-top: 30px;
 }
-/* line 39, ../sass/partials/_layout.scss */
-.content-list.list-multiple-details .img-item {
-  margin-top: 20px;
-}
-/* line 45, ../sass/partials/_layout.scss */
+/* line 42, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 48, ../sass/partials/_layout.scss */
+/* line 45, ../sass/partials/_layout.scss */
 .content-list.list-single-details > .item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 54, ../sass/partials/_layout.scss */
+/* line 49, ../sass/partials/_layout.scss */
 .content-list.list-single-details .description {
   margin-top: 15px;
 }
-/* line 57, ../sass/partials/_layout.scss */
+/* line 52, ../sass/partials/_layout.scss */
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 69, ../sass/partials/_layout.scss */
+  /* line 64, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
@@ -9430,15 +9426,19 @@ h6,
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
   margin-top: 20px;
 }
+/* line 30, ../sass/partials/_graphic-elements.scss */
+.figure-images .image-container {
+  margin-top: 20px;
+}
 
-/* line 33, ../sass/partials/_graphic-elements.scss */
+/* line 43, ../sass/partials/_graphic-elements.scss */
 .content-callout {
   background-color: #f5f5f5;
   padding: 30px 30px 25px;
 }
 
 @media (max-width: 767px) {
-  /* line 43, ../sass/partials/_graphic-elements.scss */
+  /* line 53, ../sass/partials/_graphic-elements.scss */
   .img-responsive.img-fluid {
     max-width: auto;
     width: 100%;
