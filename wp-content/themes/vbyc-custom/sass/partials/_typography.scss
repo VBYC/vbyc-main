@@ -45,28 +45,28 @@ a {
     }
 }
 
-$headline-reduce-ratio: .75;
+
 h1,
 .h1 {
 	color: $color-blue;
 	font-family: $font-family-serif;
-	font-size:  $font-size-h1 * ($headline-reduce-ratio - .125);
+	font-size:  $font-size-h1;
 }
 h2,
 .h2 {
     color: $text-color;
     font-family: $font-family-serif;
-    font-size:  $font-size-h2 * $headline-reduce-ratio;
+    font-size:  $font-size-h2;
 }
 h3,
 .h3 {
 	color: $color-red;
 	font-family: $font-family-serif;
-    font-size:  $font-size-h3 * $headline-reduce-ratio;
+    font-size:  $font-size-h3;
 }
 h4,
 .h4 {
-    font-size:  $font-size-h4 * $headline-reduce-ratio;
+    font-size:  $font-size-h4;
 }
 h5,
 .h5 {
@@ -77,28 +77,23 @@ h6,
     font-size:  $font-size-h6;
 }
 
-@media (min-width: $screen-sm-min) {
+$headline-reduce-ratio-lg: .6;
+$headline-reduce-ratio: .8;
+@media (max-width: $screen-xs-max) {
     h1,
     .h1 {
-        font-size:  $font-size-h1 * $headline-reduce-ratio;
+        font-size:  $font-size-h1 * $headline-reduce-ratio-lg; 
     }
     h2,
     .h2 {
-        font-size:  $font-size-h2;
+        font-size:  $font-size-h2 * $headline-reduce-ratio;
     }
     h3,
     .h3 {
-        font-size:  $font-size-h3;
+        font-size:  $font-size-h3 * $headline-reduce-ratio;
     }
     h4,
     .h4 {
         font-size:  $font-size-h4;
-    } 
-}
-
-@media (min-width: $screen-md-min) {
-    h1,
-    .h1 {
-        font-size:  $font-size-h1;
     } 
 }

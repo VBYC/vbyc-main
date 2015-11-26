@@ -3,6 +3,9 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 // Dividers 
+hr {
+	border-top-color: $line-color;
+}
 .divider-styled {
 	width: 100px;
 	border-top: 2px solid $color-red;
@@ -31,7 +34,6 @@
 		margin-top: 20px;
 	}
 }
-
 
 
 

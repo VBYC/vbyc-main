@@ -178,13 +178,14 @@
                 <tr>
                     <td class="sg-color-pallets">
                         
-                        <div class="sg-dark-bg sg-color-blue-bright">Blue - Bright      <br> #0595E5 <br>$color-blue: </div>
+                        <div class="sg-dark-bg sg-color-blue">Blue      <br> #0595E5 <br>$color-blue: </div>
                         <!-- <div class="sg-dark-bg sg-color-gray-darker">Gray - Darker      <br> # <br>$color-gray-darker </div>
                         <div class="sg-dark-bg sg-color-gray-dark">Gray - Dark          <br> # <br>$color-gray-dark </div> -->
                         <div class="sg-dark-bg sg-color-gray">Gray                      <br> #555555 <br>$color-gray </div>
                        <!--  <div class="sg-dark-bg sg-color-gray-light">Gray - Light        <br> #E74C3C <br>$color-gray-light </div> -->
-                        <div class="           sg-color-gray-lighter">Gray - Lighter    <br> #E74C3C <br>$color-gray-lighter </div>
-                        <div class="sg-dark-bg sg-color-green-bright">Green - Bright    <br> #37BC98 <br>$color-green </div>
+                        <div class="sg-color-gray-lighter">Gray - Lighter    <br> #FCFCFC <br>$color-gray-lighter </div>
+                        <div class="sg-dark-bg sg-color-green">Green    <br> #37BC98 <br>$color-green </div>
+                        <div class="sg-dark-bg sg-color-green-dark">Green - Dark    <br> #1FA660 <br>$color-green-dark </div>
                         <div class="sg-dark-bg sg-color-slate">Slate                    <br> #2C3E50 <br>$color-slate </div>
                         <div class="sg-dark-bg sg-color-red">Red                        <br> #E74C3C <br>$color-red </div>
                         <div class="sg-dark-bg sg-color-red-darker">Red - Darker        <br> #CB1300 <br>$color-red-darker </div>
