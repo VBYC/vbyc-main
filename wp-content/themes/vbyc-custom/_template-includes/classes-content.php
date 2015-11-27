@@ -1,10 +1,12 @@
                                     <div class="description">
                                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
                                     </div>
-                                    <figure class="figure-images">
+                                    <figure class="figure-images figure-">
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
-                                                <img src="images/template/content-figure-square.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                <div class="image-container">
+                                                    <img src="images/template/content-figure-square.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5">
                                                 <div class="multi-image-column">
@@ -25,3 +27,5 @@
                                             </div>
                                         </div>
                                     </figure>
+
+                                    

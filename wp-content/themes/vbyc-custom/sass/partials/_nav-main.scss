@@ -71,11 +71,11 @@
         color: $color-white;
         background-color: $link-color;
         &:hover {
-            background-color: $link-color-dark;
+            background-color: $link-color-emphasize;
             text-decoration: none;
         }
         &.selected {
-            background-color: $link-color-dark;
+            background-color: $link-color-emphasize;
         }
     }
 }

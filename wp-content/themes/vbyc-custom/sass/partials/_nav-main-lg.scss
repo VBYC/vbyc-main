@@ -42,12 +42,19 @@ $link-sub-padding: 12px;
             padding-top: 7px;
             padding-bottom: 7px;
             border-bottom: 2px solid transparent;
+            .template-home & {
+                color: $link-color-reverse;
+            }
             &.normal {
                 &:hover {
-                    color: $link-color-dark;
                     animation: width 0% > 100%; 
                     background-color: transparent;
-                    border-bottom-color: $link-color-dark;
+                    color: $link-color-emphasize;
+                    border-bottom-color: $link-color-emphasize;
+                    .template-home & {
+                        color: $link-color-emphasize-reverse;
+                        border-bottom-color: $link-color-emphasize-reverse;
+                    }
                 }
                 &:focus,
                 &:active {
@@ -59,6 +66,10 @@ $link-sub-padding: 12px;
             .link {
                 .navbar & {
                     border-bottom: 2px solid $link-color;
+                    .template-home & {
+                        color: $link-color-emphasize-reverse;
+                        border-bottom-color: $link-color-emphasize-reverse;
+                    }
                 }
             }
         }

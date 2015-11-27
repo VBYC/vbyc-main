@@ -5,7 +5,11 @@
 ?>
     
     <? include("_template-includes/header.php"); ?> 
-    <? include("_template-includes/header-markup.php"); ?>  
+    <? include("_template-includes/header-markup.php"); ?> 
+<body class="template-basic template-basic-special" data-spy="scroll">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--> 
     <main>
         <section class="hero">
             <div class="container-fluid hero-image-container">
