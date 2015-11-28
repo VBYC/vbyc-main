@@ -11,31 +11,39 @@
     .navbar-toggle {
         margin: 7px 0 0;
         border: 2px solid $link-color;
+        color: $link-color;
+        line-height: 1;
+        text-transform: uppercase;
         .icon-bar {
             background-color: $link-color;
         }  
+        &:hover {
+            color: $link-color-emphasize;
+            border: 2px solid $link-color-emphasize;
+        }
     } 
 
     // Nav container - Override Bootstrap
     .navbar-nav {
-        margin: 0 -10px;
+        margin: 0 -20px;
         border: none;
     }
     // Nav container - Use Bootstrap
     .navbar-collapse {
         padding: 0;
+        z-index: 3;
     }
 
     // Parent nav links container
     .navbar-list {
         margin-bottom: 0;
-        border-top: 1px solid $color-gray-lighter;
+        border-top: 1px solid $line-color;
 
         // Parent nav links
         .link {
             font-size: 18px;
             &:not(.expanded) {
-                border-bottom: 1px solid $color-gray-lighter;
+                border-bottom: 1px solid $line-color;
             }
             
 
@@ -63,6 +71,7 @@
         .link-sub {
             font-size: 18px;
             border-top: 1px solid $link-color-emphasize;
+
         }
     }
 }

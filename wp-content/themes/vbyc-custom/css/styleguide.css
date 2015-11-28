@@ -9624,55 +9624,64 @@ hr {
   .navbar-toggle {
     margin: 7px 0 0;
     border: 2px solid #37BC98;
+    color: #37BC98;
+    line-height: 1;
+    text-transform: uppercase;
   }
-  /* line 14, ../sass/partials/_nav-main-sm.scss */
+  /* line 17, ../sass/partials/_nav-main-sm.scss */
   .navbar-toggle .icon-bar {
     background-color: #37BC98;
   }
-
   /* line 20, ../sass/partials/_nav-main-sm.scss */
+  .navbar-toggle:hover {
+    color: #1FA660;
+    border: 2px solid #1FA660;
+  }
+
+  /* line 27, ../sass/partials/_nav-main-sm.scss */
   .navbar-nav {
-    margin: 0 -10px;
+    margin: 0 -20px;
     border: none;
   }
 
-  /* line 25, ../sass/partials/_nav-main-sm.scss */
+  /* line 32, ../sass/partials/_nav-main-sm.scss */
   .navbar-collapse {
     padding: 0;
+    z-index: 3;
   }
 
-  /* line 30, ../sass/partials/_nav-main-sm.scss */
+  /* line 38, ../sass/partials/_nav-main-sm.scss */
   .navbar-list {
     margin-bottom: 0;
-    border-top: 1px solid #F7F7F7;
+    border-top: 1px solid #DDD;
   }
-  /* line 35, ../sass/partials/_nav-main-sm.scss */
+  /* line 43, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link {
     font-size: 18px;
   }
-  /* line 37, ../sass/partials/_nav-main-sm.scss */
+  /* line 45, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link:not(.expanded) {
-    border-bottom: 1px solid #F7F7F7;
+    border-bottom: 1px solid #DDD;
   }
-  /* line 43, ../sass/partials/_nav-main-sm.scss */
+  /* line 51, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal {
     background-color: #FFF;
   }
-  /* line 45, ../sass/partials/_nav-main-sm.scss */
+  /* line 53, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal:hover {
     color: #1FA660;
   }
 
-  /* line 53, ../sass/partials/_nav-main-sm.scss */
+  /* line 61, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub {
     border-bottom: 1px solid #F7F7F7;
   }
-  /* line 57, ../sass/partials/_nav-main-sm.scss */
+  /* line 65, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub:before {
     text-shadow: #1FA660 0 -1px 0;
     top: -8px;
   }
-  /* line 63, ../sass/partials/_nav-main-sm.scss */
+  /* line 71, ../sass/partials/_nav-main-sm.scss */
   .navbar-list-sub .link-sub {
     font-size: 18px;
     border-top: 1px solid #1FA660;
@@ -9963,85 +9972,87 @@ hr {
   background-color: #000;
   background: #F7F7F7 url("../images/heros/home.jpg") 50% 0 no-repeat;
   height: 660px;
+  position: relative;
 }
-/* line 6, ../sass/partials/_page-home.scss */
+/* line 8, ../sass/partials/_page-home.scss */
 .template-home .header-main .main-logo-container {
   max-height: 75px;
 }
-/* line 10, ../sass/partials/_page-home.scss */
-.template-home .header-main .home-hero-text {
-  height: 565px;
-  position: relative;
-}
-/* line 15, ../sass/partials/_page-home.scss */
+/* line 19, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 {
+  position: absolute;
+  bottom: 30px;
   color: #FFF;
   font-family: "Helvetica", sans-serif;
   font-size: 100px;
   line-height: 1;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 50px;
-  left: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
-/* line 27, ../sass/partials/_page-home.scss */
+/* line 33, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 34, ../sass/partials/_page-home.scss */
+/* line 40, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-3 {
   display: block;
 }
-/* line 38, ../sass/partials/_page-home.scss */
+/* line 44, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-4 {
   line-height: 1;
   vertical-align: 35px;
   display: inline-block;
 }
-/* line 46, ../sass/partials/_page-home.scss */
+/* line 52, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .accent {
   font-family: "Roboto Slab", serif;
   font-size: 40%;
   font-weight: 200;
 }
-/* line 53, ../sass/partials/_page-home.scss */
+/* line 59, ../sass/partials/_page-home.scss */
 .template-home .main-logo {
   color: #fff;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 60, ../sass/partials/_page-home.scss */
-  .template-home .home-hero-text {
-    height: 500px;
-  }
-  /* line 63, ../sass/partials/_page-home.scss */
+  /* line 67, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 74, ../sass/partials/_page-home.scss */
+  /* line 77, ../sass/partials/_page-home.scss */
+  .template-home .header-main {
+    height: 570px;
+    background-size: auto 100%;
+  }
+  /* line 80, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
-    height: 500px;
   }
-  /* line 78, ../sass/partials/_page-home.scss */
+  /* line 84, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
+    left: 0;
+    bottom: 50px;
     font-size: 70px;
   }
-  /* line 81, ../sass/partials/_page-home.scss */
+  /* line 89, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  /* line 92, ../sass/partials/_page-home.scss */
+  /* line 99, ../sass/partials/_page-home.scss */
+  .template-home .header-main {
+    height: 340px;
+  }
+  /* line 101, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
+    bottom: 20px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

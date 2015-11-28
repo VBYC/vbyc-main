@@ -1,99 +1,111 @@
 .template-home {
-	.header-main {
-		background-color: #000;
-		background: $color-gray-lighter url('../images/heros/home.jpg') 50% 0 no-repeat;
-		height: 660px;
-		.main-logo-container {
-			max-height: 75px;
+    .header-main {
+        background-color: #000;
+        background: $color-gray-lighter url('../images/heros/home.jpg') 50% 0 no-repeat;
+        height: 660px;
+        position: relative;
 
-		}
-		.home-hero-text {
-			height: 565px;
-			position: relative;
-		}
+        .main-logo-container {
+            max-height: 75px;
 
-		h1 {
+        }
+        .home-hero-text-container {
+        
+            
+            
+            
+        }
 
-			color: $color-white;
-			font-family: $font-family-simple;
-			font-size: 100px;
-			line-height: 1;
+        h1 {
+        
+            position: absolute;
+            bottom: 30px;
 
-			text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-			position: absolute;
-			bottom: 50px;
-			left: 0;
-			text-transform: uppercase;
-			.group-1 {
-				display: block;
-				line-height: 1;
-				margin-bottom: 10px;
-			}
-			.group-2 {
-			}
-			.group-3 {
-				display: block;
-//				font-size: 40px;
-			}
-			.group-4 {
-				line-height: 1;
-				vertical-align: 35px;
-				display: inline-block;
-			}
-			.group-5 {
-				
-			}
-			.accent {
-				font-family: $font-family-serif;
-				font-size: 40%;
-				font-weight: 200;
-			}
-		}
-	}
-	.main-logo {
-		color: #fff;
-	}
+//          left: 0;
+            color: $color-white;
+            font-family: $font-family-simple;
+            font-size: 100px;
+            line-height: 1;
+
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+            
+            text-transform: uppercase;
+            .group-1 {
+                display: block;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+            .group-2 {
+            }
+            .group-3 {
+                display: block;
+//              font-size: 40px;
+            }
+            .group-4 {
+                line-height: 1;
+                vertical-align: 35px;
+                display: inline-block;
+            }
+            .group-5 {
+                
+            }
+            .accent {
+                font-family: $font-family-serif;
+                font-size: 40%;
+                font-weight: 200;
+            }
+        }
+    }
+    .main-logo {
+        color: #fff;
+    }
 }
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
     .template-home {
-		.home-hero-text {
-			height: 500px;
-		}
-		h1 {
-			font-size: 70px;			
-		}
+
+        h1 {
+            font-size: 70px;            
+        }
     } 
 }
 
 
 @media (max-width: $screen-sm-max) {
     .template-home {
-		
-		.header-main {
-			.home-hero-text {
-				text-align: center;
-				height: 500px;
-			}
-			h1 {
-				right: 0;
-				font-size: 70px;
-				.group-4 {
-					display: block;
-				}
-			}
-		}
-	}
+        
+        .header-main {
+            height: 570px;
+            background-size: auto 100%;
+            .home-hero-text {
+                text-align: center;
+                
+            }
+            h1 {
+                right: 0;
+                left: 0;
+                bottom: 50px;
+                font-size: 70px;
+                .group-4 {
+                    display: block;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-xs-max) {
     .template-home {
-		.header-main {
-			h1 {
-				font-size: 40px;
-			}
-		}
-	}
+        .header-main {
+            height: 340px;
+            h1 {
+                font-size: 40px;
+                bottom: 20px;
+              
+
+            }
+        }
+    }
 }
 
 
