@@ -1,7 +1,9 @@
+
+
 .template-home {
 
     .hero-animation {
-
+  
         height: 120px;
         width: 200px;
         display: block;
@@ -148,9 +150,6 @@
 
 @media (max-width: $screen-xs-max) {
     .template-home {
-        .hero-animation {
-            display: none;
-        }
         .header-main {
             height: 340px;
             background-size: auto 100%;
@@ -158,8 +157,6 @@
             h1 {
                 font-size: 40px;
                 bottom: 20px;
-              
-
             }
         }
     }

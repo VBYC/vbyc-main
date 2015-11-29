@@ -2,12 +2,15 @@
 <? if ($page == 'home') { $logo_version = '-reverse'; } ?>
 
     <header class="header-main v-offset-bot-0">
-        <div class="hero-animation">
+
+<? if ($page == 'home') { ?>
+        <div class="hero-animation hidden-xs">
             <img src="images/heros/home-hero-fire-flame-1.jpg">
             <img src="images/heros/home-hero-fire-flame-2.jpg">
             <img src="images/heros/home-hero-fire-flame-3.jpg">
             <img src="images/heros/home-hero-fire-flame-4.jpg">
         </div>
+<? } ?>
             <div class="container">
                 <div class="row">
                     <div class="main-logo-container col-xs-9 col-sm-12 col-md-4 text-center">
@@ -34,7 +37,7 @@
             <div class="container home-hero-text-container">
                 <div class="home-hero-text">
                     <h1>
-                        <span class="group-1 accent">Discovering</span>  
+                         <span class="group-1 accent">Discovering</span>  
                         <span class="group-2">nature,</span> 
                         <span class="group-3">each other, </span>
                         <span class="group-4 accent">and</span> 
