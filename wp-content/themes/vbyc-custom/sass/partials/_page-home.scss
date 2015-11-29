@@ -1,27 +1,77 @@
 .template-home {
-    .header-main {
-        background-color: #000;
-        background: $color-gray-lighter url('../images/heros/home.jpg') 50% 0 no-repeat;
-        height: 660px;
-        position: relative;
 
-        .main-logo-container {
-            max-height: 75px;
+    .hero-animation {
+
+        height: 120px;
+        width: 200px;
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-top: 198px;
+        left: 50%;
+        margin-left: -217px;
+        text-align: center;
+        padding-right: 234px;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+    }
+    .animation-outer.image-1 {
+        &:before {
+//            content: url('../images/heros/animated-campfire.gif');
+//            -webkit-animation: fadeInOut 1s infinite;
+
+//            -webkit-animation: home_hero_animation_1 4s infinite;
+//            content: url('../images/heros/home-hero-fire-flame-2.jpg');
+
+
 
         }
-        .home-hero-text-container {
-        
-            
-            
-            
+        &:after {
+//            content: url('../images/heros/home-hero-fire-flame-2.jpg');
+//            -webkit-animation: fadeInOut 3s infinite;
+//            -webkit-animation-delay: 2s;
+//            -webkit-animation-timing-function: ease-in-out;
+
+//            -webkit-animation-delay: 1s;
+//            -webkit-animation: fadeIn 2s infinite;
+        }
+    }
+    .animation-inner {
+//        &:before {
+//            content: url('../images/heros/home-hero-fire-flame-3.jpg');
+//            -webkit-animation: fadeInOut 5s infinite;
+//            -webkit-animation-delay: 3s;
+//        }
+//        &:after {
+//            content: url('../images/heros/home-hero-fire-flame-4.jpg');
+//            -webkit-animation: fadeInOut 1s infinite;
+//            -webkit-animation-delay: 10s;
+//            -webkit-animation-timing-function: ease-out;
+//        }
+    }
+    
+
+
+    .header-main  {
+        background-color: #000;
+        background: 
+
+        url('../images/heros/home.jpg') 50% 0 no-repeat;
+        height: 660px;
+        position: relative;
+        .main-logo-container {
+            max-height: 75px;
         }
 
         h1 {
         
             position: absolute;
             bottom: 30px;
-
-//          left: 0;
+            z-index: 5;
             color: $color-white;
             font-family: $font-family-simple;
             font-size: 100px;
@@ -73,10 +123,12 @@
 
 @media (max-width: $screen-sm-max) {
     .template-home {
-        
+        .hero-animation {
+            top: -30px;
+        }
         .header-main {
             height: 570px;
-            background-size: auto 100%;
+            background-position: 50% -30px;
             .home-hero-text {
                 text-align: center;
                 
@@ -96,8 +148,13 @@
 
 @media (max-width: $screen-xs-max) {
     .template-home {
+        .hero-animation {
+            display: none;
+        }
         .header-main {
             height: 340px;
+            background-size: auto 100%;
+            background-position: 50% 0;
             h1 {
                 font-size: 40px;
                 bottom: 20px;
@@ -107,5 +164,130 @@
         }
     }
 }
+
+
+//@-webkit-keyframes home_hero_animation_1 {
+//    0%   { opacity: 0; }
+////    14%  { opacity: 0; }
+//    29%  { opacity: 1; }
+////    43%  { opacity: 0; }
+//    57%  { opacity: 0; }
+//    71%  { opacity: 0; }
+////    86%  { opacity: 0; }
+//    100% { opacity: 1; }
+//}
+//@-webkit-keyframes home_hero_animation_2 {
+//    0%   { opacity: 0; }
+//    14%  { opacity: 0; }
+////    29%  { opacity: 0; }
+//    43%  { opacity: 1; }
+////    57%  { opacity: 0; }
+//    71%  { opacity: 0; }
+//    86%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_3 {
+//    0%   { opacity: 0; }
+//    14%  { opacity: 0; }
+//    29%  { opacity: 0; }
+////    43%  { opacity: 0; }
+//    57%  { opacity: 1; }
+////    71%  { opacity: 0; }
+//    86%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_4 {
+//    0%   { opacity: 0; }
+//    14%  { opacity: 0; }
+//    29%  { opacity: 0; }
+//    43%  { opacity: 0; }
+////    57%  { opacity: 0; }
+//    71%  { opacity: 1; }
+////    86%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
+
+
+
+//@-webkit-keyframes home_hero_animation_1 {
+//    0%   { opacity: 0; }
+//    20%  { opacity: 1; }
+//    40%  { opacity: 1; }
+//    60%  { opacity: 1; }
+//    80%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_2 {
+//    0%   { opacity: 0; }
+//    20%  { opacity: 0; }
+//    40%  { opacity: 1; }
+//    60%  { opacity: 1; }
+//    80%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_3 {
+//    0%   { opacity: 0; }
+//    20%  { opacity: 0; }
+//    40%  { opacity: 0; }
+//    60%  { opacity: 1; }
+//    80%  { opacity: 1; }
+//    81%  { opacity: 1; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_4 {
+//    0%   { opacity: 0; }
+//    20%  { opacity: 0; }
+//    40%  { opacity: 0; }
+//    60%  { opacity: 0; }
+//    80%  { opacity: 1; }
+//    100% { opacity: 0; }
+//}
+
+
+@-webkit-keyframes fadeInOut {
+    0%    { opacity: 0; }
+    50%   { opacity: 1; }
+    100%  { opacity: 0; }
+}
+@-webkit-keyframes fadeIn {
+    0%    { opacity: 0; }
+    50%   { opacity: 0; }
+    51%   { opacity: 1; }
+    100%  { opacity: 1; }
+}
+
+
+
+
+@-webkit-keyframes home_hero_animation_1 {
+    0%   { opacity: 0; }
+      24%  { opacity: 0; }
+    25%  { opacity: 1; }
+    50%  { opacity: 1; }
+      51%  { opacity: 0; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+//@-webkit-keyframes home_hero_animation_2 {
+//    0%   { opacity: 0; }
+//    25%  { opacity: 0; }
+//    50%  { opacity: 1; }
+//    75%  { opacity: 1; }
+//    100% { opacity: 0; }
+//}
+//@-webkit-keyframes home_hero_animation_3 {
+//    0%   { opacity: 0; }
+//    25%  { opacity: 0; }
+//    50%  { opacity: 0; }
+//    75%  { opacity: 1; }
+//    100% { opacity: 1; }
+//}
+//@-webkit-keyframes home_hero_animation_4 {
+//    0%   { opacity: 0; }
+//    25%  { opacity: 1; }
+//    50%  { opacity: 1; }
+//    75%  { opacity: 0; }
+//    100% { opacity: 0; }
+//}
 
 

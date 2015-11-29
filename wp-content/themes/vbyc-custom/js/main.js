@@ -1,10 +1,18 @@
 (function( vbyc, $, undefined ) { 
 	
 
-	var subNavSelector = '.navbar-list-sub';
-	var navbarSiblingsSelector  = '.navbar-list .link';
-	var sideNav = $('#sidenav');
-	var hasSidenav;
+	var subNavSelector 			= '.navbar-list-sub',
+	    navbarSiblingsSelector  = '.navbar-list .link',
+	    sideNav 				= $('#sidenav'),
+	    hasSidenav 				,
+	    containerClassName		= '.template-home .hero-animation',
+	    container 				= $(containerClassName),
+	    allButFirstImage        = $('img:not(:first-child)',container),
+	    allButFirstAndLastImage = $('img:not(:first-child):not(:last-child)',container),
+	    speedFade 				= 800,
+	    speedInterval 			= 0;
+
+	  
 	
 
 	
@@ -28,12 +36,21 @@
 
 			// Set up lightbox
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
+
+			// Set Home hero animation
+			vbyc.util.homeHeroAnimation();
+
+
+			vbyc.util.resetImages();
+	        vbyc.util.nextImage();  
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
 			if (customValues.hasSidenav) {
 				hasSidenav = customValues.hasSidenav ;
 			}
+
+
 		},
 
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
@@ -96,7 +113,7 @@
                 $(this).ekkoLightbox();
             });
 
-			console.log('Hello');
+			// console.log('Hello');
 
 			// delegate calls to data-toggle="lightbox"
                 // $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
@@ -147,8 +164,39 @@
                 // });
 		},
 
+		homeHeroAnimation: function() {
 
-		
+			var target = $('.template-home .animation-outer');
+
+			target.css('border','1px solid red').addClass('image-1');
+
+			console.log('Hi');
+		},
+
+		resetImages: function() {
+	        allButFirstImage.hide();
+	    },
+	    nextImage: function() {
+
+
+	        if ($('img:last-child',container).is(':hidden')) {
+	          	vbyc.util.fadeInNextImage();
+	        } else {
+	          	allButFirstAndLastImage.hide();
+	          	vbyc.util.fadeOutLastImage();
+	        }
+	        $( "img",container).promise().done(function() {
+	        	setTimeout(vbyc.util.nextImage, speedInterval);
+	        });
+	    },
+	    fadeInNextImage: function() {
+	        $( "img:hidden:first",container).fadeIn(speedFade);
+	    },
+	    fadeOutLastImage: function() {
+	        $( "img:last",container).fadeOut(speedFade);
+	    },
+
+
 
 		sidebarScrollSpy: function() {
 			var mainContent = $('.main-content');
