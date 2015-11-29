@@ -9982,14 +9982,15 @@ hr {
 }
 /* line 115, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
-  background: url("../images/heros/map-of-vbyc.jpg") 50% 0 no-repeat;
+  background: url("../images/heros/map-of-vbyc.jpg") 50% 50% no-repeat;
 }
-/* line 121, ../sass/partials/_page-home.scss */
+/* line 120, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
-  height: 355px;
   color: #FFF;
-  padding-top: 80px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  line-height: 1;
 }
 /* line 126, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
@@ -9998,13 +9999,13 @@ hr {
 /* line 130, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
-  font-size: 64px;
+  font-size: 4em;
 }
 /* line 134, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
-  font-size: 34px;
+  font-size: 2em;
   font-family: "Varela Round", sans-serif;
-  margin-top: 20px;
+  margin-top: 4%;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {

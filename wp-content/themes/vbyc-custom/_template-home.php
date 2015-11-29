@@ -13,7 +13,7 @@
     <![endif]--> 
 
     
-    <main> 
+    <main class="text-center"> 
         <section class="news-feed">
             <div class="container">
                 <div class="row">
@@ -34,7 +34,7 @@
         <section class="home-banner-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
                         <div class="content">
                             <a href="#" class="link">
                                 <img src="images/illustrations/calendar.png" class="banner" alt=" ">
@@ -46,7 +46,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6"> 
+                    <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5"> 
                         <div class="content">
                             <a href="#" class="link">
                                 <img src="images/illustrations/campfire.png" class="banner" alt=" ">
@@ -77,7 +77,7 @@
                             <h3 class="headline">Activities</h3>
                             <p><?=$lorem?></p>
                             <a href="#" class="link">
-                                View Schedule
+                                View Activities
                             </a>
                         </div>
                     </div>
@@ -149,7 +149,7 @@
                                     Rent the camp
                                 </a>
                             </h3>
-                            <p><?=$lorem?> <a href="#">Learn more</a></p>
+                            <p class="col-xs-offset-2 col-xs-8"><?=$lorem?> <a href="#">Learn more</a></p>
                              <a href="#" class="link">
                                 <img src="images/home/kayaks.jpg" class="banner img-responsive" alt=" ">
                             </a>
