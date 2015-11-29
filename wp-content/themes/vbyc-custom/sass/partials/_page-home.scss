@@ -7,7 +7,6 @@
 .template-home {
 
     .hero-animation {
-
         height: 120px;
         width: 200px;
         display: block;
@@ -63,10 +62,7 @@
 
 
     .header-main  {
-        background-color: #000;
-        background: 
-
-        url('../images/heros/home.jpg') 50% 0 no-repeat;
+        background: url('../images/heros/home.jpg') 50% 0 no-repeat;
         height: 660px;
         position: relative;
         .main-logo-container {
@@ -95,7 +91,6 @@
             }
             .group-3 {
                 display: block;
-//              font-size: 40px;
             }
             .group-4 {
                 line-height: 1;
@@ -111,10 +106,17 @@
                 font-weight: 200;
             }
         }
-    }
+    } // .header-main
     .main-logo {
         color: #fff;
     }
+
+    // HOME BANNERS
+    .home-banner-map {
+        background: $color-blue url('../images/heros/map-of-vbyc.jpg') 50% 0 no-repeat;
+        height: 355px;
+    }
+
 }
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {

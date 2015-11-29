@@ -124,7 +124,7 @@
         </section>
 
 
-        <section class="home-banner-reverse">
+        <section class="home-banner-map">
             <div class="container">
                 <div class="row banner-map">
                     <div class="col-xs-12">
