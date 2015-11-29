@@ -113,8 +113,29 @@
 
     // HOME BANNERS
     .home-banner-map {
-        background: $color-blue url('../images/heros/map-of-vbyc.jpg') 50% 0 no-repeat;
-        height: 355px;
+        background: url('../images/heros/map-of-vbyc.jpg') 50% 0 no-repeat;
+        
+        .content {
+            
+        }
+        .link {
+            display: block;
+            height: 355px;
+            color: $color-white;
+            padding-top: 80px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .headline {
+            color: $color-white;
+            font-size: $font-size-h1;
+        }
+        .cta {
+            font-size: $font-size-h2;
+            font-family: $font-family-link;
+            margin-top: 20px;
+        }
     }
 
 }

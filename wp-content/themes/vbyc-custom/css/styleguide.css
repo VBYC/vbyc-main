@@ -10072,54 +10072,75 @@ hr {
 }
 /* line 115, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
-  background: #0595E5 url("../images/heros/map-of-vbyc.jpg") 50% 0 no-repeat;
+  background: url("../images/heros/map-of-vbyc.jpg") 50% 0 no-repeat;
+}
+/* line 121, ../sass/partials/_page-home.scss */
+.template-home .home-banner-map .link {
+  display: block;
   height: 355px;
+  color: #FFF;
+  padding-top: 80px;
+}
+/* line 126, ../sass/partials/_page-home.scss */
+.template-home .home-banner-map .link:hover {
+  text-decoration: none;
+}
+/* line 130, ../sass/partials/_page-home.scss */
+.template-home .home-banner-map .headline {
+  color: #FFF;
+  font-size: 64px;
+}
+/* line 134, ../sass/partials/_page-home.scss */
+.template-home .home-banner-map .cta {
+  font-size: 34px;
+  font-family: "Varela Round", sans-serif;
+  margin-top: 20px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 125, ../sass/partials/_page-home.scss */
+  /* line 146, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 134, ../sass/partials/_page-home.scss */
+  /* line 155, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     top: -30px;
   }
-  /* line 137, ../sass/partials/_page-home.scss */
+  /* line 158, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 570px;
     background-position: 50% -30px;
   }
-  /* line 140, ../sass/partials/_page-home.scss */
+  /* line 161, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
   }
-  /* line 144, ../sass/partials/_page-home.scss */
+  /* line 165, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
     left: 0;
     bottom: 50px;
     font-size: 70px;
   }
-  /* line 149, ../sass/partials/_page-home.scss */
+  /* line 170, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  /* line 159, ../sass/partials/_page-home.scss */
+  /* line 180, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     display: none;
   }
-  /* line 162, ../sass/partials/_page-home.scss */
+  /* line 183, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 340px;
     background-size: auto 100%;
     background-position: 50% 0;
   }
-  /* line 166, ../sass/partials/_page-home.scss */
+  /* line 187, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
     bottom: 20px;

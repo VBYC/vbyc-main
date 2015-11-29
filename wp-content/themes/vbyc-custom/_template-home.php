@@ -129,9 +129,9 @@
                 <div class="row banner-map">
                     <div class="col-xs-12">
                         <div class="content">
-                            <a href="#" class="link">
-                                <h3>There&rsquo;s a lot to exmplare!</h3>
-                                <p>View the map of camp</p>
+                            <a href="#" class="link text-center">
+                                <h3 class="headline">There&rsquo;s a lot to explore!</h3>
+                                <p class="cta">View the map of camp</p>
                             </a>
                         </div>
                     </div>
