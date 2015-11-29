@@ -2,13 +2,16 @@
 <? if ($page == 'home') { $logo_version = '-reverse'; } ?>
 
     <header class="header-main v-offset-bot-0">
+
+<? if ($page == 'home') { ?>
         <div class="hero-animation">
             <img src="images/heros/home-hero-fire-flame-1.jpg">
             <img src="images/heros/home-hero-fire-flame-2.jpg">
             <img src="images/heros/home-hero-fire-flame-3.jpg">
             <img src="images/heros/home-hero-fire-flame-4.jpg">
         </div>
-        
+<? } ?>
+
             <div class="container">
                 <div class="row">
                     <div class="main-logo-container col-xs-9 col-sm-12 col-md-4 text-center">
