@@ -10,6 +10,7 @@
             <img src="images/heros/home-hero-fire-flame-3.jpg">
             <img src="images/heros/home-hero-fire-flame-4.jpg">
         </div>
+    
 <? } ?>
 
             <div class="container">

@@ -1,0 +1,37 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NEWS FEED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.news-feed {
+	.content {
+		padding-left: 30px;
+		padding-right: 30px;
+		text-align: center;
+		background-color: $color-blue;
+		color: $color-white;
+	}
+	.headline {
+		display: inline-block;
+		margin-right: 5px;
+	}
+	.news-feed-list {
+		display: inline-block;
+		.link {
+			color: $color-white;
+			margin-left: 10px;
+			margin-right: 10px;
+
+		}
+		.item {
+			&:not(:first-child) {
+				.link {
+					&:before {
+						content: '//';
+						margin-right: 5px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}

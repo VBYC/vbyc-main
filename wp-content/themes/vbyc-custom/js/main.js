@@ -1,6 +1,8 @@
 (function( vbyc, $, undefined ) { 
 	
 
+
+
 	var subNavSelector 			= '.navbar-list-sub',
 	    navbarSiblingsSelector  = '.navbar-list .link',
 	    sideNav 				= $('#sidenav'),

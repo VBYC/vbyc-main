@@ -12,210 +12,154 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]--> 
 
+    
     <main> 
-        <section class="hero">
-            <? if ($show_hero_image) { ?>
-            <div class="container-fluid hero-image-container">
+        <section class="news-feed">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="hero-image">
-                            <img src="images/template/hero-basic.jpg" alt=" ">
+                    <div class="col-xs-12">
+                        <div class="content">
+                            <h5 class="headline ">News ///</h5>
+                            <ul class="news-feed-list list-inline">
+                                <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
+                                <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
+                                <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
-            <? } ?>
-            <div class="container-fluid hero-text-container clearfix">
-                 <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="hero-text">
-                                <p class="h4 section-name text-uppercase">Section</p>
-                                <h1 class="page-name">Template - Basic</h1>
-                            </div>
-                        </div>         
-                    </div><!-- /.row -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="hero-text">
-                                <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
-                            </div> 
-                        </div>         
-                    </div><!-- /.row -->
-                </div>
-            </div>
         </section>
-        <section class="main-content">
-            <div class="container"> 
-                <article class="main-article">
 
-                    <? if ($show_content_hero_image) { ?>
-                    <div class="row">
-                        <figure class="figure-images figure-zig-zag">
-                            <!-- 1 column -->
-                            <div class="row figure-row">
-                                <div class="col-sm-2 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-2 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div>         
-                            </div><!-- /.row -->
-                        </figure>
-                    </div><!-- /.row -->
-                    <? } ?>
-
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
-                            <div>
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-            
-
-
-
-
-
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
+        <section class="home-banner-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="content">
+                            <a href="#" class="link">
+                                <img src="images/illustrations/calendar.png" class="banner" alt=" ">
+                            </a>
+                            <h3 class="headline">Find a session for your child</h3>
+                            <p><?=$lorem?></p>
+                            <a href="#" class="link">
+                                View Schedule
+                            </a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
+                    <div class="col-xs-12 col-sm-6"> 
+                        <div class="content">
+                            <a href="#" class="link">
+                                <img src="images/illustrations/campfire.png" class="banner" alt=" ">
+                            </a>
+                            <h3 class="headline">Every camp day is a good day</h3>
+                            <p><?=$lorem?></p>
+                            <a href="#" class="link">
+                                View Camp Life
+                            </a>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-
-
-
-                    <hr class="divider-styled">
-
-                    
-
-                   
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
-                            <div>
-                                <div style="-webkit-columns:300px;  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <? include("_template-includes/basic-template-content-1.php"); ?> 
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-
-                    
-
-
-
-
-
-                    <hr class="divider-styled">
-
-
-                 
-
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-
-
-
-
-
-
-                    
-
-                    
-
-
-
-                </article> 
-            </div><!-- /.container -->
+                    </div>
+                </div><!-- /.row -->
+            </div>
         </section>
+
+        <section class="home-banner-secondary">
+            <div class="container">
+                <div class="row banner-activities">
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="content">
+                            <a href="#" class="link">
+                                <img src="images/home/activities.jpg" class="banner img-responsive" alt=" ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="content">
+                            <h3 class="headline">Activities</h3>
+                            <p><?=$lorem?></p>
+                            <a href="#" class="link">
+                                View Schedule
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
+                <div class="row banner-cleo">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="content">
+                            <h3 class="headline">Cleo the Moose</h3>
+                            <p><?=$lorem?></p>
+                            <a href="#" class="link">
+                                Learn more about Cleo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="content">
+                            <a href="#" class="link">
+                                <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
+                <div class="row banner-alumni">
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="content">
+                            <a href="#" class="link">
+                                <img src="images/home/alumni.jpg" class="banner img-responsive" alt=" ">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="content">
+                            <h3 class="headline">Alumni</h3>
+                            <p><?=$lorem?></p>
+                            <a href="#" class="link">
+                                View alumni information
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+        </section>
+
+
+        <section class="home-banner-reverse">
+            <div class="container">
+                <div class="row banner-map">
+                    <div class="col-xs-12">
+                        <div class="content">
+                            <a href="#" class="link">
+                                <h3>There&rsquo;s a lot to exmplare!</h3>
+                                <p>View the map of camp</p>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+        </section>
+
+        <section class="home-banner-tertiary">
+            <div class="container">
+                <div class="row banner-map">
+                    <div class="col-xs-12">
+                        <div class="content">
+                            <h3>
+                                <a href="#" class="link">
+                                    Rent the camp
+                                </a>
+                            </h3>
+                            <p><?=$lorem?> <a href="#">Learn more</a></p>
+                             <a href="#" class="link">
+                                <img src="images/home/kayaks.jpg" class="banner img-responsive" alt=" ">
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+            </div>
+        </section>
+        
+        
     </main>
 
 <? include("_template-includes/footer-markup.php"); ?>
