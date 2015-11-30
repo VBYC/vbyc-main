@@ -2,6 +2,12 @@
 	LAYOUT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.container {
+	&.container-extended {
+		width: 1677px;
+	}
+}
+
 .main-content {
 	margin-top: $padding-base-vertical*8;
 	&.has-sidenav {

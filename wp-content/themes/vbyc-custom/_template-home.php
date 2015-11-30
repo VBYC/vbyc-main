@@ -63,63 +63,81 @@
         </section>
 
         <section class="home-banner-secondary">
-            <div class="container">
-                <div class="row banner-activities">
-                    <div class="col-xs-12 col-sm-7">
-                        <div class="content">
-                            <a href="#" class="link">
-                                <img src="images/home/activities.jpg" class="banner img-responsive" alt=" ">
-                            </a>
-                        </div>
+            <div class="container-fluid">
+                <div class="banner-item banner-activities">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="content content-primary-img">
+                                    <a href="#" class="link">
+                                        <img src="images/home/activities.jpg" class="banner img-responsive" alt=" ">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 pull-rightX">
+                                <div class="content content-primary-text">
+                                    <h3 class="headline">Activities</h3>
+                                    <p><?=$lorem?></p>
+                                    <a href="#" class="link">
+                                        View Activities
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- /.row -->
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="content">
-                            <h3 class="headline">Activities</h3>
-                            <p><?=$lorem?></p>
-                            <a href="#" class="link">
-                                View Activities
-                            </a>
-                        </div>
-                    </div>
-                </div><!-- /.row -->
+                </div>
 
-                <div class="row banner-cleo">
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="content">
-                            <h3 class="headline">Cleo the Moose</h3>
-                            <p><?=$lorem?></p>
-                            <a href="#" class="link">
-                                Learn more about Cleo
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <div class="content">
-                            <a href="#" class="link">
-                                <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
-                            </a>
-                        </div>
-                    </div>
-                </div><!-- /.row -->
 
-                <div class="row banner-alumni">
-                    <div class="col-xs-12 col-sm-7">
-                        <div class="content">
-                            <a href="#" class="link">
-                                <img src="images/home/alumni.jpg" class="banner img-responsive" alt=" ">
-                            </a>
-                        </div>
+                <div class="banner-item banner-cleo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="content content-primary-text">
+                                    <h3 class="headline">Cleo the Moose</h3>
+                                    <p><?=$lorem?></p>
+                                    <a href="#" class="link">
+                                        Learn more about Cleo
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="content content-primary-img">
+                                    <a href="#" class="link">
+                                        <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- /.row -->
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="content">
-                            <h3 class="headline">Alumni</h3>
-                            <p><?=$lorem?></p>
-                            <a href="#" class="link">
-                                View alumni information
-                            </a>
-                        </div>
+                </div>
+
+
+                <div class="banner-item banner-alumni">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="content content-primary-img">
+                                    <a href="#" class="link">
+                                        <img src="images/home/alumni.jpg" class="banner img-responsive" alt=" ">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 pull-rightX">
+                                <div class="content content-primary-text">
+                                    <h3 class="headline">Alumni</h3>
+                                    <p><?=$lorem?></p>
+                                    <a href="#" class="link">
+                                        View alumni information
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- /.row -->
                     </div>
-                </div><!-- /.row -->
+                </div>
+
+              
+
+            
             </div>
         </section>
 

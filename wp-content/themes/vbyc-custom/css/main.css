@@ -9130,54 +9130,59 @@ button.close {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	LAYOUT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 5, ../sass/partials/_layout.scss */
+/* line 6, ../sass/partials/_layout.scss */
+.container.container-extended {
+  width: 1677px;
+}
+
+/* line 11, ../sass/partials/_layout.scss */
 .main-content {
   margin-top: 48px;
 }
-/* line 7, ../sass/partials/_layout.scss */
+/* line 13, ../sass/partials/_layout.scss */
 .main-content.has-sidenav {
   margin-top: 0;
 }
 
-/* line 13, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 .has-sidenav .sidenav,
 .has-sidenav .content-list > .item {
   padding-top: 48px;
 }
 
-/* line 24, ../sass/partials/_layout.scss */
+/* line 30, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item {
   padding-bottom: 48px;
 }
-/* line 32, ../sass/partials/_layout.scss */
+/* line 38, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item .heading {
   margin-top: 0;
 }
-/* line 36, ../sass/partials/_layout.scss */
+/* line 42, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details .description {
   margin-top: 30px;
 }
-/* line 42, ../sass/partials/_layout.scss */
+/* line 48, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 45, ../sass/partials/_layout.scss */
+/* line 51, ../sass/partials/_layout.scss */
 .content-list.list-single-details > .item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 49, ../sass/partials/_layout.scss */
+/* line 55, ../sass/partials/_layout.scss */
 .content-list.list-single-details .description {
   margin-top: 15px;
 }
-/* line 52, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 64, ../sass/partials/_layout.scss */
+  /* line 70, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
@@ -9913,7 +9918,12 @@ hr {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 9, ../sass/partials/_page-home.scss */
+/* line 8, ../sass/partials/_page-home.scss */
+.template-home .home-banner-primary {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+/* line 12, ../sass/partials/_page-home.scss */
 .template-home .hero-animation {
   height: 120px;
   width: 200px;
@@ -9926,23 +9936,23 @@ hr {
   text-align: center;
   padding-right: 234px;
 }
-/* line 20, ../sass/partials/_page-home.scss */
+/* line 23, ../sass/partials/_page-home.scss */
 .template-home .hero-animation img {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 64, ../sass/partials/_page-home.scss */
+/* line 32, ../sass/partials/_page-home.scss */
 .template-home .header-main {
   background: url("../images/heros/home.jpg") 50% 0 no-repeat;
   height: 660px;
   position: relative;
 }
-/* line 68, ../sass/partials/_page-home.scss */
+/* line 36, ../sass/partials/_page-home.scss */
 .template-home .header-main .main-logo-container {
   max-height: 75px;
 }
-/* line 72, ../sass/partials/_page-home.scss */
+/* line 40, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 {
   position: absolute;
   bottom: 30px;
@@ -9954,37 +9964,55 @@ hr {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
-/* line 85, ../sass/partials/_page-home.scss */
+/* line 53, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 92, ../sass/partials/_page-home.scss */
+/* line 60, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-3 {
   display: block;
 }
-/* line 95, ../sass/partials/_page-home.scss */
+/* line 63, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-4 {
   line-height: 1;
   vertical-align: 35px;
   display: inline-block;
 }
-/* line 103, ../sass/partials/_page-home.scss */
+/* line 71, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .accent {
   font-family: "Roboto Slab", serif;
   font-size: 40%;
   font-weight: 200;
 }
-/* line 110, ../sass/partials/_page-home.scss */
+/* line 78, ../sass/partials/_page-home.scss */
 .template-home .main-logo {
   color: #fff;
 }
-/* line 115, ../sass/partials/_page-home.scss */
+/* line 84, ../sass/partials/_page-home.scss */
+.template-home .home-banner-secondary .banner-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 93, ../sass/partials/_page-home.scss */
+.template-home .content-primary-img {
+  border: 9px solid #43C8D9;
+}
+/* line 96, ../sass/partials/_page-home.scss */
+.template-home .content-primary-text {
+  background-color: #FFF;
+  padding: 30px;
+}
+/* line 101, ../sass/partials/_page-home.scss */
+.template-home .content-primary-text .headline {
+  margin-top: 0;
+}
+/* line 107, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
   background: url("../images/heros/map-of-vbyc.jpg") 50% 50% no-repeat;
 }
-/* line 120, ../sass/partials/_page-home.scss */
+/* line 112, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
   color: #FFF;
@@ -9992,20 +10020,28 @@ hr {
   padding-bottom: 10%;
   line-height: 1;
 }
-/* line 126, ../sass/partials/_page-home.scss */
+/* line 118, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
   text-decoration: none;
 }
-/* line 130, ../sass/partials/_page-home.scss */
+/* line 122, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
   font-size: 4em;
 }
-/* line 134, ../sass/partials/_page-home.scss */
+/* line 126, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
   font-size: 2em;
   font-family: "Varela Round", sans-serif;
   margin-top: 4%;
+}
+/* line 134, ../sass/partials/_page-home.scss */
+.template-home .banner-activities {
+  background: url("../images/heros/water.jpg") 50% 50% repeat-y;
+}
+/* line 138, ../sass/partials/_page-home.scss */
+.template-home .banner-alumni {
+  background: url("../images/heros/grass-and-flowers.jpg") 50% 50% repeat-y;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
