@@ -10021,24 +10021,20 @@ hr {
 }
 
 @media (max-width: 767px) {
-  /* line 71, ../sass/partials/_news-feed.scss */
-  .template-home {
-    border: 1px solid red;
-  }
   /* line 73, ../sass/partials/_news-feed.scss */
-  .template-home .content {
+  .template-home .news-feed .content {
     height: 65px;
     padding-top: 5px;
     line-height: 25px;
   }
   /* line 78, ../sass/partials/_news-feed.scss */
-  .template-home .headline {
+  .template-home .news-feed .headline {
     display: block;
     float: none;
     line-height: 25px;
   }
   /* line 84, ../sass/partials/_news-feed.scss */
-  .template-home .news-feed-list {
+  .template-home .news-feed .news-feed-list {
     clear: both;
     text-align: center;
     margin-top: -5px;
