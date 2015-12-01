@@ -15,16 +15,29 @@
     
     <main class="text-center"> 
         <section class="news-feed">
-            <div class="container">
+            <div class="container-extended">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="content">
-                            <h5 class="headline ">News ///</h5>
-                            <ul class="news-feed-list list-inline">
-                                <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
-                                <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
-                                <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
-                            </ul>
+                        <div class="content clearfix">
+                            <div class="content-inner">
+                                <h5 class="headline"><a href="#" class="link-reverse " title="Read all news stories">News</a> ///</h5>
+                                <ul class="news-feed-list list-unstyled">
+                                    <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
+                                    <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
+                                    <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
+                                    <li class="item"><a href="#" class="link">Midnight undraise, May 21st.</a></li>
+                                    <li class="item"><a href="#" class="link">Leadership speakers announced.</a></li>
+                                </ul>
+                            </div>
+                            <script>
+                                function tick(){
+                                    var target = $('.news-feed-list');
+                                    $('li:first',target).slideUp( function () { 
+                                        $(this).appendTo($(target)).slideDown(); 
+                                    });
+                                }
+                                setInterval(function(){ tick () }, 3000);
+                            </script>
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -91,19 +104,20 @@
                 <div class="banner-item banner-cleo">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-4">
+                            
+                            <div class="col-xs-12 col-sm-8 pull-right">
+                                <div class="content content-primary-img">
+                                    <a href="#" class="link">
+                                        <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 ">
                                 <div class="content content-primary-text">
                                     <h3 class="headline">Cleo the Moose</h3>
                                     <p><?=$lorem?></p>
                                     <a href="#" class="link">
                                         Learn more about Cleo
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-8">
-                                <div class="content content-primary-img">
-                                    <a href="#" class="link">
-                                        <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
                                     </a>
                                 </div>
                             </div>

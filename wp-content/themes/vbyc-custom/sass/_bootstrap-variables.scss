@@ -13,7 +13,8 @@ $gray-base:              #000;
 
 // $brand-primary:         darken(#428bca, 6.5%) // #337ab7;
 $color-blue:             #0595E5;
-$color-blue-light:             #43C8D9;
+$color-blue-light:       #43C8D9;
+$color-blue-green:		 #2996db;
 $color-gray-darker:      lighten($gray-base, 13.5%); // #222
 $color-gray-dark:        lighten($gray-base, 20%);   // #333
 $color-gray:             lighten($gray-base, 33.5%); // #555
@@ -52,18 +53,15 @@ $link-color-emphasize:      	$color-green-dark;
 $link-color-reverse:        	$color-white;
 $link-color-emphasize-reverse:  $color-gray-lighter;
 $link-decoration:           	none;
-
 $link-hover-color:          $link-color;
 $link-hover-decoration:     underline;
-
 $link-focus-color:          $color-slate;
 $link-focus-decoration:     none;
 
 $list-striped-bg-color:     $color-gray-lighter;
-
 $navbar-sub-graphic-color:  $color-gray-lighter;
-
 $line-color:  				$color-gray-light;
+$map-bg-color:				$color-blue-green;
 
 //== Typography
 //
