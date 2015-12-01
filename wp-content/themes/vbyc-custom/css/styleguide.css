@@ -9294,22 +9294,22 @@ body {
 /* line 11, ../sass/partials/_typography.scss */
 a, .link-primary {
   color: #37BC98;
-  font-family: "Varela Round", sans-serif;
 }
-/* line 14, ../sass/partials/_typography.scss */
+/* line 13, ../sass/partials/_typography.scss */
 a:hover, .link-primary:hover, .sg-link-primary-hover .link-primary, .sg-link-hover a, .sg-link-hover .link-primary, .sg-link-primary-hover .link-primary:hover, .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-hover .sg-link-primary-focus .link-primary {
   color: #37BC98;
   text-decoration: underline;
 }
-/* line 18, ../sass/partials/_typography.scss */
+/* line 17, ../sass/partials/_typography.scss */
 a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-focus a, .sg-link-focus .link-primary, a:active, .link-primary:active {
   color: #2C3E50;
   text-decoration: none;
 }
 
-/* line 26, ../sass/partials/_typography.scss */
+/* line 25, ../sass/partials/_typography.scss */
 .link-primary {
   text-decoration: none;
+  font-family: "Varela Round", sans-serif;
 }
 /* line 29, ../sass/partials/_typography.scss */
 .link-primary:hover, .sg-link-primary-hover .link-primary {
@@ -9326,22 +9326,23 @@ a:focus, .link-primary:focus, .sg-link-primary-focus .link-primary, .sg-link-foc
 .link-jump {
   margin-bottom: 20px;
   display: inline-block;
+  font-family: "Varela Round", sans-serif;
 }
-/* line 42, ../sass/partials/_typography.scss */
+/* line 43, ../sass/partials/_typography.scss */
 .link-jump:hover {
   margin-bottom: 18px;
 }
 
-/* line 47, ../sass/partials/_typography.scss */
+/* line 48, ../sass/partials/_typography.scss */
 .link-reverse {
   color: #FFF;
 }
-/* line 49, ../sass/partials/_typography.scss */
+/* line 50, ../sass/partials/_typography.scss */
 .link-reverse:hover, .link-reverse:focus, .link-reverse:active {
   color: #FFF;
 }
 
-/* line 57, ../sass/partials/_typography.scss */
+/* line 58, ../sass/partials/_typography.scss */
 h1,
 .h1 {
   color: #0595E5;
@@ -9349,7 +9350,7 @@ h1,
   font-size: 64px;
 }
 
-/* line 63, ../sass/partials/_typography.scss */
+/* line 64, ../sass/partials/_typography.scss */
 h2,
 .h2 {
   color: #555555;
@@ -9357,7 +9358,7 @@ h2,
   font-size: 34px;
 }
 
-/* line 69, ../sass/partials/_typography.scss */
+/* line 70, ../sass/partials/_typography.scss */
 h3,
 .h3,
 .modal-title {
@@ -9366,45 +9367,71 @@ h3,
   font-size: 28px;
 }
 
-/* line 75, ../sass/partials/_typography.scss */
+/* line 76, ../sass/partials/_typography.scss */
 h4,
 .h4 {
   font-size: 20px;
 }
 
-/* line 79, ../sass/partials/_typography.scss */
+/* line 80, ../sass/partials/_typography.scss */
 h5,
 .h5 {
   font-size: 16px;
 }
 
-/* line 83, ../sass/partials/_typography.scss */
+/* line 84, ../sass/partials/_typography.scss */
 h6,
 .h6 {
   font-size: 14px;
 }
 
+/* line 89, ../sass/partials/_typography.scss */
+h1 a, h1 .link-primary,
+.h1 a,
+.h1 .link-primary,
+a.h1,
+.h1.link-primary {
+  color: #0595E5;
+}
+/* line 93, ../sass/partials/_typography.scss */
+h1 a:hover, h1 .link-primary:hover, h1 .sg-link-primary-hover .link-primary, .sg-link-primary-hover h1 .link-primary, h1 .sg-link-hover a, .sg-link-hover h1 a, h1 .sg-link-hover .link-primary, .sg-link-hover h1 .link-primary, h1 .sg-link-primary-hover .link-primary:hover, .sg-link-primary-hover h1 .link-primary:hover, h1 .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus h1 .link-primary:hover, h1 .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-focus .sg-link-primary-hover h1 .link-primary, h1 .sg-link-primary-hover .sg-link-primary-focus .link-primary, .sg-link-primary-hover .sg-link-primary-focus h1 .link-primary,
+.h1 a:hover,
+.h1 .link-primary:hover,
+.h1 .sg-link-primary-hover .link-primary,
+.sg-link-primary-hover .h1 .link-primary,
+.h1 .sg-link-hover a,
+.sg-link-hover .h1 a,
+.h1 .sg-link-hover .link-primary,
+.sg-link-hover .h1 .link-primary,
+a.h1:hover,
+.h1.link-primary:hover,
+.sg-link-primary-hover .h1.link-primary,
+.sg-link-hover a.h1,
+.sg-link-hover .h1.link-primary {
+  text-decoration: none;
+}
+
 @media (max-width: 767px) {
-  /* line 91, ../sass/partials/_typography.scss */
+  /* line 101, ../sass/partials/_typography.scss */
   h1,
   .h1 {
     font-size: 38.4px;
   }
 
-  /* line 95, ../sass/partials/_typography.scss */
+  /* line 105, ../sass/partials/_typography.scss */
   h2,
   .h2 {
     font-size: 27.2px;
   }
 
-  /* line 99, ../sass/partials/_typography.scss */
+  /* line 109, ../sass/partials/_typography.scss */
   h3,
   .h3,
   .modal-title {
     font-size: 22.4px;
   }
 
-  /* line 103, ../sass/partials/_typography.scss */
+  /* line 113, ../sass/partials/_typography.scss */
   h4,
   .h4 {
     font-size: 20px;
@@ -10054,12 +10081,7 @@ hr {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 8, ../sass/partials/_page-home.scss */
-.template-home .home-banner-primary {
-  margin-top: 30px;
-  margin-bottom: 80px;
-}
-/* line 12, ../sass/partials/_page-home.scss */
+/* line 9, ../sass/partials/_page-home.scss */
 .template-home .hero-animation {
   height: 120px;
   width: 200px;
@@ -10072,23 +10094,23 @@ hr {
   text-align: center;
   padding-right: 234px;
 }
-/* line 23, ../sass/partials/_page-home.scss */
+/* line 20, ../sass/partials/_page-home.scss */
 .template-home .hero-animation img {
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 29, ../sass/partials/_page-home.scss */
+/* line 26, ../sass/partials/_page-home.scss */
 .template-home .header-main {
   background: url("../images/heros/home.jpg") 50% 0 no-repeat;
   height: 660px;
   position: relative;
 }
-/* line 33, ../sass/partials/_page-home.scss */
+/* line 30, ../sass/partials/_page-home.scss */
 .template-home .header-main .main-logo-container {
   max-height: 75px;
 }
-/* line 36, ../sass/partials/_page-home.scss */
+/* line 33, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 {
   position: absolute;
   bottom: 30px;
@@ -10100,138 +10122,163 @@ hr {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
-/* line 46, ../sass/partials/_page-home.scss */
+/* line 43, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 53, ../sass/partials/_page-home.scss */
+/* line 50, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-3 {
   display: block;
 }
-/* line 56, ../sass/partials/_page-home.scss */
+/* line 53, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-4 {
   line-height: 1;
   vertical-align: 35px;
   display: inline-block;
 }
-/* line 64, ../sass/partials/_page-home.scss */
+/* line 61, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .accent {
   font-family: "Roboto Slab", serif;
   font-size: 40%;
   font-weight: 200;
 }
-/* line 71, ../sass/partials/_page-home.scss */
+/* line 68, ../sass/partials/_page-home.scss */
 .template-home .main-logo {
   color: #fff;
 }
-/* line 77, ../sass/partials/_page-home.scss */
+/* line 76, ../sass/partials/_page-home.scss */
+.template-home .home-banner-primary .content-primary-text .headline {
+  margin-top: 5px;
+}
+/* line 84, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .banner-item {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 86, ../sass/partials/_page-home.scss */
+/* line 88, ../sass/partials/_page-home.scss */
+.template-home .home-banner-secondary .content-primary-text {
+  margin-top: 0;
+  text-align: left;
+}
+/* line 91, ../sass/partials/_page-home.scss */
+.template-home .home-banner-secondary .content-primary-text .headline {
+  margin-top: 0;
+}
+/* line 97, ../sass/partials/_page-home.scss */
+.template-home .home-banner-tertiary {
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+/* line 102, ../sass/partials/_page-home.scss */
 .template-home .content-primary-img {
   border: 9px solid #43C8D9;
 }
-/* line 89, ../sass/partials/_page-home.scss */
+/* line 105, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text {
   background-color: #FFF;
   padding: 30px;
+  line-height: 1.81;
 }
-/* line 94, ../sass/partials/_page-home.scss */
-.template-home .content-primary-text .headline {
-  margin-top: 0;
+/* line 110, ../sass/partials/_page-home.scss */
+.template-home .content-primary-text .description {
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
-/* line 100, ../sass/partials/_page-home.scss */
+/* line 119, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
   background: #2996db url("../images/heros/map-of-vbyc.jpg") 50% 50% no-repeat;
 }
-/* line 103, ../sass/partials/_page-home.scss */
+/* line 122, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
   color: #FFF;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 8%;
+  padding-bottom: 8%;
   line-height: 1;
 }
-/* line 109, ../sass/partials/_page-home.scss */
+/* line 128, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
   text-decoration: none;
 }
-/* line 113, ../sass/partials/_page-home.scss */
+/* line 132, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
   font-size: 4em;
 }
-/* line 117, ../sass/partials/_page-home.scss */
+/* line 136, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
   font-size: 2em;
   font-family: "Varela Round", sans-serif;
   margin-top: 3%;
 }
-/* line 125, ../sass/partials/_page-home.scss */
+/* line 144, ../sass/partials/_page-home.scss */
 .template-home .banner-activities {
   background: url("../images/heros/water.jpg") 50% 50% repeat-y;
 }
-/* line 129, ../sass/partials/_page-home.scss */
+/* line 148, ../sass/partials/_page-home.scss */
 .template-home .banner-cleo {
   background: url("../images/heros/sun-through-trees.jpg") 50% 0 repeat-y;
 }
-/* line 134, ../sass/partials/_page-home.scss */
+/* line 153, ../sass/partials/_page-home.scss */
 .template-home .banner-alumni {
   background: url("../images/heros/grass-and-flowers.jpg") 50% 50% repeat-y;
 }
+/* line 157, ../sass/partials/_page-home.scss */
+.template-home .banner-img {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 142, ../sass/partials/_page-home.scss */
+  /* line 166, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 151, ../sass/partials/_page-home.scss */
+  /* line 175, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     top: -30px;
   }
-  /* line 154, ../sass/partials/_page-home.scss */
+  /* line 178, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 570px;
     background-position: 50% -30px;
   }
-  /* line 157, ../sass/partials/_page-home.scss */
+  /* line 181, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
   }
-  /* line 161, ../sass/partials/_page-home.scss */
+  /* line 185, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
     left: 0;
     bottom: 50px;
     font-size: 70px;
   }
-  /* line 166, ../sass/partials/_page-home.scss */
+  /* line 190, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
-  /* line 171, ../sass/partials/_page-home.scss */
+  /* line 195, ../sass/partials/_page-home.scss */
   .template-home .banner-item {
     background-size: auto 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 179, ../sass/partials/_page-home.scss */
+  /* line 203, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     display: none;
   }
-  /* line 182, ../sass/partials/_page-home.scss */
+  /* line 206, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 340px;
     background-size: auto 100%;
     background-position: 50% 0;
   }
-  /* line 186, ../sass/partials/_page-home.scss */
+  /* line 210, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
     bottom: 20px;

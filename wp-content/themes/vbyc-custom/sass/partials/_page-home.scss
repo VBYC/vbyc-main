@@ -5,10 +5,7 @@
 
 
 .template-home {
-    .home-banner-primary {
-        margin-top: 30px;
-        margin-bottom: 80px;
-    }
+
     .hero-animation {
         height: 120px;
         width: 200px;
@@ -73,14 +70,33 @@
     }
 
     // BANNERS
+
+    .home-banner-primary {
+        .content-primary-text {
+            .headline {
+                margin-top: 5px;
+            }
+        }
+    }
+
+
     .home-banner-secondary {
         .banner-item {
             padding-top: 50px;
             padding-bottom: 50px;
         }
         .content-primary-text {
-//            margin-top: 10%;
+            margin-top: 0;
+            text-align: left;
+            .headline {
+                margin-top: 0;
+            }
         }
+    }
+
+    .home-banner-tertiary {
+        margin-top: 70px;
+        margin-bottom: 120px;
     }
 
     .content-primary-img {
@@ -89,11 +105,14 @@
     .content-primary-text {
         background-color: $color-white;
         padding: 30px;
-//        margin-top: 20px;
-//        margin-top: 10px;
-        .headline {
-            margin-top: 0
+        line-height: 1.81;
+        
+        .description {
+            margin-top: 15px;
+            margin-bottom: 25px;
         }
+
+        
     }
 
     // HOME BANNER - MAP
@@ -103,8 +122,8 @@
         .link {
             display: block;
             color: $color-white;
-            padding-top: 5%;
-            padding-bottom: 5%;
+            padding-top: 8%;
+            padding-bottom: 8%;
             line-height: 1;
             &:hover {
                 text-decoration: none;
@@ -133,6 +152,11 @@
 
     .banner-alumni {
         background: url('../images/heros/grass-and-flowers.jpg') 50% 50% repeat-y;
+    }
+
+    .banner-img {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

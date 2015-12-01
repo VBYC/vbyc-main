@@ -10,7 +10,6 @@ body {
 }
 a {
 	color: $link-color;
-    font-family: $font-family-link;
 	&:hover {
 		color: $link-hover-color;
 		text-decoration: $link-hover-decoration;
@@ -26,6 +25,7 @@ a {
 .link-primary {
     @extend a;
     text-decoration: none; 
+    font-family: $font-family-link;
     &:hover {
         border-bottom: 2px solid $link-color;
         animation: width 0% > 100%; 
@@ -39,6 +39,7 @@ a {
 .link-jump {
     margin-bottom: 20px;
     display: inline-block;
+    font-family: $font-family-link;
     &:hover {
         // To compensate for the 2px border
         margin-bottom: 18px;
@@ -83,6 +84,15 @@ h5,
 h6,
 .h6 {
     font-size:  $font-size-h6;
+}
+
+h1 a,
+.h1 a,
+a.h1 {
+    color: $color-blue;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 $headline-reduce-ratio-lg: .6;

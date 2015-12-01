@@ -47,28 +47,40 @@
         <section class="home-banner-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                    <div class="col-xs-12 col-sm-6">
                         <div class="content">
                             <a href="#" class="link">
-                                <img src="images/illustrations/calendar.png" class="banner" alt=" ">
+                                <img src="images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
                             </a>
-                            <h3 class="headline">Find a session for your child</h3>
-                            <p><?=$lorem?></p>
-                            <a href="#" class="link">
-                                View Schedule
-                            </a>
+                            <div class="content-primary-text">
+                                <h3 class="headline">Find a session for your child</h3>
+                                <div class="row">
+                                    <div class="description col-md-offset-1 col-md-10">
+                                        <p><?=$lorem?></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="link">
+                                    View Schedule
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5"> 
+                    <div class="col-xs-12 col-sm-6"> 
                         <div class="content">
                             <a href="#" class="link">
-                                <img src="images/illustrations/campfire.png" class="banner" alt=" ">
+                                <img src="images/illustrations/campfire.png" class="banner-img img-responsive" alt=" ">
                             </a>
-                            <h3 class="headline">Every camp day is a good day</h3>
-                            <p><?=$lorem?></p>
-                            <a href="#" class="link">
-                                View Camp Life
-                            </a>
+                            <div class="content-primary-text">
+                                <h3 class="headline">Every camp day is a good day</h3>
+                                <div class="row">
+                                    <div class="description col-md-offset-1 col-md-10">
+                                        <p><?=$lorem?></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="link">
+                                    View Camp Life
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -83,14 +95,16 @@
                             <div class="col-xs-12 col-sm-8">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="images/home/activities.jpg" class="banner img-responsive" alt=" ">
+                                        <img src="images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 pull-rightX">
                                 <div class="content content-primary-text">
                                     <h3 class="headline">Activities</h3>
-                                    <p><?=$lorem?></p>
+                                     <div class="description">
+                                        <p><?=$lorem?></p>
+                                    </div>
                                     <a href="#" class="link">
                                         View Activities
                                     </a>
@@ -108,14 +122,16 @@
                             <div class="col-xs-12 col-sm-8 pull-right">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="images/home/cleo.jpg" class="banner img-responsive" alt=" ">
+                                        <img src="images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 ">
                                 <div class="content content-primary-text">
                                     <h3 class="headline">Cleo the Moose</h3>
-                                    <p><?=$lorem?></p>
+                                    <div class="description">
+                                        <p><?=$lorem?></p>
+                                    </div>
                                     <a href="#" class="link">
                                         Learn more about Cleo
                                     </a>
@@ -132,14 +148,16 @@
                             <div class="col-xs-12 col-sm-8">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="images/home/alumni.jpg" class="banner img-responsive" alt=" ">
+                                        <img src="images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-4 pull-rightX">
                                 <div class="content content-primary-text">
                                     <h3 class="headline">Alumni</h3>
-                                    <p><?=$lorem?></p>
+                                    <div class="description">
+                                        <p><?=$lorem?></p>
+                                    </div>
                                     <a href="#" class="link">
                                         View alumni information
                                     </a>
@@ -173,18 +191,32 @@
 
         <section class="home-banner-tertiary">
             <div class="container">
-                <div class="row banner-map">
+                <div class="row banner-rent-the-camp">
                     <div class="col-xs-12">
                         <div class="content">
-                            <h3>
-                                <a href="#" class="link">
+                            <h3 class="h1">
+                                <a href="#" class="">
                                     Rent the camp
                                 </a>
                             </h3>
-                            <p class="col-xs-offset-2 col-xs-8"><?=$lorem?> <a href="#">Learn more</a></p>
-                             <a href="#" class="link">
-                                <img src="images/home/kayaks.jpg" class="banner img-responsive" alt=" ">
-                            </a>
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-8">
+                                    <div class="content content-primary-text">
+                                        <div class="description">
+                                            <p><?=$lorem?> <a href="#" class="link">Learn more</a></p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content content-primary-img">
+                                <a href="#" class="link">
+                                    <img src="images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
+                                </a>
+                            </div>
+
+                             
+                             
                         </div>
                     </div>
                 </div><!-- /.row -->
