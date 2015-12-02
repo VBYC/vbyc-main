@@ -1,0 +1,35 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPLATE - TIMELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.template-timeline {
+
+	.main-article {
+		position: relative;
+		&:before {
+			content: ' ';
+			width: 3px;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			margin-left: -1px;
+			background-color: $color-blue-light;
+		}
+		.time {
+			background-color: $color-white;
+			color: $color-green;
+			font-size: 32px;
+			padding: 10px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			&.first {
+				margin-top: 0;
+			}
+
+		}
+	}
+
+
+
+
+}
