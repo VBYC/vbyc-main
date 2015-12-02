@@ -71,6 +71,7 @@
 
     // BANNERS
 
+    // BANNERS - PRIMARY
     .home-banner-primary {
         margin-top: 70px;
         margin-bottom: 50px;
@@ -81,7 +82,7 @@
         }
     }
 
-
+    // BANNERS - SECONDARY
     .home-banner-secondary {
         .banner-item {
             padding-top: 50px;
@@ -96,9 +97,10 @@
         }
     }
 
+    // BANNERS - TERTIARY
     .home-banner-tertiary {
         margin-top: 70px;
-        margin-bottom: 120px;
+        margin-bottom: 70px;
     }
 
     .content-primary-img {
@@ -117,9 +119,30 @@
         
     }
 
+    
+
+    // HOME BANNERS
+    .banner-activities {
+        background: url('../images/heros/water.jpg') 50% 50% repeat-y;
+    }
+
+    .banner-cleo {
+        background: url('../images/heros/sun-through-trees.jpg') 50% 50% repeat-y;
+
+    }
+
+    .banner-alumni {
+        background: url('../images/heros/grass-and-flowers.jpg') 50% 50% repeat-y;
+    }
+
+    .banner-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     // HOME BANNER - MAP
     .home-banner-map {
-        background: $map-bg-color url('../images/heros/map-of-vbyc.jpg') 50% 50% no-repeat;
+        background: url('../images/heros/map-of-vbyc.jpg') 50% 50% repeat-y;
 
         .link {
             display: block;
@@ -140,25 +163,6 @@
             font-family: $font-family-link;
             margin-top: 3%;
         }
-    }
-
-    // HOME BANNERS
-    .banner-activities {
-        background: url('../images/heros/water.jpg') 50% 50% repeat-y;
-    }
-
-    .banner-cleo {
-        background: url('../images/heros/sun-through-trees.jpg') 50% 0 repeat-y;
-
-    }
-
-    .banner-alumni {
-        background: url('../images/heros/grass-and-flowers.jpg') 50% 50% repeat-y;
-    }
-
-    .banner-img {
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
@@ -215,6 +219,9 @@
               
 
             }
+        }
+        .home-banner-tertiary {
+            margin-bottom: 50px;
         }
     }
 }

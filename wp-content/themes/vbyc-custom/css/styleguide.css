@@ -9225,54 +9225,60 @@ button.close {
   width: 1677px;
 }
 
-/* line 11, ../sass/partials/_layout.scss */
+/* line 12, ../sass/partials/_layout.scss */
+.container-fluid .bleed {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 18, ../sass/partials/_layout.scss */
 .main-content {
   margin-top: 48px;
 }
-/* line 13, ../sass/partials/_layout.scss */
+/* line 20, ../sass/partials/_layout.scss */
 .main-content.has-sidenav {
   margin-top: 0;
 }
 
-/* line 19, ../sass/partials/_layout.scss */
+/* line 26, ../sass/partials/_layout.scss */
 .has-sidenav .sidenav,
 .has-sidenav .content-list > .item {
   padding-top: 48px;
 }
 
-/* line 30, ../sass/partials/_layout.scss */
+/* line 37, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item {
   padding-bottom: 48px;
 }
-/* line 38, ../sass/partials/_layout.scss */
+/* line 45, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item .heading {
   margin-top: 0;
 }
-/* line 42, ../sass/partials/_layout.scss */
+/* line 49, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details .description {
   margin-top: 30px;
 }
-/* line 48, ../sass/partials/_layout.scss */
+/* line 55, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 51, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .content-list.list-single-details > .item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 55, ../sass/partials/_layout.scss */
+/* line 62, ../sass/partials/_layout.scss */
 .content-list.list-single-details .description {
   margin-top: 15px;
 }
-/* line 58, ../sass/partials/_layout.scss */
+/* line 65, ../sass/partials/_layout.scss */
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 70, ../sass/partials/_layout.scss */
+  /* line 77, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
@@ -10079,6 +10085,37 @@ hr {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPLATE - TIMELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 7, ../sass/partials/_template-timeline.scss */
+.template-timeline .main-article {
+  position: relative;
+}
+/* line 9, ../sass/partials/_template-timeline.scss */
+.template-timeline .main-article:before {
+  content: ' ';
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  background-color: #43C8D9;
+}
+/* line 18, ../sass/partials/_template-timeline.scss */
+.template-timeline .main-article .time {
+  background-color: #FFF;
+  color: #37BC98;
+  font-size: 32px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 25, ../sass/partials/_template-timeline.scss */
+.template-timeline .main-article .time.first {
+  margin-top: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 9, ../sass/partials/_page-home.scss */
@@ -10148,54 +10185,71 @@ hr {
 .template-home .main-logo {
   color: #fff;
 }
-/* line 74, ../sass/partials/_page-home.scss */
+/* line 75, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary {
   margin-top: 70px;
   margin-bottom: 50px;
 }
-/* line 78, ../sass/partials/_page-home.scss */
+/* line 79, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary .content-primary-text .headline {
   margin-top: 5px;
 }
-/* line 86, ../sass/partials/_page-home.scss */
+/* line 87, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .banner-item {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 90, ../sass/partials/_page-home.scss */
+/* line 91, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text {
   margin-top: 0;
   text-align: left;
 }
-/* line 93, ../sass/partials/_page-home.scss */
+/* line 94, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text .headline {
   margin-top: 0;
 }
-/* line 99, ../sass/partials/_page-home.scss */
+/* line 101, ../sass/partials/_page-home.scss */
 .template-home .home-banner-tertiary {
   margin-top: 70px;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
-/* line 104, ../sass/partials/_page-home.scss */
+/* line 106, ../sass/partials/_page-home.scss */
 .template-home .content-primary-img {
   border: 9px solid #43C8D9;
 }
-/* line 107, ../sass/partials/_page-home.scss */
+/* line 109, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text {
   background-color: #FFF;
   padding: 30px;
   line-height: 1.81;
 }
-/* line 112, ../sass/partials/_page-home.scss */
+/* line 114, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text .description {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-/* line 121, ../sass/partials/_page-home.scss */
-.template-home .home-banner-map {
-  background: #2996db url("../images/heros/map-of-vbyc.jpg") 50% 50% no-repeat;
+/* line 125, ../sass/partials/_page-home.scss */
+.template-home .banner-activities {
+  background: url("../images/heros/water.jpg") 50% 50% repeat-y;
 }
-/* line 124, ../sass/partials/_page-home.scss */
+/* line 129, ../sass/partials/_page-home.scss */
+.template-home .banner-cleo {
+  background: url("../images/heros/sun-through-trees.jpg") 50% 50% repeat-y;
+}
+/* line 134, ../sass/partials/_page-home.scss */
+.template-home .banner-alumni {
+  background: url("../images/heros/grass-and-flowers.jpg") 50% 50% repeat-y;
+}
+/* line 138, ../sass/partials/_page-home.scss */
+.template-home .banner-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 144, ../sass/partials/_page-home.scss */
+.template-home .home-banner-map {
+  background: url("../images/heros/map-of-vbyc.jpg") 50% 50% repeat-y;
+}
+/* line 147, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
   color: #FFF;
@@ -10203,90 +10257,77 @@ hr {
   padding-bottom: 8%;
   line-height: 1;
 }
-/* line 130, ../sass/partials/_page-home.scss */
+/* line 153, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
   text-decoration: none;
 }
-/* line 134, ../sass/partials/_page-home.scss */
+/* line 157, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
   font-size: 4em;
 }
-/* line 138, ../sass/partials/_page-home.scss */
+/* line 161, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
   font-size: 2em;
   font-family: "Varela Round", sans-serif;
   margin-top: 3%;
 }
-/* line 146, ../sass/partials/_page-home.scss */
-.template-home .banner-activities {
-  background: url("../images/heros/water.jpg") 50% 50% repeat-y;
-}
-/* line 150, ../sass/partials/_page-home.scss */
-.template-home .banner-cleo {
-  background: url("../images/heros/sun-through-trees.jpg") 50% 0 repeat-y;
-}
-/* line 155, ../sass/partials/_page-home.scss */
-.template-home .banner-alumni {
-  background: url("../images/heros/grass-and-flowers.jpg") 50% 50% repeat-y;
-}
-/* line 159, ../sass/partials/_page-home.scss */
-.template-home .banner-img {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 168, ../sass/partials/_page-home.scss */
+  /* line 172, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 177, ../sass/partials/_page-home.scss */
+  /* line 181, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     top: -30px;
   }
-  /* line 180, ../sass/partials/_page-home.scss */
+  /* line 184, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 570px;
     background-position: 50% -30px;
   }
-  /* line 183, ../sass/partials/_page-home.scss */
+  /* line 187, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
   }
-  /* line 187, ../sass/partials/_page-home.scss */
+  /* line 191, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
     left: 0;
     bottom: 50px;
     font-size: 70px;
   }
-  /* line 192, ../sass/partials/_page-home.scss */
+  /* line 196, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
-  /* line 197, ../sass/partials/_page-home.scss */
+  /* line 201, ../sass/partials/_page-home.scss */
   .template-home .banner-item {
     background-size: auto 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 205, ../sass/partials/_page-home.scss */
+  /* line 209, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     display: none;
   }
-  /* line 208, ../sass/partials/_page-home.scss */
+  /* line 212, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 340px;
     background-size: auto 100%;
     background-position: 50% 0;
   }
-  /* line 212, ../sass/partials/_page-home.scss */
+  /* line 216, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
     bottom: 20px;
+  }
+  /* line 223, ../sass/partials/_page-home.scss */
+  .template-home .home-banner-tertiary {
+    margin-bottom: 50px;
   }
 }
 @-webkit-keyframes fadeInOut {

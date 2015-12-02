@@ -8,6 +8,13 @@
 	}
 }
 
+.container-fluid {
+	.bleed {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 .main-content {
 	margin-top: $padding-base-vertical*8;
 	&.has-sidenav {

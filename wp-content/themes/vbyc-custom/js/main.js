@@ -44,7 +44,10 @@
 
 
 			vbyc.util.resetImages();
-	        vbyc.util.nextImage();  
+	        vbyc.util.nextImage(); 
+
+
+	        vbyc.util.newsFeed();  
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -167,12 +170,7 @@
 		},
 
 		homeHeroAnimation: function() {
-
 			var target = $('.template-home .animation-outer');
-
-			target.css('border','1px solid red').addClass('image-1');
-
-			console.log('Hi');
 		},
 
 		resetImages: function() {
@@ -196,6 +194,14 @@
 	    },
 	    fadeOutLastImage: function() {
 	        $( "img:last",container).fadeOut(speedFade);
+	    },
+
+
+	    newsFeed: function() {
+	        var target = $('.news-feed-list');
+            $('li:first',target).slideUp( function () { 
+                $(this).appendTo($(target)).slideDown(); 
+            });
 	    },
 
 

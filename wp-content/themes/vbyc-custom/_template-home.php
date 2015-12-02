@@ -1,7 +1,7 @@
 <? 
     $page = 'home';
     $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
-
+    $loremSm = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.'; 
     $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
     
@@ -14,6 +14,7 @@
 
     
     <main class="text-center"> 
+        <!-- NEWS FEED -->
         <section class="news-feed">
             <div class="container-extended">
                 <div class="row">
@@ -29,24 +30,18 @@
                                     <li class="item"><a href="#" class="link">Leadership speakers announced.</a></li>
                                 </ul>
                             </div>
-                            <script>
-                                function tick(){
-                                    var target = $('.news-feed-list');
-                                    $('li:first',target).slideUp( function () { 
-                                        $(this).appendTo($(target)).slideDown(); 
-                                    });
-                                }
-                                setInterval(function(){ tick () }, 3000);
-                            </script>
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
         </section>
 
+        <!-- PRIMARY BANNERS -->
         <section class="home-banner-primary">
             <div class="container">
                 <div class="row">
+
+                    <!-- SESSIONS -->
                     <div class="col-xs-12 col-sm-6">
                         <div class="content">
                             <a href="#" class="link">
@@ -65,6 +60,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- CAMP LIFE -->
                     <div class="col-xs-12 col-sm-6"> 
                         <div class="content">
                             <a href="#" class="link">
@@ -87,108 +84,108 @@
             </div>
         </section>
 
+        <!-- SECONDARY BANNERS -->  
         <section class="home-banner-secondary">
-            <div class="container-fluid">
-                <div class="banner-item banner-activities">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-8">
-                                <div class="content content-primary-img">
-                                    <a href="#" class="link">
-                                        <img src="images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
-                                    </a>
-                                </div>
+
+            <!-- ACTIVITIES -->
+            <div class="banner-item banner-activities">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <div class="content content-primary-img">
+                                <a href="#" class="link">
+                                    <img src="images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
+                                </a>
                             </div>
-                            <div class="col-xs-12 col-sm-4 pull-rightX">
-                                <div class="content content-primary-text">
-                                    <h3 class="headline">Activities</h3>
-                                     <div class="description">
-                                        <p><?=$lorem?></p>
-                                    </div>
-                                    <a href="#" class="link">
-                                        View Activities
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- /.row -->
-                    </div>
-                </div>
-
-
-                <div class="banner-item banner-cleo">
-                    <div class="container">
-                        <div class="row">
-                            
-                            <div class="col-xs-12 col-sm-8 pull-right">
-                                <div class="content content-primary-img">
-                                    <a href="#" class="link">
-                                        <img src="images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 ">
-                                <div class="content content-primary-text">
-                                    <h3 class="headline">Cleo the Moose</h3>
-                                    <div class="description">
-                                        <p><?=$lorem?></p>
-                                    </div>
-                                    <a href="#" class="link">
-                                        Learn more about Cleo
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- /.row -->
-                    </div>
-                </div>
-
-
-                <div class="banner-item banner-alumni">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-8">
-                                <div class="content content-primary-img">
-                                    <a href="#" class="link">
-                                        <img src="images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-4 pull-rightX">
-                                <div class="content content-primary-text">
-                                    <h3 class="headline">Alumni</h3>
-                                    <div class="description">
-                                        <p><?=$lorem?></p>
-                                    </div>
-                                    <a href="#" class="link">
-                                        View alumni information
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- /.row -->
-                    </div>
-                </div>
-
-              
-
-            
-            </div>
-        </section>
-
-
-        <section class="home-banner-map">
-            <div class="container">
-                <div class="row banner-map">
-                    <div class="col-xs-12">
-                        <div class="content">
-                            <a href="#" class="link text-center">
-                                <h3 class="headline">There&rsquo;s a lot to explore!</h3>
-                                <p class="cta">View the map of camp</p>
-                            </a>
                         </div>
-                    </div>
-                </div><!-- /.row -->
+                        <div class="col-xs-12 col-md-4">
+                            <div class="content content-primary-text">
+                                <h3 class="headline">Activities</h3>
+                                 <div class="description">
+                                    <p><?=$loremSm?></p>
+                                </div>
+                                <a href="#" class="link">
+                                    View Activities
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div>
+            </div>
+
+            <!-- CLEO -->
+            <div class="banner-item banner-cleo">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-xs-12 col-md-8 pull-right">
+                            <div class="content content-primary-img">
+                                <a href="#" class="link">
+                                    <img src="images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="content content-primary-text">
+                                <h3 class="headline">Cleo the Moose</h3>
+                                <div class="description">
+                                    <p><?=$loremSm?></p>
+                                </div>
+                                <a href="#" class="link">
+                                    Learn more about Cleo
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div>
+            </div>
+
+            <!-- ALUMNI -->
+            <div class="banner-item banner-alumni">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8">
+                            <div class="content content-primary-img">
+                                <a href="#" class="link">
+                                    <img src="images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="content content-primary-text">
+                                <h3 class="headline">Alumni</h3>
+                                <div class="description">
+                                    <p><?=$loremSm?></p>
+                                </div>
+                                <a href="#" class="link">
+                                    View alumni information
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div>
             </div>
         </section>
 
+        <!-- MAP OF CAMP -->
+        <section class="home-banner-map-container">
+            <div class="banner-item home-banner-map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="content">
+                                <a href="#" class="link text-center">
+                                    <h3 class="headline">There&rsquo;s a lot to explore!</h3>
+                                    <p class="cta">View the map of camp</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RENT CAMP -->
         <section class="home-banner-tertiary">
             <div class="container">
                 <div class="row banner-rent-the-camp">
@@ -200,7 +197,7 @@
                                 </a>
                             </h3>
                             <div class="row">
-                                <div class="col-xs-offset-2 col-xs-8">
+                                <div class="col-sm-offset-2 col-sm-8">
                                     <div class="content content-primary-text">
                                         <div class="description">
                                             <p><?=$lorem?> <a href="#" class="link">Learn more</a></p>
@@ -214,9 +211,6 @@
                                     <img src="images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
-
-                             
-                             
                         </div>
                     </div>
                 </div><!-- /.row -->
