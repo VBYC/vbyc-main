@@ -15,7 +15,8 @@
 			margin-left: -1px;
 			background-color: $color-blue-light;
 		}
-		.time {
+	}
+	.time {
 			background-color: $color-white;
 			color: $color-green;
 			font-size: 32px;
@@ -25,11 +26,28 @@
 			&.first {
 				margin-top: 0;
 			}
-
 		}
+		.content {
+			background-color: $color-white;
+			.headline {
+				margin-top: -5px;
+			}
+		}
+		
+
+}
+
+
+
+@media (max-width: $screen-xs-max) {
+    .template-timeline {
+        .timeline-item {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+    }
+
+    .content-primary-img {
+		padding-bottom: 50px;
 	}
-
-
-
-
 }

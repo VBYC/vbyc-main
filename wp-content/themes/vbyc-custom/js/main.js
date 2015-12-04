@@ -1,7 +1,4 @@
 (function( vbyc, $, undefined ) { 
-	
-
-
 
 	var subNavSelector 			= '.navbar-list-sub',
 	    navbarSiblingsSelector  = '.navbar-list .link',
@@ -13,11 +10,6 @@
 	    allButFirstAndLastImage = $('img:not(:first-child):not(:last-child)',container),
 	    speedFade 				= 800,
 	    speedInterval 			= 0;
-
-	  
-	
-
-	
 
 	vbyc.util = {
 		init: function(customValues) {
@@ -177,8 +169,6 @@
 	        allButFirstImage.hide();
 	    },
 	    nextImage: function() {
-
-
 	        if ($('img:last-child',container).is(':hidden')) {
 	          	vbyc.util.fadeInNextImage();
 	        } else {
@@ -195,17 +185,15 @@
 	    fadeOutLastImage: function() {
 	        $( "img:last",container).fadeOut(speedFade);
 	    },
-
-
 	    newsFeed: function() {
 	        var target = $('.news-feed-list');
-            $('li:first',target).slideUp( function () { 
-                $(this).appendTo($(target)).slideDown(); 
-            });
+            function showNextItem(){
+                $('li:first',target).slideUp( function () { 
+                    $(this).appendTo($(target)).slideDown(); 
+                });
+            }
+            setInterval(function(){ showNextItem () }, 3000);
 	    },
-
-
-
 		sidebarScrollSpy: function() {
 			var mainContent = $('.main-content');
 			var distanceFromTop = sideNav.offset();
@@ -221,7 +209,6 @@
 				}
 			});
 		},
-
 		sidebarScrollTo: function() {
 			var mainContent = $('.main-content');
 			var parent = sideNav;
@@ -236,7 +223,6 @@
 	            var target = this.hash;
 	            var $target = $(target);
 	            var scrollToCoordinate = $target.offset().top;
-
 
 	            $('html, body').stop().animate({
 	                'scrollTop': scrollToCoordinate

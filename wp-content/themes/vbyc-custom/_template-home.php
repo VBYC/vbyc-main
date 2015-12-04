@@ -26,7 +26,7 @@
                                     <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
                                     <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
                                     <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
-                                    <li class="item"><a href="#" class="link">Midnight undraise, May 21st.</a></li>
+                                    <li class="item"><a href="#" class="link">Midnight fundraise, May 21st.</a></li>
                                     <li class="item"><a href="#" class="link">Leadership speakers announced.</a></li>
                                 </ul>
                             </div>

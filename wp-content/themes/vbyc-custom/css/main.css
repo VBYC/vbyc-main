@@ -10002,8 +10002,8 @@ hr {
   margin-left: -1px;
   background-color: #43C8D9;
 }
-/* line 18, ../sass/partials/_template-timeline.scss */
-.template-timeline .main-article .time {
+/* line 19, ../sass/partials/_template-timeline.scss */
+.template-timeline .time {
   background-color: #FFF;
   color: #37BC98;
   font-size: 32px;
@@ -10011,11 +10011,31 @@ hr {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 25, ../sass/partials/_template-timeline.scss */
-.template-timeline .main-article .time.first {
+/* line 26, ../sass/partials/_template-timeline.scss */
+.template-timeline .time.first {
   margin-top: 0;
 }
+/* line 30, ../sass/partials/_template-timeline.scss */
+.template-timeline .content {
+  background-color: #FFF;
+}
+/* line 32, ../sass/partials/_template-timeline.scss */
+.template-timeline .content .headline {
+  margin-top: -5px;
+}
 
+@media (max-width: 767px) {
+  /* line 44, ../sass/partials/_template-timeline.scss */
+  .template-timeline .timeline-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* line 50, ../sass/partials/_template-timeline.scss */
+  .content-primary-img {
+    padding-bottom: 50px;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
