@@ -10087,11 +10087,20 @@ hr {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     TEMPLATE - TIMELINE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 7, ../sass/partials/_template-timeline.scss */
+/* line 6, ../sass/partials/_template-timeline.scss */
+.template-timeline .content {
+  background-color: #FFF;
+}
+/* line 8, ../sass/partials/_template-timeline.scss */
+.template-timeline .content .headline {
+  margin-top: -5px;
+}
+/* line 12, ../sass/partials/_template-timeline.scss */
 .template-timeline .main-article {
   position: relative;
+  margin-bottom: 50px;
 }
-/* line 9, ../sass/partials/_template-timeline.scss */
+/* line 16, ../sass/partials/_template-timeline.scss */
 .template-timeline .main-article:before {
   content: ' ';
   width: 3px;
@@ -10100,39 +10109,57 @@ hr {
   left: 50%;
   margin-left: -1px;
   background-color: #43C8D9;
+  z-index: -1;
 }
-/* line 19, ../sass/partials/_template-timeline.scss */
+/* line 27, ../sass/partials/_template-timeline.scss */
+.template-timeline .timeline-item {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+/* line 30, ../sass/partials/_template-timeline.scss */
+.template-timeline .timeline-item.first {
+  margin-top: 0;
+}
+/* line 34, ../sass/partials/_template-timeline.scss */
+.template-timeline .timeline-item.last .time {
+  margin-bottom: 0;
+}
+/* line 37, ../sass/partials/_template-timeline.scss */
+.template-timeline .timeline-item.last .row-item {
+  background-color: #FFF;
+  z-index: 10;
+}
+/* line 43, ../sass/partials/_template-timeline.scss */
 .template-timeline .time {
   background-color: #FFF;
   color: #37BC98;
   font-size: 32px;
-  padding: 10px;
-  margin-top: 50px;
+  padding: 20px 10px;
   margin-bottom: 50px;
-}
-/* line 26, ../sass/partials/_template-timeline.scss */
-.template-timeline .time.first {
-  margin-top: 0;
-}
-/* line 30, ../sass/partials/_template-timeline.scss */
-.template-timeline .content {
-  background-color: #FFF;
-}
-/* line 32, ../sass/partials/_template-timeline.scss */
-.template-timeline .content .headline {
-  margin-top: -5px;
 }
 
 @media (max-width: 767px) {
-  /* line 44, ../sass/partials/_template-timeline.scss */
-  .template-timeline .timeline-item {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  /* line 55, ../sass/partials/_template-timeline.scss */
+  .template-timeline {
+    text-align: center;
   }
-
-  /* line 50, ../sass/partials/_template-timeline.scss */
-  .content-primary-img {
-    padding-bottom: 50px;
+  /* line 57, ../sass/partials/_template-timeline.scss */
+  .template-timeline .timeline-item {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #FFF;
+  }
+  /* line 62, ../sass/partials/_template-timeline.scss */
+  .template-timeline .time {
+    margin-bottom: 5px;
+  }
+  /* line 65, ../sass/partials/_template-timeline.scss */
+  .template-timeline .content-primary-text {
+    margin-bottom: 30px;
+  }
+  /* line 68, ../sass/partials/_template-timeline.scss */
+  .template-timeline .content-primary-img {
+    margin-bottom: 30px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
