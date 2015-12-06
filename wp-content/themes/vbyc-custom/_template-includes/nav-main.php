@@ -26,7 +26,7 @@
                                      </li>
                                 </ul>
                             </li>
-                            <li class="item  selected">
+                            <li class="item <?=$is_selecetd?>">
                                 <a href="#" class="link normal">Camp Life</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
@@ -40,7 +40,7 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <a href="#" class="link-sub  selected">
+                                        <a href="#" class="link-sub <?=$is_selecetd?>">
                                             Classes
                                         </a>
                                      </li>

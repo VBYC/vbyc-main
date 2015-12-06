@@ -1,5 +1,5 @@
 
-    
+    <? $is_selecetd = 'selected'; ?>
     <? include("_template-includes/header.php"); ?> 
     <? include("_template-includes/header-markup.php"); ?>  
     <main>

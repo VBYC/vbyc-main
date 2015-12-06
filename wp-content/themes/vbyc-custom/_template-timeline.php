@@ -58,17 +58,15 @@
     <![endif]--> 
     <main>
         <section class="hero">
-            <? if ($show_hero_image) { ?>
             <div class="container-fluid hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="images/template/hero-timeline.jpg" alt=" ">
+                            <img src="images/heros/timeline.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
-            <? } ?>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
