@@ -42,8 +42,7 @@
                         <span class="group-1 accent">Discovering</span>  
                         <span class="group-2">nature,</span> 
                         <span class="group-3">each other, </span>
-                        <span class="group-4 accent">and</span> 
-                        <span class="group-5">ourselves.</span>
+                        <span class="group-4">&amp; ourselves.</span>
                     </h1>
                 </div>
             </div>

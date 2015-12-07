@@ -9907,67 +9907,72 @@ hr {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NEWS FEED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, ../sass/partials/_news-feed.scss */
+/* line 5, ../sass/partials/_news-feed.scss */
+.news-feed {
+  font-size: 18px;
+}
+/* line 7, ../sass/partials/_news-feed.scss */
 .news-feed .container-extended {
   display: block;
   max-width: 1441px;
   margin: 0 auto;
 }
-/* line 11, ../sass/partials/_news-feed.scss */
+/* line 12, ../sass/partials/_news-feed.scss */
 .news-feed .content {
   padding: 0 30px;
   text-align: center;
-  background-color: #0595E5;
+  background-color: #43C8D9;
   color: #FFF;
-  height: 30px;
+  height: 60px;
   overflow: hidden;
 }
-/* line 19, ../sass/partials/_news-feed.scss */
+/* line 20, ../sass/partials/_news-feed.scss */
 .news-feed .content-inner {
   display: inline-block;
 }
-/* line 22, ../sass/partials/_news-feed.scss */
+/* line 23, ../sass/partials/_news-feed.scss */
 .news-feed .headline {
   display: inline-block;
   float: left;
   margin: 0 5px 0 0;
-  height: 30px;
-  line-height: 30px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
   color: #FFF;
 }
-/* line 33, ../sass/partials/_news-feed.scss */
+/* line 32, ../sass/partials/_news-feed.scss */
 .news-feed .news-feed-list {
   display: inline-block;
   text-align: left;
   margin-bottom: 0;
   overflow: hidden;
 }
-/* line 45, ../sass/partials/_news-feed.scss */
+/* line 44, ../sass/partials/_news-feed.scss */
 .news-feed .news-feed-list .link {
   color: #FFF;
 }
-/* line 51, ../sass/partials/_news-feed.scss */
+/* line 50, ../sass/partials/_news-feed.scss */
 .news-feed .news-feed-list .item {
   margin-left: 10px;
   margin-right: 10px;
-  height: 30px;
-  line-height: 30px;
+  height: 60px;
+  line-height: 60px;
 }
 
 @media (max-width: 767px) {
-  /* line 73, ../sass/partials/_news-feed.scss */
+  /* line 72, ../sass/partials/_news-feed.scss */
   .template-home .news-feed .content {
     height: 65px;
     padding-top: 5px;
     line-height: 25px;
   }
-  /* line 78, ../sass/partials/_news-feed.scss */
+  /* line 77, ../sass/partials/_news-feed.scss */
   .template-home .news-feed .headline {
     display: block;
     float: none;
     line-height: 25px;
   }
-  /* line 84, ../sass/partials/_news-feed.scss */
+  /* line 83, ../sass/partials/_news-feed.scss */
   .template-home .news-feed .news-feed-list {
     clear: both;
     text-align: center;
@@ -10098,106 +10103,96 @@ hr {
 /* line 33, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 {
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
   z-index: 5;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Helvetica", sans-serif;
-  font-size: 100px;
+  font-weight: bold;
+  font-size: 6.5em;
   line-height: 1;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
-/* line 43, ../sass/partials/_page-home.scss */
+/* line 44, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;
-  line-height: 1;
-  margin-bottom: 10px;
 }
-/* line 50, ../sass/partials/_page-home.scss */
+/* line 54, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-3 {
-  display: block;
+  white-space: nowrap;
 }
-/* line 53, ../sass/partials/_page-home.scss */
+/* line 57, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-4 {
-  line-height: 1;
-  vertical-align: 35px;
-  display: inline-block;
+  white-space: nowrap;
 }
-/* line 61, ../sass/partials/_page-home.scss */
-.template-home .header-main h1 .accent {
-  font-family: "Roboto Slab", serif;
-  font-size: 40%;
-  font-weight: 200;
-}
-/* line 68, ../sass/partials/_page-home.scss */
+/* line 70, ../sass/partials/_page-home.scss */
 .template-home .main-logo {
   color: #fff;
 }
-/* line 75, ../sass/partials/_page-home.scss */
+/* line 77, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary {
   margin-top: 70px;
   margin-bottom: 50px;
 }
-/* line 79, ../sass/partials/_page-home.scss */
+/* line 81, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary .content-primary-text .headline {
   margin-top: 5px;
 }
-/* line 87, ../sass/partials/_page-home.scss */
+/* line 89, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .banner-item {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 91, ../sass/partials/_page-home.scss */
+/* line 93, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text {
   margin-top: 0;
   text-align: left;
 }
-/* line 94, ../sass/partials/_page-home.scss */
+/* line 96, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text .headline {
   margin-top: 0;
 }
-/* line 101, ../sass/partials/_page-home.scss */
+/* line 103, ../sass/partials/_page-home.scss */
 .template-home .home-banner-tertiary {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-/* line 106, ../sass/partials/_page-home.scss */
+/* line 108, ../sass/partials/_page-home.scss */
 .template-home .content-primary-img {
   border: 9px solid #43C8D9;
 }
-/* line 109, ../sass/partials/_page-home.scss */
+/* line 111, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text {
   background-color: #FFF;
   padding: 30px;
   line-height: 1.81;
 }
-/* line 114, ../sass/partials/_page-home.scss */
+/* line 116, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text .description {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-/* line 125, ../sass/partials/_page-home.scss */
+/* line 127, ../sass/partials/_page-home.scss */
 .template-home .banner-activities {
   background: url("../images/heros/water.jpg") 50% 50% repeat-y;
 }
-/* line 129, ../sass/partials/_page-home.scss */
+/* line 131, ../sass/partials/_page-home.scss */
 .template-home .banner-cleo {
   background: url("../images/heros/sun-through-trees.jpg") 50% 50% repeat-y;
 }
-/* line 134, ../sass/partials/_page-home.scss */
+/* line 136, ../sass/partials/_page-home.scss */
 .template-home .banner-alumni {
   background: url("../images/heros/grass-and-flowers.jpg") 50% 50% repeat-y;
 }
-/* line 138, ../sass/partials/_page-home.scss */
+/* line 140, ../sass/partials/_page-home.scss */
 .template-home .banner-img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 144, ../sass/partials/_page-home.scss */
+/* line 146, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
   background: url("../images/heros/map-of-vbyc.jpg") 50% 50% repeat-y;
 }
-/* line 147, ../sass/partials/_page-home.scss */
+/* line 149, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
   color: #FFF;
@@ -10205,16 +10200,16 @@ hr {
   padding-bottom: 8%;
   line-height: 1;
 }
-/* line 153, ../sass/partials/_page-home.scss */
+/* line 155, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
   text-decoration: none;
 }
-/* line 157, ../sass/partials/_page-home.scss */
+/* line 159, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
   font-size: 4em;
 }
-/* line 161, ../sass/partials/_page-home.scss */
+/* line 163, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
   font-size: 2em;
   font-family: "Varela Round", sans-serif;
@@ -10222,58 +10217,58 @@ hr {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 172, ../sass/partials/_page-home.scss */
+  /* line 174, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 181, ../sass/partials/_page-home.scss */
+  /* line 183, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     top: -30px;
   }
-  /* line 184, ../sass/partials/_page-home.scss */
+  /* line 186, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 570px;
     background-position: 50% -30px;
   }
-  /* line 187, ../sass/partials/_page-home.scss */
+  /* line 189, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
   }
-  /* line 191, ../sass/partials/_page-home.scss */
+  /* line 193, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
     left: 0;
     bottom: 50px;
     font-size: 70px;
   }
-  /* line 196, ../sass/partials/_page-home.scss */
+  /* line 198, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
-  /* line 201, ../sass/partials/_page-home.scss */
+  /* line 203, ../sass/partials/_page-home.scss */
   .template-home .banner-item {
     background-size: auto 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 209, ../sass/partials/_page-home.scss */
+  /* line 211, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     display: none;
   }
-  /* line 212, ../sass/partials/_page-home.scss */
+  /* line 214, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 340px;
     background-size: auto 100%;
     background-position: 50% 0;
   }
-  /* line 216, ../sass/partials/_page-home.scss */
+  /* line 218, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
     bottom: 20px;
   }
-  /* line 223, ../sass/partials/_page-home.scss */
+  /* line 225, ../sass/partials/_page-home.scss */
   .template-home .home-banner-tertiary {
     margin-bottom: 50px;
   }

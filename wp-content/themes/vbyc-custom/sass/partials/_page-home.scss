@@ -32,37 +32,39 @@
         }
         h1 {
             position: absolute;
-            bottom: 30px;
+            bottom: 50px;
             z-index: 5;
-            color: $color-white;
+            color: rgba(255,255,2555,.7);
             font-family: $font-family-simple;
-            font-size: 100px;
+            font-weight: bold;
+            font-size: 6.5em;
             line-height: 1;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+//            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
             text-transform: uppercase;
             .group-1 {
                 display: block;
-                line-height: 1;
-                margin-bottom: 10px;
+//                line-height: 1;
+//                margin-bottom: 10px;
             }
-            .group-2 {
-            }
+//            .group-2 {
+//            }
+//            .group-3 {
+//                display: block;
+//            }
             .group-3 {
-                display: block;
+                white-space: nowrap;
             }
             .group-4 {
-                line-height: 1;
-                vertical-align: 35px;
-                display: inline-block;
+                white-space: nowrap;
             }
-            .group-5 {
+//            .group-5 {
                 
-            }
-            .accent {
-                font-family: $font-family-serif;
-                font-size: 40%;
-                font-weight: 200;
-            }
+//            }
+//            .accent {
+//                font-family: $font-family-serif;
+//                font-size: 40%;
+//                font-weight: 200;
+//            }
         }
     } // .header-main
     .main-logo {

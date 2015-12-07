@@ -1,8 +1,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NEWS FEED
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+$news-feed-height: 60px;
 .news-feed {
+	font-size: 18px;
 	.container-extended {
 	    display: block;
 	    max-width: 1441px;
@@ -11,9 +12,9 @@
 	.content {
 		padding: 0 30px;
 		text-align: center;
-		background-color: $color-blue;
+		background-color: $color-blue-light;
 		color: $color-white;
-		height: 30px;
+		height: $news-feed-height;
 		overflow: hidden;
 	}
 	.content-inner {
@@ -23,11 +24,9 @@
 		display: inline-block;
 		float: left;
 		margin: 0 5px 0 0;
-		height: 30px;
-		line-height: 30px;
-		a {
-
-		}
+		height: $news-feed-height;
+		line-height: $news-feed-height;
+		font-size: 18px;
 		color: $color-white;
 	}
 	.news-feed-list {
@@ -51,8 +50,8 @@
 		.item {
 			margin-left: 10px;
 			margin-right: 10px;
-			height: 30px;
-			line-height: 30px;
+			height: $news-feed-height;
+			line-height: $news-feed-height;
 //			&:not(:first-child) {
 				.link {
 					&:before {
