@@ -9,6 +9,11 @@
 	width: 100%;
 	position: fixed;
 	top: 0;
+	    
+	&.affix {
+		@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.3)); 
+		
+	}
 }
 .main-logo-container {
 	margin-bottom: 25px;

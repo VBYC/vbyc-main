@@ -103,7 +103,7 @@
 		initNavbarSticky: function() {
 			$(headerRow).affix({
 			  offset: {
-			    top: 0
+			    top: 20
 			  }
 			});
 		},
