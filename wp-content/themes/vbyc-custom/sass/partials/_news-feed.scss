@@ -70,20 +70,21 @@ $news-feed-height: 60px;
     .template-home {
     	.news-feed {
     		.content {
-				height: 65px;
-				padding-top: 5px;
+				height: 100px;
+				padding-top: 15px;
 				line-height: 25px;
 			}
 			.headline {
 				display: block;
 				float: none;
 				line-height: 25px;
+				height: 30px;
 				
 			}
 			.news-feed-list {
 				clear: both;
 				text-align: center;
-				margin-top: -5px;
+				margin-top: -10px;
 			}
     	}
     }

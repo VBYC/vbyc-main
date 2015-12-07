@@ -9962,8 +9962,8 @@ hr {
 @media (max-width: 767px) {
   /* line 72, ../sass/partials/_news-feed.scss */
   .template-home .news-feed .content {
-    height: 65px;
-    padding-top: 5px;
+    height: 100px;
+    padding-top: 15px;
     line-height: 25px;
   }
   /* line 77, ../sass/partials/_news-feed.scss */
@@ -9971,12 +9971,13 @@ hr {
     display: block;
     float: none;
     line-height: 25px;
+    height: 30px;
   }
-  /* line 83, ../sass/partials/_news-feed.scss */
+  /* line 84, ../sass/partials/_news-feed.scss */
   .template-home .news-feed .news-feed-list {
     clear: both;
     text-align: center;
-    margin-top: -5px;
+    margin-top: -10px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
