@@ -3,6 +3,7 @@
 	var subNavSelector 			= '.navbar-list-sub',
 	    navbarSiblingsSelector  = '.navbar-list .link',
 	    sideNav 				= $('#sidenav'),
+	    headerRow 		 		= $('.header-main'),
 	    hasSidenav 				,
 	    containerClassName		= '.template-home .hero-animation',
 	    container 				= $(containerClassName),
@@ -21,6 +22,7 @@
 			// Set up main nav
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
+			vbyc.util.initNavbarSticky();
 
 			// Set up side nav with anchor links
 			if (hasSidenav) {
@@ -96,6 +98,13 @@
 						}
 					}
 				}
+			});
+		},
+		initNavbarSticky: function() {
+			$(headerRow).affix({
+			  offset: {
+			    top: 0
+			  }
 			});
 		},
 		initLightbox: function() {

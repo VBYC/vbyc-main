@@ -9496,54 +9496,59 @@ hr {
 /* line 5, ../sass/partials/_header.scss */
 .header-main {
   padding-top: 25px;
+  background-color: white;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
-/* line 8, ../sass/partials/_header.scss */
+/* line 13, ../sass/partials/_header.scss */
 .main-logo-container {
   margin-bottom: 25px;
 }
 
-/* line 11, ../sass/partials/_header.scss */
+/* line 16, ../sass/partials/_header.scss */
 .main-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 15, ../sass/partials/_header.scss */
+/* line 20, ../sass/partials/_header.scss */
 .main-logo-icon {
   display: none;
 }
 
 @media (max-width: 300px) {
-  /* line 21, ../sass/partials/_header.scss */
+  /* line 26, ../sass/partials/_header.scss */
   .main-logo-icon {
     display: inline-block;
   }
 
-  /* line 24, ../sass/partials/_header.scss */
+  /* line 29, ../sass/partials/_header.scss */
   .main-logo-normal {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  /* line 30, ../sass/partials/_header.scss */
+  /* line 35, ../sass/partials/_header.scss */
   .hero-image img {
     width: 150%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 36, ../sass/partials/_header.scss */
+  /* line 41, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 20px;
   }
 
-  /* line 39, ../sass/partials/_header.scss */
+  /* line 44, ../sass/partials/_header.scss */
   .main-logo {
     float: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 44, ../sass/partials/_header.scss */
+  /* line 49, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 10px;
   }
@@ -10366,7 +10371,7 @@ hr {
   }
   /* line 218, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
-    font-size: 40px;
+    font-size: 50px;
     bottom: 20px;
   }
   /* line 225, ../sass/partials/_page-home.scss */
