@@ -34,12 +34,12 @@
             position: absolute;
             bottom: 50px;
             z-index: 5;
-            color: rgba(255,255,2555,.8);
+            color: $color-white;
             font-family: $font-family-serif;
             font-weight: bold;
-            font-size: 6.5em;
-            line-height: 1;
-//            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+            font-size: 5.75em;
+            line-height: 1.1;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 2px 2px 0 rgba(0, 0, 0, 0.2);
         
             .group-1 {
                 display: block;
@@ -198,7 +198,7 @@
             background-size: auto 100%;
             background-position: 50% 0;
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 bottom: 20px;
               
 

@@ -10118,11 +10118,12 @@ hr {
   position: absolute;
   bottom: 50px;
   z-index: 5;
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFF;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
-  font-size: 6.5em;
-  line-height: 1;
+  font-size: 5.75em;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 /* line 44, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
@@ -10277,7 +10278,7 @@ hr {
   }
   /* line 200, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
-    font-size: 50px;
+    font-size: 40px;
     bottom: 20px;
   }
   /* line 207, ../sass/partials/_page-home.scss */
