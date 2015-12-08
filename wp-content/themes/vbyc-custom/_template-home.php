@@ -46,7 +46,8 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="content">
                             <a href="#" class="link">
-                                <img src="images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
+<!--                                 <img src="images/illustrations/calendar.svg" class="banner-img img-responsive" alt=" ">
+ -->                                <img src="images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
                             </a>
                             <div class="content-primary-text">
                                 <h3 class="headline">Find a session for your child</h3>

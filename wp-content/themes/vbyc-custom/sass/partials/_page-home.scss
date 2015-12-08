@@ -34,37 +34,22 @@
             position: absolute;
             bottom: 50px;
             z-index: 5;
-            color: rgba(255,255,2555,.7);
-            font-family: $font-family-simple;
+            color: rgba(255,255,2555,.8);
+            font-family: $font-family-serif;
             font-weight: bold;
             font-size: 6.5em;
             line-height: 1;
 //            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
-            text-transform: uppercase;
+        
             .group-1 {
                 display: block;
-//                line-height: 1;
-//                margin-bottom: 10px;
             }
-//            .group-2 {
-//            }
-//            .group-3 {
-//                display: block;
-//            }
             .group-3 {
                 white-space: nowrap;
             }
             .group-4 {
                 white-space: nowrap;
             }
-//            .group-5 {
-                
-//            }
-//            .accent {
-//                font-family: $font-family-serif;
-//                font-size: 40%;
-//                font-weight: 200;
-//            }
         }
     } // .header-main
     .main-logo {
@@ -127,16 +112,13 @@
     .banner-activities {
         background: url('../images/heros/water.jpg') 50% 50% repeat-y;
     }
-
     .banner-cleo {
         background: url('../images/heros/sun-through-trees.jpg') 50% 50% repeat-y;
 
     }
-
     .banner-alumni {
         background: url('../images/heros/grass-and-flowers.jpg') 50% 50% repeat-y;
     }
-
     .banner-img {
         margin-left: auto;
         margin-right: auto;
@@ -194,7 +176,7 @@
                 right: 0;
                 left: 0;
                 bottom: 50px;
-                font-size: 70px;
+                font-size: 80px;
                 .group-4 {
                     display: block;
                 }
