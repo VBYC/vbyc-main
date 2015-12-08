@@ -52,7 +52,7 @@
                                 <h3 class="headline">Find a session for your child</h3>
                                 <div class="row">
                                     <div class="description col-md-offset-1 col-md-10">
-                                        <p><?=$lorem?></p>
+                                        <p>Choose the session that suits your family. Whether your camper is six years old and hesitant to leave the nest, or fifteen and ready to fly the coop, we have a camp experience thoughtfully designed to help them take flight.</p>
                                     </div>
                                 </div>
                                 <a href="#" class="link">
@@ -72,7 +72,7 @@
                                 <h3 class="headline">Every camp day is a good day</h3>
                                 <div class="row">
                                     <div class="description col-md-offset-1 col-md-10">
-                                        <p><?=$lorem?></p>
+                                        <p>From Polar Bear swims at sun-up to Taps after a campfire sing, a day spent at camp is like a day spent nowhere else. See a little bit of what that day entails.</p>
                                     </div>
                                 </div>
                                 <a href="#" class="link">
@@ -103,7 +103,7 @@
                             <div class="content content-primary-text">
                                 <h3 class="headline">Activities</h3>
                                  <div class="description">
-                                    <p><?=$loremSm?></p>
+                                    <p>Too many to name and more than one camper can complete in a week, from woodland survival to zany antics: we have activities.</p>
                                 </div>
                                 <a href="#" class="link">
                                     View Activities
@@ -130,7 +130,7 @@
                             <div class="content content-primary-text">
                                 <h3 class="headline">Cleo the Moose</h3>
                                 <div class="description">
-                                    <p><?=$loremSm?></p>
+                                    <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures (and comforts and challenges) lie within our camp buildings and grounds?</p>
                                 </div>
                                 <a href="#" class="link">
                                     Learn more about Cleo
@@ -156,10 +156,10 @@
                             <div class="content content-primary-text">
                                 <h3 class="headline">Alumni</h3>
                                 <div class="description">
-                                    <p><?=$loremSm?></p>
+                                    <p>Once you're camp family, you're always camp family. </p>
                                 </div>
                                 <a href="#" class="link">
-                                    View alumni information
+                                    Connect, and reconnect, here.
                                 </a>
                             </div>
                         </div>
@@ -201,7 +201,9 @@
                                 <div class="col-sm-offset-2 col-sm-8">
                                     <div class="content content-primary-text">
                                         <div class="description">
-                                            <p><?=$lorem?> <a href="#" class="link">Learn more</a></p>
+                                            <p>Van Buren Youth Camp can be Van Buren: Your Camp. For weddings, family reunions, retreats, meetings, or whenever you need an idyllic escape, camp awaits.
+
+ <a href="#" class="link">Learn more</a></p>
                                         </div>
                                         
                                     </div>

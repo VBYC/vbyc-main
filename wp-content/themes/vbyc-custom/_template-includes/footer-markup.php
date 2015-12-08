@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="footer-message">
-                        You belong to youth camp, and youth camp belongs to you.
+                        Being ourselves, together.
                     </div>
                 </div>
             </div>
