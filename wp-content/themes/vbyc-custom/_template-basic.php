@@ -1,15 +1,18 @@
+ <? 
+        $page = 'basic';
+        $body_classes = 'template-'.$page.' ';
+        $is_selecetd = 'selected';
+?>
 <? 
     $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
 
     $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
     
-    <? include("_template-includes/header.php"); ?> 
-    <? include("_template-includes/header-markup.php"); ?>  
-<body class="template-basic" data-spy="scroll">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> 
+    <? include("_template-includes/head.php"); ?> 
+    <? include("_template-includes/header.php"); ?>  
+
+
     <main>    
         <section class="hero">
             <? if ($show_hero_image) { ?>

@@ -34,7 +34,6 @@
                         <address class="item">
                             Email Us<br>
                             <a href="#">hello@vbyc.org</a>
-                            </a>
                         </address>
                         <p class="item">  
                             Connect With Us<br>

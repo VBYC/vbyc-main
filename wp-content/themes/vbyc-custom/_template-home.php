@@ -1,19 +1,15 @@
 <? 
-    $page = 'home';
-    $body_classes = 'template-home';
+    $page = 'timeline';
+    $body_classes = ' template-'.$page.' ';
     $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
     $loremSm = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.'; 
     $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
     
-    <? include("_template-includes/header.php"); ?> 
-    <? include("_template-includes/header-markup.php"); ?>  
-<body class="template-home" data-spy="scroll">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> 
+    <? include("_template-includes/head.php"); ?> 
+    <? include("_template-includes/header.php"); ?>  
 
-    
+
     <main class="text-center"> 
         <!-- NEWS FEED -->
         <section class="news-feed">

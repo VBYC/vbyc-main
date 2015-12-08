@@ -1,17 +1,40 @@
-<!doctype html>
-<!--[if lt IE 7]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>                 <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>                 <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-            <meta charset="utf-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <title>VBYC</title>
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<? if ($page == 'home') { $logo_version = '-reverse'; } ?>
 
-            <link rel="stylesheet" href="css/main.css">
+    <header class="header-main background-img-fluid v-offset-bot-0">
 
-            <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="main-logo-container col-xs-9 col-sm-12 col-md-4 text-center">
+                        <a href="/" title="Home">
+                            <!-- TODO: Change color with CSS http://codepen.io/helmemat/pen/ndJgz -->
+                            <!-- TODO: Use just 1 file for icon too -->
+                            <img src="images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
+                            <img src="images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-sm-12 col-md-8">
+                        <? include("_template-includes/nav-main-toggle.php"); ?> 
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                        <? include("_template-includes/nav-main.php"); ?> 
+                    </div>
+                </div><!-- /.row -->
+
+            </div>
+
+<? if ($page == 'home') { ?>
+            <div class="container home-hero-text-container">
+                <div class="home-hero-text">
+                    <h1>
+                        <span class="group-1 accent">Discovering</span>  
+                        <span class="group-2">nature,</span> 
+                        <span class="group-3">each other, </span>
+                        <span class="group-4">&amp; ourselves.</span>
+                    </h1>
+                </div>
+            </div>
+<? } ?>
+        
+    </header>

@@ -1,7 +1,12 @@
 
-    <? $is_selecetd = 'selected'; ?>
-    <? include("_template-includes/header.php"); ?> 
-    <? include("_template-includes/header-markup.php"); ?>  
+    <? 
+        $page = 'basic-with-side-nav';
+        $body_classes = 'template-basic template-'.$page.' ';
+        $is_selecetd = 'selected';
+    ?>
+
+    <? include("_template-includes/head.php"); ?> 
+    <? include("_template-includes/header.php"); ?>  
     <main>
         <section class="hero">
             <div class="container-fluid hero-image-container">

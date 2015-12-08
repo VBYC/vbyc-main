@@ -1,11 +1,13 @@
-
+ <? 
+        $page = 'grid';
+        $body_classes = 'template-'.$page.' ';
+        $is_selecetd = 'selected';
+?>
     
-    <? include("_template-includes/header.php"); ?> 
-    <? include("_template-includes/header-markup.php"); ?>  
-<body class="template-grid" data-spy="scroll">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> 
+    <? include("_template-includes/head.php"); ?> 
+    <? include("_template-includes/header.php"); ?>  
+
+
     <main>
         <section class="hero">
             <div class="container-fluid hero-image-container">
