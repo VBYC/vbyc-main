@@ -17,24 +17,22 @@
     <main class="text-center"> 
         <!-- NEWS FEED -->
         <section class="news-feed">
-            <div class="container-extended">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="content clearfix">
-                            <div class="content-inner">
-                                <h5 class="headline"><a href="#" class="link-reverse " title="Read all news stories">News</a> ///</h5>
-                                <ul class="news-feed-list list-unstyled">
-                                    <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
-                                    <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
-                                    <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
-                                    <li class="item"><a href="#" class="link">Midnight fundraise, May 21st.</a></li>
-                                    <li class="item"><a href="#" class="link">Leadership speakers announced.</a></li>
-                                </ul>
-                            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content clearfix">
+                        <div class="content-inner">
+                            <h5 class="headline"><a href="#" class="link-reverse " title="Read all news stories">News</a> ///</h5>
+                            <ul class="news-feed-list list-unstyled">
+                                <li class="item"><a href="#" class="link">2016 schedule is out!</a></li>
+                                <li class="item"><a href="#" class="link">Volunteer for spring clean up</a></li>
+                                <li class="item"><a href="#" class="link">Meet the 2016 staff!</a></li>
+                                <li class="item"><a href="#" class="link">Midnight fundraise, May 21st.</a></li>
+                                <li class="item"><a href="#" class="link">Leadership speakers announced.</a></li>
+                            </ul>
                         </div>
                     </div>
+                </div>
                 </div><!-- /.row -->
-            </div>
         </section>
 
         <!-- PRIMARY BANNERS -->
@@ -90,7 +88,7 @@
         <section class="home-banner-secondary">
 
             <!-- ACTIVITIES -->
-            <div class="banner-item banner-activities">
+            <div class="banner-item banner-activities hero-background-img">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
@@ -116,7 +114,7 @@
             </div>
 
             <!-- CLEO -->
-            <div class="banner-item banner-cleo">
+            <div class="banner-item banner-cleo hero-background-img">
                 <div class="container">
                     <div class="row">
                         
@@ -171,7 +169,7 @@
 
         <!-- MAP OF CAMP -->
         <section class="home-banner-map-container">
-            <div class="banner-item home-banner-map">
+            <div class="banner-item home-banner-map hero-background-img">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">

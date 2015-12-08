@@ -13,6 +13,16 @@ hr {
 	margin-bottom: 100px;
 }
 
+.background-img-fluid {
+	background-size: 100% auto;
+}
+.hero-background-img {
+
+    background-position: 50% 50%;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
 // Figures
 .figure-images {
 	&.pull-right {

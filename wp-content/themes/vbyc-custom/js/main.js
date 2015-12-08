@@ -34,11 +34,11 @@
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 
 			// Set Home hero animation
-			vbyc.util.homeHeroAnimation();
+			// vbyc.util.homeHeroAnimation();
 
 
-			vbyc.util.resetImages();
-	        vbyc.util.nextImage(); 
+			// vbyc.util.resetImages();
+	  //       vbyc.util.nextImage(); 
 
 
 	        vbyc.util.newsFeed();  

@@ -2,10 +2,7 @@
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-
-
 .template-home {
-
     .hero-animation {
         height: 120px;
         width: 200px;
@@ -17,6 +14,7 @@
         margin-left: -217px;
         text-align: center;
         padding-right: 234px;
+        display: none;
         img {
             position: absolute;
             top: 0;
@@ -24,7 +22,9 @@
         }
     }
     .header-main  {
-        background: url('../images/heros/home.jpg') 50% 0 no-repeat;
+        background-image: url('../images/heros/home.jpg');
+        background-position: 50% 0;
+        background-repeat: no-repeat;
         height: 660px;
         position: relative;
         .main-logo-container {
@@ -110,14 +110,14 @@
 
     // HOME BANNERS
     .banner-activities {
-        background: url('../images/heros/water.jpg') 50% 50% repeat-y;
+        background-image: url('../images/heros/water.jpg');
     }
     .banner-cleo {
-        background: url('../images/heros/sun-through-trees.jpg') 50% 50% repeat-y;
+        background-image: url('../images/heros/sun-through-trees.jpg');
 
     }
     .banner-alumni {
-        background: url('../images/heros/grass-and-flowers.jpg') 50% 50% repeat-y;
+        background-image: url('../images/heros/grass-and-flowers.jpg');
     }
     .banner-img {
         margin-left: auto;
@@ -126,7 +126,7 @@
 
     // HOME BANNER - MAP
     .home-banner-map {
-        background: url('../images/heros/map-of-vbyc.jpg') 50% 50% repeat-y;
+        background-image: url('../images/heros/map-of-vbyc.jpg');
 
         .link {
             display: block;

@@ -1,7 +1,7 @@
 
 <? if ($page == 'home') { $logo_version = '-reverse'; } ?>
 
-    <header class="header-main v-offset-bot-0">
+    <header class="header-main background-img-fluid v-offset-bot-0">
 
 <? if ($page == 'home') { ?>
         <div class="hero-animation">
