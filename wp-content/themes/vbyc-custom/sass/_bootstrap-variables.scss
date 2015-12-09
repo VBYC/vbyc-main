@@ -386,7 +386,10 @@ $headline-reduce-ratio: .8;
 // $container-lg:                 $container-large-desktop
 
 $width-content-extra: 1440px;
-$main-nav-height: 107px;
+$main-nav-height-xs: 88px;
+$main-nav-height-sm: 158px;
+$main-nav-height-md: 107px;
+$main-nav-height-lg: $main-nav-height-md;
 
 //== Navbar
 //

@@ -4,7 +4,7 @@
 
 
 .has-sticky-main-nav {
-	padding-top: $main-nav-height;
+	padding-top: $main-nav-height-xs;
 }
 .container {
 	&.container-extended {
@@ -20,7 +20,7 @@
 }
 
 .main-content {
-	margin-top: ($padding-base-vertical*8) + $main-nav-height;
+	margin-top: ($padding-base-vertical*8) + $main-nav-height-md;
 	&.has-sidenav {
 		margin-top: 0;
 	}
@@ -29,7 +29,7 @@
 .has-sidenav {
 	.sidenav,
 	.content-list > .item {
-		padding-top: ($padding-base-vertical*8) + $main-nav-height;
+		padding-top: ($padding-base-vertical*8) + $main-nav-height-md;
 	}
 }
 
@@ -39,7 +39,7 @@
 	// With Large Section
 	&.list-multiple-details  {
 		> .item {
-			padding-bottom: ($padding-base-vertical*8) + $main-nav-height;
+			padding-bottom: ($padding-base-vertical*8) + $main-nav-height-md;
 			&:not(:first-child) {
 				
 			}
@@ -75,8 +75,16 @@
 }
 
 
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.has-sticky-main-nav {
+		padding-top: $main-nav-height-sm;
+	}	
+}
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	.has-sticky-main-nav {
+		padding-top: $main-nav-height-md;
+	}
 	.figure-images {
 		.row-main {
 			max-height: 330px;
@@ -84,5 +92,13 @@
 		}
 	}	
 }
+
+@media (min-width: $screen-lg-min) {
+	.has-sticky-main-nav {
+		padding-top: $main-nav-height-lg;
+	}	
+}
+
+
 
 

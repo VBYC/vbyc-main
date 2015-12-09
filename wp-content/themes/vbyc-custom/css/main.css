@@ -9132,7 +9132,7 @@ button.close {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_layout.scss */
 .has-sticky-main-nav {
-  padding-top: 107px;
+  padding-top: 88px;
 }
 
 /* line 10, ../sass/partials/_layout.scss */
@@ -9192,11 +9192,28 @@ button.close {
   margin-top: 15px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 79, ../sass/partials/_layout.scss */
+  .has-sticky-main-nav {
+    padding-top: 158px;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 81, ../sass/partials/_layout.scss */
+  /* line 85, ../sass/partials/_layout.scss */
+  .has-sticky-main-nav {
+    padding-top: 107px;
+  }
+
+  /* line 89, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 97, ../sass/partials/_layout.scss */
+  .has-sticky-main-nav {
+    padding-top: 107px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
