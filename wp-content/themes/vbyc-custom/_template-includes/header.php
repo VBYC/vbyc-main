@@ -2,8 +2,6 @@
 
     <header class="header-main background-img-fluid v-offset-bot-0">
 
-
-
             <div class="container">
                 <div class="row">
                     <div class="main-logo-container col-xs-9 col-sm-12 col-md-4 text-center">

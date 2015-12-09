@@ -8,9 +8,9 @@
 	    containerClassName		= '.template-home .hero-animation',
 	    container 				= $(containerClassName),
 	    allButFirstImage        = $('img:not(:first-child)',container),
-	    allButFirstAndLastImage = $('img:not(:first-child):not(:last-child)',container),
-	    speedFade 				= 800,
-	    speedInterval 			= 0;
+	    allButFirstAndLastImage = $('img:not(:first-child):not(:last-child)',container);
+	    // speedFade 				= 800,
+	    // speedInterval 			= 0;
 
 	vbyc.util = {
 		init: function(customValues) {
@@ -32,6 +32,9 @@
 
 			// Set up lightbox
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
+
+			// Set up main nav as sticking to the top
+			vbyc.util.initNavbarSticky();
 
 			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
@@ -103,71 +106,16 @@
 		initNavbarSticky: function() {
 			$(headerRow).affix({
 			  offset: {
-			    top: 20
+			    // top: 120
 			  }
 			});
 		},
 		initLightbox: function() {
 			// Lightbox for Bootstrap 3 - http://ashleydw.github.io/lightbox/
-			// $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-			//     event.preventDefault();
-			//     // $(this).ekkoLightbox();
-			// }); 
-
  			$('.gallery').click(function (e) {
                 e.preventDefault();
                 $(this).ekkoLightbox();
             });
-
-			// console.log('Hello');
-
-			// delegate calls to data-toggle="lightbox"
-                // $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
-                //     event.preventDefault();
-                //     return $(this).ekkoLightbox({
-                //         onShown: function() {
-                //             if (window.console) {
-                //                 return console.log('Checking our the events huh?');
-                //             }
-                //         },
-                //         onNavigate: function(direction, itemIndex) {
-                //             if (window.console) {
-                //                 return console.log('Navigating '+direction+'. Current item: '+itemIndex);
-                //             }
-                //         }
-                //     });
-                // });
-
-                // //Programatically call
-                // $('#open-image').click(function (e) {
-                //     e.preventDefault();
-                //     $(this).ekkoLightbox();
-                // });
-                // $('#open-youtube').click(function (e) {
-                //     e.preventDefault();
-                //     $(this).ekkoLightbox();
-                // });
-
-                // // navigateTo
-                // $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
-                //     event.preventDefault();
-
-                //     var lb;
-                //     return $(this).ekkoLightbox({
-                //         onShown: function() {
-
-                //             lb = this;
-
-                //             $(lb.modal_content).on('click', '.modal-footer a', function(e) {
-
-                //                 e.preventDefault();
-                //                 lb.navigateTo(2);
-
-                //             });
-
-                //         }
-                //     });
-                // });
 		},
 
 		homeHeroAnimation: function() {
@@ -205,7 +153,8 @@
 	    },
 		sidebarScrollSpy: function() {
 			var mainContent = $('.main-content');
-			var distanceFromTop = sideNav.offset();
+			var headerRowHeight = headerRow.outerHeight();
+			var distanceFromTop = sideNav.offset() + headerRowHeight;
 			distanceFromTop = distanceFromTop.top;
 
 			// Initiate Scroll Spy

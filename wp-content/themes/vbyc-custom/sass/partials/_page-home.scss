@@ -195,7 +195,7 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $width-content-extra) {
     .template-home {
         .header-main {
             background-size: 100% auto;

@@ -9,7 +9,7 @@
     <? include("_template-includes/header.php"); ?>  
     <main>
         <section class="hero">
-            <div class="container-fluid hero-image-container">
+            <div class="hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">

@@ -2,6 +2,10 @@
 	LAYOUT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+.has-sticky-main-nav {
+	padding-top: $main-nav-height;
+}
 .container {
 	&.container-extended {
 		width: 1677px;
@@ -16,7 +20,7 @@
 }
 
 .main-content {
-	margin-top: $padding-base-vertical*8;
+	margin-top: ($padding-base-vertical*8) + $main-nav-height;
 	&.has-sidenav {
 		margin-top: 0;
 	}
@@ -25,7 +29,7 @@
 .has-sidenav {
 	.sidenav,
 	.content-list > .item {
-		padding-top: $padding-base-vertical*8;
+		padding-top: ($padding-base-vertical*8) + $main-nav-height;
 	}
 }
 
@@ -35,7 +39,7 @@
 	// With Large Section
 	&.list-multiple-details  {
 		> .item {
-			padding-bottom: $padding-base-vertical*8;
+			padding-bottom: ($padding-base-vertical*8) + $main-nav-height;
 			&:not(:first-child) {
 				
 			}
