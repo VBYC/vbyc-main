@@ -25,14 +25,16 @@
             </div>
 
 <? if ($page == 'home') { ?>
-            <div class="container home-hero-text-container">
+            <div class="container">
                 <div class="home-hero-text">
-                    <h1>
-                        <span class="group-1 accent">Discovering</span>  
-                        <span class="group-2">nature,</span> 
-                        <span class="group-3">each other, </span>
-                        <span class="group-4">&amp; ourselves.</span>
-                    </h1>
+                    <div class="container">
+                        <h1>
+                            <span class="group-1 accent">Discovering</span>  
+                            <span class="group-2">nature,</span> 
+                            <span class="group-3">each other, </span>
+                            <span class="group-4">&amp; ourselves.</span>
+                        </h1>
+                    </div>
                 </div>
             </div>
 <? } ?>

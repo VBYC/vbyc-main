@@ -9372,32 +9372,32 @@ hr {
   background-size: 100% auto;
 }
 
-/* line 28, ../sass/partials/_graphic-elements.scss */
+/* line 27, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-right {
   margin-left: 30px;
 }
-/* line 31, ../sass/partials/_graphic-elements.scss */
+/* line 30, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-left {
   margin-right: 30px;
 }
-/* line 36, ../sass/partials/_graphic-elements.scss */
+/* line 35, ../sass/partials/_graphic-elements.scss */
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
   margin-top: 30px;
 }
-/* line 43, ../sass/partials/_graphic-elements.scss */
+/* line 42, ../sass/partials/_graphic-elements.scss */
 .figure-images .image-container {
   margin-top: 20px;
   background-color: #F7F7F7;
 }
 
-/* line 56, ../sass/partials/_graphic-elements.scss */
+/* line 55, ../sass/partials/_graphic-elements.scss */
 .content-callout {
   background-color: #F7F7F7;
   padding: 16px 16px 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 66, ../sass/partials/_graphic-elements.scss */
+  /* line 65, ../sass/partials/_graphic-elements.scss */
   .img-responsive.img-fluid {
     max-width: auto;
     width: 100%;
@@ -10121,106 +10121,116 @@ hr {
   background-image: url("../images/heros/home.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+  background-size: auto 100%;
   height: 660px;
   position: relative;
 }
-/* line 30, ../sass/partials/_page-home.scss */
+/* line 31, ../sass/partials/_page-home.scss */
 .template-home .header-main .main-logo-container {
   max-height: 75px;
 }
-/* line 33, ../sass/partials/_page-home.scss */
-.template-home .header-main h1 {
+/* line 34, ../sass/partials/_page-home.scss */
+.template-home .header-main .home-hero-text {
   position: absolute;
   bottom: 50px;
   z-index: 5;
+  width: 100%;
+}
+/* line 39, ../sass/partials/_page-home.scss */
+.template-home .header-main .home-hero-text .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 44, ../sass/partials/_page-home.scss */
+.template-home .header-main h1 {
   color: #FFF;
   font-family: "Roboto Slab", serif;
   font-weight: bold;
   font-size: 5.75em;
   line-height: 1.1;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 44, ../sass/partials/_page-home.scss */
+/* line 52, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;
 }
-/* line 47, ../sass/partials/_page-home.scss */
+/* line 55, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-3 {
   white-space: nowrap;
 }
-/* line 50, ../sass/partials/_page-home.scss */
+/* line 58, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-4 {
   white-space: nowrap;
 }
-/* line 55, ../sass/partials/_page-home.scss */
+/* line 63, ../sass/partials/_page-home.scss */
 .template-home .main-logo {
   color: #fff;
 }
-/* line 62, ../sass/partials/_page-home.scss */
+/* line 70, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary {
   margin-top: 70px;
   margin-bottom: 50px;
 }
-/* line 66, ../sass/partials/_page-home.scss */
+/* line 74, ../sass/partials/_page-home.scss */
 .template-home .home-banner-primary .content-primary-text .headline {
   margin-top: 5px;
 }
-/* line 74, ../sass/partials/_page-home.scss */
+/* line 82, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .banner-item {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 78, ../sass/partials/_page-home.scss */
+/* line 86, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text {
   margin-top: 0;
   text-align: left;
 }
-/* line 81, ../sass/partials/_page-home.scss */
+/* line 89, ../sass/partials/_page-home.scss */
 .template-home .home-banner-secondary .content-primary-text .headline {
   margin-top: 0;
 }
-/* line 88, ../sass/partials/_page-home.scss */
+/* line 96, ../sass/partials/_page-home.scss */
 .template-home .home-banner-tertiary {
   margin-top: 70px;
   margin-bottom: 70px;
 }
-/* line 93, ../sass/partials/_page-home.scss */
+/* line 101, ../sass/partials/_page-home.scss */
 .template-home .content-primary-img {
   border: 9px solid #43C8D9;
 }
-/* line 96, ../sass/partials/_page-home.scss */
+/* line 104, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text {
   background-color: #FFF;
   padding: 30px;
   line-height: 1.81;
 }
-/* line 101, ../sass/partials/_page-home.scss */
+/* line 109, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text .description {
   margin-top: 15px;
   margin-bottom: 25px;
 }
-/* line 112, ../sass/partials/_page-home.scss */
+/* line 120, ../sass/partials/_page-home.scss */
 .template-home .banner-activities {
   background-image: url("../images/heros/water.jpg");
 }
-/* line 115, ../sass/partials/_page-home.scss */
+/* line 123, ../sass/partials/_page-home.scss */
 .template-home .banner-cleo {
   background-image: url("../images/heros/sun-through-trees.jpg");
 }
-/* line 119, ../sass/partials/_page-home.scss */
+/* line 127, ../sass/partials/_page-home.scss */
 .template-home .banner-alumni {
   background-image: url("../images/heros/grass-and-flowers.jpg");
 }
-/* line 122, ../sass/partials/_page-home.scss */
+/* line 130, ../sass/partials/_page-home.scss */
 .template-home .banner-img {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 128, ../sass/partials/_page-home.scss */
+/* line 136, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
   background-image: url("../images/heros/map-of-vbyc.jpg");
 }
-/* line 131, ../sass/partials/_page-home.scss */
+/* line 139, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {
   display: block;
   color: #FFF;
@@ -10228,16 +10238,16 @@ hr {
   padding-bottom: 8%;
   line-height: 1;
 }
-/* line 137, ../sass/partials/_page-home.scss */
+/* line 145, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link:hover {
   text-decoration: none;
 }
-/* line 141, ../sass/partials/_page-home.scss */
+/* line 149, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .headline {
   color: #FFF;
   font-size: 4em;
 }
-/* line 145, ../sass/partials/_page-home.scss */
+/* line 153, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .cta {
   font-size: 2em;
   font-family: "Varela Round", sans-serif;
@@ -10245,58 +10255,67 @@ hr {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 156, ../sass/partials/_page-home.scss */
+  /* line 164, ../sass/partials/_page-home.scss */
   .template-home h1 {
     font-size: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 165, ../sass/partials/_page-home.scss */
+  /* line 173, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     top: -30px;
   }
-  /* line 168, ../sass/partials/_page-home.scss */
+  /* line 176, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 570px;
-    background-position: 50% -30px;
   }
-  /* line 171, ../sass/partials/_page-home.scss */
+  /* line 178, ../sass/partials/_page-home.scss */
   .template-home .header-main .home-hero-text {
     text-align: center;
   }
-  /* line 175, ../sass/partials/_page-home.scss */
+  /* line 182, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     right: 0;
     left: 0;
     bottom: 50px;
-    font-size: 80px;
+    font-size: 75px;
   }
-  /* line 180, ../sass/partials/_page-home.scss */
+  /* line 187, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 .group-4 {
     display: block;
   }
-  /* line 185, ../sass/partials/_page-home.scss */
+  /* line 192, ../sass/partials/_page-home.scss */
   .template-home .banner-item {
     background-size: auto 100%;
   }
 }
+@media (min-width: 1440px) {
+  /* line 200, ../sass/partials/_page-home.scss */
+  .template-home .header-main {
+    background-size: 100% auto;
+    background-position: 50% 50%;
+  }
+}
 @media (max-width: 767px) {
-  /* line 193, ../sass/partials/_page-home.scss */
+  /* line 209, ../sass/partials/_page-home.scss */
   .template-home .hero-animation {
     display: none;
   }
-  /* line 196, ../sass/partials/_page-home.scss */
+  /* line 212, ../sass/partials/_page-home.scss */
   .template-home .header-main {
     height: 340px;
-    background-size: auto 100%;
-    background-position: 50% 0;
+    bottom: 20px;
   }
-  /* line 200, ../sass/partials/_page-home.scss */
+  /* line 215, ../sass/partials/_page-home.scss */
+  .template-home .header-main .home-hero-text {
+    bottom: 30px;
+  }
+  /* line 218, ../sass/partials/_page-home.scss */
   .template-home .header-main h1 {
     font-size: 40px;
     bottom: 20px;
   }
-  /* line 207, ../sass/partials/_page-home.scss */
+  /* line 225, ../sass/partials/_page-home.scss */
   .template-home .home-banner-tertiary {
     margin-bottom: 50px;
   }
