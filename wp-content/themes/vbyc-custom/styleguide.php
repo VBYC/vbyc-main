@@ -1,3 +1,3 @@
 <script type="text/javascript">
-    window.location = "/styleguide.php"
+    window.location = "/styleguide/index.php"
 </script>
