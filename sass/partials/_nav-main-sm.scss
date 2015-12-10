@@ -8,12 +8,22 @@
 // .navbar-collapse { display: block !important; } // TESTING
 
     // Hamburger
+    .navbar-toggle-container {
+        position: relative;
+        padding-right: 90px;
+    }
     .navbar-toggle {
         margin: 7px 0 0;
         border: 2px solid $link-color;
         color: $link-color;
         line-height: 1;
         text-transform: uppercase;
+        padding: 5px 6px;
+        font-size: 14px;
+        margin-top: -12px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
         .icon-bar {
             background-color: $link-color;
         }  
@@ -75,6 +85,8 @@
         }
     }
 }
+
+
 
 
 
