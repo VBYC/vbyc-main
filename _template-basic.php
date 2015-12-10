@@ -1,6 +1,6 @@
  <? 
         $page = 'basic';
-        $body_classes = 'template-'.$page.' ';
+        $body_classes = 'template-'.$page.' has-sticky-main-nav ';
         $is_selecetd = 'selected';
 ?>
 <? 

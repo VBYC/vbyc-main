@@ -23,9 +23,9 @@
             </div>
 
 <? if ($page == 'home') { ?>
-            <div class="container">
+            <div class="container home-hero-text-outer">
                 <div class="home-hero-text">
-                    <div class="container">
+                    <div class="container home-hero-text-inner">
                         <h1>
                             <span class="group-1 accent">Discovering</span>  
                             <span class="group-2">nature,</span> 

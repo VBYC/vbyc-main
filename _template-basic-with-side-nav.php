@@ -1,7 +1,7 @@
 
     <? 
         $page = 'basic-with-side-nav';
-        $body_classes = 'template-basic template-'.$page.' ';
+        $body_classes = 'template-basic template-'.$page.' has-sticky-main-nav  ';
         $is_selecetd = 'selected';
     ?>
 
