@@ -6,13 +6,6 @@
 @media (max-width: $screen-xs-max) {
     
     .footer-nav {
-        padding-left: 25px;
-        list-style-type: disc;
-
-        .nav-item {
-            display: list-item;
-            padding: 0;
-        }
         .nav-link {
             &:hover {
                 color: $link-color-emphasize;

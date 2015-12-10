@@ -7,12 +7,12 @@
         <title>
                 VBYC Styleguide - based on Bootsrap
         </title>
-        <link href="css/styleguide.css" rel="stylesheet">
+        <link href="../css/styleguide.css" rel="stylesheet">
 
         <!-- Documentation extras -->
-        <link href="css/bootstrap-styleguide/docs.min.css" rel="stylesheet">
+        <link href="../css/bootstrap-styleguide/docs.min.css" rel="stylesheet">
 
-        <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="../js/ie8-responsive-file-warning.js"></script><![endif]-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -50,7 +50,7 @@
                     <a href="http://getbootstrap.com/javascript/">JavaScript</a>
                 </li>
             <!--     <li>
-                    <a href="../customize/">Customize</a>
+                    <a href="../../customize/">Customize</a>
                 </li> -->
             </ul>
         </nav>
@@ -1408,7 +1408,7 @@
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Text input"</span><span class="nt">&gt;</span></code></pre></div>
     <div class="bs-callout bs-callout-info" id="callout-xref-input-group">
         <h4>Input groups</h4>
-        <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
+        <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../../components/#input-groups">check out the input group component</a>.</p>
     </div>
 
     <h3>Textarea</h3>
@@ -1787,7 +1787,7 @@
     <div class="bs-callout bs-callout-warning" id="callout-form-validation-state-accessibility">
         <h4>Conveying validation state to assistive technologies and colorblind users</h4>
         <p>Using these validation styles to denote the state of a form control only provides a visual, color-based indication, which will not be conveyed to users of assistive technologies - such as screen readers - or to colorblind users.</p>
-        <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include a <a href="../components/#glyphicons">Glyphicon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="../components/#glyphicons-examples">Glyphicon examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
+        <p>Ensure that an alternative indication of state is also provided. For instance, you can include a hint about state in the form control's <code>&lt;label&gt;</code> text itself (as is the case in the following code example), include a <a href="../../components/#glyphicons">Glyphicon</a> (with appropriate alternative text using the <code>.sr-only</code> class - see the <a href="../../components/#glyphicons-examples">Glyphicon examples</a>), or by providing an additional <a href="#forms-help-text">help text</a> block. Specifically for assistive technologies, invalid form controls can also be assigned an <code>aria-invalid="true"</code> attribute.</p>
     </div>
 
     <div class="bs-example" data-example-id="form-validation-states">
@@ -1874,7 +1874,7 @@
     <p><strong class="text-danger">Feedback icons only work with textual <code>&lt;input class="form-control"&gt;</code> elements.</strong></p>
     <div class="bs-callout bs-callout-warning" id="callout-has-feedback-icon-positioning">
         <h4>Icons, labels, and input groups</h4>
-        <p>Manual positioning of feedback icons is required for inputs without a label and for <a href="../components#input-groups">input groups</a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only</code> class. If you must do without labels, adjust the <code>top</code> value of the feedback icon. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
+        <p>Manual positioning of feedback icons is required for inputs without a label and for <a href="../../components#input-groups">input groups</a> with an add-on on the right. You are strongly encouraged to provide labels for all inputs for accessibility reasons. If you wish to prevent labels from being displayed, hide them with the <code>.sr-only</code> class. If you must do without labels, adjust the <code>top</code> value of the feedback icon. For input groups, adjust the <code>right</code> value to an appropriate pixel value depending on the width of your addon.</p>
     </div>
     <div class="bs-callout bs-callout-warning" id="callout-has-feedback-icon-accessibility">
         <h4>Conveying the icon's meaning to assistive technologies</h4>
@@ -2339,7 +2339,7 @@
 
     <h2 id="images-responsive">Responsive images</h2>
     <p>Images in Bootstrap 3 can be made responsive-friendly via the addition of the <code>.img-responsive</code> class. This applies <code>max-width: 100%;</code>, <code>height: auto;</code> and <code>display: block;</code> to the image so that it scales nicely to the parent element.</p>
-    <p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p>
+    <p>To center images which use the <code>.img-responsive</code> class, use <code>.center-block</code> instead of <code>.text-center</code>. <a href="../css/#helper-classes-center">See the helper classes section</a> for more details about <code>.center-block</code> usage.</p>
     <div class="bs-callout bs-callout-warning" id="callout-images-ie-svg">
         <h4>SVG images and IE 8-10</h4>
         <p>In Internet Explorer 8-10, SVG images with <code>.img-responsive</code> are disproportionately sized. To fix this, add <code>width: 100% \9;</code> where necessary. Bootstrap doesn't apply this automatically as it causes complications to other image formats.</p>
@@ -2519,7 +2519,7 @@
 
 
     <h3 id="helper-classes-carets">Carets</h3>
-    <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
+    <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
     <div class="bs-example" data-example-id="caret">
         <span class="caret"></span>
     </div>
@@ -2548,7 +2548,7 @@
 
     <div class="bs-callout bs-callout-warning" id="callout-helper-pull-navbar">
         <h4>Not for use in navbars</h4>
-        <p>To align components in navbars with utility classes, use <code>.navbar-left</code> or <code>.navbar-right</code> instead. <a href="../components/#navbar-component-alignment">See the navbar docs</a> for details.</p>
+        <p>To align components in navbars with utility classes, use <code>.navbar-left</code> or <code>.navbar-right</code> instead. <a href="../../components/#navbar-component-alignment">See the navbar docs</a> for details.</p>
     </div>
 
 
@@ -2617,7 +2617,7 @@
 
 
     <h3 id="helper-classes-screen-readers">Screen reader and keyboard navigation content</h3>
-    <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Combine <code>.sr-only</code> with <code>.sr-only-focusable</code> to show the element again when it's focused (e.g. by a keyboard-only user). Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>. Can also be used as mixins.</p>
+    <p>Hide an element to all devices <strong>except screen readers</strong> with <code>.sr-only</code>. Combine <code>.sr-only</code> with <code>.sr-only-focusable</code> to show the element again when it's focused (e.g. by a keyboard-only user). Necessary for following <a href="../../getting-started/#accessibility">accessibility best practices</a>. Can also be used as mixins.</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span> <span class="na">href=</span><span class="s">"#content"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span></code></pre></div>
 <div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Usage as a mixin
 </span><span class="nc">.skip-navigation</span> <span class="p">{</span>
@@ -2968,7 +2968,7 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-sm-3"</span><span class="nt">&gt;</span>.col-xs-6 .col-sm-3<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-sm-3"</span><span class="nt">&gt;</span>.col-xs-6 .col-sm-3<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
-    <p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. See this in action in <a href="../examples/grid/">the grid example</a>.</p>
+    <p>In addition to column clearing at responsive breakpoints, you may need to <strong>reset offsets, pushes, or pulls</strong>. See this in action in <a href="../../examples/grid/">the grid example</a>.</p>
 <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-5 col-md-6"</span><span class="nt">&gt;</span>.col-sm-5 .col-md-6<span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0"</span><span class="nt">&gt;</span>.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0<span class="nt">&lt;/div&gt;</span>
@@ -3638,11 +3638,11 @@
             <li>&middot;</li>
             <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
             <li>&middot;</li>
-            <li><a href="../getting-started/#examples">Examples</a></li>
+            <li><a href="../../getting-started/#examples">Examples</a></li>
             <li>&middot;</li>
-            <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+            <li><a href="../../2.3.2/">v2.3.2 docs</a></li>
             <li>&middot;</li>
-            <li><a href="../about/">About</a></li>
+            <li><a href="../../about/">About</a></li>
             <li>&middot;</li>
             <li><a href="http://expo.getbootstrap.com">Expo</a></li>
             <li>&middot;</li>
@@ -3659,12 +3659,12 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/bootstrap-styleguide/docs.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<script src="../js/bootstrap-styleguide/docs.min.js"></script>
 
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="js/bootstrap-styleguide/ie10-viewport-bug-workaround.js"></script>
+<script src="../js/bootstrap-styleguide/ie10-viewport-bug-workaround.js"></script>
 
 
 <script>
@@ -3678,8 +3678,8 @@
 
 
 <!-- START -  VBYC Javascript files -->
-<script src="js/vendor/ekko-lightbox.js"></script>
-<script src="js/main.js"></script>
+<script src="../js/vendor/ekko-lightbox.js"></script>
+<script src="../js/main.js"></script>
 <script>
     $(document).ready(function() {
         vbyc.util.init();
