@@ -10458,9 +10458,13 @@ hr {
     font-size: 40px;
     bottom: 20px;
   }
-  /* line 232, ../sass/partials/_page-home.scss */
+  /* line 230, ../sass/partials/_page-home.scss */
   .template-home .home-banner-tertiary {
     margin-bottom: 50px;
+  }
+  /* line 233, ../sass/partials/_page-home.scss */
+  .template-home .home-banner-map {
+    font-size: .6em;
   }
 }
 @-webkit-keyframes fadeInOut {

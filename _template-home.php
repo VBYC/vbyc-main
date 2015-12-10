@@ -218,7 +218,7 @@
         
     </main>
 
-<? include("_template-includes/footer-markup.php"); ?>
+<? include("_template-includes/footer.php"); ?>
 
     <script>
         $(document).ready(function() {
@@ -226,5 +226,5 @@
         });
     </script>
 
-<? include("_template-includes/footer.php"); ?> 
+<? include("_template-includes/foot.php"); ?> 
     
