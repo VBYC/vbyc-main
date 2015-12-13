@@ -2,13 +2,25 @@
     SIDE NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.has-sticky-main-nav {
+    padding-top: $main-nav-height-xs;
+}
+
+.main-content {
+    &.has-sidenav {
+        margin-top: 0;
+    }
+}
+
+
+
 .sidenav {
     &.affix {
         position: fixed;
-        top: 0;
     }
 }
 .sidenav-list {
+    padding-top: ($padding-base-vertical*4);
     > .item {
         margin-bottom: 3px;
         font-size: 15px;
@@ -40,6 +52,7 @@
             $col-width: 56.75px;
             $col-count: 4;
             width: ($col-width * $col-count); 
+            top: $main-nav-height-sm;
         }
     }
 }
@@ -50,6 +63,7 @@
             $col-width: 73.3333px;
             $col-count: 3;
             width: ($col-width * $col-count); 
+            top: $main-nav-height-md;
         }
     }
 }
@@ -60,6 +74,7 @@
             $col-width: 90px;
             $col-count: 3;
             width: ($col-width * $col-count);
+            top: $main-nav-height-lg;
         }
     }
 }

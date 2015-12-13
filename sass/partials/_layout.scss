@@ -3,9 +3,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-.has-sticky-main-nav {
-	padding-top: $main-nav-height-xs;
-}
+
+
 .container {
 	&.container-extended {
 		width: 1677px;
@@ -19,19 +18,7 @@
 	}
 }
 
-.main-content {
-	margin-top: ($padding-base-vertical*8) + $main-nav-height-md;
-	&.has-sidenav {
-		margin-top: 0;
-	}
-}
 
-.has-sidenav {
-	.sidenav,
-	.content-list > .item {
-		padding-top: ($padding-base-vertical*8) + $main-nav-height-md;
-	}
-}
 
 // Content List
 .content-list {
@@ -39,7 +26,9 @@
 	// With Large Section
 	&.list-multiple-details  {
 		> .item {
-			padding-bottom: ($padding-base-vertical*8) + $main-nav-height-md;
+			padding-top: ($padding-base-vertical*4);
+			padding-bottom: ($padding-base-vertical*4);
+			
 			&:not(:first-child) {
 				
 			}

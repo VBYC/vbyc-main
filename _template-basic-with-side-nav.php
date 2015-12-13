@@ -1,13 +1,13 @@
 
     <? 
         $page = 'basic-with-side-nav';
-        $body_classes = 'template-basic template-'.$page.' has-sticky-main-nav  ';
+        $body_classes = 'template-basic template-'.$page.' has-sticky-main-nav has-sidenav';
         $is_selecetd = 'selected';
     ?>
 
     <? include("_template-includes/head.php"); ?> 
     <? include("_template-includes/header.php"); ?>  
-    <main>
+    <main class="main-content-container" data-spy="scroll" data-target='#sidenav' style="display:relative">
         <section class="hero">
             <div class="hero-image-container">
                 <div class="row">
@@ -44,7 +44,18 @@
 
         
         <section class="main-content">
+
             <div class="container"> 
+                <div class="row">
+                    <div class="col-xs-12 col-sm-offset-4 col-sm-8 "> 
+                        <h2 class="heading-category">Category</h2>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="container scroll-spy-container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
                         <? include("_template-includes/nav-side.php"); ?> 
@@ -52,7 +63,7 @@
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                            <h2 class="heading-category">Category</h2>
+                            
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="archery" class="item">                                    
                                     <h3 class="heading archery">Archery</h3>

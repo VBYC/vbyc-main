@@ -1,12 +1,14 @@
 (function( vbyc, $, undefined ) { 
 
-	var subNavSelector 			= '.navbar-list-sub',
+	var $body   				= $(document.body),
+		subNavSelector 			= '.navbar-list-sub',
 	    navbarSiblingsSelector  = '.navbar-list .link',
 	    sideNav 				= $('#sidenav'),
 	    headerRow 		 		= $('.header-main'),
 	    hasSidenav 				,
 	    containerClassName		= '.template-home .hero-animation',
 	    container 				= $(containerClassName),
+	    mainContent 			= $('.main-content'),
 	    allButFirstImage        = $('img:not(:first-child)',container),
 	    allButFirstAndLastImage = $('img:not(:first-child):not(:last-child)',container);
 	    // speedFade 				= 800,
@@ -152,35 +154,52 @@
             setInterval(function(){ showNextItem () }, 3000);
 	    },
 		sidebarScrollSpy: function() {
-			var mainContent = $('.main-content');
-			var headerRowHeight = headerRow.outerHeight();
-			var distanceFromTop = sideNav.offset() + headerRowHeight;
-			distanceFromTop = distanceFromTop.top;
-
-			// Initiate Scroll Spy
+			var sidenavContainer 			= '#sidenav-container';
+			var sidenavDistanceOffset 		= $(sidenavContainer).offset();
+			var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
+			var sidenavPaddingTop 			= 40;
+			var headerRowHeight 			= headerRow.outerHeight(true);
+			var triggerActivateLinks 		= headerRowHeight + sidenavPaddingTop;
+			var triggerSticky 				= sidenavDistanceOffsetTop - triggerActivateLinks;
+			
+			// What ID is the the side nav? 
 			$(sideNav).affix({
 				offset: {
-					top: distanceFromTop,
-					bottom: function () {
-						return (this.bottom = $('.footer').outerHeight(true))
-					}
+					// How far you scroll down before the nav becomes sticky
+					top: triggerSticky
 				}
 			});
+
+			// Assign this scroll spoy to the body 
+			$body.scrollspy({
+
+				// What ID is the immediate parent of the side nav? 
+				target: sidenavContainer,
+
+				// How far from the top that triggers the left nav items become active
+				offset: triggerActivateLinks,
+			});
+
 		},
 		sidebarScrollTo: function() {
-			var mainContent = $('.main-content');
-			var parent = sideNav;
 			
-			// Add this selector so the anchors will be a nice distance from the top
-			$(mainContent).addClass('has-sidenav');
+			var parent = sideNav;
+			var sidenavContainer 			= '#sidenav-container';
+			var sidenavPaddingTop 			= 0;
+			var headerRowHeight 			= headerRow.outerHeight(true);
+			var headerRowHeightOffset       = headerRowHeight - sidenavPaddingTop;
+
 
 			// Set up scroll
 	        $('a[href^="#"]',parent).on('click',function (e) {
 	            e.preventDefault();
-
+				var sidenavDistanceOffset 		= $(sidenavContainer).offset();
+				var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
+				
+				
 	            var target = this.hash;
 	            var $target = $(target);
-	            var scrollToCoordinate = $target.offset().top;
+	            var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset)
 
 	            $('html, body').stop().animate({
 	                'scrollTop': scrollToCoordinate

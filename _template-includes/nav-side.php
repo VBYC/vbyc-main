@@ -1,5 +1,5 @@
-                        <aside id="sidenav" class="sidenav" >
-                            <ul class="nav sidenav-list list-unstyled">
+                        <aside id="sidenav-container">
+                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
                                 <li class="item" role="presentation">
                                     <a href="#archery" class="link sidenav-archery">Archery</a>
                                 </li>

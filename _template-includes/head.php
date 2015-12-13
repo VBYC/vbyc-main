@@ -16,7 +16,10 @@
             <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
-    <body class="<?=$body_classes?>" data-spy="scroll">
+<!--     <body class="<?=$body_classes?>" data-spy="scroll" data-target='#sidenav' style="display:relative">
+ -->
+    <body class="<?=$body_classes?>" >
+
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]--> 
