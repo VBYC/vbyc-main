@@ -392,8 +392,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.eot));
-  src: url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.eot?#iefix)) format("embedded-opentype"), url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.woff2)) format("woff2"), url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.woff)) format("woff"), url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.ttf)) format("truetype"), url(url(/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular)) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1445823798);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1445823798#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1445823798) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1445823798) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1445823798) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1445823798#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -9527,42 +9527,62 @@ hr {
 .main-logo-container {
   margin-bottom: 25px;
 }
+/* line 18, ../sass/partials/_header.scss */
+img[src*=".svg"] .main-logo-container .ie9 {
+  width: 100%;
+}
 
-/* line 19, ../sass/partials/_header.scss */
+/* line 22, ../sass/partials/_header.scss */
 .main-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 23, ../sass/partials/_header.scss */
+/* line 26, ../sass/partials/_header.scss */
 .main-logo-icon {
   display: none;
 }
 
+/* line 30, ../sass/partials/_header.scss */
+.ie9 img[src*=".svg"] {
+  width: 100%;
+}
+
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 35, ../sass/partials/_header.scss */
+  .main-logo-container {
+    margin-bottom: 25px;
+  }
+  /* line 37, ../sass/partials/_header.scss */
+  img[src*=".svg"] .main-logo-container .ie9 {
+    width: 100%;
+  }
+}
 @media (max-width: 300px) {
-  /* line 29, ../sass/partials/_header.scss */
+  /* line 45, ../sass/partials/_header.scss */
   .main-logo-icon {
     display: inline-block;
   }
 
-  /* line 32, ../sass/partials/_header.scss */
+  /* line 48, ../sass/partials/_header.scss */
   .main-logo-normal {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 44, ../sass/partials/_header.scss */
+  /* line 60, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 20px;
   }
 
-  /* line 47, ../sass/partials/_header.scss */
+  /* line 63, ../sass/partials/_header.scss */
   .main-logo {
     float: none;
   }
 }
 @media (min-width: 992px) {
-  /* line 52, ../sass/partials/_header.scss */
+  /* line 68, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 10px;
   }
@@ -9658,6 +9678,8 @@ hr {
   width: 14px;
   height: 8px;
   position: absolute;
+  left: 50%;
+  margin-left: -7px;
   font-size: 14px;
   font-family: arial;
   line-height: 1;
@@ -9666,19 +9688,19 @@ hr {
   -o-transform: scale(1.75, 1);
   transform: scale(1.75, 1);
 }
-/* line 68, ../sass/partials/_nav-main.scss */
+/* line 70, ../sass/partials/_nav-main.scss */
 .navbar-list-sub .link-sub {
   display: block;
   padding: 18px;
   color: #FFF;
   background-color: #37BC98;
 }
-/* line 73, ../sass/partials/_nav-main.scss */
+/* line 75, ../sass/partials/_nav-main.scss */
 .navbar-list-sub .link-sub:hover {
   background-color: #2E9D7F;
   text-decoration: none;
 }
-/* line 77, ../sass/partials/_nav-main.scss */
+/* line 79, ../sass/partials/_nav-main.scss */
 .navbar-list-sub .link-sub.selected {
   background-color: #2E9D7F;
 }
@@ -9852,7 +9874,6 @@ hr {
   /* line 93, ../sass/partials/_nav-main-lg.scss */
   .navbar-list-sub:before {
     top: 10px;
-    margin-left: -7px;
   }
   /* line 103, ../sass/partials/_nav-main-lg.scss */
   .navbar-list-sub .item-sub:first-child .link-sub {

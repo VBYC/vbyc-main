@@ -15,6 +15,9 @@
 }
 .main-logo-container {
 	margin-bottom: 25px;
+	img[src*=".svg"] & .ie9 {
+		width: 100%; 
+	}
 }
 .main-logo {
 	display: inline-block;
@@ -22,6 +25,19 @@
 }
 .main-logo-icon {
 	display: none;
+}
+
+.ie9 img[src*=".svg"] {
+  width: 100%; 
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main-logo-container {
+	margin-bottom: 25px;
+		img[src*=".svg"] & .ie9 {
+			width: 100%; 
+		}
+	}
 }
 
 
