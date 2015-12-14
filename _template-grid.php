@@ -147,7 +147,7 @@
                     </div><!-- /.row -->
                 </article>
 
-                <hr class="divider-styled"></hr>
+                <hr class="divider-styled">
 
                 <article class="main-article">
                     <h3>4 columns</h3>
