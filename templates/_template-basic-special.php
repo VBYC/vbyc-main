@@ -8,8 +8,8 @@
     $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
     
-    <? include("_template-includes/head.php"); ?> 
-    <? include("_template-includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
 
     <main>
@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="images/template/hero-basic.jpg" alt=" ">
+                            <img src="/images/template/hero-basic.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -50,16 +50,16 @@
                             <!-- 1 column -->
                             <div class="row figure-row">
                                 <div class="col-sm-2 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-2 img-container">
-                                    <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
                                 </div>         
                             </div><!-- /.row -->
                         </figure>
@@ -100,13 +100,7 @@
         </section>
     </main>
 
-<? include("_template-includes/footer.php"); ?>
 
-    <script>
-        $(document).ready(function() {
-            vbyc.util.init();
-        });
-    </script>
 
-<? include("_template-includes/foot.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?> 
     

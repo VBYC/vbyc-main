@@ -1,6 +1,9 @@
 <? 
-    $page = 'timeline';
-    $body_classes = ' template-'.$page.' has-sticky-main-nav ';
+    $title = 'FPO title';
+    $page = 'fpo-page';
+    $template = 'timeline';
+    $body_attributes = 'id="page-'.$page.'" class="template-'.$template.' has-sticky-main-nav "';
+    $description = 'FPO description';
 ?>
 <? 
     $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
@@ -22,7 +25,7 @@
             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                 <div class="content content-primary-img">
                     <a href="#" class="link">
-                        <img src="images/template/timeline.jpg" class="timeline-img img-responsive" alt=" ">
+                        <img src="/images/template/timeline.jpg" class="timeline-img img-responsive" alt=" ">
                     </a>
                 </div>
             </div>
@@ -46,16 +49,15 @@
                 <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                     <div class="content content-primary-img">
                         <a href="#" class="link">
-                            <img src="images/template/timeline.jpg" class="timeline-img img-responsive" alt=" ">
+                            <img src="/images/template/timeline.jpg" class="timeline-img img-responsive" alt=" ">
                         </a>
                     </div>
                 </div>
             </div><!-- /.row -->
     ';
 ?>
-    
-    <? include("_template-includes/head.php"); ?> 
-    <? include("_template-includes/header.php"); ?>  
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>   
 
 
     <main>
@@ -64,7 +66,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="images/heros/timeline.jpg" alt=" ">
+                            <img src="/images/heros/timeline.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -177,13 +179,7 @@
         </section>
     </main>
 
-<? include("_template-includes/footer.php"); ?>
 
-    <script>
-        $(document).ready(function() {
-            vbyc.util.init();
-        });
-    </script>
 
-<? include("_template-includes/foot.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?> 
     

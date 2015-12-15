@@ -8,14 +8,14 @@
                         <a href="/" title="Home">
                             <!-- TODO: Change color with CSS http://codepen.io/helmemat/pen/ndJgz -->
                             <!-- TODO: Use just 1 file for icon too -->
-                            <img src="images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
-                            <img src="images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
+                            <img src="/images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
+                            <img src="/images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
                         </a>
-                        <? include("_template-includes/nav-main-toggle.php"); ?> 
+                        <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/nav-main-toggle.php"); ?> 
                     </div>
                
                     <div class="col-xs-12 col-md-8">
-                        <? include("_template-includes/nav-main.php"); ?> 
+                        <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/nav-main.php"); ?> 
                     </div>
                 </div><!-- /.row -->
 

@@ -42,8 +42,8 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="content">
                             <a href="#" class="link">
-<!--                                 <img src="images/illustrations/calendar.svg" class="banner-img img-responsive" alt=" ">
- -->                                <img src="images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
+<!--                                 <img src="/images/illustrations/calendar.svg" class="banner-img img-responsive" alt=" ">
+ -->                                <img src="/images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
                             </a>
                             <div class="content-primary-text">
                                 <h3 class="headline">Find a session for your child</h3>
@@ -63,7 +63,7 @@
                     <div class="col-xs-12 col-sm-6"> 
                         <div class="content">
                             <a href="#" class="link">
-                                <img src="images/illustrations/campfire.png" class="banner-img img-responsive" alt=" ">
+                                <img src="/images/illustrations/campfire.png" class="banner-img img-responsive" alt=" ">
                             </a>
                             <div class="content-primary-text">
                                 <h3 class="headline">Every camp day is a good day</h3>
@@ -92,7 +92,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="#" class="link">
-                                    <img src="images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="/images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                         <div class="col-xs-12 col-md-8 pull-right">
                             <div class="content content-primary-img">
                                 <a href="#" class="link">
-                                    <img src="images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="/images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="#" class="link">
-                                    <img src="images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="/images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -208,7 +208,7 @@
                             </div>
                             <div class="content content-primary-img">
                                 <a href="#" class="link">
-                                    <img src="images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -220,13 +220,7 @@
         
     </main>
 
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/footer.php"); ?>
 
-    <script>
-        $(document).ready(function() {
-            vbyc.util.init();
-        });
-    </script>
 
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/foot.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?> 
     

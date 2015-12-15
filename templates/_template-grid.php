@@ -1,11 +1,13 @@
  <? 
-        $page = 'grid';
-        $body_classes = 'template-'.$page.' has-sticky-main-nav ';
-        $is_selecetd = 'selected';
+    $title = 'FPO title';
+    $page = 'fpo-page';
+    $template = 'grid';
+    $body_attributes = 'id="page-'.$page.'" class="template-'.$template.' has-sticky-main-nav "';
+    $description = 'FPO description';
+    $is_selecetd = 'selected';
 ?>
-    
-    <? include("_template-includes/head.php"); ?> 
-    <? include("_template-includes/header.php"); ?>  
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
 
     <main>
@@ -14,7 +16,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="images/template/hero-basic.jpg" alt=" ">
+                            <img src="/images/template/hero-basic.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -49,12 +51,12 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -62,12 +64,12 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         
@@ -76,12 +78,12 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1-lg.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -94,17 +96,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -112,17 +114,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         
@@ -131,17 +133,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -154,22 +156,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -177,22 +179,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -200,22 +202,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -229,22 +231,22 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-3">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -253,17 +255,17 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-2-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-2.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-3-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-3.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="images/template/grid-sample-1-lg.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" data-title="A title about this image" data-footer="Some more details about this image.">    
-                                <img src="images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
+                                <img src="/images/template/grid-sample-1.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                     </div><!-- /.row -->
@@ -279,13 +281,7 @@
         </section>
     </main>
 
-<? include("_template-includes/footer.php"); ?>
 
-    <script>
-        $(document).ready(function() {
-            vbyc.util.init();
-        });
-    </script>
 
-<? include("_template-includes/foot.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?> 
     
