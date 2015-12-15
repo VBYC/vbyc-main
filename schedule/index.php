@@ -1,18 +1,16 @@
  <? 
-    $title = 'FPO title';
-    $page = 'fpo-page';
+    $title = 'Schedule';
+    $page = 'schedule';
+    $section = 'sessions';
     $template = 'basic-with-side-nav';
-    $body_attributes = 'id="page-'.$page.'" class="template-'.$template.' has-sticky-main-nav has-sidenav "';
+    $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
-    $is_selecetd = 'selected';
+    $javascript_insert = 'vbyc.util.init({hasSidenav : true});';
 ?>
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/header.php"); ?> 
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/header-element.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
-
-
-
-    <main class="main-content-container" data-spy="scroll" data-target="#sidenav">
+    <main class="main-content/-container" data-spy="scroll" data-target="#sidenav">
         <section class="hero">
             <div class="hero-image-container">
                 <div class="row">
@@ -63,7 +61,7 @@
             <div class="container scroll-spy-container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
-                        <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/nav-side.php"); ?> 
+                        <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/nav-side.php"); ?> 
                     </div><!-- /column -->
 
                     <div class="col-xs-12 col-sm-8">
@@ -72,42 +70,42 @@
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="archery" class="item">                                    
                                     <h3 class="heading archery">Archery</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>
                                 </li>
                                 <li id="arts-and-crafts" class="item">
                                     <h3 class="heading arts-and-crafts">Arts &amp; Crafts</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                           
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                           
                                 </li>
                                 <li id="canoeing-and-kayaking" class="item">
                                     <h3 class="heading canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                         
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="low-ropes" class="item">
                                     <h3 class="heading low-ropes">Low Ropes</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                          
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                          
                                 </li>
                                 <li id="nature" class="item">
                                     <h3 class="heading nature">Nature</h3>  
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                         
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                         
                                 </li>
                             </ul>
                             <h2 class="heading-category">Category</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="rifelry" class="item">
                                     <h3 class="heading rifelry">Rifelry</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                         
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="song-and-dance" class="item">
                                     <h3 class="heading song-and-dance">Song &amp; Dance</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                        
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                        
                                 </li>
                                 <li id="sports" class="item">
                                     <h3 class="heading sports">Sports</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                          
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                          
                                 </li>
                                 <li id="swimming" class="item">
                                     <h3 class="heading swimming">Swimming</h3>
-                                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/classes-content.php"); ?>                         
+                                    <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                         
                                 </li>
                             </ul>
                         </article> 
@@ -117,15 +115,5 @@
         </section>
     </main>
 
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/footer.php"); ?>
 
-    <script>
-    $(document).ready(function() {
-        vbyc.util.init({
-            hasSidenav : true
-        });
-    });
-  </script>
-
-<? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/foot.php"); ?> 
-    
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/footer.php"); ?> 

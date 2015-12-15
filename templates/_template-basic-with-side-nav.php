@@ -2,13 +2,12 @@
     $title = 'FPO title';
     $page = 'fpo-page';
     $template = 'basic-with-side-nav';
-    $body_attributes = 'id="page-'.$page.'" class="template-'.$template.' has-sticky-main-nav has-sidenav "';
+    $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
     $is_selecetd = 'selected';
     $javascript_insert = 
     'vbyc.util.init({hasSidenav : true});';
-
-    
+ 
 ?>
 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
