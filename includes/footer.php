@@ -22,7 +22,7 @@
                     <div class="footer-content clearfix">
                         <address class="item">
                             Van Buren Youth Camp<br>
-                            <a href="https://goo.gl/maps/Gcjxd7cXYsK2" target="_blank">
+                            <a href="<?=$url_google_map?>" target="_blank">
                                 12370 45th St.<br>
                                 Bloomingdale, MI 49026<br>
                             </a>
@@ -33,13 +33,13 @@
                         </p>
                         <address class="item">
                             Email Us<br>
-                            <a href="mailto:hello@vbyc.org">hello@vbyc.org</a>
+                            <a href="mailto:<?=$url_email_main?>">hello@vbyc.org</a>
                         </address>
                         <p class="item">  
                             Connect With Us<br>
-                            <a href="https://www.facebook.com/VanBurenYouthCamp" target="_blank">Facebook</a><br>
-                            <a href="https://twitter.com/vbyc/" target="_blank">Twitter</a><br>
-                            <a href="https://www.instagram.com/vanburenyouthcamp/" target="_blank">Instagram</a> 
+                            <a href="<?=$url_facebook?>" target="_blank">Facebook</a><br>
+                            <a href="<?=$url_twitter?>" target="_blank">Twitter</a><br>
+                            <a href="<?=$url_instagram?>" target="_blank">Instagram</a> 
                         </p>
                     </div>
                 </div>
