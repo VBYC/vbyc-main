@@ -1,6 +1,7 @@
- <? 
-    $title = 'Facilities';
-    $page = 'facilities';
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
+<? 
+    $title = $title_facilities;
+    $page = $page_facilities;
     $section = 'camp-life';
     $template = 'basic-with-side-nav';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';

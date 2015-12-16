@@ -1,4 +1,5 @@
- <? 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
+<? 
     $title = 'XXX';
     $page = 'XXX';
     $section = 'XXX';

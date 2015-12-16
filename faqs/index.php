@@ -1,6 +1,7 @@
- <? 
-    $title = 'FAQs';
-    $page = 'faqs';
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
+<? 
+    $title = $title_faqs;
+    $page = $page_faqs;
     $section = 'XXX';
     $template = 'basic-with-side-nav';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';

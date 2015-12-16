@@ -11,6 +11,10 @@ hr {
 	border-top: 2px solid $color-red;
 	margin-top: 100px;
 	margin-bottom: 100px;
+	&.less-margin {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }
 
 .background-img-fluid {
