@@ -9474,32 +9474,37 @@ hr {
   background-size: 100% auto;
 }
 
-/* line 27, ../sass/partials/_graphic-elements.scss */
+/* line 31, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-right {
   margin-left: 30px;
 }
-/* line 30, ../sass/partials/_graphic-elements.scss */
+/* line 34, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-left {
   margin-right: 30px;
 }
-/* line 35, ../sass/partials/_graphic-elements.scss */
+/* line 39, ../sass/partials/_graphic-elements.scss */
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
   margin-top: 30px;
 }
-/* line 42, ../sass/partials/_graphic-elements.scss */
+/* line 46, ../sass/partials/_graphic-elements.scss */
 .figure-images .image-container {
   margin-top: 20px;
   background-color: #F7F7F7;
 }
 
-/* line 55, ../sass/partials/_graphic-elements.scss */
+/* line 54, ../sass/partials/_graphic-elements.scss */
+.template-basic-with-side-nav .figure-layout-1 .multi-image-column {
+  padding-left: 5px;
+}
+
+/* line 67, ../sass/partials/_graphic-elements.scss */
 .content-callout {
   background-color: #F7F7F7;
   padding: 16px 16px 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 65, ../sass/partials/_graphic-elements.scss */
+  /* line 77, ../sass/partials/_graphic-elements.scss */
   .img-responsive.img-fluid {
     max-width: auto;
     width: 100%;

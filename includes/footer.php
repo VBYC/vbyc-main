@@ -58,7 +58,7 @@
         <script src="/js/vendor/ekko-lightbox.js"></script>
         <script src="/js/main.js"></script>
 
-
+1
         <script>
             $(document).ready(function() {
                 <? if ($javascript_insert) {
@@ -68,7 +68,7 @@
                 } ?>
             });
         </script>
-
+2
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
                 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

@@ -22,6 +22,10 @@ hr {
     background-size: 100% auto;
 }
 
+
+
+
+
 // Figures
 .figure-images {
 	&.pull-right {
@@ -42,6 +46,14 @@ hr {
 	.image-container {
 		margin-top: 20px;
 		background-color: $color-gray-lighter;
+	}
+}
+
+.template-basic-with-side-nav {
+	.figure-layout-1 {
+		.multi-image-column {
+			padding-left: 5px;
+		}
 	}
 }
 

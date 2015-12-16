@@ -64,7 +64,7 @@
             <div class="container scroll-spy-container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
-                        <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/nav-side.php"); ?> 
+                        <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/nav-side-template.php"); ?> 
                     </div><!-- /column -->
 
                     <div class="col-xs-12 col-sm-8">
