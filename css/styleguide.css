@@ -9374,27 +9374,28 @@ h3,
   color: #E74C3C;
   font-family: "Roboto Slab", serif;
   font-size: 28px;
+  line-height: 1.4;
 }
 
-/* line 76, ../sass/partials/_typography.scss */
+/* line 77, ../sass/partials/_typography.scss */
 h4,
 .h4 {
   font-size: 20px;
 }
 
-/* line 80, ../sass/partials/_typography.scss */
+/* line 81, ../sass/partials/_typography.scss */
 h5,
 .h5 {
   font-size: 16px;
 }
 
-/* line 84, ../sass/partials/_typography.scss */
+/* line 85, ../sass/partials/_typography.scss */
 h6,
 .h6 {
   font-size: 14px;
 }
 
-/* line 89, ../sass/partials/_typography.scss */
+/* line 90, ../sass/partials/_typography.scss */
 h1 a, h1 .link-primary,
 .h1 a,
 .h1 .link-primary,
@@ -9402,7 +9403,7 @@ a.h1,
 .h1.link-primary {
   color: #0595E5;
 }
-/* line 93, ../sass/partials/_typography.scss */
+/* line 94, ../sass/partials/_typography.scss */
 h1 a:hover, h1 .link-primary:hover, h1 .sg-link-primary-hover .link-primary, .sg-link-primary-hover h1 .link-primary, h1 .sg-link-hover a, .sg-link-hover h1 a, h1 .sg-link-hover .link-primary, .sg-link-hover h1 .link-primary, h1 .sg-link-primary-hover .link-primary:hover, .sg-link-primary-hover h1 .link-primary:hover, h1 .sg-link-primary-focus .link-primary:hover, .sg-link-primary-focus h1 .link-primary:hover, h1 .sg-link-primary-focus .sg-link-primary-hover .link-primary, .sg-link-primary-focus .sg-link-primary-hover h1 .link-primary, h1 .sg-link-primary-hover .sg-link-primary-focus .link-primary, .sg-link-primary-hover .sg-link-primary-focus h1 .link-primary,
 .h1 a:hover,
 .h1 .link-primary:hover,
@@ -9420,27 +9421,32 @@ a.h1:hover,
   text-decoration: none;
 }
 
+/* line 98, ../sass/partials/_typography.scss */
+.nowrap {
+  white-space: nowrap;
+}
+
 @media (max-width: 767px) {
-  /* line 101, ../sass/partials/_typography.scss */
+  /* line 105, ../sass/partials/_typography.scss */
   h1,
   .h1 {
     font-size: 38.4px;
   }
 
-  /* line 105, ../sass/partials/_typography.scss */
+  /* line 109, ../sass/partials/_typography.scss */
   h2,
   .h2 {
     font-size: 27.2px;
   }
 
-  /* line 109, ../sass/partials/_typography.scss */
+  /* line 113, ../sass/partials/_typography.scss */
   h3,
   .h3,
   .modal-title {
     font-size: 22.4px;
   }
 
-  /* line 113, ../sass/partials/_typography.scss */
+  /* line 117, ../sass/partials/_typography.scss */
   h4,
   .h4 {
     font-size: 20px;
