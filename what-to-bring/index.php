@@ -74,7 +74,7 @@
 							    <dd class="list-definition">
 							        <ul class="list-styled list-no-indent">
 							            <li id="XXX" class="item">A fitted (twin size) bed sheet</li>
-							            <li id="XXX" class="item">A flat (twin size bed sheet</li>
+							            <li id="XXX" class="item">A flat (twin size) bed sheet</li>
 							            <li id="XXX" class="item">Pillow and pillowcase</li>
 							            <li id="XXX" class="item">Two or three warm blankets or a sleeping bag</li>
 							            <li id="XXX" class="item">Towels - beach, bath, hand</li>
