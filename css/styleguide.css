@@ -9467,50 +9467,55 @@ hr {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+/* line 14, ../sass/partials/_graphic-elements.scss */
+.divider-styled.less-margin {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-/* line 16, ../sass/partials/_graphic-elements.scss */
+/* line 20, ../sass/partials/_graphic-elements.scss */
 .background-img-fluid {
   background-size: 100% auto;
 }
 
-/* line 19, ../sass/partials/_graphic-elements.scss */
+/* line 23, ../sass/partials/_graphic-elements.scss */
 .hero-background-img {
   background-position: 50% 50%;
   background-repeat: repeat-y;
   background-size: 100% auto;
 }
 
-/* line 31, ../sass/partials/_graphic-elements.scss */
+/* line 35, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-right {
   margin-left: 30px;
 }
-/* line 34, ../sass/partials/_graphic-elements.scss */
+/* line 38, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-left {
   margin-right: 30px;
 }
-/* line 39, ../sass/partials/_graphic-elements.scss */
+/* line 43, ../sass/partials/_graphic-elements.scss */
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
   margin-top: 30px;
 }
-/* line 46, ../sass/partials/_graphic-elements.scss */
+/* line 50, ../sass/partials/_graphic-elements.scss */
 .figure-images .image-container {
   margin-top: 20px;
   background-color: #F7F7F7;
 }
 
-/* line 54, ../sass/partials/_graphic-elements.scss */
+/* line 58, ../sass/partials/_graphic-elements.scss */
 .template-basic-with-side-nav .figure-layout-1 .multi-image-column {
   padding-left: 5px;
 }
 
-/* line 67, ../sass/partials/_graphic-elements.scss */
+/* line 71, ../sass/partials/_graphic-elements.scss */
 .content-callout {
   background-color: #F7F7F7;
   padding: 16px 16px 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 77, ../sass/partials/_graphic-elements.scss */
+  /* line 81, ../sass/partials/_graphic-elements.scss */
   .img-responsive.img-fluid {
     max-width: auto;
     width: 100%;
@@ -10534,6 +10539,9 @@ img[src*=".svg"] .main-logo-container .ie9 {
     opacity: 0;
   }
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - WHAT TO BRING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VBYC CUSTOM STYLEGUIDE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

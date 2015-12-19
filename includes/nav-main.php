@@ -68,7 +68,8 @@
                                 </ul>
                             </li>
                             <li class="item <? check_if_selected('about',$section); ?>">
-                                <a href="/about/" class="link normal">About Us</a>
+                                <? $i = $url_about ?>
+                                <a href="/<?=$i?>/" class="link normal">About Us</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
                                         <? $i = $url_blog ?>
