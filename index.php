@@ -1,3 +1,4 @@
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
     $title = 'FPO title';
     $page = 'home';
