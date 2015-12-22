@@ -1,3 +1,4 @@
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
     $title = 'FPO title';
     $page = 'fpo-page';
@@ -7,8 +8,16 @@
 ?>
 <? 
     $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
-
     $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
+?>
+    
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
+<? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
+
+
+
+
+<? 
 
     $item_left = '
         <div class="row content-row">

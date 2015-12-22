@@ -43,7 +43,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    <p>Paragraph</p>
                                 </div> 
                                 <a href="#" class="hero-cta">Call to action</a>  
                             </div> 
@@ -56,6 +56,7 @@
             <div class="container"> 
                 <article class="main-article">
 
+                    <!-- START ZIG ZAG FIGURE -->
                     <? if ($show_content_hero_image) { ?>
                     <div class="row">
                         <figure class="figure-images figure-zig-zag">
@@ -77,6 +78,7 @@
                         </figure>
                     </div><!-- /.row -->
                     <? } ?>
+                    <!-- END ZIG ZAG FIGURE -->
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -93,12 +95,7 @@
                         </div>
                     </div><!-- /.row -->
 
-            
-
-
-
-
-
+                    <!-- START MULTI COLUMN OPTIONS -->
                     <!-- 2 columns -->
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -149,14 +146,7 @@
                         </div>
                     </div><!-- /.row -->
 
-
-
-
                     <hr class="divider-styled">
-
-                    
-
-                   
 
                     <div class="row">
                         <div class="col-xs-12">
@@ -183,10 +173,8 @@
                         </div>
                     </div><!-- /.row -->
 
-
                     <hr class="divider-styled">
         
-
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Callout text</h3>
@@ -198,6 +186,7 @@
                             </div>
                         </div>
                     </div><!-- /.row -->
+                    <!-- END MULTI COLUMN OPTIONS -->
 
 
                 </article> 
