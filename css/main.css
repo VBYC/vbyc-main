@@ -9386,37 +9386,42 @@ hr {
   background-size: 100% auto;
 }
 
-/* line 35, ../sass/partials/_graphic-elements.scss */
+/* line 29, ../sass/partials/_graphic-elements.scss */
+.img-full-width {
+  width: 100%;
+}
+
+/* line 39, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-right {
   margin-left: 30px;
 }
-/* line 38, ../sass/partials/_graphic-elements.scss */
+/* line 42, ../sass/partials/_graphic-elements.scss */
 .figure-images.pull-left {
   margin-right: 30px;
 }
-/* line 43, ../sass/partials/_graphic-elements.scss */
+/* line 47, ../sass/partials/_graphic-elements.scss */
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
   margin-top: 30px;
 }
-/* line 50, ../sass/partials/_graphic-elements.scss */
+/* line 54, ../sass/partials/_graphic-elements.scss */
 .figure-images .image-container {
   margin-top: 20px;
   background-color: #F7F7F7;
 }
 
-/* line 58, ../sass/partials/_graphic-elements.scss */
+/* line 62, ../sass/partials/_graphic-elements.scss */
 .template-basic-with-side-nav .figure-layout-1 .multi-image-column {
   padding-left: 5px;
 }
 
-/* line 71, ../sass/partials/_graphic-elements.scss */
+/* line 75, ../sass/partials/_graphic-elements.scss */
 .content-callout {
   background-color: #F7F7F7;
   padding: 16px 16px 10px;
 }
 
 @media (max-width: 767px) {
-  /* line 81, ../sass/partials/_graphic-elements.scss */
+  /* line 85, ../sass/partials/_graphic-elements.scss */
   .img-responsive.img-fluid {
     max-width: auto;
     width: 100%;
@@ -10166,6 +10171,26 @@ img[src*=".svg"] .main-logo-container .ie9 {
   /* line 70, ../sass/partials/_template-timeline.scss */
   .template-timeline .content-primary-img {
     margin-bottom: 30px;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - MAP OF CAMP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_page-map-of-camp.scss */
+#page-map-of-camp .footer {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 13, ../sass/partials/_page-map-of-camp.scss */
+  #page-map-of-camp main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  /* line 19, ../sass/partials/_page-map-of-camp.scss */
+  #page-map-of-camp .img-full-width {
+    width: 200%;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
