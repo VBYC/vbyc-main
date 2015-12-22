@@ -1,7 +1,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
     $title = $title_alumni;
-    $page = $page_alumni;
+    $page = $url_alumni;
     $section = 'alumni';
     $template = 'basic-with-side-nav';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';

@@ -10069,6 +10069,18 @@ img[src*=".svg"] .main-logo-container .ie9 {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MODALS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 11, ../sass/partials/_modals.scss */
+.modal-no-overflow .modal-dialog {
+  max-height: calc(100vh - 220px);
+}
+/* line 15, ../sass/partials/_modals.scss */
+.modal-no-overflow .modal-body {
+  overflow-y: auto;
+  max-height: calc(100vh - 220px);
+  padding: 0;
+  overflow: hidden;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VENDOR OVERRIDES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

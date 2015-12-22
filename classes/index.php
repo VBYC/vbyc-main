@@ -11,7 +11,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
- <main class="main-content/-container" data-spy="scroll" data-target="#sidenav">
+    <main class="main-content/-container" data-spy="scroll" data-target="#sidenav">
         <section class="hero">
             <div class="hero-image-container">
                 <div class="row">
