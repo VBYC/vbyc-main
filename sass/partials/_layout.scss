@@ -64,6 +64,12 @@
 }
 
 
+@media (max-width: $screen-xs-max) {
+	.has-sticky-main-nav {
+		padding-top: $main-nav-height-xs;
+	}	
+}
+
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 	.has-sticky-main-nav {
 		padding-top: $main-nav-height-sm;

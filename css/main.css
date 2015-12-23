@@ -9173,28 +9173,34 @@ button.close {
   margin-top: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 767px) {
   /* line 68, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
-    padding-top: 166px;
+    padding-top: 78px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 74, ../sass/partials/_layout.scss */
+  .has-sticky-main-nav {
+    padding-top: 152px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 74, ../sass/partials/_layout.scss */
+  /* line 80, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
-    padding-top: 107px;
+    padding-top: 88px;
   }
 
-  /* line 78, ../sass/partials/_layout.scss */
+  /* line 84, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
   }
 }
 @media (min-width: 1200px) {
-  /* line 86, ../sass/partials/_layout.scss */
+  /* line 92, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
-    padding-top: 107px;
+    padding-top: 88px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9432,81 +9438,89 @@ hr {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 5, ../sass/partials/_header.scss */
 .header-main {
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: white;
   z-index: 10;
   width: 100%;
   position: fixed;
   top: 0;
 }
-/* line 12, ../sass/partials/_header.scss */
+/* line 13, ../sass/partials/_header.scss */
 .header-main.affix {
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
 }
-
 /* line 16, ../sass/partials/_header.scss */
-.main-logo-container {
-  margin-bottom: 25px;
+.header-main .navbar-list {
+  margin-bottom: 0;
 }
-/* line 18, ../sass/partials/_header.scss */
+
+/* line 21, ../sass/partials/_header.scss */
 img[src*=".svg"] .main-logo-container .ie9 {
   width: 100%;
 }
 
-/* line 22, ../sass/partials/_header.scss */
+/* line 25, ../sass/partials/_header.scss */
 .main-logo {
   display: inline-block;
   float: left;
 }
 
-/* line 26, ../sass/partials/_header.scss */
+/* line 29, ../sass/partials/_header.scss */
 .main-logo-icon {
   display: none;
 }
 
-/* line 30, ../sass/partials/_header.scss */
+/* line 33, ../sass/partials/_header.scss */
 .ie9 img[src*=".svg"] {
   width: 100%;
 }
 
 /* 2 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* line 35, ../sass/partials/_header.scss */
+  /* line 38, ../sass/partials/_header.scss */
   .main-logo-container {
     margin-bottom: 25px;
   }
-  /* line 37, ../sass/partials/_header.scss */
+  /* line 40, ../sass/partials/_header.scss */
   img[src*=".svg"] .main-logo-container .ie9 {
     width: 100%;
   }
 }
 @media (max-width: 300px) {
-  /* line 45, ../sass/partials/_header.scss */
+  /* line 48, ../sass/partials/_header.scss */
   .main-logo-icon {
     display: inline-block;
   }
 
-  /* line 48, ../sass/partials/_header.scss */
+  /* line 51, ../sass/partials/_header.scss */
   .main-logo-normal {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  /* line 67, ../sass/partials/_header.scss */
+  .header-main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-height: 78px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 60, ../sass/partials/_header.scss */
+  /* line 76, ../sass/partials/_header.scss */
   .header-main {
     padding-bottom: 20px;
   }
 
-  /* line 63, ../sass/partials/_header.scss */
+  /* line 79, ../sass/partials/_header.scss */
+  .main-logo-container {
+    margin-bottom: 15px;
+  }
+
+  /* line 82, ../sass/partials/_header.scss */
   .main-logo {
     float: none;
-  }
-}
-@media (min-width: 992px) {
-  /* line 68, ../sass/partials/_header.scss */
-  .header-main {
-    padding-bottom: 10px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9820,11 +9834,6 @@ img[src*=".svg"] .main-logo-container .ie9 {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     SIDE NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 5, ../sass/partials/_nav-side.scss */
-.has-sticky-main-nav {
-  padding-top: 88px;
-}
-
 /* line 10, ../sass/partials/_nav-side.scss */
 .main-content.has-sidenav {
   margin-top: 0;
@@ -9865,21 +9874,21 @@ img[src*=".svg"] .main-logo-container .ie9 {
   /* line 51, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 227px;
-    top: 166px;
+    top: 152px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 62, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 219.9999px;
-    top: 107px;
+    top: 88px;
   }
 }
 @media (min-width: 1200px) {
   /* line 73, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 270px;
-    top: 107px;
+    top: 88px;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

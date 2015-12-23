@@ -3,7 +3,8 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .header-main {
-	padding-top: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	background-color: rgba(255,255,255,1);
 	z-index: 10;
 	width: 100%;
@@ -12,9 +13,11 @@
 	&.affix {
 		@include box-shadow(0 0 7px 0 rgba(0, 0, 0, 0.3)); 
 	}
+	.navbar-list {
+		margin-bottom: 0;
+	}
 }
 .main-logo-container {
-	margin-bottom: 25px;
 	img[src*=".svg"] & .ie9 {
 		width: 100%; 
 	}
@@ -56,9 +59,25 @@
 		}
 	}	
 }
+
+
+
+
+@media (max-width: $screen-xs-max) {
+	.header-main {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		min-height: $main-nav-height-xs;
+	}
+	
+}
+
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 	.header-main {
 		padding-bottom: 20px;
+	}
+	.main-logo-container {
+		margin-bottom: 15px;
 	}
 	.main-logo {
 		float: none;
@@ -66,7 +85,7 @@
 }
 @media (min-width: $screen-md-min) {
 	.header-main {
-		padding-bottom: 10px;
+//		padding-bottom: 10px;
 	}
 }
 
