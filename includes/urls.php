@@ -5,9 +5,6 @@
 $title_about = 'About';
 $url_about = 'about';
 
-$title_accredidations = 'Accredidations';
-$url_accredidations = 'accredidations';
-
 $title_activities = 'Activities';
 $url_activities = 'activities';
 
@@ -77,3 +74,21 @@ $url_email_main = 'hello@vbyc.org';
 
 
 ?>
+
+<? /*
+    Campminder URLs:
+
+    Login Page:https://vanburen.campintouch.com/v2/login.aspx
+Camper Application:https://vanburen.campintouch.com/ui/forms/application/camper/App
+Dates and Rates:https://vanburen.campintouch.com/ui/unrestricted/pricing/DatesAndRates
+Alumni Registration:https://vanburen.campintouch.com/v2/alumni/register.aspx
+Alumni Login:https://vanburen.campintouch.com/v2/login.aspx?cx=a
+Information Request:https://vanburen.campintouch.com/v2/family/inquiryForm.aspx
+Referral Form:https://vanburen.campintouch.com/ui/forms/client/referral/Form
+Staff Application:https://vanburen.campintouch.com/ui/forms/application/staff/App
+Staff App Reference Form:https://vanburen.campintouch.com/ui/forms/reference/staff/Form?tkn=QVFBTHZycGlTN0lZWndTL1QwclNHdUlySDBmZko2L1N2eTBuRm9QVmpGSEc4dDF0Z2JFclhleUw4aUhOUW0zbFc5MTBOR293N2VNakMxbG02SWQ0L25NeExVNmo4RkNGYkZ0V3hCelI0WGsrUEZ2TStXbEZjU2NLMjFJMDhRck9XQjA9
+
+
+
+*/ ?>
+

@@ -83,12 +83,6 @@
                                             Who's in Charge?
                                         </a>
                                      </li>
-                                     <li class="item-sub">
-                                        <? $i = $url_accredidations ?>
-                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Accredidations
-                                        </a>
-                                     </li>
                                 </ul>
                             </li>
                             <li class="item <? check_if_selected('alumni',$section); ?>">
