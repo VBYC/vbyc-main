@@ -13,7 +13,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
 
-    <main class="text-center"> 
+    <main id="post-hero" class="text-center"> 
         <!-- NEWS FEED -->
         <section class="news-feed">
             <div class="row">

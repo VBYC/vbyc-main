@@ -9993,13 +9993,35 @@ img[src*=".svg"] .main-logo-container .ie9 {
   padding-bottom: 40px;
 }
 
+/* line 37, ../sass/partials/_hero.scss */
+.hero-scroll-cta {
+  text-align: center;
+}
+/* line 39, ../sass/partials/_hero.scss */
+.hero-scroll-cta .link {
+  margin: 10px auto -10px;
+  padding: 0 30px 0 25px;
+  background-color: #FFF;
+  border-radius: 17px;
+  color: #0595E5;
+  font-size: 14px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  display: inline-block;
+}
+/* line 51, ../sass/partials/_hero.scss */
+.hero-scroll-cta .glyphicon {
+  margin-right: 5px;
+}
+
 @media (min-width: 1440px) {
-  /* line 41, ../sass/partials/_hero.scss */
+  /* line 61, ../sass/partials/_hero.scss */
   .hero .hero-image {
     max-height: 500px;
     overflow: hidden;
   }
-  /* line 44, ../sass/partials/_hero.scss */
+  /* line 64, ../sass/partials/_hero.scss */
   .hero .hero-image img {
     width: 100%;
   }
@@ -10197,7 +10219,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
     overflow-y: hidden;
     width: 100%;
   }
-  /* line 19, ../sass/partials/_page-map-of-camp.scss */
+  /* line 18, ../sass/partials/_page-map-of-camp.scss */
   #page-map-of-camp .img-full-width {
     width: 150%;
   }

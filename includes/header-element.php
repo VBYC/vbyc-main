@@ -32,6 +32,9 @@
                             <span class="group-4">&amp; ourselves.</span>
                         </h1>
                     </div>
+                    <div class="hero-scroll-cta">
+                        <a href="#post-hero" class="link scroll-to"><span class="glyphicon glyphicon-menu-down"></span> Scroll</a>
+                    </div>
                 </div>
             </div>
 <? } ?>

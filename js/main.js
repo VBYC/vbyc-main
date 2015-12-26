@@ -29,7 +29,7 @@
 			// Set up side nav with anchor links
 			if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
-				vbyc.util.sidebarScrollTo();
+				vbyc.util.sidebarScrollSpyScrollTo();
 			}
 
 			// Set up lightbox
@@ -47,6 +47,9 @@
 
 
 	        vbyc.util.newsFeed();  
+
+	        // Set up generic scroll-to link
+	        vbyc.util.scrollToLink();
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -181,7 +184,7 @@
 			});
 
 		},
-		sidebarScrollTo: function() {
+		sidebarScrollSpyScrollTo: function() {
 			
 			var parent = sideNav;
 			var sidenavContainer 			= '#sidenav-container';
@@ -200,6 +203,22 @@
 	            var target = this.hash;
 	            var $target = $(target);
 	            var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset)
+
+	            $('html, body').stop().animate({
+	                'scrollTop': scrollToCoordinate
+	            }, 500, 'swing', function () {
+	                window.location.hash = target;
+	            });
+	        });
+		},
+		scrollToLink: function() {
+
+			// Set up scroll
+	        $('a[href^="#"].scroll-to').on('click',function (e) {
+	            e.preventDefault();
+	            var target = this.hash;
+	            var $target = $(target);
+	            var scrollToCoordinate = $target.offset().top;
 
 	            $('html, body').stop().animate({
 	                'scrollTop': scrollToCoordinate
