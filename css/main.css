@@ -10133,6 +10133,9 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MAPS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VENDOR OVERRIDES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/vendor-overrides/_ekko-lightbox.scss */
@@ -10220,23 +10223,38 @@ img[src*=".svg"] .main-logo-container .ie9 {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - MAP OF CAMP
+    PAGE - CONTACT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, ../sass/partials/_page-map-of-camp.scss */
-#page-map-of-camp .footer {
-  margin-top: 0;
+/* line 6, ../sass/partials/_page-contact.scss */
+#page-contact .main-article {
+  margin: 50px auto;
+  display: inline-block;
+}
+/* line 10, ../sass/partials/_page-contact.scss */
+#page-contact .col {
+  display: inline-block;
+  float: left;
+  text-align: left;
+}
+/* line 14, ../sass/partials/_page-contact.scss */
+#page-contact .col:not(:last-child) {
+  margin-right: 50px;
 }
 
-@media (max-width: 767px) {
-  /* line 13, ../sass/partials/_page-map-of-camp.scss */
-  #page-map-of-camp main {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 25, ../sass/partials/_page-contact.scss */
+  #page-contact .container {
+    text-align: center;
   }
-  /* line 18, ../sass/partials/_page-map-of-camp.scss */
-  #page-map-of-camp .img-full-width {
-    width: 150%;
+  /* line 28, ../sass/partials/_page-contact.scss */
+  #page-contact .group-2 {
+    clear: both;
+  }
+}
+@media (max-width: 767px) {
+  /* line 36, ../sass/partials/_page-contact.scss */
+  #page-contact .col {
+    clear: both;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -10521,6 +10539,26 @@ img[src*=".svg"] .main-logo-container .ie9 {
   }
   100% {
     opacity: 0;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - MAP OF CAMP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, ../sass/partials/_page-map-of-camp.scss */
+#page-map-of-camp .footer {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 13, ../sass/partials/_page-map-of-camp.scss */
+  #page-map-of-camp main {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  /* line 18, ../sass/partials/_page-map-of-camp.scss */
+  #page-map-of-camp .img-full-width {
+    width: 150%;
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

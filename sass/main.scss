@@ -48,14 +48,16 @@
 @import "partials/hero";
 @import "partials/news-feed";
 @import "partials/modals";
+@import "partials/maps";
 @import "partials/vendor-overrides/_ekko-lightbox";
 
 // TEMPLATES
 @import "partials/template-timeline";
 
 // PAGES
-@import "partials/page-map-of-camp";
+@import "partials/page-contact";
 @import "partials/page-home";
+@import "partials/page-map-of-camp";
 @import "partials/page-what-to-bring";
 
 

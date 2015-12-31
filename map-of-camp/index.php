@@ -13,8 +13,6 @@
 
 <main>   
     <img src="/images/pages/map-of-camp/map-of-camp.jpg" class="img-full-width" alt=" ">
-   
-
 </main>
  
 
