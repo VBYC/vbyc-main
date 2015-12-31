@@ -24,7 +24,7 @@ $title_donate = 'Donate';
 $url_donate = 'donate';
 
 $title_employment = 'Employment';
-$url_employment = 'employment';
+$url_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
 
 $title_facilities = 'Facilities';
 $url_facilities = 'facilities';

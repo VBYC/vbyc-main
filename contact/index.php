@@ -8,6 +8,7 @@
     $description = 'FPO description';
     // $javascript_insert = '';
 ?>
+
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
