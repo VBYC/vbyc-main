@@ -42,10 +42,8 @@
 			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
 
-
 			// vbyc.util.resetImages();
 	  //       vbyc.util.nextImage(); 
-
 
 	        vbyc.util.newsFeed();  
 
@@ -57,10 +55,7 @@
 			if (customValues.hasSidenav) {
 				hasSidenav = customValues.hasSidenav ;
 			}
-
-
 		},
-
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			// Click the hamburger and expand the main nav
 			$( ".navbar-toggle" ).on( "click", function() {
@@ -68,7 +63,6 @@
 				$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
 			});
 		},
-
 		initNavbar: function(subNavSelector,navbarSiblingsSelector) {
 			// Main nav
 			$( ".navbar-list .link" ).on( "click", function() {
@@ -110,12 +104,8 @@
 			});
 		},
 
-
-
-
-
 		initNavbarArrowColor: function(subNavSelector) {
-
+			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
 			var target = '.link-sub:first';
 
 			$(target,subNavSelector)
@@ -125,9 +115,6 @@
 				.on( "mouseleave", function() {
 					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
 			});
-
-
-			
 		},
 		initNavbarSticky: function() {
 			$(headerRow).affix({
@@ -169,13 +156,26 @@
 	        $( "img:last",container).fadeOut(speedFade);
 	    },
 	    newsFeed: function() {
+	        var parent = $('.news-feed');
 	        var target = $('.news-feed-list');
-            function showNextItem(){
-                $('li:first',target).slideUp( function () { 
-                    $(this).appendTo($(target)).slideDown(); 
-                });
-            }
-            setInterval(function(){ showNextItem () }, 3000);
+	        var timer;
+
+			function startTimer() {
+			    timer = setInterval(function () {
+			        $('li:first',target).slideUp( function () { 
+	                    $(this).appendTo($(target)).slideDown(); 
+	                });
+			    }, 4000);
+			}
+
+			// Start or stop animation if hover over link
+			$(parent).hover(function (event) {
+			    clearInterval(timer);
+			}, function (event) {
+			    startTimer();
+			});
+
+			startTimer();
 	    },
 		sidebarScrollSpy: function() {
 			var sidenavContainer 			= '#sidenav-container';
