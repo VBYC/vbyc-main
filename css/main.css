@@ -9808,7 +9808,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   }
   /* line 93, ../sass/partials/_nav-main-lg.scss */
   .navbar-list-sub:before {
-    top: 10px;
+    top: 11px;
   }
   /* line 103, ../sass/partials/_nav-main-lg.scss */
   .navbar-list-sub .item-sub:first-child .link-sub {

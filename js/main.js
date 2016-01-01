@@ -121,11 +121,9 @@
 			$(target,subNavSelector)
 				.on( "mouseenter", function() {
 					$(this).parents(subNavSelector).addClass('alt-arrow-emphasize');
-					console.log('enter');
 				})
 				.on( "mouseleave", function() {
 					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
-					console.log('leave');
 			});
 
 
