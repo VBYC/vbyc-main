@@ -24,6 +24,7 @@
 			// Set up main nav
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
+			vbyc.util.initNavbarArrowColor(subNavSelector);
 			vbyc.util.initNavbarSticky();
 
 			// Set up side nav with anchor links
@@ -107,6 +108,28 @@
 					}
 				}
 			});
+		},
+
+
+
+
+
+		initNavbarArrowColor: function(subNavSelector) {
+
+			var target = '.link-sub:first';
+
+			$(target,subNavSelector)
+				.on( "mouseenter", function() {
+					$(this).parents(subNavSelector).addClass('alt-arrow-emphasize');
+					console.log('enter');
+				})
+				.on( "mouseleave", function() {
+					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
+					console.log('leave');
+			});
+
+
+			
 		},
 		initNavbarSticky: function() {
 			$(headerRow).affix({
