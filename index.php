@@ -22,7 +22,7 @@
                         <div class="content-inner">
                             <h5 class="headline"><a href="#" class="link-reverse " title="Read all news stories">News</a> ///</h5>
                             <ul class="news-feed-list list-unstyled">
-                                <li class="item"><a href="/news-schedule-2016/" class="link">2016 schedule is out!</a></li>
+                                <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
                                 <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
                             </ul>
                         </div>
@@ -39,7 +39,7 @@
                     <!-- SESSIONS -->
                     <div class="col-xs-12 col-sm-6">
                         <div class="content">
-                            <a href="<?=$url_schedule?>" class="link">
+                            <a href="/<?=$url_schedule?>/" class="link">
 <!--                                 <img src="/images/illustrations/calendar.svg" class="banner-img img-responsive" alt=" ">
  -->                                <img src="/images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
                             </a>
@@ -50,7 +50,7 @@
                                         <p>Choose the session that suits your family. Whether your camper is six years old and hesitant to leave the nest, or fifteen and ready to fly the coop, we have a camp experience thoughtfully designed to help them take flight.</p>
                                     </div>
                                 </div>
-                                <a href="<?=$url_schedule?>" class="link">
+                                <a href="/<?=$url_schedule?>/" class="link">
                                     View Schedule
                                 </a>
                             </div>

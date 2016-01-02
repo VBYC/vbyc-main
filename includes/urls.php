@@ -38,6 +38,9 @@ $url_financial_aid = 'financial-aid';
 $title_map_of_camp = 'Map of Camp';
 $url_map_of_camp = 'map-of-camp';
 
+$title_news_amazon = 'Donate to VBYC through your Amazon purchases';
+$url_news_amazon = 'news-amazon';
+
 $title_preparing_for_camp = 'Preparing for Camp';
 $url_preparing_for_camp = 'preparing-for-camp';
 
