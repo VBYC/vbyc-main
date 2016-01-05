@@ -85,7 +85,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/template/timeline.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/polar-bears.jpg" class="timeline-img img-responsive" alt=" ">
                                     </a>
                                 </div>
                             </div>

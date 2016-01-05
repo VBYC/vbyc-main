@@ -3,7 +3,7 @@
     $title = $title_preparing_for_camp;
     $page = $url_preparing_for_camp;
     $section = 'sessions';
-    $template = 'basic-with-side-nav';
+    $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
     // $javascript_insert = '';

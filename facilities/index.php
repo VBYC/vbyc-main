@@ -3,7 +3,7 @@
     $title = $title_facilities;
     $page = $url_facilities;
     $section = 'camp-life';
-    $template = 'basic-with-side-nav';
+    $template = 'grid';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav modal-no-overflow"';
     $description = 'FPO description';
     // $javascript_insert = '';
