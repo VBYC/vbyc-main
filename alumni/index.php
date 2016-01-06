@@ -148,7 +148,7 @@
                         <div class="col-xs-12">
                             <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
                             <div>
-                                <div style="-webkit-columns:300px;  margin-bottom: 50px"> 
+                                <div class="columns-reflow-fixed-3" style="  margin-bottom: 50px"> 
                                     <p>
                                         <?=$lorem?>
                                         <?=$lorem2?>

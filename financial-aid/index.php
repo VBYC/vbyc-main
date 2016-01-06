@@ -17,15 +17,6 @@
 
     <main>    
         <section class="hero">
-            <div class="hero-image-container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="hero-image">
-                            <img src="/images/template/hero-basic.jpg" alt=" ">
-                        </div>
-                    </div>
-                </div><!-- /.row -->
-            </div>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
@@ -36,13 +27,14 @@
                             </div>
                         </div>         
                     </div><!-- /.row -->
-                    <div class="row">
+                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Paragraph</p>
+                                    <p>Thanks to donations from the community, businesses, 
+                                    and individuals, we are able to offer financial aid
+                                    to campers in need.</p>
                                 </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
                             </div> 
                         </div>         
                     </div><!-- /.row -->
@@ -53,137 +45,49 @@
             <div class="container"> 
                 <article class="main-article">
 
-                    <!-- START ZIG ZAG FIGURE -->
-                    <? if ($show_content_hero_image) { ?>
-                    <div class="row">
-                        <figure class="figure-images figure-zig-zag">
-                            <!-- 1 column -->
-                            <div class="row figure-row">
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div>         
-                            </div><!-- /.row -->
-                        </figure>
-                    </div><!-- /.row -->
-                    <? } ?>
-                    <!-- END ZIG ZAG FIGURE -->
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
+                            <h3 class="heading">How to apply</h3>
                             <div>
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <!-- START MULTI COLUMN OPTIONS -->
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
-                            <div>
-                                <div style="-webkit-columns:300px;  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <dl>
-                                            <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/basic-template-content-1.php"); ?> 
-                                        </dl>
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-        
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
+                                <ol>
+                                  <li>Parents/guardians must write a letter that includes:
+                                    <br>
+                                    <br>
+                                    <ul>
+                                      <li>Why assistance is needed</li>
+                                      <li><a href="/<?=$url_schedule?>/">Session name</a> </li>
+                                      <li>How much of the camp tuition your family can contribute:
+                                        <ul>
+                                            <li>85%</li>
+                                            <li>75%</li>
+                                            <li>50%</li>
+                                            <li>25%<br>
+                                              <br>
+                                              <em>*Funds are limited. Please pay as much as you can so we can serve as many children as possible</em>.<br>  
+                                              <br>
+                                            </li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li>The child must <strong>write a letter</strong>  about why they want to come to camp.<br>
+                                    <br>
+                                  Mail letters to:<br>
+                                  Van Buren Youth Camp<br>
+                                    12370 45th St.<br>
+                                    Bloomingdale, MI 49026<br>
+                                  </li>
+                                </ol>
+                                <p>Parents/guardians will be notified by mail if financial aid is awarded.</p>
+                                <p> Funds are limited and are usually depleted by mid-summer so apply early!<br>
+                                 
                                 </p>
                             </div>
                         </div>
                     </div><!-- /.row -->
-                    <!-- END MULTI COLUMN OPTIONS -->
+
+                    
 
 
                 </article> 
