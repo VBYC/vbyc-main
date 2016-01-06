@@ -9141,64 +9141,74 @@ button.close {
   padding-right: 0;
 }
 
-/* line 28, ../sass/partials/_layout.scss */
+/* line 21, ../sass/partials/_layout.scss */
+.columns-reflow-fixed-3 {
+  -webkit-columns: 300px;
+  -moz-columns: 300px;
+  columns: 300px;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+}
+
+/* line 31, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/* line 38, ../sass/partials/_layout.scss */
+/* line 41, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details > .item .heading {
   margin-top: 0;
 }
-/* line 42, ../sass/partials/_layout.scss */
+/* line 45, ../sass/partials/_layout.scss */
 .content-list.list-multiple-details .description {
   margin-top: 30px;
 }
-/* line 48, ../sass/partials/_layout.scss */
+/* line 51, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 51, ../sass/partials/_layout.scss */
+/* line 54, ../sass/partials/_layout.scss */
 .content-list.list-single-details > .item {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 55, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .content-list.list-single-details .description {
   margin-top: 15px;
 }
-/* line 58, ../sass/partials/_layout.scss */
+/* line 61, ../sass/partials/_layout.scss */
 .content-list.list-single-details .img-item {
   margin-top: 15px;
 }
 
 @media (max-width: 767px) {
-  /* line 68, ../sass/partials/_layout.scss */
+  /* line 71, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
     padding-top: 78px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 74, ../sass/partials/_layout.scss */
+  /* line 77, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
     padding-top: 152px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 80, ../sass/partials/_layout.scss */
+  /* line 83, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
     padding-top: 88px;
   }
 
-  /* line 84, ../sass/partials/_layout.scss */
+  /* line 87, ../sass/partials/_layout.scss */
   .figure-images .row-main {
     max-height: 330px;
     overflow: hidden;
   }
 }
 @media (min-width: 1200px) {
-  /* line 92, ../sass/partials/_layout.scss */
+  /* line 95, ../sass/partials/_layout.scss */
   .has-sticky-main-nav {
     padding-top: 88px;
   }

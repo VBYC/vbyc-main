@@ -18,7 +18,10 @@
 	}
 }
 
-
+.columns-reflow-fixed-3 {
+	@include column-width(300px);
+	@include column-gap(50px);
+}
 
 // Content List
 .content-list {
