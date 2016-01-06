@@ -71,12 +71,14 @@
                                 <? $i = $url_about ?>
                                 <a href="/<?=$i?>/" class="link normal">About Us</a>
                                 <ul class="navbar-list-sub list-unstyled">
+                                    <? /*
                                      <li class="item-sub">
-                                        <? $i = $url_blog ?>
+                                        <? $i = $url_news ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
                                             News
                                         </a>
                                      </li>
+                                     */ ?>
                                      <li class="item-sub">
                                         <? $i = $url_whos_in_charge ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">

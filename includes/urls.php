@@ -32,7 +32,7 @@ $url_facilities = 'facilities';
 $title_faqs = 'FAQs';
 $url_faqs = 'faqs';
 
-$title_financial_aid = 'financial aid';
+$title_financial_aid = 'Financial Aid';
 $url_financial_aid = 'financial-aid';
 
 $title_meet_the_director = 'Meet the Director';
@@ -40,6 +40,9 @@ $url_meet_the_director = 'meet-the-director';
 
 $title_map_of_camp = 'Map of Camp';
 $url_map_of_camp = 'map-of-camp';
+
+$title_news = 'News';
+$url_news = 'news';
 
 $title_news_amazon = 'Donate to VBYC through your Amazon purchases';
 $url_news_amazon = 'news-amazon';
