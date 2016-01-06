@@ -83,6 +83,12 @@
                                             Who's in Charge?
                                         </a>
                                      </li>
+                                     <li class="item-sub">
+                                        <? $i = $url_meet_the_director ?>
+                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
+                                            Meet the Director
+                                        </a>
+                                     </li>
                                 </ul>
                             </li>
                             <li class="item <? check_if_selected('alumni',$section); ?>">

@@ -35,6 +35,9 @@ $url_faqs = 'faqs';
 $title_financial_aid = 'financial aid';
 $url_financial_aid = 'financial-aid';
 
+$title_meet_the_director = 'Meet the Director';
+$url_meet_the_director = 'meet-the-director';
+
 $title_map_of_camp = 'Map of Camp';
 $url_map_of_camp = 'map-of-camp';
 
