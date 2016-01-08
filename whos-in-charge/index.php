@@ -36,16 +36,6 @@
                             </div>
                         </div>         
                     </div><!-- /.row -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="hero-text">
-                                <div class="description">
-                                    <p>Paragraph</p>
-                                </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
-                            </div> 
-                        </div>         
-                    </div><!-- /.row -->
                 </div>
             </div>
         </section>
@@ -53,137 +43,91 @@
             <div class="container"> 
                 <article class="main-article">
 
-                    <!-- START ZIG ZAG FIGURE -->
-                    <? if ($show_content_hero_image) { ?>
-                    <div class="row">
-                        <figure class="figure-images figure-zig-zag">
-                            <!-- 1 column -->
-                            <div class="row figure-row">
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div>         
-                            </div><!-- /.row -->
-                        </figure>
-                    </div><!-- /.row -->
-                    <? } ?>
-                    <!-- END ZIG ZAG FIGURE -->
+               
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
+                            <h3 class="heading">Board of Directors</h3>
                             <div>
                                 <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
-                                </p>
+                                  Elected by the supporters of Van Buren Youth Camp. Their role is 
+                                  to serve as the decision making body of the camp. They hire the 
+                                  Camp Directors and actively supervise the general operation of the 
+                                  Camp.
+                                  </p>
+                                  <p>They also generate funds for the camp by sponsoring projects 
+                                  and fundraiser's which generate money.</p>
+                                <p>These funds 
+                                  are used to make physical improvements to the camp facilities and to help 
+                                  with major undertakings, such as land acquisition. </p>
                             </div>
-                        </div>
-                    </div><!-- /.row -->
 
-                    <!-- START MULTI COLUMN OPTIONS -->
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
+                            <h3 class="heading">Directors</h3>
                             <div>
-                                <div class="columns-reflow-fixed-3" style="  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <dl>
-                                            <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/basic-template-content-1.php"); ?> 
-                                        </dl>
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
+                                <p>
+                                  Hired by the Board of Directors, this person oversees the year round 
+                                  running of camp, including our rental facilities, directs marketing, 
+                                  finance and camper enrollment. 
 
-                    <hr class="divider-styled">
+                                  </p>
+                                  <p>They must meet all <a href="http://acacamps.org/" target="_blank">American 
+                                  Camping Association</a> Director requirements. </p>
+
+                                  <p><a href="<?=$url_meet_the_director?>">Meet the director</a>.</p>
+
+                            </div>
+                            
+
+                            
+                            <h3 class="heading">Staff</h3>
+                            <div>
+                                <p>
+                                  Hired by the Director, these persons run the 
+                                  daily program. They are often former VBYC
+                                  counselors and receive a week of training as a staff In Training 
+                                  (SIT) where they work alongside the current staff. Once hired, they 
+                                  receive 2-3 weekend training session then a full week of training 
+                                  prior to the summer.</p>
+                                  <p>Staff members with specialized classes receive 
+                                  training in their prospective area (i.e. Water Safety Instructor, 
+                                  Lifeguard Certification, Low Ropes, Archery and Riflery.) Other 
+                                  than kitchen staff, they are at least 18 years of age and are generally 
+                                  college students. Each staff member teaches a class three times 
+                                  a day. </p>
+                                  <p>They are present for and oversee all camper activities. These 
+                                  people who love being around kids, are loaded with enthusiasm, compassion, 
+                                  endurance and are recreation specialists!</p>
+                            </div>
+                            
+                            <h3 class="heading">Volunteer Coordinator</h3>
+                            <div>
+                                <p>
+                                  This is a staff member who recruits, trains and provides support 
+                                  to our counselors. They are experienced staff members and 
+                                  are an expert counselor them self. They are also an expert problem 
+                                  solver and trouble shooter. They meet with the counselors daily. 
+                                  They also provide a half day training and orientation on the counselor's 
+                                  first day.</p>
+                            </div>
+                            
+                            <h3 class="heading">Counselors</h3>
+                            <div>
+                                <p>
+                                  These person's sole responsibility is to their kids safety and
+                                    fun.  They are selected from our Leadership Workshop which is
+                                    the first  week of every summer. Or they have equivalent experience.
+                                    They are  screened through personal interviews, performance at
+                                    the Leadership  Workshop, previous counseling experience, personal
+                                    references and  their application.</p>
+                                <p>Each counselor is in charge of a cabin of eight campers 
+                                  of their gender. They are with their campers at classes, meals, 
+                                  sleeping in the cabin, planning sessions. They foster unity, trust 
+                                  and friendship and responsibility in their cabin. They are ages 
+                                  15 on up. </p>
         
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
                             </div>
                         </div>
                     </div><!-- /.row -->
-                    <!-- END MULTI COLUMN OPTIONS -->
 
 
                 </article> 
