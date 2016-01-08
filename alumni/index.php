@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/template/hero-basic.jpg" alt=" ">
+                            <img src="/images/heros/alumni.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -35,16 +35,7 @@
                             </div>
                         </div>         
                     </div><!-- /.row -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="hero-text">
-                                <div class="description">
-                                    <p>Paragraph</p>
-                                </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
-                            </div> 
-                        </div>         
-                    </div><!-- /.row -->
+                   
                 </div>
             </div>
         </section>
@@ -55,135 +46,53 @@
                     <!-- START ZIG ZAG FIGURE -->
                     <? if ($show_content_hero_image) { ?>
                     <div class="row">
-                        <figure class="figure-images figure-zig-zag">
-                            <!-- 1 column -->
-                            <div class="row figure-row">
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div>         
-                            </div><!-- /.row -->
-                        </figure>
+                        <!-- 1 column -->
+                        <div class="row figure-row">
+                            <div class="col-sm-2 img-container">
+                                <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                            </div> 
+                            <div class="col-sm-4 img-container">
+                                <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                            </div> 
+                            <div class="col-sm-4 img-container">
+                                <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                            </div> 
+                            <div class="col-sm-2 img-container">
+                                <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
+                            </div>         
+                        </div><!-- /.row -->
                     </div><!-- /.row -->
                     <? } ?>
                     <!-- END ZIG ZAG FIGURE -->
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
+                            <h3 class="heading">Stay in touch and stay involved</h3>
                             <div>
                                 <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
+                                    There are lots of ways you can stay involved with camp. <a href="<?=$url_alumni_login?>" target="_blank">Sign up on our registry</a> to get notices of reunions, fundraisers, and volunteer opportunities.
                                 </p>
                             </div>
-                        </div>
-                    </div><!-- /.row -->
 
-                    <!-- START MULTI COLUMN OPTIONS -->
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
+                            <h3 class="heading">Support VBYC</h3>
                             <div>
-                                <div class="columns-reflow-fixed-3" style="  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <dl>
-                                            <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/basic-template-content-1.php"); ?> 
-                                        </dl>
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-        
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
                                 <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
+                                   The very best way is to support VBYC is to pass on the magic you experienced here as a kid to your kids, and the kids of your friends, family, colleauges, and neighbors.
                                 </p>
+                                <p>
+                                   Make a donation to camp to support financial aid for campers in need, facilties upkeep, exqiopment, or anything you'd like to see it go for. 
+                                </p>
+                                <bloackquote>
+                                    To donate, <a href="mailto:director@vbyc.org">email the camp director</a>, call (269) 521-3855, or mail a check to:<br>
+                                    Van Buren Youth Camp<br>
+                                    12370 45th St.<br>
+                                    Bloomingdale, MI 49026
+                                </bloackquote>
                             </div>
                         </div>
                     </div><!-- /.row -->
-                    <!-- END MULTI COLUMN OPTIONS -->
 
+                  
 
                 </article> 
             </div><!-- /.container -->

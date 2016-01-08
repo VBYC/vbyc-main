@@ -11,6 +11,9 @@ $url_activities = 'activities';
 $title_alumni = 'Alumni';
 $url_alumni = 'alumni';
 
+$title_alumni_login = 'Alumni Login';
+$url_alumni_login = 'https://vanburen.campintouch.com/v2/login.aspx?cx=a';
+
 $title_blog = 'Blog';
 $url_blog = 'blog';
 
@@ -22,6 +25,9 @@ $url_contact = 'contact';
 
 $title_donate = 'Donate';
 $url_donate = 'donate';
+
+$title_donate_cta = 'Donate today';
+$url_donate_cta = 'mailto:director@vbyc.org';
 
 $title_employment = 'Employment';
 $url_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
