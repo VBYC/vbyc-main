@@ -40,9 +40,8 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Paragraph</p>
+                                    <p>We have on-going activities planned for each minute of a camper's day. </p>
                                 </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
                             </div> 
                         </div>         
                     </div><!-- /.row -->
@@ -77,113 +76,56 @@
                     <? } ?>
                     <!-- END ZIG ZAG FIGURE -->
 
+
+
+
+
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
+                            <h3 class="heading">Large Group Activities</h3>
                             <div>
                                 <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
+                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation cerimony, trail day, and Special Day. (You'll have to come to find out about this one!)
                                 </p>
                             </div>
                         </div>
                     </div><!-- /.row -->
-
-                    <!-- START MULTI COLUMN OPTIONS -->
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
-                            <div>
-                                <div class="columns-reflow-fixed-3" style="  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <dl>
-                                            <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/basic-template-content-1.php"); ?> 
-                                        </dl>
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-        
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
+                            <h3 class="heading">Classes</h3>
+                            <div>
                                 <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
+                                    These are the traditional summer camp activities: archery, swimming, arts and crafts etc. With their cabin group, campers attend classes each day, and usually rotate through all our classes by the end of the week. <a href="/<?=$url_classes?>/">See full class list.</a>
                                 </p>
                             </div>
                         </div>
                     </div><!-- /.row -->
-                    <!-- END MULTI COLUMN OPTIONS -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <h3 class="heading">Free Time</h3>
+                            <div>
+                                <p>
+                                    Campers choose from a variety traditional and unique of activities offered by the staff, such as like four-square, roof ball, frisbee golf, soccer, basketball, telling stories, kickball, making up skits, flying kites, scavenger hunts and feeding the animals in the nature hut etc. 
+                                </p>
+                                <p>
+                                    When the store is open, campers to buy treats and suiviniers like: snacks, drinks, t-shirts, hats, cameras, batteries etc. This is a nice to to relax and hang out.
+                                </p>
+                                <p>
+                                   There is always time in between activities in the schedule that campers can socialize and relax. Sometimes these few minutes are when new friends are made and when the most memorable moments occur.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <h3 class="heading">More</h3>
+                            <div>
+                                <p>
+                                    See our <a href="<?=$url_typical_day?>">Typical Day</a> page to learn about the rest.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
 
 
                 </article> 
