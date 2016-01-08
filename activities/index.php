@@ -118,6 +118,30 @@
                     </div><!-- /.row -->
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
+                            <h3 class="heading">Traditions</h3>
+                            <p>
+                                Camp is full of traditions that brings campers back every summer. Here are a few:
+                            </p>
+                            <ul class="list-styled list-no-indent  ">
+                                <li class="item">
+                                    <strong>Special Day.</strong> A day-long participitory skit where the campers have to help the visting heros save camp from villians, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
+                                </li>
+                                <li class="item">
+                                     <strong>Honor Cabin.</strong> Campers earn tokens, doing all manner of silly things, to earn tokens for their cabin.
+                                </li>
+                                <li class="item">
+                                    <strong>Camp Songs.</strong> There a songs for every situation! 
+                                </li>
+                                <li class="item">
+                                    <strong>Jumping in the Lake.</strong> Get three pieces of mail and you have (get) to jump in the lake!
+                                </li>
+                            </ul>
+
+                      
+                        </div>
+                    </div><!-- /.row -->
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">More</h3>
                             <div>
                                 <p>
