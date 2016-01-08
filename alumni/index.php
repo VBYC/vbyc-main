@@ -35,7 +35,6 @@
                             </div>
                         </div>         
                     </div><!-- /.row -->
-                   
                 </div>
             </div>
         </section>
@@ -67,7 +66,7 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Stay in touch and stay involved</h3>
+                            <h3 class="heading">Once you're camp family, you're always camp family.</h3>
                             <div>
                                 <p>
                                     There are lots of ways you can stay involved with camp. <a href="<?=$url_alumni_login?>" target="_blank">Sign up on our registry</a> to get notices of reunions, fundraisers, and volunteer opportunities.
