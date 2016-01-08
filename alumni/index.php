@@ -79,14 +79,9 @@
                                    The very best way is to support VBYC is to pass on the magic you experienced here as a kid to your kids, and the kids of your friends, family, colleauges, and neighbors.
                                 </p>
                                 <p>
-                                   Make a donation to camp to support financial aid for campers in need, facilties upkeep, exqiopment, or anything you'd like to see it go for. 
+                                   Make a <a href="<?=$url_donation?>">donation</a> to camp to support financial aid for campers in need, facilties upkeep, exqiopment, or anything you'd like to see it go for. 
                                 </p>
-                                <bloackquote>
-                                    To donate, <a href="mailto:director@vbyc.org">email the camp director</a>, call (269) 521-3855, or mail a check to:<br>
-                                    Van Buren Youth Camp<br>
-                                    12370 45th St.<br>
-                                    Bloomingdale, MI 49026
-                                </bloackquote>
+                            
                             </div>
                         </div>
                     </div><!-- /.row -->

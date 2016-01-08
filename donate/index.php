@@ -2,7 +2,7 @@
 <? 
     $title = $title_donate;
     $page = $url_donate;
-    $section = $page_donate;
+    $section = 'donate';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
@@ -37,9 +37,9 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Each year dozens (?) of students attend camp due to the generosity of donors just like you. Any little bit helps to send a kid to camp who wouldn’t otherwise have the chance. Your tax-deductible contribution to a campership builds lifelong memories and friendships.</p>
+                                    <p>Each year dozens of students attend camp due to the generosity of donors just like you. Any little bit helps to send a kid to camp who wouldn’t otherwise have the chance. Your tax-deductible contribution to a campership builds lifelong memories and friendships.</p>
                                 </div> 
-                                <a href="#" class="hero-cta">Donate today</a>  
+                                <a href="mailto:director@vbyc.org" class="hero-cta">Contact the camp director to donate today</a>  
                             </div> 
                         </div>         
                     </div><!-- /.row -->
@@ -57,7 +57,7 @@
                             <h3 class="heading">Donor Testimony</h3>
                             <div>
                                 <p>
-                                    Possibly a section with quotes from the kids, one kid, having them tell how appreciative they are for donations. Or, in this case, President Obama.
+                                    <strong>TODO: Dottie, do we have this?</strong> Possibly a section with quotes from the kids, one kid, having them tell how appreciative they are for donations. Or, in this case, President Obama.
                                 </p>
                             </div>
                         </div>
