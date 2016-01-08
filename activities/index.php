@@ -85,7 +85,7 @@
                             <h3 class="heading">Large Group Activities</h3>
                             <div>
                                 <p>
-                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation cerimony, trail day, and Special Day. (You'll have to come to find out about this one!)
+                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation cerimony, trail day, etc.
                                 </p>
                             </div>
                         </div>
@@ -127,13 +127,16 @@
                                     <strong>Special Day.</strong> A day-long participitory skit where the campers have to help the visting heros save camp from villians, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
                                 </li>
                                 <li class="item">
-                                     <strong>Honor Cabin.</strong> Campers earn tokens, doing all manner of silly things, to earn tokens for their cabin.
-                                </li>
-                                <li class="item">
                                     <strong>Camp Songs.</strong> There a songs for every situation! 
                                 </li>
                                 <li class="item">
-                                    <strong>Jumping in the Lake.</strong> Get three pieces of mail and you have (get) to jump in the lake!
+                                    <strong>Kissing the Moose.</strong> Don't get caught eating with your elbows on the table!
+                                </li>
+                                <li class="item">
+                                     <strong>Honor Cabin.</strong> Campers earn tokens, doing all manner of silly things, to earn tokens for their cabin.
+                                </li>
+                                <li class="item">
+                                    <strong>Jumping in the Lake.</strong> Receive three pieces of mail and you have (get) to jump in the lake!
                                 </li>
                             </ul>
 
