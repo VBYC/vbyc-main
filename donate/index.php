@@ -39,7 +39,7 @@
                                 <div class="description">
                                     <p>Each year dozens of students attend camp due to the generosity of donors just like you. Any little bit helps to send a kid to camp who wouldn’t otherwise have the chance. Your tax-deductible contribution to a campership builds lifelong memories and friendships.</p>
                                 </div> 
-                                <a href="mailto:director@vbyc.org" class="hero-cta">Contact the camp director to donate today</a>  
+                                <a href="mailto:director@vbyc.org" class="hero-cta">Donate today - contact the camp director</a>  
                             </div> 
                         </div>         
                     </div><!-- /.row -->
