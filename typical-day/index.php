@@ -169,7 +169,10 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/meal-3-cereal.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/meal-getting-cereal.jpg" class="timeline-img img-responsive" alt=" ">
+                                    </a>
+                                    <a href="#" class="link ">
+                                        <img src="/images/pages/typical-day/meal-3-cereal.jpg" class="timeline-img img-responsive v-offset-6" alt=" ">
                                     </a>
                                 </div>
                             </div>
