@@ -73,7 +73,7 @@
                                   <p>They must meet all <a href="http://acacamps.org/" target="_blank">American 
                                   Camping Association</a> Director requirements. </p>
 
-                                  <p><a href="<?=$url_meet_the_director?>">Meet the director</a>.</p>
+                                  <p><a href="/<?=$url_meet_the_director?>">Meet the director</a>.</p>
 
                             </div>
                             

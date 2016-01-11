@@ -36,7 +36,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                    <p>Classes are the heart of our program. Campers and counselors attend two classes each day (second class is in the afternoon), taught by VBYC summer staff. All campers rotate through all classes by week's end.</p>
                                 </div> 
                             </div> 
                         </div>         

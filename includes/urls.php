@@ -83,7 +83,7 @@ $url_instagram= 'https://www.instagram.com/vanburenyouthcamp/';
 $url_google_map = 'https://goo.gl/maps/Gcjxd7cXYsK2';
 
 // Email
-$url_email_main = 'hello@vbyc.org';
+$url_email_main = 'mail@vbyc.org';
 $url_email_director = 'director@vbyc.org';
 $url_email_webmaster = 'webmaster@vbyc.org';
 

@@ -20,7 +20,7 @@
                 <div class="col-xs-12">
                     <div class="content clearfix">
                         <div class="content-inner">
-                            <h5 class="headline"><a href="#" class="link-reverse " title="Read all news stories">News</a> ///</h5>
+                            <h5 class="headline"><? /* ?><a href="#" class="link-reverse " title="Read all news stories"><? */ ?>News<? /* ?></a><? */ ?> ///</h5>
                             <ul class="news-feed-list list-unstyled">
                                 <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
                                 <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
@@ -60,7 +60,7 @@
                     <!-- CAMP LIFE -->
                     <div class="col-xs-12 col-sm-6"> 
                         <div class="content">
-                            <a href="<?=$url_typical_day?>" class="link">
+                            <a href="/<?=$url_typical_day?>/" class="link">
                                 <img src="/images/illustrations/campfire.png" class="banner-img img-responsive" alt=" ">
                             </a>
                             <div class="content-primary-text">
@@ -70,7 +70,7 @@
                                         <p>From Polar Bear swims at sun-up to Taps after a campfire sing, a day spent at camp is like a day spent nowhere else. See a little bit of what that day entails.</p>
                                     </div>
                                 </div>
-                                <a href="<?=$url_typical_day?>" class="link">
+                                <a href="/<?=$url_typical_day?>/" class="link">
                                     View Camp Life
                                 </a>
                             </div>
@@ -89,7 +89,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
-                                <a href="<?=$url_activities?>" class="link">
+                                <a href="/<?=$url_activities?>/" class="link">
                                     <img src="/images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
@@ -100,7 +100,7 @@
                                  <div class="description">
                                     <p>Too many to name and more than one camper can complete in a week, from woodland survival to zany antics: we have activities.</p>
                                 </div>
-                                <a href="<?=$url_activities?>" class="link">
+                                <a href="/<?=$url_activities?>/" class="link">
                                     View Activities
                                 </a>
                             </div>
@@ -116,7 +116,7 @@
                         
                         <div class="col-xs-12 col-md-8 pull-right">
                             <div class="content content-primary-img">
-                                <a href="<?=$url_facilities?>" class="link">
+                                <a href="/<?=$url_facilities?>/" class="link">
                                     <img src="/images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
@@ -127,7 +127,7 @@
                                 <div class="description">
                                     <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures (and comforts and challenges) lie within our camp buildings and grounds?</p>
                                 </div>
-                                <a href="<?=$url_facilities?>" class="link">
+                                <a href="/<?=$url_facilities?>/" class="link">
                                     Learn more about our facilities
                                 </a>
                             </div>
@@ -142,7 +142,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
-                                <a href="<?=$url_alumni?>" class="link">
+                                <a href="/<?=$url_alumni?>/" class="link">
                                     <img src="/images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
@@ -153,7 +153,7 @@
                                 <div class="description">
                                     <p>Once you're camp family, you're always camp family. </p>
                                 </div>
-                                <a href="<?=$url_alumni?>" class="link">
+                                <a href="/<?=$url_alumni?>/" class="link">
                                     Connect, and reconnect, here.
                                 </a>
                             </div>
@@ -170,7 +170,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="content">
-                                <a href="<?=$url_map_of_camp?>" class="link text-center">
+                                <a href="/<?=$url_map_of_camp?>/" class="link text-center">
                                     <h3 class="headline">There&rsquo;s a lot to explore!</h3>
                                     <p class="cta">View the map of camp</p>
                                 </a>
@@ -188,7 +188,7 @@
                     <div class="col-xs-12">
                         <div class="content">
                             <h3 class="h1">
-                                <a href="<?=$url_rentals?>" class="">
+                                <a href="/<?=$url_rentals?>/" class="">
                                     Rent the camp
                                 </a>
                             </h3>
@@ -198,13 +198,13 @@
                                         <div class="description">
                                             <p>Van Buren Youth Camp can be Van Buren: Your Camp. For weddings, family reunions, retreats, meetings, or whenever you need an idyllic escape, camp awaits.
 
- <a href="<?=$url_rentals?>" class="link">Learn more</a></p>
+ <a href="/<?=$url_rentals?>/" class="link">Learn more</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="content content-primary-img">
-                                <a href="<?=$url_rentals?>" class="link">
+                                <a href="/<?=$url_rentals?>/" class="link">
                                     <img src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>

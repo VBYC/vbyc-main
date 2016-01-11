@@ -64,20 +64,20 @@
 
 
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-12 col-sm-5 col-sm-offset-2">
                             <dl>
 							    <dt class="list-term">
 							        <h3 class="heading">Bed and Bath</h3>
 							    </dt>
 							    <dd class="list-definition">
 							        <ul class="list-styled list-no-indent">
-							            <li id="XXX" class="item">A fitted (twin size) bed sheet</li>
-							            <li id="XXX" class="item">A flat (twin size) bed sheet</li>
-							            <li id="XXX" class="item">Pillow and pillowcase</li>
-							            <li id="XXX" class="item">Two or three warm blankets or a sleeping bag</li>
-							            <li id="XXX" class="item">Towels - beach, bath, hand</li>
-							            <li id="XXX" class="item">Washcloth</li>
-							            <li id="XXX" class="item">Bag for dirty laundry</li>
+							            <li class="item">A fitted (twin size) bed sheet</li>
+							            <li class="item">A flat (twin size) bed sheet</li>
+							            <li class="item">Pillow and pillowcase</li>
+							            <li class="item">Two or three warm blankets or a sleeping bag</li>
+							            <li class="item">Towels - beach, bath, hand</li>
+							            <li class="item">Washcloth</li>
+							            <li class="item">Bag for dirty laundry</li>
 							        </ul>
 							    </dd>
 							    <dt class="list-term">
@@ -85,17 +85,30 @@
 							    </dt>
 							    <dd class="list-definition">
 							        <ul class="list-styled list-no-indent">
-							            <li id="XXX" class="item">Soap</li>
-							            <li id="XXX" class="item">Toothbrush &amp; toothpaste</li>
-							            <li id="XXX" class="item">Comb</li>
-							            <li id="XXX" class="item">Deodorant</li>
-							            <li id="XXX" class="item">Sunscreen</li>
-							            <li id="XXX" class="item">Shampoo</li>
-							            <li id="XXX" class="item">Flip-flops for shower</li>
-							            <li id="XXX" class="item">Lip balm</li>
-							            <li id="XXX" class="item">Insect repellent</li>
+							            <li class="item">Soap</li>
+							            <li class="item">Toothbrush &amp; toothpaste</li>
+							            <li class="item">Comb</li>
+							            <li class="item">Deodorant</li>
+							            <li class="item">Sunscreen</li>
+							            <li class="item">Shampoo</li>
+							            <li class="item">Flip-flops for shower</li>
+							            <li class="item">Lip balm</li>
+							            <li class="item">Insect repellent</li>
 							        </ul>
 							    </dd>
+                                <dt class="list-term">
+                                    <h3 class="heading">Gear</h3>
+                                </dt>
+                                <dd class="list-definition">
+                                    <ul class="list-styled list-no-indent">
+                                        <li class="item">Books and magazines</li>
+                                        <li class="item">Pencils and pens</li>
+                                        <li class="item">Writing paper, envelops, stamps</li>
+                                        <li class="item">Water bottle</li>
+                                        <li class="item">Flashlight</li>
+                                        <li class="item">Hobbies to share</li>
+                                    </ul>
+                                </dd>
 							    
 							</dl>
                         </div>
@@ -103,75 +116,55 @@
 
 
 
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-12 col-sm-5">
                             <dl>
-	                            
 							    <dt class="list-term">
-	                                <h3 class="heading">Clothes</h3>
-	                            </dt>
-	                            <dd class="list-definition">
-	                                <ul class="list-styled list-no-indent">
-	                                    <li id="XXX" class="item">Bathing suit</li>
-	                                    <li id="XXX" class="item">Pajamas</li>
-	                                    <li id="XXX" class="item">Underwear</li>
-	                                    <li id="XXX" class="item">Long pants</li>
-	                                    <li id="XXX" class="item">Jeans</li>
-	                                    <li id="XXX" class="item">Shorts</li>
-	                                    <li id="XXX" class="item">T-shirts/tank tops</li>
-	                                    <li id="XXX" class="item">Jacket or sweatshirt</li>
-	                                    <li id="XXX" class="item">Rain jacket</li>
-	                                </ul>
-	                            </dd>
+                                    <h3 class="heading">Clothes</h3>
+                                </dt>
+                                <dd class="list-definition">
+                                    <ul class="list-styled list-no-indent">
+                                        <li class="item">Bathing suit</li>
+                                        <li class="item">Pajamas</li>
+                                        <li class="item">Underwear</li>
+                                        <li class="item">Long pants</li>
+                                        <li class="item">Jeans</li>
+                                        <li class="item">Shorts</li>
+                                        <li class="item">T-shirts/tank tops</li>
+                                        <li class="item">Jacket or sweatshirt</li>
+                                        <li class="item">Rain jacket</li>
+                                    </ul>
+                                </dd>
 	                            <dt class="list-term">
 	                                <h3 class="heading">Headwear</h3>
 	                            </dt>
 	                            <dd class="list-definition">
 	                                <ul class="list-styled list-no-indent">
-	                                    <li id="XXX" class="item">Baseball cap</li>
-	                                    <li id="XXX" class="item">Sun hat (opt)</li>
-	                                    <li id="XXX" class="item">Bandannas</li>
-	                                    <li id="XXX" class="item">Sunglasses</li>
-	                                    <li id="XXX" class="item">Swim goggles (opt)</li>
+	                                    <li class="item">Baseball cap</li>
+	                                    <li class="item">Sun hat (opt)</li>
+	                                    <li class="item">Bandannas</li>
+	                                    <li class="item">Sunglasses</li>
+	                                    <li class="item">Swim goggles (opt)</li>
 	                                </ul>
 	                            </dd>
-	                            
-	                        </dl>
-                        </div>
-
-
-
-                        <div class="col-xs-12 col-sm-4">
-                            <dl>
+	
                             	<dt class="list-term">
 							        <h3 class="heading">Footwear</h3>
 							    </dt>
 							    <dd class="list-definition">
 							        <ul class="list-styled list-no-indent">
-							            <li id="XXX" class="item">Socks (lots of socks)</li>
-							            <li id="XXX" class="item">Tennis shoes</li>
-							            <li id="XXX" class="item">Sandals</li>
+							            <li class="item">Socks (lots of socks)</li>
+							            <li class="item">Tennis shoes</li>
+							            <li class="item">Sandals</li>
 							        </ul>
 							    </dd>
-                                <dt class="list-term">
-	                                <h3 class="heading">Gear</h3>
-	                            </dt>
-	                            <dd class="list-definition">
-	                                <ul class="list-styled list-no-indent">
-	                                    <li id="XXX" class="item">Books and magazines</li>
-	                                    <li id="XXX" class="item">Pencils and pens</li>
-	                                    <li id="XXX" class="item">Writing paper, envelops, stamps</li>
-	                                    <li id="XXX" class="item">Water bottle</li>
-	                                    <li id="XXX" class="item">Flashlight</li>
-	                                    <li id="XXX" class="item">Hobbies to share</li>
-	                                </ul>
-	                            </dd>
+                                
 	                            <dt class="list-term">
                                     <h3 class="heading">Camp Store Money</h3>
                                 </dt>
                                 <dd class="list-definition">
                                     <ul class="list-styled list-no-indent">
-                                        <li id="XXX" class="item">Suggestion: $20-$40. </li>
-                                        <li id="XXX" class="item"><a href="#">Visit our store page and pre-shop with your child.</a></li>
+                                        <li class="item">Suggestion: $20-$40. </li>
+                                        <? /*<li class="item"><a href="#">Visit our store page and pre-shop with your child.</a></li>*/ ?>
                                     </ul>
                                 </dd>
                             </dl>
@@ -198,19 +191,19 @@
                             <dl>   
                                 <dd class="list-definition">
                                     <ul class="list-styled list-no-indent">
-                                        <li id="XXX" class="item">pets</li>
-                                        <li id="XXX" class="item">cell phones</li>
-                                        <li id="XXX" class="item">pocket knives</li>
-                                        <li id="XXX" class="item">electronic games</li>
-                                        <li id="XXX" class="item">iPods (radios, cd or mp3 players)</li>
-                                        <li id="XXX" class="item">skateboards</li>
-                                        <li id="XXX" class="item">televisions</li>
-                                        <li id="XXX" class="item">cell phones</li>
-                                        <li id="XXX" class="item">peanut products (because of allergies, we are a peanut free environment)</li>
+                                        <li class="item">pets</li>
+                                        <li class="item">cell phones</li>
+                                        <li class="item">pocket knives</li>
+                                        <li class="item">electronic games</li>
+                                        <li class="item">iPods (radios, cd or mp3 players)</li>
+                                        <li class="item">skateboards</li>
+                                        <li class="item">televisions</li>
+                                        <li class="item">cell phones</li>
+                                        <li class="item">peanut products (because of allergies, we are a peanut free environment)</li>
                                     </ul>
                                 </dd>
                             </dl>
-                            <p>*Camper's with their own <a href="<?=$url_classes?>#archery">archery</a> or <a href="<?=$url_classes?>#riflery">riflery</a> equipment may make arrangements with the director.</p>
+                            <p>*Camper's with their own <a href="/<?=$url_classes?>/#archery">archery</a> or <a href="/<?=$url_classes?>/#rifelry">rifelry</a> equipment may make arrangements with the director.</p>
                         </div>
                     </div><!-- /.row -->
 

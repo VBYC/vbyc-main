@@ -1,17 +1,13 @@
-    <footer class="footer pad-top-5 pad-bot-5 v-offset-6">
+    <footer class="footer pad-top-7 pad-bot-7 v-offset-7">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="footer-message">
-                        Being ourselves, together.
-                    </div>
-                </div>
-            </div>
-            <hr>
+
             <div class="row">
                 <div class="col-xs-12">
                     <div class="footer-content">
-                        <div class="item"> 
+                        <div class="footer-message">
+                            Being ourselves, together.
+                        </div>
+                        <div class="item pad-bot-4 " > 
                             <? include("nav-footer.php"); ?> 
                         </div>
                     </div>
@@ -29,11 +25,11 @@
                         </address>
                         <p class="item">  
                             Call Us<br>
-                            <a href="#">269-521-3855</a>
+                            <a href="tel:2695213855">269-521-3855</a>
                         </p>
                         <address class="item">
                             Email Us<br>
-                            <a href="mailto:<?=$url_email_main?>">hello@vbyc.org</a>
+                            <a href="mailto:<?=$url_email_main?>">mail@vbyc.org</a>
                         </address>
                         <p class="item">  
                             Connect With Us<br>

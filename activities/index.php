@@ -148,7 +148,7 @@
                             <h3 class="heading">More</h3>
                             <div>
                                 <p>
-                                    See our <a href="<?=$url_typical_day?>">Typical Day</a> page to learn about the rest.
+                                    See our <a href="/<?=$url_typical_day?>/">Typical Day</a> page to learn about the rest.
                                 </p>
                             </div>
                         </div>
