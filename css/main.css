@@ -10232,6 +10232,31 @@ img[src*=".svg"] .main-logo-container .ie9 {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - ABOUT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 8, ../sass/partials/_page-about.scss */
+#page-about .about-logos .logo {
+  max-height: 80px;
+  margin: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 20, ../sass/partials/_page-about.scss */
+  #page-contact .container {
+    text-align: center;
+  }
+  /* line 23, ../sass/partials/_page-about.scss */
+  #page-contact .group-2 {
+    clear: both;
+  }
+}
+@media (max-width: 767px) {
+  /* line 31, ../sass/partials/_page-about.scss */
+  #page-contact .col {
+    clear: both;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - CONTACT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, ../sass/partials/_page-contact.scss */
