@@ -52,8 +52,8 @@
                                 <p>
                                   Elected by the supporters of Van Buren Youth Camp. Their role is 
                                   to serve as the decision making body of the camp. They hire the 
-                                  Camp Directors and actively supervise the general operation of the 
-                                  Camp.
+                                  camp director and actively supervise the general operation of the 
+                                  camp.
                                   </p>
                                   <p>They also generate funds for the camp by sponsoring projects 
                                   and fundraiser's which generate money.</p>
@@ -62,18 +62,17 @@
                                   with major undertakings, such as land acquisition. </p>
                             </div>
 
-                            <h3 class="heading">Directors</h3>
+                            <h3 class="heading">Director</h3>
                             <div>
                                 <p>
-                                  Hired by the Board of Directors, this person oversees the year round 
-                                  running of camp, including our rental facilities, directs marketing, 
-                                  finance and camper enrollment. 
+                                  This person oversees the summer camp program, staff hiring, camper enrollment, marketing, 
+                                  and <a href="/<?=$url_rentals?>/">rentals</a>. 
 
                                   </p>
                                   <p>They must meet all <a href="http://acacamps.org/" target="_blank">American 
-                                  Camping Association</a> Director requirements. </p>
+                                  Camping Association</a> director requirements. </p>
 
-                                  <p><a href="/<?=$url_meet_the_director?>">Meet the director</a>.</p>
+                                  <p><a href="/<?=$url_meet_the_director?>/">Meet our director</a>.</p>
 
                             </div>
                             
@@ -82,7 +81,7 @@
                             <h3 class="heading">Staff</h3>
                             <div>
                                 <p>
-                                  Hired by the Director, these persons run the 
+                                  Hired by the director, these persons run the 
                                   daily program. They are often former VBYC
                                   counselors and receive a week of training as a staff In Training 
                                   (SIT) where they work alongside the current staff. Once hired, they 
