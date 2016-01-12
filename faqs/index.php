@@ -2,7 +2,7 @@
 <? 
     $title = $title_faqs;
     $page = $url_faqs;
-    $section = 'XXX';
+    $section = 'about';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
@@ -40,13 +40,19 @@
                         <aside id="sidenav-container">
                             <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
                                 <li class="item" role="presentation">
-                                    <a href="#q1" class="link sidenav-">Question</a>
+                                    <a href="#visiting" class="link sidenav-">Is visiting allowed?</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#q2" class="link sidenav-">Question</a>
+                                    <a href="#bunkmate-requests" class="link sidenav-">Do you take bunk-mate requests?</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#q3" class="link sidenav-">Question</a>
+                                    <a href="#store" class="link sidenav-">How does the store work?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#camper-dropoff" class="link sidenav-">When is camper drop off and registration?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#camper-pickup" class="link sidenav-">When is camper pickup and deregistration?</a>
                                 </li>
                             </ul>
                         </aside>
@@ -56,17 +62,25 @@
                         <article class="main-article">
                             
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                <li id="q1" class="item">                                    
-                                    <h3 class="heading ">Question</h3>
-                                    <p>Answer</p>
+                                <li id="visiting" class="item">                                    
+                                    <h3 class="heading ">Is visiting allowed?</h3>
+                                    <p>No. To prevent homesickness, parents should not visit or call. But please send leters, postcards, and care packages!</p>
                                 </li>
-                                <li id="q2" class="item">                                    
-                                    <h3 class="heading ">Question</h3>
-                                    <p>Answer</p>
+                                <li id="bunkmate-requests" class="item">                                    
+                                    <h3 class="heading ">Do you take bunk-mate requests?</h3>
+                                    <p>No. We find that when a cabin of kids start on equal footing of being new to each other, they have a happier week and have greater growth in self confidence. But don't worry, they can still find plenty of times throught the day to be with friends from other cabins. For example: Morning free time, afternoon free time, store time, thought, evening rec, and campfire. </p>
                                 </li>
-                                <li id="q3" class="item">                                    
-                                    <h3 class="heading ">Question</h3>
-                                    <p>Answer</p>
+                                <li id="store" class="item">                                    
+                                    <h3 class="heading ">How does the store work?</h3>
+                                    <p>Parents may deposit spending money in their child’s store account which the camper can “charge” purchases to throughout the week. Unspent money will be refunded at the end of the week. The store sells sweatshirts, T-shirts, film, batteries, bug spray, pens, postcards, stationery, candy, pop, stuffed animals, etc.</p>
+                                </li>
+                                <li id="camper-dropoff" class="item">                                    
+                                    <h3 class="heading ">When is camper drop off and registration?</h3>
+                                    <p>Sunday 3:00-5:00 PM, unless otherwise state in your (TODO: FIll in) _________ .</p>
+                                </li>
+                                <li id="camper-pickup" class="item">                                    
+                                    <h3 class="heading ">When is camper pickup and deregistration?</h3>
+                                    <p>Saturday 10:00 AM, unless otherwise state in your (TODO: FIll in) _________ .</p>
                                 </li>
                             </ul>
                         </article> 
