@@ -76,6 +76,7 @@ $url_whos_in_charge = 'whos-in-charge';
 
 // Social
 $url_facebook = 'https://www.facebook.com/VanBurenYouthCamp/';
+$url_facebook_group = 'https://www.facebook.com/groups/65134341165//';
 $url_twitter = 'https://twitter.com/vbyc/';
 $url_instagram= 'https://www.instagram.com/vanburenyouthcamp/';
 

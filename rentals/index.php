@@ -13,17 +13,15 @@
 
 <main>    
         <section class="hero">
-            <? if ($show_hero_image) { ?>
             <div class="hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/template/hero-basic.jpg" alt=" ">
+                            <img src="/images/heros/rentals.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
-            <? } ?>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
@@ -46,7 +44,25 @@
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
-
+                    <div class="row">
+                        <figure class="figure-images figure-zig-zag">
+                            <!-- 1 column -->
+                            <div class="row figure-row">
+                                <div class="col-sm-2 img-container">
+                                    <img src="/images/pages/rentals/watrerfront-sunset.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-4 img-container">
+                                    <img src="/images/pages/rentals/rec-area-basketball-hoop.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-4 img-container">
+                                    <img src="/images/pages/rentals/waterfront-from-dock.jpg" class="img-responsive img-item" alt=" " >
+                                </div> 
+                                <div class="col-sm-2 img-container">
+                                    <img src="/images/pages/rentals/quarters.jpg" class="img-responsive img-item" alt=" " >
+                                </div>         
+                            </div><!-- /.row -->
+                        </figure>
+                    </div><!-- /.row -->
 
 
                     <div class="row">

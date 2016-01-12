@@ -52,7 +52,34 @@
                                     <a href="#camper-dropoff" class="link sidenav-">When is camper drop off and registration?</a>
                                 </li>
                                 <li class="item" role="presentation">
+                                    <a href="#dietary" class="link sidenav-">How do you handle dietary needs?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#non-descrimination" class="link sidenav-">How do promote  and acceptance?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#camper-pickup" class="link sidenav-">How do you handle allergy needs?</a>
+                                </li>
+                                <li class="item" role="presentation">
                                     <a href="#camper-pickup" class="link sidenav-">When is camper pickup and deregistration?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#allergies" class="link sidenav-">How do you handle allergy needs?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#prevent-homesickness" class="link sidenav-">How can I help my child not be afraid or homesick??</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#get-in-touch-with-alumni" class="link sidenav-">Can you help me get in touch with other alumni?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#donate" class="link sidenav-">Can I donate time/money?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#board" class="link sidenav-">Can I serve on the Board of Directors?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#rentals" class="link sidenav-">Can I rent camp for an event?<</a>
                                 </li>
                             </ul>
                         </aside>
@@ -82,6 +109,41 @@
                                     <h3 class="heading ">When is camper pickup and deregistration?</h3>
                                     <p>Saturday 10:00 AM, unless otherwise state in your (TODO: FIll in) _________ .</p>
                                 </li>
+                                <li id="dietary" class="item">                                    
+                                    <h3 class="heading ">How do you handle dietary needs?</h3>
+                                    <p>(TODO: FIll in)</p>
+                                </li>
+                                <li id="non-descrimination" class="item">                                    
+                                    <h3 class="heading ">How do promote non-descrimination and acceptance?</h3>
+                                    <p>(TODO: FIll in)</p>
+                                </li>
+                                <li id="allergies" class="item">                                    
+                                    <h3 class="heading ">How do you handle allergy needs?</h3>
+                                    <p>(TODO: FIll in)</p>
+                                </li>
+                                <li id="prevent-homesickness" class="item">                                    
+                                    <h3 class="heading ">How can I help my child not be afraid or homesick?</h3>
+                                    <p>(TODO: FIll in)List of ways to prepare and help child cope (Wite letters, send photo, stuffed animal, encouraging talks, tell them get into activites )(TODO: Finesse)</p>
+                                </li>
+                                <li id="get-in-touch-with-alumni" class="item">                                    
+                                    <h3 class="heading ">Can you help me get in touch with other alumni?</h3>
+                                    <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="$url_alumni_login" target="_blank">alumni registery </a>and we'll tell you about alumni events.
+                                </p>
+                                </li>
+                                <li id="donate" class="item">                                    
+                                    <h3 class="heading ">Can I donate time/money?</h3>
+                                    <p>Yes please! See our <a href="/<?=$url_donate?>/">Donation page.</a></p>
+                                </li>
+                                <li id="board" class="item">                                    
+                                    <h3 class="heading ">Can I serve on the Board of Directors?</h3>
+                                    <p>Yes please! <a href="/<?=$url_contact?>/">Contact us.</a></p>
+                                </li>
+                                <li id="rentals" class="item">                                    
+                                    <h3 class="heading ">Can I rent camp for an event?</h3>
+                                    <p>Yes please! See our <a href="/<?=$url_rentals?>/">Rentals page.</a></p>
+                                </li>
+                                
+
                             </ul>
                         </article> 
                     </div><!-- /column -->
