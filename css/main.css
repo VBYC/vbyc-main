@@ -9717,10 +9717,12 @@ img[src*=".svg"] .main-logo-container .ie9 {
   /* line 61, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal {
     background-color: #FFF;
+    color: #2E9D7F;
   }
   /* line 63, ../sass/partials/_nav-main-sm.scss */
   .navbar-list .link.normal:hover {
     color: #2E9D7F;
+    cursor: pointer;
   }
 
   /* line 71, ../sass/partials/_nav-main-sm.scss */

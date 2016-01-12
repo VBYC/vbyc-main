@@ -60,8 +60,10 @@
             // Use normal so don't have to override with .emphasized
             &.normal {
                 background-color: $color-white;
+                color: $link-color;
                 &:hover {
                     color: $link-color-emphasize;
+                    cursor: pointer;
                 }
             }
         }

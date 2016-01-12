@@ -3,7 +3,7 @@
                         <ul class="navbar-list list-unstyled clearfix">
                             
                             <li class="item <? check_if_selected('sessions',$section); ?>">
-                                <a href="/<?=$url_schedule ?>/" class="link normal">Sessions</a>
+                                <div class="link normal">Sessions</div>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
                                         <? $i = $url_schedule ?>
@@ -33,7 +33,7 @@
                             </li>
 
                             <li class="item <? check_if_selected('camp-life',$section); ?>">
-                                <a href="/<?=$url_typical_day ?>/" class="link normal <? check_if_selected('camp-life',$section); ?>">Camp Life</a>
+                                <div class="link normal <? check_if_selected('camp-life',$section); ?>">Camp Life</div>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
                                         <? $i = $url_typical_day ?>
@@ -69,16 +69,14 @@
                             </li>
                             <li class="item <? check_if_selected('about',$section); ?>">
                                 <? $i = $url_about ?>
-                                <a href="/<?=$i?>/" class="link normal">About Us</a>
+                                <div class="link normal">About Us</div>
                                 <ul class="navbar-list-sub list-unstyled">
-                                    <? /*
                                      <li class="item-sub">
-                                        <? $i = $url_news ?>
+                                        <? $i = $url_about ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            News
+                                            About
                                         </a>
                                      </li>
-                                     */ ?>
                                      <li class="item-sub">
                                         <? $i = $url_whos_in_charge ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
