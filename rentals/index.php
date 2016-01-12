@@ -28,12 +28,6 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <h1 class="page-name">Van Buren, your camp.</h1>
-                            </div>
-                        </div>         
-                    </div><!-- /.row -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="hero-text">
                                 <a href="/contact/" class="hero-cta">Book an Event.</a>  
                             </div> 
                         </div>         

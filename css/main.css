@@ -10008,6 +10008,14 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-top: 18px;
 }
 
+.hero .hero-cta {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+
+
+
 /* line 31, ../sass/partials/_hero.scss */
 .hero-text-container {
   background: #FAFAFA url("/images/heroes/hero-text-bg.png") left top repeat;
