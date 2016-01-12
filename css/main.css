@@ -9421,6 +9421,7 @@ hr {
 /* line 47, ../sass/partials/_graphic-elements.scss */
 .figure-images.figure-zig-zag  {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .figure-images.figure-zig-zag .figure-row .img-container:nth-of-type(even) {
