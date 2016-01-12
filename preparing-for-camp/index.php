@@ -36,16 +36,7 @@
                             </div>
                         </div>         
                     </div><!-- /.row -->
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <div class="hero-text">
-                                <div class="description">
-                                    <p>Paragraph</p>
-                                </div> 
-                                <a href="#" class="hero-cta">Call to action</a>  
-                            </div> 
-                        </div>         
-                    </div><!-- /.row -->
+                   
                 </div>
             </div>
         </section>
@@ -77,113 +68,32 @@
                     <? } ?>
                     <!-- END ZIG ZAG FIGURE -->
 
+
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">One column</h3>
-                            <div>
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                                <p>
-                                    <?=$lorem?>
-                                </p>
-                            </div>
+                            <h3 class="heading">Parent’s Checklist</h3>
+                            <ol class="" >
+                                <li><a href="<?=$url_register?>">Register</a></li>
+                                <li>(TODO: Mention any forms?)</li>
+                                <li>Review our <a href="/<?=$url_what_to_bring?>/">What to Bring</a> list.</li>
+                                <li>For first timers, review our <a href="/<?=$url_typical_day?>/">Typical
+                                    day</a> page.</li>
+                                <li>Review our <a href="/<?=$url_contact?>/">address and map</a>.</li>
+                                <li>Review these homesickness prevention articles:
+                                  <ul>
+                                    <li><a href="http://www.campparents.org/homesickness.php" target="_blank">Homesickness &mdash; Expert
+                                    Advice for Parents</a></li>
+                                    <li><a href="http://www.campparents.org/070102.php" target="_blank">New
+                                        Thinking Needed on Helping Kids...</a></li>
+                                  </ul>
+                                </li>
+                                <li>Arrive Sunday at 3:00 PM, unless otherwise state in your (TODO: FIll in) _________ .</li>
+                                
+                                
+
+                            </ol>
                         </div>
                     </div><!-- /.row -->
-
-                    <!-- START MULTI COLUMN OPTIONS -->
-                    <!-- 2 columns -->
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <h3 class="heading">Two columns</h3>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Three columns</h3>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="">
-                                <?=$lorem?>
-                                <?=$lorem2?>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h3 class="heading">Re-flow columns - fixed width (300px)</h3>
-                            <div>
-                                <div class="columns-reflow-fixed-3" style="  margin-bottom: 50px"> 
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                    </p>
-                                    <p>
-                                        <?=$lorem?>
-                                        <?=$lorem2?>
-                                        <dl>
-                                            <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/basic-template-content-1.php"); ?> 
-                                        </dl>
-                                        <?=$lorem2?>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-
-                    <hr class="divider-styled">
-        
-                    <div class="row">
-                        <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Callout text</h3>
-                            <div class="content-callout">
-                                <p>
-                                    <?=$lorem?>
-                                    <?=$lorem2?>
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- /.row -->
-                    <!-- END MULTI COLUMN OPTIONS -->
 
 
                 </article> 
