@@ -14,28 +14,28 @@
         &:not(:last-child) {
              margin-right: 50px;
         }
-       
     }
-
 }
-
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
     #page-contact {
-        .container {
-            text-align: center;
-        }
         .group-2 {
             clear: both;
         }
     }
 }
 
+
+
 @media (max-width: $screen-xs-max) {
     #page-contact {
         .col {
             clear: both;
         }
+        .container {
+            text-align: left;
+        }
+    }
     }
 }
 

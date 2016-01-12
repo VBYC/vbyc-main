@@ -28,7 +28,7 @@
             </div>
         </section>
         <section class="main-content">
-            <div class="container"> 
+            <div class="container text-center"> 
                 <article class="main-article">
      
                     <div class="col group-1">
@@ -67,7 +67,8 @@
                 </article> 
                       <div class="row">
                         <div class="col-xs-12">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d11790.057700992913!2d-85.9865204!3d42.3741866!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88175c449f668721%3A0xae74d2152f48a756!2sVan+Buren+Youth+Camp%2C+12370+45th+St%2C+Bloomingdale%2C+MI+49026!3m2!1d42.3741866!2d-85.98652039999999!5e0!3m2!1sen!2sus!4v1451506620464" width="100%" height="600" frameborder="0" style="border:0"  align="center" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3018215.151663637!2d-85.889832!3d42.375011!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x88175c449f668721%3A0xae74d2152f48a756!2sVan+Buren+Youth+Camp%2C+12370+45th+Street%2C+Bloomingdale%2C+MI+49026!3m2!1d42.3741866!2d-85.98652039999999!5e0!3m2!1sen!2sus!4v1452615707872" width="100%" height="600" frameborder="0" style="border:0" align="center" allowfullscreen></iframe>
+                            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d11790.057700992913!2d-85.9865204!3d42.3741866!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x88175c449f668721%3A0xae74d2152f48a756!2sVan+Buren+Youth+Camp%2C+12370+45th+St%2C+Bloomingdale%2C+MI+49026!3m2!1d42.3741866!2d-85.98652039999999!5e0!3m2!1sen!2sus!4v1451506620464" width="100%" height="600" frameborder="0" style="border:0"  align="center" allowfullscreen></iframe> -->
                         </div>
                         
                     </div><!-- /.row -->

@@ -9616,6 +9616,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 .navbar-list-sub {
   display: none;
   position: relative;
+  z-index: 6;
 }
 /* line 55, ../sass/partials/_nav-main.scss */
 .navbar-list-sub:before {
@@ -9623,6 +9624,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   position: absolute;
   left: 50%;
   margin-left: -7px;
+
   width: 0;
   height: 0;
   border-style: solid;
@@ -9814,7 +9816,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
     padding-top: 20px;
     left: -50%;
     right: -50%;
-    z-index: 1;
+    z-index: 8;
   }
   /* line 93, ../sass/partials/_nav-main-lg.scss */
   .navbar-list-sub:before {
