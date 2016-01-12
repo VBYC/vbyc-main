@@ -89,7 +89,8 @@ $url_email_director = 'director@vbyc.org';
 $url_email_webmaster = 'webmaster@vbyc.org';
 
 
-
+// Defer placeholder image to load large images below the fold after everything else loaded
+$src_defer = 'data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 
 ?>
 

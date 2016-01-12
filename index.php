@@ -90,7 +90,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_activities?>/" class="link">
-                                    <img src="/images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                         <div class="col-xs-12 col-md-8 pull-right">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_facilities?>/" class="link">
-                                    <img src="/images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_alumni?>/" class="link">
-                                    <img src="/images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -205,7 +205,7 @@
                             </div>
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_rentals?>/" class="link">
-                                    <img src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
                                 </a>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
             </div>
         </section>
         
-        
+
     </main>
 
 <? include("".$_SERVER["DOCUMENT_ROOT"]."/includes/footer.php"); ?>

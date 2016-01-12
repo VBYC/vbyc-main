@@ -49,6 +49,9 @@
 
 	        // Set up generic scroll-to link
 	        vbyc.util.scrollToLink();
+
+	        // Load these images after the rest of the page loads
+	        vbyc.util.deferImageLoad();
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -252,6 +255,14 @@
 	                window.location.hash = target;
 	            });
 	        });
+		},
+		deferImageLoad: function() {
+			var imgDefer = document.getElementsByTagName('img');
+			for (var i=0; i<imgDefer.length; i++) {
+				if(imgDefer[i].getAttribute('data-src')) {
+					imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+				} 
+			} 
 		}
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));

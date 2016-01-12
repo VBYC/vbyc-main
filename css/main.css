@@ -10314,7 +10314,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  height: 660px;
+  height: 650px;
   position: relative;
 }
 /* line 14, ../sass/partials/_page-home.scss */
@@ -10393,6 +10393,8 @@ img[src*=".svg"] .main-logo-container .ie9 {
 /* line 91, ../sass/partials/_page-home.scss */
 .template-home .content-primary-img {
   border: 9px solid #43C8D9;
+  min-height: 150px;
+  background-color: #43C8D9;
 }
 /* line 94, ../sass/partials/_page-home.scss */
 .template-home .content-primary-text {
@@ -10532,6 +10534,17 @@ img[src*=".svg"] .main-logo-container .ie9 {
     font-size: 40px;
     bottom: 20px;
   }
+
+  .template-home .home-banner-secondary .banner-item,
+  .template-home .home-banner-tertiary .banner-item {
+    background-image: none;
+  }
+
+  .template-home .home-banner-secondary .content-primary-text,
+  .template-home .home-banner-tertiary .content-primary-text {
+    text-align: center;
+  }
+
   /* line 231, ../sass/partials/_page-home.scss */
   .template-home .home-banner-tertiary {
     margin-bottom: 50px;
