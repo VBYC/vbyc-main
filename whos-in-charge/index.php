@@ -98,6 +98,12 @@
                                   people who love being around kids, are loaded with enthusiasm, compassion, 
                                   endurance and are recreation specialists!</p>
                             </div>
+
+                            <h3 class="heading">Health Officer</h3>
+                            <div>
+                                <p>
+                                  A full time health officer, nurse, or doctor lives at camp. A health screening is completed upon arrival at VBYC when your child’s health history will be reviewed and a visual observation will be completed. The health officer administers all medications and keeps medications under locked storage</p>
+                            </div>
                             
                             <h3 class="heading">Volunteer Coordinator</h3>
                             <div>
