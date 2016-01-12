@@ -49,16 +49,17 @@
                             <!-- 1 column -->
                             <div class="row figure-row">
                                 <div class="col-sm-2 img-container">
-                                    <img src="/images/pages/rentals/watrerfront-sunset.jpg" class="img-responsive img-item" alt=" " >
+                                    
+                                     <img src="/images/pages/rentals/quarters.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="/images/pages/rentals/rec-area-basketball-hoop.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/pages/rentals/upper-20-bunks.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="/images/pages/rentals/waterfront-from-dock.jpg" class="img-responsive img-item" alt=" " >
+                                   <img src="/images/pages/rentals/wedding-table-toast.jpg" class="img-responsive img-item" alt=" " >
                                 </div> 
                                 <div class="col-sm-2 img-container">
-                                    <img src="/images/pages/rentals/quarters.jpg" class="img-responsive img-item" alt=" " >
+                                   <img src="/images/pages/rentals/waterfront-from-dock.jpg" class="img-responsive img-item" alt=" " >
                                 </div>         
                             </div><!-- /.row -->
                         </figure>
