@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heros/activities.jpg" alt=" ">
+                            <img src="/images/heroes/activities.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -124,7 +124,7 @@
                             </p>
                             <ul class="list-styled list-no-indent  ">
                                 <li class="item">
-                                    <strong>Special Day.</strong> A day-long participitory skit where the campers have to help the visting heros save camp from villians, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
+                                    <strong>Special Day.</strong> A day-long participitory skit where the campers have to help the visting heroes save camp from villians, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
                                 </li>
                                 <li class="item">
                                     <strong>Camp Songs.</strong> There a songs for every situation! 

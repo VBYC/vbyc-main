@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heros/what-to-bring.jpg" alt=" ">
+                            <img src="/images/heroes/what-to-bring.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -191,19 +191,19 @@
                             <dl>   
                                 <dd class="list-definition">
                                     <ul class="list-styled list-no-indent">
-                                        <li class="item">pets</li>
-                                        <li class="item">cell phones</li>
-                                        <li class="item">pocket knives</li>
-                                        <li class="item">electronic games</li>
+                                        <li class="item">Pets</li>
+                                        <li class="item">Cell phones</li>
+                                        <li class="item">Pocket knives</li>
+                                        <li class="item">Electronic games</li>
                                         <li class="item">iPods (radios, cd or mp3 players)</li>
-                                        <li class="item">skateboards</li>
-                                        <li class="item">televisions</li>
-                                        <li class="item">cell phones</li>
-                                        <li class="item">peanut products (because of allergies, we are a peanut free environment)</li>
+                                        <li class="item">Skateboards</li>
+                                        <li class="item">Hoverboards</li>
+                                        <li class="item">Televisions</li>
+                                        <li class="item">Peanut products (because of allergies, we are a peanut free environment)</li>
                                     </ul>
                                 </dd>
                             </dl>
-                            <p>*Camper's with their own <a href="/<?=$url_classes?>/#archery">archery</a> or <a href="/<?=$url_classes?>/#rifelry">rifelry</a> equipment may make arrangements with the director.</p>
+                            <p>*Campers with their own <a href="/<?=$url_classes?>/#archery">archery</a> or <a href="/<?=$url_classes?>/#rifelry">rifelry</a> equipment may make arrangements with the director.</p>
                         </div>
                     </div><!-- /.row -->
 

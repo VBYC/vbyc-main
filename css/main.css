@@ -9997,7 +9997,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 
 /* line 31, ../sass/partials/_hero.scss */
 .hero-text-container {
-  background: #FAFAFA url("/images/heros/hero-text-bg.png") left top repeat;
+  background: #FAFAFA url("/images/heroes/hero-text-bg.png") left top repeat;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -10296,7 +10296,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 7, ../sass/partials/_page-home.scss */
 .template-home .header-main {
-  background-image: url("/images/heros/home.jpg");
+  background-image: url("/images/heroes/home.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -10393,15 +10393,15 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 /* line 110, ../sass/partials/_page-home.scss */
 .template-home .banner-activities {
-  background-image: url("/images/heros/water.jpg");
+  background-image: url("/images/heroes/water.jpg");
 }
 /* line 113, ../sass/partials/_page-home.scss */
 .template-home .banner-cleo {
-  background-image: url("/images/heros/sun-through-trees.jpg");
+  background-image: url("/images/heroes/sun-through-trees.jpg");
 }
 /* line 117, ../sass/partials/_page-home.scss */
 .template-home .banner-alumni {
-  background-image: url("/images/heros/grass-and-flowers.jpg");
+  background-image: url("/images/heroes/grass-and-flowers.jpg");
 }
 /* line 120, ../sass/partials/_page-home.scss */
 .template-home .banner-img {
@@ -10410,7 +10410,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 /* line 126, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map {
-  background-image: url("/images/heros/map-of-vbyc.jpg");
+  background-image: url("/images/heroes/map-of-vbyc.jpg");
 }
 /* line 129, ../sass/partials/_page-home.scss */
 .template-home .home-banner-map .link {

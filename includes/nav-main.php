@@ -3,7 +3,7 @@
                         <ul class="navbar-list list-unstyled clearfix">
                             
                             <li class="item <? check_if_selected('sessions',$section); ?>">
-                                <a href="#" class="link normal">Sessions</a>
+                                <a href="/<?=$url_schedule ?>/" class="link normal">Sessions</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
                                         <? $i = $url_schedule ?>
@@ -33,7 +33,7 @@
                             </li>
 
                             <li class="item <? check_if_selected('camp-life',$section); ?>">
-                                <a href="#" class="link normal <? check_if_selected('camp-life',$section); ?>">Camp Life</a>
+                                <a href="/<?=$url_typical_day ?>/" class="link normal <? check_if_selected('camp-life',$section); ?>">Camp Life</a>
                                 <ul class="navbar-list-sub list-unstyled">
                                      <li class="item-sub">
                                         <? $i = $url_typical_day ?>

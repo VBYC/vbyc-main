@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heros/about.jpg" alt=" ">
+                            <img src="/images/heroes/about.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->

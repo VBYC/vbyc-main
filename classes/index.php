@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heros/archery-bandana.jpg" alt=" ">
+                            <img src="/images/heroes/archery-bandana.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->

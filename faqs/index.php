@@ -40,6 +40,18 @@
                         <aside id="sidenav-container">
                             <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
                                 <li class="item" role="presentation">
+                                    <a href="#age-range" class="link sidenav-">What is the age range?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#co-ed" class="link sidenav-">Is it co-ed?</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#camper-dropoff" class="link sidenav-">When is camper drop off and registration?</a>
+                                </li>
+                                 <li class="item" role="presentation">
+                                    <a href="#camper-pickup" class="link sidenav-">When is camper pickup and deregistration?</a>
+                                </li>
+                                <li class="item" role="presentation">
                                     <a href="#visiting" class="link sidenav-">Is visiting allowed?</a>
                                 </li>
                                 <li class="item" role="presentation">
@@ -48,10 +60,8 @@
                                 <li class="item" role="presentation">
                                     <a href="#store" class="link sidenav-">How does the store work?</a>
                                 </li>
-                                <li class="item" role="presentation">
-                                    <a href="#camper-dropoff" class="link sidenav-">When is camper drop off and registration?</a>
-                                </li>
-                                <li class="item" role="presentation">
+                                
+                               <!--  <li class="item" role="presentation">
                                     <a href="#dietary" class="link sidenav-">How do you handle dietary needs?</a>
                                 </li>
                                 <li class="item" role="presentation">
@@ -60,15 +70,13 @@
                                 <li class="item" role="presentation">
                                     <a href="#camper-pickup" class="link sidenav-">How do you handle allergy needs?</a>
                                 </li>
-                                <li class="item" role="presentation">
-                                    <a href="#camper-pickup" class="link sidenav-">When is camper pickup and deregistration?</a>
-                                </li>
+                               
                                 <li class="item" role="presentation">
                                     <a href="#allergies" class="link sidenav-">How do you handle allergy needs?</a>
                                 </li>
                                 <li class="item" role="presentation">
                                     <a href="#prevent-homesickness" class="link sidenav-">How can I help my child not be afraid or homesick??</a>
-                                </li>
+                                </li> -->
                                 <li class="item" role="presentation">
                                     <a href="#get-in-touch-with-alumni" class="link sidenav-">Can you help me get in touch with other alumni?</a>
                                 </li>
@@ -79,7 +87,7 @@
                                     <a href="#board" class="link sidenav-">Can I serve on the Board of Directors?</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#rentals" class="link sidenav-">Can I rent camp for an event?<</a>
+                                    <a href="#rentals" class="link sidenav-">Can I rent camp for an event?</a>
                                 </li>
                             </ul>
                         </aside>
@@ -89,6 +97,22 @@
                         <article class="main-article">
                             
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+                                <li id="age-range" class="item">                                    
+                                    <h3 class="heading ">What is the age range?</h3>
+                                    <p>Sunday 3:00-5:00 PM, unless otherwise stated.</p>
+                                </li>
+                                <li id="coed" class="item">                                    
+                                    <h3 class="heading ">Is it co-ed?</h3>
+                                    <p>Is it co-ed?</p>
+                                </li>
+                                <li id="camper-dropoff" class="item">                                    
+                                    <h3 class="heading ">When is camper drop off and registration?</h3>
+                                    <p>Sunday, 3:00 PM. Unless otherwise stated.</p>
+                                </li>
+                                <li id="camper-pickup" class="item">                                    
+                                    <h3 class="heading ">When is camper pickup and deregistration?</h3>
+                                    <p>Saturday, 10:00 AM. Unless otherwise stated.</p>
+                                </li>
                                 <li id="visiting" class="item">                                    
                                     <h3 class="heading ">Is visiting allowed?</h3>
                                     <p>No. To prevent homesickness, parents should not visit or call. But please send leters, postcards, and care packages!</p>
@@ -101,15 +125,8 @@
                                     <h3 class="heading ">How does the store work?</h3>
                                     <p>Parents may deposit spending money in their child’s store account which the camper can “charge” purchases to throughout the week. Unspent money will be refunded at the end of the week. The store sells sweatshirts, T-shirts, film, batteries, bug spray, pens, postcards, stationery, candy, pop, stuffed animals, etc.</p>
                                 </li>
-                                <li id="camper-dropoff" class="item">                                    
-                                    <h3 class="heading ">When is camper drop off and registration?</h3>
-                                    <p>Sunday 3:00-5:00 PM, unless otherwise state in your (TODO: FIll in) _________ .</p>
-                                </li>
-                                <li id="camper-pickup" class="item">                                    
-                                    <h3 class="heading ">When is camper pickup and deregistration?</h3>
-                                    <p>Saturday 10:00 AM, unless otherwise state in your (TODO: FIll in) _________ .</p>
-                                </li>
-                                <li id="dietary" class="item">                                    
+                                
+                               <? /*  <li id="dietary" class="item">                                    
                                     <h3 class="heading ">How do you handle dietary needs?</h3>
                                     <p>(TODO: FIll in)</p>
                                 </li>
@@ -124,7 +141,7 @@
                                 <li id="prevent-homesickness" class="item">                                    
                                     <h3 class="heading ">How can I help my child not be afraid or homesick?</h3>
                                     <p>(TODO: FIll in)List of ways to prepare and help child cope (Wite letters, send photo, stuffed animal, encouraging talks, tell them get into activites )(TODO: Finesse)</p>
-                                </li>
+                                </li> -->*/ ?>
                                 <li id="get-in-touch-with-alumni" class="item">                                    
                                     <h3 class="heading ">Can you help me get in touch with other alumni?</h3>
                                     <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="$url_alumni_login" target="_blank">alumni registery </a>and we'll tell you about alumni events.

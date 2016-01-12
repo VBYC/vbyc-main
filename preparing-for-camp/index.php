@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heros/preparing-for-camp.jpg" alt=" ">
+                            <img src="/images/heroes/preparing-for-camp.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -93,8 +93,8 @@
 
                             <h3 class="heading">Day of camp</h3>
                             <ol class="" >
-                                <li>Get here! <a href="$url_google_map" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
-                                <li>Arrive Sunday at 3:00 PM, unless otherwise state in your (TODO: FIll in) _________ .</li>
+                                <li>Get here! <a href="<?=$url_google_map?>" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
+                                <li>Arrive Sunday at 3:00 PM (unless otherwise stated).</li>
                                 <li>When you park, a staff member give your cabin number.</li>
                                 <li>Drop off your stuff in your cabin and meet your counselor.</li>
                                 <li>Come to the lodge to register.</li>
@@ -103,8 +103,8 @@
 
                             <h3 class="heading">When camp is over</h3>
                             <ol class="" >
-                                <li>Come on back! <a href="$url_google_map" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
-                                <li>Arrive Saturday at 10:00 AM, unless otherwise state in your (TODO: FIll in) _________ .</li>
+                                <li>Come on back! <a href="<?=$url_google_map?>" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
+                                <li>Arrive Saturday at 10:00 AM (unless otherwise stated).</li>
                                 <li>Join the Final Flag cerimony.</li>
                                 <li>Drop off your stuff in your cabin and meet your counselor.</li>
                                 <li>Come to the lodge to de-register.</li>
@@ -117,16 +117,16 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Things to know</h3>
-                            <ol class="">
-                                <li>(TODO:) Food: Descrioption of how we handle dietary (gluten, allergies) needs, photos, sample menu</li>
+                            <ul class="">
+                               <!--  <li>(TODO:) Food: Descrioption of how we handle dietary (gluten, allergies) needs, photos, sample menu</li>
                                 <li>(TODO:) Alergy handling policy, asthma handling policy</li>
-                                <li>(TODO:) List of ways to prepare and help child cope (Wite letters, send photo, stuffed animal, encouraging talks, tell them get into activites)</li>
+                                <li>(TODO:) List of ways to prepare and help child cope (Wite letters, send photo, stuffed animal, encouraging talks, tell them get into activites)</li> -->
                                 <li>Learn more on our <a href="/<?=$url_faqs?>/">FAQ page</a>.</li>
                              
                                 
                                 
 
-                            </ol>
+                            </ul>
                         </div>
                     </div><!-- /.row -->
 

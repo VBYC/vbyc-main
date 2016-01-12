@@ -13,17 +13,15 @@
 
  <main>    
         <section class="hero">
-            <? if ($show_hero_image) { ?>
             <div class="hero-image-container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/template/hero-basic.jpg" alt=" ">
+                            <img src="/images/heroes/donate.jpg" alt=" ">
                         </div>
                     </div>
                 </div><!-- /.row -->
             </div>
-            <? } ?>
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
@@ -51,7 +49,7 @@
                 <article class="main-article">
 
                    
-
+<!-- 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Donor Testimony</h3>
@@ -61,7 +59,7 @@
                                 </p>
                             </div>
                         </div>
-                    </div><!-- /.row -->
+                    </div> --><!-- /.row -->
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
