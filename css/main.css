@@ -10012,6 +10012,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 .hero-scroll-cta {
   text-align: center;
   margin-bottom: -20px;
+  margin-top: 20px;
 }
 /* line 40, ../sass/partials/_hero.scss */
 .hero-scroll-cta .link {
@@ -10025,6 +10026,11 @@ img[src*=".svg"] .main-logo-container .ie9 {
   border-radius: 15px;
   text-align: center;
   display: inline-block;
+}
+.hero-scroll-cta .link:hover {
+  text-decoration: none;
+  background-color: #0595E5;
+  color: #FFF;
 }
 /* line 52, ../sass/partials/_hero.scss */
 .hero-scroll-cta .glyphicon {
@@ -10326,8 +10332,8 @@ img[src*=".svg"] .main-logo-container .ie9 {
   font-weight: bold;
   font-size: 5.75em;
   line-height: 1.1;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3);
-}
+/*  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3);
+*/}
 /* line 32, ../sass/partials/_page-home.scss */
 .template-home .header-main h1 .group-1 {
   display: block;

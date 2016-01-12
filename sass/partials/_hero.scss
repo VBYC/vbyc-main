@@ -37,6 +37,8 @@
 .hero-scroll-cta {
 	text-align: center;
 	margin-bottom: -20px;
+	margin-top: 20px;
+
 	.link {
 		margin: 10px auto 0;
 		padding: 0 25px 0 20px;
@@ -48,6 +50,11 @@
 		border-radius: 15px;
 		text-align: center;
 		display: inline-block;
+		&:hover {
+			text-decoration: none;
+			background-color: #0595E5;
+			color: #FFF;
+		}
 	}
 	.glyphicon {
 		margin-right: 5px;
