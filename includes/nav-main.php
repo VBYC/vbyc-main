@@ -71,10 +71,10 @@
                                 <? $i = $url_about ?>
                                 <div class="link normal">About Us</div>
                                 <ul class="navbar-list-sub list-unstyled">
-                                     <li class="item-sub">
+                                     <li class="item-sub duplicate-of-parent">
                                         <? $i = $url_about ?>
-                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            About
+                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?> duplicate-of-parent">
+                                            About Us
                                         </a>
                                      </li>
                                      <li class="item-sub">
