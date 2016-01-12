@@ -109,6 +109,9 @@
                                         First aid station
                                     </li>
                                 </ul>
+                                <p>
+                                    <a href="/<?=$url_facilities?>/">See photos of our facilities</a>.
+                                </p>
                             </div>
                         </div>
                     </div><!-- /.row -->

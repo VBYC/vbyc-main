@@ -77,7 +77,7 @@
 							            <li class="item">Two or three warm blankets or a sleeping bag</li>
 							            <li class="item">Towels - beach, bath, hand</li>
 							            <li class="item">Washcloth</li>
-							            <li class="item">Bag for dirty laundry</li>
+							            <li class="item">Breathable bag for dirty laundry</li>
 							        </ul>
 							    </dd>
 							    <dt class="list-term">
@@ -87,7 +87,7 @@
 							        <ul class="list-styled list-no-indent">
 							            <li class="item">Soap</li>
 							            <li class="item">Toothbrush &amp; toothpaste</li>
-							            <li class="item">Comb</li>
+							            <li class="item">Comb/brush</li>
 							            <li class="item">Deodorant</li>
 							            <li class="item">Sunscreen</li>
 							            <li class="item">Shampoo</li>
@@ -103,7 +103,7 @@
                                     <ul class="list-styled list-no-indent">
                                         <li class="item">Books and magazines</li>
                                         <li class="item">Pencils and pens</li>
-                                        <li class="item">Writing paper, envelops, stamps</li>
+                                        <li class="item">Writing paper, envelopes, stamps</li>
                                         <li class="item">Water bottle</li>
                                         <li class="item">Flashlight</li>
                                         <li class="item">Hobbies to share</li>
@@ -123,7 +123,7 @@
                                 </dt>
                                 <dd class="list-definition">
                                     <ul class="list-styled list-no-indent">
-                                        <li class="item">Bathing suit</li>
+                                        <li class="item">Bathing suits</li>
                                         <li class="item">Pajamas</li>
                                         <li class="item">Underwear</li>
                                         <li class="item">Long pants</li>
@@ -141,7 +141,7 @@
 	                                <ul class="list-styled list-no-indent">
 	                                    <li class="item">Baseball cap</li>
 	                                    <li class="item">Sun hat (opt)</li>
-	                                    <li class="item">Bandannas</li>
+	                                    <li class="item">Bandanas</li>
 	                                    <li class="item">Sunglasses</li>
 	                                    <li class="item">Swim goggles (opt)</li>
 	                                </ul>
@@ -198,6 +198,7 @@
                                         <li class="item">iPods (radios, cd or mp3 players)</li>
                                         <li class="item">Skateboards</li>
                                         <li class="item">Hoverboards</li>
+                                        <li class="item">Drones</li>
                                         <li class="item">Televisions</li>
                                         <li class="item">Peanut products (because of allergies, we are a peanut free environment)</li>
                                     </ul>
