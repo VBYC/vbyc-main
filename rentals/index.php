@@ -109,11 +109,11 @@
                                         First aid station
                                     </li>
                                 </ul>
-                                <p><a href="/facilities/">Anne, what should the CTA say?</a></p>
                             </div>
                         </div>
                     </div><!-- /.row -->
 
+                    <?/*
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Past Events</h3>
@@ -135,6 +135,7 @@
                             </div>
                         </div>
                     </div><!-- /.row -->
+                    */ ?>
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
@@ -142,7 +143,17 @@
                             <h4 class="heading"> Affordable accessible adventure</h4>
                             <div>
                                 <p>
-                                    We want camp to be accessible and affordable, and aim to design a rental package to fit your budget. Prices vary depending on necessary facilities, duration of rental, and number of guests. Call us at (269) 521-3855 to discuss options and availability, or <strong>send us an email at <a href="mailto:director@vbyc.org">director@vbyc.org</a></strong>.
+                                    We want camp to be accessible and affordable, and aim to design a rental package to fit your budget. Prices vary depending on necessary facilities, duration of rental, and number of guests. 
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                <h3 class="heading">Contact us to discuss options and availability</h3>
+                                <p>
+                                    Call <strong>(269) 521-3855</strong> or <strong>send us an email at <a href="mailto:director@vbyc.org">director@vbyc.org</a></strong>.
                                 </p>
                             </div>
                         </div>
