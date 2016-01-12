@@ -12,15 +12,15 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <? $i = $url_what_to_bring ?>
-                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            What To Bring
-                                        </a>
-                                     </li>
-                                     <li class="item-sub">
                                         <? $i = $url_preparing_for_camp ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
                                             Preparing For Camp
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <? $i = $url_what_to_bring ?>
+                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
+                                            What To Bring
                                         </a>
                                      </li>
                                      <li class="item-sub">
@@ -89,6 +89,12 @@
                                         <? $i = $url_meet_the_director ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
                                             Meet the Director
+                                        </a>
+                                     </li>
+                                     <li class="item-sub">
+                                        <? $i = $url_faqs?>
+                                        <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
+                                            FAQs
                                         </a>
                                      </li>
                                 </ul>
