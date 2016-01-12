@@ -33,7 +33,7 @@
 				vbyc.util.sidebarScrollSpyScrollTo();
 			}
 
-			// Set up lightbox
+			// Set up lightbox (grid)
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 
 			// Set up main nav as sticking to the top
@@ -190,7 +190,12 @@
 			$(sideNav).affix({
 				offset: {
 					// How far you scroll down before the nav becomes sticky
-					top: triggerSticky
+					top: triggerSticky,
+
+					// Don't let the nav scroll over top of the footer
+					bottom: function () {
+				      return (this.bottom = $('.footer').outerHeight(true))
+				    }
 				}
 			});
 

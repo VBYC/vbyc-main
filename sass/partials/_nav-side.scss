@@ -15,7 +15,8 @@
 
 
 .sidenav {
-    &.affix {
+    &.affix,
+    &.affix-bottom {
         position: fixed;
     }
 }

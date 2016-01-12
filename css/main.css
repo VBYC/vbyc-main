@@ -9164,6 +9164,9 @@ button.close {
 .content-list.list-multiple-details .description {
   margin-top: 30px;
 }
+.content-list.list-multiple-details  {
+  margin-bottom: 70px;
+}
 /* line 51, ../sass/partials/_layout.scss */
 .content-list.list-single-details {
   margin-top: 30px;
@@ -9851,7 +9854,8 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* line 18, ../sass/partials/_nav-side.scss */
-.sidenav.affix {
+.sidenav.affix,
+.sidenav.affix-bottom {
   position: fixed;
 }
 
