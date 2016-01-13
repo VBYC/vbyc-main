@@ -22,36 +22,34 @@
 			}
 			
 			// Set up main nav
-			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarArrowColor(subNavSelector);
-			vbyc.util.initNavbarSticky();
+			// vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
+			// vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
+			// vbyc.util.initNavbarArrowColor(subNavSelector);
+			// vbyc.util.initNavbarSticky();
 
 			// Set up side nav with anchor links
 			if (hasSidenav) {
-				vbyc.util.sidebarScrollSpy();
-				vbyc.util.sidebarScrollSpyScrollTo();
+				// window.onload = function() {
+				    vbyc.util.sidebarScrollSpy();
+					vbyc.util.sidebarScrollSpyScrollTo();
+				// };
+				
 			}
 
 			// Set up lightbox (grid)
-			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
+			// vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 
-			// Set up main nav as sticking to the top
-			vbyc.util.initNavbarSticky();
+			// // Set up main nav as sticking to the top
+			// vbyc.util.initNavbarSticky();
 
-			// Set Home hero animation
-			// vbyc.util.homeHeroAnimation();
+			// // Home page news feed
+	  //       vbyc.util.newsFeed();  
 
-			// vbyc.util.resetImages();
-	  //       vbyc.util.nextImage(); 
+	  //       // Set up generic scroll-to link
+	  //       vbyc.util.scrollToLink();
 
-	        vbyc.util.newsFeed();  
-
-	        // Set up generic scroll-to link
-	        vbyc.util.scrollToLink();
-
-	        // Load these images after the rest of the page loads
-	        vbyc.util.deferImageLoad();
+	  //       // Load these images after the rest of the page loads
+	  //       vbyc.util.deferImageLoad();
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -75,7 +73,7 @@
 				
 				// See if nav is vertical, in SM view
 				if ($(navbarToggle).is(':visible')) {
-					if ( $(navbarSiblingsSelector + '.expanded' ).length == 0) {
+					if ( $(navbarSiblingsSelector + '.expanded' ).length === 0) {
 						// If none are already expanded, select the one just clicked
 						$(this).addClass('expanded');
 						$(target).slideDown( "fast", function() {
@@ -111,11 +109,9 @@
 			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
 			var target = '.link-sub:first';
 
-			$(target,subNavSelector)
-				.on( "mouseenter", function() {
+			$(target,subNavSelector).on( "mouseenter", function() {
 					$(this).parents(subNavSelector).addClass('alt-arrow-emphasize');
-				})
-				.on( "mouseleave", function() {
+				}).on( "mouseleave", function() {
 					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
 			});
 		},
@@ -134,30 +130,7 @@
             });
 		},
 
-		homeHeroAnimation: function() {
-			var target = $('.template-home .animation-outer');
-		},
-
-		resetImages: function() {
-	        allButFirstImage.hide();
-	    },
-	    nextImage: function() {
-	        if ($('img:last-child',container).is(':hidden')) {
-	          	vbyc.util.fadeInNextImage();
-	        } else {
-	          	allButFirstAndLastImage.hide();
-	          	vbyc.util.fadeOutLastImage();
-	        }
-	        $( "img",container).promise().done(function() {
-	        	setTimeout(vbyc.util.nextImage, speedInterval);
-	        });
-	    },
-	    fadeInNextImage: function() {
-	        $( "img:hidden:first",container).fadeIn(speedFade);
-	    },
-	    fadeOutLastImage: function() {
-	        $( "img:last",container).fadeOut(speedFade);
-	    },
+		
 	    newsFeed: function() {
 	        var parent = $('.news-feed');
 	        var target = $('.news-feed-list');
@@ -197,7 +170,7 @@
 
 					// Don't let the nav scroll over top of the footer
 					bottom: function () {
-				      return (this.bottom = $('.footer').outerHeight(true))
+				      return (this.bottom = $('.footer').outerHeight(true));
 				    }
 				}
 			});
@@ -209,11 +182,12 @@
 				target: sidenavContainer,
 
 				// How far from the top that triggers the left nav items become active
-				offset: triggerActivateLinks,
+				offset: triggerActivateLinks
 			});
-
 		},
 		sidebarScrollSpyScrollTo: function() {
+
+			window.onload
 			
 			var parent = sideNav;
 			var sidenavContainer 			= '#sidenav-container';
@@ -231,12 +205,23 @@
 				
 	            var target = this.hash;
 	            var $target = $(target);
-	            var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset)
+	            var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset);
+	            scrollToCoordinate = Math.round(scrollToCoordinate);
+
+	            $target.css('border','1px solid red');
+
+	            console.log($target.offset());
+	            console.log('target.offset().top: ' + $target.offset().top);
+	            console.log('headerRowHeightOffset: ' + headerRowHeightOffset);
+	            console.log('scrollToCoordinate: ' + scrollToCoordinate);
+
+
+	            console.log($target.getBoundingClientRect().top);
 
 	            $('html, body').stop().animate({
 	                'scrollTop': scrollToCoordinate
 	            }, 500, 'swing', function () {
-	                window.location.hash = target;
+	                // window.location.hash = target;
 	            });
 	        });
 		},
@@ -252,7 +237,7 @@
 	            $('html, body').stop().animate({
 	                'scrollTop': scrollToCoordinate
 	            }, 500, 'swing', function () {
-	                window.location.hash = target;
+	                // window.location.hash = target;
 	            });
 	        });
 		},
@@ -263,7 +248,34 @@
 					imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
 				} 
 			} 
-		}
+		},
+		homeHeroAnimation: function() {
+			var target = $('.template-home .animation-outer');
+		},
+		resetImages: function() {
+	        // (for home animation)
+	        allButFirstImage.hide();
+	    },
+	    nextImage: function() {
+	        // (for home animation)
+	        if ($('img:last-child',container).is(':hidden')) {
+	          	vbyc.util.fadeInNextImage();
+	        } else {
+	          	allButFirstAndLastImage.hide();
+	          	vbyc.util.fadeOutLastImage();
+	        }
+	        $( "img",container).promise().done(function() {
+	        	setTimeout(vbyc.util.nextImage, speedInterval);
+	        });
+	    },
+	    fadeInNextImage: function() {
+	    	// (for home animation)
+	        $( "img:hidden:first",container).fadeIn(speedFade);
+	    },
+	    fadeOutLastImage: function() {
+	        // (for home animation)
+	        $( "img:last",container).fadeOut(speedFade);
+	    }
 	}
 }( window.vbyc = window.vbyc || {}, jQuery ));
 
