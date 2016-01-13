@@ -32,7 +32,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Sessions</p>
-                                <h1 class="page-name">Preparing For Camp</h1>
+                                <h1 class="page-name">Parent Resources</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->
