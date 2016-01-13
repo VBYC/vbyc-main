@@ -52,6 +52,8 @@
 
 	        // Load these images after the rest of the page loads
 	        vbyc.util.deferImageLoad();
+
+	        vbyc.util.lowResPlaceholderBgImg();
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
@@ -59,6 +61,29 @@
 				hasSidenav = customValues.hasSidenav ;
 			}
 		},
+		lowResPlaceholderBgImg: function(customValues) {
+
+			// Intrurrupt high res bgimage from loading and load temperary low res image
+			$('.template-home .header-main').addClass('low-res-placeholder');
+
+			// Once hi res image is loaded, replace low res with high res
+			var image = new Image();
+			image.onload = function () {
+			   $('.low-res-placeholder').removeClass('low-res-placeholder');
+			}
+			image.onerror = function () {
+			   $('.low-res-placeholder').removeClass('low-res-placeholder');
+			}
+			image.src = "/images/heroes/home.jpg";
+
+		},
+
+
+
+
+
+
+
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			// Click the hamburger and expand the main nav
 			$( ".navbar-toggle" ).on( "click", function() {

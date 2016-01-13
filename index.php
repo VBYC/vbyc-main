@@ -1,6 +1,6 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = 'Van Buren Youth Camp';
+    $title = 'Van Buren Youth Camp - Home';
     $page = 'home';
     $template = 'home';
     $body_attributes = 'id="page-'.$page.'" class="template-'.$template.'" ';
