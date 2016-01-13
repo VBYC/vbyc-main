@@ -99,11 +99,11 @@
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li id="age-range" class="item">                                    
                                     <h3 class="heading ">What is the age range?</h3>
-                                    <p>Sunday 3:00-5:00 PM, unless otherwise stated.</p>
+                                    <p>Grades 1-12.</p>
                                 </li>
                                 <li id="coed" class="item">                                    
                                     <h3 class="heading ">Is it co-ed?</h3>
-                                    <p>Is it co-ed?</p>
+                                    <p>Yes.</p>
                                 </li>
                                 <li id="camper-dropoff" class="item">                                    
                                     <h3 class="heading ">When is camper drop off and registration?</h3>
