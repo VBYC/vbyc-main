@@ -12,7 +12,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
 <main>   
-    <img src="/images/pages/map-of-camp/map-of-camp.jpg" class="img-full-width" alt=" ">
+    <img src="/images/pages/map-of-camp/map-of-camp.png" class="img-full-width" alt=" ">
 </main>
  
 
