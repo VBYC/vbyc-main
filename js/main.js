@@ -64,7 +64,7 @@
 		lowResPlaceholderBgImg: function(values) {
 
 			// Intrurrupt high res bgimage from loading and load temperary low res image
-			$('.template-home .header-main').addClass('low-res-placeholder');
+			// $('.template-home .header-main').addClass('low-res-placeholder');
 
 			// Once hi res image is loaded, replace low res with high res
 			var image = new Image();
