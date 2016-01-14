@@ -5,7 +5,7 @@
     $template = 'home';
     $body_attributes = 'id="page-'.$page.'" class="template-'.$template.'" ';
     $description = 'FPO description';
-    $javascript_insert = 'vbyc.util.lowResPlaceholderBgImg({highResPath : "/images/heroes/home.jpg"});';
+    $javascript_insert = 'vbyc.util.init({highResPath : "/images/heroes/home.jpg"});';
  
  ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 

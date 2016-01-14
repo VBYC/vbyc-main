@@ -53,37 +53,38 @@
 	        // Load these images after the rest of the page loads
 	        vbyc.util.deferImageLoad();
 
-	        // vbyc.util.lowResPlaceholderBgImg();
+	        console.log('Hello');
+
+	        vbyc.util.lowResPlaceholderBgImg(highResPath);
 		},
 		initCustomValues: function(customValues) {
 			// Make this variable global inside this function
 			if (customValues.hasSidenav) {
 				hasSidenav = customValues.hasSidenav ;
 			}
-		},
-		lowResPlaceholderBgImg: function(values) {
-
-			// Intrurrupt high res bgimage from loading and load temperary low res image
-			// $('.template-home .header-main').addClass('low-res-placeholder');
-
-			// Once hi res image is loaded, replace low res with high res
-			var image = new Image();
-			image.onload = function () {
-			   $('.low-res-placeholder').removeClass('low-res-placeholder');
+			if (customValues.highResPath) {
+				highResPath = customValues.highResPath ;
 			}
-			image.onerror = function () {
-			   $('.low-res-placeholder').removeClass('low-res-placeholder');
-			}
-			image.src = values.highResPath;
 
+
+			
 		},
+		lowResPlaceholderBgImg: function(highResPath) {
+			if (highResPath) {
+				// Intrurrupt high res bgimage from loading and load temperary low res image
+				// $('.template-home .header-main').addClass('low-res-placeholder');
 
-
-
-
-
-
-
+				// Once hi res image is loaded, replace low res with high res
+				var image = new Image();
+				image.onload = function () {
+				   $('.low-res-placeholder').removeClass('low-res-placeholder');
+				}
+				image.onerror = function () {
+				   $('.low-res-placeholder').removeClass('low-res-placeholder');
+				}
+				image.src = highResPath;
+			}
+		},
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			// Click the hamburger and expand the main nav
 			$( ".navbar-toggle" ).on( "click", function() {
@@ -282,6 +283,7 @@
 	        });
 		},
 		deferImageLoad: function() {
+			console.log('Hello');
 			var imgDefer = document.getElementsByTagName('img');
 			for (var i=0; i<imgDefer.length; i++) {
 				if(imgDefer[i].getAttribute('data-src')) {
