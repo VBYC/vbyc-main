@@ -53,7 +53,6 @@
 	        // Load these images after the rest of the page loads
 	        vbyc.util.deferImageLoad();
 
-	        console.log('Hello');
 
 	        vbyc.util.lowResPlaceholderBgImg(highResPath);
 		},

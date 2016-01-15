@@ -14,7 +14,14 @@
 
         &.low-res-placeholder {
             background-image: url("/images/heroes/home-low-res-placeholder.jpg");
+            &:after {
+                background-image: url("/images/heroes/home.jpg");
+                content: '';
+                height: 0;
+                width: 0;
+            }
         }
+
  
         .main-logo-container {
             max-height: 75px;
