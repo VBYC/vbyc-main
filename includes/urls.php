@@ -53,8 +53,8 @@ $url_news = 'news';
 $title_news_amazon = 'Donate to VBYC through your Amazon purchases';
 $url_news_amazon = 'news-amazon';
 
-$title_preparing_for_camp = 'Preparing for Camp';
-$url_preparing_for_camp = 'preparing-for-camp';
+$title_parent_resources = 'Parent Resources';
+$url_parent_resources = 'parent-resources';
 
 $title_register = 'Register';
 $url_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.aspx';

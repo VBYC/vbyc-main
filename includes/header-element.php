@@ -1,6 +1,6 @@
 <? if ($page == 'home') { $logo_version = '-reverse'; } ?>
 
-    <header class="header-main background-img-fluid v-offset-bot-0">
+    <header class="header-main low-res-placeholder background-img-fluid v-offset-bot-0">
 
             <div class="container">
                 <div class="row">

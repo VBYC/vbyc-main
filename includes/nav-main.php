@@ -12,9 +12,9 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <? $i = $url_preparing_for_camp ?>
+                                        <? $i = $url_parent_resources ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Preparing For Camp
+                                            <?=$title_parent_resources?>
                                         </a>
                                      </li>
                                      <li class="item-sub">

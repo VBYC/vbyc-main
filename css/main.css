@@ -10319,6 +10319,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 7, ../sass/partials/_page-home.scss */
 .template-home .header-main {
+  background-color: #1f2c28;
   background-image: url("/images/heroes/home.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -10326,6 +10327,13 @@ img[src*=".svg"] .main-logo-container .ie9 {
   height: 650px;
   position: relative;
 }
+
+.template-home .header-main.low-res-placeholder {
+  
+  background-image: url("/images/heroes/home-low-res-placeholder.jpg");
+}
+
+
 /* line 14, ../sass/partials/_page-home.scss */
 .template-home .header-main .main-logo-container {
   max-height: 75px;

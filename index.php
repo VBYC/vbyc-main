@@ -1,14 +1,13 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = 'Van Buren Youth Camp';
+    $title = 'Van Buren Youth Camp - Home';
     $page = 'home';
     $template = 'home';
     $body_attributes = 'id="page-'.$page.'" class="template-'.$template.'" ';
     $description = 'FPO description';
-    $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
-    $loremSm = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.'; 
-    $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
-?>
+    $javascript_insert = 'vbyc.util.init({highResPath : "/images/heroes/home.jpg"});';
+ 
+ ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
