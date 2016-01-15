@@ -45,6 +45,12 @@
     }  
 } 
 
+.sidenav-anchor-target {
+    .item {
+        margin-top: 0;
+    }
+}
+
 
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {

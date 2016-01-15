@@ -9890,22 +9890,27 @@ img[src*=".svg"] .main-logo-container .ie9 {
   background-color: transparent;
 }
 
+/* line 49, ../sass/partials/_nav-side.scss */
+.sidenav-anchor-target .item {
+  margin-top: 0;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 52, ../sass/partials/_nav-side.scss */
+  /* line 58, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 227px;
     top: 152px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 63, ../sass/partials/_nav-side.scss */
+  /* line 69, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 219.9999px;
     top: 88px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 74, ../sass/partials/_nav-side.scss */
+  /* line 80, ../sass/partials/_nav-side.scss */
   .sidenav.affix {
     width: 270px;
     top: 88px;
