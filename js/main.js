@@ -257,8 +257,8 @@
 			$(window).load(function(){
 				// Remove the # from the hash, as different browsers may or may not include it
 				var target = location.hash.replace('#','');
-				target = '#' + target;
 				if(target != ''){
+				   target = '#' + target;
 				   vbyc.util.scrollToHash(target);
 			    }
 			});
