@@ -31,32 +31,30 @@
 			// Set up side nav with anchor links
 			if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
-				vbyc.util.sidebarScrollSpyScrollTo();
+				// vbyc.util.sidebarScrollSpyScrollTo();
 			}
+
+			// Set up hash scrolling
+			vbyc.util.scrollToHashOnClick();
+	        vbyc.util.scrollToHashOnPageLoad();
 
 			// Set up lightbox (grid)
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 
-			// Set up main nav as sticking to the top
-			vbyc.util.initNavbarSticky();
+			// News feed
+	        vbyc.util.newsFeed();  
 
-			// Set Home hero animation
+	        // Load these images after the rest of the page loads
+	        vbyc.util.deferImageLoad();
+	        if (highResPath) {
+				vbyc.util.lowResPlaceholderBgImg(highResPath);
+			}
+
+					// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
 
 			// vbyc.util.resetImages();
 	  //       vbyc.util.nextImage(); 
-
-	        vbyc.util.newsFeed();  
-
-	        // Set up generic scroll-to link
-	        vbyc.util.scrollToHashListener();
-
-	        // Load these images after the rest of the page loads
-	        vbyc.util.deferImageLoad();
-
-	        if (highResPath) {
-				vbyc.util.lowResPlaceholderBgImg(highResPath);
-			}
 	        
 		},
 		initCustomValues: function(customValues) {
@@ -67,9 +65,6 @@
 			if (customValues.highResPath) {
 				highResPath = customValues.highResPath ;
 			}
-
-
-			
 		},
 		lowResPlaceholderBgImg: function(highResPath) {
 
@@ -131,7 +126,6 @@
 				}
 			});
 		},
-
 		initNavbarArrowColor: function(subNavSelector) {
 			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
 			var target = '.link-sub:first';
@@ -158,11 +152,9 @@
                 $(this).ekkoLightbox();
             });
 		},
-
 		homeHeroAnimation: function() {
 			var target = $('.template-home .animation-outer');
 		},
-
 		resetImages: function() {
 	        allButFirstImage.hide();
 	    },
@@ -227,7 +219,7 @@
 				}
 			});
 
-			// Assign this scroll spoy to the body 
+			// Assign this scroll spy to the body 
 			$body.scrollspy({
 
 				// What ID is the immediate parent of the side nav? 
@@ -239,29 +231,12 @@
 
 		},
 		scrollToHash: function(target) {
-
-
-          
-            var parent = sideNav;
 			var sidenavContainer 			= '#sidenav-container';
 			var sidenavPaddingTop 			= 0;
 			var headerRowHeight 			= headerRow.outerHeight(true);
 			var headerRowHeightOffset       = headerRowHeight - sidenavPaddingTop;
-
-
-		
-	      
-				// var sidenavDistanceOffset 		= $(sidenavContainer).offset();
-				// var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
-				
-				
-            // var target = this.hash;
             var $target = $(target);
             var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset);
-
-
-
-            console.log('target.offset().top: ',$target.offset().top);
 
             $('html, body').stop().animate({
                 'scrollTop': scrollToCoordinate
@@ -277,90 +252,23 @@
 				    location.hash = target;
 				}
             });
-	 
-	     
 		},
-		scrollToHashListener: function() {
-			
-			var parent = sideNav;
-			// var sidenavContainer 			= '#sidenav-container';
-			// var sidenavPaddingTop 			= 0;
-			// var headerRowHeight 			= headerRow.outerHeight(true);
-			// var headerRowHeightOffset       = headerRowHeight - sidenavPaddingTop;
-
-
+		scrollToHashOnPageLoad: function() {
+			$(window).load(function(){
+				// Remove the # from the hash, as different browsers may or may not include it
+				var target = location.hash.replace('#','');
+				target = '#' + target;
+				if(target != ''){
+				   vbyc.util.scrollToHash(target);
+			    }
+			});
+		},
+		scrollToHashOnClick: function() {
 			// Set up scroll
 	        $('a[href^="#"]').on('click',function (event) {
-
 	        	event.preventDefault();
 	        	var target = this.hash;
 	        	vbyc.util.scrollToHash(target);
-
-
-	 
-	        });
-		},
-		// sidebarScrollSpyScrollTo: function() {
-			
-		// 	var parent = sideNav;
-		// 	var sidenavContainer 			= '#sidenav-container';
-		// 	var sidenavPaddingTop 			= 0;
-		// 	var headerRowHeight 			= headerRow.outerHeight(true);
-		// 	var headerRowHeightOffset       = headerRowHeight - sidenavPaddingTop;
-
-
-		// 	// Set up scroll
-	 //        $('a[href^="#"]',parent).on('click',function (e) {
-	 //            e.preventDefault();
-		// 		var sidenavDistanceOffset 		= $(sidenavContainer).offset();
-		// 		var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
-				
-				
-	 //            var target = this.hash;
-	 //            var $target = $(target);
-	 //            var scrollToCoordinate = ($target.offset().top - headerRowHeightOffset);
-
-	 //            console.log('target.offset().top: ',$target.offset().top);
-
-	 //            $('html, body').stop().animate({
-	 //                'scrollTop': scrollToCoordinate
-	 //            }, 500, 'swing', function () {
-
-	 //            	// Update URL to have new hash
-	 //            	if (history.pushState) {
-	 //            		// This prevents Firefox from re-scrolling to the hash
-		// 			    history.pushState(null, null, target);
-		// 			}
-		// 			else {
-		// 				// Old browsers
-		// 			    location.hash = target;
-		// 			}
-	 //                // window.location.hash = target;
-	 //            });
-	 //        });
-		// },
-		scrollToLink: function() {
-
-			// Set up scroll
-	        $('a[href^="#"].scroll-to').on('click',function (e) {
-	            e.preventDefault();
-	            var target = this.hash;
-	            var $target = $(target);
-	            var scrollToCoordinate = $target.offset().top;
-
-	            $('html, body').stop().animate({
-	                'scrollTop': scrollToCoordinate
-	            }, 500, 'swing', function () {
-	                // Update URL to have new hash
-	            	if (history.pushState) {
-	            		// This prevents Firefox from re-scrolling to the hash
-					    history.pushState(null, null, target);
-					}
-					else {
-						// Old browsers
-					    location.hash = target;
-					}
-	            });
 	        });
 		},
 		deferImageLoad: function() {
