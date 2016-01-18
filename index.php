@@ -40,7 +40,7 @@
                         <div class="content">
                             <a href="/<?=$url_schedule?>/" class="link">
 <!--                                 <img src="/images/illustrations/calendar.svg" class="banner-img img-responsive" alt=" ">
- -->                                <img src="/images/illustrations/calendar.png" class="banner-img img-responsive" alt=" ">
+ -->                                <img src="/images/illustrations/calendar.png" class="banner-img img-responsive" alt="Calandar illustration">
                             </a>
                             <div class="content-primary-text">
                                 <h3 class="headline">Find a session for your child</h3>
@@ -60,7 +60,7 @@
                     <div class="col-xs-12 col-sm-6"> 
                         <div class="content">
                             <a href="/<?=$url_typical_day?>/" class="link">
-                                <img src="/images/illustrations/campfire.png" class="banner-img img-responsive" alt=" ">
+                                <img src="/images/illustrations/campfire.png" class="banner-img img-responsive" alt="Campfire illustration">
                             </a>
                             <div class="content-primary-text">
                                 <h3 class="headline">Every camp day is a good day</h3>
@@ -89,7 +89,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_activities?>/" class="link">
-                                    <img src="<?=$src_defer?>" data-src="/images/home/activities.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/activities.jpg" class="banner-img img-responsive" alt="Campers at a table drawing">
                                 </a>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                         <div class="col-xs-12 col-md-8 pull-right">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_facilities?>/" class="link">
-                                    <img src="<?=$src_defer?>" data-src="/images/home/cleo.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/cleo.jpg" class="banner-img img-responsive" alt="Cleo the moose on the wall in the lodge">
                                 </a>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                         <div class="col-xs-12 col-md-8">
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_alumni?>/" class="link">
-                                    <img src="<?=$src_defer?>" data-src="/images/home/alumni.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/alumni.jpg" class="banner-img img-responsive" alt="Alumni holding hands">
                                 </a>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                             </div>
                             <div class="content content-primary-img">
                                 <a href="/<?=$url_rentals?>/" class="link">
-                                    <img src="<?=$src_defer?>" data-src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt=" ">
+                                    <img src="<?=$src_defer?>" data-src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt="Kayaks at the shore of Great Bear Lake">
                                 </a>
                             </div>
                         </div>

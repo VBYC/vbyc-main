@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/archery-bandana.jpg" alt=" ">
+                            <img src="/images/heroes/archery-bandana.jpg" alt="Counselor shooting a bow and arrow">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -72,16 +72,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/archery.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/archery.jpg" alt="Staff member helping a camper load an arrow" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/archery-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/archery-1.jpg" alt="Camper proud of her target" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/archery-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/archery-2.jpg" alt="Campers at the archery range" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -97,16 +97,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/arts-and-crafts.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/arts-and-crafts.jpg" alt="Camper showing a counselor his drawing" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-1.jpg" alt="Camper showing he drawing" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-2.jpg" alt="Campers drawing at a table" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -125,16 +125,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/canoeing-and-kayaking.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/canoeing-and-kayaking.jpg" alt="Campers in life jackets with paddles" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/canoeing-and-kayaking-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/canoeing-and-kayaking-1.jpg" alt="Counselor and campers canoeing" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/canoeing-and-kayaking-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/canoeing-and-kayaking-2.jpg" alt="Several kayaks on the lake" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -142,7 +142,7 @@
                                         <div class="row row-secondary hidden-xs">
                                             <div class="col-xs-12 col-sm-11 col-md-12">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/landscape-lg/canoeing-and-kayaking.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/landscape-lg/canoeing-and-kayaking.jpg" alt="Campers about to put their canoes in the water" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                         </div>
@@ -156,32 +156,6 @@
                                         <p>Safety is the first priority here. Campers learn a series of "calls" and procedures. Activities involve blocks of wood, imaginary rivers to cross, a 10' climbing wall, a grid of climbing rope, suspended cable walk (4' high), and so much more.</p>
                                         <p><em>Instructor training: Trained by certified instructor</em></p>
                                     </div>
-                                     <!-- <figure class="figure-images figure-layout-1">
-                                        <div class="row row-main">
-                                            <div class="col-xs-12 col-sm-11 col-md-7">
-                                                <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/arts-and-crafts.jpg" alt=" " class="img-item img-responsive img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
-                                                <div>
-                                                    <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-1.jpg" alt=" " class="img-item img-responsive img-fluid">
-                                                    </div>
-                                                    <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/arts-and-crafts-2.jpg" alt=" " class="img-item img-responsive img-fluid">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row row-secondary hidden-xs">
-                                            <div class="col-xs-12 col-sm-11 col-md-12">
-                                                <div class="image-container">
-                                                    <img src="/images/template/content-figure-landscape-full.jpg" alt=" " class="img-item img-responsive img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figure> -->                          
                                 </li>
                                 <li id="nature" class="item">
                                     <h3 class="heading nature">Nature</h3>  
@@ -192,16 +166,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/nature.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/nature.jpg" alt="Camper looking in terrarium" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/nature-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/nature-1.jpg" alt="Snake in a terrarium" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/nature-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/nature-2.jpg" alt="A toad" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -220,16 +194,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/rifelry.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/rifelry.jpg" alt="Camper with safety equipment shooting a rifle" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/rifelry-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/rifelry-1.jpg" alt="A rifle" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/rifelry-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/rifelry-2.jpg" alt="Staff member giving instruction on shooting" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -245,16 +219,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/song-and-dance.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/song-and-dance.jpg" alt="Counselor and campers dancing" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/song-and-dance-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/song-and-dance-1.jpg" alt="Counselor and campers dancing" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/song-and-dance-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/song-and-dance-2.jpg" alt="Counselor and campers dancing" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -262,7 +236,7 @@
                                         <div class="row row-secondary hidden-xs">
                                             <div class="col-xs-12 col-sm-11 col-md-12">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/landscape-lg/song-and-dance.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/landscape-lg/song-and-dance.jpg" alt="Staff and campers dancing teh Amos Moses" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                         </div>
@@ -286,16 +260,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/swimming.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/swimming.jpg" alt="Campers swimming" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/swimming-1.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/swimming-1.jpg" alt="Campers on the dock" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/swimming-2.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/swimming-2.jpg" alt="Campers learning the waterfront rules" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
@@ -303,7 +277,7 @@
                                         <div class="row row-secondary hidden-xs">
                                             <div class="col-xs-12 col-sm-11 col-md-12">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/landscape-lg/swimming.jpg" alt=" " class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/landscape-lg/swimming.jpg" alt="Campers swimming" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                         </div>

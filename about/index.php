@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/about.jpg" alt=" ">
+                            <img src="/images/heroes/about.jpg" alt="Campers at campfire">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -54,16 +54,16 @@
                             <!-- 1 column -->
                             <div class="row figure-row">
                                 <div class="col-sm-2 img-container">
-                                    <img src="/images/pages/about/figure-kids-on-bleachers.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/pages/about/figure-kids-on-bleachers.jpg" class="img-responsive img-item" alt="Campers sitting on bleachers" >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="/images/pages/about/figure-girls-cabin-row.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/pages/about/figure-girls-cabin-row.jpg" class="img-responsive img-item" alt="Girls arm in arm" >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="/images/pages/about/figure-hugging-cleo.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/pages/about/figure-hugging-cleo.jpg" class="img-responsive img-item" alt="Counselor hugging Cleo the Moose" >
                                 </div> 
                                 <div class="col-sm-2 img-container">
-                                    <img src="/images/pages/about/figure-dock.jpg" class="img-responsive img-item" alt=" " >
+                                    <img src="/images/pages/about/figure-dock.jpg" class="img-responsive img-item" alt="Campers on the dock" >
                                 </div>         
                             </div><!-- /.row -->
                         </figure>

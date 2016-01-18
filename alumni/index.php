@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/alumni.jpg" alt=" ">
+                            <img src="/images/heroes/alumni.jpg" alt="Alumni at a camp reunion">
                         </div>
                     </div>
                 </div><!-- /.row -->
