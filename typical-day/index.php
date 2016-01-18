@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/timeline.jpg" alt=" ">
+                            <img src="/images/heroes/timeline.jpg" alt="Campers doing a skit">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -58,7 +58,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/wake-up.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/wake-up.jpg" class="timeline-img img-responsive" alt="Campers in their cabin">
                                     </a>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/polar-bears.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/polar-bears.jpg" class="timeline-img img-responsive" alt="Campers doing Polar Bears">
                                     </a>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/kp-1.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/kp-1.jpg" class="timeline-img img-responsive" alt="Campers setting the table">
                                     </a>
                                 </div>
                             </div>
@@ -139,7 +139,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/flag-2.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/flag-2.jpg" class="timeline-img img-responsive" alt="Staff raising the flag">
                                     </a>
                                 </div>
                             </div>
@@ -169,10 +169,10 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/meal-getting-cereal.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/meal-getting-cereal.jpg" class="timeline-img img-responsive" alt="Camper getting breakfast">
                                     </a>
                                     <a href="#" class="link ">
-                                        <img src="/images/pages/typical-day/meal-3-cereal.jpg" class="timeline-img img-responsive v-offset-6" alt=" ">
+                                        <img src="/images/pages/typical-day/meal-3-cereal.jpg" class="timeline-img img-responsive v-offset-6" alt="Camper eating cereal">
                                     </a>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/camp-cleanup.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/camp-cleanup.jpg" class="timeline-img img-responsive" alt="Campers sweeping the lodge">
                                     </a>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/cabin-inspection.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/cabin-inspection.jpg" class="timeline-img img-responsive" alt="Cabin inspector in funny costume">
                                     </a>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/class-arts.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/class-arts.jpg" class="timeline-img img-responsive" alt="Campers drawing in Arts and Crafts class">
                                     </a>
                                 </div>
                             </div>
@@ -280,7 +280,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/choice-2.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/choice-2.jpg" class="timeline-img img-responsive" alt="Campers playing on the bleachers">
                                     </a>
                                 </div>
                             </div>
@@ -336,7 +336,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/meal-2.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/meal-2.jpg" class="timeline-img img-responsive" alt="Eating pizza">
                                     </a>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/store-inside.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/store-inside.jpg" class="timeline-img img-responsive" alt="Camp store">
                                     </a>
                                 </div>
                             </div>
@@ -391,7 +391,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/cabin-quality-time.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/cabin-quality-time.jpg" class="timeline-img img-responsive" alt="Campers chilling in their cabin">
                                     </a>
                                 </div>
                             </div>
@@ -418,7 +418,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/choice-1.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/choice-1.jpg" class="timeline-img img-responsive" alt="Campers playing with the hose during free time">
                                     </a>
                                 </div>
                             </div>
@@ -445,7 +445,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/class-kayak.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/class-kayak.jpg" class="timeline-img img-responsive" alt="Kayaking">
                                     </a>
                                 </div>
                             </div>
@@ -503,7 +503,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/meal-1.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/meal-1.jpg" class="timeline-img img-responsive" alt="Eating dinner in the lodge">
                                     </a>
                                 </div>
                             </div>
@@ -530,7 +530,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/store-picnic-table.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/store-picnic-table.jpg" class="timeline-img img-responsive" alt="Eating candy from the store">
                                     </a>
                                 </div>
                             </div>
@@ -557,7 +557,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/planning.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/planning.jpg" class="timeline-img img-responsive" alt="Planning a skit">
                                     </a>
                                 </div>
                             </div>
@@ -584,7 +584,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/flag.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/flag.jpg" class="timeline-img img-responsive" alt="Lowering the flag">
                                     </a>
                                 </div>
                             </div>
@@ -611,7 +611,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/thought.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/thought.jpg" class="timeline-img img-responsive" alt="Thought cerimony">
                                     </a>
                                 </div>
                             </div>
@@ -638,7 +638,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/evening-rec.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/evening-rec.jpg" class="timeline-img img-responsive" alt="Dancing at evening rec">
                                     </a>
                                 </div>
                             </div>
@@ -665,7 +665,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/campfire.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/campfire.jpg" class="timeline-img img-responsive" alt="Singing at campfire">
                                     </a>
                                 </div>
                             </div>
@@ -692,7 +692,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/personal-cleanup.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/personal-cleanup.jpg" class="timeline-img img-responsive" alt="Bath house">
                                     </a>
                                 </div>
                             </div>
@@ -719,7 +719,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/taps.jpg" class="timeline-img img-responsive" alt=" ">
+                                        <img src="/images/pages/typical-day/taps.jpg" class="timeline-img img-responsive" alt="Staff singing">
                                     </a>
                                 </div>
                             </div>

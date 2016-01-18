@@ -21,7 +21,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/preparing-for-camp.jpg" alt=" ">
+                            <img src="/images/heroes/parent-resources.jpg" alt="Camp's driveway">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -44,29 +44,7 @@
             <div class="container"> 
                 <article class="main-article">
 
-                    <!-- START ZIG ZAG FIGURE -->
-                    <? if ($show_content_hero_image) { ?>
-                    <div class="row">
-                        <figure class="figure-images figure-zig-zag">
-                            <!-- 1 column -->
-                            <div class="row figure-row">
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-4 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div> 
-                                <div class="col-sm-2 img-container">
-                                    <img src="/images/template/grid-sample-3-lg.jpg" class="img-responsive img-item" alt=" " >
-                                </div>         
-                            </div><!-- /.row -->
-                        </figure>
-                    </div><!-- /.row -->
-                    <? } ?>
-                    <!-- END ZIG ZAG FIGURE -->
+                  
 
                      <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
