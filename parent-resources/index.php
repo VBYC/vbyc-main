@@ -122,7 +122,6 @@
                                 <li>Come on back! <a href="<?=$url_google_map?>" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
                                 <li>Arrive Saturday at 10:00 AM (unless otherwise stated).</li>
                                 <li>Join the Final Flag cerimony.</li>
-                                <li>Drop off your stuff in your cabin and meet your counselor.</li>
                                 <li>Come to the lodge to de-register.</li>
                                 <li>Get your stuff from your cabin.</li>
                             </ol>
