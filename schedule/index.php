@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/schedule.jpg" alt=" ">
+                            <img src="/images/heroes/schedule.jpg" alt="Campers having lunch in the lodge">
                         </div>
                     </div>
                 </div><!-- /.row -->
