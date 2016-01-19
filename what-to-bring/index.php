@@ -29,6 +29,7 @@
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Sessions</p>
                                 <h1 class="page-name">What to Bring</h1>
+                                <p>Please label everything with your last name!</p>
                             </div>
                         </div>         
                     </div><!-- /.row -->

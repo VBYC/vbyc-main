@@ -28,7 +28,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Camp Life</p>
-                                <h1 class="page-name">Teypical Day</h1>
+                                <h1 class="page-name">Typical Day</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->
