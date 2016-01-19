@@ -76,10 +76,10 @@
                             <h3 class="heading">Support VBYC</h3>
                             <div>
                                 <p>
-                                   The very best way is to support VBYC is to pass on the magic you experienced here as a kid to your kids, and the kids of your friends, family, colleauges, and neighbors.
+                                   The very best way is to support VBYC is to pass on the magic you experienced here as a kid to your kids, and the kids of your friends, family, colleagues, and neighbors.
                                 </p>
                                 <p>
-                                   Make a <a href="/<?=$url_donate?>/">donation</a> to camp to support financial aid for campers in need, facilties upkeep, exqiopment, or anything you'd like to see it go for. 
+                                   Make a <a href="/<?=$url_donate?>/">donation</a> to camp to support financial aid for campers in need, <a href="/<?=$url_facilities?>/">facilities</a> upkeep, equipment, or anything you'd like to see it go for. 
                                 </p>
                             
                             </div>

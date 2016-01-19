@@ -59,8 +59,8 @@ $url_parent_resources = 'parent-resources';
 $title_register = 'Register';
 $url_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.aspx';
 
-$title_rentals = 'Rentals';
-$url_rentals = 'rentals';
+$title_rent_camp = 'Rent Camp';
+$url_rent_camp = 'rent-camp';
 
 $title_schedule = 'Schedule';
 $url_schedule = 'schedule';

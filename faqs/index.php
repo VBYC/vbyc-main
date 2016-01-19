@@ -6,7 +6,7 @@
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
-    $javascript_insert = 'vbyc.util.init({hasSidenav : true});';
+    $javascript_insert = 'vbyc.util.init();';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
@@ -36,6 +36,7 @@
 
             <div class="container scroll-spy-container"> 
                 <div class="row">
+                    <? /*
                     <div class="hidden-xs col-sm-4 col-md-3"> 
                         <aside id="sidenav-container">
                             <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
@@ -55,7 +56,7 @@
                                     <a href="#visiting" class="link sidenav-">Is visiting allowed?</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#bunkmate-requests" class="link sidenav-">Do you take bunk-mate requests?</a>
+                                    <a href="#cabinmate-requests" class="link sidenav-">Do you take bunk-mate requests?</a>
                                 </li>
                                 <li class="item" role="presentation">
                                     <a href="#store" class="link sidenav-">How does the store work?</a>
@@ -87,16 +88,17 @@
                                     <a href="#board" class="link sidenav-">Can I serve on the Board of Directors?</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#rentals" class="link sidenav-">Can I rent camp for an event?</a>
+                                    <a href="#rent-camp" class="link sidenav-">Can I rent camp for an event?</a>
                                 </li>
                             </ul>
                         </aside>
                     </div><!-- /column -->
+                    */ ?>
 
-                    <div class="col-xs-12 col-sm-8">
+                    <div class="col-xs-12 col-md-offset-2 col-md-8">
                         <article class="main-article">
                             
-                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+                            <ul class="content-list list-multiple-details list-unstyled">
                                 <li id="age-range" class="item">                                    
                                     <h3 class="heading ">What is the age range?</h3>
                                     <p>Grades 1-12.</p>
@@ -117,9 +119,9 @@
                                     <h3 class="heading ">Is visiting allowed?</h3>
                                     <p>No. To prevent homesickness, parents should not visit or call. But please send leters, postcards, and care packages!</p>
                                 </li>
-                                <li id="bunkmate-requests" class="item">                                    
-                                    <h3 class="heading ">Do you take bunk-mate requests?</h3>
-                                    <p>No. We find that when a cabin of kids start on equal footing of being new to each other, they have a happier week and have greater growth in self confidence. But don't worry, they can still find plenty of times throught the day to be with friends from other cabins. For example: Morning free time, afternoon free time, store time, thought, evening rec, and campfire. </p>
+                                <li id="cabinmate-requests" class="item">                                    
+                                    <h3 class="heading ">Do you take cabin-mate requests?</h3>
+                                    <p>No. We find that when a cabin of kids start on equal footing of being new to each other, they have a happier week and have greater growth in self confidence. There is still plenty of times throught the day campers in different cabins can be together. For example: Morning free time, afternoon free time, store time, thought, evening rec, and campfire. </p>
                                 </li>
                                 <li id="store" class="item">                                    
                                     <h3 class="heading ">How does the store work?</h3>
@@ -144,7 +146,7 @@
                                 </li> -->*/ ?>
                                 <li id="get-in-touch-with-alumni" class="item">                                    
                                     <h3 class="heading ">Can you help me get in touch with other alumni?</h3>
-                                    <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="$url_alumni_login" target="_blank">alumni registery </a>and we'll tell you about alumni events.
+                                    <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="$url_alumni_login" target="_blank">alumni registry </a>and we'll tell you about alumni events.
                                 </p>
                                 </li>
                                 <li id="donate" class="item">                                    
@@ -155,9 +157,9 @@
                                     <h3 class="heading ">Can I serve on the Board of Directors?</h3>
                                     <p>Yes please! <a href="/<?=$url_contact?>/">Contact us.</a></p>
                                 </li>
-                                <li id="rentals" class="item">                                    
+                                <li id="rent-camp" class="item">                                    
                                     <h3 class="heading ">Can I rent camp for an event?</h3>
-                                    <p>Yes please! See our <a href="/<?=$url_rentals?>/">Rentals page.</a></p>
+                                    <p>Yes please! See our <a href="/<?=$url_rent_camp?>/">Rent Camp page.</a></p>
                                 </li>
                                 
 

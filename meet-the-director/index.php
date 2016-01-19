@@ -43,7 +43,7 @@
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+                        <div class="col-xs-12 col-md-offset-2 col-md-8">
                             <h3 class="heading">Dottie Myers-Hill</h3>
                             <div>
                                 <p>Greetings from the woods!  My name is Dottie Myers-Hill and I’m your new (but old) Camp Director at Van Buren Youth Camp.  My last summer on staff was 1993 so my life has come full circle in the last 20 years and I find myself immensely grateful for the opportunity to “play” out here again.</p>

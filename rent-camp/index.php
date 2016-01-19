@@ -1,8 +1,8 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = $title_rentals;
-    $page = $url_rentals;
-    $section = 'rentals';
+    $title = $title_rent_camp;
+    $page = $url_rent_camp;
+    $section = 'rent-camp';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
     $description = 'FPO description';
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/rentals.jpg" alt="Bride and groom at a wedding held at camp">
+                            <img src="/images/heroes/rent-camp.jpg" alt="Bride and groom at a wedding held at camp">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -44,16 +44,16 @@
                             <div class="row figure-row">
                                 <div class="col-sm-2 img-container">
                                     
-                                     <img src="/images/pages/rentals/quarters.jpg" class="img-responsive img-item" alt="Heated rental cabin" >
+                                     <img src="/images/pages/rent-camp/quarters.jpg" class="img-responsive img-item" alt="Heated rental cabin" >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                    <img src="/images/pages/rentals/upper-20-bunks.jpg" class="img-responsive img-item" alt="Large building with bunk beds" >
+                                    <img src="/images/pages/rent-camp/upper-20-bunks.jpg" class="img-responsive img-item" alt="Large building with bunk beds" >
                                 </div> 
                                 <div class="col-sm-4 img-container">
-                                   <img src="/images/pages/rentals/wedding-table-toast.jpg" class="img-responsive img-item" alt="Wedding reception held at camp" >
+                                   <img src="/images/pages/rent-camp/wedding-table-toast.jpg" class="img-responsive img-item" alt="Wedding reception held at camp" >
                                 </div> 
                                 <div class="col-sm-2 img-container">
-                                   <img src="/images/pages/rentals/waterfront-from-dock.jpg" class="img-responsive img-item" alt="Waterfront" >
+                                   <img src="/images/pages/rent-camp/waterfront-from-dock.jpg" class="img-responsive img-item" alt="Waterfront" >
                                 </div>         
                             </div><!-- /.row -->
                         </figure>

@@ -187,7 +187,7 @@
                     <div class="col-xs-12">
                         <div class="content">
                             <h3 class="h1">
-                                <a href="/<?=$url_rentals?>/" class="">
+                                <a href="/<?=$url_rent_camp?>/" class="">
                                     Rent the camp
                                 </a>
                             </h3>
@@ -197,13 +197,13 @@
                                         <div class="description">
                                             <p>Van Buren Youth Camp can be Van Buren: Your Camp. For weddings, family reunions, retreats, meetings, or whenever you need an idyllic escape, camp awaits.
 
- <a href="/<?=$url_rentals?>/" class="link">Learn more</a></p>
+ <a href="/<?=$url_rent_camp?>/" class="link">Learn more</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="content content-primary-img">
-                                <a href="/<?=$url_rentals?>/" class="link">
+                                <a href="/<?=$url_rent_camp?>/" class="link">
                                     <img src="<?=$src_defer?>" data-src="/images/home/kayaks.jpg" class="banner-img img-responsive" alt="Kayaks at the shore of Great Bear Lake">
                                 </a>
                             </div>
