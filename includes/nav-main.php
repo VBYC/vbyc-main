@@ -60,9 +60,9 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <? $i = $url_map_of_camp ?>
+                                        <? $i = $url_explore_camp ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Map
+                                            Explore Camp
                                         </a>
                                      </li>
                                 </ul>

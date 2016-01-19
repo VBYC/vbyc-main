@@ -169,7 +169,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="content">
-                                <a href="/<?=$url_map_of_camp?>/" class="link text-center">
+                                <a href="/<?=$url_explore_camp?>/" class="link text-center">
                                     <h3 class="headline">There&rsquo;s a lot to explore!</h3>
                                     <p class="cta">View the map of camp</p>
                                 </a>

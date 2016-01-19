@@ -44,8 +44,8 @@ $url_financial_aid = 'financial-aid';
 $title_meet_the_director = 'Meet the Director';
 $url_meet_the_director = 'meet-the-director';
 
-$title_map_of_camp = 'Map of Camp';
-$url_map_of_camp = 'map-of-camp';
+$title_explore_camp = 'Explore Camp';
+$url_explore_camp = 'explore-camp';
 
 $title_news = 'News';
 $url_news = 'news';

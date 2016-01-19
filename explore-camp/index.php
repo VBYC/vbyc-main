@@ -1,7 +1,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = $title_map_of_camp ;
-    $page = $url_map_of_camp ;
+    $title = $title_explore_camp ;
+    $page = $url_explore_camp ;
     $section = 'camp-life';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
