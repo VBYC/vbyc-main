@@ -42,6 +42,10 @@ $link-sub-padding: 12px;
             padding-top: 7px;
             padding-bottom: 7px;
             border-bottom: 2px solid transparent;
+            color: $link-color;
+            &:hover {
+                color: $link-color-emphasize;
+            }
             .template-home & {
                 color: $link-color-reverse;
             }
@@ -98,7 +102,9 @@ $link-sub-padding: 12px;
 
         // Sub nav - individual link container
         .item-sub  {
+            
             $link-sub-padding-extra: ($link-sub-padding * 1.5);
+            
             &:first-child {
                 .link-sub {
                     padding-top: $link-sub-padding-extra;

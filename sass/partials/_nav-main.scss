@@ -19,8 +19,7 @@
                 color: $color-slate;
             }
         }
-    }
-
+    }   
     // Parent nav links
     .link {
         padding: 18px 10px;
@@ -30,20 +29,23 @@
         &:hover {
             text-decoration: none;
         }
+        // Special nav link
+        &.emphasize {
+            background-color: $color-red;
+            color: $color-white;
+            &:hover {
+                color: $color-white;
+                background-color: $color-red-darker;
+            }
+            &:focus,
+            &:active {
+                 color: $color-white;
+                 background-color: $link-focus-color;
+            }
+        }
     }
 
-    // Special nav link
-    .emphasize {
-        background-color: $color-red;
-        color: $color-white;
-        &:hover {
-            background-color: $color-red-darker;
-        }
-        &:focus,
-        &:active {
-             background-color: $link-focus-color;
-        }
-    }
+    
 }
 
 // Sub nav links container
