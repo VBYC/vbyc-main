@@ -16,7 +16,7 @@
                                     <a href="#nature" class="link sidenav-nature">Nature</a>
                                 </li>
                                 <li class="item" role="presentation">
-                                    <a href="#rifelry" class="link sidenav-rifelry">Rifelry</a>
+                                    <a href="#riflery" class="link sidenav-riflery">Riflery</a>
                                 </li>
                                 <li class="item" role="presentation">
                                     <a href="#song-and-dance" class="link sidenav-song-and-dance">Song &amp; Dance</a>

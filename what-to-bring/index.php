@@ -183,7 +183,7 @@
                                     </ul>
                                 </dd>
                             </dl>
-                            <p>*Campers with their own <a href="/<?=$url_classes?>/#archery">archery</a> or <a href="/<?=$url_classes?>/#rifelry">rifelry</a> equipment may make arrangements with the director.</p>
+                            <p>*Campers with their own <a href="/<?=$url_classes?>/#archery">archery</a> or <a href="/<?=$url_classes?>/#riflery">riflery</a> equipment may make arrangements with the director.</p>
                         </div>
                     </div><!-- /.row -->
 

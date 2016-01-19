@@ -85,7 +85,7 @@
                             <h3 class="heading">Large Group Activities</h3>
                             <div>
                                 <p>
-                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation cerimony, trail day, etc.
+                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation ceremony, trail day, etc.
                                 </p>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                                     Campers choose from a variety traditional and unique of activities offered by the staff, such as like four-square, roof ball, frisbee golf, soccer, basketball, telling stories, kickball, making up skits, flying kites, scavenger hunts and feeding the animals in the nature hut etc. 
                                 </p>
                                 <p>
-                                    When the store is open, campers to buy treats and suiviniers like: snacks, drinks, t-shirts, hats, cameras, batteries etc. This is a nice to to relax and hang out.
+                                    When the store is open, campers to buy treats and souvenirs like: snacks, drinks, t-shirts, hats, cameras, batteries etc. This is a nice to to relax and hang out.
                                 </p>
                                 <p>
                                    There is always time in between activities in the schedule that campers can socialize and relax. Sometimes these few minutes are when new friends are made and when the most memorable moments occur.
@@ -124,7 +124,7 @@
                             </p>
                             <ul class="list-styled list-no-indent  ">
                                 <li class="item">
-                                    <strong>Special Day.</strong> A day-long participitory skit where the campers have to help the visting heroes save camp from villians, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
+                                    <strong>Special Day.</strong> A day-long participatory skit where the campers have to help the visiting heroes save camp from villains, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
                                 </li>
                                 <li class="item">
                                     <strong>Camp Songs.</strong> There a songs for every situation! 

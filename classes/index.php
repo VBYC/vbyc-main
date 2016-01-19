@@ -182,8 +182,8 @@
                                         </div>
                                     </figure>                         
                                 </li>
-                                <li id="rifelry" class="item">
-                                    <h3 class="heading rifelry">Rifelry</h3>
+                                <li id="riflery" class="item">
+                                    <h3 class="heading riflery">Riflery</h3>
                                     <div class="description">
                                         <p>This class focuses on gun safety. Our rifle range is located on the "Upper 20," separate from main camp. Campers shoot five-at-a-time from a covered pavilion with a wooden floor, and use .22 caliber rifles to shoot at paper targets which hang in front of a sand mound.</p>
                                         <p>Some campers feel more comfortable not shooting, which is fine, although with most campers this is a favorite class. Many camps no longer teach this course. We choose to keep it because it gives us the opportunity to promote the seriousness of the safe use of guns.
@@ -194,16 +194,16 @@
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="/images/pages/classes/squarish/rifelry.jpg" alt="Camper with safety equipment shooting a rifle" class="img-item img-responsive img-fluid">
+                                                    <img src="/images/pages/classes/squarish/riflery.jpg" alt="Camper with safety equipment shooting a rifle" class="img-item img-responsive img-fluid">
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/rifelry-1.jpg" alt="A rifle" class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/riflery-1.jpg" alt="A rifle" class="img-item img-responsive img-fluid">
                                                     </div>
                                                     <div class="image-container">
-                                                        <img src="/images/pages/classes/landscape/rifelry-2.jpg" alt="Staff member giving instruction on shooting" class="img-item img-responsive img-fluid">
+                                                        <img src="/images/pages/classes/landscape/riflery-2.jpg" alt="Staff member giving instruction on shooting" class="img-item img-responsive img-fluid">
                                                     </div>
                                                 </div>
                                             </div>

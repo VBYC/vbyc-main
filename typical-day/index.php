@@ -611,7 +611,7 @@
                             <div class="col-xs-12 col-sm-5 col-sm-offset-2 ">
                                 <div class="content content-primary-img">
                                     <a href="#" class="link">
-                                        <img src="/images/pages/typical-day/thought.jpg" class="timeline-img img-responsive" alt="Thought cerimony">
+                                        <img src="/images/pages/typical-day/thought.jpg" class="timeline-img img-responsive" alt="Thought ceremony">
                                     </a>
                                 </div>
                             </div>

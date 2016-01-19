@@ -95,8 +95,8 @@
                             </ul>
                             <h2 class="heading-category">Category</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                <li id="rifelry" class="item">
-                                    <h3 class="heading rifelry">Rifelry</h3>
+                                <li id="riflery" class="item">
+                                    <h3 class="heading riflery">Riflery</h3>
                                     <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/classes-content.php"); ?>                         
                                 </li>
                                 <li id="song-and-dance" class="item">
