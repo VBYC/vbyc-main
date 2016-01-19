@@ -106,7 +106,7 @@
                                 <p>
                                   This is a staff member who recruits, trains and provides support 
                                   to our counselors. They are experienced staff members and 
-                                  are an expert counselor them self. They are also an expert problem 
+                                  are an expert counselor themself. They are also an expert problem 
                                   solver and trouble shooter. They meet with the counselors daily. 
                                   They also provide a half day training and orientation on the counselor's 
                                   first day.</p>

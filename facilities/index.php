@@ -43,7 +43,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/lodge.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                             	data-title="Lodge" 
-                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time: The lodge is the heart of camp. It’s also home to more than 50 years of souvenirs, photos, and camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is heated and has air conditioning, and has an adjacent deck that faces Great Bear Lake for cool breezes, organized activities, and hanging out with friends."
+                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time: The lodge is the heart of camp. It’s also home to more than 65 years of souvenirs, photos, and camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is heated and has air conditioning, and has an adjacent deck that faces Great Bear Lake for cool breezes, organized activities, and hanging out with friends."
 
                             >    
                                 <img src="/images/pages/facilities/sm/lodge.jpg" class="img-responsive img-fluid grid-item" alt="Lodge" >
@@ -59,7 +59,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/cabins.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                             	data-title="Cabins" 
-                            	data-footer="Our 15 cabins line up on &ldquo;cabin row&rdquo;, centrally located to the bath house, lodge, and classes, and sleep eight campers and one counselor. Cabins have electricity for lights (but no outlets).">    
+                            	data-footer="Our 15 cabins line up on &ldquo;cabin row&rdquo;, centrally located to the bath house, lodge, and classes, and sleep eight campers and one counselor. Cabins have electricity for lights but no outlets.">    
                                 <img src="/images/pages/facilities/sm/cabins.jpg" class="img-responsive img-fluid grid-item" alt="Cabins" >
                             </a>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/stage.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                             	data-title="Stage" 
-                            	data-footer="Overlooking The Bowl, this stage is used for performances at Evening Rec and other activities, and for many activities throughout the day.">    
+                            	data-footer="Overlooking The Bowl, this stage is used for performances at Evening Rec, Song &amp; Dance class, and for many activities throughout the day.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/stage.jpg" class="img-responsive img-fluid grid-item" alt="Stage" >
                             </a>
                         </div>

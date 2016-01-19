@@ -43,9 +43,9 @@
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 col-sm-offset-1 col-sm-10">
                             <h3 class="heading">Dottie Myers-Hill</h3>
-                            <div class="columns-reflow-fixed-3">
+                            <div>
                                 <p>Greetings from the woods!  My name is Dottie Myers-Hill and I’m your new (but old) Camp Director at Van Buren Youth Camp.  My last summer on staff was 1993 so my life has come full circle in the last 20 years and I find myself immensely grateful for the opportunity to “play” out here again.</p>
                                 <p>My summers on staff allowed me to play many parts.  I was a kitchen girl, arts and crafts instructor, Penelope the Librarian and many other crazy special day characters, buddy board supervisor, head counselor, assistant director and director.</p>
                                 <p>My favorite things about camp are listening to kids share at thought, campfire songs/skits, and watching the kids who are strangers on Sunday struggling to let go of their “best friends” at Saturday morning flag.  I love the quiet of camp in the spring and fall... it is so peaceful but also helps me appreciate the crazy loudness of the summer season.  I just love camp.</p>
