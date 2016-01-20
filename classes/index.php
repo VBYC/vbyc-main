@@ -36,7 +36,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Classes are the heart of our program. Campers and counselors attend two classes each day (second class is in the afternoon), taught by VBYC summer staff. All campers rotate through all classes by week's end.</p>
+                                    <p>Classes are the heart of our program. Campers and counselors attend two classes each day (morning and afternoon), taught by VBYC summer staff. All campers rotate through all classes by week's end.</p>
                                 </div> 
                             </div> 
                         </div>         
@@ -64,7 +64,8 @@
                                 <li id="archery" class="item">                                    
                                     <h3 class="heading archery">Archery</h3>
                                     <div class="description">
-                                        <p>Our archery range is on the "Upper 20," separate from main camp. Campers develop accuracy, learn terminology for the parts of the bow and arrow, and learn proper safety in shooting recurve bows at targets against a hay wall. This is always a favorite class. Campers hitting bulls-eyes or other noteworthy achievements may become members of the famed VBYC Archery Club, one of our esteemed camp traditions.
+                                        <p>Our archery range is on the "Upper 20," separate from main camp. Campers, learn both proper archery safety and terminology for the parts of a  bow and arrow. They develop accuracy when shooting at targets attached to a haywall. is often  a favorite class. Campers striking a  bull’s-eyes or accomplish other noteworthy achievements become members of the famed VBYC Archery Club, one of our esteemed camp traditions. 
+
                                         <br>
                                         <em>Instructor certification: National Archery Association, Basic Instructor</em></p>
                                     </div>
@@ -116,8 +117,8 @@
                                 <li id="canoeing-and-kayaking" class="item">
                                     <h3 class="heading canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
                                     <div class="description">
-                                        <p>Campers learn basic canoeing strokes, steering the canoe working with their partner, keeping the canoe level and stable, all with an emphasis on safety. After 15 – 20 minutes of instruction, campers hit the lake canoeing as a group, boating near our cat tails, to the sandbar, to the creek, or out into the middle of the lake, a gorgeous camp favorite.</p>
-                                        <p>Campers must be at least a "B" swimmer to participate, and may choose another class that period if they are not. Canoes are always in visual contact with the waterfront director, who is on shore and can be signaled of emergencies through whistles. One rescue motorboat and one rescue rowboat is always on hand.
+                                        <p>Campers learn basic canoeing/kayaking strokes, steering the canoe/kayak working with their partner, keeping the canoe level and stable, all with an emphasis on safety during a 15 – 20 minute  instruction period., Then if ready, campers hit the lake canoeing as a group, boating near, cattails  on to the sandbar, all the way to the creek, or out into the middle of the lake. Canoeing and kayaking are  gorgeous camp favorites.</p>
+                                        <p>Campers must be at least a "B" swimmer to participate. If the camper doesn’t qualify they may choose another class that period. Canoes are always in visual contact of the waterfront director, who is on shore and can be signaled. In case of an emergency the waterfront director is signaled through whistles. VBYC uses one rescue motorboat and a rescue rowboat for emergencies
                                         <br>
                                        <em>Instructor certification: Lifeguard and Boater Safety Certified</em></p>
                                     </div>
