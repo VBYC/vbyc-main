@@ -89,9 +89,9 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
 								<div class="content-callout">
-									<p>VBYC an <a href="http://www.acacamps.org/" target="_blank">American Camping Association</a> accredited camp. The main purpose of the ACA accreditation program is to educate camp owners and directors in the administration of key aspects of camp operation, particularly those related to program quality and the health and safety of campers and staff. These standards establish guidelines for needed policies, procedures, and practices.</p>
+									<p>VBYC an <a href="http://www.acacamps.org/" target="_blank">American Camp Association</a> accredited camp. The main purpose of the ACA accreditation program is to educate camp owners and directors in the administration of key aspects of camp operation, particularly those related to program quality and the health and safety of campers and staff. These standards establish guidelines for needed policies, procedures, and practices.</p>
 
-									<p>We are also accredited by the <a href="http://www.michigan.gov/mdhhs" target="_blank">Michigan Department of Social Services</a>, and are affiliated with the <a href="https://www.unitedway.org/" target="_blank">United Way</a>. </p>
+									<p>We are also accredited by the <a href="http://www.michigan.gov/mdhhs" target="_blank">Michigan Department of Human Services</a>, and are affiliated with the <a href="https://www.unitedway.org/" target="_blank">United Way</a>. </p>
 								</div>
                             </div>
                         </div>
@@ -102,8 +102,8 @@
                         <div class="col-xs-12  text-center">
                                 <div class="about-logos v-offset-8" > 
                                     <p>
-                                        <a href="http://www.acacamps.org/" target="_blank"><img src="/images/logos/aca-logo.svg" alt="American Camping Association logo" class="logo"></a>
-                                        <a href="http://www.michigan.gov/mdhhs/" target="_blank"><img src="/images/logos/mi-dept-health-human-services.png" alt="Michigan Department of Social Services logo" class="logo"></a>
+                                        <a href="http://www.acacamps.org/" target="_blank"><img src="/images/logos/aca-logo.svg" alt="American Camp Association logo" class="logo"></a>
+                                        <a href="http://www.michigan.gov/mdhhs/" target="_blank"><img src="/images/logos/mi-dept-health-human-services.png" alt="Michigan Department of Human Services logo" class="logo"></a>
                                         <a href="https://www.unitedway.org/" target="_blank"><img src="/images/logos/united-way-logo.svg" alt="United Way" class="logo"></a>
                                     </p>
                                 </div>
