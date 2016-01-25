@@ -13,6 +13,15 @@
             <meta property="og:title"              content="<?=$title?>" />
             <meta property="og:description"        content="<?=$description?>" />
             <meta property="og:image"              content="<?=$facebook_share_thumb_path.$page.'.jpg'?>" />
+
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@vbyc">
+            <meta name="twitter:creator" content="@vbyc">
+            <meta name="twitter:title" content="<?=$title?>">
+            <meta name="twitter:description" content="<?=$description?>">
+            <meta name="twitter:image" content="<?=$facebook_share_thumb_path.$page.'.jpg'?>">
+
+
             <link rel="apple-touch-icon" href="/apple-touch-icon.png">
             <link rel="stylesheet" href="/css/main.css">
             <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
