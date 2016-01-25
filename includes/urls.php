@@ -2,101 +2,131 @@
 
 // Pages
 
-$title_about = 'About';
+// About
+$title_about = 'About | Van Buren Youth Camp';
 $url_about = 'about';
 $description_about = 'about';
 
-$title_activities = 'Activities';
+// Activities
+$title_activities = 'Activities offered for campers  | Van Buren Youth Camp';
 $url_activities = 'activities';
 $description_activities = 'activities';
 
-$title_alumni = 'Alumni';
+// Alumni
+$title_alumni = 'Alumni, reconnect with us! | Van Buren Youth Camp';
 $url_alumni = 'alumni';
 $description_alumni = 'alumni';
 
+// Alumni Log
 $title_alumni_login = 'Alumni Login';
 $url_alumni_login = 'https://vanburen.campintouch.com/v2/login.aspx?cx=a';
-$description_alumni_login = 'https://vanburen.campintouch.com/v2/login.aspx?cx=a';
 
+// Blog
 $title_blog = 'Blog';
 $url_blog = 'blog';
 $description_blog = 'blog';
+$meta_title_blog = '';
 
-$title_classes = 'Classes';
+// Classes
+$title_classes = 'Traditional summer camp classes offered: archery, arts & crafts, swimming... | Van Buren Youth Camp';
 $url_classes = 'classes';
 $description_classes = 'classes';
 
-$title_contact = 'Contact';
+// Contact
+$title_contact = 'Contact | Van Buren Youth Camp';
 $url_contact = 'contact';
 $description_contact = 'contact';
 
-$title_donate = 'Donate';
+// Donate
+$title_donate = 'Donate to our nonprofit summer camp | Van Buren Youth Camp';
 $url_donate = 'donate';
 $description_donate = 'donate';
 
+// Donate CTA
 $title_donate_cta = 'Donate today';
 $url_donate_cta = 'mailto:director@vbyc.org';
 $description_donate_cta = 'mailto:director@vbyc.org';
 
-$title_employment = 'Employment';
+// Employment
+$title_employment = 'Job opportunities for summer camp staff and counselors | Van Buren Youth Camp';
 $url_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
-$description_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
+$description_employment = 'Employment';
 
-$title_facilities = 'Facilities';
+// Facilities
+$title_facilities = "Tour our camp's facilities: lodge, cabins, waterfront, etc. | Van Buren Youth Camp";
 $url_facilities = 'facilities';
 $description_facilities = 'facilities';
 
-$title_faqs = 'FAQs';
+// FAQs
+$title_faqs = 'Frequently asked questions about our summer camp program| Van Buren Youth Camp';
 $url_faqs = 'faqs';
 $description_faqs = 'faqs';
 
-$title_financial_aid = 'Financial Aid';
+// Financial Aid
+$title_financial_aid = 'Financial aid options for youth in need | Van Buren Youth Camp';
 $url_financial_aid = 'financial-aid';
 $description_financial_aid = 'financial-aid';
 
-$title_meet_the_director = 'Meet the Director';
+// Home
+$title_home = 'Van Buren Youth Camp | A co-ed, overnight summer camp, in Southwest Michigan.';
+$url_home = '/';
+$description_home = 'home';
+
+// Meet the Director
+$title_meet_the_director = 'Meet the camp director, Dottie Myers-Hill | Van Buren Youth Camp';
 $url_meet_the_director = 'meet-the-director';
 $description_meet_the_director = 'meet-the-director';
 
-$title_explore_camp = 'Explore Camp';
+// Explore Camp (Map)
+$title_explore_camp = 'Explore an illustrated map of VBYC | Van Buren Youth Camp';
 $url_explore_camp = 'explore-camp';
 $description_explore_camp = 'explore-camp';
 
-$title_news = 'News';
+// News
+$title_news = 'Latest news | Van Buren Youth Camp';
 $url_news = 'news';
 $description_news = 'news';
 
-$title_news_amazon = 'Donate to VBYC through your Amazon purchases';
+// News Amazon 
+$title_news_amazon = 'Donate to VBYC through your Amazon purchases | Van Buren Youth Camp';
 $url_news_amazon = 'news-amazon';
 $description_news_amazon = 'news-amazon';
 
-$title_parent_resources = 'Parent Resources';
+// Resourc
+$title_parent_resources = 'What parents need to know for sending their child to camp | Van Buren Youth Camp';
 $url_parent_resources = 'parent-resources';
 $description_parent_resources = 'parent-resources';
 
+// Register CTA
 $title_register = 'Register';
 $url_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.aspx';
-$description_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.aspx';
 
-$title_rent_camp = 'Rent Camp';
+// Rent Camp
+$title_rent_camp = 'Rent camp for your wedding, retreat, reunion, etc. | Van Buren Youth Camp';
 $url_rent_camp = 'rent-camp';
 $description_rent_camp = 'rent-camp';
 
-$title_schedule = 'Schedule';
+// Schedule
+$title_schedule = 'See the schedule, prices, and age ranges for our summer camp sessions | Van Buren Youth Camp';
 $url_schedule = 'schedule';
 $description_schedule = 'schedule';
 
-$title_typical_day = 'Typical Day';
+// Typical Day
+$title_typical_day = 'A typical day of activities, classes, and fun– from polarbears to taps | Van Buren Youth Camp';
 $url_typical_day = 'typical-day';
 $description_typical_day = 'typical-day';
 
-$title_what_to_bring = 'What to Bring';
+// What 
+$title_what_to_bring = 'A list of what to bring to camp | Van Buren Youth Camp';
 $url_what_to_bring = 'what-to-bring';
 $description_what_to_bring = 'what-to-bring';
 
-$title_whos_in_charge = 'Who&rsquo;s in charge?';
+// Who&rsquo;s in charge?
+$title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
 $url_whos_in_charge = 'whos-in-charge';
 $description_whos_in_charge = 'whos-in-charge';
+$meta_title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
+
 
 // Social
 $url_facebook = 'https://www.facebook.com/VanBurenYouthCamp/';
