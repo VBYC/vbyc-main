@@ -50,42 +50,42 @@ $description_donate_cta = 'mailto:director@vbyc.org';
 // Employment
 $title_employment = 'Job opportunities for summer camp staff and counselors | Van Buren Youth Camp';
 $url_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
-$description_employment = 'Employment';
+$description_employment = 'Job opportunities for summer camp staff and counselors/';
 
 // Facilities
 $title_facilities = "Tour our camp's facilities: lodge, cabins, waterfront, etc. | Van Buren Youth Camp";
 $url_facilities = 'facilities';
-$description_facilities = 'facilities';
+$description_facilities = "Tour our camp's facilities: lodge, cabins, waterfront, etc.";
 
 // FAQs
-$title_faqs = 'Frequently asked questions about our summer camp program| Van Buren Youth Camp';
+$title_faqs = 'Frequently asked questions about our summer camp program | Van Buren Youth Camp';
 $url_faqs = 'faqs';
-$description_faqs = 'faqs';
+$description_faqs = 'Frequently asked questions about Van Buren Youth Camp';
 
 // Financial Aid
 $title_financial_aid = 'Financial aid options for youth in need | Van Buren Youth Camp';
 $url_financial_aid = 'financial-aid';
-$description_financial_aid = 'financial-aid';
+$description_financial_aid = 'Thanks to donations from the community, businesses, and individuals, we are able to offer financial aid to campers in need.';
 
 // Home
 $title_home = 'Van Buren Youth Camp | A co-ed, overnight summer camp, in Southwest Michigan.';
 $url_home = '/';
-$description_home = 'home';
+$description_home = 'VBYC is an overnight, summer camp, in Southwest Michigan. We serve boys and girls ages 6-18 in weekly camping sessions.';
 
 // Meet the Director
 $title_meet_the_director = 'Meet the camp director, Dottie Myers-Hill | Van Buren Youth Camp';
 $url_meet_the_director = 'meet-the-director';
-$description_meet_the_director = 'meet-the-director';
+$description_meet_the_director = 'Meet our long-time camp director, Dottie Myers-Hill.';
 
 // Explore Camp (Map)
 $title_explore_camp = 'Explore an illustrated map of VBYC | Van Buren Youth Camp';
 $url_explore_camp = 'explore-camp';
-$description_explore_camp = 'explore-camp';
+$description_explore_camp = 'Explore an illustrated map of VBYC';
 
 // News
 $title_news = 'Latest news | Van Buren Youth Camp';
 $url_news = 'news';
-$description_news = 'news';
+$description_news = 'Latest VBYC news.';
 
 // News Amazon 
 $title_news_amazon = 'Donate to VBYC through your Amazon purchases | Van Buren Youth Camp';
@@ -95,7 +95,7 @@ $description_news_amazon = 'news-amazon';
 // Resourc
 $title_parent_resources = 'What parents need to know for sending their child to camp | Van Buren Youth Camp';
 $url_parent_resources = 'parent-resources';
-$description_parent_resources = 'parent-resources';
+$description_parent_resources = 'What parents need to know for sending their child to camp.';
 
 // Register CTA
 $title_register = 'Register';
@@ -104,27 +104,27 @@ $url_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.asp
 // Rent Camp
 $title_rent_camp = 'Rent camp for your wedding, retreat, reunion, etc. | Van Buren Youth Camp';
 $url_rent_camp = 'rent-camp';
-$description_rent_camp = 'rent-camp';
+$description_rent_camp = 'Rent our camp for your wedding, bachelor(ette) party, group retreat, or corporate event? Camp spirit lends any occasion a bit of magic.';
 
 // Schedule
 $title_schedule = 'See the schedule, prices, and age ranges for our summer camp sessions | Van Buren Youth Camp';
 $url_schedule = 'schedule';
-$description_schedule = 'schedule';
+$description_schedule = 'See the schedule, prices, and age ranges for our summer camp sessions.';
 
 // Typical Day
 $title_typical_day = 'A typical day of activities, classes, and fun– from polarbears to taps | Van Buren Youth Camp';
-$url_typical_day = 'typical-day';
+$url_typical_day = 'Let us take you through a full day at VBYC, from wake up to taps.';
 $description_typical_day = 'typical-day';
 
 // What 
 $title_what_to_bring = 'A list of what to bring to camp | Van Buren Youth Camp';
-$url_what_to_bring = 'what-to-bring';
+$url_what_to_bring = 'A list of what clothes, footwear, bedding, bathroom kit, and other gear to bring for a week at camp.';
 $description_what_to_bring = 'what-to-bring';
 
 // Who&rsquo;s in charge?
 $title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
 $url_whos_in_charge = 'whos-in-charge';
-$description_whos_in_charge = 'FPO';
+$description_whos_in_charge = 'Let us tell you about who will be guiding and gsafe guarding your child.';
 
 
 // Social
