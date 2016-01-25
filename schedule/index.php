@@ -5,7 +5,7 @@
     $section = 'sessions';
     $template = 'basic-with-side-nav';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = 'FPO description';
+    $description = $description_schedule;
     $javascript_insert = 'vbyc.util.init({hasSidenav : true});';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 

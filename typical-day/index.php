@@ -5,7 +5,7 @@
     $section = 'camp-life';
     $template = 'timeline';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = 'FPO description';
+    $description = $description_typical_day;
     // $javascript_insert = '';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 

@@ -5,12 +5,8 @@
     $section = 'sessions';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = 'FPO description';
+    $description = $description_parent_resources;
     // $javascript_insert = '';
-?>
-<? 
-    $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
-    $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  

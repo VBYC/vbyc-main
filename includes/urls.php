@@ -5,17 +5,17 @@
 // About
 $title_about = 'About | Van Buren Youth Camp';
 $url_about = 'about';
-$description_about = 'about';
+$description_about = 'Van Buren Youth Camp is a co-ed, residential, summer camp in southwest Michigan. Weekly camping sessions go from June to August.';
 
 // Activities
 $title_activities = 'Activities offered for campers  | Van Buren Youth Camp';
 $url_activities = 'activities';
-$description_activities = 'activities';
+$description_activities = "Van Buren Youth Camp offers activities for each moment in the camper's day: classes, large group activities, and free time.";
 
 // Alumni
 $title_alumni = 'Alumni, reconnect with us! | Van Buren Youth Camp';
 $url_alumni = 'alumni';
-$description_alumni = 'alumni';
+$description_alumni = "Van Buren Youth Camp has many opportunities for alumni campers, counselors, and staff to stay in touch, volunteer and give back.";
 
 // Alumni Log
 $title_alumni_login = 'Alumni Login';
@@ -35,12 +35,12 @@ $description_classes = 'classes';
 // Contact
 $title_contact = 'Contact | Van Buren Youth Camp';
 $url_contact = 'contact';
-$description_contact = 'contact';
+$description_contact = 'Van Buren Youth Camp is located at 12370 45th Street, Bloomingdale, MI 49026.  Email us at director@vbyc.org';
 
 // Donate
 $title_donate = 'Donate to our nonprofit summer camp | Van Buren Youth Camp';
 $url_donate = 'donate';
-$description_donate = 'donate';
+$description_donate = 'Van Buren Youth Camp is a gift that lasts a lifetime.  Each year dozens of children attend camp due to the generosity of donors just like you.';
 
 // Donate CTA
 $title_donate_cta = 'Donate today';
@@ -124,8 +124,7 @@ $description_what_to_bring = 'what-to-bring';
 // Who&rsquo;s in charge?
 $title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
 $url_whos_in_charge = 'whos-in-charge';
-$description_whos_in_charge = 'whos-in-charge';
-$meta_title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
+$description_whos_in_charge = 'FPO';
 
 
 // Social

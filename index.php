@@ -1,10 +1,10 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = 'Van Buren Youth Camp - Home';
+    $title = $title_home;
     $page = 'home';
     $template = 'home';
     $body_attributes = 'id="page-'.$page.'" class="template-'.$template.'" ';
-    $description = 'FPO description';
+    $description = $description_home;
     $javascript_insert = 'vbyc.util.init({highResPath : "/images/heroes/home.jpg"});';
  
  ?>

@@ -5,12 +5,8 @@
     $section = 'about';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = 'FPO description';
+    $description = $description_whos_in_charge;
     // $javascript_insert = '';
-?>
-<? 
-    $lorem = 'Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.'; 
-    $lorem2 = ' non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. A at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.'; 
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
@@ -32,7 +28,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">About Us</p>
-                                <h1 class="page-name">Who's In Charge?</h1>
+                                <h1 class="page-name">Who&rsquo;s In Charge?</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->

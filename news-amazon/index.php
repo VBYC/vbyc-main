@@ -5,7 +5,7 @@
     $section = 'sessions';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = 'FPO description';
+    $description = $description_news_amazon;
     // $javascript_insert = '';
 ?>
 <? 

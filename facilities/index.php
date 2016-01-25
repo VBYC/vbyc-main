@@ -5,7 +5,7 @@
     $section = 'camp-life';
     $template = 'grid';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav modal-no-overflow"';
-    $description = 'FPO description';
+    $description = $description_facilities;
     // $javascript_insert = '';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
