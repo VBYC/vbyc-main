@@ -37,6 +37,7 @@
 			// Set up hash scrolling
 			vbyc.util.scrollToHashOnClick();
 	        vbyc.util.scrollToHashOnPageLoad();
+	        vbyc.util.scrollToLink();
 
 			// Set up lightbox (grid)
 			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
@@ -271,6 +272,31 @@
 	        	vbyc.util.scrollToHash(target);
 	        });
 		},
+		scrollToLink: function() {
+ 
+			// Set up scroll
+	        $('a[href^="#"].scroll-to').on('click',function (e) {
+	            e.preventDefault();
+	            var target = this.hash;
+	            var $target = $(target);
+	            var scrollToCoordinate = $target.offset().top;
+ 
+	            $('html, body').stop().animate({
+	                'scrollTop': scrollToCoordinate
+	            }, 500, 'swing', function () {
+	                // Update URL to have new hash
+	            	if (history.pushState) {
+	            		// This prevents Firefox from re-scrolling to the hash
+					    history.pushState(null, null, target);
+					}
+					else {
+						// Old browsers
+					    location.hash = target;
+					}
+	            });
+	        });
+	    },
+		
 		deferImageLoad: function() {
 			var imgDefer = document.getElementsByTagName('img');
 			for (var i=0; i<imgDefer.length; i++) {
