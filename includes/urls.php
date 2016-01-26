@@ -118,8 +118,8 @@ $description_typical_day = 'Let us take you through a full day at VBYC, from wak
 
 // What 
 $title_what_to_bring = 'A list of what to bring to camp | Van Buren Youth Camp';
-$url_what_to_bring = 'A list of what clothes, footwear, bedding, bathroom kit, and other gear to bring for a week at camp.';
-$description_what_to_bring = 'what-to-bring';
+$url_what_to_bring = 'what-to-bring';
+$description_what_to_bring = 'A list of what clothes, footwear, bedding, bathroom kit, and other gear to bring for a week at camp.';
 
 // Who&rsquo;s in charge?
 $title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
