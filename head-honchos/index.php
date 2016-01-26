@@ -1,11 +1,11 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/requirements.php"); ?> 
 <? 
-    $title = $title_whos_in_charge;
-    $page = $url_whos_in_charge;
+    $title = $title_head_honchos;
+    $page = $url_head_honchos;
     $section = 'about';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = $description_whos_in_charge;
+    $description = $description_head_honchos;
     // $javascript_insert = '';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="hero-image">
-                            <img src="/images/heroes/whos-in-charge.jpg" alt="Counselors">
+                            <img src="/images/heroes/head-honchos.jpg" alt="Counselors">
                         </div>
                     </div>
                 </div><!-- /.row -->
@@ -28,7 +28,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">About Us</p>
-                                <h1 class="page-name">Who&rsquo;s In Charge?</h1>
+                                <h1 class="page-name">Head Honchos</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->
@@ -43,20 +43,8 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Board of Directors</h3>
-                            <div>
-                                <p>
-                                  Elected by the supporters of Van Buren Youth Camp. Their role is 
-                                  to serve as the decision making body of the camp. They hire the 
-                                  camp director and actively supervise the general operation of the 
-                                  camp.
-                                  </p>
-                                  <p>They also generate funds for the camp by sponsoring projects 
-                                  and fundraiser's which generate money.</p>
-                                <p>These funds 
-                                  are used to make physical improvements to the camp facilities and to help 
-                                  with major undertakings, such as land acquisition. </p>
-                            </div>
+                            
+                            
 
                             <h3 class="heading">Director</h3>
                             <div>
@@ -91,13 +79,9 @@
                                   endurance and are recreation specialists!</p>
                             </div>
 
-                            <h3 class="heading">Health Officer</h3>
-                            <div>
-                                <p>
-                                  A full time health officer, nurse, or doctor lives at camp. A health screening is completed upon arrival at VBYC when your child’s health history will be reviewed and a visual observation will be completed. The health officer administers all medications and keeps medications under locked storage</p>
-                            </div>
                             
-                            <h3 class="heading">Volunteer Coordinator</h3>
+                            
+                            <h3 class="heading">Head Counselor</h3>
                             <div>
                                 <p>
                                   This is a staff member who recruits, trains and provides support 
@@ -123,6 +107,27 @@
                                   and friendship and responsibility in their cabin. They are ages 
                                   15 on up. </p>
         
+                            </div>
+
+                            <h3 class="heading">Health Officer</h3>
+                            <div>
+                                <p>
+                                  A full time health officer, nurse, or doctor lives at camp. A health screening is completed upon arrival at VBYC when your child’s health history will be reviewed and a visual observation will be completed. The health officer administers all medications and keeps medications under locked storage</p>
+                            </div>
+
+                            <h3 class="heading">Board of Directors</h3>
+                            <div>
+                                <p>
+                                  Elected by the supporters of Van Buren Youth Camp. Their role is 
+                                  to serve as the decision making body of the camp. They hire the 
+                                  camp director and actively supervise the general operation of the 
+                                  camp.
+                                  </p>
+                                  <p>They also generate funds for the camp by sponsoring projects 
+                                  and fundraiser's which generate money.</p>
+                                <p>These funds 
+                                  are used to make physical improvements to the camp facilities and to help 
+                                  with major undertakings, such as land acquisition. </p>
                             </div>
                         </div>
                     </div><!-- /.row -->

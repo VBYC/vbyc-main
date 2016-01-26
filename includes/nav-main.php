@@ -78,9 +78,9 @@
                                         </a>
                                      </li>
                                      <li class="item-sub">
-                                        <? $i = $url_whos_in_charge ?>
+                                        <? $i = $url_head_honchos ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Who's in Charge?
+                                            Head Honchos
                                         </a>
                                      </li>
                                      <li class="item-sub">

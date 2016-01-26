@@ -122,9 +122,9 @@ $url_what_to_bring = 'what-to-bring';
 $description_what_to_bring = 'A list of what clothes, footwear, bedding, bathroom kit, and other gear to bring for a week at camp.';
 
 // Who&rsquo;s in charge?
-$title_whos_in_charge = 'Director, staff, counselors | Van Buren Youth Camp';
-$url_whos_in_charge = 'whos-in-charge';
-$description_whos_in_charge = 'Let us tell you about who will be guiding and gsafe guarding your child.';
+$title_head_honchos = 'Director, staff, counselors | Van Buren Youth Camp';
+$url_head_honchos = 'head-honchos';
+$description_head_honchos = 'Let us tell you about who will be guiding and gsafe guarding your child.';
 
 
 // Social
