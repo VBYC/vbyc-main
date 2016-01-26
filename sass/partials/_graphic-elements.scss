@@ -9,8 +9,8 @@ hr {
 .divider-styled {
 	width: 100px;
 	border-top: 2px solid $color-red;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 70px;
+	margin-bottom: 70px;
 	&.less-margin {
 		margin-top: 50px;
 		margin-bottom: 50px;
@@ -75,7 +75,7 @@ hr {
 // Callout box
 .content-callout {
 	background-color: $color-gray-lighter;
-	padding: $padding-large-horizontal $padding-large-horizontal $padding-large-vertical; 
+	padding: 20px 25px; 
 }
 
 // Make images go full width, beyond its own width 
