@@ -113,8 +113,8 @@ $description_schedule = 'See the schedule, prices, and age ranges for our summer
 
 // Typical Day
 $title_typical_day = 'A typical day of activities, classes, and fun– from polarbears to taps | Van Buren Youth Camp';
-$url_typical_day = 'Let us take you through a full day at VBYC, from wake up to taps.';
-$description_typical_day = 'typical-day';
+$url_typical_day = 'typical-day';
+$description_typical_day = 'Let us take you through a full day at VBYC, from wake up to taps.';
 
 // What 
 $title_what_to_bring = 'A list of what to bring to camp | Van Buren Youth Camp';
