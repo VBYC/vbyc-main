@@ -1,15 +1,15 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - MAP OF CAMP
+    PAGE - EXPLORE CAMP (MAP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#page-map-of-camp {
+#page-explore-camp {
     .footer {
         margin-top: 0;
     }
 }
 
 @media (max-width: $screen-xs-max) {
-    #page-map-of-camp {
+    #page-explore-camp {
         main {
             overflow-x: scroll;
             overflow-y: hidden;

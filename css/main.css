@@ -8346,6 +8346,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   overflow: hidden;
   text-align: center;
   background-position: 50% 50%;
+  margin-bottom: 30px;
 }
 .hero .hero-image img {
   margin-left: -50%;
@@ -8881,22 +8882,19 @@ img[src*=".svg"] .main-logo-container .ie9 {
   }
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - MAP OF CAMP
+    PAGE - EXPLORE CAMP (MAP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#page-map-of-camp .footer {
+#page-explore-camp .footer {
   margin-top: 0;
 }
 
 @media (max-width: 767px) {
-  #page-map-of-camp main {
+  #page-explore-camp main {
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
   }
-  #page-map-of-camp .img-full-width {
+  #page-explore-camp .img-full-width {
     width: 100%;
   }
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - WHAT TO BRING
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
