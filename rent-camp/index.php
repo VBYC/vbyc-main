@@ -28,7 +28,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <h1 class="page-name">Van Buren, your camp.</h1>
-                                <a href="/contact/" class="hero-cta">Book an Event.</a>  
+                                <a href="/contact/" class="hero-cta">Book your event today!</a>  
                             </div> 
                         </div>         
                     </div><!-- /.row -->
