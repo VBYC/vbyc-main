@@ -8122,6 +8122,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 .navbar-list .link:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 .navbar-list .link.emphasize {
   background-color: #E74C3C;
@@ -8389,6 +8390,13 @@ img[src*=".svg"] .main-logo-container .ie9 {
     FOOTER NAVIGATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 767px) {
+  .footer-nav {
+    margin-bottom: -20px;
+  }
+  .footer-nav .nav-item {
+    display: block;
+    margin-top: 2px;
+  }
   .footer-nav .nav-link:hover {
     color: #2E9D7F;
   }
@@ -8396,10 +8404,8 @@ img[src*=".svg"] .main-logo-container .ie9 {
   .footer-content {
     padding-left: 20px;
   }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .footer-content {
-    padding-left: 20px;
+  .footer-content .title {
+    margin-top: 30px;
   }
 }
 @media (min-width: 768px) {

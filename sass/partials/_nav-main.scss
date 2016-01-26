@@ -28,6 +28,7 @@
         text-decoration: none; 
         &:hover {
             text-decoration: none;
+            cursor: pointer;
         }
         // Special nav link
         &.emphasize {
