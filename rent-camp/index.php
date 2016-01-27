@@ -27,7 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="hero-text">
-                                <h1 class="page-name">Van Buren, your camp.</h1>
+                                <h1 class="page-name">Let our camp be your camp.</h1>
                                 <a href="/contact/" class="hero-cta">Book your event today!</a>  
                             </div> 
                         </div>         
@@ -76,7 +76,7 @@
                             <h3 class="heading">Rental Details</h3>
                             <div>
                                 <p>
-                                    We can accommodate up to 300 people for an event, and 135 people on the grounds for overnight sleeping (more, if you choose to have tents at our adjacent campground The cabins are “camp style” (just rustic enough), and are a lot of fun.
+                                    We can accommodate up to 300 people for an event, and 135 people on the grounds for overnight sleeping (more, if you choose to have tents at our adjacent campground). The cabins are “camp style” (just rustic enough), and are a lot of fun.
                                 </p>
                                 <ul class="list-styled list-no-indent   ">
                                     <li class="item">
