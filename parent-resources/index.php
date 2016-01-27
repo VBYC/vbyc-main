@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <h3 class="heading">Pre-camp</h3>
-                            <ol class="" >
+                            <ol class="list-no-indent list-steps" >
                                 <li><a href="<?=$url_register?>">Register</a></li>
                                 <li>Review our <a href="/<?=$url_what_to_bring?>/">What to Bring</a> list.</li>
                                 <li>For first timers, review our <a href="/<?=$url_typical_day?>/">Typical
@@ -71,7 +71,7 @@
 
                         <div class="col-xs-12 col-sm-4">
                             <h3 class="heading">Day of camp</h3>
-                            <ol class="list-steps" >
+                            <ol class="list-no-indent list-steps" >
                                 <li>Get here! <a href="<?=$url_google_map?>" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
                                 <li>Arrive Sunday at 3:00 PM (unless otherwise stated).</li>
                                 <li>When you park, a staff member will give you your cabin number.</li>
@@ -83,7 +83,7 @@
 
                         <div class="col-xs-12 col-sm-4">
                             <h3 class="heading">When camp is over</h3>
-                            <ol class="" >
+                            <ol class="list-no-indent list-steps list-double-space" >
                                 <li>Come on back! <a href="<?=$url_google_map?>" target="_blank">12370 4th St., Bloomingdale, MI 49026</a>.</li>
                                 <li>Arrive Saturday at 10:00 AM (unless otherwise stated).</li>
                                 <li>Join the Final Flag ceremony.</li>
