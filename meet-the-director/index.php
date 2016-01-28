@@ -43,7 +43,13 @@
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                        <div class="col-xs-12 col-md-offset-2 col-md-8">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="portrait-container">
+                                <img src="/images/pages/meet-the-director/portrait.jpg" alt="Dottie Myers-Hill, Camp Director" class="portrait-primary v-offset-6 img-responsive">
+                            </div>
+                        </div>
+                    
+                        <div class="col-xs-12 col-sm-6">
                             <h3 class="heading">Dottie Myers-Hill</h3>
                             <div>
                                 <h4>Greetings Camper Families!!!</h4>
