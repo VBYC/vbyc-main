@@ -8679,6 +8679,10 @@ img[src*=".svg"] .main-logo-container .ie9 {
   .template-timeline .time {
     margin-bottom: 5px;
   }
+  .template-timeline .content img {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .template-timeline .content-primary-text {
     margin-bottom: 30px;
   }
