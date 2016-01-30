@@ -40,7 +40,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>We have on-going activities planned for each minute of a camper's day. </p>
+                                    <p>These on-going opportunities enhance each minute of a camper's day. </p>
                                 </div> 
                             </div> 
                         </div>         
@@ -85,7 +85,7 @@
                             <h3 class="heading">Large Group Activities</h3>
                             <div>
                                 <p>
-                                    This are activities that include the entire camp, such as evening rec (capture the flag, beach parties, folk dancing), campfire, meditation ceremony, trail day, etc.
+                                    Evening rec (capture the flag, beach parties, folk dancing), campfire, meditation ceremony, trail day, etc. The entire camp participates together.
                                 </p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             <h3 class="heading">Classes</h3>
                             <div>
                                 <p>
-                                    These are the traditional summer camp activities: archery, swimming, arts and crafts etc. With their cabin group, campers attend classes each day, and usually rotate through all our classes by the end of the week. <a href="/<?=$url_classes?>/">See full class list.</a>
+                                    These are the traditional activities we think of when we think of summer camp: archery, swimming, arts and crafts etc. Campers attend classes each day with their cabin group, and have the chance to try every class by the end of the week.  <a href="/<?=$url_classes?>/">See full class list.</a>
                                 </p>
                             </div>
                         </div>
@@ -105,13 +105,10 @@
                             <h3 class="heading">Free Time</h3>
                             <div>
                                 <p>
-                                    Campers choose from a variety traditional and unique of activities offered by the staff, such as like four-square, roof ball, frisbee golf, soccer, basketball, telling stories, kickball, making up skits, flying kites, scavenger hunts and feeding the animals in the nature hut etc. 
+                                    Campers choose from a variety of offerings led by the staff, from games like four-square, roof ball, and frisbee golf, to traditional sports like soccer and basketball, to telling stories, making up skits, flying kites, and scavenger hunts. When the store is open campers may buy treats and souvenirs.
                                 </p>
                                 <p>
-                                    When the store is open, campers to buy treats and souvenirs like: snacks, drinks, t-shirts, hats, cameras, batteries etc. This is a nice to to relax and hang out.
-                                </p>
-                                <p>
-                                   There is always time in between activities in the schedule that campers can socialize and relax. Sometimes these few minutes are when new friends are made and when the most memorable moments occur.
+                                    There is always time in between activities to allow campers to relax and hang out. Sometimes these in-between moments of downtime are when new friends and lasting memories are made.
                                 </p>
                             </div>
                         </div>
@@ -124,19 +121,21 @@
                             </p>
                             <ul class="list-styled list-no-indent  ">
                                 <li class="item">
-                                    <strong>Special Day.</strong> A day-long participatory skit where the campers have to help the visiting heroes save camp from villains, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades. 
+                                    <strong>Special Day.</strong> A day-long participatory skit during which the campers help the visiting heroes save Camp from villains, who often want to turn camp into a parking lot. These are epic. Alumni remember Special Days for decades.
+
                                 </li>
                                 <li class="item">
-                                    <strong>Camp Songs.</strong> There a songs for every situation! 
+                                    <strong>Camp Songs.</strong> Camp has a song for every situation!
+
                                 </li>
                                 <li class="item">
                                     <strong>Kissing the Moose.</strong> Don't get caught eating with your elbows on the table!
                                 </li>
                                 <li class="item">
-                                     <strong>Honor Cabin.</strong> Campers earn tokens, doing all manner of silly things, to earn tokens for their cabin.
+                                     <strong>Honor Cabin.</strong> Campers earn tokens for their cabin by doing all manner of silly things.
                                 </li>
                                 <li class="item">
-                                    <strong>Jumping in the Lake.</strong> Receive three pieces of mail and you have (get) to jump in the lake!
+                                    <strong>Jumping in the Lake.</strong> Receive five pieces of mail and you have to (get to!) jump in the lake!
                                 </li>
                             </ul>
 
