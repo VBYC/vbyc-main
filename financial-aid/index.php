@@ -50,39 +50,30 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">How to apply</h3>
                             <div>
+                            <p>Funds are limited and are usually depleted by mid-summer, so apply early!</p>
                                 <ol>
                                   <li>Parents/guardians must write a letter that includes:
-                                    <br>
-                                    <br>
+                                    
                                     <ul>
                                       <li>Why assistance is needed</li>
                                       <li><a href="/<?=$url_schedule?>/">Session name</a> </li>
-                                      <li>How much of the camp tuition your family can contribute:
+                                      <li>Amount your family can contribute:
                                         <ul>
                                             <li>85%</li>
                                             <li>75%</li>
                                             <li>50%</li>
-                                            <li>25%<br>
-                                              <br>
-                                              <em>*Funds are limited. Please pay as much as you can so we can serve as many children as possible</em>.<br>  
-                                              <br>
-                                            </li>
+                                            <li>25%</li>
                                         </ul>
                                       </li>
                                     </ul>
                                   </li>
-                                  <li>The child must <strong>write a letter</strong>  about why they want to come to camp.<br>
-                                    <br>
-                                  Mail letters to:<br>
-                                  Van Buren Youth Camp<br>
-                                    12370 45th St.<br>
-                                    Bloomingdale, MI 49026<br>
+                                  <li><p>Child must <strong>write a letter</strong>  about why they want to come to camp.
+                                                                      Letters can be sent via <a href="<?=$utl_contact?>">post or email</a>.</p>
+                                    <p>Parents/guardians will be notified by mail if financial aid is awarded.</p>
                                   </li>
                                 </ol>
-                                <p>Parents/guardians will be notified by mail if financial aid is awarded.</p>
-                                <p> Funds are limited and are usually depleted by mid-summer so apply early!<br>
-                                 
-                                </p>
+                                
+                              
                             </div>
                         </div>
                     </div><!-- /.row -->
