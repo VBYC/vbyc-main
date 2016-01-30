@@ -50,7 +50,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">How to apply</h3>
                             <div>
-                            <p>Funds are limited and are usually depleted by mid-summer, so apply early!</p>
+                                <p><strong>Funds are limited and are usually depleted by mid-summer, so apply early!</strong></p>
                                 <ol>
                                   <li>Parents/guardians must write a letter that includes:
                                     
@@ -64,13 +64,15 @@
                                             <li>50%</li>
                                             <li>25%</li>
                                         </ul>
+                                        *As funds are limited, we ask everyone to please pay as much as they can so we are able to serve as many children as possible.
                                       </li>
                                     </ul>
                                   </li>
-                                  <li><p>Child must <strong>write a letter</strong>  about why they want to come to camp.
-                                                                      Letters can be sent via <a href="<?=$utl_contact?>">post or email</a>.</p>
-                                    <p>Parents/guardians will be notified by mail if financial aid is awarded.</p>
-                                  </li>
+                                  <li><p>Child must <strong>write a letter</strong>  about why they want to come to camp. Letters can be sent via <a href="<?=$utl_contact?>">post or email</a>.</p>
+                                        <div class="content-callout">
+                                            Parents/guardians will be notified by mail if financial aid is awarded.
+                                        </div>
+                                    </li>
                                 </ol>
                                 
                               
