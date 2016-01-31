@@ -46,7 +46,7 @@
                                 <h3 class="headline">Find a session for your child</h3>
                                 <div class="row">
                                     <div class="description col-md-offset-1 col-md-10">
-                                        <p>Choose the session that suits your family. Whether your camper is six years old and hesitant to leave the nest, or fifteen and ready to fly the coop, we have a camp experience thoughtfully designed to help them take flight.</p>
+                                        <p>Whether your camper is six and hesitant to leave the nest, or fifteen and ready to fly the coop, we have a camp experience designed to help them take flight.</p>
                                     </div>
                                 </div>
                                 <a href="/<?=$url_schedule?>/" class="link">
