@@ -25,7 +25,7 @@
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Sessions</p>
                                 <h1 class="page-name">Parent Resources</h1>
