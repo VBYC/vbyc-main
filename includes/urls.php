@@ -47,6 +47,11 @@ $title_donate_cta = 'Donate today';
 $url_donate_cta = 'mailto:director@vbyc.org';
 $description_donate_cta = 'mailto:director@vbyc.org';
 
+// Error
+$title_error = 'Error';
+$url_error = 'error';
+$description_error = "Looks like this page doesn't exist.";
+
 // Employment
 $title_employment = 'Job opportunities for summer camp staff and counselors | Van Buren Youth Camp';
 $url_employment = 'https://vanburen.campintouch.com/ui/forms/application/staff/App';
