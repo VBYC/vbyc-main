@@ -69,17 +69,17 @@
                             <h3 class="heading">Once you're camp family, you're always camp family.</h3>
                             <div>
                                 <p>
-                                    There are lots of ways you can stay involved with camp. <a href="<?=$url_alumni_login?>" target="_blank">Sign up on our registry</a> to get notices of reunions, fundraisers, and volunteer opportunities.
+                                   There are a lot of ways you can stay involved with Camp. <a href="<?=$url_alumni_login?>" target="_blank">Sign up on our registry</a> to get notices of reunions, fundraisers, and volunteer opportunities.
                                 </p>
                             </div>
 
                             <h3 class="heading">Support VBYC</h3>
                             <div>
                                 <p>
-                                   The very best way is to support VBYC is to pass on the magic you experienced here as a kid to your kids, and the kids of your friends, family, colleagues, and neighbors.
+                                   Your investment in Camp can mean a lifetime of magic for someone else. The very best way to support VBYC is to pass on the magic you experienced here as a kid to other kids. 
                                 </p>
                                 <p>
-                                   Make a <a href="/<?=$url_donate?>/">donation</a> to camp to support financial aid for campers in need, <a href="/<?=$url_facilities?>/">facilities</a> upkeep, equipment, or anything you'd like to see it go for. 
+                                   Make a <a href="/<?=$url_donate?>/">donation</a> to contribute to financial aid for campers in need, <a href="/<?=$url_facilities?>/">facilities</a> upkeep, equipment, and to keep Camp ready to serve for generations.
                                 </p>
                             
                             </div>
