@@ -21,6 +21,11 @@ $description_alumni = "Van Buren Youth Camp has many opportunities for alumni ca
 $title_alumni_login = 'Alumni Login';
 $url_alumni_login = 'https://vanburen.campintouch.com/v2/login.aspx?cx=a';
 
+// Alumni Registry
+$title_alumni_registry = 'Alumni Registry';
+$url_alumni_registry = 'https://vanburen.campintouch.com/v2/alumni/register.aspx';
+
+
 // Blog
 $title_blog = 'Blog';
 $url_blog = 'blog';

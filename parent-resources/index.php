@@ -89,7 +89,7 @@
                                 <li>Join the Final Flag ceremony.</li>
                                 <li>Come to the lodge to de-register.</li>
                                 <li>Get your stuff from your cabin.</li>
-                                <li>Go home and keep in touch via our <a href="<?=$url_alumni?>">alumni page</a> and <a href="<?=$url_facebook?>">Facebook page</a> so you’re ready for next year!</li>
+                                <li>Go home and keep in touch via our <a href="/<?=$url_alumni?>/">alumni page</a> and <a href="<?=$url_facebook?>">Facebook page</a> so you’re ready for next year!</li>
                             </ol>
                         </div>
                     </div><!-- /.row -->

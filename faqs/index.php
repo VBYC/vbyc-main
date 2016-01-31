@@ -146,7 +146,7 @@
                                 </li> -->*/ ?>
                                 <li id="get-in-touch-with-alumni" class="item">                                    
                                     <h3 class="heading ">Can you help me get in touch with other alumni?</h3>
-                                    <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="$url_alumni_login" target="_blank">alumni registry </a>and we'll tell you about alumni events.
+                                    <p>The best place to do that is in this <a href="<?=$url_facebook_group?>">Facebook Group</a>. Or join our <a href="<?=$url_alumni_registry?>" target="_blank">alumni registry </a>and we'll tell you about alumni events.
                                 </p>
                                 </li>
                                 <li id="donate" class="item">                                    
