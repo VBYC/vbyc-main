@@ -39,9 +39,6 @@
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
-
-
-
                     <div class="row">
                         <div class="col-xs-12 col-sm-5 col-sm-offset-2">
                             <dl>
@@ -54,7 +51,7 @@
 							            <li class="item">A flat (twin size) bed sheet</li>
 							            <li class="item">Pillow and pillowcase</li>
 							            <li class="item">Two or three warm blankets or a sleeping bag</li>
-							            <li class="item">Towels - beach, bath, hand</li>
+							            <li class="item">Towels &mdash; beach, bath, hand</li>
 							            <li class="item">Washcloth</li>
 							            <li class="item">Breathable bag for dirty laundry</li>
 							        </ul>
@@ -119,10 +116,10 @@
 	                            <dd class="list-definition">
 	                                <ul class="list-styled list-no-indent">
 	                                    <li class="item">Baseball cap</li>
-	                                    <li class="item">Sun hat (opt)</li>
+	                                    <li class="item">Sun hat (opt.)</li>
 	                                    <li class="item">Bandanas</li>
 	                                    <li class="item">Sunglasses</li>
-	                                    <li class="item">Swim goggles (opt)</li>
+	                                    <li class="item">Swim goggles (opt.)</li>
 	                                </ul>
 	                            </dd>
 	
@@ -179,7 +176,7 @@
                                         <li class="item">Hoverboards</li>
                                         <li class="item">Drones</li>
                                         <li class="item">Televisions</li>
-                                        <li class="item">Peanut products (because of allergies, we are a peanut free environment)</li>
+                                        <li class="item">Peanut products (because of allergies, we are a peanut-free environment)</li>
                                     </ul>
                                 </dd>
                             </dl>
