@@ -42,8 +42,9 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/lodge.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Lodge" 
-                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time: The lodge is the heart of camp. It’s also home to more than 65 years of souvenirs, photos, and camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is heated and has air conditioning, and has an adjacent deck that faces Great Bear Lake for cool breezes, organized activities, and hanging out with friends."
+                                data-title="Washburn Lodge" 
+                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time makes Washburn Lodge the heart of Camp. It&rsquo;s also home to more than 65 years of souvenirs, photos, and Camp&rsquo;s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is both heated and air conditioned and has a front deck facing Great Bear Lake for people to enjoy cool breezes while enjoying activities or hanging out with friends.
+"
 
                             >    
                                 <img src="/images/pages/facilities/sm/lodge.jpg" class="img-responsive img-fluid grid-item" alt="Lodge" >
@@ -51,15 +52,15 @@
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/waterfront.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Waterfront" 
-                            	data-footer="Our private beach, dock and swim area is on the shores of Great Bear Lake, a small private lake. The swim area is divided into three sections to serve a range of swimming ability, and is guarded by three certified lifeguards and our WSI-certified waterfront director. At their disposal are all necessary rescue equipment including a motorized rescue motorboat and rowboat.">    
+                                data-title="Waterfront" 
+                                data-footer="Our private beach, dock and swim area is on the shores of Great Bear Lake, a small private lake. The swim area is divided into three sections to serve a range of swimming ability, and is guarded by certified lifeguards and our WSI-certified waterfront director. At their disposal are all necessary rescue equipment including a motorized rescue boat and rowboat.">    
                                 <img src="/images/pages/facilities/sm/waterfront.jpg" class="img-responsive img-fluid grid-item" alt="Waterfront" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/cabins.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Cabins" 
-                            	data-footer="Our 15 cabins line up on &ldquo;cabin row&rdquo;, centrally located to the bath house, lodge, and classes, and sleep eight campers and one counselor. Cabins have electricity for lights but no outlets.">    
+                                data-title="Cabins" 
+                                data-footer="Our 15 cabins line up on &ldquo;cabin row&rdquo;,  centrally located and sleep eight campers and one counselor. Cabins have electricity for lights but no outlets.">    
                                 <img src="/images/pages/facilities/sm/cabins.jpg" class="img-responsive img-fluid grid-item" alt="Cabins" >
                             </a>
                         </div>
@@ -68,22 +69,22 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/stage.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Stage" 
-                            	data-footer="Overlooking The Bowl, this stage is used for performances at Evening Rec, Song &amp; Dance class, and for many activities throughout the day.">    
+                                data-title="Stage" 
+                                data-footer="Overlooking The Bowl, our stage is used for performances during Evening Rec, Song & Dance class, and for many activities throughout the camp session.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/stage.jpg" class="img-responsive img-fluid grid-item" alt="Stage" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/campfire.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Campfire Bowl" 
-                            	data-footer="A wooded path from the lodge leads to the campfire bowl, where campfire has been held since camp was founded. The fire area illuminates beautifully at night, and is surrounded by a log circle large enough to seat the entire camp. Campfire is the last activity of every day, when cabin groups sit together and perform skits, sing songs, and tell stories.">    
+                                data-title="Campfire Bowl" 
+                                data-footer="A wooded path from the lodge leads to the campfire bowl, where campfire has been held since  Camp&rsquo;s founding in 1950. The fire area illuminates beautifully at night, and is surrounded by a log circle that seats the entire Camp. Campfire is the last activity of every day, when cabin groups sit together and watch groups perform skits, tell stories and sing songs.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/campfire.jpg" class="img-responsive img-fluid grid-item" alt="Campfire Bowl" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/rec-area.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Covered recreation Area" 
-                            	data-footer="Next to the lodge, our &ldquo;rec area&rdquo; is used all day for classes, all-camp activities, and small group activities such as basketball, floor hockey, folk dancing, 4-square, and chalk drawing.">    
+                                data-title="Covered Recreation Area" 
+                                data-footer="Next to the lodge, our &ldquo;rec area&rdquo;  is used for classes, all-camp activities, and small group activities such as basketball, floor hockey, folk dancing, Four-square or chalk drawing. ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/rec-area.jpg" class="img-responsive img-fluid grid-item" alt="Covered rec area" >
                             </a>
                         </div>
@@ -92,22 +93,22 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/bowl.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Sports Field (The Bowl)" 
-                            	data-footer="Cabin row wraps around this greenfield area used for soccer games, kickball, softball, and lots of all-camp activities.">    
+                                data-title="Sports Field &ldquo;The Bowl&rdquo;" 
+                                data-footer="Cabin row wraps around this greenfield area used for soccer games, kickball, softball, and many all-camp activities. Also on our &ldquo;Upper 20&rdquo; (20 acres of land up the road from the main camp) there is a full soccer/football field, perfect for band camps. ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/bowl.jpg" class="img-responsive img-fluid grid-item" alt="The Bowl" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/store.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Camp Store" 
-                            	data-footer="Our camp store is open daily. Parents and visitors have the opportunity to visit it during registration and pick-up. Campers make purchases using the camper account set up by their parents. We recommend &ldquo;pre-shopping&rdquo; at this link, for what we sell, prices and procedures, and to learn how it works.">    
+                                data-title="Camp Store" 
+                                data-footer="Our camp store is open daily. Campers make purchases using their camper account that is set up by their parents.  Parents and visitors have and the opportunity to visit it the store during registration and pick-up (deregistration). ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/store.jpg" class="img-responsive img-fluid grid-item" alt="Camp Store" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/bathhouse.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Bath House" 
-                            	data-footer="This modern facility has private showers, toilets, and is the only place for electrical outlets for personal items such as blow dryers.">    
+                                data-title="Bath House" 
+                                data-footer="The bath house  at VBYC has private showers, toilets, and it is the only place  with electrical outlets for personal use items such as blow dryers.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/bathhouse.jpg" class="img-responsive img-fluid grid-item" alt="Bath House" >
                             </a>
                         </div>
@@ -116,22 +117,23 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/archery-range.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Archery Range" 
-                            	data-footer="This range includes an arrow stop, bag targets, clearly designated shooting lines, and a covered shooting platform. Archery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.">    
+                                data-title="Archery Range" 
+                                data-footer="This range includes an arrow stop, bag targets, clearly designated shooting lines, and a covered shooting platform. Archery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.
+*Rifle and Archery Ranges are located across the road from Main Camp for safety of participants and the general Camp population.  <a href="<?=$url_explore_camp;?>">See illustrated Map of Camp</a>.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/archery-range.jpg" class="img-responsive img-fluid grid-item" alt="Archery Range" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/rifle-range.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Rifle Range" 
-                            	data-footer="The range is clearly delineated and known to the entire camp population. It has an earth-berm backstop, clear rear and side buffers, and a clearly designated covered shooting platform. Riflery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.">    
+                                data-title="Rifle Range" 
+                                data-footer="TThe range is clearly delineated and known to the entire Camp population. It has an earth-berm backstop, clear rear and side buffers, and a clearly designated covered shooting platform. Riflery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/rifle-range.jpg" class="img-responsive img-fluid grid-item" alt="Rifle Range" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/volleyball-pit.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Volleyball Pit" 
-                            	data-footer="By the waterfront is our volleyball pit, always ready for a match.">    
+                                data-title="Volleyball Pit" 
+                                data-footer="Our volleyball pit is located by the waterfront, always ready for a match.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/volleyball-pit.jpg" class="img-responsive img-fluid grid-item" alt="Volleyball Pit" >
                             </a>
                         </div>
@@ -140,22 +142,24 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/nature-hut.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Nature Hut" 
-                            	data-footer="Camp wouldn’t be camp without a close look at lots of insects and animals (in their respective aquariums and cages, of course). Campers feed the animals, usually critters we find around the area, such as turtles, frogs, toads, snakes, rabbits and fish. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, and we’re sure to let all the animals go at the end of the summer.">    
+                                data-title="Nature Hut" 
+                                data-footer="Camp wouldn&rsquo;t be Camp with a building to look closely at lots of insects and animals (in aquariums and cages, of course). There is space for campers feed the animals, usually critters found around the area, such as turtles, frogs,, snakes, rabbits and fish. This happens under the supervision of a staff member. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, All animals are set free at the end of the summer camping season.
+">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/nature-hut.jpg" class="img-responsive img-fluid grid-item" alt="Nature Hut" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/meditation-area.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Meditation Area" 
-                            	data-footer="This is a serene spot among cattails and reeds right next to the lake with enough logs to seat the whole camp. This is where we hold our Thought ceremony daily after dinner, a reflective presentation given by cabin groups, and campers can come here when there is free time to relax.">    
+                                data-title="Meditation Area &ldquo;Thought&rdquo;" 
+                                data-footer="This is a serene spot among cattails and reeds right next to the lake with enough logs to seat the whole camp.   We hold a Thought ceremony daily following dinner. It is a reflective presentation by cabin groups, and it&rsquo;s also available for campers to come to  during free time to relax. ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/meditation-area.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/craft-hut.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Arts and Crafts Hut" 
-                            	data-footer="Since the ‘70s, it’s been a tradition for campers to write their names on the walls of this hut, and the hut’s now covered with more than a thousand names! In addition to that trove of historical treasure, the hut houses supplies and inspiration for just about any art or craft project we can dream up.">    
+                                data-title="Arts and Crafts Hut" 
+                                data-footer="The Arts &amp; Crafts Hut is set on a hill overlooking the entire main campgrounds. It&rsquo;s an older building with much character.In the 1970s, r campers began decorating the walls with their names adding to the building&rsquo;s character. Seeing more than a thousand names covering the walls provide creative inspiration to campers.  The hut&rsquo;s numerous art supplies and scenic beauty give added inspiration for campers to  create many awesome art or craft projects.
+">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/craft-hut.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
@@ -164,22 +168,22 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/flag-area.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Flag Area" 
-                            	data-footer="Between the lodge and the waterfront is our flag area. Campers raise and lower the flag at the beginning and end of each day.">    
+                                data-title="Flag Area" 
+                                data-footer="Between the lodge and the waterfront is our flag area. Campers raise and lower the flag at the beginning and end of each day during a special ceremony.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/flag-area.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/observation-deck.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Observation Deck" 
-                            	data-footer="Just past the Nature Hut, a short trail of planks leads through the reeds and cattails to our observation deck, which rests on the edge of Great Bear Lake. Campers can sit on benches and notice the sights and sounds and critters that live in and around the lake. The deck is open for hanging out and even fishing with a staff member during free time and choice periods.">    
+                                data-title="Observation Deck" 
+                                data-footer="JJust past the Nature Hut, a short planked trail leads through reeds and cattails to our observation deck, located on the shoreline of Great Bear Lake. Campers may sit and observe  sights, sounds and critters who  live in and around the lake. The deck is open for hanging out and even fishing with a staff member during free time and choice periods.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/observation-deck.jpg" class="img-responsive img-fluid grid-item" alt="Observation Deck" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/infirmary.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Infirmary" 
-                            	data-footer="The on-site health officer's station is on the end of cabin row near the waterfront. All medication is kept here only, and campers come to retrieve necessary doses. The health officer is available 24 hours a day.">    
+                                data-title="Infirmary" 
+                                data-footer="The on-site health officer's station is on the end of cabin row near the waterfront. All medication is kept here and campers receive necessary medicine from the health officer. The health officer is available 24 hours a day.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/infirmary.jpg" class="img-responsive img-fluid grid-item" alt="Health Officer Station" >
                             </a>
                         </div>
@@ -188,22 +192,22 @@
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/upper-20.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Soccer / football field (Upper 20)" 
-                            	data-footer="Pioneer campers make their campsite on the “Upper 20” (20 acres of land just down the road from the main camp). The Upper 20 has its own pavilion for picnics, and a soccer/football field perfect for band camps. This is also the location of our Nature Trail.">    
+                                data-title="Soccer / football field &ldquo;Upper 20&rdquo;" 
+                                data-footer="The Upper 20 is a 20 acre land plot just down the road from the main camp. It has an enclosed pavilion with bunks for sleeping and a soccer/football field perfect for large group activities, sports and band camps. This is also the location of our Nature Trail. Pioneer campers make their campsite here.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/upper-20.jpg" class="img-responsive img-fluid grid-item" alt="Soccer Field" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/emergency-vehicles.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Emergency Vehicles" 
-                            	data-footer="VBYC always has two emergency vehicles always on hand, as well as two rescue boats.">    
+                                data-title="Emergency Vehicles" 
+                                data-footer="VBYC always has two emergency vehicles available, as well as two rescue boats to transport campers and staff.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/emergency-vehicles.jpg" class="img-responsive img-fluid grid-item" alt="Camp Van" >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/museum.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                            	data-title="Camp Museum" 
-                            	XXXdata-footer="Some more details about this image.">    
+                                data-title="Camp Museum" 
+                                XXXdata-footer="Some more details about this image.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/museum.jpg" class="img-responsive img-fluid grid-item" alt="Camp Museum" >
                             </a>
                         </div>
