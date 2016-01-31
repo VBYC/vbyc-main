@@ -58,14 +58,6 @@
                                 <li>Review our <a href="/<?=$url_what_to_bring?>/">What to Bring</a> list.</li>
                                 <li>For first timers, review our <a href="/<?=$url_typical_day?>/">Typical
                                     day</a> page.</li>
-                                <li>Review these homesickness prevention articles:
-                                  <ul>
-                                    <li><a href="http://www.campparents.org/homesickness.php" target="_blank">Homesickness &mdash; Expert
-                                    Advice for Parents</a></li>
-                                    <li><a href="http://www.campparents.org/070102.php" target="_blank">New
-                                        Thinking Needed on Helping Kids...</a></li>
-                                  </ul>
-                                </li>
                             </ol>
                         </div>
 
