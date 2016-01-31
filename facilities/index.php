@@ -119,7 +119,7 @@
                             <a href="/images/pages/facilities/lg/archery-range.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Archery Range" 
                                 data-footer="This range includes an arrow stop, bag targets, clearly designated shooting lines, and a covered shooting platform. Archery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.
-*Rifle and Archery Ranges are located across the road from Main Camp for safety of participants and the general Camp population.  <a href="<?=$url_explore_camp;?>">See illustrated Map of Camp</a>.">    
+*Rifle and Archery Ranges are located across the road from Main Camp for safety of participants and the general Camp population.  <a href="/<?=$url_explore_camp;?>/">See illustrated Map of Camp</a>.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/archery-range.jpg" class="img-responsive img-fluid grid-item" alt="Archery Range" >
                             </a>
                         </div>

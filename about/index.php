@@ -73,14 +73,20 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <h3 class="heading">Being ourselves, together.</h3>
                             <div>
-                                <p>Since 1950, Van Buren Youth Camp has encouraged personal growth, self-confidence, positive relationships, and individual and group responsibility (do we want something here that says, "in more than XXXX young people"?). At VBYC we foster all of the qualities required for leadership, fulfillment, and fellowship.</p>
+                                <p>Since 1950, Van Buren Youth Camp has helped young people discover themselves, grow as individuals and develop leadership skills. Campers build self-confidence, positive relationships, personal integrity and individual and group responsibility. VBYC is all about leadership, fellowship, creativity and fun!</p>
 
-								<p>Camp exists outside of social divisions and cultural expectations. Removed from our everyday lives, we are free to transcend cliques and create our own culture, one of games, skits, projects, songs, and kissing Cleo the Moose on the nose. Friendships and memories made at camp last forever.</p>
+                                <p>VBYC is a residential, co-ed camp on the shores of Great Bear Lake, and nestled in western Michigan's fruit belt, VBYC is home to rolling hills, endless trees, rustic cabins, and <a href="/<?=$url_facilities?>/">varied recreation and communal areas</a>.</p> 
 
-								<p>A residential camp in the woods on the shores of Great Bear Lake, and nestled in western Michigan's fruit belt, VBYC is home to rolling hills, endless trees, rustic cabins, and varied recreation and communal areas. Leadership is developed at every level, because we all have something to learn from one another. Staff mentor volunteers who, in turn, mentor campers, who take on responsibility for many daily tasks.</p>
+                                <p>We welcome all campers, ages six to eighteen, without regard to gender, race, national origin, sexual orientation, gender identity, religious, economic, or cultural background. We serve campers with physical challenges, with the exception of those who are non-ambulatory, as our facilities cannot accommodate their needs.</p>
 
-								<p>We welcome all campers, ages six to eighteen, without regard to gender, race, national origin, sexual orientation, gender identity, religious, economic, or cultural background. We serve campers with physical challenges, with the exception of those who are non-ambulatory, as our facilities cannot accommodate their needs.</p>
-                            </div>
+                                <p>Camp exists outside of social divisions and cultural expectations. Removed from our everyday lives, we are free to transcend cliques and create our own culture, one of games, skits, projects, songs, kissing Cleo the Moose, teamwork and community service.</p>
+
+                                <p>VBYC is a place where all children can be themselves - free to be who they are, free to discover their innate talents, free to explore, grow and learn. Campers can try new things in a safe, supportive and caring atmosphere.</p>
+
+                                <p>Friendships and memories made at Camp last forever. Regardless of the careers our Alumni choose; they provide quiet leadership and positive role models for others each and every day. They embody the ideals and values learned at VBYC when becoming positive, contributing, involved members of their communities. And that keeps the Spirit of Camp alive throughout the generations.</p>
+
+                                <p>Come join us for what promises to be a wonderful, fun-filled, life-changing experience!</p>
+                          </div>
                         </div>
                     </div><!-- /.row -->
 
