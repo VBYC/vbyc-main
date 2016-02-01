@@ -90,7 +90,7 @@
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Great Bear</span> | <span class="date nowrap">June 26 - July 2</span> | $325</h3>
                                     <div class="description">
-                                        <p>Great Bear Is for the child ready to try new experiences, Improve upon camp skills, nurture leadership skills, and build community. VBYC’s Early Youth camps do just that; they help a child grow in independence &amp; confidence!</p>
+                                        <p>Great Bear Is for the child ready to try new experiences, Improve upon camp skills, nurture leadership skills, and build community. VBYC&rsquo;s Early Youth camps do just that; they help a child grow in independence &amp; confidence!</p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Great Bear</a></p>
                                     </div>
                                 </li>
@@ -109,7 +109,7 @@
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Discovery</span> | <span class="date nowrap">July 17-23</span>    | $325</h3>
                                     <div class="description">
-                                        <p> In VBYC’s Discovery Camping Session, campers follow a journey of self-discovery, pushing their boundaries both through exploring our natural world and through living together with a diverse age range.  This session is the sister session to Frontier.<p>
+                                        <p> In VBYC&rsquo;s Discovery Camping Session, campers follow a journey of self-discovery, pushing their boundaries both through exploring our natural world and through living together with a diverse age range.  This session is the sister session to Frontier.<p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Discovery</a></p>
                                     </div>
                                 </li>
