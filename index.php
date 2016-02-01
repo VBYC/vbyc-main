@@ -124,7 +124,7 @@
                             <div class="content content-primary-text">
                                 <h3 class="headline">Cleo the Moose</h3>
                                 <div class="description">
-                                    <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures (and comforts and challenges) lie within our camp buildings and grounds?</p>
+                                    <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures lie within our camp buildings and grounds?</p>
                                 </div>
                                 <a href="/<?=$url_facilities?>/" class="link">
                                     Learn more about our facilities
@@ -171,7 +171,7 @@
                             <div class="content">
                                 <a href="/<?=$url_explore_camp?>/" class="link text-center">
                                     <h3 class="headline">There&rsquo;s a lot to explore!</h3>
-                                    <p class="cta">View the map of camp</p>
+                                    <p class="cta">View the map of Camp</p>
                                 </a>
                             </div>
                         </div>
