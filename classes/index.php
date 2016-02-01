@@ -36,7 +36,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>Classes are the heart of our program. Campers and counselors attend two classes each day (morning and afternoon), taught by VBYC summer staff. All campers rotate through all classes by week's end.</p>
+                                    <p>Classes are the heart of our program. Campers and counselors attend two classes each day, morning and afternoon, taught by VBYC staff. All campers have the chance to try all classes by week's end.</p>
                                 </div> 
                             </div> 
                         </div>         
@@ -64,7 +64,7 @@
                                 <li id="archery" class="item">                                    
                                     <h3 class="heading archery">Archery</h3>
                                     <div class="description">
-                                        <p>Our archery range is on the "Upper 20," separate from main camp. Campers, learn both proper archery safety and terminology for the parts of a  bow and arrow. They develop accuracy when shooting at targets attached to a haywall. is often  a favorite class. Campers striking a  bull’s-eyes or accomplish other noteworthy achievements become members of the famed VBYC Archery Club, one of our esteemed camp traditions. 
+                                        <p>Our archery range is on land close to the main Camp. Campers learn proper archery safety and terminology, then develop accuracy when shooting at targets attached to a haywall. Archery is often a favorite class. Campers who strike a bull’s-eye or accomplish other noteworthy achievements become members of the famed VBYC Archery Club, one of our esteemed Camp traditions. 
 
                                         <br>
                                         <em>Instructor certification: National Archery Association, Basic Instructor</em></p>
@@ -92,7 +92,7 @@
                                 <li id="arts-and-crafts" class="item">
                                     <h3 class="heading arts-and-crafts">Arts &amp; Crafts</h3>
                                     <div class="description">
-                                        <p>We use this time to let our imaginations fly, with simple, household, easy-to-find, or natural materials. The hut sits atop a hill and gets a great breeze from the lake. It's so pleasant to sit and chat making new friends while your creativity whirs along ahead of you. Though specific projects are assigned, we always allow room for whatever occur to us while we’re in the flow.</p>
+                                        <p>The Arts and Crafts program allows campers to use their imaginations with simple,, easy-to-find materials as well as materials found in nature. The classes are held atop a hill that is one of the highest points of VBYC  allowing a great breeze from the lake to flow through the building. It provides a relaxing, pleasant atmosphere for campers to enjoy chatting with friends as creativity flows helping to create simple fun projects.  Campers are given project guidelines but are also allowed to make their own creative project during the class period.</p>
                                     </div>
                                      <figure class="figure-images figure-layout-1">
                                         <div class="row row-main">
@@ -117,8 +117,9 @@
                                 <li id="canoeing-and-kayaking" class="item">
                                     <h3 class="heading canoeing-and-kayaking">Canoeing &amp; Kayaking</h3>
                                     <div class="description">
-                                        <p>Campers learn basic canoeing/kayaking strokes, steering the canoe/kayak working with their partner, keeping the canoe level and stable, all with an emphasis on safety during a 15 – 20 minute  instruction period., Then if ready, campers hit the lake canoeing as a group, boating near, cattails  on to the sandbar, all the way to the creek, or out into the middle of the lake. Canoeing and kayaking are  gorgeous camp favorites.</p>
-                                        <p>Campers must be at least a "B" swimmer to participate. If the camper doesn’t qualify they may choose another class that period. Canoes are always in visual contact of the waterfront director, who is on shore and can be signaled. In case of an emergency the waterfront director is signaled through whistles. VBYC uses one rescue motorboat and a rescue rowboat for emergencies
+                                        <p>The Canoeing &amp; Kayaking classes begin with a 15 - 20 minute  instruction period, Campers learn basic canoeing/kayaking strokes: steering their vessel, working with their partner, keeping the boat level and stable, all with an emphasis on safety. Then, if ready, campers take to  the lake boating as a group, floating near cattails, onto the sandbar, all the way to the creek, or out into the middle of the lake. Canoeing and kayaking are always Camp favorites.</p>
+
+                                        <p>Campers must be at least a "B" (moderate-level) swimmer to participate. If a camper doesn’t qualify they may choose another class for that period. Canoes &amp; Kayaks are always in visual contact of the waterfront director, who is on shore, available, and can be signaled through whistles. VBYC uses one rescue motorboat and a rescue rowboat for emergencies.
                                         <br>
                                        <em>Instructor certification: Lifeguard and Boater Safety Certified</em></p>
                                     </div>
@@ -153,15 +154,15 @@
                                     <h3 class="heading low-ropes">Low Ropes</h3>
                                     <div class="description">
                                         <p>a.k.a. Initiatives or Team Building</p>
-                                        <p>Group problem solving through cooperation. This class can be very challenging, the physical part being the least of it. The challenges are intended to be unsolvable by individuals and must have group cooperation to succeed. This can really bring a cabin together and allow campers to surprise themselves and achieve things they did not know they could.</p>
-                                        <p>Safety is the first priority here. Campers learn a series of "calls" and procedures. Activities involve blocks of wood, imaginary rivers to cross, a 10' climbing wall, a grid of climbing rope, suspended cable walk (4' high), and so much more.</p>
+                                        <p>This class is an opportunity for cabins to use group problem solving through cooperation, and can really bring campers together. As with all VBYC classes, safety is the first priority. This course can be both physically challenging and a test of will. The challenges are not intended to be solved by individuals. Instead it is necessary for campers to rely on one another to successfully complete each challenge. Campers often surprise themselves when they complete this course.</p>
+                                        <p>At the beginning of the class, campers learn a series of "calls" and procedures. During the class campers learn about obstacles including blocks of wood, imaginary rivers to cross, a 10' climbing wall, a grid of climbing rope, suspended cable walk (4' high), and many other obstacles</p>
                                         <p><em>Instructor training: Trained by certified instructor</em></p>
                                     </div>
                                 </li>
                                 <li id="nature" class="item">
                                     <h3 class="heading nature">Nature</h3>  
                                     <div class="description">
-                                        <p>Here we find fun ways of learning about nature's role in our lives, and the class might take place anywhere on camp’s property, so we can get a closer look at what’s around us and explore our relationship with all of it.</p>
+                                        <p>Our  Nature class finds fun ways to learn about nature's role in our lives and in the world around us. Campers study nature found in the Camp’s environment and often take part in hands-on experiences. For  example, the Nature instructor might have frogs for campers to observe and touch if they choose to take part. Campers might have class anywhere on Camp’s property, allowing them  to take  a closer look at their natural world and explore their relationship with it.</p>
                                     </div>
                                     <figure class="figure-images figure-layout-1">
                                         <div class="row row-main">
@@ -186,9 +187,12 @@
                                 <li id="riflery" class="item">
                                     <h3 class="heading riflery">Riflery</h3>
                                     <div class="description">
-                                        <p>This class focuses on gun safety. Our rifle range is located on the "Upper 20," separate from main camp. Campers shoot five-at-a-time from a covered pavilion with a wooden floor, and use .22 caliber rifles to shoot at paper targets which hang in front of a sand mound.</p>
-                                        <p>Some campers feel more comfortable not shooting, which is fine, although with most campers this is a favorite class. Many camps no longer teach this course. We choose to keep it because it gives us the opportunity to promote the seriousness of the safe use of guns.
+                                        <p>Riflery focuses primarily on gun safety. Our rifle range is located on acreage just up the road but separate from main Camp. Many camps no longer teach this course. VBYC chooses to keep riflery because it provides  campers the opportunity to promote the seriousness of the safe use of guns.
+</p>
+                                        <p>Campers shoot from a covered pavilion with a wooden floor, and use .22-caliber rifles to shoot at bull’s-eye targets that hang from a sand mound. The campers are approximately 25 ft. from the target and are not allowed to step off of the covered pavilion. 
+
                                         </p>
+                                        <p>Some campers are not comfortable shooting a rifle, which is fine, as they still learn much about gun safety. That said we find that most campers think riflery  is an awesome class. </p>
                                         <p><em>Instructor training: Trained by certified instructor</em></p>
                                     </div>
                                     <figure class="figure-images figure-layout-1">
@@ -214,7 +218,8 @@
                                 <li id="song-and-dance" class="item">
                                     <h3 class="heading song-and-dance">Song &amp; Dance</h3>
                                     <div class="description">
-                                        <p>We sing a lot at camp, and often we sing many songs that have been sung at summer camps for generations. This class can get new campers up-to-speed, and veteran campers can learn new songs out of our song book. Folk dancing is a long-time tradition at VBYC, campers have a chance to explore some of these group dances.</p>
+                                        <p>Campers &amp; Staff sing a lot at Camp. Many  songs have been sung at summer camps for generations and some songs are special to VBYC. It’s a great time to learn new songs out of our song book and revisit other songs.</p>
+                                        <p>Folk dancing is an important tradition at VBYC, the campers can learn older dances &amp; also create new dances that may become a new VBYC tradition. </p>
                                     </div>
                                     <figure class="figure-images figure-layout-1">
                                         <div class="row row-main">
@@ -246,7 +251,7 @@
                                 <li id="sports" class="item">
                                     <h3 class="heading sports">Sports</h3>
                                     <div class="description">
-                                        <p>We play both competitive and non-competitive games, with an emphasis on cooperation and fair play. Though we sometimes play traditional sports, campers have the most fun with games we've made up here at camp, or games campers commonly get to play outside of camp, such as roof ball or frisbee golf. This class can take place all over camp depending on the activity.</p>
+                                        <p>Campers play both competitive and noncompetitive sports and games during the camp week. The class emphasis is on cooperation and fair play. Although campers enjoy  the traditional sport offerings; campers love games that they help to create at VBYC such as roofball or frisbee golf. The sports class takes place on all parts of the VBYC campus</p>
                                     </div>
                                 </li>
                                 <li id="swimming" class="item">
