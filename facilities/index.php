@@ -43,7 +43,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/lodge.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Washburn Lodge" 
-                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time makes Washburn Lodge the heart of Camp. It&rsquo;s also home to more than 65 years of souvenirs, photos, and Camp&rsquo;s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is both heated and air conditioned and has a front deck facing Great Bear Lake for people to enjoy cool breezes while enjoying activities or hanging out with friends.
+                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time makes Washburn Lodge the heart of Camp. It’s also home to more than 65 years of souvenirs, photos, and Camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is both heated and air conditioned.  It has a front deck facing Great Bear Lake for people to enjoy cool breezes during activities or hanging out with friends.
 "
 
                             >    
@@ -143,7 +143,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/nature-hut.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Nature Hut" 
-                                data-footer="Camp wouldn&rsquo;t be Camp with a building to look closely at lots of insects and animals (in aquariums and cages, of course). There is space for campers feed the animals, usually critters found around the area, such as turtles, frogs,, snakes, rabbits and fish. This happens under the supervision of a staff member. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, All animals are set free at the end of the summer camping season.
+                                data-footer="Camp wouldn’t be Camp without a Nature Hut that has  lots of insects and animals for campers to observe closely (in aquariums and cages, of course). There is space for campers to feed the animals, usually critters found around the area, such as turtles, frogs,, snakes, rabbits and fish. This happens under the supervision of a staff member. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, All animals are set free at the end of the summer camping season.
 ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/nature-hut.jpg" class="img-responsive img-fluid grid-item" alt="Nature Hut" >
                             </a>
@@ -151,14 +151,14 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/meditation-area.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Meditation Area &ldquo;Thought&rdquo;" 
-                                data-footer="This is a serene spot among cattails and reeds right next to the lake with enough logs to seat the whole camp.   We hold a Thought ceremony daily following dinner. It is a reflective presentation by cabin groups, and it&rsquo;s also available for campers to come to  during free time to relax. ">    
+                                data-footer="This is a serene spot among cattails and reeds right next to the lake with enough logs to seat the whole camp.  We hold a Thought ceremony daily after  dinner. It is a reflective presentation by cabin groups, and it’s also available for campers to come to during free time to relax. ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/meditation-area.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/craft-hut.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Arts and Crafts Hut" 
-                                data-footer="The Arts &amp; Crafts Hut is set on a hill overlooking the entire main campgrounds. It&rsquo;s an older building with much character.In the 1970s, r campers began decorating the walls with their names adding to the building&rsquo;s character. Seeing more than a thousand names covering the walls provide creative inspiration to campers.  The hut&rsquo;s numerous art supplies and scenic beauty give added inspiration for campers to  create many awesome art or craft projects.
+                                data-footer="The Arts &amp; Crafts Hut is set on a hill overlooking the entire Main Campgrounds. It’s an older building with much character. In the 1970s, campers began decorating the walls with their names adding to the building’s character. Seeing more than a thousand names covering the walls provide creative inspiration to campers.  The hut’s numerous art supplies and scenic beauty give added inspiration for campers to create many awesome art or craft projects.
 ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/craft-hut.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>
@@ -183,7 +183,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/infirmary.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Infirmary" 
-                                data-footer="The on-site health officer's station is on the end of cabin row near the waterfront. All medication is kept here and campers receive necessary medicine from the health officer. The health officer is available 24 hours a day.">    
+                                data-footer="The on-site health officer's station is on the end of cabin row near the waterfront. There are 3 beds in the Infirmary for ill campers. All medication is kept here and campers receive necessary medicine from the health officer. The health officer is available 24 hours a day.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/infirmary.jpg" class="img-responsive img-fluid grid-item" alt="Health Officer Station" >
                             </a>
                         </div>
