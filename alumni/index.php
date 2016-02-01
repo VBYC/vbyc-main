@@ -66,7 +66,7 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Once you're camp family, you're always camp family.</h3>
+                            <h3 class="heading"> You Belong to Youth Camp, and Youth Camp Belongs to You.</h3>
                             <div>
                                 <p>
                                    There are a lot of ways you can stay involved with Camp. <a href="<?=$url_alumni_login?>" target="_blank">Sign up on our registry</a> to get notices of reunions, fundraisers, and volunteer opportunities.
