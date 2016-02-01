@@ -188,7 +188,7 @@
                         <div class="content">
                             <h3 class="h1">
                                 <a href="/<?=$url_rent_camp?>/" class="">
-                                    Rent the camp
+                                    Rent the Camp
                                 </a>
                             </h3>
                             <div class="row">
