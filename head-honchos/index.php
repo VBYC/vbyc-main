@@ -49,8 +49,7 @@
                             <h3 class="heading">Director</h3>
                             <div>
                                 <p>
-                                  This person oversees the summer camp program, staff hiring, camper enrollment, marketing, 
-                                  and <a href="/<?=$url_rent_camp?>/">rent-camp</a>. The director must meet all <a href="http://acacamps.org/" target="_blank">American 
+                                  The Director oversees the summer camp program, staff hiring, camper enrollment, marketing, and <a href="/<?=$url_rent_camp?>/">rent-camp</a>. The Director must meet all <a href="http://acacamps.org/" target="_blank">American 
                                   Camp Association</a> director requirements. </p>
 
                                   <p><a href="/<?=$url_meet_the_director?>/">Meet our director</a>.</p>
@@ -67,13 +66,10 @@
                                   counselors and receive a week of training as a staff In Training 
                                   (SIT) where they work alongside the current staff. Once hired, they 
                                   receive 2-3 weekend training session then a full week of training 
-                                  prior to the summer.</p>
+                                  prior to the summer camping season.</p>
                                   <p>Staff members with specialized classes receive 
                                   training in their prospective area (i.e. Water Safety Instructor, 
-                                  Lifeguard Certification, Low Ropes, Archery and Riflery.) Other 
-                                  than kitchen staff, they are at least 18 years of age and are generally 
-                                  college students. Each staff member teaches a class three times 
-                                  a day. </p>
+                                  Lifeguard Certification, Low Ropes, Archery and Riflery.)  Other than kitchen staff,  staff members are at least 18 years of age and are generally college students. Each staff member teaches  class three times a day. </p>
                                   <p>They are present for and oversee all camper activities. These 
                                   people who love being around kids, are loaded with enthusiasm, compassion, 
                                   endurance and are recreation specialists!</p>
@@ -118,16 +114,9 @@
                             <h3 class="heading">Board of Directors</h3>
                             <div>
                                 <p>
-                                  Elected by the supporters of Van Buren Youth Camp. Their role is 
-                                  to serve as the decision making body of the camp. They hire the 
-                                  camp director and actively supervise the general operation of the 
-                                  camp.
+                                  The board is elected by the supporters of Van Buren Youth Camp. Their role is to serve as the decision-making body of the Camp. They hire the Camp Director and actively supervise the general operation of the Camp.
                                   </p>
-                                  <p>They also generate funds for the camp by sponsoring projects 
-                                  and fundraiser's which generate money.</p>
-                                <p>These funds 
-                                  are used to make physical improvements to the camp facilities and to help 
-                                  with major undertakings, such as land acquisition. </p>
+                                  <p>The board also generate funds for the Camp by sponsoring projects and fundraisers. These funds are used to make physical improvements to the Camp facilities and to help with major undertakings, such as land acquisition.</p>
                             </div>
                         </div>
                     </div><!-- /.row -->
