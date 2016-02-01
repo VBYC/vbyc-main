@@ -37,7 +37,7 @@
                             <div class="hero-text">
                                 <div class="description">
                                     <p>Our camps are designed for youth in grades 1–12, and encourage both individual growth and community with others. During a recreational camp session, qualified, certified instructors lead organized programs in swimming, canoeing, kayaking, folk dancing, drama, nature exploration, arts and crafts, archery, riflery, sports, and team building.</p>
-                                    <p>Every Camp session includes campfire skits and songs, all-camp games like water wars and capture the flag, time to plan activities together, polar-bear swims, making friends, sharing, and laughing and singing our heads off.
+                                    <p>Every Camp session includes campfire skits and songs and all-camp games like water wars and Capture the Flag. Each camp session provides time for campers to plan activities together, take polar-bear swims and participate in Evening Rec every night. All of these activities and classes  promote opportunities for making friends, sharing, and laughing all the while having a fun-filled camp week.
 </p>
                                 </div> 
                             </div> 
@@ -90,14 +90,14 @@
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Great Bear</span> | <span class="date nowrap">June 26 - July 2</span> | $325</h3>
                                     <div class="description">
-                                        <p>Great Bear Is for the child ready to try new experiences, Improve upon camp skills, nurture leadership skills, and build community. VBYC’s Early Youth camps do just that— they help a child grow. Campers will attend activities listed on the above first paragraph. Campers leadership and community building are fostered when campers help plan campfires, daily flag ceremonies, and participate in creative activities. Independence, self confidence, and friendships are built throughout the session but especially during free time and choice periods. All activities happen under the supervision of certified staff and trained counselors who understand how important it is to make new friends and have FUN!</p>
+                                        <p>Great Bear Is for the child ready to try new experiences, Improve upon camp skills, nurture leadership skills, and build community. VBYC’s Early Youth camps do just that; they help a child grow in independence &amp; confidence!</p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Great Bear</a></p>
                                     </div>
                                 </li>
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Explorer</span> | <span class="date nowrap">August 10-14</span> | $295</h3>
                                     <div class="description">
-                                        <p>The Explorer sessions is for children who want new experiences, learn or Improve upon camp skills, nurture leadership skills, and build community, with a specific focus on nature-based activities in all activities. Campers will attend structured activities listed at the top of the page. Leadership and community building are also fostered when campers help plan campfires, daily flag ceremonies, and participate in special activities. Independence, self confidence, and friendships are built while campers engage in free time, choice activities and gather for all-camp activities! The VBYC staff and counselors are here to help your children build friendships, nurture leadership skills build community and have a fun-filled week.</p>
+                                        <p>The Explorer sessions is for children who want new experiences, learn or Improve upon camp skills, nurture leadership skills, and build community, with a <strong>specific focus on nature-based activities in all activities</strong>.</p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Explorer</a></p>
                                     </div>
                                 </li>
@@ -109,14 +109,15 @@
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Discovery</span> | <span class="date nowrap">July 17-23</span>    | $325</h3>
                                     <div class="description">
-                                        <p>A journey of self-discovery, pushing our boundaries both through exploring our natural world, and through living together with a diverse age range.<p>
+                                        <p> In VBYC’s Discovery Camping Session, campers follow a journey of self-discovery, pushing their boundaries both through exploring our natural world and through living together with a diverse age range.  This session is the sister session to Frontier.<p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Discovery</a></p>
                                     </div>
                                 </li>
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Frontier</span> | <span class="date nowrap">July 24-30</span>    | $325</h3>
                                     <div class="description">
-                                        <p>The Frontier sessions is a week of traditional camp program with the option of branching out into outdoor living skills for the more advanced camper. Campers will have the opportunity to explore and learn more outdoor living skills in a safe environment supervised by staff at all times.Frontier campers Campers will engage in all structured classes offered during all youth camping sessions. Discovery and Frontier are sister sessions</p>
+                                        <p>The Frontier sessions is a week of traditional camp program with the option of branching out into outdoor living skills for the more advanced camper. Campers will have the opportunity to explore and learn more outdoor living skills in a safe environment supervised by staff at all times. Discovery and Frontier are sister sessions.
+</p>
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Frontier</a></p>
                                     </div>
                                 </li>
