@@ -85,7 +85,7 @@
                             <h3 class="heading">Large Group Activities</h3>
                             <div>
                                 <p>
-                                    Evening rec (capture the flag, beach parties, folk dancing), campfire, meditation ceremony, trail day, etc. The entire camp participates together.
+                                    Evening rec (capture the flag, beach parties, folk dancing), campfire, meditation ceremony, trail day, etc. The entire camp participates together in these activities.
                                 </p>
                             </div>
                         </div>
@@ -105,10 +105,10 @@
                             <h3 class="heading">Free Time</h3>
                             <div>
                                 <p>
-                                    Campers choose from a variety of offerings led by the staff, from games like four-square, roof ball, and frisbee golf, to traditional sports like soccer and basketball, to telling stories, making up skits, flying kites, and scavenger hunts. When the store is open campers may buy treats and souvenirs.
+                                    Campers choose from a variety of offerings led by the staff, from games like Four-Square, roof ball, and frisbee golf, from traditional sports like soccer and basketball, to telling stories, creating skits, flying kites, and scavenger hunts. When the store is open campers may buy treats and souvenirs.
                                 </p>
                                 <p>
-                                    There is always time in between activities to allow campers to relax and hang out. Sometimes these in-between moments of downtime are when new friends and lasting memories are made.
+                                    There is always time in between activities to allow campers to relax and hang out. Sometimes these moments of relaxation spark new friendships and make lasting memories.
                                 </p>
                             </div>
                         </div>
