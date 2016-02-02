@@ -151,12 +151,20 @@
                             <h2 id="grades-9-12" class="heading-category">Grades 9-12</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                 <li class="item">                                    
-                                    <h3 class="heading"><span class="nowrap">Leadership and Counselor Workshop </span> <br>  <span class="date nowrap">June 19-25</span> | $325</h3>
+                                    <h3 class="heading"><span class="nowrap">Leadership and Counselor Workshop*</span> <br>  <span class="date nowrap">June 19-25</span> | $325</h3>
                                     <div class="description">
                                         <p>High school students learn and develop specific leadership skills that will help them in school, clubs, communities, and relationships throughout their lives. They attend daily workshops, meet &amp; learn from visiting speakers, work on special interest projects, and receive camp counselor training.</p>
                                         <p>*A 14-year-old entering ninth grade may apply to attend LW with two letters of reference and a personal essay stating why they would like to attend Leadership Workshop.</p>
-                                        <p>Those interested in taking leadership to the next level may apply to participate in our counselor or staff-in-training programs offered during most camping sessions.</p>
-                                        <p><a href="<?=$url_register?>" target="_blank">Register Leadership and Counselor Workshop</a></p>
+                                        <p>Those interested in taking leadership to the next level may apply to participate in our counselor or staff-in-training programs offered during most camping sessions.  You should also consider signing up for <a href="#advanced-leadership">Advanced Leadership</a>.</p>
+                                        <p><a href="<?=$url_register?>" target="_blank">Register for Leadership and Counselor Workshop</a></p>
+                                    </div>
+                                </li>
+          
+                                <li class="item" id="advanced-leadership">                                    
+                                    <h3 class="heading"><span class="nowrap">Advanced Leadership </span> <br>  <span class="date nowrap">July 3-5</span> | $150</h3>
+                                    <div class="description">
+                                        <p>This three day workshop is for your high school age child who is up for a real challenge and possesses an adventurous spirit. Enrollment is limited to those who have attended our Leadership Workshop in the past AND have been a Counselor in one of our traditional programs at least once. We will be utilizing their talents to help promote and develop programs for VBYC while enjoying smaller group activities. A perfect session for your graduating senior! Feel free to email the <a href="mailto:director@vbyc.org">director</a> for questions about this amazing session.  </p>
+                                        <p><a href="<?=$url_register?>" target="_blank">Register for Advanced Leadership</a></p>
                                     </div>
                                 </li>
                             </ul>
