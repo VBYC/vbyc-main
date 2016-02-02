@@ -117,11 +117,11 @@
                                 </li>
                                 <li id="visiting" class="item">                                    
                                     <h3 class="heading ">Is visiting allowed?</h3>
-                                    <p>No. To prevent homesickness, parents should not visit or call. But please send leters, postcards, and care packages!</p>
+                                    <p>No. To prevent homesickness, parents should not visit or call. But please send letters, postcards, and care packages!</p>
                                 </li>
                                 <li id="cabinmate-requests" class="item">                                    
                                     <h3 class="heading ">Do you take cabin-mate requests?</h3>
-                                    <p>No. We find that when a cabin of kids start on equal footing of being new to each other, they have a happier week and have greater growth in self confidence. There is still plenty of times throught the day campers in different cabins can be together. For example: Morning free time, afternoon free time, store time, thought, evening rec, and campfire. </p>
+                                    <p>No. We find that when a cabin of kids start on equal footing of being new to each other, they have a happier week and have greater growth in self confidence. There is still plenty of times throughout the day campers in different cabins can be together. For example: Morning free time, afternoon free time, store time, thought, evening rec, and campfire. </p>
                                 </li>
                                 <li id="store" class="item">                                    
                                     <h3 class="heading ">How does the store work?</h3>
