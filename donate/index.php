@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
-                                <div class="description">
+                                <div class="description description-wide">
                                     <p>Each year dozens of students attend camp due to the generosity of donors just like you. Every little bit helps to send a kid to camp who wouldn’t otherwise have the chance. Your tax-deductible contribution to a campership builds lifelong memories and friendships.</p>
                                 </div> 
                                 <a href="mailto:director@vbyc.org" class="hero-cta">Contact camp director for donations</a>  

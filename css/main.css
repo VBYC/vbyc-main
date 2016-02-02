@@ -8373,16 +8373,15 @@ img[src*=".svg"] .main-logo-container .ie9 {
 .hero .section-name + .page-name {
   margin-top: 12px;
 }
-.hero .hero-cta {
-  margin-top: 20px;
-  display: inline-block;
-}
 .hero .description {
   margin-top: 18px;
 }
-
-.hero .description p {
+.hero .description-wide p {
   text-align: justify;
+}
+.hero .hero-cta {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .hero-text-container {

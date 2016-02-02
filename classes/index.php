@@ -35,7 +35,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
-                                <div class="description">
+                                <div class="description description-wide">
                                     <p>Classes are the heart of our program. Campers and counselors attend two classes each day, morning and afternoon, taught by VBYC staff. All campers have the chance to try all classes by week's end.</p>
                                 </div> 
                             </div> 

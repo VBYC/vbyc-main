@@ -29,7 +29,7 @@
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">Sessions</p>
                                 <h1 class="page-name">Parent Resources</h1>
-                                <div class="description">
+                                <div class="description description-wide">
                                     <p>
                                         We are sensitive to the fact that each camper has different needs. Please contact us regarding allergies and dietary requirements of your camper prior to camp. Given enough time to purchase items, we can provide alternate meal options. While we recognize that each camper has differing levels of comfort with being away from home, we discourage calls and visits from parents, as they can often increase the intensity of homesickness. Mail, however, is always encouraged and welcomed!
                                     </p>
