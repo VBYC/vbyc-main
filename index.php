@@ -150,7 +150,7 @@
                             <div class="content content-primary-text">
                                 <h3 class="headline">Alumni</h3>
                                 <div class="description">
-                                    <p>Once you're camp family, you're always camp family. </p>
+                                    <p>You belong to youth camp, and youth camp belongs to you. </p>
                                 </div>
                                 <a href="/<?=$url_alumni?>/" class="link">
                                     Connect, and reconnect, here.

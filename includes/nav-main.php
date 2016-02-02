@@ -14,7 +14,7 @@
                                      <li class="item-sub">
                                         <? $i = $url_parent_resources ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Parent's Resources
+                                            Parent Resources
                                         </a>
                                      </li>
                                      <li class="item-sub">
@@ -80,7 +80,7 @@
                                      <li class="item-sub">
                                         <? $i = $url_head_honchos ?>
                                         <a href="/<?=$i?>/" class="link-sub <? check_if_selected($i,$page); ?>">
-                                            Head Honchos
+                                            Who's in Charge?
                                         </a>
                                      </li>
                                      <li class="item-sub">

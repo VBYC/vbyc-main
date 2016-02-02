@@ -28,7 +28,7 @@
                         <div class="col-xs-12">
                             <div class="hero-text">
                                 <p class="h4 section-name text-uppercase">About Us</p>
-                                <h1 class="page-name">Head Honchos</h1>
+                                <h1 class="page-name">Who&rsquo;s in Charge?</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->

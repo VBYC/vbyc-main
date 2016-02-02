@@ -30,6 +30,9 @@
 	}
 	.description {
 		margin-top: $padding-base-vertical*3;
+		p {
+			text-align: justify;
+		}
 	}
 
 }

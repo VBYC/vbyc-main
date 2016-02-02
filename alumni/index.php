@@ -66,7 +66,7 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
-                            <h3 class="heading">Once you're camp family, you're always camp family.</h3>
+                            <h3 class="heading">You belong to youth camp, and youth camp belongs to you</h3>
 
                             <div>
                                 <p>

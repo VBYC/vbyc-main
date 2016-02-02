@@ -150,7 +150,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/meditation-area.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
-                                data-title="Meditation Area &ldquo;Thought&rdquo;" 
+                                data-title="Thought" 
                                 data-footer="This is a serene spot among cattails and reeds right next to the lake with enough logs to seat the whole camp.  We hold a Thought ceremony daily after  dinner. It is a reflective presentation by cabin groups, and it’s also available for campers to come to during free time to relax. ">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/meditation-area.jpg" class="img-responsive img-fluid grid-item" alt=" " >
                             </a>

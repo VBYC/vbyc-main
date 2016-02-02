@@ -27,8 +27,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="hero-text">
-<!--                                 <p class="h4 section-name text-uppercase">About Us</p>
- -->                                <h1 class="page-name">About Us</h1>
+                                <h1 class="page-name">About Us</h1>
                             </div>
                         </div>         
                     </div><!-- /.row -->
@@ -36,7 +35,7 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <div class="hero-text">
                                 <div class="description">
-                                    <p>&ldquo;Van Buren Youth Camp is dedicated to serving youth providing opportunities for mental, physical and spiritual growth.&rdquo; - Our mission statement since 1950.
+                                    <p>&ldquo;Van Buren Youth Camp is dedicated to serving youth by providing opportunities for mental, physical and spiritual growth.&rdquo; - Our mission statement since 1950.
 </p>
                                 </div> 
                             </div> 

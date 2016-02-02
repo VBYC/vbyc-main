@@ -8381,6 +8381,10 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-top: 18px;
 }
 
+.hero .description p {
+  text-align: justify;
+}
+
 .hero-text-container {
   background: #FAFAFA url("/images/heroes/hero-text-bg.png") left top repeat;
   padding-top: 40px;

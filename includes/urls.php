@@ -133,7 +133,7 @@ $description_what_to_bring = 'A list of what clothes, footwear, bedding, bathroo
 
 // Who&rsquo;s in charge?
 $title_head_honchos = 'Director, staff, counselors | Van Buren Youth Camp';
-$url_head_honchos = 'head-honchos';
+$url_head_honchos = 'whos-in-charge';
 $description_head_honchos = 'Let us tell you about who will be guiding and gsafe guarding your child.';
 
 
