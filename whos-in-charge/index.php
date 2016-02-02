@@ -44,7 +44,13 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             
-                            
+                            <h3 class="heading">Board of Directors</h3>
+                            <div>
+                                <p>
+                                  The board is elected by the supporters of Van Buren Youth Camp. Their role is to serve as the decision-making body of the Camp. They hire the Camp Director and actively supervise the general operation of the Camp.
+                                  </p>
+                                  <p>The board also generate funds for the Camp by sponsoring projects and fundraisers. These funds are used to make physical improvements to the Camp facilities and to help with major undertakings, such as land acquisition.</p>
+                            </div>
 
                             <h3 class="heading">Director</h3>
                             <div>
@@ -111,13 +117,7 @@
                                   A full time health officer, nurse, or doctor lives at camp. A health screening is completed upon arrival at VBYC when your child’s health history will be reviewed and a visual observation will be completed. The health officer administers all medications and keeps medications under locked storage</p>
                             </div>
 
-                            <h3 class="heading">Board of Directors</h3>
-                            <div>
-                                <p>
-                                  The board is elected by the supporters of Van Buren Youth Camp. Their role is to serve as the decision-making body of the Camp. They hire the Camp Director and actively supervise the general operation of the Camp.
-                                  </p>
-                                  <p>The board also generate funds for the Camp by sponsoring projects and fundraisers. These funds are used to make physical improvements to the Camp facilities and to help with major undertakings, such as land acquisition.</p>
-                            </div>
+                            
                         </div>
                     </div><!-- /.row -->
 
