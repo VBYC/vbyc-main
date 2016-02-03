@@ -26,30 +26,30 @@
 			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
 			vbyc.util.initNavbarArrowColor(subNavSelector);
-			vbyc.util.initNavbarSticky();
+			// vbyc.util.initNavbarSticky();
 
-			// Set up side nav with anchor links
-			if (hasSidenav) {
-				vbyc.util.sidebarScrollSpy();
-				// vbyc.util.sidebarScrollSpyScrollTo();
-			}
+			// // Set up side nav with anchor links
+			// if (hasSidenav) {
+			// 	vbyc.util.sidebarScrollSpy();
+			// 	// vbyc.util.sidebarScrollSpyScrollTo();
+			// }
 
-			// Set up hash scrolling
-			vbyc.util.scrollToHashOnClick();
-	        vbyc.util.scrollToHashOnPageLoad();
-	        vbyc.util.scrollToLink();
+			// // Set up hash scrolling
+			// vbyc.util.scrollToHashOnClick();
+	  //       vbyc.util.scrollToHashOnPageLoad();
+	  //       vbyc.util.scrollToLink();
 
 			// Set up lightbox (grid)
-			vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
+			// vbyc.util.initLightbox(subNavSelector,navbarSiblingsSelector);
 
-			// News feed
-	        vbyc.util.newsFeed();  
+			// // News feed
+	  //       vbyc.util.newsFeed();  
 
-	        // Load these images after the rest of the page loads
-	        vbyc.util.deferImageLoad();
-	        if (highResPath) {
-				vbyc.util.lowResPlaceholderBgImg(highResPath);
-			}
+	  //       // Load these images after the rest of the page loads
+	  //       vbyc.util.deferImageLoad();
+	  //       if (highResPath) {
+			// 	vbyc.util.lowResPlaceholderBgImg(highResPath);
+			// }
 
 					// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
@@ -81,8 +81,10 @@
 			image.src = highResPath;
 		},
 		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
+
 			// Click the hamburger and expand the main nav
-			$( ".navbar-toggle" ).on( "click", function() {
+			$( ".navbar-toggle" ).click( "click", function() {
+				console.log('hello');
 				$(navbarSiblingsSelector + '.expanded' ).removeClass('expanded');
 				$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
 			});
