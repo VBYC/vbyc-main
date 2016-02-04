@@ -56,7 +56,28 @@
             <div class="container scroll-spy-container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
-                        <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/nav-side-schedule.php"); ?> 
+                        <aside id="sidenav-container">
+                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
+                                <li class="item" role="presentation">
+                                    <a href="#grades-1-3" class="link">Grades 1-3</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#grades-3-6" class="link">Grades 3-6</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#grades-4-9" class="link">Grades 4-9</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#grades-5-8" class="link">Grades 5-8</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#grades-6-9" class="link">Grades 6-9</a>
+                                </li>
+                                <li class="item" role="presentation">
+                                    <a href="#grades-9-12" class="link">Grades 9-12</a>
+                                </li>
+                            </ul>
+                        </aside>
                     </div><!-- /column -->
 
                     <div class="col-xs-12 col-sm-8">
@@ -103,9 +124,10 @@
                                 </li>
                             </ul>
 
-                            <!-- Grades 4-6 -->
-                            <h2 id="grades-4-6" class="heading-category">Grades 4-6</h2>
+                            <!-- Grades 4-9 -->
+                            <h2 id="grades-4-9" class="heading-category">Grades 4-9</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Discovery</span> | <span class="date nowrap">July 17-23</span>    | $325</h3>
                                     <div class="description">
@@ -113,6 +135,15 @@
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Discovery</a></p>
                                     </div>
                                 </li>
+
+                                <li class="item">                                    
+                                    <h3 class="heading"><span class="nowrap">Sleepover Saturday</span> | <span class="date nowrap">July 23-24</span>    | $40</h3>
+                                    <div class="description">
+                                        <p> Campers registered for both Discovery and Frontier can spend a low key Saturday night together while we wait for our Frontier friends to arrive on Sunday. It will allow the campers, staff and volunteers some time to rejuvenate and get to know each other better! (Up to 50 campers).<p>
+                                        <p><a href="<?=$url_register?>" target="_blank">Register for Sleepover Saturday</a></p>
+                                    </div>
+                                </li>
+
                                 <li class="item">                                    
                                     <h3 class="heading"><span class="nowrap">Frontier</span> | <span class="date nowrap">July 24-30</span>    | $325</h3>
                                     <div class="description">
