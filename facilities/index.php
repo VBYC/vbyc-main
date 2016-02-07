@@ -41,10 +41,9 @@
                 <article class="main-article">
                     <div class="row"> 
                         <div class="col-xs-12 col-sm-4">
-                            <a href="/images/pages/facilities/lg/lodge.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
+                            <a href="/images/pages/facilities/lg/lodgeX.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Washburn Lodge" 
-                            data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time makes Washburn Lodge the heart of Camp. It’s also home to more than 65 years of souvenirs, photos, and Camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is both heated and air conditioned.  It has a front deck facing Great Bear Lake for people to enjoy cool breezes during activities or hanging out with friends.
-"
+                                data-footer="Dining together, all-camp activities, visiting the library, or lounging in the couch area at free time makes Washburn Lodge the heart of Camp. It’s also home to more than 65 years of souvenirs, photos, and Camp’s mascot, Cleo the Moose, whom you'll have to kiss if you get caught with your elbows on the table. The lodge is both heated and air conditioned.  It has a front deck facing Great Bear Lake for people to enjoy cool breezes during activities or hanging out with friends."
 
                             >    
                                 <img src="/images/pages/facilities/sm/lodge.jpg" class="img-responsive img-fluid grid-item" alt="Lodge" >
