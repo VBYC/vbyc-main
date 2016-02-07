@@ -19,6 +19,7 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #Redirect /path/to/old/file/old.html http://www.example.com/new/file/new.html
 Redirect /1_about/index.php                      /about/
+Redirect /1_about/                               /about/
 Redirect /1_about/activities_index.php           /activities/
 Redirect /1_about/facilities.php                 /facilities/
 Redirect /1_about/who.php                        /head-honchos/
@@ -26,13 +27,15 @@ Redirect /1_about/facilities_map.php             /financial-aid/
 Redirect /1_about/director/index.php             /meet-the-director/
 Redirect /1_about/activities_classes.php         /classes/
 Redirect /1_about/activities_typicalday.php      /typical-day/
-Redirect /2_sessions/index.php                   /schedule/       
+Redirect /2_sessions/index.php                   /schedule/ 
+Redirect /2_sessions/                            /schedule/       
 Redirect /2_sessions/schedule.php                /schedule/
 Redirect /3_signup/camperships.php               /financial-aid/
 Redirect /3_signup/DirectionsMap.php             /contact/
 Redirect /3_signup/WhatToBring.php               /what-to-bring/
 Redirect /3_signup/checklist.php                 /parent-resources/   
 Redirect /rentals/index.php                      /rent-camp/
+Redirect /rentals/                               /rent-camp/
 Redirect /footer/contact.php                     /contact/
 
 
