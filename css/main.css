@@ -8454,6 +8454,22 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin: 10px 0;
 }
 
+.list-steps {
+  padding-left: 64px;
+}
+.list-steps > li {
+  list-style-type: none;
+  counter-increment: listStepCounter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.list-steps > li:before {
+  content: "Step " counter(listStepCounter) ": ";
+  display: inline-block;
+  position: absolute;
+  left: 16px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	HERO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
