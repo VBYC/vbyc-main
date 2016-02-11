@@ -15,19 +15,15 @@
     <main id="post-hero" class="text-center"> 
         <!-- NEWS FEED -->
         <section class="news-feed">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="content clearfix">
-                        <div class="content-inner">
-                            <h5 class="headline"><? /* ?><a href="#" class="link-reverse " title="Read all news stories"><? */ ?>News<? /* ?></a><? */ ?> ///</h5>
-                            <ul class="news-feed-list list-unstyled">
-                                <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
-                                <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="content clearfix">
+                <div class="content-inner">
+                    <h5 class="headline"><? /* ?><a href="#" class="link-reverse " title="Read all news stories"><? */ ?>News<? /* ?></a><? */ ?> ///</h5>
+                    <ul class="news-feed-list list-unstyled">
+                        <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
+                        <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
+                    </ul>
                 </div>
-            </div><!-- /.row -->
+            </div>
         </section>
 
         <!-- PRIMARY BANNERS -->
