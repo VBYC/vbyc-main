@@ -8743,6 +8743,9 @@ img[src*=".svg"] .main-logo-container .ie9 {
   line-height: 1.1;
   color: #FFF;
 }
+.template-grid .ekko-lightbox-nav-overlay a, .template-grid .ekko-lightbox-nav-overlay .link-primary {
+  opacity: 1;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - ABOUT
