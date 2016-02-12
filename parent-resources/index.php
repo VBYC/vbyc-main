@@ -33,7 +33,7 @@
                                     <p>
                                         We are sensitive to the fact that each camper has different needs. Please contact us regarding allergies and dietary requirements of your camper prior to camp. Given enough time to purchase items, we can provide alternate meal options. While we recognize that each camper has differing levels of comfort with being away from home, we discourage calls and visits from parents, as they can often increase the intensity of homesickness. Mail, however, is always encouraged and welcomed!
                                     </p>
-                                    <a href="/<?=$url_faqs?>/" class="hero-cta">Learn more on our FAQ page</a>
+                                    <a href="<?=$url_parent_login?>" class="hero-cta">Parent login</a>
                                 </div>
 
                             </div>

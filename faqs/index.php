@@ -115,6 +115,14 @@
                                     <h3 class="heading ">When is camper pickup and deregistration?</h3>
                                     <p>Saturday, 10:00 AM. Unless otherwise stated.</p>
                                 </li>
+                                <li id="parent-login" class="item">                                    
+                                    <h3 class="heading ">If I've registed in the past, how do I log back in?</h3>
+                                    <p><a href="<?=$url_parent_login?>">Log in right here!</a></p>
+                                </li>
+                                <li id="register-again" class="item">                                    
+                                    <h3 class="heading ">Do I have to re-type information I entered in the past?</h3>
+                                    <p>No. If you already have an account, you can <a href="<?=$url_parent_login?>">log into</a> and edit or use registration info and forms for an upcoming session.</p>
+                                </li>
                                 <li id="visiting" class="item">                                    
                                     <h3 class="heading ">Is visiting allowed?</h3>
                                     <p>No. To prevent homesickness, parents should not visit or call. But please send letters, postcards, and care packages!</p>

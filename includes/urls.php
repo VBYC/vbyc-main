@@ -25,7 +25,6 @@ $url_alumni_login = 'https://vanburen.campintouch.com/v2/login.aspx?cx=a';
 $title_alumni_registry = 'Alumni Registry';
 $url_alumni_registry = 'https://vanburen.campintouch.com/v2/alumni/register.aspx';
 
-
 // Blog
 $title_blog = 'Blog';
 $url_blog = 'blog';
@@ -102,10 +101,15 @@ $title_news_amazon = 'Donate to VBYC through your Amazon purchases | Van Buren Y
 $url_news_amazon = 'news-amazon';
 $description_news_amazon = 'news-amazon';
 
-// Resourc
+// Parent Resources
 $title_parent_resources = 'What parents need to know for sending their child to camp | Van Buren Youth Camp';
 $url_parent_resources = 'parent-resources';
 $description_parent_resources = 'What parents need to know for sending their child to camp.';
+
+// Parent Login
+$title_parent_login  = 'Log into your account to access registration information and forms | Van Buren Youth Camp';
+$url_parent_login = 'https://vanburen.campintouch.com/v2/login.aspx';
+$description_parent_login  = 'Log into your account to access registration information and forms.';
 
 // Register CTA
 $title_register = 'Register';

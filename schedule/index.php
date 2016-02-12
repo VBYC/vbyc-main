@@ -38,7 +38,8 @@
                                 <div class="description description-wide">
                                     <p>Our camps are designed for youth in grades 1–12, and encourage both individual growth and community with others. During a recreational camp session, qualified, certified instructors lead organized programs in swimming, canoeing, kayaking, folk dancing, drama, nature exploration, arts and crafts, archery, riflery, sports, and team building.</p>
                                     <p>Every Camp session includes campfire skits and songs and all-camp games like water wars and Capture the Flag. Each camp session provides time for campers to plan activities together, take polar-bear swims and participate in Evening Rec every night. All of these activities and classes  promote opportunities for making friends, sharing, and laughing all the while having a fun-filled camp week.
-</p>
+                                    </p>
+                                    <a href="<?=$url_parent_login?>" class="hero-cta">Parent login</a>
                                 </div> 
                             </div> 
                         </div>         

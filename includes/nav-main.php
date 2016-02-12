@@ -116,7 +116,7 @@
                                 </a>
                             </li>
                             <li class="item">
-                                <a href="<?=$url_register?>" class="link emphasize" target="_blank">
+                                <a href="<?=$url_register?>" class="link emphasize">
                                     Register
                                 </a>
                             </li>
