@@ -23,10 +23,10 @@
 			}
 			
 			// Set up main nav
-			vbyc.util.initNavbar(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarToggle(subNavSelector,navbarSiblingsSelector);
-			vbyc.util.initNavbarArrowColor(subNavSelector);
-			vbyc.util.initNavbarSticky();
+			vbyc.util.navbar(subNavSelector,navbarSiblingsSelector);
+			vbyc.util.navbarToggle(subNavSelector,navbarSiblingsSelector);
+			vbyc.util.navbarArrowColor(subNavSelector);
+			vbyc.util.navbarSticky();
 
 			// Set up side nav with anchor links
 			if (hasSidenav) {
@@ -51,11 +51,10 @@
 				vbyc.util.lowResPlaceholderBgImg(highResPath);
 			}
 
-					// Set Home hero animation
+			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
-
-			// vbyc.util.resetImages();
-	  //       vbyc.util.nextImage(); 
+			// vbyc.util.homeHeroAnimationhomeHeroAnimationResetImages();
+	  		// vbyc.util.homeHeroAnimationNextImage(); 
 	        
 		},
 		initCustomValues: function(customValues) {
@@ -80,14 +79,14 @@
 			}
 			image.src = highResPath;
 		},
-		initNavbarToggle: function(subNavSelector,navbarSiblingsSelector) {
+		navbarToggle: function(subNavSelector,navbarSiblingsSelector) {
 			// Click the hamburger and expand the main nav
 			$( ".navbar-toggle" ).on( "click", function() {
 				$(navbarSiblingsSelector + '.expanded' ).removeClass('expanded');
 				$(subNavSelector + '.visible-xs-block' ).removeClass('visible-xs-block');
 			});
 		},
-		initNavbar: function(subNavSelector,navbarSiblingsSelector) {
+		navbar: function(subNavSelector,navbarSiblingsSelector) {
 			// Main nav
 			$( ".navbar-list .link" ).on( "click", function() {
 				var navbarToggle = $('.navbar-toggle');
@@ -127,7 +126,7 @@
 				}
 			});
 		},
-		initNavbarArrowColor: function(subNavSelector) {
+		navbarArrowColor: function(subNavSelector) {
 			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
 			var target = '.link-sub:first';
 
@@ -139,7 +138,7 @@
 					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
 			});
 		},
-		initNavbarSticky: function() {
+		navbarSticky: function() {
 			$(headerRow).affix({
 			  offset: {
 			    // top: 120
@@ -148,32 +147,36 @@
 		},
 		initLightbox: function() {
 			// Lightbox for Bootstrap 3 - http://ashleydw.github.io/lightbox/
+			// http://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.just
  			$('.gallery').click(function (e) {
                 e.preventDefault();
                 $(this).ekkoLightbox();
             });
+            // Note, as a temporary fix for adding a spinner while loading the image, in ekko-lightbox.min.js I replace 
+            // loadingMessage:"Loading..." with 
+            // loadingMessage:'<div class="loader-positioned loader"><span></span></div>'
 		},
 		homeHeroAnimation: function() {
 			var target = $('.template-home .animation-outer');
 		},
-		resetImages: function() {
+		homeHeroAnimationResetImages: function() {
 	        allButFirstImage.hide();
 	    },
-	    nextImage: function() {
+	    homeHeroAnimationNextImage: function() {
 	        if ($('img:last-child',container).is(':hidden')) {
-	          	vbyc.util.fadeInNextImage();
+	          	vbyc.util.homeHeroAnimationFadeInNextImage();
 	        } else {
 	          	allButFirstAndLastImage.hide();
-	          	vbyc.util.fadeOutLastImage();
+	          	vbyc.util.homeHeroAnimationFadeOutLastImage();
 	        }
 	        $( "img",container).promise().done(function() {
-	        	setTimeout(vbyc.util.nextImage, speedInterval);
+	        	setTimeout(vbyc.util.homeHeroAnimationNextImage, speedInterval);
 	        });
 	    },
-	    fadeInNextImage: function() {
+	    homeHeroAnimationFadeInNextImage: function() {
 	        $( "img:hidden:first",container).fadeIn(speedFade);
 	    },
-	    fadeOutLastImage: function() {
+	    homeHeroAnimationFadeOutLastImage: function() {
 	        $( "img:last",container).fadeOut(speedFade);
 	    },
 	    newsFeed: function() {

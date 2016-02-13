@@ -134,7 +134,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/rifle-range.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Rifle Range" 
-                                data-footer="TThe range is clearly delineated and known to the entire Camp population. It has an earth-berm backstop, clear rear and side buffers, and a clearly designated covered shooting platform. Riflery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.">    
+                                data-footer="The range is clearly delineated and known to the entire Camp population. It has an earth-berm backstop, clear rear and side buffers, and a clearly designated covered shooting platform. Riflery class is taught by a certified instructor who uses clear safety signals and range commands to control the course activity.">    
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/rifle-range.jpg" class="img-responsive img-fluid grid-item" alt="Rifle Range" >
                                 <h3 class="gallery-label">Rifle Range</h3>
                             </a>
@@ -153,7 +153,7 @@
                         <div class="col-xs-12 col-sm-4">
                             <a href="/images/pages/facilities/lg/nature-hut.jpg" class="gallery" data-toggle="lightbox" data-type="image" data-gallery="multiimages" 
                                 data-title="Nature Hut" 
-                                data-footer="Camp wouldn’t be Camp without a Nature Hut that has  lots of insects and animals for campers to observe closely (in aquariums and cages, of course). There is space for campers to feed the animals, usually critters found around the area, such as turtles, frogs,, snakes, rabbits and fish. This happens under the supervision of a staff member. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, All animals are set free at the end of the summer camping season.
+                                data-footer="Camp wouldn’t be Camp without a Nature Hut that has  lots of insects and animals for campers to observe closely (in aquariums and cages, of course). There is space for campers to feed the animals, usually critters found around the area, such as turtles, frogs, snakes, rabbits and fish. This happens under the supervision of a staff member. Campers sometimes catch turtles or frogs and bring them to the Nature Hut, All animals are set free at the end of the summer camping season.
 ">    
                                 
                                 <img src="<?=$src_defer?>" data-src="/images/pages/facilities/sm/nature-hut.jpg" class="img-responsive img-fluid grid-item" alt="Nature Hut" >

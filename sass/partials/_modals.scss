@@ -8,14 +8,14 @@
 // Make modal no bigger than size of viewport
 
 .modal-no-overflow {
-	.modal-dialog {
-	    max-height: calc(100vh - 220px);
-	} 
+//	.modal-dialog {
+//	    max-height: calc(100vh - 220px);
+//	} 
 
-	.modal-body {
-	    overflow-y: auto;
-	    max-height: calc(100vh - 220px);
-	    padding: 0;
-	    overflow: hidden;
-	} 
+//	.modal-body {
+//	    overflow-y: auto;
+//	    max-height: calc(100vh - 220px);
+//	    padding: 0;
+//	    overflow: hidden;
+//	} 
 }

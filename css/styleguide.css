@@ -8728,16 +8728,6 @@ img[src*=".svg"] .main-logo-container .ie9 {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     MODALS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.modal-no-overflow .modal-dialog {
-  max-height: calc(100vh - 220px);
-}
-.modal-no-overflow .modal-body {
-  overflow-y: auto;
-  max-height: calc(100vh - 220px);
-  padding: 0;
-  overflow: hidden;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	VENDOR OVERRIDES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -8844,6 +8834,16 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 .template-grid .ekko-lightbox-nav-overlay a, .template-grid .ekko-lightbox-nav-overlay .link-primary {
   opacity: 1;
+}
+.template-grid .modal-title {
+  font-size: 20px;
+}
+.template-grid .modal-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.template-grid .modal-body {
+  padding: 0;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

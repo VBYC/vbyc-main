@@ -52,6 +52,9 @@
 
         <script src="/js/vendor/bootstrap.min.js"></script>
         <script src="/js/vendor/ekko-lightbox.min.js"></script>
+        
+
+
         <script src="/js/main.js"></script>
 
         <script>
