@@ -121,7 +121,7 @@
                                 </li>
                                 <li id="register-again" class="item">                                    
                                     <h3 class="heading ">Do I have to re-type information I entered in the past?</h3>
-                                    <p>No. If you already have an account, you can <a href="<?=$url_parent_login?>">log into</a> and edit or use registration info and forms for an upcoming session.</p>
+                                    <p>No. If you already have an account, you can <a href="<?=$url_parent_login?>">log back in</a> to use your information and forms for an upcoming session.</p>
                                 </li>
                                 <li id="visiting" class="item">                                    
                                     <h3 class="heading ">Is visiting allowed?</h3>
