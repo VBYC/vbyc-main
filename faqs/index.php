@@ -4,7 +4,7 @@
     $page = $url_faqs;
     $section = 'about';
     $template = 'basic';
-    $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
+    $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav test"';
     $description = $description_faqs;
     // $javascript_insert = 'vbyc.util.init();';
 ?>
@@ -29,11 +29,6 @@
 
         
         <section class="main-content">
-
-
-
-            
-
             <div class="container scroll-spy-container"> 
                 <div class="row">
                     <? /*
