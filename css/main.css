@@ -7117,9 +7117,7 @@ button.close {
   position: fixed;
 }
 
-@-ms-viewport {
-  width: device-width;
-}
+
 .visible-xs {
   display: none !important;
 }
