@@ -113,7 +113,7 @@ $description_parent_login  = 'Log into your account to access registration infor
 
 // Register CTA
 $title_register = 'Register';
-$url_register = 'https://vanburen.campintouch.com/v2/camper/application/app0.aspx';
+$url_register = 'https://vanburen.campintouch.com/ui/forms/application/camper/App';
 
 // Rent Camp
 $title_rent_camp = 'Rent camp for your wedding, retreat, reunion, etc. | Van Buren Youth Camp';
@@ -162,9 +162,10 @@ $src_defer = 'data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
 ?>
 
 <? /*
-    Campminder URLs:
 
-    Login Page:https://vanburen.campintouch.com/v2/login.aspx
+Campminder URLs:
+
+Login Page:https://vanburen.campintouch.com/v2/login.aspx
 Camper Application:https://vanburen.campintouch.com/ui/forms/application/camper/App
 Dates and Rates:https://vanburen.campintouch.com/ui/unrestricted/pricing/DatesAndRates
 Alumni Registration:https://vanburen.campintouch.com/v2/alumni/register.aspx
@@ -173,8 +174,6 @@ Information Request:https://vanburen.campintouch.com/v2/family/inquiryForm.aspx
 Referral Form:https://vanburen.campintouch.com/ui/forms/client/referral/Form
 Staff Application:https://vanburen.campintouch.com/ui/forms/application/staff/App
 Staff App Reference Form:https://vanburen.campintouch.com/ui/forms/reference/staff/Form?tkn=QVFBTHZycGlTN0lZWndTL1QwclNHdUlySDBmZko2L1N2eTBuRm9QVmpGSEc4dDF0Z2JFclhleUw4aUhOUW0zbFc5MTBOR293N2VNakMxbG02SWQ0L25NeExVNmo4RkNGYkZ0V3hCelI0WGsrUEZ2TStXbEZjU2NLMjFJMDhRck9XQjA9
-
-
 
 */ ?>
 
