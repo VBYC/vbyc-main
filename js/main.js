@@ -232,7 +232,6 @@
 				// How far from the top that triggers the left nav items become active
 				offset: triggerActivateLinks,
 			});
-
 		},
 		scrollToHash: function(target) {
 			var sidenavContainer 			= '#sidenav-container';
@@ -276,7 +275,6 @@
 	        });
 		},
 		scrollToLink: function() {
- 
 			// Set up scroll
 	        $('a[href^="#"].scroll-to').on('click',function (e) {
 	            e.preventDefault();
@@ -299,7 +297,6 @@
 	            });
 	        });
 	    },
-		
 		deferImageLoad: function() {
 			var imgDefer = document.getElementsByTagName('img');
 			for (var i=0; i<imgDefer.length; i++) {
