@@ -8845,6 +8845,9 @@ img[src*=".svg"] .main-logo-container .ie9 {
 .template-grid .modal-body {
   padding: 0;
 }
+.template-grid .details {
+  margin-bottom: 3em;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - ABOUT
