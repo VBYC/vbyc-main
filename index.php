@@ -191,7 +191,7 @@
                                 <div class="col-sm-offset-2 col-sm-8">
                                     <div class="content content-primary-text">
                                         <div class="description">
-                                            <p>Van Buren Youth Camp can be Van Buren: Your Camp. For weddings, family reunions, retreats, meetings, or whenever you need an idyllic escape, camp awaits.
+                                            <p>Let our camp be your camp. For weddings, family reunions, retreats, meetings, or whenever you need an idyllic escape, camp awaits.
 
  <a href="/<?=$url_rent_camp?>/" class="link">Learn more</a></p>
                                         </div>
