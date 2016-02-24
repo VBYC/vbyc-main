@@ -7,7 +7,7 @@ output_style = :expanded # :expanded or :nested or :compact or :compressed
 # relative_assets = true
  
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-line_comments = false
+line_comments = true
 
 
 

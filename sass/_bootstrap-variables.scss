@@ -116,8 +116,8 @@ $headline-reduce-ratio: .8;
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 // $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/");
 // TODO: Find out how to use relative path like above, rather than static like below:
-
-// $icon-font-path: '/wp-content/themes/vbyc-custom/_bootstrap-sass-master/assets/fonts/';
+ $bootstrap-sass-asset-helper: false;
+ $icon-font-path: '/fonts/bootstrap/';
 
 
 //** File name for all font files.

@@ -1,31 +1,30 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	VBYC CUSTOM
+    VBYC CUSTOM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @import "partials/fonts";
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	BOOTSTRAP
+    BOOTSTRAP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-// Import Bootstrap Compass integration
-@import "bootstrap-compass";
 
 // Import custom Bootstrap variables
-@import "bootstrap-variables";
 
-// Import Bootstrap for Sass
+@import "bootstrap-sprockets";
+@import "bootstrap-variables";
 @import "bootstrap";
 
 
 
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	VENDORS
+    VENDORS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @import "vendors/_ekko-lightbox";
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	VBYC CUSTOM
+    VBYC CUSTOM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -63,8 +62,3 @@
 @import "partials/page-error";
 @import "partials/page-explore-camp";
 @import "partials/page-meet-the-director";
-
-
-
-
-
