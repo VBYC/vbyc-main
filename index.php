@@ -19,6 +19,8 @@
                 <div class="content-inner">
                     <h5 class="headline"><? /* ?><a href="#" class="link-reverse " title="Read all news stories"><? */ ?>News<? /* ?></a><? */ ?> ///</h5>
                     <ul class="news-feed-list list-unstyled">
+                        <li class="item"><a href="/<?=$url_news_leadership_speaker_fund?>/" class="link">Leadership Campers Raising Speaker Funds</a></li>
+                        <li class="item"><a href="/<?=$url_schedule?>/#adults" class="link">Woman's Wellness Weekend added to schedule</a></li>
                         <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
                         <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
                     </ul>
