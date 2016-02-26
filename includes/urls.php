@@ -101,6 +101,11 @@ $title_news_amazon = 'Donate to VBYC through your Amazon purchases | Van Buren Y
 $url_news_amazon = 'news-amazon';
 $description_news_amazon = 'news-amazon';
 
+// News Amazon 
+$title_news_leadership_speaker_fund = 'Leadership Campers Raising Funds for Speaker Ebony Stewart | Van Buren Youth Camp';
+$url_news_leadership_speaker_fund = 'news-leadership-campers-raising-funds';
+$description_news_leadership_speaker_fund = '2016 Leadership planning committee raising funds to bring speaker Ebony Stewart.';
+
 // Parent Resources
 $title_parent_resources = 'What parents need to know for sending their child to camp | Van Buren Youth Camp';
 $url_parent_resources = 'parent-resources';
