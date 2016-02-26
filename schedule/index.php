@@ -77,6 +77,9 @@
                                 <li class="item" role="presentation">
                                     <a href="#grades-9-12" class="link">Grades 9-12</a>
                                 </li>
+                                <li class="item" role="presentation">
+                                    <a href="#adults" class="link">Adults</a>
+                                </li>
                             </ul>
                         </aside>
                     </div><!-- /column -->
@@ -199,6 +202,19 @@
                                         <p><a href="<?=$url_register?>" target="_blank">Register for Advanced Leadership</a></p>
                                     </div>
                                 </li>
+                            </ul>
+
+                            <!-- Adults -->
+                            <h2 id="adults" class="heading-category">Adults</h2>
+                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+                                <li class="item">                                    
+                                    <h3 class="heading"><span class="nowrap">Women&rsquo;s Wellness Weekend</span> <br>  <span class="date nowrap">September 22-25</span> | Ladies 21+</h3>
+                                    <div class="description">
+                                        <p>Take time for just YOU! Join us at VBYC for a weekend of fun, fitness and renewal. We will offer a mixture of traditional camp activities, craft classes, fitness activities, and free time. Enjoy delicious meals and sleep in rustic cabins with detached bath facilities. Cabins sleep a maximum of nine.  We have so many activities packed into one weekend, that we have added a day for 2016.  If you can break free from home, you can begin this amazing experience on Thursday night!</p>
+                                        <p><a href="<?=$url_register?>" target="_blank">Register for Women&rsquo;s Wellness Weekend</a></p>
+                                    </div>
+                                </li>
+          
                             </ul>
 
 
