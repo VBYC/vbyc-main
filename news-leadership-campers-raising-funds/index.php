@@ -38,6 +38,7 @@
                                 <div class="description description-wide">
                                     <p>We are the Leadership planning committee for 2016 and we are hoping to bring a fresh perspective to our leadership training session this summer! One way that we plan to accomplish this goal is by bringing inspirational and diverse speakers to camp. 
                                     </p>
+                                    <a href="https://www.gofundme.com/vbycleadership" class="hero-cta" target="_blank">Donate now</a>
                                 </div> 
                             </div> 
                         </div>         
@@ -66,6 +67,7 @@
 One speaker in particular, <a href="http://www.ebpoetry.com/" tareget="_blank">Ebony Stewart</a>, is a well known spoken word poet who engages teenage audiences in sessions all over the country. We are very excited to have her at our leadership camp this summer, but need the help of our tight-knit camp community to raise the funds to bring her to VBYC.</p>
 <p>We have to raise $1,000 dollars in order to make this happen, but  we are confident that this experience is worth the effort. Please consider supporting us in our quest to bring this amazing artist to our leadership campers this summer!</p>
 <p>Please check out <a href="http://www.ebpoetry.com/" tareget="_blank">Ebony's website</a> for more information and feel free to ask leadership campers or VBYC staff about their experiences with our leadership camp. Thank you so much for your support!</p>
+
 
                                 
                             </div>
