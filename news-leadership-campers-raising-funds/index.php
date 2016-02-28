@@ -5,7 +5,7 @@
     $section = 'sessions';
     $template = 'basic';
     $body_attributes = 'id="page-'.$page.'" class="section-'.$section.' template-'.$template.' has-sticky-main-nav has-sidenav "';
-    $description = $description_news_amazon;
+    $description = $description_news_leadership_speaker_fund;
     // $javascript_insert = '';
 ?>
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
