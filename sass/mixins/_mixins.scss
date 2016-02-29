@@ -1,0 +1,11 @@
+@mixin column-width($width) {
+    -webkit-columns: $width; 
+       -moz-columns: $width;
+            columns: $width;
+}
+
+@mixin column-gap($width) {
+    -webkit-column-gap: $width; 
+       -moz-column-gap: $width;
+            column-gap: $width;
+}

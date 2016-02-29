@@ -1,0 +1,224 @@
+/* Modifications and overrides to the default Container Styles. */
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.2.2
+*/
+
+html #cmContainer .yui-panel-container,
+html #cmContainer .yui-panel-container ft,
+.yui-panel-container .yui-panel,
+.yui-panel-container .yui-panel .ft {
+	margin-top: 2px;
+	color:#333}
+
+html #cmContainer .logInContainer p,
+html #cmContainer .logInContainer label,
+html #cmContainer .yui-panel-container b,
+html #cmContainer .yui-panel-container label,
+html #cmContainer .yui-panel-container .cmSubtle,
+html #cmContainer .yui-panel-container td,
+html #cmContainer .yui-panel-container th {
+	color:#000;}
+
+html #cmContainer .yui-panel-container blockquote {
+	font-style:italic;}
+
+html #cmContainer .yui-panel-container a {
+	color:#359;}
+
+html #cmContainer .yui-panel-container a:hover {
+	color:#666;}
+
+html #cmContainer .yui-panel-container p.oneLiner {
+	margin-top:20px;
+	margin-bottom:20px;}
+
+.yui-panel {
+	}
+
+.yui-panel .bd {
+    max-height: 527px;
+    overflow-y: auto !important;
+}
+.yui-panel .bd,
+.yui-panel .bd p,
+.yui-panel .bd ol,
+.yui-panel .bd ul,
+.yui-panel .bd li {
+	color: #000;
+	}
+
+.masked .yui-panel.cmWait .bd {
+	}
+
+
+
+/* THE STYLES BELOW ARE FOR MODAL WINDOWS 
+THAT ARE INSTANTIATED BY JAVASCRIPT
+=========================================== */
+.yui-panel {
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:13px;
+	text-align:left;}
+
+/* DISABLE EXISTING STYLES
+=========================================== */
+.yui-panel h4,
+.yui-panel h5,
+.yui-panel h6,
+.yui-panel img,
+.yui-panel p,
+.yui-panel ul,
+.yui-panel ol,
+.yui-panel li,
+.yui-panel dl,
+.yui-panel dt,
+.yui-panel dd,
+.yui-panel table,
+.yui-panel tr,
+.yui-panel th,
+.yui-panel td,
+.yui-panel form,
+.yui-panel fieldset,
+.yui-panel legend {
+	border:none;
+	background:0;
+	background-image:none;
+	list-style-image:none;
+	text-align:left;}
+
+.yui-panel h4,
+.yui-panel h5,
+.yui-panel h6,
+.yui-panel img,
+.yui-panel p,
+.yui-panel li,
+.yui-panel dt,
+.yui-panel dd,
+.yui-panel form,
+.yui-panel fieldset,
+.yui-panel legend {
+	padding:0;
+	border:0;
+	margin:0;}
+
+.yui-panel h4,
+.yui-panel h5,
+.yui-panel h6,
+.yui-panel p,
+.yui-panel dl,
+.yui-panel form,
+.yui-panel fieldset {
+	margin:10px 0 20px 0;}
+
+.yui-panel ul,
+.yui-panel ol {
+	margin-top:10px;
+	margin-bottom:20px;}
+
+.yui-panel input,
+.yui-panel select,
+.yui-panel label {
+	display:inline;}
+
+.yui-panel table,
+.yui-panel tr,
+.yui-panel th,
+body #cmContianer td {
+	font-size:100%;}
+
+/* NOTIFICATIONS
+=========================================== */
+.yui-panel .cmFailure {
+	border:1px solid #fc0;
+	padding:8px 10px 0 40px;
+	background:url(/MCMImages/Etc/Failure.gif) no-repeat 10px 6px #ffc;
+	margin:20px 0;}
+
+.yui-panel  .cmSuccess {
+	border:1px solid #fc0;
+	padding:8px 10px 0 40px;
+	background:url(/MCMImages/Etc/Success.gif) no-repeat 10px 6px #ffc;
+	margin:20px 0;}
+
+/* ETC
+=========================================== */
+.yui-panel .cm0margin {
+	margin:0;}
+
+.yui-panel .cmClear {
+	clear:both;
+	height:1px;}
+
+.yui-panel .cmCenter {
+	text-align:center;}
+
+.yui-panel .cmDivider {
+	border-top:1px solid #666;
+	padding:0;
+	margin:20px 0;}
+
+.yui-panel .cmFullWidth {
+	width:100%;}
+
+.yui-panel .cmHide {
+	display:none;}
+
+.yui-panel .cmNote {
+	color:#666;}
+
+.yui-panel .cmRight {
+	text-align:right;}
+
+.yui-panel .cmSpacer {
+	margin-left:10px;}
+
+.yui-panel .cmSubtle {
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;}
+
+.yui-panel .cmTop {
+	text-align:right;
+	padding:5px 0;
+	border-top:1px solid #666;
+	margin:40px 0;
+	clear:both;}
+
+.yui-panel .cmWhite {
+	background:#fff;}
+
+.yui-panel .cmZeroTop {
+	margin-top:0;}
+
+.yui-panel #cmTooltip {
+	width:141px;
+	position:absolute;
+	display:none;
+	z-index:2;}
+
+.yui-panel #cmTooltip .cmTooltip_top {
+	background-image: url(/images/cmTooltip/top.png);
+	background-repeat:no-repeat;
+	height:16px;}
+
+.yui-panel #cmTooltip .cmTooltip_middle {
+	background-image: url(/images/cmTooltip/middle.png);
+	background-repeat:repeat-y;
+	background-position:bottom left;
+	padding-left:7px;
+	padding-right:7px;}
+
+.yui-panel #cmTooltip .cmTooltip_middle span {
+	position:relative;
+	top:-8px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;}
+
+.yui-panel #cmTooltip .cmTooltip_bottom {
+	background-image: url(/images/cmTooltip/bottom.png);
+	background-repeat:no-repeat;
+	height:22px;
+	position:relative;
+	top:-6px;}
