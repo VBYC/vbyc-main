@@ -1,0 +1,98 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	HERO
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.hero {
+	overflow: hidden;
+	text-align: center;
+	background-position: 50% 50%;
+	margin-bottom: 25px;
+	.hero-image {
+		img {
+			margin-left: -50%;
+			margin-right: -50%;
+		}
+	}
+	.section-name {
+		border-top: 1px solid $line-color;
+		border-bottom: 1px solid $line-color;
+		margin-top: 0;
+		padding: $padding-base-vertical;
+		display: inline-block;
+		font-weight: bold;
+		+ .page-name  {
+			margin-top: $padding-base-vertical*2;
+		}
+	}
+	.description {
+		margin-top: $padding-base-vertical*3;
+	}
+	.description-wide p {
+		text-align: justify;
+	}
+	.hero-cta {
+		margin-top: 20px;
+		display: inline-block;
+	}
+
+}
+.hero-text-container {
+	background: #FAFAFA url('/images/heroes/hero-text-bg.png') left top repeat;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.hero-scroll-cta {
+	text-align: center;
+	margin-bottom: -20px;
+	margin-top: 20px;
+
+	.link {
+		margin: 10px auto 0;
+		padding: 0 25px 0 20px;
+		background-color: $color-white;
+		color: $color-blue;
+		font-size: 12px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 15px;
+		text-align: center;
+		display: inline-block;
+		&:hover {
+			text-decoration: none;
+			background-color: #0595E5;
+			color: #FFF;
+		}
+	}
+	.glyphicon {
+		margin-right: 5px;
+	}
+}
+
+
+@media (max-width: $screen-xs-max) {
+	.hero-scroll-cta {
+		margin-bottom: 0;
+		.link {
+			border-radius: 12px;
+			font-size: 11px;
+			height: 25px;
+			line-height: 25px;
+			padding: 0 20px 0 15px;
+		}
+	}
+	
+}
+
+@media (min-width: $width-content-extra) {
+    .hero {
+		.hero-image {
+			max-height: 500px;
+			overflow: hidden;
+			img {
+				width: 100%;
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    FOOTER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer {
+    border-top: 5px solid $color-red;
+    
+    text-align: left;
+    
+    
+
+}
+.footer-message {
+    color: $color-blue;
+    font-size: 24px;
+    text-align: center;
+    font-family: $font-family-serif;
+}
+.footer-content {
+    
+    .item {
+         margin-bottom:  20px;
+    }
+}
+
+
+
+
+@media (min-width: $screen-sm-min) {
+    .footer {
+        text-align: center;
+        .item {
+            margin: 0 20px;
+            float: left;
+            display: inline-block;
+            text-align: left;
+        }
+    }
+    .footer-content {
+        text-align: left;
+        display: inline-block;
+    }
+
+}
+

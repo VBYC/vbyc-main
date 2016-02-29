@@ -1,0 +1,65 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPLATE - GRID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.template-grid {
+
+	.gallery {
+		display: block;
+		position: relative;
+		
+	
+		
+		&:hover {
+			background-color: #000;
+			display: block;
+			.grid-item {
+				opacity: .6;
+			}
+			.gallery-label {
+				display: block;
+			}
+		}
+	}
+	.gallery-label {
+		display: none;
+		text-align: center;
+	    position: absolute;
+	    top: 50%;
+	    left: 10px;
+	    right: 10px;
+	    margin: -14px 0 0;
+	    line-height: 1.1;
+	    color: $color-white;
+	}
+
+	.ekko-lightbox-nav-overlay {
+		a {
+			opacity: 1;
+		}
+	}
+	.modal-title {
+		font-size: 20px;
+	}
+	.modal-header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	
+	}
+	.modal-body {
+		padding: 0;
+	
+	}
+	.details {
+		margin-bottom: 3em;
+	}
+
+
+}
+
+
+@media (max-width: $screen-xs-max) {
+    .template-grid {
+		
+	}
+}

@@ -1,0 +1,107 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	VBYC CUSTOM STYLEGUIDE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.sg-link-hover a {
+    @extend a:hover;
+    &:hover {
+    	text-decoration: underline;
+    	border-bottom: none;
+    }
+}
+
+.sg-link-focus a {
+    @extend a:focus;
+    &:hover {
+    	text-decoration: none;
+    }
+    
+}
+
+.sg-link-primary-hover .link-primary {
+    @extend .link-primary:hover;
+    text-decoration: none;
+    &:hover {
+    	@extend a:hover;
+    	text-decoration: none;
+    }
+}
+
+.sg-link-primary-focus .link-primary {
+    @extend .link-primary:focus;
+    text-decoration: none;
+    &:hover {
+    	@extend a:hover;
+    	text-decoration: none;
+    	border-bottom: none;
+    }
+}
+
+.sg-link-primary-focus .link-primary {
+    @extend .link-primary:focus;
+    text-decoration: none;
+    &:hover {
+        @extend a:hover;
+        text-decoration: none;
+        border-bottom: none;
+    }
+}
+
+.sq-navigation-dropdown {
+    height: 230px;
+}
+
+.sg-color-pallets {
+    div {
+        height: 100px;
+        width: 24%;
+        padding: 20px 15px;
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    .sg-dark-bg {
+        color: #FFF;
+    }
+    .sg-color-blue {
+        background-color: $color-blue;
+    }
+    .sg-color-gray-darker {
+        background-color: $color-gray-darker;
+    }
+    .sg-color-gray-dark {
+        background-color: $color-gray-dark;
+    }
+    .sg-color-gray {
+        background-color: $color-gray;
+    }
+    .sg-color-gray-light {
+        background-color: $color-gray-light;
+    }
+    .sg-color-gray-lighter {
+        background-color: $color-gray-lighter;
+    }
+    .sg-color-green {
+        background-color: $color-green;
+    }
+    .sg-color-green-dark {
+        background-color: $color-green-dark;
+    }
+    .sg-color-slate {
+        background-color: $color-slate;
+    }
+    .sg-color-red {
+        background-color: $color-red;
+    }
+    .sg-color-red-darker {
+        background-color: $color-red-darker;
+    }
+}
+
+
+
+
+
+
