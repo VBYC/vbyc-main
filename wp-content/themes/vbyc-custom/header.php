@@ -58,26 +58,51 @@
 <div id="page" class="hfeed site page-home">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
-	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<?php
-					if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php endif;
+	
+	<header class="header-main low-res-placeholder background-img-fluid v-offset-bot-0">
+		<div class="container">
+            <div class="row">
+                <div class="main-logo-container navbar-toggle-container col-xs-12 col-md-4 text-center">
+                    <a href="/" title="Home">
+                        <!-- TODO: Change color with CSS http://codepen.io/helmemat/pen/ndJgz -->
+                        <!-- TODO: Use just 1 file for icon too -->
+                        <img src="/images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
+                        <img src="/images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
+                    </a>
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main-toggle.php"); ?> 
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main.php"); ?> 
+                </div>
+            </div><!-- /.row -->
 
-					$description = get_bloginfo( 'description', 'display' );
-					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; ?></p>
-					<?php endif;
-				?>
-				<button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
+        </div>
+
+		<?php
+			if ( is_front_page() && is_home() ) : ?>
+				<!-- <div class="container home-hero-text-outer">
+	                <div class="home-hero-text">
+	                    <div class="container home-hero-text-inner">
+	                        <h1>
+	                            <span class="group-1">Discovering</span>  
+	                            <span class="group-2">nature,</span> 
+	                            <span class="group-3">each other, </span>
+	                            <span class="group-4">&amp; ourselves.</span>
+	                        </h1>
+	                    </div>
+	                    <div class="hero-scroll-cta">
+	                        <a href="#post-hero" class="link scroll-to"><span class="glyphicon glyphicon-menu-down"></span> Scroll</a>
+	                    </div>
+	                </div>
+            	</div> -->
+			<?php else : ?>
+				
+			<?php endif;
+		?>
+		 </header>
+			
 
 		<?php get_sidebar(); ?>
-	</div><!-- .sidebar -->
-
-	<div id="content" class="site-content">
+	
+	 <main class="main-content-container">
+	<!-- <div id="content" class="site-content"> -->

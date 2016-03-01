@@ -11,7 +11,7 @@
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header.php"); ?> 
 <? include("".$_SERVER['DOCUMENT_ROOT']."/includes/header-element.php"); ?>  
 
- <main class="main-content/-container" data-spy="scroll" data-target="#sidenav">
+ <main class="main-content-container">
         <section class="hero">
             <div class="container-fluid hero-text-container clearfix">
                  <div class="container">
@@ -31,64 +31,7 @@
         <section class="main-content">
             <div class="container scroll-spy-container"> 
                 <div class="row">
-                    <? /*
-                    <div class="hidden-xs col-sm-4 col-md-3"> 
-                        <aside id="sidenav-container">
-                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
-                                <li class="item" role="presentation">
-                                    <a href="#age-range" class="link sidenav-">What is the age range?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#co-ed" class="link sidenav-">Is it co-ed?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#camper-dropoff" class="link sidenav-">When is camper drop off and registration?</a>
-                                </li>
-                                 <li class="item" role="presentation">
-                                    <a href="#camper-pickup" class="link sidenav-">When is camper pickup and deregistration?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#visiting" class="link sidenav-">Is visiting allowed?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#cabinmate-requests" class="link sidenav-">Do you take bunk-mate requests?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#store" class="link sidenav-">How does the store work?</a>
-                                </li>
-                                
-                               <!--  <li class="item" role="presentation">
-                                    <a href="#dietary" class="link sidenav-">How do you handle dietary needs?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#non-descrimination" class="link sidenav-">How do promote  and acceptance?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#camper-pickup" class="link sidenav-">How do you handle allergy needs?</a>
-                                </li>
-                               
-                                <li class="item" role="presentation">
-                                    <a href="#allergies" class="link sidenav-">How do you handle allergy needs?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#prevent-homesickness" class="link sidenav-">How can I help my child not be afraid or homesick??</a>
-                                </li> -->
-                                <li class="item" role="presentation">
-                                    <a href="#get-in-touch-with-alumni" class="link sidenav-">Can you help me get in touch with other alumni?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#donate" class="link sidenav-">Can I donate time/money?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#board" class="link sidenav-">Can I serve on the Board of Directors?</a>
-                                </li>
-                                <li class="item" role="presentation">
-                                    <a href="#rent-camp" class="link sidenav-">Can I rent camp for an event?</a>
-                                </li>
-                            </ul>
-                        </aside>
-                    </div><!-- /column -->
-                    */ ?>
+                   
 
                     <div class="col-xs-12 col-md-offset-2 col-md-8">
                         <article class="main-article">
