@@ -69,6 +69,7 @@
                                 <li>When you park, a staff member will give you your cabin number.</li>
                                 <li>Drop off your stuff in your cabin and meet your counselor.</li>
                                 <li>Come to the lodge to register.</li>
+                                <li>Go to the infirmary for a visual screening with the nurse.</li>
                                 <li>Swim test.</li>
                             </ol>
                         </div>
