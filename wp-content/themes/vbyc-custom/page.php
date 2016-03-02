@@ -13,39 +13,7 @@
 
 get_header(); ?>
 
-	<!-- HERO -->
-	<section class="hero">
-        <div class="hero-image-container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="hero-image">
-                        <img src="/images/heroes/about.jpg" alt="Campers at campfire">
-                    </div>
-                </div>
-            </div><!-- /.row -->
-        </div>
-        <div class="container-fluid hero-text-container clearfix">
-             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="hero-text">
-                            <h1 class="page-name">About Us</h1>
-                        </div>
-                    </div>         
-                </div><!-- /.row -->
-                <div class="row">
-                    <div class="col-xs-12 col-md-8 col-md-offset-2">
-                        <div class="hero-text">
-                            <div class="description">
-                                <p>&ldquo;Van Buren Youth Camp is dedicated to serving youth by providing opportunities for mental, physical and spiritual growth.&rdquo; - Our mission statement since 1950.
-</p>
-                            </div> 
-                        </div> 
-                    </div>         
-                </div><!-- /.row -->
-            </div>
-        </div>
-    </section>
+	
 
     <!-- BODY -->
 	<!-- WP: <div id="primary" class="content-area">
