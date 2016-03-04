@@ -20,28 +20,33 @@ get_header(); ?>
 		WP <main id="main" class="site-main" role="main"> -->
 
 	<section class="main-content">
-		<div class="container"> 
-		    <article class="main-article">
+        <div class="container"> 
+            <article class="main-article">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-offset-2">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+						<?php
+						// Start the loop.
+						while ( have_posts() ) : the_post();
 
-			// Include the page content template.
-			get_template_part( 'content', 'page' );
+							// Include the page content template.
+							get_template_part( 'content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
 
-		// End the loop.
-		endwhile;
-		?>
+						// End the loop.
+						endwhile;
+						?>
 
-			</article><!-- /.main-article -->
+			        </div>
+                </div><!-- /.row -->
+            </article><!-- /.main-article -->
         </div><!-- /.container -->
     </section><!-- /.main-content -->
+
 
 		<!-- WP </main> --><!-- .site-main -->
 	<!-- WP </div> --><!-- .content-area -->
