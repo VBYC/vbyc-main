@@ -107,7 +107,7 @@
 		 </header>
 			
 
-		<?php // get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	
 	 <main class="main-content-container">
 	<!-- <div id="content" class="site-content"> -->

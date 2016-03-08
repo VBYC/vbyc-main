@@ -20,17 +20,41 @@ $link-sub-padding: 12px;
     } 
 
     // Parent nav - links container
+    .nav-menu,
     .navbar-list {
         display: inline-block;
 
         // Parent nav - individual link container
+        > .menu-item, 
         > .item {
             float: left;
             position: relative;
             &:not(:last-child) {
                 margin-right: 20px;
             }
+
+            &:not(.emphasize) {
+                > a {
+                    &:hover {
+                        animation: width 0% > 100%; 
+                        background-color: transparent;
+                        color: $link-color-emphasize;
+                        border-bottom-color: $link-color-emphasize;
+                        .template-home & {
+                            color: $link-color-emphasize-reverse;
+                            border-bottom-color: $link-color-emphasize-reverse;
+                        }
+                    }
+                    &:focus,
+                    &:active {
+                        border-bottom-color: transparent;
+                    }
+                }
+                
+            }
+
             &:hover {
+                .sub-menu,
                 .navbar-list-sub {
                     display: block;
                 }
@@ -38,6 +62,7 @@ $link-sub-padding: 12px;
         }
         
         // Parent nav - links
+        .menu-item > a,
         .link {
             padding-top: 7px;
             padding-bottom: 7px;
@@ -49,24 +74,26 @@ $link-sub-padding: 12px;
             .template-home & {
                 color: $link-color-reverse;
             }
-            &.normal {
-                &:hover {
-                    animation: width 0% > 100%; 
-                    background-color: transparent;
-                    color: $link-color-emphasize;
-                    border-bottom-color: $link-color-emphasize;
-                    .template-home & {
-                        color: $link-color-emphasize-reverse;
-                        border-bottom-color: $link-color-emphasize-reverse;
-                    }
-                }
-                &:focus,
-                &:active {
-                    border-bottom-color: transparent;
-                }
-            }
+//            &.normal {
+//                &:hover {
+//                    animation: width 0% > 100%; 
+//                    background-color: transparent;
+//                    color: $link-color-emphasize;
+//                    border-bottom-color: $link-color-emphasize;
+//                    .template-home & {
+//                        color: $link-color-emphasize-reverse;
+//                        border-bottom-color: $link-color-emphasize-reverse;
+//                    }
+//                }
+//                &:focus,
+//                &:active {
+//                    border-bottom-color: transparent;
+//                }
+//            }
         }
+        > .current-menu-item, 
         > .selected {
+            > a,
             .link {
                 .navbar & {
                     border-bottom: 2px solid $link-color;
@@ -87,6 +114,7 @@ $link-sub-padding: 12px;
     }
 
     // Sub nav - links container
+    .sub-menu,
     .navbar-list-sub {
         position: absolute;
         margin-top: -2px;
@@ -101,16 +129,20 @@ $link-sub-padding: 12px;
         }
 
         // Sub nav - individual link container
+        
+        > .menu-item,
         .item-sub  {
             
             $link-sub-padding-extra: ($link-sub-padding * 1.5);
             
             &:first-child {
+                > a,
                 .link-sub {
                     padding-top: $link-sub-padding-extra;
                 }
             }
             &:last-child {
+                > a,
                 .link-sub {
                     padding-bottom: $link-sub-padding-extra;
                 }
@@ -118,6 +150,7 @@ $link-sub-padding: 12px;
         }
 
         // Sub nav - links
+        > .menu-item a,
         .link-sub {
             white-space: nowrap;
             padding: $link-sub-padding;
@@ -128,6 +161,7 @@ $link-sub-padding: 12px;
 
 
 @media (min-width: $screen-md-min) {
+    .nav-menu,
     .navbar-list {
         margin-top: 10px;
     }   

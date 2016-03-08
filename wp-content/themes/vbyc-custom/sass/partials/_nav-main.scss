@@ -8,10 +8,16 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
+
+
+
 // Parent nav links container
+.nav-menu,
 .navbar-list {
+    @extend .list-unstyled;
     font-size: 14px;
     font-family: $font-family-link;
+    > .current-menu-item, 
     > .selected {
         .link {
             &.normal,
@@ -19,8 +25,17 @@
                 color: $color-slate;
             }
         }
+        &:not(.emphasize) {
+            > a {
+                &.normal,
+                &.normal:hover {
+                    color: $color-slate;
+                }
+            }
+        }
     }   
     // Parent nav links
+    .menu-item > a,
     .link {
         padding: 18px 10px;
         line-height: 1;
@@ -46,12 +61,34 @@
         }
     }
 
+    // For WP
+    .menu-item {
+        &.emphasize {
+           > a {
+                background-color: $color-red;
+                color: $color-white;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-red-darker;
+                }
+                &:focus,
+                &:active {
+                     color: $color-white;
+                     background-color: $link-focus-color;
+                }
+            }
+        }
+    }
+
     
 }
 
 // Sub nav links container
+.sub-menu,
 .navbar-list-sub {
+    @extend .list-unstyled;
     display: none;
+//    display: block;
     position: relative;
     z-index: 8;
     // Arrow op top
@@ -74,9 +111,13 @@
 
 
     // Sub nav links
+    > .menu-item > a,
     .link-sub {
         display: block;
         padding: 18px;
+        .nav-menu & {
+            color: $color-white; /* To override for WP */
+        }
         color: $color-white;
         background-color: $link-color;
         &:hover {
@@ -88,3 +129,6 @@
         }
     }
 }
+
+
+
