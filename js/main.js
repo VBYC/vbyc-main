@@ -1,8 +1,10 @@
 (function( vbyc, $, undefined ) { 
 
 	var $body   				= $(document.body),
-		subNavSelector 			= '.navbar-list-sub',
-	    navbarSiblingsSelector  = '.navbar-list .link',
+		// subNavSelector 			= '.navbar-list-sub',
+	 //    navbarSiblingsSelector  = '.navbar-list .link',
+		subNavSelector 			= '.sub-menu',
+	    navbarSiblingsSelector  = '#menu-main-navigation > .menu-item',
 	    sideNav 				= $('#sidenav'),
 	    headerRow 		 		= $('.header-main'),
 	    hasSidenav 				,
@@ -51,6 +53,9 @@
 				vbyc.util.lowResPlaceholderBgImg(highResPath);
 			}
 
+			vbyc.util.WpOverrides();
+
+
 			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
 			// vbyc.util.homeHeroAnimationhomeHeroAnimationResetImages();
@@ -65,6 +70,11 @@
 			if (customValues.highResPath) {
 				highResPath = customValues.highResPath ;
 			}
+		},
+		WpOverrides: function(customValues) {
+			$( ".menu-item-has-children > a" ).on( "click", function(event) {
+				event.preventDefault();
+			});
 		},
 		lowResPlaceholderBgImg: function(highResPath) {
 
@@ -88,9 +98,9 @@
 		},
 		navbar: function(subNavSelector,navbarSiblingsSelector) {
 			// Main nav
-			$( ".navbar-list .link" ).on( "click", function() {
+			$( "#menu-main-navigation > .menu-item > a" ).on( "click", function() {
 				var navbarToggle = $('.navbar-toggle');
-				var parent = $(this).parents('.item');
+				var parent = $(this).parents('.menu-item');
 				var target = $(subNavSelector,parent);
 				
 				// See if nav is vertical, in SM view
@@ -128,7 +138,7 @@
 		},
 		navbarArrowColor: function(subNavSelector) {
 			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
-			var target = '.link-sub:first';
+			var target = '.navbar-list-sub > .menu-item > a:first';
 
 			$(target,subNavSelector)
 				.on( "mouseenter", function() {

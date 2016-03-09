@@ -66,7 +66,7 @@
     <script src="/js/main.js"></script>
     <script>
         $(document).ready(function() {
-            <?/*TODO=$javascript_insert*/?>
+            vbyc.util.init({hasSidenav : false});
         });
     </script>
     <script>
