@@ -45,18 +45,28 @@
     }
 
     // Parent nav links container
+    .nav-menu,
     .navbar-list {
         margin-bottom: 0;
         border-top: 1px solid $line-color;
 
         // Parent nav links
+        > .menu-item > a,
         .link {
             font-size: 18px;
             &:not(.expanded) {
                 border-bottom: 1px solid $line-color;
             }
-            
-
+            &:not(.emphasize) {
+                > a {
+                    background-color: $color-white;
+                    color: $link-color;
+                    &:hover {
+                        color: $link-color-emphasize;
+                        cursor: pointer;
+                    }
+                }
+            }
             // Use normal so don't have to override with .emphasized
             &.normal {
                 background-color: $color-white;
@@ -70,6 +80,7 @@
     }
 
     // Sub nav links container
+    .sub-menu,
     .navbar-list-sub {
         border-bottom: 1px solid $color-gray-lighter;
         
@@ -80,6 +91,7 @@
         }
 
         // Sub nav links
+        > .menu-item > a,
         .link-sub {
             font-size: 18px;
             border-top: 1px solid $link-color-emphasize;

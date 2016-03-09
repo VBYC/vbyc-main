@@ -24,7 +24,7 @@
 
             
             
-                <ul class="navbar-list list-unstyled clearfix">
+                <!-- <ul class="navbar-list list-unstyled clearfix">
                     
                     <li class="item">
                         <div class="link normal">Sessions</div>
@@ -144,7 +144,7 @@
                             Register
                         </a>
                     </li>
-                </ul>                        
+                </ul> -->                        
             </nav>
     <?php endif; ?>
 <?php endif; ?>      

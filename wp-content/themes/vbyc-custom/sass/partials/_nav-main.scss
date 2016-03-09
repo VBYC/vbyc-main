@@ -8,7 +8,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-
+#wpadminbar {
+    display: none !important;
+}
 
 
 // Parent nav links container
@@ -17,7 +19,8 @@
     @extend .list-unstyled;
     font-size: 14px;
     font-family: $font-family-link;
-    > .current-menu-item, 
+    > .current-menu-item,
+    > .current-menu-parent, 
     > .selected {
         .link {
             &.normal,
@@ -35,7 +38,7 @@
         }
     }   
     // Parent nav links
-    .menu-item > a,
+    > .menu-item > a,
     .link {
         padding: 18px 10px;
         line-height: 1;
@@ -62,7 +65,7 @@
     }
 
     // For WP
-    .menu-item {
+    > .menu-item {
         &.emphasize {
            > a {
                 background-color: $color-red;
@@ -79,8 +82,6 @@
             }
         }
     }
-
-    
 }
 
 // Sub nav links container
@@ -115,7 +116,8 @@
     .link-sub {
         display: block;
         padding: 18px;
-        .nav-menu & {
+        .nav-menu &,
+        .navbar-list & {
             color: $color-white; /* To override for WP */
         }
         color: $color-white;
@@ -124,6 +126,7 @@
             background-color: $link-color-emphasize;
             text-decoration: none;
         }
+        &.current-menu-item,
         &.selected {
             background-color: $link-color-emphasize;
         }

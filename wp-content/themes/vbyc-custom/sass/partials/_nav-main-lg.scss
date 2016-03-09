@@ -57,6 +57,7 @@ $link-sub-padding: 12px;
                 .sub-menu,
                 .navbar-list-sub {
                     display: block;
+                    color: pink;
                 }
             }
         }
@@ -92,6 +93,7 @@ $link-sub-padding: 12px;
 //            }
         }
         > .current-menu-item, 
+        > .current-menu-parent, 
         > .selected {
             > a,
             .link {
