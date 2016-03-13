@@ -137,7 +137,7 @@ function vbyc_setup() {
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu',      'twentyfifteen' ),
-		'social'  => __( 'Social Links Menu', 'twentyfifteen' ),
+		'footer'  => __( 'Footer Menu', 'twentyfifteen' ),
 	) );
 
 	/*
@@ -275,7 +275,7 @@ function add_googleanalytics() { ?>
 add_filter( 'body_class', 'my_class_names' );
 function my_class_names( $classes ) {
 	// add 'class-name' to the $classes array
-	$classes[] = 'has-sticky-main-nav section-sessions ;
+	$classes[] = 'has-sticky-main-nav section-sessions  ';
 	// return the $classes array
 	return $classes;
 }
