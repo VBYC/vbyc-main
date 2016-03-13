@@ -1,5 +1,5 @@
 require 'bootstrap-sass'
-css_dir = "/css"
+css_dir = ""
 
 output_style = :expanded # :expanded or :nested or :compact or :compressed
  

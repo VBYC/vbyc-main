@@ -30,6 +30,7 @@
         }
         &:not(.emphasize) {
             > a {
+                &:hover,
                 &.normal,
                 &.normal:hover {
                     color: $color-slate;
@@ -125,6 +126,7 @@
         &:hover {
             background-color: $link-color-emphasize;
             text-decoration: none;
+            color: $color-white;
         }
         &.current-menu-item,
         &.selected {

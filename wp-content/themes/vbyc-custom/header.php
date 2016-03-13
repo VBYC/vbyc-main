@@ -74,10 +74,10 @@
                         <img src="/images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
                         <img src="/images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
                     </a>
-                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main-toggle.php"); ?> 
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/templates/nav-main-toggle.php"); ?> 
                 </div>
                 <div class="col-xs-12 col-md-8">
-                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main.php"); ?> 
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/templates/nav-main.php"); ?> 
                 </div>
             </div><!-- /.row -->
 

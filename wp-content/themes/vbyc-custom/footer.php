@@ -56,10 +56,10 @@
                 </div>
             </div>
         </div>
-    </footer>>
-
+    </footer>
+<? /*
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    
     <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="/js/vendor/bootstrap.min.js"></script>
     <script src="/js/vendor/ekko-lightbox.min.js"></script>
@@ -77,12 +77,18 @@
             // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             // ga('create','UA-8152298-1','auto');ga('send','pageview');
     </script>
-
+    */ ?>
 
 
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+
+<script>
+    jQuery(document).ready(function() {
+        vbyc.util.init({hasSidenav : false});
+    });
+</script>
 
 </body>
 </html>

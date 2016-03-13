@@ -63,7 +63,7 @@ $link-sub-padding: 12px;
         }
         
         // Parent nav - links
-        .menu-item > a,
+        > .menu-item > a,
         .link {
             padding-top: 7px;
             padding-bottom: 7px;
@@ -108,7 +108,7 @@ $link-sub-padding: 12px;
         }
 
         // Special nav - link
-        .emphasize {
+        .emphasize > a {
             padding-top: 9px;
             padding-bottom: 6px;
             margin-top: -2px;
