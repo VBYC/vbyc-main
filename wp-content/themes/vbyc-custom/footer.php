@@ -40,25 +40,25 @@
                 <div class="col-xs-12">
                     <div class="footer-content clearfix">
                         <address class="item">
-                            Van Buren Youth Camp<br>
-                            <a href="<?/*TODO=$url_google_map*/?>" target="_blank">
-                                12370 45th St.<br>
-                                Bloomingdale, MI 49026<br>
+                            <?php echo get_option('qs_organization_name'); ?><br>
+                            <a href="<?php echo get_option('qs_google_map'); ?>" target="_blank">
+                                <?php echo get_option('qs_contact_street'); ?><br>
+                                <?php echo get_option('qs_contact_city'); ?>, <?php echo get_option('qs_contact_state'); ?> <?php echo get_option('qs_contact_zip'); ?><br>
                             </a>
                         </address>
                         <p class="item">  
-                            Call Us<br>
-                            <a href="tel:2695213855">269-521-3855</a>
+                            <?php echo get_option('qs_footer_label_phone'); ?><br>
+                            <a href="tel:<?php echo get_option('qs_contact_phone'); ?>"><?php echo get_option('qs_contact_phone'); ?></a>
                         </p>
                         <address class="item">
-                            Email Us<br>
-                            <a href="mailto:<?/*TODO=$url_email_main*/?>">mail@vbyc.org</a>
+                            <?php echo get_option('qs_footer_label_email'); ?><br>
+                            <a href="mailto:<?php echo get_option('qs_contact_email'); ?>"><?php echo get_option('qs_contact_email'); ?></a>
                         </address>
                         <p class="item">  
-                            Connect With Us<br>
-                            <a href="<?/*TODO=$url_facebook*/?>" target="_blank">Facebook</a><br>
-                            <a href="<?/*TODO=$url_twitter*/?>" target="_blank">Twitter</a><br>
-                            <a href="<?/*TODO=$url_instagram*/?>" target="_blank">Instagram</a> 
+                            <?php echo get_option('qs_footer_label_social'); ?><br>
+                            <a href="<?php echo get_option('qs_contact_facebook'); ?>" target="_blank">Facebook</a><br>
+                            <a href="<?php echo get_option('qs_contact_twitter'); ?>" target="_blank">Twitter</a><br>
+                            <a href="<?php echo get_option('qs_contact_instagram'); ?>" target="_blank">Instagram</a> 
                         </p>
                     </div>
                 </div>
