@@ -23,7 +23,15 @@
                             Being ourselves, together.
                         </div>
                         <div class="item pad-bot-4 " > 
-                            <?/*TODO include("nav-footer.php"); */?> 
+                            
+                            <?php   
+
+                            /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
+                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-footer.php");
+                            
+                            ?>
+
+
                         </div>
                     </div>
                 </div>
