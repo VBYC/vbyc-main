@@ -1,10 +1,5 @@
 <?php
-/* 
-Template Name: Three Columns
-*/
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
 
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -22,17 +17,21 @@ Template Name: Three Columns
                 ?>
 
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4">
-                        <?php the_field('col_1_of_3'); ?>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <?php the_field('col_2_of_3'); ?>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <?php the_field('col_3_of_3'); ?>
+                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                      
+                        <?php   
+
+                        /* CONTENT HEADLINE (First red one) */ 
+                        include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");
+
+                        /* MAIN CONTENT */ 
+                        include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_main.php"); 
+                        
+                        ?> 
+
+                        
                     </div>
                 </div><!-- /.row -->
-                
             </article><!-- /.main-article -->
         </div><!-- /.container -->
     </section><!-- /.main-content -->

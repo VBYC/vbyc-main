@@ -87,6 +87,15 @@ add_action( 'init', 'create_post_type' );
 };
 
 
+// Remove height/width from featured image so it scales for responsive
+add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 );
+
+function remove_width_attribute( $html ) {
+   $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+   return $html;
+}
+
 
 /**
  * Prevents responsive error
@@ -278,5 +287,26 @@ function my_class_names( $classes ) {
 	$classes[] = 'has-sticky-main-nav section-sessions  ';
 	// return the $classes array
 	return $classes;
+}
+
+
+/**
+ * Hide editor for specific page templates.
+ *
+ */
+add_action( 'admin_init', 'hide_editor' );
+
+function hide_editor() {
+    // Get the Post ID.
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
+
+    // Get the name of the Page Template file.
+    $template_file = get_post_meta($post_id, '_wp_page_template', true);
+
+    
+    if($template_file == 'templates/three-columns.php'){ // edit the template name
+        remove_post_type_support('page', 'editor');
+    }
 }
 
