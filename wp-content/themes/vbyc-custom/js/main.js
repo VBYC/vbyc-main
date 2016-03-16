@@ -31,10 +31,10 @@
 			vbyc.util.navbarSticky();
 
 			// Set up side nav with anchor links
-			if (hasSidenav) {
+			// if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
 				// vbyc.util.sidebarScrollSpyScrollTo();
-			}
+			// }
 
 			// Set up hash scrolling
 			vbyc.util.scrollToHashOnClick();

@@ -7,72 +7,21 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 add_action( 'init', 'create_post_type' );
     function create_post_type() {
-        // register_post_type( 'small_bios',
-        //  array(
-        //      'labels' => array(
-        //          'name' => __( 'Small Bios' ),
-        //          'singular_name' => __( 'Small Bio' ),
-        //          'add_new' => _x('Add New', 'Small Bio'),
-        //          'add_new_item' => __('Add New Small Bio'),
-        //          'edit_item' => __('Edit Small Bio'),
-        //          'new_item' => __('New Small Bio'),
-        //          'all_items' => __('All Small Bios'),
-        //          'view_item' => __('View Small Bio'),
-        //          'search_items' => __('Search Small Bios'),
-        //          'not_found' =>  __('No Small Bios found'),
-        //          'not_found_in_trash' => __('No Small Bios found in Trash'), 
-        //          'menu_name' => 'Small Bio Details',
-        //          'show_ui' => true,
-        //          'show_in_nav_menus' => true,
-        //          'show_in_menu' => true
-        //      ),
-        //      'hierarchical' => true,
-        //      'supports' => array('title', 'custom-fields'),
-        //      'public' => true,
-        //      'has_archive' => true
-        //  )
-        // );
-        register_post_type( 'team_bios',
+        register_post_type( 'sessions',
             array(
                 'labels' => array(
-                    'name' => __( 'Team Bios' ),
-                    'singular_name' => __( 'Team Bios' ),
-                    'add_new' => _x('Add New', 'Team Bios'),
-                    'add_new_item' => __('Add New Team Bios'),
-                    'edit_item' => __('Edit Team Bios'),
-                    'new_item' => __('New Team Bios'),
-                    'all_items' => __('All Team Bios'),
-                    'view_item' => __('View Team Bios'),
-                    'search_items' => __('Search Team Bios'),
-                    'not_found' =>  __('No Team Bios found'),
-                    'not_found_in_trash' => __('No Team Bios found in Trash'), 
-                    'menu_name' => 'Team Bios',
-                    'show_ui' => true,
-                    'show_in_nav_menus' => true,
-                    'show_in_menu' => true
-                ),
-                'hierarchical' => true,
-                'supports' => array('title', 'custom-fields'),
-                'public' => true,
-                'has_archive' => true,
-                'exclude_from_search' => true
-            )
-        );
-        register_post_type( 'partners',
-            array(
-                'labels' => array(
-                    'name' => __( 'Partners' ),
-                    'singular_name' => __( 'Partner' ),
-                    'add_new' => _x('Add New', 'Partner'),
-                    'add_new_item' => __('Add New Partner'),
-                    'edit_item' => __('Edit Partner'),
-                    'new_item' => __('New Partner'),
-                    'all_items' => __('All Partners'),
-                    'view_item' => __('View Partner'),
-                    'search_items' => __('Search Partners'),
-                    'not_found' =>  __('No Partners found'),
-                    'not_found_in_trash' => __('No Partners found in Trash'), 
-                    'menu_name' => 'Partner Details',
+                    'name' => __( 'Session Name' ),
+                    'singular_name' => __( 'Session' ),
+                    'add_new' => _x('Add New', 'Session'),
+                    'add_new_item' => __('Add New Session'),
+                    'edit_item' => __('Edit Session'),
+                    'new_item' => __('New Session'),
+                    'all_items' => __('All Sessions'),
+                    'view_item' => __('View Sessions'),
+                    'search_items' => __('Search Sessions'),
+                    'not_found' =>  __('No Session found'),
+                    'not_found_in_trash' => __('No Sessions found in Trash'), 
+                    'menu_name' => 'Schedule',
                     'show_ui' => true,
                     'show_in_nav_menus' => true,
                     'show_in_menu' => true
@@ -83,7 +32,6 @@ add_action( 'init', 'create_post_type' );
                 'has_archive' => true
             )
         );
-	
 };
 
 

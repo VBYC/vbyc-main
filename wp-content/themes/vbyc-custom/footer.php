@@ -10,8 +10,7 @@
  */
 ?>
 
-	<!-- </div> --><!-- .site-content -->
-	</main><!-- /.main-content-container -->
+	
 
 	<footer class="footer pad-top-7 pad-bot-7 v-offset-7">
         <div class="container">
