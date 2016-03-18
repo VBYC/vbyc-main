@@ -49,47 +49,49 @@ Template Name: With Side Nav
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                            
-
                             <!-- Grades 1-3 -->
                             <h2 id="grades-1-3" class="heading-category">Grades 1-3</h2>
                             <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                <li class="item">                                    
-                                    <h3 class="heading">
-                                        <span class="nowrap">Little Bear</span> | 
-                                        <span class="date nowrap">July 6-8</span> |  
-                                        Cost: $110
-                                    </h3>
-                                    <div class="description">
-                                        <p>The VBYC experience begins with Little Bear. It is  a short session designed to  help campers adjust  live comfortably in a group setting, assist children with exploring outdoors and participating in the camp experience. In this three day and two night session, campers will  swim, canoe*, play games, sing, dance, participate in skits, and eat great camp food. (*Weather or wind permitted)</p>
-                                        <p><a href="<?=$url_register?>" target="_blank">Register for Little Bear</a></p>
-                                    </div>
-                                </li>
-                                <li class="item">                                    
-                                    <h3 class="heading"><span class="nowrap">Extended Little Bear</span> | <span class="date nowrap">July 6-9</span> | $150</h3>
-                                    <div class="description">
-                                        <p>VBYC  is offering this extension to parents who feel their new camper is ready to stay for a slightly longer session. This makes it a four day Little Bear experience!</p>
-                                        <p><a href="<?=$url_register?>" target="_blank">Register for Extended Little Bear</a></p>
-                                    </div>
-                                </li>
-                            </ul>
+                                <li class="item"> 
 
-                            <!-- Grades 3-6 -->
-                            <h2 id="grades-3-6" class="heading-category">Grades 3-6</h2>
-                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                <li class="item">                                    
-                                    <h3 class="heading"><span class="nowrap">Great Bear</span> | <span class="date nowrap">June 26 - July 2</span> | $325</h3>
-                                    <div class="description">
-                                        <p>Great Bear Is for the child ready to try new experiences, Improve upon camp skills, nurture leadership skills, and build community. VBYC&rsquo;s Early Youth camps do just that; they help a child grow in independence &amp; confidence!</p>
-                                        <p><a href="<?=$url_register?>" target="_blank">Register for Great Bear</a></p>
-                                    </div>
-                                </li>
-                                <li class="item">                                    
-                                    <h3 class="heading"><span class="nowrap">Explorer</span> | <span class="date nowrap">August 10-14</span> | $295</h3>
-                                    <div class="description">
-                                        <p>The Explorer sessions is for children who want new experiences, learn or Improve upon camp skills, nurture leadership skills, and build community, with a <strong>specific focus on nature-based activities in all activities</strong>.</p>
-                                        <p><a href="<?=$url_register?>" target="_blank">Register for Explorer</a></p>
-                                    </div>
+                                <?php 
+                                    $sessions = new WP_Query();
+                                    $sessions->query(array( 'post_type' => 'sessions' ));
+                                        while ( $sessions->have_posts() ) : $sessions->the_post(); 
+
+
+
+                                            
+                                            $date_start =   get_field('date_start');
+                                            $date_end =     get_field('date_end');
+                                            $cost =         get_field('cost');
+                                            $description =  get_field('description');
+
+                                            if ($date_start !== $date_end) {
+                                                if (date('M', $date_end) == date('M', $date_end)) {
+                                                    echo date('-j' , $date_end);
+                                                } else {
+                                                    echo date(' - M j' , $date_end);
+                                                }
+                                            }
+
+                                ?>
+                                                               
+                                <h3 class="heading">
+                                    <span class="nowrap"><?=the_title()?></span> | 
+                                    <span class="date nowrap"><?=$date_start?> - <?=$date_end?></span> |  
+                                    Cost: $<?=$cost?>
+                                </h3>
+                                <div class="description">
+                                    <p><?=$description?></p>
+                                    <p><a href="<?=$url_register?>" target="_blank">Register for <?=the_title()?></a></p>
+                                </div>
+                                
+
+                                <?php 
+                                    endwhile; 
+                                ?>
+
                                 </li>
                             </ul>
 
