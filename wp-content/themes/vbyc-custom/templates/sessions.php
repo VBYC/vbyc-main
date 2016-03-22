@@ -160,7 +160,7 @@ Template Name: Sessions
 
                                     if ($group_current != $group_last) { 
                                             /* Uness it's the very first rgoup on the page, close off the previous group */
-                                            echo "group_last".$group_last;
+
                                             if ($group_last) { ?>
 
                                             </li>
