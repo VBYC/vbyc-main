@@ -253,7 +253,7 @@ function hide_editor() {
     $template_file = get_post_meta($post_id, '_wp_page_template', true);
 
     
-    if($template_file == 'templates/three-columns.php'){ // edit the template name
+    if($template_file == 'templates/three-columns.php' || $template_file == 'templates/sessions.php'){ // edit the template name
         remove_post_type_support('page', 'editor');
     }
 }
