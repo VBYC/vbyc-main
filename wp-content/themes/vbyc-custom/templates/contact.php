@@ -1,33 +1,19 @@
+<? /* 
+Template Name: Contact
+*/ ?>
 <?php get_header(); ?>
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <main class="main-content-container">
-        <section class="hero" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <?php 
-
-            /* HERO IMAGE */ 
-            if ( has_post_thumbnail() ) { 
-                include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-image.php"); 
-            
-            } ?>
-            <div class="container-fluid hero-text-container clearfix">
-                 <div class="container">
-                    <?php    
-
-                    /* HERO HEADLINE */ 
-                    include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-headlines.php"); 
-
-                    /* HERO TEXT */ 
-                    include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-intro.php"); 
-                    
-                    ?> 
-                </div>
-            </div>
-        </section>
+        
+        <? $hide_hero_intro = true; ?>
+        <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
+
+
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <?php   

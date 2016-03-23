@@ -32,13 +32,21 @@ function sci_contact_info_admin() {
 		$city 			= !empty($_POST['city']) ? trim(strip_tags($_POST['city'])) : '';
 		$street 		= !empty($_POST['street']) ? trim(strip_tags($_POST['street'])) : '';
 		$zip 			= !empty($_POST['zip']) ? trim(strip_tags($_POST['zip'])) : '';
-		$google_map 			= !empty($_POST['google_map']) ? trim(strip_tags($_POST['google_map'])) : '';
+		
 
 		// Footer Nav
 		$organization_name 		= !empty($_POST['organization_name']) ? trim(strip_tags($_POST['organization_name'])) : '';
 		$footer_label_phone 	= !empty($_POST['footer_label_phone']) ? trim(strip_tags($_POST['footer_label_phone'])) : '';
 		$footer_label_email 	= !empty($_POST['footer_label_email']) ? trim(strip_tags($_POST['footer_label_email'])) : '';
 		$footer_label_social 	= !empty($_POST['footer_label_social']) ? trim(strip_tags($_POST['footer_label_social'])) : '';
+
+		// URLs
+		$urls_register        = !empty($_POST['urls_register']) ? trim(strip_tags($_POST['urls_register'])) : '';
+		$urls_parent_login    = !empty($_POST['urls_parent_login']) ? trim(strip_tags($_POST['urls_parent_login'])) : '';
+		$urls_alumni_login    = !empty($_POST['urls_alumni_login']) ? trim(strip_tags($_POST['urls_alumni_login'])) : '';
+		$urls_alumni_registry = !empty($_POST['urls_alumni_registry']) ? trim(strip_tags($_POST['urls_alumni_registry'])) : '';;
+		$urls_employment      = !empty($_POST['urls_employment']) ? trim(strip_tags($_POST['urls_employment'])) : '';
+		$urls_google_map 	  = !empty($_POST['urls_google_map']) ? trim(strip_tags($_POST['urls_google_map'])) : '';
 
 
 		// Custom social links
@@ -68,13 +76,20 @@ function sci_contact_info_admin() {
 		update_option('qs_contact_city', $city); 
 		update_option('qs_contact_street', $street);
 		update_option('qs_contact_zip', $zip);
-		update_option('qs_google_map', $google_map);
 
 		// Footer Nav
 		update_option('qs_organization_name', $organization_name);
 		update_option('qs_footer_label_phone', $footer_label_phone);
 		update_option('qs_footer_label_email', $footer_label_email); 
 		update_option('qs_footer_label_social', $footer_label_social);
+
+		// URLs
+		update_option('qs_urls_register', $urls_register);
+		update_option('qs_urls_parent_login', $urls_parent_login);
+		update_option('qs_urls_alumni_login', $urls_alumni_login);
+		update_option('qs_urls_alumni_registry ', $urls_alumni_registry );
+		update_option('qs_urls_employment', $urls_employment);
+		update_option('qs_urls_google_map', $urls_google_map);
 
 		add_action('admin_notices', 'sci_updated_notice');
 		$msg = __('Information successfully updated.', 'simple-contact-info');
@@ -179,10 +194,6 @@ function sci_contact_info_admin() {
 						<th><label for="zip"><?php _e("Zip code", "simple-contact-info"); ?></label></th>
 						<td><input id="zip" name="zip" class="regular-text" type="text" value="<?php echo get_option('qs_contact_zip'); ?>" /></td>
 					</tr>
-					<tr>
-						<th><label for="google_map"><?php _e("Google map URL", "simple-contact-info"); ?></label></th>
-						<td><input id="google_map" name="google_map" class="regular-text" type="text" value="<?php echo get_option('qs_google_map'); ?>" /></td>
-					</tr>
 				</tbody>
 			</table>
 
@@ -209,6 +220,37 @@ function sci_contact_info_admin() {
 						<td><input id="footer_label_social" name="footer_label_social" class="regular-text" type="text" value="<?php echo get_option('qs_footer_label_social'); ?>" /></td>
 					</tr>
 
+				</tbody>
+			</table>
+
+			<hr>
+			<h3><?php _e("URLs", "simple-contact-info"); ?></h3>
+			<table class="form-table">
+				<tbody>
+					<tr>
+						<th><label for="urls_register"><?php _e("Register", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_register" name="urls_register" class="regular-text" type="text" value="<?php echo get_option('qs_urls_register'); ?>" /></td>
+					</tr>
+					<tr>
+						<th><label for="urls_parent_login"><?php _e("Parent Login", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_parent_login" name="urls_parent_login" class="regular-text" type="text" value="<?php echo get_option('qs_urls_parent_login'); ?>" /></td>
+					</tr>
+					<tr>
+						<th><label for="urls_alumni_login"><?php _e("Alumni Login", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_alumni_login" name="urls_alumni_login" class="regular-text" type="text" value="<?php echo get_option('qs_urls_alumni_login'); ?>" /></td>
+					</tr>
+					<tr>
+						<th><label for="urls_alumni_registry"><?php _e("Alumni Registry", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_alumni_registry" name="urls_alumni_registry" class="regular-text" type="text" value="<?php echo get_option('qs_urls_alumni_registry'); ?>" /></td>
+					</tr>
+					<tr>
+						<th><label for="urls_employment"><?php _e("Employment", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_employment" name="urls_employment" class="regular-text" type="text" value="<?php echo get_option('qs_urls_employment'); ?>" /></td>
+					</tr>
+					<tr>
+						<th><label for="urls_google_map"><?php _e("Google Map to VBYC", "simple-contact-info"); ?></label></th>
+						<td><input id="urls_google_map" name="urls_google_map" class="regular-text" type="text" value="<?php echo get_option('qs_urls_google_map'); ?>" /></td>
+					</tr>
 				</tbody>
 			</table>
 			<p class="submit">

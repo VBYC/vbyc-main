@@ -231,7 +231,7 @@ Template Name: Sessions
                                         <?  } ?>
                                             
                                         <!-- Group <?=$group_current?> -->
-                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category">Grades <?=$grade_other?></h2>
+                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category"><?=$grade_other?></h2>
                                         <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                             <li class="item">
                                     <? } ?>

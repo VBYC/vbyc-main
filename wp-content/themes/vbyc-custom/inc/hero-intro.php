@@ -7,18 +7,21 @@
                                 <?php the_field('intro_paragraph'); ?>
 
                                 <?php 
-                                $has_link = get_field("intro_link_url" );
-                                if ( $has_link ) { 
-                                    $link_target = get_field( "intro_link_external_or_internal" );
-                                    if(  $link_target == 'external' ) { 
-                                        $this_target = ' target="_blank" ';
-                                    } ?>
+                                if (!$hide_hero_intro_link) {
 
-                                    <a  href="<?php the_field('intro_link_url'); ?>" class="hero-cta" <?php echo $this_target?>>
-                                         <?php the_field('intro_link_label'); ?>
-                                    </a>
-                                <?php } ?>   
+                                    $has_link = get_field("intro_link_url" );
+                                    if ( $has_link ) { 
+                                        $link_target = get_field( "intro_link_external_or_internal" );
+                                        if(  $link_target == 'external' ) { 
+                                            $this_target = ' target="_blank" ';
+                                        } ?>
 
+                                        <a  href="<?php the_field('intro_link_url'); ?>" class="hero-cta" <?php echo $this_target?>>
+                                             <?php the_field('intro_link_label'); ?>
+                                        </a>
+                                    <?php 
+                                    }
+                                } ?>   
                             </div> 
                         </div> 
                     </div>         

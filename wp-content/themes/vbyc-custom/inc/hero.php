@@ -8,15 +8,17 @@
 
         <div class="container-fluid hero-text-container clearfix">
              <div class="container">
-
                 <?php    
+
                 /* HERO HEADLINE */ 
                 include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-headlines.php"); 
 
                 /* HERO TEXT */ 
-                include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-intro.php"); 
-                ?> 
+                if (!$hide_hero_intro) {
+                    include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-intro.php"); 
+                }
 
+                ?> 
             </div>
         </div>
     </section>
