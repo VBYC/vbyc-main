@@ -2,7 +2,7 @@
     PAGE - CONTACT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#page-contact {
+.page-template-contact {
     .main-article {
         margin: 50px auto;
         display: inline-block;
@@ -15,10 +15,14 @@
              margin-right: 50px;
         }
     }
+    .global-contact-info-container {
+        text-align: center;
+        display: block;
+    }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    #page-contact {
+    .page-template-contact {
         .group-2 {
             clear: both;
         }
@@ -28,7 +32,7 @@
 
 
 @media (max-width: $screen-xs-max) {
-    #page-contact {
+    .page-template-contact {
         .col {
             clear: both;
         }

@@ -22,15 +22,12 @@
                             Being ourselves, together.
                         </div>
                         <div class="item pad-bot-4 " > 
-                            
                             <?php   
 
                             /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
                             include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-footer.php");
                             
                             ?>
-
-
                         </div>
                     </div>
                 </div>
@@ -38,27 +35,12 @@
             <div class="row">
                 <div class="col-xs-12">
                     <div class="footer-content clearfix">
-                        <address class="item">
-                            <?php echo get_option('qs_organization_name'); ?><br>
-                            <a href="<?php echo get_option('qs_google_map'); ?>" target="_blank">
-                                <?php echo get_option('qs_contact_street'); ?><br>
-                                <?php echo get_option('qs_contact_city'); ?>, <?php echo get_option('qs_contact_state'); ?> <?php echo get_option('qs_contact_zip'); ?><br>
-                            </a>
-                        </address>
-                        <p class="item">  
-                            <?php echo get_option('qs_footer_label_phone'); ?><br>
-                            <a href="tel:<?php echo get_option('qs_contact_phone'); ?>"><?php echo get_option('qs_contact_phone'); ?></a>
-                        </p>
-                        <address class="item">
-                            <?php echo get_option('qs_footer_label_email'); ?><br>
-                            <a href="mailto:<?php echo get_option('qs_contact_email'); ?>"><?php echo get_option('qs_contact_email'); ?></a>
-                        </address>
-                        <p class="item">  
-                            <?php echo get_option('qs_footer_label_social'); ?><br>
-                            <a href="<?php echo get_option('qs_contact_facebook'); ?>" target="_blank">Facebook</a><br>
-                            <a href="<?php echo get_option('qs_contact_twitter'); ?>" target="_blank">Twitter</a><br>
-                            <a href="<?php echo get_option('qs_contact_instagram'); ?>" target="_blank">Instagram</a> 
-                        </p>
+                        <?php   
+
+                            /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
+                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/contact-info.php");
+                            
+                        ?>
                     </div>
                 </div>
             </div>

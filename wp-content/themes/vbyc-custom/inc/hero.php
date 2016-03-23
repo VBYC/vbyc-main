@@ -1,4 +1,4 @@
-    <section class="hero" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <section class="hero">
         
         <?php 
         /* HERO IMAGE */ 

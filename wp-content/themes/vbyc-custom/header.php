@@ -51,7 +51,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="post-<?php the_ID(); ?>" <?php body_class(); ?>>
 <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]--> 
@@ -74,10 +74,10 @@
                         <img src="/images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
                         <img src="/images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
                     </a>
-                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/templates/nav-main-toggle.php"); ?> 
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main-toggle.php"); ?> 
                 </div>
                 <div class="col-xs-12 col-md-8">
-                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/templates/nav-main.php"); ?> 
+                    <? include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-main.php"); ?> 
                 </div>
             </div><!-- /.row -->
 

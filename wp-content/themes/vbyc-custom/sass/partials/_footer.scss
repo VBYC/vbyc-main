@@ -4,11 +4,7 @@
 
 .footer {
     border-top: 5px solid $color-red;
-    
     text-align: left;
-    
-    
-
 }
 .footer-message {
     color: $color-blue;
@@ -17,17 +13,24 @@
     font-family: $font-family-serif;
 }
 .footer-content {
-    
     .item {
          margin-bottom:  20px;
     }
 }
 
-
+.global-contact-info  {
+    text-align: center;
+    .item {
+        margin: 0 20px;
+        display: inline-block;
+        text-align: left;
+    }
+}
 
 
 @media (min-width: $screen-sm-min) {
-    .footer {
+    .footer,
+    .global-contact-info  {
         text-align: center;
         .item {
             margin: 0 20px;
@@ -36,7 +39,8 @@
             text-align: left;
         }
     }
-    .footer-content {
+    .footer-content,
+    .global-contact-info  {
         text-align: left;
         display: inline-block;
     }

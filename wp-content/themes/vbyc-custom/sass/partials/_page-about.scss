@@ -16,7 +16,7 @@
 
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    #page-contact {
+    .page-template-contact {
         .container {
             text-align: center;
         }
@@ -27,7 +27,7 @@
 }
 
 @media (max-width: $screen-xs-max) {
-    #page-contact {
+    .page-template-contact {
         .col {
             clear: both;
         }
