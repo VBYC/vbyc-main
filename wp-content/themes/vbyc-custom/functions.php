@@ -5,23 +5,51 @@ remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
+
 add_action( 'init', 'create_post_type' );
-    function create_post_type() {
-        register_post_type( 'sessions',
+function create_post_type() {
+    // Sessions
+    register_post_type( 'sessions',
+        array(
+            'labels' => array(
+                'name' => __( 'Session Name' ),
+                'singular_name' => __( 'Session' ),
+                'add_new' => _x('Add New', 'Session'),
+                'add_new_item' => __('Add New Session'),
+                'edit_item' => __('Edit Session'),
+                'new_item' => __('New Session'),
+                'all_items' => __('All Sessions'),
+                'view_item' => __('View Sessions'),
+                'search_items' => __('Search Sessions'),
+                'not_found' =>  __('No Session found'),
+                'not_found_in_trash' => __('No Sessions found in Trash'), 
+                'menu_name' => 'Schedule',
+                'show_ui' => true,
+                'show_in_nav_menus' => true,
+                'show_in_menu' => true
+            ),
+            'hierarchical' => true,
+            'supports' => array('title', 'custom-fields'),
+            'public' => true,
+            'has_archive' => true
+        )
+    );
+    // Typical Day
+    register_post_type( 'typicalday',
             array(
                 'labels' => array(
-                    'name' => __( 'Session Name' ),
-                    'singular_name' => __( 'Session' ),
-                    'add_new' => _x('Add New', 'Session'),
-                    'add_new_item' => __('Add New Session'),
-                    'edit_item' => __('Edit Session'),
-                    'new_item' => __('New Session'),
-                    'all_items' => __('All Sessions'),
-                    'view_item' => __('View Sessions'),
-                    'search_items' => __('Search Sessions'),
-                    'not_found' =>  __('No Session found'),
-                    'not_found_in_trash' => __('No Sessions found in Trash'), 
-                    'menu_name' => 'Schedule',
+                    'name' => __( 'Typical Day Event Name' ),
+                    'singular_name' => __( 'Typical Day Event' ),
+                    'add_new' => _x('Add New', 'Typical Day Event'),
+                    'add_new_item' => __('Add New Typical Day Event'),
+                    'edit_item' => __('Edit Typical Day Event'),
+                    'new_item' => __('New Typical Day Event'),
+                    'all_items' => __('All Typical Day Events'),
+                    'view_item' => __('View Typical Day Events'),
+                    'search_items' => __('Search Typical Day Events'),
+                    'not_found' =>  __('No Typical Day Events found'),
+                    'not_found_in_trash' => __('No Typical Day Events found in Trash'), 
+                    'menu_name' => 'Typical Day',
                     'show_ui' => true,
                     'show_in_nav_menus' => true,
                     'show_in_menu' => true
@@ -33,6 +61,10 @@ add_action( 'init', 'create_post_type' );
             )
         );
 };
+
+
+
+
 
 
 // Remove height/width from featured image so it scales for responsive
@@ -253,7 +285,7 @@ function hide_editor() {
     $template_file = get_post_meta($post_id, '_wp_page_template', true);
 
     
-    if($template_file == 'templates/three-columns.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
+    if($template_file == 'templates/timeline.php' || 'templates/three-columns.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
         remove_post_type_support('page', 'editor');
     }
 }
