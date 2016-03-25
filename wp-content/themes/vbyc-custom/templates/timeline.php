@@ -63,7 +63,7 @@ Template Name: Timeline
                             while ( $typicalday->have_posts() ) : $typicalday->the_post();
 
                             $event          = get_the_title($post);
-                            $time           = get_field('timeline_time');
+                            $time           = strtoupper(get_field('timeline_time'));
                             $description    = get_field('timeline_description');
                             $image          = get_field('timeline_image');
                             $image_link     = get_field('timeline_image_link');

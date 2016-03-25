@@ -10928,6 +10928,26 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - EXPLORE CAMP (MAP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, sass/partials/_template-image-fills-whole-page.scss */
+.page-template-image-fills-whole-page .footer {
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 13, sass/partials/_template-image-fills-whole-page.scss */
+  .page-template-image-fills-whole-page .main-content {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  /* line 18, sass/partials/_template-image-fills-whole-page.scss */
+  .page-template-image-fills-whole-page .img-full-width {
+    width: 100%;
+  }
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - ABOUT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 8, sass/partials/_page-about.scss */
@@ -11302,26 +11322,6 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-top: 80px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - EXPLORE CAMP (MAP)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, sass/partials/_page-explore-camp.scss */
-#page-explore-camp .footer {
-  margin-top: 0;
-}
-
-@media (max-width: 767px) {
-  /* line 13, sass/partials/_page-explore-camp.scss */
-  #page-explore-camp main {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%;
-  }
-  /* line 18, sass/partials/_page-explore-camp.scss */
-  #page-explore-camp .img-full-width {
-    width: 100%;
-  }
-}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - MEET THE DIRECTOR
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

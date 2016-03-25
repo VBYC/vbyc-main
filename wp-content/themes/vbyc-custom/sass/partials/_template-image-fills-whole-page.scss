@@ -2,15 +2,15 @@
     PAGE - EXPLORE CAMP (MAP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#page-explore-camp {
+.page-template-image-fills-whole-page {
     .footer {
         margin-top: 0;
     }
 }
 
 @media (max-width: $screen-xs-max) {
-    #page-explore-camp {
-        main {
+    .page-template-image-fills-whole-page {
+        .main-content {
             overflow-x: scroll;
             overflow-y: hidden;
             width: 100%;
