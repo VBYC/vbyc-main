@@ -10991,7 +10991,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-right: 50px;
 }
 /* line 18, sass/partials/_page-contact.scss */
-.page-template-contact .global-contact-info-container {
+.page-template-contact .global-contact-info {
   text-align: center;
   display: block;
 }

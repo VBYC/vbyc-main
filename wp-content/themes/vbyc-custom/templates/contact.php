@@ -14,14 +14,12 @@ Template Name: Contact
                 <article class="main-article">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="global-contact-info-container">
-                                <?php   
+                            <?php   
 
                                 /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
                                 include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/contact-info.php");
                                 
-                                ?>
-                            </div>
+                            ?>
                         </div>
                     </div><!-- /.row -->
                 </article><!-- /.main-article -->

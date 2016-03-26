@@ -71,11 +71,11 @@ Template Name: Timeline
                             // Swap the alignment of image/text on every other item
                             if ($num & 1 ) {
                                 // Odd
-                                $classes_event = 'col-xs-12 col-sm-5 col-sm-push-7 col-lg-4 col-lg-push-8 ODD';
+                                $classes_event = 'col-xs-12 col-sm-5 col-sm-push-7 col-lg-4 col-lg-push-8';
                                 $classes_image = 'col-xs-12 col-sm-5 col-sm-pull-5 col-lg-pull-4';
                             } else { 
                                 // Even
-                                $classes_event = 'col-xs-12 col-sm-5 col-lg-offset-1 col-lg-4 even';
+                                $classes_event = 'col-xs-12 col-sm-5 col-lg-offset-1 col-lg-4';
                                 $classes_image = 'col-xs-12 col-sm-5 col-sm-offset-2 ';
                             }
                             $num++;
