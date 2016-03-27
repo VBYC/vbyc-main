@@ -274,19 +274,180 @@ function my_class_names( $classes ) {
  * Hide editor for specific page templates.
  *
  */
-add_action( 'admin_init', 'hide_editor' );
+// add_action( 'admin_init', 'hide_editor' );
 
-function hide_editor() {
-    // Get the Post ID.
-    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
-    if( !isset( $post_id ) ) return;
+// function hide_editor() {
+//     // Get the Post ID.
+//     $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+//     if( !isset( $post_id ) ) return;
 
-    // Get the name of the Page Template file.
-    $template_file = get_post_meta($post_id, '_wp_page_template', true);
+//     // Get the name of the Page Template file.
+//     $template_file = get_post_meta($post_id, '_wp_page_template', true);
 
     
-    if($template_file == 'templates/image-fills-whole-page.php' || 'templates/timeline.php' || 'templates/three-columns.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
-        remove_post_type_support('page', 'editor');
+//     if($template_file == 'templates/image-fills-whole-page.php' || 'templates/timeline.php' || 'templates/three-columns.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
+//         remove_post_type_support('page', 'editor');
+//     }
+// }
+
+
+// Customeize Gallery
+
+// Custom filter function to modify default gallery shortcode output
+function my_post_gallery( $output, $attr ) {
+
+    // Initialize
+    global $post, $wp_locale;
+
+    // Gallery instance counter
+    static $instance = 0;
+    $instance++;
+
+    // Validate the author's orderby attribute
+    if ( isset( $attr['orderby'] ) ) {
+        $attr['orderby'] = sanitize_sql_orderby( $attr['orderby'] );
+        if ( ! $attr['orderby'] ) unset( $attr['orderby'] );
     }
+
+    // Get attributes from shortcode
+    extract( shortcode_atts( array(
+        'order'      => 'ASC',
+        'orderby'    => 'menu_order ID',
+        'id'         => $post->ID,
+        'itemtag'    => 'div',
+        'icontag'    => 'div',
+        'descriptiontag' => 'div',
+        'columns'    => 3,
+        'size'       => 'large',
+        'include'    => '',
+        'exclude'    => ''
+    ), $attr ) );
+
+    $link_classes = '';
+    $link_data_attributes = '';
+    $image_classes = '';
+
+    // Initialize
+    $id = intval( $id );
+    $attachments = array();
+    if ( $order == 'RAND' ) $orderby = 'none';
+
+    if ( ! empty( $include ) ) {
+
+        // Include attribute is present
+        $include = preg_replace( '/[^0-9,]+/', '', $include );
+        $_attachments = get_posts( array( 'include' => $include, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby ) );
+
+        // Setup attachments array
+        foreach ( $_attachments as $key => $val ) {
+            $attachments[ $val->ID ] = $_attachments[ $key ];
+        }
+
+    } else if ( ! empty( $exclude ) ) {
+
+        // Exclude attribute is present 
+        $exclude = preg_replace( '/[^0-9,]+/', '', $exclude );
+
+        // Setup attachments array
+        $attachments = get_children( array( 'post_parent' => $id, 'exclude' => $exclude, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby ) );
+    } else {
+        // Setup attachments array
+        $attachments = get_children( array( 'post_parent' => $id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby ) );
+    }
+
+    if ( empty( $attachments ) ) return '';
+
+    // Filter gallery differently for feeds
+    if ( is_feed() ) {
+        $output = "\n";
+        foreach ( $attachments as $att_id => $attachment ) $output .= wp_get_attachment_link( $att_id, $size, true ) . "\n";
+        return $output;
+    }
+
+    // Filter tags and attributes
+    $itemtag = tag_escape( $itemtag );
+    $descriptiontag = tag_escape( $descriptiontag );
+    $columns = intval( $columns );
+    $itemwidth = $columns > 0 ? floor( 100 / $columns ) : 100;
+    $float = is_rtl() ? 'right' : 'left';
+    $selector = "gallery-{$instance}";
+
+    // Filter gallery CSS
+    $output = apply_filters( 'gallery_style', "
+       
+
+        <!-- see gallery_shortcode() in wp-includes/media.php -->
+        <div id='$selector' class='galleryid-{$id}'>"
+    );
+
+    
+
+    // Iterate through the attachments in this gallery instance
+    $i = 0;
+    foreach ( $attachments as $id => $attachment ) {
+
+        // Debugging
+        // print_r($attachments); 
+
+        // Variables
+        $link               = isset( $attr['link'] ) && 'file' == $attr['link'] ? wp_get_attachment_link( $id, $size, false, false ) : wp_get_attachment_link( $id, $size, true, false ); 
+        $post_img_thumbnail = wp_get_attachment_image_src ($id,$size)[0];
+        $post_img_large     = wp_get_attachment_image_src ($id,'full')[0];
+        $post_title         = $attachment->post_title;
+        $post_description   = wptexturize($attachment->post_content);
+
+        // Start itemtag
+        $output .= "<{$itemtag} class='col-xs-12 col-sm-4'>";
+
+        // print_r($attachments);
+
+        // Link and image tag
+        $output .= "
+            <a href='" . $post_img_large. "' 
+                class='gallery' 
+                data-toggle='lightbox' 
+                data-type='image' 
+                data-gallery='multiimages' 
+                data-title='" . $post_title. "'
+                data-footer='" . $post_description. "'> 
+                <img 
+                    src='" . $post_img_thumbnail. "' 
+                    class='img-responsive img-fluid grid-item' 
+                    alt='" . $post_title. "'>
+
+            <h3 class='gallery-label'>$post_title</h3>
+        </a>";
+
+
+        if ( $descriptiontag && trim( $attachment->post_excerpt ) ) {
+
+            // descriptiontag
+            $output .= "
+            <{$descriptiontag} class='visible-xs-block details'>
+                <p class='description'><strong>" . $post_title. "</strong> &mdash; 
+                " . $post_description . "
+                </p>
+            </{$descriptiontag}>";
+
+        }
+
+        // End itemtag
+        $output .= "</{$itemtag}>";
+
+        // Line breaks by columns set
+        if($columns > 0 && ++$i % $columns == 0) $output .= '<br style="clear: both">';
+
+    }
+
+    // End gallery output
+    $output .= "
+        <br style='clear: both;'>
+    </div>\n";
+
+    return $output;
+
 }
+
+// Apply filter to default gallery shortcode
+add_filter( 'post_gallery', 'my_post_gallery', 10, 2 );
 

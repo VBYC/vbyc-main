@@ -31,7 +31,7 @@ Template Name: Timeline
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <main class="main-content-container">
-        <section class="hero" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <section class="hero">
             <?php 
 
             /* HERO IMAGE */ 
