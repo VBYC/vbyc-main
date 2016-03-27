@@ -55,6 +55,8 @@
 
 			vbyc.util.WpOverrides();
 
+			console.log('Hello');
+
 
 			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
@@ -212,36 +214,39 @@
 			startTimer();
 	    },
 		sidebarScrollSpy: function() {
-			var sidenavContainer 			= '#sidenav-container';
-			var sidenavDistanceOffset 		= $(sidenavContainer).offset();
-			var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
-			var sidenavPaddingTop 			= 40;
-			var headerRowHeight 			= headerRow.outerHeight(true);
-			var triggerActivateLinks 		= headerRowHeight + sidenavPaddingTop;
-			var triggerSticky 				= sidenavDistanceOffsetTop - triggerActivateLinks;
-			
-			// What ID is the the side nav? 
-			$(sideNav).affix({
-				offset: {
-					// How far you scroll down before the nav becomes sticky
-					top: triggerSticky,
+			if ($('#sidenav-container').length > 0) {
 
-					// Don't let the nav scroll over top of the footer
-					bottom: function () {
-				      return (this.bottom = $('.footer').outerHeight(true))
-				    }
-				}
-			});
+				var sidenavContainer 			= '#sidenav-container';
+				var sidenavDistanceOffset 		= $(sidenavContainer).offset();
+				var sidenavDistanceOffsetTop 	= sidenavDistanceOffset.top;
+				var sidenavPaddingTop 			= 40;
+				var headerRowHeight 			= headerRow.outerHeight(true);
+				var triggerActivateLinks 		= headerRowHeight + sidenavPaddingTop;
+				var triggerSticky 				= sidenavDistanceOffsetTop - triggerActivateLinks;
+				
+				// What ID is the the side nav? 
+				$(sideNav).affix({
+					offset: {
+						// How far you scroll down before the nav becomes sticky
+						top: triggerSticky,
 
-			// Assign this scroll spy to the body 
-			$body.scrollspy({
+						// Don't let the nav scroll over top of the footer
+						bottom: function () {
+					      return (this.bottom = $('.footer').outerHeight(true))
+					    }
+					}
+				});
 
-				// What ID is the immediate parent of the side nav? 
-				target: sidenavContainer,
+				// Assign this scroll spy to the body 
+				$body.scrollspy({
 
-				// How far from the top that triggers the left nav items become active
-				offset: triggerActivateLinks,
-			});
+					// What ID is the immediate parent of the side nav? 
+					target: sidenavContainer,
+
+					// How far from the top that triggers the left nav items become active
+					offset: triggerActivateLinks,
+				});
+			}
 		},
 		scrollToHash: function(target) {
 			var sidenavContainer 			= '#sidenav-container';
