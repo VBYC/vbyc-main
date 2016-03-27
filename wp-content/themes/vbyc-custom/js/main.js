@@ -55,9 +55,6 @@
 
 			vbyc.util.WpOverrides();
 
-			console.log('Hello');
-
-
 			// Set Home hero animation
 			// vbyc.util.homeHeroAnimation();
 			// vbyc.util.homeHeroAnimationhomeHeroAnimationResetImages();
