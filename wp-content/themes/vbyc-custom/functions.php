@@ -449,5 +449,15 @@ function my_post_gallery( $output, $attr ) {
 }
 
 // Apply filter to default gallery shortcode
-add_filter( 'post_gallery', 'my_post_gallery', 10, 2 );
+
+
+function customposttype_image_box() 
+{
+  // remove
+  remove_meta_box( 'postimagediv', 'post', 'side' );
+ 
+  // add
+  add_meta_box('postimagediv', 'Featured Image', 'post_thumbnail_meta_box', 'post', 'side', 'high');
+  }
+add_action('do_meta_boxes', 'customposttype_image_box');
 
