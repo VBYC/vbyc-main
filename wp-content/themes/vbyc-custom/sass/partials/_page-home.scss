@@ -2,7 +2,7 @@
     TEMPLATE - HOME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-.template-home {
+.page-template-home {
     
     .header-main  {
         background-image: url('/images/heroes/home.jpg');
@@ -191,7 +191,7 @@
 }
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    .template-home {
+    .page-template-home {
         h1 {
             font-size: 70px;            
         }
@@ -200,7 +200,7 @@
 
 
 @media (max-width: $screen-sm-max) {
-    .template-home {
+    .page-template-home {
         .hero-animation {
             top: -30px;
         }
@@ -226,7 +226,7 @@
 }
 
 @media (min-width: $width-content-extra) {
-    .template-home {
+    .page-template-home {
         .header-main {
             background-size: 100% auto;
             background-position: 50% 50%;
@@ -235,7 +235,7 @@
 }
 
 @media (max-width: $screen-xs-max) {
-    .template-home {
+    .page-template-home {
         .hero-animation {
             display: none;
         }

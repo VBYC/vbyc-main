@@ -9,7 +9,7 @@
 	    headerRow 		 		= $('.header-main'),
 	    hasSidenav 				,
 	    highResPath				,
-	    containerClassName		= '.template-home .hero-animation',
+	    containerClassName		= '.page-template-home .hero-animation',
 	    container 				= $(containerClassName),
 	    mainContent 			= $('.main-content'),
 	    allButFirstImage        = $('img:not(:first-child)',container),
@@ -166,7 +166,7 @@
             // loadingMessage:'<div class="loader-positioned loader"><span></span></div>'
 		},
 		homeHeroAnimation: function() {
-			var target = $('.template-home .animation-outer');
+			var target = $('.page-template-home .animation-outer');
 		},
 		homeHeroAnimationResetImages: function() {
 	        allButFirstImage.hide();

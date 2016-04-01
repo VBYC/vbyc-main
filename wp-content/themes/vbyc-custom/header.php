@@ -63,7 +63,6 @@
 
 
 
-
 	<header class="header-main low-res-placeholder background-img-fluid v-offset-bot-0">
 		<div class="container">
             <div class="row">
@@ -71,6 +70,7 @@
                     <a href="/" title="Home">
                         <!-- TODO: Change color with CSS http://codepen.io/helmemat/pen/ndJgz -->
                         <!-- TODO: Use just 1 file for icon too -->
+                        <?php if ( is_front_page() ) { $logo_version = '-reverse'; } ?>
                         <img src="/images/logos/vbyc-logo-icon<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-icon">
                         <img src="/images/logos/vbyc-logo<?=$logo_version?>.svg" alt="VBYC logo" class="main-logo main-logo-normal img-responsive">
                     </a>
@@ -84,8 +84,8 @@
         </div>
 
 		<?php
-			if ( is_front_page() && is_home() ) : ?>
-				<!-- <div class="container home-hero-text-outer">
+			if ( is_front_page() ) : ?>
+				<div class="container home-hero-text-outer">
 	                <div class="home-hero-text">
 	                    <div class="container home-hero-text-inner">
 	                        <h1>
@@ -99,8 +99,8 @@
 	                        <a href="#post-hero" class="link scroll-to"><span class="glyphicon glyphicon-menu-down"></span> Scroll</a>
 	                    </div>
 	                </div>
-            	</div> -->
-			<?php else : ?>
+            	</div> 
+
 				
 			<?php endif;
 		?>

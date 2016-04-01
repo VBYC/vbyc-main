@@ -73,9 +73,12 @@
 
 <?php wp_footer(); ?>
 
+<?php if ( is_front_page() ) { $jsArgs = 'highResPath : "/images/heroes/home.jpg,'; } ?>
+
 <script>
     jQuery(document).ready(function() {
-        vbyc.util.init({hasSidenav : false});
+        vbyc.util.init({hasSidenav : false,});
+        vbyc.util.init({highResPath : "/images/heroes/home.jpg"});
     });
 </script>
 
