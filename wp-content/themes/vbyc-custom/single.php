@@ -9,40 +9,79 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+	<main class="main-content-container">
 
-			/*
-			 * Include the post format-specific template for the content. If you want to
-			 * use this in a child theme, then include a file called called content-___.php
-			 * (where ___ is the post format) and that will be used instead.
-			 */
-			get_template_part( 'content', get_post_format() );
+		
+        <section class="hero">
+            <?php 
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+            /* HERO IMAGE */ 
+            if ( has_post_thumbnail() ) { 
+                include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-image.php"); 
+            
+            } ?>
+            <div class="container-fluid hero-text-container clearfix">
+                 <div class="container">
+                    <?php    
 
-			// Previous/next post navigation.
-			the_post_navigation( array(
-				'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-				'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentyfifteen' ) . '</span> ' .
-					'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
-					'<span class="post-title">%title</span>',
-			) );
+                    /* HERO HEADLINE */ 
+                    include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-headlines.php"); 
 
-		// End the loop.
-		endwhile;
-		?>
+                    /* HERO TEXT */ 
+                    include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero-intro.php"); 
+                    
+                    ?> 
+                </div>
+            </div>
+        </section>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+        <section class="main-content">
+            <div class="container"> 
+                <article class="main-article">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                            <?php   
+
+                            /* CONTENT HEADLINE (First red one) */ 
+                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");
+
+                            /* MAIN CONTENT */ 
+                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_main.php"); 
+                            
+                            ?> 
+                        </div>
+                    </div><!-- /.row -->
+
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2">
+                        	<hr>
+
+                             <? // Start the loop.
+							while ( have_posts() ) : the_post();
+
+								// Previous/next post navigation.
+								the_post_navigation( array(
+									'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next: ', 'twentyfifteen' ) . '</span> ' .
+										'<span class="screen-reader-text">' . __( 'Next post:', 'twentyfifteen' ) . '</span> ' .
+										'<span class="post-title">%title</span>',
+									'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous: ', 'twentyfifteen' ) . '</span> ' .
+										'<span class="screen-reader-text">' . __( 'Previous post:', 'twentyfifteen' ) . '</span> ' .
+										'<span class="post-title">%title</span>',
+								) );
+
+							// End the loop.
+							endwhile;
+							?>
+
+                        </div>
+                    </div><!-- /.row -->
+
+                </article><!-- /.main-article -->
+            </div><!-- /.container -->
+        </section><!-- /.main-content -->
+    </main><!-- /.main-content-container -->
 
 <?php get_footer(); ?>

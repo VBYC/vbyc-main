@@ -33,6 +33,7 @@
 @import "partials/fonts";
 @import "partials/typography";
 @import "partials/graphic-elements";
+@import "partials/_buttons";
 @import "partials/loaders";
 @import "partials/header";
 @import "partials/header";
@@ -53,7 +54,10 @@
 // TEMPLATES
 @import "partials/template-timeline";
 @import "partials/template-grid";
-@import "partials/_template-image-fills-whole-page";
+@import "partials/template-image-fills-whole-page";
+@import "partials/template-news";
+
+
 
 
 // PAGES
