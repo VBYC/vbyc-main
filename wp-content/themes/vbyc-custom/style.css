@@ -10981,6 +10981,14 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPALTE - PORTRATI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* line 6, sass/partials/_template-profile.scss */
+#page-template-profile .portrait-container {
+  padding-right: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     PAGE - ABOUT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 8, sass/partials/_page-about.scss */
@@ -11353,12 +11361,4 @@ img[src*=".svg"] .main-logo-container .ie9 {
 #page-error .page-name {
   font-size: 160px;
   margin-top: 80px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    PAGE - MEET THE DIRECTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* line 6, sass/partials/_page-meet-the-director.scss */
-#page-meet-the-director .portrait-container {
-  padding-right: 20px;
 }
