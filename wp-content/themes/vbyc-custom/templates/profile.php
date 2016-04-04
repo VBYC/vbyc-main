@@ -35,14 +35,18 @@ Template Name: Profile
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="portrait-container">
-                                <img src="/images/pages/meet-the-director/portrait.jpg" alt="Dottie Myers-Hill, Camp Director" class="portrait-primary v-offset-6 img-responsive">
+                                <?
+                                    $image = get_field('profile_image');
+                                    if( !empty($image) ): 
+                                ?>
+                                    <img src="<?php echo $image['url']; ?>" class="portrait-primary v-offset-6 img-responsive" alt="<?php echo $image['alt']; ?>">
+                                <?php 
+                                    endif; 
+                                ?>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <?php   
-
-                            /* CONTENT HEADLINE (First red one) */ 
-                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");
 
                             /* MAIN CONTENT */ 
                             include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_main.php"); 
