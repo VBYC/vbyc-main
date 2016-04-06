@@ -1,10 +1,72 @@
 <?php
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    GLOBAL VARIABLES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Defer placeholder image to load large images below the fold after everything else loaded
+$src_defer = 'data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    CLEANUP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AFP PRO 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+if( function_exists('acf_add_options_page') ) {
+    
+    acf_add_options_page();
+
+    // acf_add_options_sub_page(array(
+    //     'title' => 'Nearby Properties',
+    //     'slug' => 'nearby-properties',
+    // ));
+
+
+    // acf_add_options_sub_page('Header');
+    // acf_add_options_sub_page('Footer');
+
+    // acf_add_options_page(array(
+    //     'page_title'    => 'Contact Info',
+    //     'menu_title'    => 'Contact Info',
+    //     'menu_slug'     => 'contact-info',
+    //     'capability'    => 'edit_posts',
+    //     'redirect'      => false
+    // ));
+    
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Social',
+    //     'menu_title'    => 'Social',
+    //     'parent_slug'   => 'contact-info',
+    // ));
+
+    // acf_add_options_sub_page(array(
+    //     'page_title'    => 'Theme Header Settings',
+    //     'menu_title'    => 'Header',
+    //     'parent_slug'   => 'contact-info',
+    // ));
+    
+    
+    
+    
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    AFP NON-PRO 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
@@ -464,4 +526,10 @@ function customposttype_image_box()
   add_meta_box('postimagediv', 'Featured Image', 'post_thumbnail_meta_box', 'post', 'side', 'high');
   }
 add_action('do_meta_boxes', 'customposttype_image_box');
+
+
+
+
+
+
 
