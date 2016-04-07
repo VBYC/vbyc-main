@@ -11182,10 +11182,6 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 149, sass/partials/_page-home.scss */
-.page-template-home .home-banner-map {
-  background-image: url("/images/heroes/map-of-vbyc.jpg");
-}
 /* line 152, sass/partials/_page-home.scss */
 .page-template-home .home-banner-map .link {
   display: block;

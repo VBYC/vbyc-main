@@ -142,23 +142,46 @@ Template Name: Home
 
 
 
-        <!-- MAP OF CAMP -->
+
+
+
+        <!-- MAP PROMO -->
+        <?php if( have_rows('map_promo') ): ?>
         <section class="home-banner-map-container">
-            <div class="banner-item home-banner-map hero-background-img">
+            <?php 
+                while( have_rows('map_promo') ): the_row(); 
+                
+                    $headline           = get_sub_field('headline');
+                    $link_label         = get_sub_field('link_label');
+                    $link               = get_sub_field('link');
+                    $background_image   = get_sub_field('background_image');
+                    $a_tag_open         = null;
+                    $a_tag_close        = null;
+                    if( !empty($link) ): 
+                        $a_tag_open     = '<a href="'.$link.'" class="link text-center">';
+                        $a_tag_close    = '</a>';
+                    endif;    
+            ?>
+            <div class="banner-item home-banner-map hero-background-img" style="<? /* TODO: Replace inline BG image style*/ ?>background-image:url(<?=$background_image['url']?>);">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="content">
-                                <a href="/<?=$url_explore_camp?>/" class="link text-center">
-                                    <h3 class="headline">There&rsquo;s a lot to explore!</h3>
-                                    <p class="cta">View the map of Camp</p>
-                                </a>
+                                <?=$a_tag_open?>
+                                    <h3 class="headline"><?=$headline?></h3>
+                                    <p class="cta"><?=$link_label?></p>
+                                <?=$a_tag_close?>
                             </div>
                         </div>
-                    </div><!-- /.row -->
+                    </div><!-- /.row-->
                 </div>
             </div>
+            <?php endwhile; ?>
         </section>
+        <?php endif; ?>
+
+
+
 
 
         <!-- TERTIARY PROMOS -->
