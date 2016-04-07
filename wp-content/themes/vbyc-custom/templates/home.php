@@ -5,17 +5,24 @@ Template Name: Home
 <?php get_header(); ?>
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+
+
     <main id="post-hero" class="text-center"> 
         <!-- NEWS FEED -->
         <section class="news-feed">
             <div class="content clearfix">
                 <div class="content-inner">
-                    <h5 class="headline"><? /* ?><a href="#" class="link-reverse " title="Read all news stories"><? */ ?>News<? /* ?></a><? */ ?> ///</h5>
+                    <h5 class="headline"><a href="/news/" class="link-reverse " title="Read all news stories">News</a> ///</h5>
                     <ul class="news-feed-list list-unstyled">
-                        <li class="item"><a href="/<?=$url_news_leadership_speaker_fund?>/" class="link">Leadership Campers Raising Speaker Funds</a></li>
-                        <li class="item"><a href="/<?=$url_schedule?>/#adults" class="link">Woman's Wellness Weekend added to schedule</a></li>
-                        <li class="item"><a href="/<?=$url_schedule?>/" class="link">2016 schedule is out!</a></li>
-                        <li class="item"><a href="/news-amazon/" class="link">Donate to VBYC through your Amazon purchases</a></li>
+                    <?php
+                        $args = array( 'posts_per_page' => 4, 'offset'=> 0, 'category' => 1 );
+                        $myposts = get_posts( $args );
+                        foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+                            <li class="item">
+                                <a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a>
+                            </li>
+                        <?php endforeach; 
+                        wp_reset_postdata();?>
                     </ul>
                 </div>
             </div>
