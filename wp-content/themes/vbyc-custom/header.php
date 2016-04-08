@@ -84,15 +84,22 @@
         </div>
 
 		<?php
-			if ( is_front_page() ) : ?>
+			if ( is_front_page() ) : 
+               if( have_rows('hero_headline') ): ?>
 				<div class="container home-hero-text-outer">
 	                <div class="home-hero-text">
 	                    <div class="container home-hero-text-inner">
 	                        <h1>
-	                            <span class="group-1">Discovering</span>  
-	                            <span class="group-2">nature,</span> 
-	                            <span class="group-3">each other, </span>
-	                            <span class="group-4">&amp; ourselves.</span>
+                                <?php 
+                                    $count = 1;
+                                    while( have_rows('hero_headline') ): the_row(); 
+                                        $word_group = get_sub_field('word_group');
+                                ?>
+	                            <span class="group-<?=$count?>"><?=$word_group?></span>  
+                                <?php 
+                                    $count++;
+                                    endwhile; 
+                                ?>
 	                        </h1>
 	                    </div>
 	                    <div class="hero-scroll-cta">
@@ -100,14 +107,12 @@
 	                    </div>
 	                </div>
             	</div> 
-
-				
-			<?php endif;
-		?>
+        <?php 
+                endif; 
+			endif; 
+        ?>
 		 </header>
-			
-    <?php // get_sidebar(); ?>
-		
+
 	
 	 
 
