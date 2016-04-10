@@ -19,7 +19,7 @@
                 <div class="col-xs-12">
                     <div class="footer-content">
                         <div class="footer-message">
-                            Being ourselves, together.
+                            <?php the_field('footer_headline', 'option'); ?>
                         </div>
                         <div class="item pad-bot-4 " > 
                             <?php   

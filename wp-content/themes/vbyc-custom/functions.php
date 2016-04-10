@@ -26,39 +26,31 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 if( function_exists('acf_add_options_page') ) {
     
-    acf_add_options_page();
+    acf_add_options_page(array(
+        'page_title'    => 'Contact Info Settings',
+        'menu_title'    => 'Contact Info',
+        'menu_slug'     => 'contact-info-global',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+        
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Social Media Settings',
+        'menu_title'    => 'Social Media',
+        'parent_slug'   => 'contact-info-global',
+    ));
 
-    // acf_add_options_sub_page(array(
-    //     'title' => 'Nearby Properties',
-    //     'slug' => 'nearby-properties',
-    // ));
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Footer Settings',
+        'menu_title'    => 'Footer',
+        'parent_slug'   => 'contact-info-global',
+    ));
 
-
-    // acf_add_options_sub_page('Header');
-    // acf_add_options_sub_page('Footer');
-
-    // acf_add_options_page(array(
-    //     'page_title'    => 'Contact Info',
-    //     'menu_title'    => 'Contact Info',
-    //     'menu_slug'     => 'contact-info',
-    //     'capability'    => 'edit_posts',
-    //     'redirect'      => false
-    // ));
-    
-    // acf_add_options_sub_page(array(
-    //     'page_title'    => 'Social',
-    //     'menu_title'    => 'Social',
-    //     'parent_slug'   => 'contact-info',
-    // ));
-
-    // acf_add_options_sub_page(array(
-    //     'page_title'    => 'Theme Header Settings',
-    //     'menu_title'    => 'Header',
-    //     'parent_slug'   => 'contact-info',
-    // ));
-    
-    
-    
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Camp Minder Settings',
+        'menu_title'    => 'Camp Minder',
+        'parent_slug'   => 'contact-info-global',
+    ));
     
 }
 

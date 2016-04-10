@@ -1,5 +1,5 @@
 <? /* 
-Template Name: Sessions
+Template Name: Schedule
 */ ?>
 
 <?php 

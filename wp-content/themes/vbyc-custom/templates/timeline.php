@@ -57,6 +57,11 @@ Template Name: Timeline
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
+
+      
+                    
+
+
                     <?php // TYPICAL DAY EVENTS
                         $num = 0;
                         if ( $typicalday->have_posts() ) :
