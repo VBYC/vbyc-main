@@ -32,6 +32,7 @@ Template Name: Gallery
             </div>
         </section>
 
+
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
@@ -42,7 +43,7 @@ Template Name: Gallery
                         if( $images ): 
                             foreach( $images as $image ): 
                                 $grid_title = $image['title'];
-                                $grid_description = $image['caption'];
+                                $grid_description = $image['description'];
           
   ?>
 
@@ -56,7 +57,7 @@ Template Name: Gallery
                             data-gallery="multiimages" 
                                 data-title="<?=$grid_title?>" 
                                 data-footer="<?=$grid_description?>">
-                                <img src="<?php echo $image['sizes']['thumbnail']; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
+                                <img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
                                 <h3 class="gallery-label"><?=$grid_title?></h3>
                             </a>
                             <div class="visible-xs-block details">
