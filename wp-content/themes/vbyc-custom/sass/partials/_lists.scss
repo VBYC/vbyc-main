@@ -24,7 +24,8 @@
 	}
 }
 
-.list-steps {
+.list-steps,
+.list-no-indent-children ol {
 	padding-left: 64px;
 	> li {
 		list-style-type: none;

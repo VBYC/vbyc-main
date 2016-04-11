@@ -5,33 +5,38 @@ Template Name: Three Columns
 ?>
 
 <?php get_header(); ?>
-<?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php  if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?
+        if (get_field('list_style_steps') == 'Yes') {
+            $list_style_steps_class = " list-no-indent-children ";
+        }
+    ?>
 
     <main class="main-content-container" data-spy="scroll" data-target="#sidenav">
 
         <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
-        <section class="main-content">
+        <section class="main-content ">
             <div class="container"> 
-                <article class="main-article">
+                <article class="main-article <?=$list_style_steps_class?>">
 
                     <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/featured_images_secondary.php"); ?>
-
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-4">
-                            <?php the_field('col_1_of_3'); ?>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <?php the_field('col_2_of_3'); ?>
-                        </div>
-                        <div class="col-xs-12 col-sm-4">
-                            <?php the_field('col_3_of_3'); ?>
-                        </div>
-                    </div><!-- /.row -->
+                    <?php if( have_rows('three_columns_column') ): ?>
+                        <div class="row">
+                            <?php 
+                                while( have_rows('three_columns_column') ): the_row(); 
+                                $column_content = get_sub_field('column_content');
+                            ?>
+                            <div class="col-xs-12 col-sm-4">
+                                <?=$column_content?>
+                            </div>
+                            <?php endwhile; ?>
+                        </div><!-- /.row -->
+                    <?php endif; ?>
                 </article><!-- /.main-article -->
             </div><!-- /.container -->
         </section><!-- /.main-content -->
     </main><!-- /.main-content-container -->
 
-<?php  // endwhile; endif; ?>
+<?php  endwhile; endif; ?>
 <?php get_footer(); ?>

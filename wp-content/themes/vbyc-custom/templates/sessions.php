@@ -74,6 +74,62 @@ Template Name: Schedule
 
         <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
+
+        NEW: 
+     
+
+<?php 
+
+// get repeater field data
+$repeater = get_field('session_info');
+
+
+// vars
+$order = array();
+
+
+// populate order
+foreach( $repeater as $i => $row ) {
+    
+    $order['grade_start'][ $i ] = $row['grade_start'];
+    $order['grade_end'][ $i ] = $row['grade_end'];
+    $order['date_end'][ $i ] = $row['date_end'];
+    
+}
+
+// multisort
+array_multisort( $order['grade_start'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
+
+// loop through repeater
+if( $repeater ): ?>
+
+    <ul>
+
+    <?php 
+        foreach( $repeater as $i => $row ): 
+            $image          = $row['image'];
+            $headline       = $row['session_name'];
+            $description    = $row['description'];
+            $date_start     = $row['date_start'];
+            $grade_start    = $row['grade_start'];
+            $grade_end      = $row['grade_end'];
+            $link_label     = $row['link_label'];
+            $link           = $row['link'];
+
+            // Only show if it's a new category - because this is a ctegory nav
+            $group_current = $grade_start.'-'.$grade_end;
+            $grade_current_link = convertToLinkable($group_current);
+    ?>
+        <li><?php echo $grade_start  ?> - <?php echo $grade_end  ?>: <?php echo $headline; ?></li>
+
+    <?php endforeach; ?>
+
+    </ul>
+<?php endif; ?>
+
+
+
+
         <section class="main-content">
             <div class="container scroll-spy-container"> 
                 <div class="row">

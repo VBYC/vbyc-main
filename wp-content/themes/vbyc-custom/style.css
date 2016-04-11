@@ -10536,18 +10536,21 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* line 27, sass/partials/_lists.scss */
-.list-steps {
+.list-steps,
+.list-no-indent-children ol {
   padding-left: 64px;
 }
-/* line 29, sass/partials/_lists.scss */
-.list-steps > li {
+/* line 30, sass/partials/_lists.scss */
+.list-steps > li,
+.list-no-indent-children ol > li {
   list-style-type: none;
   counter-increment: listStepCounter;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 34, sass/partials/_lists.scss */
-.list-steps > li:before {
+/* line 35, sass/partials/_lists.scss */
+.list-steps > li:before,
+.list-no-indent-children ol > li:before {
   content: "Step " counter(listStepCounter) ": ";
   display: inline-block;
   position: absolute;
