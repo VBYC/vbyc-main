@@ -83,22 +83,19 @@ Template Name: Schedule
 // get repeater field data
 $repeater = get_field('session_info');
 
-
 // vars
 $order = array();
 
-
-// populate order
+// define order
 foreach( $repeater as $i => $row ) {
-    
+    $order['grade_other'][ $i ] = $row['grade_other'];
     $order['grade_start'][ $i ] = $row['grade_start'];
     $order['grade_end'][ $i ] = $row['grade_end'];
     $order['date_end'][ $i ] = $row['date_end'];
-    
 }
 
 // multisort
-array_multisort( $order['grade_start'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
+array_multisort( $order['grade_other'], SORT_ASC, $order['grade_other'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
 
 // loop through repeater
 if( $repeater ): ?>
@@ -119,6 +116,7 @@ if( $repeater ): ?>
             // Only show if it's a new category - because this is a ctegory nav
             $group_current = $grade_start.'-'.$grade_end;
             $grade_current_link = convertToLinkable($group_current);
+            echo $grade_current_link;
     ?>
         <li><?php echo $grade_start  ?> - <?php echo $grade_end  ?>: <?php echo $headline; ?></li>
 
@@ -140,41 +138,37 @@ if( $repeater ): ?>
 
                                 <?php // REGULAR SESSIONS
                                 $group_last = null;
-                                while ( $sessions->have_posts() ) : $sessions->the_post(); 
-                                    $grade_start =  get_field('grade_start');
-                                    $grade_end =    get_field('grade_end');
+                                foreach( $repeater as $i => $row ): 
+                                     
+                                    $grade_start    = $row['grade_start'];
+                                    $grade_end      = $row['grade_end'];
+                                    $grade_other    = $row['grade_other'];
 
                                     // Only show if it's a new category - because this is a ctegory nav
-                                    $group_current = $grade_start.'-'.$grade_end;
+                                    if ($grade_other) {
+                                        // Non-regular Session
+                                        $group_current = $grade_other;
+                                        $group_current_label = $grade_other;
+
+                                    } else {
+                                        // Regular Session 
+                                        $group_current = $grade_start.'-'.$grade_end;
+                                        $group_current_label = 'Grades '.$group_current;
+                                    }
                                     $grade_current_link = convertToLinkable($group_current);
+
                                     if ($group_current != $group_last) { 
                                 ?>
 
-                                    <a href="#grades-<?=$grade_current_link?>" class="link">Grades <?=$group_current?></a>
+                                    <a href="#grades-<?=$grade_current_link?>" class="link"><?=$group_current_label?></a>
 
                                 <?php 
                                     }
                                     $group_last = $group_current;
-                                    endwhile; 
+                                    endforeach; 
                                 ?>
 
-                                <?php // NON REGULAR SESSIONS
-                                $group_last = null;
-                                while ( $sessions_non_regular->have_posts() ) : $sessions_non_regular->the_post(); 
-                                    $grade_current =  get_field('grade_other');
-                                    $grade_current_link = convertToLinkable($grade_current);
-                                    // Only show if it's a new category - because this is a ctegory nav
-                                    if ($group_current != $group_last) { 
-                                ?>
-
-                                    <a href="#grades-<?=$grade_current_link?>" class="link"><?=$grade_current?></a>
-
-                                <?php 
-                                    }
-                                    $group_last = $group_current;
-                                    endwhile; 
-                                ?>
-
+                             
                                 </li>
                             </ul>
                         </aside>
@@ -184,17 +178,17 @@ if( $repeater ): ?>
                         <article class="main-article">
                                 <?php
                                 $group_last = null;
-                                while ( $sessions->have_posts() ) : $sessions->the_post(); 
-                                    
+                                foreach( $repeater as $i => $row ): 
+
                                     // Trim last 4 characters so date() will interpret the unix timestamp correctly
-                                    $date_start =   substr(get_field('date_start'), 0, -3);
-                                    $date_end =     substr(get_field('date_end'), 0, -3);
-                                    $cost =         get_field('cost');
-                                    $description =  get_field('description');
-                                    $grade_start =  get_field('grade_start');
-                                    $grade_end =    get_field('grade_end');
-
-
+                                    $headline       = $row['session_name'];
+                                    $date_start     = strtotime($row['date_start']);
+                                    $date_end       = strtotime($row['date_end']);
+                                    $cost           = $row['cost'];
+                                    $description    = $row['description'];
+                                    $grade_start    = $row['grade_start'];
+                                    $grade_end      = $row['grade_end'];
+                                    $grade_other    = $row['grade_other'];
 
                                     // Start date 
                                     $date_start_display =  date('M j' , $date_start);
@@ -211,101 +205,52 @@ if( $repeater ): ?>
                                     $display_dates = $date_start_display.$date_end_display;
 
                                     // If this is a new group (age group) separate it 
-                                    $group_current = $grade_start.'-'.$grade_end;
-                                    $grade_current_link = convertToLinkable($group_current);
+                                    if ($grade_other) {
+                                        // Non-regular Session
+                                        $group_current = $grade_other;
+                                        $group_current_label = $grade_other;
 
-                                    if ($group_current != $group_last) { 
-                                            /* Uness it's the very first rgoup on the page, close off the previous group */
-
-                                            if ($group_last) { ?>
-
-                                            </li>
-                                        </ul>
-
-                                        <?  } ?>
-                                            
-                                        <!-- Group <?=$group_current?> -->
-                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category">Grades <?=$group_current?></h2>
-                                        <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                            <li class="item">
-                                    <? } ?>
-
-                                <h3 class="heading">
-                                    <span class="nowrap"><?=the_title()?></span> | 
-                                    <span class="date nowrap"><?=$display_dates?></span>  
-                                    <?php if ($cost) { ?>| Cost: $<?=$cost?> <? } ?>
-                                </h3>
-                                <div class="description">
-                                    <?=$description?>
-                                    <p><a href="<?=$url_register?>" target="_blank">Register for <?=the_title()?></a></p>
-                                </div>
-                                
-                                <?php 
-                                    $group_last = $group_current;
-                                    endwhile; 
-                                ?>
-                                </li>
-                            </ul>
-
-
-                            <?php
-                                $group_last = null;
-                                while ( $sessions_non_regular->have_posts() ) : $sessions_non_regular->the_post(); 
-                                    
-                                    // Trim last 4 characters so date() will interpret the unix timestamp correctly
-                                    $date_start =   substr(get_field('date_start'), 0, -3);
-                                    $date_end =     substr(get_field('date_end'), 0, -3);
-                                    $cost =         get_field('cost');
-                                    $description =  get_field('description');
-                                    $grade_other =  get_field('grade_other');
-
-                                    // Start date 
-                                    $date_start_display =  date('M j' , $date_start);
-
-                                    // End date
-                                    if ($date_start !== $date_end) {
-                                        if (date('M', $date_end) == date('M', $date_end)) {
-                                            $date_end_display = date('-j' , $date_end);
-                                        } else {
-                                           $date_end_display = date(' - M j' , $date_end);
-                                        }
+                                    } else {
+                                        // Regular Session 
+                                        $group_current = $grade_start.'-'.$grade_end;
+                                        $group_current_label = 'Grades '.$group_current;
                                     }
-                                    // Both dates
-                                    $display_dates = $date_start_display.$date_end_display;
-
-                                    // If this is a new group (age group) separate it 
-                                    $group_current = $grade_other;
                                     $grade_current_link = convertToLinkable($group_current);
-
-                           
+                                    
                                     if ($group_current != $group_last) { 
                                             /* Uness it's the very first rgoup on the page, close off the previous group */
+
                                             if ($group_last) { ?>
+
                                             </li>
                                         </ul>
 
                                         <?  } ?>
                                             
                                         <!-- Group <?=$group_current?> -->
-                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category"><?=$grade_other?></h2>
+                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category"><?=$group_current_label?></h2>
                                         <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                             <li class="item">
                                     <? } ?>
 
                                 <h3 class="heading">
-                                    <span class="nowrap"><?=the_title()?></span> | 
+                                    <span class="nowrap"><?=$headline?></span> | 
                                     <span class="date nowrap"><?=$display_dates?></span>  
                                     <?php if ($cost) { ?>| Cost: $<?=$cost?> <? } ?>
                                 </h3>
                                 <div class="description">
                                     <?=$description?>
-                                    <p><a href="<?=$url_register?>" target="_blank">Register for <?=the_title()?></a></p>
+                                    <p><a href="<?=$url_register?>" target="_blank">Register for <?=$headline?></a></p>
                                 </div>
                                 
                                 <?php 
                                     $group_last = $group_current;
-                                    endwhile; 
+                                    endforeach; 
                                 ?>
+                        
+                            
+
+
                                 </li>
                             </ul>
                         </article> 
