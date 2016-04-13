@@ -33,6 +33,25 @@ Template Name: Three Columns
                             <?php endwhile; ?>
                         </div><!-- /.row -->
                     <?php endif; ?>
+
+
+                    <?php if( have_rows('two_columns_column') ): ?>
+                        <div class="row">
+                            <?php 
+                                $first_item_class = 'col-sm-offset-2';
+                                while( have_rows('two_columns_column') ): the_row(); 
+                                    echo $index;
+                                    $column_content = get_sub_field('column_content');
+                            ?>
+                            <div class="col-xs-12 col-sm-5 <?=$first_item_class?>">
+                                <?=$column_content?>
+                            </div>
+                            <?php 
+                                $first_item_class = '';
+                                endwhile; 
+                            ?>
+                        </div><!-- /.row -->
+                    <?php endif; ?>
                 </article><!-- /.main-article -->
             </div><!-- /.container -->
         </section><!-- /.main-content -->

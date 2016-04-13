@@ -7,9 +7,11 @@
                                 <?php the_field('intro_paragraph'); ?>
 
                                 <?php 
+
+                                echo get_field("link_target" );
                                 if (!$hide_hero_intro_link) {
 
-                                    $has_link = get_field("intro_link_url" );
+                                    
                                     if ( $has_link ) { 
                                         $link_target = get_field( "intro_link_external_or_internal" );
                                         if(  $link_target == 'external' ) { 

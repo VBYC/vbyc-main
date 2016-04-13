@@ -16,55 +16,26 @@ Template Name: Schedule
         return $string;
     }
     $group_last    = null;
-    
-    // REGULAR SESSIONS
-    $args = array(
-        'post_type'  => 'sessions',
+   
 
-        'meta_query' => array(
-            'relation' => 'AND',
-            'grade_start_clause' => array(
-                'key'     => 'grade_start',
-                'compare' => '!=',
-            ),
-            'grade_end_clause' => array(
-                'key'     => 'grade_end',
-                'compare' => 'EXISTS',
-            ), 
-            'grade_other_clause' => array(
-                'key'     => 'grade_start',
-                'value'   => array(''),
-                'compare' => 'NOT IN'
-            ),  
-        ),
-        'orderby' => array(
-            'grade_start_clause' => 'ASC',
-            'grade_end_clause' => 'ASC',
-        ),
-    );
-    $sessions = new WP_Query( $args );
 
-    // NON-REGULAR
-    $args = array(
-        'post_type'  => 'sessions',
+    // get repeater field data
+    $repeater = get_field('session_info');
 
-        'meta_query' => array(
-            'relation' => 'AND',
-            'date_start_clause' => array(
-                'key'     => 'date_start',
-                'compare' => '!=',
-            ),
-            'grade_other_clause' => array(
-                'key'     => 'grade_other',
-                'value'   => array(''),
-                'compare' => 'NOT IN'
-            ),  
-        ),
-        'orderby' => array(
-            'date_start_clause' => 'ASC',
-        ),
-    );
-    $sessions_non_regular = new WP_Query( $args );
+    // vars
+    $order = array();
+
+    // define order
+    foreach( $repeater as $i => $row ) {
+        $order['grade_other'][ $i ] = $row['grade_other'];
+        $order['grade_start'][ $i ] = $row['grade_start'];
+        $order['grade_end'][ $i ] = $row['grade_end'];
+        $order['date_end'][ $i ] = $row['date_end'];
+    }
+
+    // multisort
+    array_multisort( $order['grade_other'], SORT_ASC, $order['grade_other'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
+
 ?>
 
 <?php get_header(); ?>
@@ -74,60 +45,6 @@ Template Name: Schedule
 
         <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
-
-        NEW: 
-     
-
-<?php 
-
-// get repeater field data
-$repeater = get_field('session_info');
-
-// vars
-$order = array();
-
-// define order
-foreach( $repeater as $i => $row ) {
-    $order['grade_other'][ $i ] = $row['grade_other'];
-    $order['grade_start'][ $i ] = $row['grade_start'];
-    $order['grade_end'][ $i ] = $row['grade_end'];
-    $order['date_end'][ $i ] = $row['date_end'];
-}
-
-// multisort
-array_multisort( $order['grade_other'], SORT_ASC, $order['grade_other'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
-
-// loop through repeater
-if( $repeater ): ?>
-
-    <ul>
-
-    <?php 
-        foreach( $repeater as $i => $row ): 
-            $image          = $row['image'];
-            $headline       = $row['session_name'];
-            $description    = $row['description'];
-            $date_start     = $row['date_start'];
-            $grade_start    = $row['grade_start'];
-            $grade_end      = $row['grade_end'];
-            $link_label     = $row['link_label'];
-            $link           = $row['link'];
-
-            // Only show if it's a new category - because this is a ctegory nav
-            $group_current = $grade_start.'-'.$grade_end;
-            $grade_current_link = convertToLinkable($group_current);
-            echo $grade_current_link;
-    ?>
-        <li><?php echo $grade_start  ?> - <?php echo $grade_end  ?>: <?php echo $headline; ?></li>
-
-    <?php endforeach; ?>
-
-    </ul>
-<?php endif; ?>
-
-
-
-
         <section class="main-content">
             <div class="container scroll-spy-container"> 
                 <div class="row">
@@ -135,8 +52,7 @@ if( $repeater ): ?>
                         <aside id="sidenav-container">
                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
                                 <li class="item" role="presentation">
-
-                                <?php // REGULAR SESSIONS
+                                <?php 
                                 $group_last = null;
                                 foreach( $repeater as $i => $row ): 
                                      
@@ -159,16 +75,12 @@ if( $repeater ): ?>
 
                                     if ($group_current != $group_last) { 
                                 ?>
-
                                     <a href="#grades-<?=$grade_current_link?>" class="link"><?=$group_current_label?></a>
-
                                 <?php 
                                     }
                                     $group_last = $group_current;
                                     endforeach; 
                                 ?>
-
-                             
                                 </li>
                             </ul>
                         </aside>
@@ -247,10 +159,6 @@ if( $repeater ): ?>
                                     $group_last = $group_current;
                                     endforeach; 
                                 ?>
-                        
-                            
-
-
                                 </li>
                             </ul>
                         </article> 
