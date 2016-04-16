@@ -313,7 +313,7 @@ function hide_editor() {
     //     remove_post_type_support('page', 'editor');
     // }
 
-    if($template_file == 'templates/faqs.php'){ // edit the template name
+    if($template_file == 'templates/faqs.php' || $template_file == 'templates/intro-only.php'){ // edit the template name
         remove_post_type_support('page', 'editor');
     }
 }
@@ -514,7 +514,7 @@ function admin_styles() {
         }
         .acf-field textarea  {
             height: 160px !important;
-            min-height: 160px;
+            min-height: 150px;
         }
     </style>
     <?php

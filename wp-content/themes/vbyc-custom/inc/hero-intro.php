@@ -1,8 +1,13 @@
-
+<?php 
+    $intro_paragraph_alignment = get_field('intro_paragraph_alignment'); 
+    if ($intro_paragraph_alignment != 'centered') {
+        $text_alignment_class = 'description-wide';
+    }
+?>
                 <div class="row">
                     <div class="col-xs-12 col-md-8 col-md-offset-2">
                         <div class="hero-text">
-                            <div class="description description-wide">
+                            <div class="description <?=$text_alignment_class?>">
 
                                 <?php the_field('intro_paragraph'); ?>
 
@@ -21,7 +26,6 @@
                                              <?=$link_label?>
                                         </a>
                                 <?php 
-                                 
                                     } 
                                 ?>   
                             </div> 

@@ -24,7 +24,7 @@
                         <div class="item pad-bot-4 " > 
                             <?php   
 
-                            /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
+                            /* FOOTER NAV */ 
                             include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-footer.php");
                             
                             ?>
@@ -37,7 +37,7 @@
                     <div class="footer-content clearfix">
                         <?php   
 
-                            /* FEATURED IMAGES - SECONDARY (Group of 4) */ 
+                            /* FOOTER CONTACT INFO */ 
                             include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/contact-info.php");
                             
                         ?>
