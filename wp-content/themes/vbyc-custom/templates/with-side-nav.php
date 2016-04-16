@@ -15,44 +15,19 @@ Template Name: With Side Nav
         $string = preg_replace("/[\s_]/", "-", $string);
         return $string;
     }
-    $group_last    = null;
-   
-
-
-    // get repeater field data
-    $repeater = get_field('session_info');
-
-    // vars
-    $order = array();
-
-    // define order
-    foreach( $repeater as $i => $row ) {
-        $order['grade_other'][ $i ] = $row['grade_other'];
-        $order['grade_start'][ $i ] = $row['grade_start'];
-        $order['grade_end'][ $i ] = $row['grade_end'];
-        $order['date_end'][ $i ] = $row['date_end'];
-    }
-
-    // multisort
-    array_multisort( $order['grade_other'], SORT_ASC, $order['grade_other'], SORT_ASC, $order['grade_end'], SORT_ASC, $order['date_end'], SORT_ASC, $repeater );
 
 ?>
 
 <?php get_header(); ?>
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <main class="main-content-container" data-spy="scroll" data-target="#sidenav">
+    <main class="main-content-container">
 
         <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
-
-
         <?php if( have_rows('with_side_nav_row') ): ?>
-
-
-
         <section class="main-content">
-            <div class="container scroll-spy-container"> 
+            <div class="container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
                         <aside id="sidenav-container">
@@ -72,7 +47,7 @@ Template Name: With Side Nav
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+                            <ul class="content-list list-multiple-details list-unstyled">
                             <?php
                                 while( have_rows('with_side_nav_row') ): the_row(); 
                                     $headline           = get_sub_field('title');
