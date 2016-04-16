@@ -33,7 +33,7 @@
 @import "partials/fonts";
 @import "partials/typography";
 @import "partials/graphic-elements";
-@import "partials/_buttons";
+@import "partials/buttons";
 @import "partials/loaders";
 @import "partials/header";
 @import "partials/header";
@@ -52,16 +52,17 @@
 @import "partials/accessibility";
 
 // TEMPLATES
-@import "partials/template-timeline";
-@import "partials/template-grid";
-@import "partials/template-image-fills-whole-page";
-@import "partials/template-news";
-@import "partials/template-profile";
+@import "partials/templates/timeline";
+@import "partials/templates/grid";
+@import "partials/templates/image-fills-whole-page";
+@import "partials/templates/news";
+@import "partials/templates/profile";
+
 
 
 
 // PAGES
-@import "partials/page-about";
-@import "partials/page-contact";
-@import "partials/page-home";
-@import "partials/page-error";
+@import "partials/pages/about";
+@import "partials/pages/contact";
+@import "partials/pages/home";
+@import "partials/pages/error";
