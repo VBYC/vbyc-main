@@ -45,127 +45,92 @@ Template Name: With Side Nav
 
         <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/hero.php"); ?> 
 
+
+
+        <?php if( have_rows('with_side_nav_row') ): ?>
+
+
+
         <section class="main-content">
             <div class="container scroll-spy-container"> 
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3"> 
                         <aside id="sidenav-container">
                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
+                                <?php 
+                                    while( have_rows('with_side_nav_row') ): the_row(); 
+                                    $label          = get_sub_field('title');
+                                    $anchor_link    = convertToLinkable($label);
+                                ?>
                                 <li class="item" role="presentation">
-                                <?php 
-                                $group_last = null;
-                                foreach( $repeater as $i => $row ): 
-                                     
-                                    $grade_start    = $row['grade_start'];
-                                    $grade_end      = $row['grade_end'];
-                                    $grade_other    = $row['grade_other'];
-
-                                    // Only show if it's a new category - because this is a ctegory nav
-                                    if ($grade_other) {
-                                        // Non-regular Session
-                                        $group_current = $grade_other;
-                                        $group_current_label = $grade_other;
-
-                                    } else {
-                                        // Regular Session 
-                                        $group_current = $grade_start.'-'.$grade_end;
-                                        $group_current_label = 'Grades '.$group_current;
-                                    }
-                                    $grade_current_link = convertToLinkable($group_current);
-
-                                    if ($group_current != $group_last) { 
-                                ?>
-                                    <a href="#grades-<?=$grade_current_link?>" class="link"><?=$group_current_label?></a>
-                                <?php 
-                                    }
-                                    $group_last = $group_current;
-                                    endforeach; 
-                                ?>
+                                    <a href="#<?=$anchor_link?>" class="link"><?=$label?></a>
                                 </li>
+                                <?php endwhile; ?>
                             </ul>
                         </aside>
                     </div><!-- /column -->
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                                <?php
-                                $group_last = null;
-                                foreach( $repeater as $i => $row ): 
-
-                                    // Trim last 4 characters so date() will interpret the unix timestamp correctly
-                                    $headline       = $row['session_name'];
-                                    $date_start     = strtotime($row['date_start']);
-                                    $date_end       = strtotime($row['date_end']);
-                                    $cost           = $row['cost'];
-                                    $description    = $row['description'];
-                                    $grade_start    = $row['grade_start'];
-                                    $grade_end      = $row['grade_end'];
-                                    $grade_other    = $row['grade_other'];
-
-                                    // Start date 
-                                    $date_start_display =  date('M j' , $date_start);
-
-                                    // End date
-                                    if ($date_start !== $date_end) {
-                                        if (date('M', $date_end) == date('M', $date_end)) {
-                                            $date_end_display = date('-j' , $date_end);
-                                        } else {
-                                           $date_end_display = date(' - M j' , $date_end);
-                                        }
-                                    }
-                                    // Both dates
-                                    $display_dates = $date_start_display.$date_end_display;
-
-                                    // If this is a new group (age group) separate it 
-                                    if ($grade_other) {
-                                        // Non-regular Session
-                                        $group_current = $grade_other;
-                                        $group_current_label = $grade_other;
-
-                                    } else {
-                                        // Regular Session 
-                                        $group_current = $grade_start.'-'.$grade_end;
-                                        $group_current_label = 'Grades '.$group_current;
-                                    }
-                                    $grade_current_link = convertToLinkable($group_current);
-                                    
-                                    if ($group_current != $group_last) { 
-                                            /* Uness it's the very first rgoup on the page, close off the previous group */
-
-                                            if ($group_last) { ?>
-
-                                            </li>
-                                        </ul>
-
-                                        <?  } ?>
-                                            
-                                        <!-- Group <?=$group_current?> -->
-                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category"><?=$group_current_label?></h2>
-                                        <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
-                                            <li class="item">
-                                    <? } ?>
-
-                                <h3 class="heading">
-                                    <span class="nowrap"><?=$headline?></span> | 
-                                    <span class="date nowrap"><?=$display_dates?></span>  
-                                    <?php if ($cost) { ?>| Cost: $<?=$cost?> <? } ?>
-                                </h3>
-                                <div class="description">
-                                    <?=$description?>
-                                    <p><a href="<?=$url_register?>" target="_blank">Register for <?=$headline?></a></p>
-                                </div>
-                                
-                                <?php 
-                                    $group_last = $group_current;
-                                    endforeach; 
-                                ?>
+                            <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
+                            <?php
+                                while( have_rows('with_side_nav_row') ): the_row(); 
+                                    $headline           = get_sub_field('title');
+                                    $description        = get_sub_field('description');
+                                    $image_primary      = get_sub_field('primary_photo');
+                                    $image_secondary_1  = get_sub_field('secondary_photos_1');
+                                    $image_secondary_2  = get_sub_field('secondary_photos_2');
+                                    $image_tertiary     = get_sub_field('tertiary_photo');
+                                    $anchor_link        = convertToLinkable($headline);
+                            ?>
+                                <li id="<?=$anchor_link?>" class="item">                                    
+                                    <h3 class="heading <?=$anchor_link?>"> <?=$headline?></h3>
+                                    <div class="description">
+                                        <?=$description?>
+                                    </div>
+                                    <?php if( !empty($image_primary) ): ?>
+                                    <figure class="figure-images figure-layout-1">
+                                        <div class="row row-main">
+                                            <div class="col-xs-12 col-sm-11 col-md-7">
+                                                <div class="image-container">
+                                                    <img src="<?=$image_primary['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_primary['alt']?>">
+                                                </div>
+                                            </div>
+                                            <?php if( !empty($image_secondary_1) ): ?>
+                                            <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
+                                                <div>
+                                                    <div class="image-container">
+                                                        <img src="<?=$image_secondary_1['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_1['alt']?>">
+                                                    </div>
+                                                    <?php if( !empty($image_secondary_2) ): ?>
+                                                    <div class="image-container">
+                                                        <img src="<?=$image_secondary_2['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_2['alt']?>">
+                                                    </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+                                            <?php endif; ?>
+                                        </div>
+                                        <?php if( !empty($image_tertiary) ): ?>
+                                        <div class="row row-secondary hidden-xs">
+                                            <div class="col-xs-12 col-sm-11 col-md-12">
+                                                <div class="image-container">
+                                                    <img src="<?=$image_tertiary['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_tertiary['alt']?>">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php endif; ?>
+                                    </figure>
+                                    <?php endif; ?>
                                 </li>
+                                <?php endwhile; ?>
                             </ul>
                         </article> 
                     </div><!-- /column -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </section><!-- /.main-content -->
+        <?php endif; ?>
     </main><!-- /.main-content-container -->
 
 <?php  // endwhile; endif; ?>
