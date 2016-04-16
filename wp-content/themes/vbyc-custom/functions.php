@@ -79,64 +79,8 @@ if( function_exists('acf_add_options_page') ) {
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    AFP NON-PRO 
+    NON AFP 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-    // Sessions
-    register_post_type( 'sessions',
-        array(
-            'labels' => array(
-                'name' => __( 'Session Name' ),
-                'singular_name' => __( 'Session' ),
-                'add_new' => _x('Add New', 'Session'),
-                'add_new_item' => __('Add New Session'),
-                'edit_item' => __('Edit Session'),
-                'new_item' => __('New Session'),
-                'all_items' => __('All Sessions'),
-                'view_item' => __('View Sessions'),
-                'search_items' => __('Search Sessions'),
-                'not_found' =>  __('No Session found'),
-                'not_found_in_trash' => __('No Sessions found in Trash'), 
-                'menu_name' => 'Schedule',
-                'show_ui' => true,
-                'show_in_nav_menus' => true,
-                'show_in_menu' => true
-            ),
-            'hierarchical' => true,
-            'supports' => array('title', 'custom-fields'),
-            'public' => true,
-            'has_archive' => true
-        )
-    );
-    // Typical Day
-    register_post_type( 'typicalday',
-            array(
-                'labels' => array(
-                    'name' => __( 'Typical Day Event Name' ),
-                    'singular_name' => __( 'Typical Day Event' ),
-                    'add_new' => _x('Add New', 'Typical Day Event'),
-                    'add_new_item' => __('Add New Typical Day Event'),
-                    'edit_item' => __('Edit Typical Day Event'),
-                    'new_item' => __('New Typical Day Event'),
-                    'all_items' => __('All Typical Day Events'),
-                    'view_item' => __('View Typical Day Events'),
-                    'search_items' => __('Search Typical Day Events'),
-                    'not_found' =>  __('No Typical Day Events found'),
-                    'not_found_in_trash' => __('No Typical Day Events found in Trash'), 
-                    'menu_name' => 'Typical Day',
-                    'show_ui' => true,
-                    'show_in_nav_menus' => true,
-                    'show_in_menu' => true
-                ),
-                'hierarchical' => true,
-                'supports' => array('title', 'custom-fields'),
-                'public' => true,
-                'has_archive' => true
-            )
-        );
-};
 
 
 
