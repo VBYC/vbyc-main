@@ -302,16 +302,20 @@ add_action( 'admin_init', 'hide_editor' );
 
 function hide_editor() {
     // Get the Post ID.
-    // $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
-    // if( !isset( $post_id ) ) return;
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
 
     // // Get the name of the Page Template file.
-    // $template_file = get_post_meta($post_id, '_wp_page_template', true);
+    $template_file = get_post_meta($post_id, '_wp_page_template', true);
 
     
     // if($template_file == 'templates/image-fills-whole-page.php' || 'templates/timeline.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
     //     remove_post_type_support('page', 'editor');
     // }
+
+    if($template_file == 'templates/faqs.php'){ // edit the template name
+        remove_post_type_support('page', 'editor');
+    }
 }
 
 
@@ -484,6 +488,38 @@ function customposttype_image_box()
   add_meta_box('postimagediv', 'Featured Image', 'post_thumbnail_meta_box', 'post', 'side', 'high');
   }
 add_action('do_meta_boxes', 'customposttype_image_box');
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ADMIN STYLES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+add_action('admin_head', 'admin_styles');
+function admin_styles() {
+    // Get the Post ID.
+    $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+    if( !isset( $post_id ) ) return;
+
+    // // Get the name of the Page Template file.
+    $template_file = get_post_meta($post_id, '_wp_page_template', true);
+
+    if($template_file == 'templates/faqs.php') { 
+    ?>
+
+    <style>
+        .acf-editor-wrap iframe {
+            height: 100px !important;
+            min-height: 100px;
+        }
+        .acf-field textarea  {
+            height: 160px !important;
+            min-height: 160px;
+        }
+    </style>
+    <?php
+    }
+}
 
 
 
