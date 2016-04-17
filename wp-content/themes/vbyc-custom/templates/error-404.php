@@ -31,7 +31,7 @@
                                 $has_content_headline = get_field( "content_headline",$errorpageid );
                                 if ( $has_content_headline ) { ?>
 
-                                    <h2 class="heading"><?php the_field( 'content_headline',$errorpageid ); ?></h2> 
+                                    <h3 class="heading"><?php the_field( 'content_headline',$errorpageid ); ?></h3> 
 
                                 <? } ?>
 
