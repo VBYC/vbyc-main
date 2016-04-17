@@ -1848,7 +1848,7 @@ hr {
 
 /* line 9, sass/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .modal-title, .h4, .h5, .h6 {
+.h1, .h2, .page-template-gallery .modal-title, .h3, .modal-title, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
@@ -1863,8 +1863,9 @@ h4 .small, h5 small,
 h5 .small, h6 small,
 h6 .small,
 .h1 small,
-.h1 .small, .h2 small,
-.h2 .small, .h3 small, .modal-title small,
+.h1 .small, .h2 small, .page-template-gallery .modal-title small,
+.h2 .small,
+.page-template-gallery .modal-title .small, .h3 small, .modal-title small,
 .h3 .small,
 .modal-title .small, .h4 small,
 .h4 .small, .h5 small,
@@ -1877,7 +1878,7 @@ h6 .small,
 
 /* line 24, sass/bootstrap/_type.scss */
 h1, .h1,
-h2, .h2,
+h2, .h2, .page-template-gallery .modal-title,
 h3, .h3, .modal-title {
   margin-top: 22px;
   margin-bottom: 11px;
@@ -1887,8 +1888,9 @@ h1 small,
 h1 .small, .h1 small,
 .h1 .small,
 h2 small,
-h2 .small, .h2 small,
+h2 .small, .h2 small, .page-template-gallery .modal-title small,
 .h2 .small,
+.page-template-gallery .modal-title .small,
 h3 small,
 h3 .small, .h3 small, .modal-title small,
 .h3 .small,
@@ -1922,8 +1924,8 @@ h1, .h1 {
 }
 
 /* line 48, sass/bootstrap/_type.scss */
-h2, .h2 {
-  font-size: 34px;
+h2, .h2, .page-template-gallery .modal-title {
+  font-size: 28px;
 }
 
 /* line 49, sass/bootstrap/_type.scss */
@@ -9313,44 +9315,59 @@ h1, .h1 {
 }
 
 /* line 63, sass/partials/_typography.scss */
-h2, .h2 {
+.h2-alt {
   color: #555555;
   font-family: "Roboto Slab", serif;
   font-size: 34px;
+  line-height: 1.4;
+}
+/* line 68, sass/partials/_typography.scss */
+.h2-alt a, .h2-alt .link-primary, a .h2-alt, .link-primary .h2-alt {
+  color: #555555;
+}
+/* line 70, sass/partials/_typography.scss */
+.h2-alt a:hover, .h2-alt .link-primary:hover, a .h2-alt:hover, .link-primary .h2-alt:hover {
+  text-decoration: none;
 }
 
-/* line 68, sass/partials/_typography.scss */
-h3, .h3, .modal-title {
+/* line 75, sass/partials/_typography.scss */
+h2, .h2, .page-template-gallery .modal-title {
   color: #E74C3C;
   font-family: "Roboto Slab", serif;
   font-size: 28px;
   line-height: 1.4;
 }
-/* line 73, sass/partials/_typography.scss */
-h3 a, h3 .link-primary, a h3, .link-primary h3, .h3 a, .modal-title a, .h3 .link-primary, .modal-title .link-primary, a .h3, .link-primary .h3, a .modal-title, .link-primary .modal-title {
+/* line 80, sass/partials/_typography.scss */
+h2 a, h2 .link-primary, a h2, .link-primary h2, .h2 a, .page-template-gallery .modal-title a, .h2 .link-primary, .page-template-gallery .modal-title .link-primary, a .h2, .link-primary .h2, a .page-template-gallery .modal-title, .page-template-gallery a .modal-title, .link-primary .page-template-gallery .modal-title, .page-template-gallery .link-primary .modal-title {
   color: #E74C3C;
 }
-/* line 75, sass/partials/_typography.scss */
-h3 a:hover, h3 .link-primary:hover, a h3:hover, .link-primary h3:hover, .h3 a:hover, .modal-title a:hover, .h3 .link-primary:hover, .modal-title .link-primary:hover, a .h3:hover, .link-primary .h3:hover, a .modal-title:hover, .link-primary .modal-title:hover {
+/* line 82, sass/partials/_typography.scss */
+h2 a:hover, h2 .link-primary:hover, a h2:hover, .link-primary h2:hover, .h2 a:hover, .page-template-gallery .modal-title a:hover, .h2 .link-primary:hover, .page-template-gallery .modal-title .link-primary:hover, a .h2:hover, .link-primary .h2:hover, a .page-template-gallery .modal-title:hover, .page-template-gallery a .modal-title:hover, .link-primary .page-template-gallery .modal-title:hover, .page-template-gallery .link-primary .modal-title:hover {
   text-decoration: none;
 }
 
-/* line 80, sass/partials/_typography.scss */
+/* line 87, sass/partials/_typography.scss */
+h3, .h3, .modal-title {
+  color: #555555;
+  font-size: 28px;
+}
+
+/* line 91, sass/partials/_typography.scss */
 h4, .h4 {
   font-size: 20px;
 }
 
-/* line 83, sass/partials/_typography.scss */
+/* line 94, sass/partials/_typography.scss */
 h5, .h5 {
   font-size: 16px;
 }
 
-/* line 86, sass/partials/_typography.scss */
+/* line 97, sass/partials/_typography.scss */
 h6, .h6 {
   font-size: 14px;
 }
 
-/* line 90, sass/partials/_typography.scss */
+/* line 101, sass/partials/_typography.scss */
 h1 a, h1 .link-primary,
 .h1 a,
 .h1 .link-primary,
@@ -9358,7 +9375,7 @@ a.h1,
 .h1.link-primary {
   color: #0595E5;
 }
-/* line 94, sass/partials/_typography.scss */
+/* line 105, sass/partials/_typography.scss */
 h1 a:hover, h1 .link-primary:hover,
 .h1 a:hover,
 .h1 .link-primary:hover,
@@ -9367,32 +9384,33 @@ a.h1:hover,
   text-decoration: none;
 }
 
-/* line 98, sass/partials/_typography.scss */
+/* line 109, sass/partials/_typography.scss */
 .nowrap {
   white-space: nowrap;
 }
 
 @media (max-width: 767px) {
-  /* line 105, sass/partials/_typography.scss */
+  /* line 116, sass/partials/_typography.scss */
   h1,
   .h1 {
     font-size: 38.4px;
   }
 
-  /* line 109, sass/partials/_typography.scss */
+  /* line 120, sass/partials/_typography.scss */
   h2,
-  .h2 {
-    font-size: 27.2px;
+  .h2,
+  .page-template-gallery .modal-title {
+    font-size: 22.4px;
   }
 
-  /* line 113, sass/partials/_typography.scss */
+  /* line 124, sass/partials/_typography.scss */
   h3,
   .h3,
   .modal-title {
     font-size: 22.4px;
   }
 
-  /* line 117, sass/partials/_typography.scss */
+  /* line 128, sass/partials/_typography.scss */
   h4,
   .h4 {
     font-size: 20px;
@@ -10921,17 +10939,18 @@ img[src*=".svg"] .main-logo-container .ie9 {
 /* line 42, sass/partials/templates/_grid.scss */
 .page-template-gallery .modal-title {
   font-size: 20px;
+  margin: 0;
 }
-/* line 45, sass/partials/templates/_grid.scss */
+/* line 47, sass/partials/templates/_grid.scss */
 .page-template-gallery .modal-header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 50, sass/partials/templates/_grid.scss */
+/* line 52, sass/partials/templates/_grid.scss */
 .page-template-gallery .modal-body {
   padding: 0;
 }
-/* line 54, sass/partials/templates/_grid.scss */
+/* line 56, sass/partials/templates/_grid.scss */
 .page-template-gallery .details {
   margin-bottom: 3em;
 }

@@ -60,15 +60,22 @@ h1, .h1 {
 	font-family: $font-family-serif;
 	font-size:  $font-size-h1;
 }
-h2, .h2 {
+.h2-alt {
     color: $text-color;
     font-family: $font-family-serif;
-    font-size:  $font-size-h2;
+    font-size:  $font-size-h2-alt;
+    line-height: 1.4;
+    a, a & {
+        color: $text-color;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
-h3, .h3 {
-	color: $color-red;
-	font-family: $font-family-serif;
-    font-size:  $font-size-h3;
+h2, .h2 {
+    color: $color-red;
+    font-family: $font-family-serif;
+    font-size:  $font-size-h2;
     line-height: 1.4;
     a, a & {
         color: $color-red;
@@ -76,6 +83,10 @@ h3, .h3 {
             text-decoration: none;
         }
     }
+}
+h3, .h3 {
+    color: $text-color;
+    font-size:  $font-size-h3;
 }
 h4, .h4 {
     font-size:  $font-size-h4;

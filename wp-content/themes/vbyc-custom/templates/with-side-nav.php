@@ -59,7 +59,7 @@ Template Name: With Side Nav
                                     $anchor_link        = convertToLinkable($headline);
                             ?>
                                 <li id="<?=$anchor_link?>" class="item">                                    
-                                    <h3 class="heading <?=$anchor_link?>"> <?=$headline?></h3>
+                                    <h2 class="heading <?=$anchor_link?>"> <?=$headline?></h2>
                                     <div class="description">
                                         <?=$description?>
                                     </div>

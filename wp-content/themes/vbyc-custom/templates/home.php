@@ -69,7 +69,7 @@ Template Name: Home
                                 echo $close_a_tag;
                             ?>
                             <div class="content-primary-text">
-                                <h3 class="headline"><?=$headline?></h3>
+                                <h2 class="headline"><?=$headline?></h2>
                                 <div class="row">
                                     <div class="description col-md-offset-1 col-md-10">
                                         <?=$description?>
@@ -137,7 +137,7 @@ Template Name: Home
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <div class="content content-primary-text">
-                                <h3 class="headline"><?=$headline?></h3>
+                                <h2 class="headline"><?=$headline?></h2>
                                  <div class="description">
                                     <?=$description?>
                                 </div>
@@ -181,7 +181,7 @@ Template Name: Home
                         <div class="col-xs-12">
                             <div class="content">
                                 <?=$a_tag_open?>
-                                    <h3 class="headline"><?=$headline?></h3>
+                                    <h2 class="headline"><?=$headline?></h2>
                                     <p class="cta"><?=$link_label?></p>
                                 <?=$a_tag_close?>
                             </div>
@@ -220,11 +220,11 @@ Template Name: Home
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="content">
-                            <h3 class="h1">
+                            <h2 class="h1">
                                 <?=$a_tag_open?>
                                     <?=$headline?>
                                 <?=$a_tag_close?>
-                            </h3>
+                            </h2>
                             <div class="row">
                                 <div class="col-sm-offset-2 col-sm-8">
                                     <div class="content content-primary-text">
@@ -274,7 +274,7 @@ Template Name: Home
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <div class="content content-primary-text">
-                                <h3 class="headline">Cleo the Moose</h3>
+                                <h2 class="headline">Cleo the Moose</h2>
                                 <div class="description">
                                     <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures lie within our camp buildings and grounds?</p>
                                 </div>

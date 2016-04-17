@@ -39,7 +39,7 @@ Template Name: FAQs
                                         $anchor_link    = convertToLinkable($question);
                                 ?>
                                 <li id="<?=$anchor_link?>" class="item">                                    
-                                    <h3 class="heading"><?=$question?></h3>
+                                    <h2 class="heading"><?=$question?></h2>
                                     <?=$answer?>
                                 </li>
                                 <?php endwhile; ?>

@@ -58,7 +58,7 @@ Template Name: Gallery
                                 data-title="<?=$grid_title?>" 
                                 data-footer="<?=$grid_description?>">
                                 <img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
-                                <h3 class="gallery-label"><?=$grid_title?></h3>
+                                <h2 class="gallery-label"><?=$grid_title?></h2>
                             </a>
                             <div class="visible-xs-block details">
                                 <p class="description"><strong><?=$grid_title?></strong> &mdash; <?=$grid_description ?></p>

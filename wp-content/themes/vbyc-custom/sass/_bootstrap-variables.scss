@@ -81,7 +81,8 @@ $font-family-link:          'Varela Round', sans-serif;
  $font-size-x-small:         ceil(($font-size-base * 0.6875)); // ~11px
 
  $font-size-h1:              floor(($font-size-base * 4)); // ~64px
- $font-size-h2:              floor(($font-size-base * 2.125)); // ~34px
+ $font-size-h2:              floor(($font-size-base * 1.75)); // ~28px
+ $font-size-h2-alt:          floor(($font-size-base * 2.125)); // ~34px
 // $font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
 // $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
 // $font-size-h5:            $font-size-base

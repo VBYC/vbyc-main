@@ -55,7 +55,7 @@ Template Name: News
                                     <p class="date">Posted on <?=get_the_date();?></p>
 
                                     <? // TITLE ?>
-                                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
                                     <? // EXEPERPT ?>
                                     <div><?php the_excerpt(); ?></div>

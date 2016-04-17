@@ -140,12 +140,12 @@ Template Name: Schedule
                                         <?  } ?>
                                             
                                         <!-- Group <?=$group_current?> -->
-                                        <h2 id="grades-<?=$grade_current_link?>" class="heading-category"><?=$group_current_label?></h2>
+                                        <h2 id="grades-<?=$grade_current_link?>" class="h2-alt heading-category"><?=$group_current_label?></h2>
                                         <ul class="content-list list-multiple-details sidenav-anchor-target list-unstyled">
                                             <li class="item">
                                     <? } ?>
 
-                                <h3 class="heading">
+                                <h3 class="h2 heading">
                                     <span class="nowrap"><?=$headline?></span> | 
                                     <span class="date nowrap"><?=$display_dates?></span>  
                                     <?php if ($cost) { ?>| Cost: $<?=$cost?> <? } ?>
