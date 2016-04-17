@@ -21,14 +21,12 @@
                         <div class="footer-message">
                             <?php the_field('footer_headline', 'option'); ?>
                         </div>
-                        <div class="item pad-bot-4 " > 
-                            <?php   
+                        <?php   
 
-                            /* FOOTER NAV */ 
-                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-footer.php");
-                            
-                            ?>
-                        </div>
+                        /* FOOTER NAV */ 
+                        include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/nav-footer.php");
+                        
+                        ?>
                     </div>
                 </div>
             </div>

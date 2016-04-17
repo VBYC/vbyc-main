@@ -7,7 +7,7 @@
     
     .footer-nav {
         margin-bottom: -20px;
-        .nav-item {
+        .menu-item {
             display: block;
             margin-top: 2px;
         }
@@ -33,23 +33,26 @@
     .footer-nav {
         margin-top: 5px;
         margin-bottom: 30px;
-        .nav-item {
+        .menu-item {
             padding-left: 5px;
             padding-right: 5px;
         }
     }
-    .nav-item {
-        &:not(:last-child) {
-            a {
-                &:after {
-                    content: "|";
-                    display: inline-block;
-                    margin-left: 10px;
-                    color: $text-color;
+    .footer-nav {
+        .menu-item {
+            &:not(:last-child) {
+                a {
+                    &:after {
+                        content: "|";
+                        display: inline-block;
+                        margin-left: 10px;
+                        color: $text-color;
+                    }
                 }
             }
         }
     }
+    
 }
 
 @media (min-width: $screen-md-min) {

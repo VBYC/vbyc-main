@@ -9815,17 +9815,6 @@ img[src*=".svg"] .main-logo-container .ie9 {
   margin-bottom: 20px;
 }
 
-/* line 21, sass/partials/_footer.scss */
-.global-contact-info {
-  text-align: center;
-}
-/* line 23, sass/partials/_footer.scss */
-.global-contact-info .item {
-  margin: 0 20px;
-  display: inline-block;
-  text-align: left;
-}
-
 @media (min-width: 768px) {
   /* line 32, sass/partials/_footer.scss */
   .footer,
@@ -10350,7 +10339,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
     margin-bottom: -20px;
   }
   /* line 10, sass/partials/_nav-footer.scss */
-  .footer-nav .nav-item {
+  .footer-nav .menu-item {
     display: block;
     margin-top: 2px;
   }
@@ -10375,13 +10364,13 @@ img[src*=".svg"] .main-logo-container .ie9 {
     margin-bottom: 30px;
   }
   /* line 36, sass/partials/_nav-footer.scss */
-  .footer-nav .nav-item {
+  .footer-nav .menu-item {
     padding-left: 5px;
     padding-right: 5px;
   }
 
-  /* line 44, sass/partials/_nav-footer.scss */
-  .nav-item:not(:last-child) a:after, .nav-item:not(:last-child) .link-primary:after {
+  /* line 45, sass/partials/_nav-footer.scss */
+  .footer-nav .menu-item:not(:last-child) a:after, .footer-nav .menu-item:not(:last-child) .link-primary:after {
     content: "|";
     display: inline-block;
     margin-left: 10px;
