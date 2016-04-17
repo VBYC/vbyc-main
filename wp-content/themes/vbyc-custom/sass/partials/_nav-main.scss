@@ -14,75 +14,50 @@
 
 
 // Parent nav links container
-.nav-menu,
-.navbar-list {
+.nav-menu {
     @extend .list-unstyled;
     font-size: 14px;
     font-family: $font-family-link;
       
     // Parent nav links
-    > .menu-item > a,
-    .link {
-        padding: 18px 10px;
-        line-height: 1;
-        display: block; 
-        text-decoration: none; 
-        &:hover {
-            text-decoration: none;
-            cursor: pointer;
-        }
-        // Special nav link
-        &.emphasize {
-            background-color: $color-red;
-            color: $color-white;
+    > .menu-item {
+        > a {
+            padding: 18px 10px;
+            line-height: 1;
+            display: block; 
+            text-decoration: none; 
             &:hover {
+                text-decoration: none;
+                cursor: pointer;
+            }
+            // Special nav link
+            &.emphasize {
+                background-color: $color-red;
                 color: $color-white;
-                background-color: $color-red-darker;
-            }
-            &:focus,
-            &:active {
-                 color: $color-white;
-                 background-color: $link-focus-color;
-            }
-        }
-    }
-    // Selected 
-    > .current-menu-item,
-    > .current-menu-parent, 
-    > .selected {
-        .link {
-            &.normal,
-            &.normal:hover {
-                color: $color-slate;
-            }
-        }
-        &:not(.emphasize) {
-            > a {
-                &:hover,
-                &.normal,
-                &.normal:hover {
-                    color: $color-slate;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-red-darker;
+                }
+                &:focus,
+                &:active {
+                     color: $color-white;
+                     background-color: $link-focus-color;
                 }
             }
         }
-    } 
-
+        
+    }
+    // Selected 
     > .menu-item {
         &.current-menu-item,
         &.current-menu-parent {
             &:not(.emphasize) {
-                > a {
+                > a,
+                > a:hover {
                     color: $color-slate;
-                    &:hover {
-                        color: $color-slate;
-                    }
                 }
             }
         }
-    }
-
-    // For WP
-    > .menu-item {
         &.emphasize {
            > a {
                 background-color: $color-red;
@@ -102,8 +77,7 @@
 }
 
 // Sub nav links container
-.sub-menu,
-.navbar-list-sub {
+.sub-menu {
     @extend .list-unstyled;
     display: none;
 //    display: block;
@@ -129,24 +103,21 @@
 
 
     // Sub nav links
-    > .menu-item > a,
-    .link-sub {
-        display: block;
-        padding: 18px;
-        .nav-menu &,
-        .navbar-list & {
-            color: $color-white; /* To override for WP */
-        }
-        color: $color-white;
-        background-color: $link-color;
-        &:hover {
-            background-color: $link-color-emphasize;
-            text-decoration: none;
-            color: $color-white;
-        }
-    }
-
     > .menu-item {
+        a {
+            display: block;
+            padding: 18px;
+            .nav-menu & {
+                color: $color-white; /* To override for WP */
+            }
+            color: $color-white;
+            background-color: $link-color;
+            &:hover {
+                background-color: $link-color-emphasize;
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
         &.current-menu-item {
             > a {
                 background-color: $link-color-emphasize;

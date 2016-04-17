@@ -2172,9 +2172,7 @@ ol ol {
 }
 
 /* line 167, sass/bootstrap/_type.scss */
-.list-unstyled, .nav-menu,
-.navbar-list, .sub-menu,
-.navbar-list-sub {
+.list-unstyled, .nav-menu, .sub-menu {
   padding-left: 0;
   list-style: none;
 }
@@ -9860,160 +9858,69 @@ img[src*=".svg"] .main-logo-container .ie9 {
 }
 
 /* line 17, sass/partials/_nav-main.scss */
-.nav-menu,
-.navbar-list {
+.nav-menu {
   font-size: 14px;
   font-family: "Varela Round", sans-serif;
 }
 /* line 24, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item > a, .nav-menu > .menu-item > .link-primary,
-.nav-menu .link,
-.navbar-list > .menu-item > a,
-.navbar-list > .menu-item > .link-primary,
-.navbar-list .link {
+.nav-menu > .menu-item > a, .nav-menu > .menu-item > .link-primary {
   padding: 18px 10px;
   line-height: 1;
   display: block;
   text-decoration: none;
 }
-/* line 30, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item > a:hover, .nav-menu > .menu-item > .link-primary:hover,
-.nav-menu .link:hover,
-.navbar-list > .menu-item > a:hover,
-.navbar-list > .menu-item > .link-primary:hover,
-.navbar-list .link:hover {
+/* line 29, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item > a:hover, .nav-menu > .menu-item > .link-primary:hover {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 35, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item > a.emphasize, .nav-menu > .menu-item > .emphasize.link-primary,
-.nav-menu .link.emphasize,
-.navbar-list > .menu-item > a.emphasize,
-.navbar-list > .menu-item > .emphasize.link-primary,
-.navbar-list .link.emphasize {
+/* line 34, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item > a.emphasize, .nav-menu > .menu-item > .emphasize.link-primary {
   background-color: #E74C3C;
   color: #FFF;
 }
-/* line 38, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item > a.emphasize:hover, .nav-menu > .menu-item > .emphasize.link-primary:hover,
-.nav-menu .link.emphasize:hover,
-.navbar-list > .menu-item > a.emphasize:hover,
-.navbar-list > .menu-item > .emphasize.link-primary:hover,
-.navbar-list .link.emphasize:hover {
+/* line 37, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item > a.emphasize:hover, .nav-menu > .menu-item > .emphasize.link-primary:hover {
   color: #FFF;
   background-color: #CB1300;
 }
-/* line 42, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item > a.emphasize:focus, .nav-menu > .menu-item > .emphasize.link-primary:focus, .nav-menu > .menu-item > a.emphasize:active, .nav-menu > .menu-item > .emphasize.link-primary:active,
-.nav-menu .link.emphasize:focus,
-.nav-menu .link.emphasize:active,
-.navbar-list > .menu-item > a.emphasize:focus,
-.navbar-list > .menu-item > .emphasize.link-primary:focus,
-.navbar-list > .menu-item > a.emphasize:active,
-.navbar-list > .menu-item > .emphasize.link-primary:active,
-.navbar-list .link.emphasize:focus,
-.navbar-list .link.emphasize:active {
+/* line 41, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item > a.emphasize:focus, .nav-menu > .menu-item > .emphasize.link-primary:focus, .nav-menu > .menu-item > a.emphasize:active, .nav-menu > .menu-item > .emphasize.link-primary:active {
   color: #FFF;
   background-color: #2C3E50;
 }
-/* line 54, sass/partials/_nav-main.scss */
-.nav-menu > .current-menu-item .link.normal, .nav-menu > .current-menu-item .link.normal:hover,
-.nav-menu > .current-menu-parent .link.normal,
-.nav-menu > .current-menu-parent .link.normal:hover,
-.nav-menu > .selected .link.normal,
-.nav-menu > .selected .link.normal:hover,
-.navbar-list > .current-menu-item .link.normal,
-.navbar-list > .current-menu-item .link.normal:hover,
-.navbar-list > .current-menu-parent .link.normal,
-.navbar-list > .current-menu-parent .link.normal:hover,
-.navbar-list > .selected .link.normal,
-.navbar-list > .selected .link.normal:hover {
+/* line 55, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item.current-menu-item:not(.emphasize) > a, .nav-menu > .menu-item.current-menu-item:not(.emphasize) > .link-primary,
+.nav-menu > .menu-item.current-menu-item:not(.emphasize) > a:hover,
+.nav-menu > .menu-item.current-menu-item:not(.emphasize) > .link-primary:hover, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > a, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > .link-primary,
+.nav-menu > .menu-item.current-menu-parent:not(.emphasize) > a:hover,
+.nav-menu > .menu-item.current-menu-parent:not(.emphasize) > .link-primary:hover {
   color: #2C3E50;
 }
-/* line 61, sass/partials/_nav-main.scss */
-.nav-menu > .current-menu-item:not(.emphasize) > a:hover, .nav-menu > .current-menu-item:not(.emphasize) > .link-primary:hover, .nav-menu > .current-menu-item:not(.emphasize) > a.normal, .nav-menu > .current-menu-item:not(.emphasize) > .normal.link-primary, .nav-menu > .current-menu-item:not(.emphasize) > a.normal:hover, .nav-menu > .current-menu-item:not(.emphasize) > .normal.link-primary:hover,
-.nav-menu > .current-menu-parent:not(.emphasize) > a:hover,
-.nav-menu > .current-menu-parent:not(.emphasize) > .link-primary:hover,
-.nav-menu > .current-menu-parent:not(.emphasize) > a.normal,
-.nav-menu > .current-menu-parent:not(.emphasize) > .normal.link-primary,
-.nav-menu > .current-menu-parent:not(.emphasize) > a.normal:hover,
-.nav-menu > .current-menu-parent:not(.emphasize) > .normal.link-primary:hover,
-.nav-menu > .selected:not(.emphasize) > a:hover,
-.nav-menu > .selected:not(.emphasize) > .link-primary:hover,
-.nav-menu > .selected:not(.emphasize) > a.normal,
-.nav-menu > .selected:not(.emphasize) > .normal.link-primary,
-.nav-menu > .selected:not(.emphasize) > a.normal:hover,
-.nav-menu > .selected:not(.emphasize) > .normal.link-primary:hover,
-.navbar-list > .current-menu-item:not(.emphasize) > a:hover,
-.navbar-list > .current-menu-item:not(.emphasize) > .link-primary:hover,
-.navbar-list > .current-menu-item:not(.emphasize) > a.normal,
-.navbar-list > .current-menu-item:not(.emphasize) > .normal.link-primary,
-.navbar-list > .current-menu-item:not(.emphasize) > a.normal:hover,
-.navbar-list > .current-menu-item:not(.emphasize) > .normal.link-primary:hover,
-.navbar-list > .current-menu-parent:not(.emphasize) > a:hover,
-.navbar-list > .current-menu-parent:not(.emphasize) > .link-primary:hover,
-.navbar-list > .current-menu-parent:not(.emphasize) > a.normal,
-.navbar-list > .current-menu-parent:not(.emphasize) > .normal.link-primary,
-.navbar-list > .current-menu-parent:not(.emphasize) > a.normal:hover,
-.navbar-list > .current-menu-parent:not(.emphasize) > .normal.link-primary:hover,
-.navbar-list > .selected:not(.emphasize) > a:hover,
-.navbar-list > .selected:not(.emphasize) > .link-primary:hover,
-.navbar-list > .selected:not(.emphasize) > a.normal,
-.navbar-list > .selected:not(.emphasize) > .normal.link-primary,
-.navbar-list > .selected:not(.emphasize) > a.normal:hover,
-.navbar-list > .selected:not(.emphasize) > .normal.link-primary:hover {
-  color: #2C3E50;
-}
-/* line 74, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item.current-menu-item:not(.emphasize) > a, .nav-menu > .menu-item.current-menu-item:not(.emphasize) > .link-primary, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > a, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > .link-primary,
-.navbar-list > .menu-item.current-menu-item:not(.emphasize) > a,
-.navbar-list > .menu-item.current-menu-item:not(.emphasize) > .link-primary,
-.navbar-list > .menu-item.current-menu-parent:not(.emphasize) > a,
-.navbar-list > .menu-item.current-menu-parent:not(.emphasize) > .link-primary {
-  color: #2C3E50;
-}
-/* line 76, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item.current-menu-item:not(.emphasize) > a:hover, .nav-menu > .menu-item.current-menu-item:not(.emphasize) > .link-primary:hover, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > a:hover, .nav-menu > .menu-item.current-menu-parent:not(.emphasize) > .link-primary:hover,
-.navbar-list > .menu-item.current-menu-item:not(.emphasize) > a:hover,
-.navbar-list > .menu-item.current-menu-item:not(.emphasize) > .link-primary:hover,
-.navbar-list > .menu-item.current-menu-parent:not(.emphasize) > a:hover,
-.navbar-list > .menu-item.current-menu-parent:not(.emphasize) > .link-primary:hover {
-  color: #2C3E50;
-}
-/* line 87, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item.emphasize > a, .nav-menu > .menu-item.emphasize > .link-primary,
-.navbar-list > .menu-item.emphasize > a,
-.navbar-list > .menu-item.emphasize > .link-primary {
+/* line 62, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item.emphasize > a, .nav-menu > .menu-item.emphasize > .link-primary {
   background-color: #E74C3C;
   color: #FFF;
 }
-/* line 90, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item.emphasize > a:hover, .nav-menu > .menu-item.emphasize > .link-primary:hover,
-.navbar-list > .menu-item.emphasize > a:hover,
-.navbar-list > .menu-item.emphasize > .link-primary:hover {
+/* line 65, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item.emphasize > a:hover, .nav-menu > .menu-item.emphasize > .link-primary:hover {
   color: #FFF;
   background-color: #CB1300;
 }
-/* line 94, sass/partials/_nav-main.scss */
-.nav-menu > .menu-item.emphasize > a:focus, .nav-menu > .menu-item.emphasize > .link-primary:focus, .nav-menu > .menu-item.emphasize > a:active, .nav-menu > .menu-item.emphasize > .link-primary:active,
-.navbar-list > .menu-item.emphasize > a:focus,
-.navbar-list > .menu-item.emphasize > .link-primary:focus,
-.navbar-list > .menu-item.emphasize > a:active,
-.navbar-list > .menu-item.emphasize > .link-primary:active {
+/* line 69, sass/partials/_nav-main.scss */
+.nav-menu > .menu-item.emphasize > a:focus, .nav-menu > .menu-item.emphasize > .link-primary:focus, .nav-menu > .menu-item.emphasize > a:active, .nav-menu > .menu-item.emphasize > .link-primary:active {
   color: #FFF;
   background-color: #2C3E50;
 }
 
-/* line 105, sass/partials/_nav-main.scss */
-.sub-menu,
-.navbar-list-sub {
+/* line 80, sass/partials/_nav-main.scss */
+.sub-menu {
   display: none;
   position: relative;
   z-index: 8;
 }
-/* line 113, sass/partials/_nav-main.scss */
-.sub-menu:before,
-.navbar-list-sub:before {
+/* line 87, sass/partials/_nav-main.scss */
+.sub-menu:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -10024,49 +9931,30 @@ img[src*=".svg"] .main-logo-container .ie9 {
   border-width: 0 8px 9px 8px;
   border-color: transparent transparent #37BC98 transparent;
 }
-/* line 125, sass/partials/_nav-main.scss */
-.sub-menu.alt-arrow-emphasize:before,
-.navbar-list-sub.alt-arrow-emphasize:before {
+/* line 99, sass/partials/_nav-main.scss */
+.sub-menu.alt-arrow-emphasize:before {
   border-color: transparent transparent #2E9D7F transparent;
 }
-/* line 132, sass/partials/_nav-main.scss */
-.sub-menu > .menu-item > a, .sub-menu > .menu-item > .link-primary,
-.sub-menu .link-sub,
-.navbar-list-sub > .menu-item > a,
-.navbar-list-sub > .menu-item > .link-primary,
-.navbar-list-sub .link-sub {
+/* line 107, sass/partials/_nav-main.scss */
+.sub-menu > .menu-item a, .sub-menu > .menu-item .link-primary {
   display: block;
   padding: 18px;
   color: #FFF;
   background-color: #37BC98;
 }
-/* line 136, sass/partials/_nav-main.scss */
-.nav-menu .sub-menu > .menu-item > a, .nav-menu .sub-menu > .menu-item > .link-primary, .navbar-list .sub-menu > .menu-item > a, .navbar-list .sub-menu > .menu-item > .link-primary, .nav-menu
-.sub-menu .link-sub, .navbar-list
-.sub-menu .link-sub, .nav-menu
-.navbar-list-sub > .menu-item > a, .nav-menu
-.navbar-list-sub > .menu-item > .link-primary, .navbar-list
-.navbar-list-sub > .menu-item > a, .navbar-list
-.navbar-list-sub > .menu-item > .link-primary, .nav-menu
-.navbar-list-sub .link-sub, .navbar-list
-.navbar-list-sub .link-sub {
+/* line 110, sass/partials/_nav-main.scss */
+.nav-menu .sub-menu > .menu-item a, .nav-menu .sub-menu > .menu-item .link-primary {
   color: #FFF;
   /* To override for WP */
 }
-/* line 142, sass/partials/_nav-main.scss */
-.sub-menu > .menu-item > a:hover, .sub-menu > .menu-item > .link-primary:hover,
-.sub-menu .link-sub:hover,
-.navbar-list-sub > .menu-item > a:hover,
-.navbar-list-sub > .menu-item > .link-primary:hover,
-.navbar-list-sub .link-sub:hover {
+/* line 115, sass/partials/_nav-main.scss */
+.sub-menu > .menu-item a:hover, .sub-menu > .menu-item .link-primary:hover {
   background-color: #2E9D7F;
   text-decoration: none;
   color: #FFF;
 }
-/* line 151, sass/partials/_nav-main.scss */
-.sub-menu > .menu-item.current-menu-item > a, .sub-menu > .menu-item.current-menu-item > .link-primary,
-.navbar-list-sub > .menu-item.current-menu-item > a,
-.navbar-list-sub > .menu-item.current-menu-item > .link-primary {
+/* line 122, sass/partials/_nav-main.scss */
+.sub-menu > .menu-item.current-menu-item > a, .sub-menu > .menu-item.current-menu-item > .link-primary {
   background-color: #2E9D7F;
 }
 
@@ -10122,84 +10010,44 @@ img[src*=".svg"] .main-logo-container .ie9 {
     margin-bottom: 0;
     border-top: 1px solid #DDD;
   }
-  /* line 54, sass/partials/_nav-main-sm.scss */
+  /* line 56, sass/partials/_nav-main-sm.scss */
   .nav-menu > .menu-item > a, .nav-menu > .menu-item > .link-primary,
-  .nav-menu .link,
   .navbar-list > .menu-item > a,
-  .navbar-list > .menu-item > .link-primary,
-  .navbar-list .link {
+  .navbar-list > .menu-item > .link-primary {
     font-size: 18px;
   }
-  /* line 57, sass/partials/_nav-main-sm.scss */
+  /* line 58, sass/partials/_nav-main-sm.scss */
   .nav-menu > .menu-item > a:not(.expanded), .nav-menu > .menu-item > .link-primary:not(.expanded),
-  .nav-menu .link:not(.expanded),
   .navbar-list > .menu-item > a:not(.expanded),
-  .navbar-list > .menu-item > .link-primary:not(.expanded),
-  .navbar-list .link:not(.expanded) {
+  .navbar-list > .menu-item > .link-primary:not(.expanded) {
     border-bottom: 1px solid #DDD;
   }
-  /* line 61, sass/partials/_nav-main-sm.scss */
-  .nav-menu > .menu-item > a:not(.emphasize) > a, .nav-menu > .menu-item > .link-primary:not(.emphasize) > a, .nav-menu > .menu-item > a:not(.emphasize) > .link-primary, .nav-menu > .menu-item > .link-primary:not(.emphasize) > .link-primary,
-  .nav-menu .link:not(.emphasize) > a,
-  .nav-menu .link:not(.emphasize) > .link-primary,
-  .navbar-list > .menu-item > a:not(.emphasize) > a,
-  .navbar-list > .menu-item > .link-primary:not(.emphasize) > a,
-  .navbar-list > .menu-item > a:not(.emphasize) > .link-primary,
-  .navbar-list > .menu-item > .link-primary:not(.emphasize) > .link-primary,
-  .navbar-list .link:not(.emphasize) > a,
-  .navbar-list .link:not(.emphasize) > .link-primary {
+  /* line 63, sass/partials/_nav-main-sm.scss */
+  .nav-menu > .menu-item:not(.emphasize) > a, .nav-menu > .menu-item:not(.emphasize) > .link-primary,
+  .navbar-list > .menu-item:not(.emphasize) > a,
+  .navbar-list > .menu-item:not(.emphasize) > .link-primary {
     background-color: #FFF;
     color: #37BC98;
   }
-  /* line 64, sass/partials/_nav-main-sm.scss */
-  .nav-menu > .menu-item > a:not(.emphasize) > a:hover, .nav-menu > .menu-item > .link-primary:not(.emphasize) > a:hover, .nav-menu > .menu-item > a:not(.emphasize) > .link-primary:hover, .nav-menu > .menu-item > .link-primary:not(.emphasize) > .link-primary:hover,
-  .nav-menu .link:not(.emphasize) > a:hover,
-  .nav-menu .link:not(.emphasize) > .link-primary:hover,
-  .navbar-list > .menu-item > a:not(.emphasize) > a:hover,
-  .navbar-list > .menu-item > .link-primary:not(.emphasize) > a:hover,
-  .navbar-list > .menu-item > a:not(.emphasize) > .link-primary:hover,
-  .navbar-list > .menu-item > .link-primary:not(.emphasize) > .link-primary:hover,
-  .navbar-list .link:not(.emphasize) > a:hover,
-  .navbar-list .link:not(.emphasize) > .link-primary:hover {
-    color: #2E9D7F;
-    cursor: pointer;
-  }
-  /* line 71, sass/partials/_nav-main-sm.scss */
-  .nav-menu > .menu-item > a.normal, .nav-menu > .menu-item > .normal.link-primary,
-  .nav-menu .link.normal,
-  .navbar-list > .menu-item > a.normal,
-  .navbar-list > .menu-item > .normal.link-primary,
-  .navbar-list .link.normal {
-    background-color: #FFF;
-    color: #37BC98;
-  }
-  /* line 74, sass/partials/_nav-main-sm.scss */
-  .nav-menu > .menu-item > a.normal:hover, .nav-menu > .menu-item > .normal.link-primary:hover,
-  .nav-menu .link.normal:hover,
-  .navbar-list > .menu-item > a.normal:hover,
-  .navbar-list > .menu-item > .normal.link-primary:hover,
-  .navbar-list .link.normal:hover {
+  /* line 66, sass/partials/_nav-main-sm.scss */
+  .nav-menu > .menu-item:not(.emphasize) > a:hover, .nav-menu > .menu-item:not(.emphasize) > .link-primary:hover,
+  .navbar-list > .menu-item:not(.emphasize) > a:hover,
+  .navbar-list > .menu-item:not(.emphasize) > .link-primary:hover {
     color: #2E9D7F;
     cursor: pointer;
   }
 
-  /* line 83, sass/partials/_nav-main-sm.scss */
-  .sub-menu,
-  .navbar-list-sub {
+  /* line 77, sass/partials/_nav-main-sm.scss */
+  .sub-menu {
     border-bottom: 1px solid #F7F7F7;
   }
-  /* line 88, sass/partials/_nav-main-sm.scss */
-  .sub-menu:before,
-  .navbar-list-sub:before {
+  /* line 79, sass/partials/_nav-main-sm.scss */
+  .sub-menu:before {
     text-shadow: #2E9D7F 0 -1px 0;
     top: -8px;
   }
-  /* line 94, sass/partials/_nav-main-sm.scss */
-  .sub-menu > .menu-item > a, .sub-menu > .menu-item > .link-primary,
-  .sub-menu .link-sub,
-  .navbar-list-sub > .menu-item > a,
-  .navbar-list-sub > .menu-item > .link-primary,
-  .navbar-list-sub .link-sub {
+  /* line 85, sass/partials/_nav-main-sm.scss */
+  .sub-menu > .menu-item > a, .sub-menu > .menu-item > .link-primary {
     font-size: 18px;
     border-top: 1px solid #2E9D7F;
   }
