@@ -19,25 +19,7 @@
     @extend .list-unstyled;
     font-size: 14px;
     font-family: $font-family-link;
-    > .current-menu-item,
-    > .current-menu-parent, 
-    > .selected {
-        .link {
-            &.normal,
-            &.normal:hover {
-                color: $color-slate;
-            }
-        }
-        &:not(.emphasize) {
-            > a {
-                &:hover,
-                &.normal,
-                &.normal:hover {
-                    color: $color-slate;
-                }
-            }
-        }
-    }   
+      
     // Parent nav links
     > .menu-item > a,
     .link {
@@ -61,6 +43,40 @@
             &:active {
                  color: $color-white;
                  background-color: $link-focus-color;
+            }
+        }
+    }
+    // Selected 
+    > .current-menu-item,
+    > .current-menu-parent, 
+    > .selected {
+        .link {
+            &.normal,
+            &.normal:hover {
+                color: $color-slate;
+            }
+        }
+        &:not(.emphasize) {
+            > a {
+                &:hover,
+                &.normal,
+                &.normal:hover {
+                    color: $color-slate;
+                }
+            }
+        }
+    } 
+
+    > .menu-item {
+        &.current-menu-item,
+        &.current-menu-parent {
+            &:not(.emphasize) {
+                > a {
+                    color: $color-slate;
+                    &:hover {
+                        color: $color-slate;
+                    }
+                }
             }
         }
     }
@@ -128,11 +144,16 @@
             text-decoration: none;
             color: $color-white;
         }
-        &.current-menu-item,
-        &.selected {
-            background-color: $link-color-emphasize;
+    }
+
+    > .menu-item {
+        &.current-menu-item {
+            > a {
+                background-color: $link-color-emphasize;
+            }
         }
     }
+
 }
 
 
