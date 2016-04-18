@@ -1,5 +1,7 @@
 
-                        <?php 
+                    <?php 
+                    $show_mini_gallery = get_field('show_mini_gallery');
+                    if ($show_mini_gallery == 'show'):
                         $image1 = get_field('featured_image_secondary_1');
                         $image2 = get_field('featured_image_secondary_2');
                         $image3 = get_field('featured_image_secondary_3');
@@ -51,3 +53,4 @@
                         </div>
 
                         <?php endif; ?>
+                    <?php endif; ?>

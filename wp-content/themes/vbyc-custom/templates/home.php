@@ -251,49 +251,6 @@ Template Name: Home
             </div>
         </section>
         <?php endif; ?>
-
-
-
-      
-
-            
-            
-    
-
-            <!-- CLEO -->
-      <!--       <div class="banner-item banner-cleo hero-background-img">
-                <div class="container">
-                    <div class="row">
-                        
-                        <div class="col-xs-12 col-md-8 pull-right">
-                            <div class="content content-primary-img">
-                                <a href="/<?=$url_facilities?>/" class="link">
-                                    <img src="<?=$src_defer?>" data-src="/images/home/cleo.jpg" class="banner-img img-responsive" alt="Cleo the moose on the wall in the lodge">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-4">
-                            <div class="content content-primary-text">
-                                <h2 class="headline">Cleo the Moose</h2>
-                                <div class="description">
-                                    <p>Keep your elbows on the table at lunch and you have to (get to?) kiss a moose! What other treasures lie within our camp buildings and grounds?</p>
-                                </div>
-                                <a href="/<?=$url_facilities?>/" class="link">
-                                    Learn more about our facilities
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-            
-  
-
-
-
-        
-
     </main>
 
 <?php  // endwhile; endif; ?>
