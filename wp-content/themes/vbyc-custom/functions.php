@@ -352,7 +352,15 @@ function hide_editor() {
     //     remove_post_type_support('page', 'editor');
     // }
 
-    if($template_file == 'templates/faqs.php' || $template_file == 'templates/intro-only.php'){ // edit the template name
+    if(
+        $template_file == 'templates/profile.php' || 
+        $template_file == 'templates/home.php' || 
+        $template_file == 'templates/faqs.php' || 
+        $template_file == 'templates/intro-only.php'|| 
+        $template_file == 'templates/image-fills-whole-page.php' ||
+        $template_file == 'templates/news.php' ||
+        $template_file == 'templates/schedule.php' 
+    ){ // edit the template name
         remove_post_type_support('page', 'editor');
     }
 }
@@ -514,19 +522,6 @@ function my_post_gallery( $output, $attr ) {
     return $output;
 
 }
-
-// Apply filter to default gallery shortcode
-
-
-function customposttype_image_box() 
-{
-  // remove
-  remove_meta_box( 'postimagediv', 'post', 'side' );
- 
-  // add
-  add_meta_box('postimagediv', 'Featured Image', 'post_thumbnail_meta_box', 'post', 'side', 'high');
-  }
-add_action('do_meta_boxes', 'customposttype_image_box');
 
 
 

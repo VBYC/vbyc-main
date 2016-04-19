@@ -46,12 +46,11 @@ Template Name: Profile
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
-                            <?php   
-
-                            /* MAIN CONTENT */ 
-                            include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_main.php"); 
-                            
-                            ?> 
+                            <div>
+                                <?php   
+                                    echo get_field('one_column_column');
+                                ?> 
+                            </div>
                         </div>
                     </div><!-- /.row -->
                 </article><!-- /.main-article -->
