@@ -347,24 +347,20 @@ function hide_editor() {
     // // Get the name of the Page Template file.
     $template_file = get_post_meta($post_id, '_wp_page_template', true);
 
-    
-    // if($template_file == 'templates/image-fills-whole-page.php' || 'templates/timeline.php' || $template_file == 'templates/sessions.php' || $template_file == 'templates/contact.php'){ // edit the template name
-    //     remove_post_type_support('page', 'editor');
-    // }
-
-    if(
-        $template_file == 'templates/profile.php' || 
-        $template_file == 'templates/home.php' || 
-        $template_file == 'templates/faqs.php' || 
-        $template_file == 'templates/intro-only.php'|| 
-        $template_file == 'templates/image-fills-whole-page.php' ||
-        $template_file == 'templates/news.php' ||
-        $template_file == 'templates/category.php' ||
-        $template_file == 'templates/schedule.php' ||
-        $template_file == 'templates/timeline.php' 
-    ){ // edit the template name
+    // if (
+    //     $template_file == 'templates/category.php' ||
+    //     $template_file == 'templates/faqs.php' || 
+    //     $template_file == 'templates/home.php' || 
+    //     $template_file == 'templates/image-fills-whole-page.php' ||
+    //     $template_file == 'templates/intro-only.php'|| 
+    //     $template_file == 'templates/news.php' ||
+    //     $template_file == 'templates/page.php' ||
+    //     $template_file == 'templates/profile.php' || 
+    //     $template_file == 'templates/schedule.php' ||
+    //     $template_file == 'templates/timeline.php' 
+    // ){ // edit the template name
         remove_post_type_support('page', 'editor');
-    }
+    // }
 }
 
 
