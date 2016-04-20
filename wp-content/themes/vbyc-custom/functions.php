@@ -359,7 +359,9 @@ function hide_editor() {
         $template_file == 'templates/intro-only.php'|| 
         $template_file == 'templates/image-fills-whole-page.php' ||
         $template_file == 'templates/news.php' ||
-        $template_file == 'templates/schedule.php' 
+        $template_file == 'templates/category.php' ||
+        $template_file == 'templates/schedule.php' ||
+        $template_file == 'templates/timeline.php' 
     ){ // edit the template name
         remove_post_type_support('page', 'editor');
     }

@@ -59,19 +59,18 @@ Template Name: Timeline
                 <article class="main-article">
 
       
-                    
+                  
+                    <?php if( have_rows('timeline_event') ): ?>
+                        <?php 
+                            while( have_rows('timeline_event') ): the_row(); 
+                            
+                     
 
-
-                    <?php // TYPICAL DAY EVENTS
-                        $num = 0;
-                        if ( $typicalday->have_posts() ) :
-                            while ( $typicalday->have_posts() ) : $typicalday->the_post();
-
-                                $event          = get_the_title($post);
-                                $time           = strtoupper(get_field('timeline_time'));
-                                $description    = get_field('timeline_description');
-                                $image          = get_field('timeline_image');
-                                $image_link     = get_field('timeline_image_link');
+                                $event          = get_sub_field('event');
+                                $time           = strtoupper(get_sub_field('timeline_time'));
+                                $description    = get_sub_field('timeline_description');
+                                $image          = get_sub_field('timeline_image');
+                                $image_link     = get_sub_field('timeline_image_link');
 
                                 // Swap the alignment of image/text on every other item
                                 if ($num & 1 ) {
@@ -124,13 +123,8 @@ Template Name: Timeline
                             </div>
                         </div><!-- /.row -->
                     </div><!-- /.timeline-item -->
-                    <?php
-
-                            endwhile;
-                            wp_reset_postdata();
-                        endif; 
-
-                    ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
 
                     <? /*
                     <div class="timeline-item first">
