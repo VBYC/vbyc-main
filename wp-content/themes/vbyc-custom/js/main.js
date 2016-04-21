@@ -1,8 +1,6 @@
 (function( vbyc, $, undefined ) { 
 
 	var $body   				= $(document.body),
-		// subNavSelector 			= '.navbar-list-sub',
-	 //    navbarSiblingsSelector  = '.navbar-list .link',
 		subNavSelector 			= '.sub-menu',
 	    navbarSiblingsSelector  = '#menu-main-navigation > .menu-item',
 	    sideNav 				= $('#sidenav'),
@@ -31,10 +29,10 @@
 			vbyc.util.navbarSticky();
 
 			// Set up side nav with anchor links
-			// if (hasSidenav) {
+			if (hasSidenav) {
 				vbyc.util.sidebarScrollSpy();
 				// vbyc.util.sidebarScrollSpyScrollTo();
-			// }
+			}
 
 			// Set up hash scrolling
 			vbyc.util.scrollToHashOnClick();
@@ -218,6 +216,7 @@
 			startTimer();
 	    },
 		sidebarScrollSpy: function() {
+			
 			if ($('#sidenav-container').length > 0) {
 
 				var sidenavContainer 			= '#sidenav-container';

@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying the footer
@@ -71,23 +72,14 @@
 
 <?php wp_footer(); ?>
 
-
-
-<script>
-    jQuery(document).ready(function() {
-        vbyc.util.init({hasSidenav : false});
-    });
-</script>
-
-<?php if ( is_front_page() ) { ?>
-<script>
-    jQuery(document).ready(function() {
-        vbyc.util.init({highResPath : "/images/heroes/home.jpg"});
-    });
-</script>
-
-<? } ?>
-
+    <script>
+            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            // e.src='//www.google-analytics.com/analytics.js';
+            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            // ga('create','UA-8152298-1','auto');ga('send','pageview');
+    </script>
 
 
 </body>
