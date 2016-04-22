@@ -216,7 +216,7 @@
 			startTimer();
 	    },
 		sidebarScrollSpy: function() {
-			
+
 			if ($('#sidenav-container').length > 0) {
 
 				var sidenavContainer 			= '#sidenav-container';

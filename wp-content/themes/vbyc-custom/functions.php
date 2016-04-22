@@ -318,14 +318,14 @@ function vbyc_footer_scripts(){
     wp_enqueue_script('main');
 
     // TODO: Make side nav true only appear for side navs
-    $js_calls = ' hasSidenav : "true", ';
-    if ( is_front_page() ) {  
-        // TODO: Dpoes this function?
-       $js_calls .= ' highResPath : "/images/heroes/home.jpg", ';
-    }
-    wp_add_inline_script( 'main', 'jQuery(document).ready(function() {
-        vbyc.util.init({'.$js_calls.'});
-    });' );
+    // $js_calls = ' hasSidenav : "true", ';
+    // if ( is_front_page() ) {  
+    //     // TODO: Dpoes this function?
+    //    $js_calls .= ' highResPath : "/images/heroes/home.jpg", ';
+    // }
+    // wp_add_inline_script( 'main', 'jQuery(document).ready(function() {
+    //     vbyc.util.init({'.$js_calls.'});
+    // });' );
 
 
 }

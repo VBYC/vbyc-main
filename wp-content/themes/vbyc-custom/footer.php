@@ -45,42 +45,40 @@
             </div>
         </div>
     </footer>
-<? /*
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
-    <script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <script src="/js/vendor/bootstrap.min.js"></script>
-    <script src="/js/vendor/ekko-lightbox.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script>
-        $(document).ready(function() {
-            vbyc.util.init({hasSidenav : false});
-        });
-    </script>
-    <script>
-            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            // e.src='//www.google-analytics.com/analytics.js';
-            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            // ga('create','UA-8152298-1','auto');ga('send','pageview');
-    </script>
-    */ ?>
-
-
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
 
-    <script>
-            // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            // e.src='//www.google-analytics.com/analytics.js';
-            // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            // ga('create','UA-8152298-1','auto');ga('send','pageview');
-    </script>
-
-
+<?php  
+    // Initiate Side Nav Javascript
+    $which_template = basename( get_page_template() );
+    if ( $which_template == 'schedule.php' || $which_template == 'with-side-nav.php' ) :
+        $js_calls = ' hasSidenav : "true", ';
+    endif;
+    
+    // Initiate High/Low Res Hero Home Javascript
+    if ( is_front_page() ) : 
+        if (has_post_thumbnail( $post->ID ) ): 
+            $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+            $featured_image_url = $featured_image[0]; 
+            if ($featured_image_url) : 
+                $js_calls .= ' highResPath : "/images/heroes/home.jpg", ';
+            endif;
+        endif; 
+    endif; 
+?>
+<script>
+    jQuery(document).ready(function() {
+        vbyc.util.init({<?=$js_calls?>});
+    });
+</script>
+<script>
+        // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        // e.src='//www.google-analytics.com/analytics.js';
+        // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        // ga('create','UA-8152298-1','auto');ga('send','pageview');
+</script>
 </body>
 </html>

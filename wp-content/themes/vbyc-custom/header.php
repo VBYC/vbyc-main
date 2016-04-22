@@ -49,6 +49,33 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 	<?php wp_head(); ?>
+
+    <?php  
+        if ( is_front_page() ) : 
+            if (has_post_thumbnail( $post->ID ) ): 
+                $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                $featured_image_url =  $featured_image[0]; 
+                
+                $featured_image_low_resolution = get_field('featured_image_low_resolution');
+                $featured_image_low_resolution_url = $featured_image_low_resolution['url']; 
+    ?>
+            <style>
+                <? if ($featured_image_url) { ?>
+                .page-template-home .header-main,
+                .page-template-home .header-main.low-res-placeholder:after {
+                    background-image: url('<?=$featured_image_url?>');
+                }
+                <? } ?>
+                <? if ($featured_image_low_resolution_url) { ?>
+                .page-template-home .header-main.low-res-placeholder {
+                    background-image: url('<?=$featured_image_low_resolution_url?>');
+                }
+                <? } ?>
+            </style>
+    <? 
+            endif; 
+        endif; 
+    ?>
 </head>
 
 <body id="post-<?php the_ID(); ?>" <?php body_class(); ?>>
@@ -57,9 +84,6 @@
 <![endif]--> 
 <div id="page" class="hfeed site page-home">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
-
-	
-
 
 
 
@@ -102,9 +126,12 @@
                                 ?>
 	                        </h1>
 	                    </div>
+
+
 	                    <div class="hero-scroll-cta">
 	                        <a href="#post-hero" class="link scroll-to"><span class="glyphicon glyphicon-menu-down"></span> Scroll</a>
-	                    </div>
+	                    
+                        </div>
 	                </div>
             	</div> 
         <?php 
@@ -113,6 +140,9 @@
         ?>
 		 </header>
 
-	
-	 
+
+              
+
+
+
 
