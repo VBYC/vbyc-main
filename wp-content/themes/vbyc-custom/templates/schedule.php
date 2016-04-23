@@ -51,37 +51,37 @@ Template Name: Schedule
                     <div class="hidden-xs col-sm-4 col-md-3"> 
                         <aside id="sidenav-container">
                            <ul id="sidenav" class="sidenav nav sidenav-list list-unstyled">
+                            <?php 
+                            $group_last = null;
+                            foreach( $repeater as $i => $row ): 
+                                 
+                                $grade_start    = $row['grade_start'];
+                                $grade_end      = $row['grade_end'];
+                                $grade_other    = $row['grade_other'];
+
+                                // Only show if it's a new category - because this is a ctegory nav
+                                if ($grade_other) {
+                                    // Non-regular Session
+                                    $group_current = $grade_other;
+                                    $group_current_label = $grade_other;
+
+                                } else {
+                                    // Regular Session 
+                                    $group_current = $grade_start.'-'.$grade_end;
+                                    $group_current_label = 'Grades '.$group_current;
+                                }
+                                $grade_current_link = convertToLinkable($group_current);
+
+                                if ($group_current != $group_last) { 
+                            ?>
                                 <li class="item" role="presentation">
-                                <?php 
-                                $group_last = null;
-                                foreach( $repeater as $i => $row ): 
-                                     
-                                    $grade_start    = $row['grade_start'];
-                                    $grade_end      = $row['grade_end'];
-                                    $grade_other    = $row['grade_other'];
-
-                                    // Only show if it's a new category - because this is a ctegory nav
-                                    if ($grade_other) {
-                                        // Non-regular Session
-                                        $group_current = $grade_other;
-                                        $group_current_label = $grade_other;
-
-                                    } else {
-                                        // Regular Session 
-                                        $group_current = $grade_start.'-'.$grade_end;
-                                        $group_current_label = 'Grades '.$group_current;
-                                    }
-                                    $grade_current_link = convertToLinkable($group_current);
-
-                                    if ($group_current != $group_last) { 
-                                ?>
                                     <a href="#grades-<?=$grade_current_link?>" class="link"><?=$group_current_label?></a>
-                                <?php 
-                                    }
-                                    $group_last = $group_current;
-                                    endforeach; 
-                                ?>
                                 </li>
+                            <?php 
+                                }
+                                $group_last = $group_current;
+                                endforeach; 
+                            ?>
                             </ul>
                         </aside>
                     </div><!-- /column -->
