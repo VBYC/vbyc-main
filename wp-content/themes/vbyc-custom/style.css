@@ -9921,7 +9921,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
   border-color: transparent transparent #37BC98 transparent;
 }
 /* line 99, sass/partials/_nav-main.scss */
-.sub-menu.alt-arrow-emphasize:before {
+.sub-menu.fist-menu-item-is-current:before, .sub-menu.alt-arrow-emphasize:before {
   border-color: transparent transparent #2E9D7F transparent;
 }
 /* line 107, sass/partials/_nav-main.scss */

@@ -94,12 +94,12 @@
         border-style: solid;
         border-width: 0 8px 9px 8px;
         border-color: transparent transparent $link-color transparent;
-
     }
+
+    &.fist-menu-item-is-current:before,
     &.alt-arrow-emphasize:before {
         border-color: transparent transparent $link-color-emphasize transparent;
     }
-
 
 
     // Sub nav links

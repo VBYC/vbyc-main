@@ -142,15 +142,30 @@
 		},
 		navbarArrowColor: function(subNavSelector) {
 			// If the furst item is hovered, make the arrow be the same color as the hovered item that will be right next to it
-			var target = '.navbar-list-sub > .menu-item > a:first';
+			var target = '.sub-menu .menu-item:first-child';
+			var firstSubMenuItem = '.nav-menu > .menu-item > .sub-menu:first-child .menu-item:first-child';
+			var firstSubMenuItemCurrent = '.current-menu-parent .sub-menu .menu-item:first-child';
+			var firstSubMenuItemCurrentTarget = '.current-menu-parent .sub-menu';
 
-			$(target,subNavSelector)
+			console.log('Hello');
+
+			$(firstSubMenuItem).addClass('alt-arrow-emphasize-permanent');
+
+			$(target)
 				.on( "mouseenter", function() {
+					console.log('hover: ');
 					$(this).parents(subNavSelector).addClass('alt-arrow-emphasize');
 				})
 				.on( "mouseleave", function() {
 					$(this).parents(subNavSelector).removeClass('alt-arrow-emphasize');
 			});
+
+			if ( $(firstSubMenuItemCurrent).hasClass('current-menu-item') ) {
+				$(firstSubMenuItemCurrentTarget).addClass('fist-menu-item-is-current');
+			}
+
+
+
 		},
 		navbarSticky: function() {
 			$(headerRow).affix({
