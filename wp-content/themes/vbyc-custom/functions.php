@@ -180,7 +180,51 @@ function vbyc_setup() {
 	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 825, 510, true );
+	set_post_thumbnail_size( 150, 50, true );
+
+    // the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
+    // the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
+    // the_post_thumbnail('large');           // Large resolution (default 640px x 640px max)
+    // the_post_thumbnail('full');            // Original image resolution (unmodified)
+
+
+    add_image_size( 'featured',                     1400, 401, true); 
+    add_image_size( 'social',                       1200, 630, true);
+    add_image_size( 'featured-mobile',              800, 229, true);
+    add_image_size( 'content-tertiary',             800, 229, true);
+    add_image_size( 'timeline',                     460, 290, true);
+    add_image_size( 'square',                       425, 425, true); 
+    add_image_size( 'content-primary',              425, 425, true);
+    add_image_size( 'content-secondary',            380, 202, true); // Also Large
+    add_image_size( 'medium-large',                 360, 250, true);
+    add_image_size( 'gallery',                      360, 250, true);
+    add_image_size( 'thumbnail-landscape',          300, 86, true); // Also Medium
+
+
+    // Featured         = Featured  1400 x 400
+
+    // Social           = Social        1200 x (630)
+    
+    // Post thumbnail   = Ter, mobile   800 x 229 (remove 825 x 510)
+    
+    // Large            = Timeline      460 x (290)
+    
+    // Square           = Cont Prim     425 x 425
+    //                    Profile  
+    
+    // Medium_large     = Mini Gallery  360 x 250
+    //                    Gallery
+    
+    // Cont Sec         = Cont Sec  380 x 202
+    
+    // Thumbnail        = Thumbnail 150 x 150
+
+    // Thumbnail Lns    = TL        150 x 50
+
+
+
+
+
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
