@@ -8,60 +8,60 @@
  * @subpackage Twenty_Fifteen
  * @since Twenty Fifteen 1.0
  */
-?><!doctype html>
+
+// Social and SEO Title
+if ( !empty(get_field('social_seo_title')) ) :
+    $social_seo_title       = get_field('social_seo_title');
+else:
+    $social_seo_title = 'Van Buren Youth Camp';
+endif;
+
+// Social and SEO Description
+ if ( !empty(get_field('social_seo_description')) ) :
+    $social_seo_description       = get_field('social_seo_description');
+else:
+    $social_seo_description = 'Van Buren Youth Camp is a co-ed, residential, summer camp in southwest Michigan. Weekly camping sessions go from June to August.';
+endif;
+
+// Social and SEO Image
+if ( !empty( get_field('social_seo_image') )) :
+    $social_seo_image = get_field('social_seo_image');
+    if ( $social_seo_image ) :
+        $social_seo_image_url = $social_seo_image['sizes']['social']; 
+    endif;
+endif;
+
+// Featured
+if (has_post_thumbnail( $post->ID ) ): 
+    $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featured' ); 
+    $featured_image_url =  $featured_image[0]; 
+endif;
+
+// Featured - Low Res
+if ( !empty( get_field('featured_image_low_resolution') )) :
+    $featured_image_low_resolution = get_field('featured_image_low_resolution');
+    $featured_image_low_resolution_url = $featured_image_low_resolution['url']; 
+endif;
+
+?>
+<!doctype html>
 <!--[if lt IE 7]>            <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7]>                 <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>                 <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 
 <head>
-    <title><?=get_permalink();?></title>
+    <title><?=$social_seo_title?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     
-    <?
-        // Social and SEO Title
-        if ( !empty(get_field('social_seo_title')) ) :
-            $social_seo_title       = get_field('social_seo_title');
-        else:
-            $social_seo_title = 'Van Buren Youth Camp';
-        endif;
-
-        // Social and SEO Description
-         if ( !empty(get_field('social_seo_description')) ) :
-            $social_seo_description       = get_field('social_seo_description');
-        else:
-            $social_seo_description = 'Van Buren Youth Camp is a co-ed, residential, summer camp in southwest Michigan. Weekly camping sessions go from June to August.';
-        endif;
-
-        // Social and SEO Image
-        if ( !empty( get_field('social_seo_image') )) :
-            $social_seo_image = get_field('social_seo_image');
-            if ( $social_seo_image ) :
-                $social_seo_image_url = $social_seo_image['sizes']['social']; 
-            endif;
-        endif;
-
-        // Featured
-        if (has_post_thumbnail( $post->ID ) ): 
-            $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featured' ); 
-            $featured_image_url =  $featured_image[0]; 
-            echo 'featured_image_url: '.$featured_image_url;
-        endif;
-
-        // Featured - Low Res
-        if ( !empty( get_field('featured_image_low_resolution') )) :
-            $featured_image_low_resolution = get_field('featured_image_low_resolution');
-            $featured_image_low_resolution_url = $featured_image_low_resolution['url']; 
-        endif;
-
-    ?>
+    
 
     <? /* Facebook */ ?>
-    <meta property="og:url"             content="" />
+    <meta property="og:url"             content="<?=get_permalink();?>" />
     <meta property="og:title"           content="<?=$social_seo_title?>" />
     <meta property="og:description"     content="<?=$social_seo_description?>" />
 
@@ -111,7 +111,7 @@
             <? endif; ?>
         <? endif; ?>
     <? endif; ?>
-    
+
 </head>
 
 <body id="post-<?php the_ID(); ?>" <?php body_class(); ?>>
