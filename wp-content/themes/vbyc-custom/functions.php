@@ -180,7 +180,7 @@ function vbyc_setup() {
 	 * See: https://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 150, 50, true );
+	set_post_thumbnail_size( 254, 73, true );
 
     // the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
     // the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
@@ -190,15 +190,21 @@ function vbyc_setup() {
 
     add_image_size( 'featured',                     1400, 401, true); 
     add_image_size( 'social',                       1200, 630, true);
-    add_image_size( 'featured-mobile',              800, 229, true);
-    add_image_size( 'content-tertiary',             800, 229, true);
-    add_image_size( 'timeline',                     460, 290, true);
-    add_image_size( 'square',                       425, 425, true); 
-    add_image_size( 'content-primary',              425, 425, true);
-    add_image_size( 'content-secondary',            380, 202, true); // Also Large
-    add_image_size( 'medium-large',                 360, 250, true);
+    // add_image_size( 'featured-mobile',              800, 229, true);
+    // add_image_size( 'content-tertiary',             800, 229, true);
+    // add_image_size( 'timeline',                     460, 290, true);
+    // add_image_size( 'square',                       425, 425, true); 
+    // add_image_size( 'content-primary',              425, 425, true);
+    // add_image_size( 'content-secondary',            380, 202, true); // Also Large
+    // add_image_size( 'medium-large',                 360, 250, true);
     add_image_size( 'gallery',                      360, 250, true);
-    add_image_size( 'thumbnail-landscape',          300, 86, true); // Also Medium
+    // add_image_size( 'thumbnail-landscape',          300, 86, true); // Also Medium
+
+    // New thumb sizes:
+    // 600 x 315 (social) 
+    // 700 x 200 (featured) (7:2)
+    // 254 x 73 (7:2)
+
 
 
     // Featured         = Featured  1400 x 400

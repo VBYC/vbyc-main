@@ -2,7 +2,9 @@
     if (get_field('list_style_steps') == 'Yes') {
         $list_style_steps_class = " list-no-indent-children ";
     }
-?>
+
+    
+    ?>
 <?php get_header(); ?>
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

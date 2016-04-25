@@ -147,13 +147,10 @@
 			var firstSubMenuItemCurrent = '.current-menu-parent .sub-menu .menu-item:first-child';
 			var firstSubMenuItemCurrentTarget = '.current-menu-parent .sub-menu';
 
-			console.log('Hello');
-
 			$(firstSubMenuItem).addClass('alt-arrow-emphasize-permanent');
 
 			$(target)
 				.on( "mouseenter", function() {
-					console.log('hover: ');
 					$(this).parents(subNavSelector).addClass('alt-arrow-emphasize');
 				})
 				.on( "mouseleave", function() {
@@ -163,9 +160,6 @@
 			if ( $(firstSubMenuItemCurrent).hasClass('current-menu-item') ) {
 				$(firstSubMenuItemCurrentTarget).addClass('fist-menu-item-is-current');
 			}
-
-
-
 		},
 		navbarSticky: function() {
 			$(headerRow).affix({
