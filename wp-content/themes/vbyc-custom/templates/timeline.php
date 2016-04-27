@@ -60,6 +60,11 @@ Template Name: Timeline
                                 $description    = get_sub_field('timeline_description');
                                 $image          = get_sub_field('timeline_image');
                                 $image_link     = get_sub_field('timeline_image_link');
+                                if ( $image['sizes']['timeline'] ) :
+                                    $image_url = $image['sizes']['timeline'];
+                                else:
+                                    $image_url = $image['url'];
+                                endif;  
 
                                 // Swap the alignment of image/text on every other item
                                 if ($num & 1 ) {
@@ -103,7 +108,7 @@ Template Name: Timeline
 
                                         if( !empty($image) ): 
                                     ?>
-                                        <img src="<?php echo $image['url']; ?>" class="timeline-img img-responsive" alt="<?php echo $image['alt']; ?>">
+                                        <img src="<?php echo $image_url; ?>" class="timeline-img img-responsive" alt="<?php echo $image['alt']; ?>">
                                     <?php 
                                         endif; 
                                         echo $close_a_tag;

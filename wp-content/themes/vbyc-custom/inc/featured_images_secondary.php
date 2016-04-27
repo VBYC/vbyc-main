@@ -7,7 +7,9 @@
                         $image3 = get_field('featured_image_secondary_3');
                         $image4 = get_field('featured_image_secondary_4');
 
+                        $image1_url = ( $image1['sizes']['gallery'] ? $image1['sizes']['gallery'] : $image1['url'] );
 
+                        
                         if( !empty($image1) || !empty($image2) || !empty($image3) || !empty($image4) ): ?>
 
                         <div class="row">
@@ -17,7 +19,7 @@
                                 <?php if( !empty($image1) ): ?>
 
                                     <div class="col-sm-2 img-container">
-                                        <img src="<?php echo $image1['sizes']['gallery']; ?>" class="img-responsive img-item" alt="<?php echo $image1['alt']; ?>">
+                                        <img src="<?php echo $image1_url; ?>" class="img-responsive img-item" alt="<?php echo $image1['alt']; ?>">
                                     </div>
 
                                 <?php endif; ?>

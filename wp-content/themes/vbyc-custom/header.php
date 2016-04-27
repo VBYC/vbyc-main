@@ -31,13 +31,13 @@ if ( !empty( get_field('social_seo_image') )) :
     endif;
 endif;
 
-// Featured
+// Featured Image
 if (has_post_thumbnail( $post->ID ) ): 
-    $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'featured' ); 
+    $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); 
     $featured_image_url =  $featured_image[0]; 
 endif;
 
-// Featured - Low Res
+// Featured Image - Low Res
 if ( !empty( get_field('featured_image_low_resolution') )) :
     $featured_image_low_resolution = get_field('featured_image_low_resolution');
     $featured_image_low_resolution_url = $featured_image_low_resolution['url']; 

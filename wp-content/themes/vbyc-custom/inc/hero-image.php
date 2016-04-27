@@ -3,7 +3,11 @@
                 <div class="col-sm-12">
                     <div class="hero-image">
                         <?php
-                            the_post_thumbnail('featured');
+                            if ( the_post_thumbnail('featured') ) :
+                                the_post_thumbnail('featured');
+                            else:
+                                the_post_thumbnail('full');
+                            endif;
                         ?>
                     </div>
                 </div>

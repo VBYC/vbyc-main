@@ -100,6 +100,16 @@ Template Name: Home
                     $link_label         = get_sub_field('link_label');
                     $link               = get_sub_field('link');
                     $background_image   = get_sub_field('background_image');
+                    if ($image['sizes']['home-promo']) :
+                        $image_url = $image['sizes']['home-promo'];
+                    else:
+                         $image_url = $image_url['url'];
+                    endif;
+                    // if ($background_image['sizes']['featured']) :
+                    //     $background_image_url = $background_image['sizes']['featured'];
+                    // else:
+                         $background_image_url = $background_image['url'];
+                    // endif;
                     
 
                     // Swap the alignment of image/text on every other item
@@ -112,7 +122,7 @@ Template Name: Home
                     }
                     $num++;
             ?>
-            <div class="banner-item hero-background-img" style="<? /* TODO: Replace inline BG image style*/ ?>background-image:url(<?=$background_image['url']?>);">
+            <div class="banner-item hero-background-img" style="<? /* TODO: Replace inline BG image style*/ ?>background-image:url(<?=$background_image_url?>);">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-md-8 <?=$classes_image?>">
@@ -128,7 +138,7 @@ Template Name: Home
 
                                     if( !empty($image) ): 
                                 ?>
-                                    <img src="<?php echo $image['url']; ?>" class="banner-img img-responsive" alt="<?php echo $image['alt']; ?>">
+                                    <img src="<?php echo $image_url; ?>" class="banner-img img-responsive" alt="<?php echo $image['alt']; ?>">
                                 <?php 
                                     endif; 
                                     echo $close_a_tag;
@@ -174,8 +184,9 @@ Template Name: Home
                         $a_tag_open     = '<a href="'.$link.'" class="link text-center">';
                         $a_tag_close    = '</a>';
                     endif;    
+                    $background_image_url = $background_image['url'];
             ?>
-            <div class="banner-item home-banner-map hero-background-img" style="<? /* TODO: Replace inline BG image style*/ ?>background-image:url(<?=$background_image['url']?>);">
+            <div class="banner-item home-banner-map hero-background-img" style="<? /* TODO: Replace inline BG image style*/ ?>background-image:url(<?=$background_image_url?>);">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
@@ -215,7 +226,12 @@ Template Name: Home
                         if( !empty($link) ): 
                             $a_tag_open = '<a href="'.$link.'" class="link">';
                             $a_tag_close = '</a>';
-                        endif;    
+                        endif;   
+                        if ($image['sizes']['home-promo']) :
+                            $image_url = $image['sizes']['social'];
+                        else:
+                             $image_url = $image_url['url'];
+                        endif; 
                 ?>
                 <div class="row">
                     <div class="col-xs-12">
@@ -240,7 +256,7 @@ Template Name: Home
                             <div class="content content-primary-img">
                                 <?=$a_tag_open?>
                                     <?php if( !empty($image) ): ?>
-                                    <img src="<?=$src_defer?>" data-src="<?php echo $image['url']; ?>" class="banner-img img-responsive" alt="<?php echo $image['alt']; ?>">
+                                    <img src="<?=$src_defer?>" data-src="<?php echo $image_url; ?>" class="banner-img img-responsive" alt="<?php echo $image['alt']; ?>">
                                     <?php endif; ?>
                                 <?=$a_tag_close?>
                             </div>

@@ -51,13 +51,39 @@ Template Name: With Side Nav
                             <ul class="content-list list-multiple-details list-unstyled">
                             <?php
                                 while( have_rows('with_side_nav_row') ): the_row(); 
-                                    $headline           = get_sub_field('title');
-                                    $description        = get_sub_field('description');
-                                    $image_primary      = get_sub_field('primary_photo');
-                                    $image_secondary_1  = get_sub_field('secondary_photos_1');
-                                    $image_secondary_2  = get_sub_field('secondary_photos_2');
-                                    $image_tertiary     = get_sub_field('tertiary_photo');
-                                    $anchor_link        = convertToLinkable($headline);
+                                    $headline               = get_sub_field('title');
+                                    $description            = get_sub_field('description');
+                                    $anchor_link            = convertToLinkable($headline);
+
+                                    $image_primary          = get_sub_field('primary_photo');
+                                    if ($image_primary['sizes']['content-primary']) :
+                                        $image_primary_url = $image_primary['sizes']['content-primary'];
+                                    else:
+                                        $image_primary_url  = $image_primary['url'];
+                                    endif;
+
+                                    $image_secondary_1      = get_sub_field('secondary_photos_1');
+                                    if ($image_secondary_1['sizes']['content-secondary']) :
+                                        $image_secondary_1_url = $image_secondary_1['sizes']['content-secondary'];
+                                    else:
+                                        $image_secondary_1_url  = $image_secondary_1['url'];
+                                    endif;
+
+                                    $image_secondary_2      = get_sub_field('secondary_photos_2');
+                                    if ($image_secondary_2['sizes']['content-secondary']) :
+                                        $image_secondary_2_url = $image_secondary_2['sizes']['content-secondary'];
+                                    else:
+                                        $image_secondary_2_url  = $image_secondary_2['url'];
+                                    endif;
+
+                                    $image_tertiary         = get_sub_field('tertiary_photo');
+                                    if ($image_tertiary['sizes']['content-tertiary']) :
+                                        $image_tertiary_url = $image_tertiary['sizes']['content-tertiary'];
+                                    else:
+                                        $image_tertiary_url  = $image_tertiary['url'];
+                                    endif;
+
+                                    
                             ?>
                                 <li id="<?=$anchor_link?>" class="item">                                    
                                     <h2 class="heading <?=$anchor_link?>"> <?=$headline?></h2>
@@ -69,18 +95,18 @@ Template Name: With Side Nav
                                         <div class="row row-main">
                                             <div class="col-xs-12 col-sm-11 col-md-7">
                                                 <div class="image-container">
-                                                    <img src="<?=$image_primary['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_primary['alt']?>">
+                                                    <img src="<?=$image_primary_url?>" class="img-item img-responsive img-fluid" alt="<?=$image_primary['alt']?>">
                                                 </div>
                                             </div>
                                             <?php if( !empty($image_secondary_1) ): ?>
                                             <div class="col-xs-12 col-sm-11 col-md-5 multi-image-column">
                                                 <div>
                                                     <div class="image-container">
-                                                        <img src="<?=$image_secondary_1['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_1['alt']?>">
+                                                        <img src="<?=$image_secondary_1_url?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_1['alt']?>">
                                                     </div>
                                                     <?php if( !empty($image_secondary_2) ): ?>
                                                     <div class="image-container">
-                                                        <img src="<?=$image_secondary_2['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_2['alt']?>">
+                                                        <img src="<?=$image_secondary_2_url?>" class="img-item img-responsive img-fluid" alt="<?=$image_secondary_2['alt']?>">
                                                     </div>
                                                     <?php endif; ?>
                                                 </div>
@@ -91,7 +117,7 @@ Template Name: With Side Nav
                                         <div class="row row-secondary hidden-xs">
                                             <div class="col-xs-12 col-sm-11 col-md-12">
                                                 <div class="image-container">
-                                                    <img src="<?=$image_tertiary['url']?>" class="img-item img-responsive img-fluid" alt="<?=$image_tertiary['alt']?>">
+                                                    <img src="<?=$image_tertiary_url?>" class="img-item img-responsive img-fluid" alt="<?=$image_tertiary['alt']?>">
                                                 </div>
                                             </div>
                                         </div>

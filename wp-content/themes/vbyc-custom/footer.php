@@ -58,11 +58,18 @@
     
     // Initiate High/Low Res Hero Home Javascript
     if ( is_front_page() ) : 
+
+        // Featured Image
+        if (has_post_thumbnail( $post->ID ) ): 
+            $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); 
+            $featured_image_url =  $featured_image[0]; 
+        endif;
+
         if (has_post_thumbnail( $post->ID ) ): 
             $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
             $featured_image_url = $featured_image[0]; 
             if ($featured_image_url) : 
-                $js_calls .= ' highResPath : "/images/heroes/home.jpg", ';
+                $js_calls .= ' highResPath : "'.$featured_image_url.'", ';
             endif;
         endif; 
     endif; 

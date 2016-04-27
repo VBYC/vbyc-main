@@ -32,7 +32,6 @@ Template Name: Gallery
             </div>
         </section>
 
-
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article">
@@ -44,11 +43,14 @@ Template Name: Gallery
                             foreach( $images as $image ): 
                                 $grid_title = $image['title'];
                                 $grid_description = $image['description'];
+                                if ( $image['sizes']['large'] ) :
+                                    $image_url = $image['sizes']['large'];
+                                else:
+                                    $image_url = $image['url'];
+                                endif;  
+                                
           
   ?>
-
-
-                         
                         <div class="col-xs-12 col-sm-4">
                           <a href="<?php echo $image['url']; ?>" 
                             class="gallery" 
@@ -57,7 +59,7 @@ Template Name: Gallery
                             data-gallery="multiimages" 
                                 data-title="<?=$grid_title?>" 
                                 data-footer="<?=$grid_description?>">
-                                <img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
+                                <img src="<?php echo $image_url; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
                                 <h2 class="gallery-label"><?=$grid_title?></h2>
                             </a>
                             <div class="visible-xs-block details">
@@ -68,9 +70,6 @@ Template Name: Gallery
                             endforeach; 
                         endif; 
                     ?>
-
-
-                      
                     </div><!-- /.row -->
                 </article><!-- /.main-article -->
             </div><!-- /.container -->
