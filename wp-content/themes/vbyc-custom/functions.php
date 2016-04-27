@@ -193,7 +193,7 @@ function vbyc_setup() {
     // add_image_size( 'featured-mobile',           800, 229, true);
     add_image_size( 'content-tertiary',             800, 229, true);
     add_image_size( 'timeline',                     460, 290, true);
-    add_image_size( 'square',                       425, 425, true); 
+    add_image_size( 'profile',                      340, 340, true); 
     add_image_size( 'content-primary',              425, 425, true);
     add_image_size( 'content-secondary',            305, 203, true); // Also Large
     // add_image_size( 'medium-large',              360, 250, true);

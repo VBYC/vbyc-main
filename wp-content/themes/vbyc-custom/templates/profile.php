@@ -37,9 +37,16 @@ Template Name: Profile
                             <div class="portrait-container">
                                 <?
                                     $image = get_field('profile_image');
+
                                     if( !empty($image) ): 
+
+                                        if ($image['sizes']['square']) :
+                                            $image_url = $image['sizes']['square'];
+                                        else:
+                                            $image_url  = $image['url'];
+                                        endif;
                                 ?>
-                                    <img src="<?php echo $image['url']; ?>" class="portrait-primary v-offset-6 img-responsive" alt="<?php echo $image['alt']; ?>">
+                                    <img src="<?php echo $image_url; ?>" class="portrait-primary v-offset-6 img-responsive" alt="<?php echo $image['alt']; ?>">
                                 <?php 
                                     endif; 
                                 ?>
