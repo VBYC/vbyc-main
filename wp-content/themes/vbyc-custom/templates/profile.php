@@ -37,11 +37,9 @@ Template Name: Profile
                             <div class="portrait-container">
                                 <?
                                     $image = get_field('profile_image');
-
                                     if( !empty($image) ): 
-
-                                        if ($image['sizes']['square']) :
-                                            $image_url = $image['sizes']['square'];
+                                        if ($image['sizes']['profile']) :
+                                            $image_url = $image['sizes']['profile'];
                                         else:
                                             $image_url  = $image['url'];
                                         endif;
@@ -53,6 +51,10 @@ Template Name: Profile
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6">
+                            <?
+                                /* CONTENT HEADLINE (First red one) */ 
+                                include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");
+                            ?>
                             <div>
                                 <?php   
                                     echo get_field('one_column_column');
