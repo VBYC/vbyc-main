@@ -1,4 +1,4 @@
- <?php 
+<?php 
     $intro_paragraph_alignment = get_field('intro_paragraph_alignment'); 
     if ($intro_paragraph_alignment != 'centered') {
         $text_alignment_class = 'description-wide';
@@ -10,7 +10,7 @@
                             <div class="description <?=$text_alignment_class?>">
 
                                 <?php the_field('intro_paragraph'); ?>
-ss
+
                                 <?php 
                                     $link_target = get_field("intro_link_target" );
                                     if ($link_target != 'none') {
