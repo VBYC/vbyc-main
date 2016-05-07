@@ -36,8 +36,9 @@ Template Name: Gallery
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                    <?php 
 
+                    <?php 
+                        // IMAGE GALLERY
                         $images = get_field('images');
                         if( $images ): 
                             foreach( $images as $image ): 
@@ -68,6 +69,60 @@ Template Name: Gallery
                         </div>
                     <?php 
                             endforeach; 
+                        endif; 
+                    ?>
+
+
+
+                    <?php 
+                        // VIDEO GALLERY
+                        if( have_rows('videos') ): 
+
+                            $image_default      = get_field('default_image');
+                            if ($image_default['sizes']['profile']) :
+                                $image_default_url = $image_default['sizes']['profile'];
+                            else:
+                                 $iimage_default_url = $image_default_url['url'];
+                            endif;
+
+                            while( have_rows('videos') ): the_row(); 
+                                $image              = get_sub_field('image');
+                                $name               = get_sub_field('name');
+                                $position           = get_sub_field('position');
+                                $description        = get_sub_field('description');
+                                $video              = get_sub_field('video');
+
+                                if( !empty($image) ):
+                                    if ($image['sizes']['profile']) :
+                                        $image_url = $image['sizes']['profile'];
+                                    else:
+                                         $image_url = $image_url['url'];
+                                    endif;
+                                else:
+                                    $image_url = $image_default_url;
+                                endif; 
+
+                                if( !empty($video) ):
+                        ?>
+   
+                        <div class="col-xs-12 col-sm-4">
+                          <a href="<?=$video?>" 
+                            class="gallery" 
+                            data-toggle="lightbox" 
+                            data-type="youtube" 
+                            data-gallery="youtubevideos" 
+                                data-title="<?=$name?>" 
+                                data-footer="<?=$description?>">
+                                <img src="<?=$image_url?>" class="img-responsive img-fluid grid-item" alt="<?=$name?>" >
+                                <h2 class="gallery-label"><?=$name?></h2>
+                            </a>
+                            <div class="visible-xs-block details">
+                                <p class="description"><strong><?=$name?></strong> <?=$position?> &mdash; <?=$description ?></p>
+                            </div>
+                        </div>
+                    <?php 
+                                endif;
+                            endwhile; 
                         endif; 
                     ?>
                     </div><!-- /.row -->
