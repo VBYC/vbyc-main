@@ -190,15 +190,15 @@ function vbyc_setup() {
 
     add_image_size( 'featured',                     1440, 400, true); 
     add_image_size( 'social',                       1200, 630, true);
+    add_image_size( 'gallery-lg',                   1200, 833, true);
+    add_image_size( 'gallery-md',                   1000, 694, true);
     add_image_size( 'content-tertiary',             800, 300, true);
     add_image_size( 'featured-mobile',              800, 229, true);
     add_image_size( 'timeline',                     460, 290, true);
     add_image_size( 'profile',                      340, 340, true); 
     add_image_size( 'content-primary',              425, 425, true);
     add_image_size( 'content-secondary',            305, 203, true); // Also Large
-    // add_image_size( 'medium-large',              360, 250, true);
     add_image_size( 'gallery',                      360, 250, true);
-    // add_image_size( 'thumbnail-landscape',       300, 86, true); // Also Medium
     add_image_size( 'home-promo',                   730, 400, true);
 
     // New thumb sizes:

@@ -4,6 +4,26 @@ Template Name: Gallery
 */
 ?>
 
+ <?php 
+    // IMAGE THUMB
+    $thumbnail_format = get_field('thumnail_format');
+    if ($thumbnail_format == 'square') {
+        $thumbnail_col_width = '3';
+        $thumbnail_format_size_name = 'profile';
+    }  else {
+        $thumbnail_col_width = '4';
+        $thumbnail_format_size_name = 'gallery';
+    }
+
+    $image_thumb_default = get_field('default_image');
+    if ($image_thumb_default['sizes'][$thumbnail_format_size_name]) :
+        $image_thumb_default_url = $image_thumb_default['sizes'][$thumbnail_format_size_name];
+    else:
+         $image_thumb_default_url = $image_thumb_default_url['url'];
+    endif;
+
+?>
+
 
 <?php get_header(); ?>
 <?php  // if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -38,21 +58,37 @@ Template Name: Gallery
                     <div class="row">
 
                     <?php 
+                   
+
+
+
                         // IMAGE GALLERY
                         $images = get_field('images');
                         if( $images ): 
                             foreach( $images as $image ): 
-                                $grid_title = $image['title'];
-                                $grid_description = $image['description'];
-                                if ( $image['sizes']['large'] ) :
-                                    $image_url = $image['sizes']['large'];
+                                // THUMB
+                                if ($image['sizes'][$thumbnail_format_size_name]) :
+                                    $image_thumb_url = $image['sizes'][$thumbnail_format_size_name];
+                                else:
+                                     $image_thumb_url = $image['url'];
+                                endif;
+
+                                // MAIN IMAGE
+                                if ( $images['sizes']['gallery-lg'] ) :
+                                    $image_url = $image['sizes']['gallery-lg'];
+                                elseif ( $images['sizes']['gallery-md'] ) :
+                                    $image_url = $image['sizes']['gallery-md'];
                                 else:
                                     $image_url = $image['url'];
-                                endif;  
+                                endif; 
+
+                                // TEXT
+                                $grid_title = $image['title'];
+                                $grid_description = $image['description']; 
                                 
           
   ?>
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-12 col-sm-<?=$thumbnail_col_width?>">
                           <a href="<?php echo $image['url']; ?>" 
                             class="gallery" 
                             data-toggle="lightbox" 
@@ -60,7 +96,7 @@ Template Name: Gallery
                             data-gallery="multiimages" 
                                 data-title="<?=$grid_title?>" 
                                 data-footer="<?=$grid_description?>">
-                                <img src="<?php echo $image_url; ?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
+                                <img src="<?=$image_thumb_url?>" class="img-responsive img-fluid grid-item" alt="<?=$grid_title?>" >
                                 <h2 class="gallery-label"><?=$grid_title?></h2>
                             </a>
                             <div class="visible-xs-block details">
@@ -78,42 +114,45 @@ Template Name: Gallery
                         // VIDEO GALLERY
                         if( have_rows('videos') ): 
 
-                            $image_default      = get_field('default_image');
-                            if ($image_default['sizes']['profile']) :
-                                $image_default_url = $image_default['sizes']['profile'];
-                            else:
-                                 $iimage_default_url = $image_default_url['url'];
-                            endif;
+                            
 
                             while( have_rows('videos') ): the_row(); 
-                                $image              = get_sub_field('image');
+                                $image_thumb        = get_sub_field('image');
                                 $name               = get_sub_field('name');
                                 $position           = get_sub_field('position');
                                 $description        = get_sub_field('description');
                                 $video              = get_sub_field('video');
+                                $data_type          = 'youtube';
 
-                                if( !empty($image) ):
-                                    if ($image['sizes']['profile']) :
-                                        $image_url = $image['sizes']['profile'];
+              
+
+                                if( !empty($image_thumb) ):
+                                    if ($image_thumb['sizes'][$thumbnail_format_size_name]) :
+                                        $image_thumb_url = $image_thumb['sizes'][$thumbnail_format_size_name];
                                     else:
-                                         $image_url = $image_url['url'];
+                                         $image_thumb_url = $image_thumb_url['url'];
                                     endif;
                                 else:
-                                    $image_url = $image_default_url;
+                                    $image_thumb_url = $image_thumb_default_url;
                                 endif; 
 
-                                if( !empty($video) ):
+                                if( empty($video) ):
+                                    $video      = $image_thumb_url;
+                                    $data_type  = 'image';
+                                endif;  
+
+
                         ?>
    
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-12 col-sm-<?=$thumbnail_col_width?>">
                           <a href="<?=$video?>" 
                             class="gallery" 
                             data-toggle="lightbox" 
-                            data-type="youtube" 
+                            data-type="<?$data_type?>" 
                             data-gallery="youtubevideos" 
                                 data-title="<?=$name?>" 
                                 data-footer="<?=$description?>">
-                                <img src="<?=$image_url?>" class="img-responsive img-fluid grid-item" alt="<?=$name?>" >
+                                <img src="<?=$image_thumb_url?>" class="img-responsive img-fluid grid-item" alt="<?=$name?>" >
                                 <h2 class="gallery-label"><?=$name?></h2>
                             </a>
                             <div class="visible-xs-block details">
@@ -121,7 +160,7 @@ Template Name: Gallery
                             </div>
                         </div>
                     <?php 
-                                endif;
+                                
                             endwhile; 
                         endif; 
                     ?>
