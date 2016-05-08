@@ -59,9 +59,6 @@ Template Name: Gallery
 
                     <?php 
                    
-
-
-
                         // IMAGE GALLERY
                         $images = get_field('images');
                         if( $images ): 

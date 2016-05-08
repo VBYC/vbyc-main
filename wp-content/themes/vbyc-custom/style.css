@@ -10853,7 +10853,7 @@ img[src*=".svg"] .main-logo-container .ie9 {
     TEMPALTE - PORTRATI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* line 6, sass/partials/templates/_profile.scss */
-#page-template-profile .portrait-container {
+.page-template-profile .portrait-container {
   padding-right: 20px;
 }
 
