@@ -11,14 +11,14 @@
 
 // Social and SEO Title
 if ( !empty(get_field('social_seo_title')) ) :
-    $social_seo_title       = get_field('social_seo_title');
+    $social_seo_title = get_field('social_seo_title');
 else:
-    $social_seo_title = 'Van Buren Youth Camp';
+    $social_seo_title = get_the_title().' | Van Buren Youth Camp';
 endif;
 
 // Social and SEO Description
  if ( !empty(get_field('social_seo_description')) ) :
-    $social_seo_description       = get_field('social_seo_description');
+    $social_seo_description = get_field('social_seo_description');
 else:
     $social_seo_description = 'Van Buren Youth Camp is a co-ed, residential, summer camp in southwest Michigan. Weekly camping sessions go from June to August.';
 endif;
