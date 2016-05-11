@@ -33,7 +33,7 @@ Template Name: Profile
             <div class="container"> 
                 <article class="main-article">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-4">
+                        <div class="col-xs-12 col-sm-3">
                             <div class="portrait-container">
                                 <?
                                     $image = get_field('profile_image');
@@ -50,7 +50,7 @@ Template Name: Profile
                                 ?>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
+                        <div class="col-xs-12 col-sm-7">
                             <?
                                 /* CONTENT HEADLINE (First red one) */ 
                                 include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");

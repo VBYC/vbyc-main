@@ -47,7 +47,7 @@ Template Name: With Side Nav
 
                     <div class="col-xs-12 col-sm-8">
                         <article class="main-article">
-                            <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/featured_images_secondary.php"); ?>
+                            <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/mini-gallery.php"); ?>
                             <ul class="content-list list-multiple-details list-unstyled">
                             <?php
                                 while( have_rows('with_side_nav_row') ): the_row(); 

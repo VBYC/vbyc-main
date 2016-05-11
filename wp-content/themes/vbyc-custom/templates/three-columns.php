@@ -20,7 +20,7 @@ Template Name: Three Columns
             <div class="container"> 
                 <article class="main-article <?=$list_style_steps_class?>">
 
-                    <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/featured_images_secondary.php"); ?>
+                    <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/mini-gallery.php"); ?>
                     <?php if( have_rows('three_columns_column') ): ?>
                         <div class="row">
                             <?php 

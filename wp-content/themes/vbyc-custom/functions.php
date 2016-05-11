@@ -315,7 +315,7 @@ add_action( 'wp_enqueue_scripts', 'vbyc_footer_scripts' );
 function vbyc_footer_scripts(){
     $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
     $template_file = get_post_meta($post_id, '_wp_page_template', true);
-    $test = 'Hello';
+   
 
     wp_register_script(
     'jq',
