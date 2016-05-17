@@ -5,6 +5,8 @@ Template Name: Gallery
 ?>
 
  <?php 
+    $image_gallery_present = false;
+
     // IMAGE THUMB
     $thumbnail_format = get_field('thumnail_format');
     if ($thumbnail_format == 'square') {
@@ -62,6 +64,7 @@ Template Name: Gallery
                         // IMAGE GALLERY
                         $images = get_field('images');
                         if( $images ): 
+                            $image_gallery_present = true;
                             foreach( $images as $image ): 
                                 // THUMB
                                 if ($image['sizes'][$thumbnail_format_size_name]) :
@@ -110,9 +113,9 @@ Template Name: Gallery
                     <?php 
                         // VIDEO GALLERY
                         if( have_rows('videos') ): 
-
-                            
-
+                            if ($image_gallery_present === true) {
+                                print '</div><hr class="divider-styled less-margin"><div class="row gallery-divider">'
+                            }
                             while( have_rows('videos') ): the_row(); 
                                 $image_thumb        = get_sub_field('image');
                                 $name               = get_sub_field('name');
@@ -120,8 +123,6 @@ Template Name: Gallery
                                 $description        = get_sub_field('description');
                                 $video              = get_sub_field('video');
                                 $data_type          = 'youtube';
-
-              
 
                                 if( !empty($image_thumb) ):
                                     if ($image_thumb['sizes'][$thumbnail_format_size_name]) :
@@ -137,7 +138,6 @@ Template Name: Gallery
                                     $video      = $image_thumb_url;
                                     $data_type  = 'image';
                                 endif;  
-
 
                         ?>
    
