@@ -1,0 +1,92 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    SIDE NAVIGATION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.has-sticky-main-nav {
+//    padding-top: $main-nav-height-xs;
+}
+
+.main-content {
+    &.page-template-with-side-nav {
+        margin-top: 0;
+    }
+}
+
+
+
+.sidenav {
+    &.affix,
+    &.affix-bottom {
+        position: fixed;
+    }
+}
+.sidenav-list {
+    padding-top: ($padding-base-vertical*4);
+    > .item {
+        margin-bottom: 3px;
+        font-size: 15px;
+        line-height: 1.4;
+        .link {
+            &:hover {
+                background-color:  $navbar-sub-graphic-color;
+                color: $link-color-emphasize;
+            }
+        }
+        &.active {
+            .link {
+                color: $link-focus-color;
+                text-decoration: none;
+                background-color:  transparent;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }  
+} 
+
+.sidenav-anchor-target {
+    .item {
+        margin-top: 0;
+    }
+}
+
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .sidenav {
+        &.affix {
+            $col-width: 56.75px;
+            $col-count: 4;
+            width: ($col-width * $col-count); 
+            top: $main-nav-height-sm;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .sidenav {
+        &.affix {
+            $col-width: 73.3333px;
+            $col-count: 3;
+            width: ($col-width * $col-count); 
+            top: $main-nav-height-md;
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .sidenav {
+        &.affix {
+            $col-width: 90px;
+            $col-count: 3;
+            width: ($col-width * $col-count);
+            top: $main-nav-height-lg;
+        }
+    }
+}
+
+
+
+
+

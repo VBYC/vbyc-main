@@ -1,0 +1,291 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPLATE - HOME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.page-template-home {
+    
+    .header-main  {
+        background-color: $color-gray;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 650px;
+        position: relative;
+
+        &.low-res-placeholder {
+//            background-image: url("/images/heroes/home-low-res-placeholder.jpg");
+            &:after {
+//                background-image: url("/images/heroes/home.jpg");
+                content: '';
+                height: 0;
+                width: 0;
+            }
+        }
+
+ 
+        .main-logo-container {
+            max-height: 75px;
+        }
+        .home-hero-text {
+            position: absolute;
+            bottom: 50px;
+            z-index: 5;
+//            width: 100%;
+                
+        }
+        h1 {
+            color: $color-white;
+            font-family: $font-family-serif;
+            font-weight: bold;
+            font-size: 5.75em;
+            line-height: 1.1;
+            // text-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 2px 2px 0 rgba(0, 0, 0, 0.3);
+        
+            .group-1 {
+                display: block;
+            }
+            .group-3 {
+                white-space: nowrap;
+            }
+            .group-4 {
+                white-space: nowrap;
+            }
+        } // .header-main
+        .container {
+            &.home-hero-text-outer {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            &.home-hero-text-inner {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    } 
+    .main-logo {
+        color: #fff;
+    }
+
+    // BANNERS
+
+    // BANNERS - PRIMARY
+    .home-banner-primary {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        .content-primary-text {
+            .headline {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    // BANNERS - SECONDARY
+    .home-banner-secondary {
+        .banner-item {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .content-primary-text {
+            margin-top: 0;
+            text-align: left;
+            .headline {
+                margin-top: 0;
+            }
+        }
+    }
+
+    // BANNERS - TERTIARY
+    .home-banner-tertiary {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    img.defer {
+
+    }
+
+
+    .content-primary-img {
+        border: 9px solid $color-blue-light;
+        min-height: 150px;
+        background-color: $color-blue-light;
+    }
+    .content-primary-text {
+        background-color: $color-white;
+        padding: 30px;
+        line-height: 1.81;
+        
+        .description {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        
+    }
+
+    
+
+    // HOME BANNERS
+    .banner-activities {
+        background-image: url('/images/heroes/water.jpg');
+    }
+    .banner-cleo {
+        background-image: url('/images/heroes/sun-through-trees.jpg');
+
+    }
+    .banner-alumni {
+        background-image: url('/images/heroes/grass-and-flowers.jpg');
+    }
+    .banner-img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .banner-cleo {
+
+    }
+    
+    // HOME BANNER - MAP
+    .home-banner-map {
+//        background-image: url('/images/heroes/map-of-vbyc.jpg');
+
+        .link {
+            display: block;
+            color: $color-white;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            line-height: 1;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .headline {
+            color: $color-white;
+            font-size: 4em;
+        }
+        .cta {
+            font-size: 2em;
+            font-family: $font-family-link;
+            margin-top: 3%;
+        }
+    }
+
+    .hero-animation {
+        height: 120px;
+        width: 200px;
+        display: block;
+        position: absolute;
+        top: 0;
+        margin-top: 198px;
+        left: 50%;
+        margin-left: -217px;
+        text-align: center;
+        padding-right: 234px;
+        display: none;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .page-template-home {
+        h1 {
+            font-size: 70px;            
+        }
+    } 
+}
+
+
+@media (max-width: $screen-sm-max) {
+    .page-template-home {
+        .hero-animation {
+            top: -30px;
+        }
+        .header-main {
+            height: 570px;
+            .home-hero-text {
+                text-align: center;
+            }
+            h1 {
+                right: 0;
+                left: 0;
+                bottom: 50px;
+                font-size: 75px;
+                .group-4 {
+                    display: block;
+                }
+            }
+        }
+        .banner-item {
+            background-size: auto 100%;
+        }
+    }
+}
+
+@media (min-width: $width-content-extra) {
+    .page-template-home {
+        .header-main {
+            background-size: 100% auto;
+            background-position: 50% 50%;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .page-template-home {
+        .hero-animation {
+            display: none;
+        }
+        .header-main {
+            height: 340px;
+            bottom: 20px;  
+            .home-hero-text {
+                width: 100%;
+                bottom: 30px;
+            }     
+            h1 {
+                font-size: 40px;
+                bottom: 20px;
+            }
+        }
+        
+        .home-banner-tertiary {
+            margin-bottom: 50px;
+        }
+        .home-banner-tertiary,
+        .home-banner-secondary {
+            .banner-item {
+                background-image: none;
+            }
+        }
+        .home-banner-map {
+            font-size: .6em;
+        }
+    }
+}
+
+
+
+@-webkit-keyframes fadeInOut {
+    0%    { opacity: 0; }
+    50%   { opacity: 1; }
+    100%  { opacity: 0; }
+}
+@-webkit-keyframes fadeIn {
+    0%    { opacity: 0; }
+    50%   { opacity: 0; }
+    51%   { opacity: 1; }
+    100%  { opacity: 1; }
+}
+@-webkit-keyframes home_hero_animation_1 {
+    0%   { opacity: 0; }
+      24%  { opacity: 0; }
+    25%  { opacity: 1; }
+    50%  { opacity: 1; }
+      51%  { opacity: 0; }
+    75%  { opacity: 0; }
+    100% { opacity: 0; }
+}

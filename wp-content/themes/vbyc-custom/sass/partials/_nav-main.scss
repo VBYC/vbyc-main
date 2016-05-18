@@ -1,0 +1,131 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MAIN - NAVIGATION  (COMMON - SM & MD+)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+// TESTING - SHOW SUB NAV
+//.item:first-child .navbar-list-sub { display: block; } 
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+#wpadminbar {
+    display: none !important;
+}
+
+
+// Parent nav links container
+.nav-menu {
+    @extend .list-unstyled;
+    font-size: 14px;
+    font-family: $font-family-link;
+      
+    // Parent nav links
+    > .menu-item {
+        > a {
+            padding: 18px 10px;
+            line-height: 1;
+            display: block; 
+            text-decoration: none; 
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+            }
+            // Special nav link
+            &.emphasize {
+                background-color: $color-red;
+                color: $color-white;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-red-darker;
+                }
+                &:focus,
+                &:active {
+                     color: $color-white;
+                     background-color: $link-focus-color;
+                }
+            }
+        }
+        
+    }
+    // Selected 
+    > .menu-item {
+        &.current-menu-item,
+        &.current-menu-parent {
+            &:not(.emphasize) {
+                > a,
+                > a:hover {
+                    color: $color-slate;
+                }
+            }
+        }
+        &.emphasize {
+           > a {
+                background-color: $color-red;
+                color: $color-white;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-red-darker;
+                }
+                &:focus,
+                &:active {
+                     color: $color-white;
+                     background-color: $link-focus-color;
+                }
+            }
+        }
+    }
+}
+
+// Sub nav links container
+.sub-menu {
+    @extend .list-unstyled;
+    display: none;
+//    display: block;
+    position: relative;
+    z-index: 8;
+    // Arrow op top
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        margin-left: -7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 8px 9px 8px;
+        border-color: transparent transparent $link-color transparent;
+    }
+
+    &.fist-menu-item-is-current:before,
+    &.alt-arrow-emphasize:before {
+        border-color: transparent transparent $link-color-emphasize transparent;
+    }
+
+
+    // Sub nav links
+    > .menu-item {
+        a {
+            display: block;
+            padding: 18px;
+            .nav-menu & {
+                color: $color-white; /* To override for WP */
+            }
+            color: $color-white;
+            background-color: $link-color;
+            &:hover {
+                background-color: $link-color-emphasize;
+                text-decoration: none;
+                color: $color-white;
+            }
+        }
+        &.current-menu-item {
+            > a {
+                background-color: $link-color-emphasize;
+            }
+        }
+    }
+
+}
+
+
+

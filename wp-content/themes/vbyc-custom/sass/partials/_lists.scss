@@ -1,0 +1,43 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	LISTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.list-striped {
+	> li:nth-of-type(odd) {
+		background-color: $list-striped-bg-color;
+	}
+}
+
+.list-striped-reversed {
+	> li:nth-of-type(even) {
+		background-color: $list-striped-bg-color;
+	}
+}
+
+.list-no-indent  {
+	padding-left: 19px;
+}
+
+.list-styled {
+	> .item {
+		margin: 10px 0;
+	}
+}
+
+.list-steps,
+.list-no-indent-children ol {
+	padding-left: 64px;
+	> li {
+		list-style-type: none;
+		counter-increment: listStepCounter;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		&:before {
+			content: "Step " counter(listStepCounter) ": ";
+			display: inline-block;
+			position: absolute;
+    		left: 16px;
+		}
+	}
+	
+}

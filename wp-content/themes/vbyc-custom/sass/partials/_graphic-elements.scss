@@ -1,0 +1,94 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	GRAPHIC ELEMENTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+// Dividers 
+hr {
+	border-top-color: $line-color;
+}
+.divider-styled {
+	width: 100px;
+	border-top: 2px solid $color-red;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	&.less-margin {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+.background-img-fluid {
+	background-size: 100% auto;
+}
+.hero-background-img {
+    background-position: 50% 50%;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+.img-full-width {
+	width: 100%;
+}
+
+
+
+
+
+// Figures
+.figure-images {
+	&.pull-right {
+		margin-left: $grid-gutter-width;
+	}
+	&.pull-left {
+		margin-right: $grid-gutter-width;
+	}
+	&.figure-zig-zag {
+		margin-top: 30px;
+		.figure-row {
+			.img-container:nth-of-type(even) {
+					margin-top: $grid-gutter-width;
+				
+			}
+		}
+		
+	}
+	.image-container {
+		margin-top: 20px;
+		background-color: $color-gray-lighter;
+	}
+}
+
+.page-template-with-side-nav {
+	.figure-layout-1 {
+		.multi-image-column {
+			padding-left: 5px;
+		}
+	}
+}
+
+
+
+.portrait-primary {
+	  border-radius: 100%;
+}
+
+
+
+// Callout box
+.content-callout {
+	background-color: $color-gray-lighter;
+	padding: 20px 25px; 
+}
+
+// Make images go full width, beyond its own width 
+
+
+@media (max-width: $screen-xs-max) {
+    .img-responsive  {
+		&.img-fluid {
+		    max-width: auto;
+		    width: 100%;
+		}
+	}
+
+}

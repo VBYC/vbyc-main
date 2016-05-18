@@ -1,0 +1,80 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    TEMPLATE - TIMELINE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.page-template-timeline {
+
+	.content {
+		background-color: $color-white;
+		.headline {
+			margin-top: -5px;
+		}
+	}
+	.main-article {
+		position: relative;
+		margin-bottom: 50px;
+		// Vertical line
+		&:before {
+			content: ' ';
+			width: 3px;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			margin-left: -1px;
+			background-color: $color-blue-light;
+			z-index: -1;
+		}
+	}
+	.timeline-item { 
+		margin-top: 70px; 
+		margin-bottom: 70px;
+		&.first {
+			margin-top: 0;
+		}
+		&.last {
+			.time {
+				margin-bottom: 0;
+			}
+			.row-item  {
+				background-color: $color-white;
+				z-index: 10;
+			}
+		}
+	}
+	.time {
+		background-color: $color-white;
+		color: $color-green;
+		font-size: 32px;
+		font-family: $font-family-link;
+		padding: 20px 10px;
+		margin-bottom: 50px;
+	}
+	
+}
+
+
+@media (max-width: $screen-xs-max) {
+    .template-timeline {
+    	text-align: center;
+        .timeline-item {
+			margin-top: 100px;
+			margin-bottom: 100px;
+			background-color: $color-white;
+		}
+		.time {
+			margin-bottom: 5px;
+		}
+		.content {
+			img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.content-primary-text {
+			margin-bottom: 30px;
+		}
+		.content-primary-img {
+			margin-bottom: 30px;
+		}
+    }
+}

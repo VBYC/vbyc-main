@@ -1,0 +1,44 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    PAGE - CONTACT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.page-template-contact {
+    .main-article {
+        margin: 50px auto;
+        display: inline-block;
+    }
+    .col {
+        display: inline-block;
+        float: left;
+        text-align: left;
+        &:not(:last-child) {
+             margin-right: 50px;
+        }
+    }
+    .global-contact-info {
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .page-template-contact {
+        .group-2 {
+            clear: both;
+        }
+    }
+}
+
+
+
+@media (max-width: $screen-xs-max) {
+    .page-template-contact {
+        .col {
+            clear: both;
+        }
+        .container {
+            text-align: left;
+        }
+    }
+}
+

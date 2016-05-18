@@ -1,0 +1,3 @@
+<? /* 
+Template Name: Category (blank)
+*/ ?>

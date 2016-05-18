@@ -1,0 +1,170 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    MAIN - NAVIGATION (MEDIUM+)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+$link-sub-padding: 12px;
+
+// Below nav
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    // Nav container - Override Bootstrap
+    .navbar-nav {
+        float: none;
+    } 
+}
+
+// Right of nav
+@media (min-width: $screen-sm-min) {
+    
+    // Nav container - Override Bootstrap
+    .navbar-nav {
+        float: right;
+    } 
+
+    // Parent nav - links container
+    .nav-menu,
+    .navbar-list {
+        display: inline-block;
+
+        // Parent nav - individual link container
+        > .menu-item, 
+        > .item {
+            float: left;
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            &:not(.emphasize) {
+                > a {
+                    &:hover {
+                        animation: width 0% > 100%; 
+                        background-color: transparent;
+                        color: $link-color-emphasize;
+                        border-bottom-color: $link-color-emphasize;
+                        .page-template-home & {
+                            color: $link-color-emphasize-reverse;
+                            border-bottom-color: $link-color-emphasize-reverse;
+                        }
+                    }
+                    &:focus,
+                    &:active {
+                        border-bottom-color: transparent;
+                    }
+                }
+                
+            }
+
+            &:hover {
+                .sub-menu,
+                .navbar-list-sub {
+                    display: block;
+                    color: pink;
+                }
+            }
+        }
+        
+        // Parent nav - links
+        > .menu-item > a,
+        .link {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-bottom: 2px solid transparent;
+            color: $link-color;
+            &:hover {
+                color: $link-color-emphasize;
+            }
+            .page-template-home & {
+                color: $link-color-reverse;
+            }
+//            &.normal {
+//                &:hover {
+//                    animation: width 0% > 100%; 
+//                    background-color: transparent;
+//                    color: $link-color-emphasize;
+//                    border-bottom-color: $link-color-emphasize;
+//                    .page-template-home & {
+//                        color: $link-color-emphasize-reverse;
+//                        border-bottom-color: $link-color-emphasize-reverse;
+//                    }
+//                }
+//                &:focus,
+//                &:active {
+//                    border-bottom-color: transparent;
+//                }
+//            }
+        }
+        > .current-menu-item, 
+        > .current-menu-parent, 
+        > .selected {
+            > a,
+            .link {
+                .navbar & {
+                    border-bottom: 2px solid $link-color;
+                    .page-template-home & {
+                        color: $link-color-emphasize-reverse;
+                        border-bottom-color: $link-color-emphasize-reverse;
+                    }
+                }
+            }
+        }
+
+        // Special nav - link
+        .emphasize > a {
+            padding-top: 9px;
+            padding-bottom: 6px;
+            margin-top: -2px;
+        }
+    }
+
+    // Sub nav - links container
+    .sub-menu,
+    .navbar-list-sub {
+        position: absolute;
+        margin-top: -2px;
+        padding-top: 20px;
+        left: -50%;
+        right: -50%;
+        z-index: 8;
+        &:before {
+            // Arrow
+            top: 11px;
+            
+        }
+
+        // Sub nav - individual link container
+        
+        > .menu-item,
+        .item-sub  {
+            
+            $link-sub-padding-extra: ($link-sub-padding * 1.5);
+            
+            &:first-child {
+                > a,
+                .link-sub {
+                    padding-top: $link-sub-padding-extra;
+                }
+            }
+            &:last-child {
+                > a,
+                .link-sub {
+                    padding-bottom: $link-sub-padding-extra;
+                }
+            }
+        }
+
+        // Sub nav - links
+        > .menu-item a,
+        .link-sub {
+            white-space: nowrap;
+            padding: $link-sub-padding;
+        }
+    }
+}
+
+
+
+@media (min-width: $screen-md-min) {
+    .nav-menu,
+    .navbar-list {
+        margin-top: 10px;
+    }   
+}
