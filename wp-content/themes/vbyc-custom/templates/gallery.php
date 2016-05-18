@@ -114,7 +114,7 @@ Template Name: Gallery
                         // VIDEO GALLERY
                         if( have_rows('videos') ): 
                             if ($image_gallery_present === true) {
-                                print '</div><hr class="divider-styled less-margin"><div class="row gallery-divider">'
+                                print '</div><hr class="divider-styled less-margin"><div class="row gallery-divider">';
                             }
                             while( have_rows('videos') ): the_row(); 
                                 $image_thumb        = get_sub_field('image');
