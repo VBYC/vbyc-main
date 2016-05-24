@@ -36,7 +36,7 @@
             <div class="container"> 
                 <article class="main-article <?=$list_style_steps_class?>">
                     <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/mini-gallery.php"); ?>
-                    <div class="row">
+                    <div class="row layout-column-group-first">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <?php   
 
@@ -69,7 +69,7 @@
 
                     <?php if( $has_three_columns ): ?>
                         <?php if( have_rows('three_columns_column') ): ?>
-                            <div class="row">
+                            <div class="row layout-column-group layout-column-multi">
                                 <?php 
                                     while( have_rows('three_columns_column') ): the_row(); 
                                     $column_content = get_sub_field('column_content');
@@ -85,7 +85,7 @@
                     <? // TWO COLUMNS ?>
                     <?php if( $has_two_columns ): ?>
                         <?php if( have_rows('two_columns_column') ): ?>
-                            <div class="row">
+                            <div class="row layout-column-group layout-column-multi">
                                 <?php 
                                     $first_item_class = 'col-sm-offset-2';
                                     while( have_rows('two_columns_column') ): the_row(); 
@@ -105,7 +105,7 @@
                     <? // ONE COLUMN ?>
                     <?php if( $has_one_column ): ?>
                         <?php if( have_rows('one_column_column') ): ?>
-                            <div class="row">
+                            <div class="row layout-column-group">
                                 <?php 
                                     while( have_rows('one_column_column') ): the_row(); 
                                         $column_content = get_sub_field('column_content');
