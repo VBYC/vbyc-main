@@ -35,7 +35,7 @@
         <section class="main-content">
             <div class="container"> 
                 <article class="main-article <?=$list_style_steps_class?>">
-                    <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/featured_images_secondary.php"); ?>
+                    <?php include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/mini-gallery.php"); ?>
                     <div class="row">
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <?php   
