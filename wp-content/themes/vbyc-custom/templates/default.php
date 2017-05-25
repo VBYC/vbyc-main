@@ -40,6 +40,8 @@
                         <div class="col-xs-12 col-md-8 col-md-offset-2">
                             <?php   
 
+                            echo get_field('donation_embed_form');
+
                             /* CONTENT HEADLINE (First red one) */ 
                             include("".$_SERVER["DOCUMENT_ROOT"]."/wp-content/themes/vbyc-custom/inc/content_headline.php");
 

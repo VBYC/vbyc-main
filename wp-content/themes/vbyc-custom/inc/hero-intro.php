@@ -20,8 +20,12 @@
                                         } else if ($link_target == 'external'){
                                             $link_url = get_field("intro_link_external");
                                             $link_target_attribute = 'target="_blank"';
+                                        } else if ($link_target == 'email'){
+                                            $link_url = get_field("intro_link_email");
+                                            $link_url = "mailto:".$link_url;
                                         }
                                 ?>
+
                                         <a  href="<?=$link_url?>" class="hero-cta" <?=$link_target_attribute?>>
                                              <?=$link_label?>
                                         </a>

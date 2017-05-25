@@ -1,23 +1,23 @@
-=== Google Analytics Dashboard for WP ===
+=== Google Analytics Dashboard for WP (GADWP) ===
 Contributors: deconf
 Donate link: https://deconf.com/donate/
-Tags: google,analytics,google analytics,dashboard,analytics dashboard,google analytics dashboard,google analytics plugin,google analytics widget,tracking,universal google analytics,realtime,multisite,gadwp
+Tags: analytics,google analytics,google analytics dashboard,google analytics plugin,google analytics widget
 Requires at least: 3.5
-Tested up to: 4.5
-Stable tag: 4.9.3.1
+Tested up to: 4.7.5
+Stable tag: 5.0.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Displays Google Analytics reports in your WordPress Dashboard. Inserts the latest Google Analytics tracking code in your pages.
+Connects Google Analytics with your WordPress site. Displays stats to help you understand your users and site content on a whole new level!
 
 == Description ==
-This Google Analytics for WordPress plugin enables you to track your site using the latest Google Analytics tracking code and allows you to view key Google Analytics reports in your WordPress install.
+This Google Analytics for WordPress plugin enables you to track your site using the latest Google Analytics tracking code and allows you to view key Google Analytics stats in your WordPress install.
 
-In addition to a set of general Google Analytics reports, in-depth Page reports and in-depth Post reports allow further segmentation of your analytics data, providing performance details for each post or page from your website.
+In addition to a set of general Google Analytics stats, in-depth Page reports and in-depth Post reports allow further segmentation of your analytics data, providing performance details for each post or page from your website.
 
-The Google Analytics tracking code is fully customizable through options and hooks, allowing advanced data collection using custom dimensions and events.    
+The Google Analytics tracking code is fully customizable through options and hooks, allowing advanced data collection like custom dimensions and events.    
 
-= Google Analytics Real-Time =
+= Google Analytics Real-Time Stats =
 
 Google Analytics reports, in real-time, in your dashboard screen:
 
@@ -29,26 +29,26 @@ Google Analytics reports, in real-time, in your dashboard screen:
 
 The Google Analytics reports you need, on your dashboard, in your All Posts and All Pages screens, and on site's frontend:  
 
-- Sessions, organic searches, page views, bounce rate analytics reports
-- Locations, pages, referrers, keywords analytics reports
-- Traffic channels, social networks, traffic mediums, search engines analytics reports
-- Device categories, browsers, operating systems, screen resolutions, mobile brands analytics reports 
-- User access control over analytics reports
+- Sessions, organic searches, page views, bounce rate analytics stats
+- Locations, pages, referrers, keywords, 404 errors analytics stats
+- Traffic channels, social networks, traffic mediums, search engines analytics stats
+- Device categories, browsers, operating systems, screen resolutions, mobile brands analytics stats
 
-= Google Analytics Basic Tracking =
+In addition, you can control who can view specific Google Analytics reports by setting permissions based on user roles.
+
+= Google Analytics Tracking =
 
 Installs the latest Google Analytics tracking code and allows full code customization:
 
-- Switch between Universal Google Analytics and Classic Google Analytics code
+- Universal Google Analytics tracking code
 - IP address anonymization
 - Enhanced link attribution
 - Remarketing, demographics and interests tracking
-- Google AdSense linking
 - Page Speed sampling rate control
 - Cross domain tracking
 - Exclude user roles from tracking
-
-= Google Analytics Event Tracking =
+- Accelerated Mobile Pages (AMP) support for Google Analytics
+- Ecommerce support for Google Analytics
 
 Google Analytics Dashboard for WP enables you to easily track events like:
  
@@ -57,16 +57,29 @@ Google Analytics Dashboard for WP enables you to easily track events like:
 - Outbound links
 - Affiliate links
 - Fragment identifiers
-
-= Google Analytics Custom Dimensions =
+- Telephone
+- Page Scrolling Depth
 
 With Google Analytics Dashboard for WP you can use custom dimensions to track:
 
 - Authors
 - Publication year
+- Publication month
 - Categories
 - Tags
 - User engagement
+
+Actions and filters are available for further Google Analytics tracking code customization.
+
+= Google Tag Manager Tracking =
+
+As an alternative to Google Analytics tracking code, you can use Google Tag Manager for tracking:
+
+- Google Tag Manager code
+- Data Layer variables: authors, publication year, publication month, categories, tags, user type
+- Additional Data Layer variables for page scrolling depth
+- Exclude user roles from tracking
+- Accelerated Mobile Pages (AMP) support for Google Tag Manager 
 
 = Google Analytics Dashboard for WP on Multisite =
 
@@ -134,67 +147,34 @@ Google Analytics Dashboard for WP it's released under the GPLv2, you can use it 
 
 == Upgrade Notice ==
 
+This is a major update, please read the [release notes](https://deconf.com/google-analytics-dashboard-for-wp-5-0-release-notes/) first.
+
 == Changelog ==
 
-= 4.9.3.1 =
+= 5.0.0.1 =
 * Bug Fixes:
-	* fixing a bug where &nbsp was displayed instead of a blank space on localized sites
-	
-= 4.9.3 =
-* Enhancements: 
-	* implement more specific error codes
-	* files cleanup
-	* move reports.js and other scripts to footer
-	* on-screen errors instead of using console
+	* filedsObject is missing for the create command
+	* display the last accessed report instead of the default one
+
+= 5.0 =
+* Release notes: [GADWP 5.0](https://deconf.com/google-analytics-dashboard-for-wp-5-0-release-notes/)
+* Enhancements:
+	* complete redesign of the tracking component
+	* AdSense Linking feature was removed since the new linking procedure does not require a special code anymore
+	* dropping support for Classic Analytics (ga.js) since all properties were transferred to Universal Analytics
+	* events are now tracked using a JS file instead of in-line JavaScript
+	* multiple improvements for events tracking accuracy
+	* ability to switch between sessions, users and pageviews metrics on reports like Location, Traffic, Searches
+	* the GAPI PHP Client was updated to v1.1.8
 * New Features:
-	* custom dimensions support for Tags	
-	
-= 4.9.2 =
-* Enhancements: 
-	* improved loading speed for charts
-	* add autoloading for Charts Library to allow dequeue on conflicts
-	* removed API Key option, since is not needed anymore
-	* display session values in Pie Chart slices
-	* improved data accuracy for Pie Charts 
-
-* Bug Fixes:
-	* multiple fixes for frontend widget
-	* page title missing in Realtime report
-
-* New Features:
-	* brand new Technology Reports with details about Device Categories, Browsers, Operating Systems, Screen Resolutions and Device Brands  
-
-= 4.9.1.2 =
-- Bug Fix: multiple CSS fixes for frontend widget
-- Bug Fix: clean-up output for View selection list
-- Bug Fix: try to fix Google Charts conflicts with other plugins
-- Bug Fix: prevent PHP warnings during authorization and while revoking tokens
-
-= 4.9.1.1 =
-- Bug Fix: focusFlag preventing Real-Time reports from refreshing properly
-- Bug Fix: date format is not properly localized in daily/monthly reports
-- Bug Fix: reports loading issues on WordPress 4.4
-
-= 4.9.1 =
-- Bug Fix: clear_cache method is generating PHP warnings on certain conditions 
-- Bug Fix: make sure Google charts libraries are loaded before rendering
-
-= 4.9.0.1 =
-- Bug Fix: Pages report missing from admin dashboard widget
-- Bug Fix: Invalid response with a -31 error when using a certain combination of backend settings
-
-= 4.9 =
-- Bug Fix: add an unique class to jQuery UI Tooltips to avoid conflicts
-- Bug Fix: multiple CSS improvements
-- Bug Fix: invalid localized date formats
-- Bug Fix: switching between multisite modes doesn't propagate the new network status on all sites
-- Bug Fix: Location Settings ignored in posts/pages reports
-- Enhancement: unset cookies while revoking the authorization or clearing the cache 
-- Enhancement: no more page re-loads on admin dashboard widget when switching between reports
-- Enhancement: unified reporting system with real-time capabilities
-- Enhancement: new tracking options enabling you to customize cookieName, cookieDomain, cookieExpires; props by [Martins Sipenko](https://github.com/martinssipenko) 
-- Enhancement: display update notices only to admins and only on dashboard
-- Enhancement: force language packs updates for all available languages on a Network
-- Enhancement: added View switch capabilities
+	* ability to use Google Tag Manager instead of Google Analytics tracking
+	* added Accelerated Mobile Pages (AMP) support for Google Analytics and Google Tag Manager tracking
+	* users can now switch the position of the tracking codes from head to body through options
+	* option to load Ecommerce or Enhanced Ecommerce plug-ins for analytics.js 
+	* option to select the placement of the tracking code (head or footer)
+	* events tracking for form submit actions
+	* events tracking for telephone calls
+	* events tracking for page scrolling depth
+	* full support for experiments with Optimize
 
 The full changelog is [available here](https://deconf.com/changelog-google-analytics-dashboard-for-wp/).

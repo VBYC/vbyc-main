@@ -96,8 +96,6 @@ if( function_exists('acf_add_options_page') ) {
 
 
     // SCHEDULE
-
-
     acf_add_options_page(array(
         'page_title'    => 'Session Schedule Settings',
         'menu_title'    => 'Session Schedule',
@@ -120,11 +118,6 @@ if( function_exists('acf_add_options_page') ) {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     NON AFP 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
-
-
 
 // Remove height/width from featured image so it scales for responsive
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 );
