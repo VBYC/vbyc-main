@@ -12,6 +12,7 @@ Template Name: Gallery
     if ($thumbnail_format == 'square') {
         $thumbnail_col_width = '3';
         $thumbnail_format_size_name = 'profile';
+        $thumbnail_format_type = 'type-profile';
     }  else {
         $thumbnail_col_width = '4';
         $thumbnail_format_size_name = 'gallery';
@@ -90,7 +91,7 @@ Template Name: Gallery
   ?>
                         <div class="col-xs-12 col-sm-<?=$thumbnail_col_width?>">
                           <a href="<?php echo $image['url']; ?>" 
-                            class="gallery" 
+                            class="gallery <?=$thumbnail_format_type?>" 
                             data-toggle="lightbox" 
                             data-type="image" 
                             data-gallery="multiimages" 
@@ -143,7 +144,7 @@ Template Name: Gallery
    
                         <div class="col-xs-12 col-sm-<?=$thumbnail_col_width?>">
                           <a href="<?=$video?>" 
-                            class="gallery" 
+                            class="gallery <?=$thumbnail_format_type?>" 
                             data-toggle="lightbox" 
                             data-type="<?$data_type?>" 
                             data-gallery="youtubevideos" 

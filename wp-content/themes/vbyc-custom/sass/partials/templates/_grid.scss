@@ -8,8 +8,15 @@
 	.gallery {
 		display: block;
 		position: relative;
-		
-	
+
+		margin-bottom: 20px;
+		.grid-item {
+			margin-bottom: 0;
+		}
+		&.type-profile {
+			border-radius: 50%;
+			overflow: hidden;
+		}
 		
 		&:hover {
 			background-color: #000;
@@ -55,14 +62,5 @@
 	}
 	.details {
 		margin-bottom: 3em;
-	}
-
-
-}
-
-
-@media (max-width: $screen-xs-max) {
-    .template-grid {
-		
 	}
 }
