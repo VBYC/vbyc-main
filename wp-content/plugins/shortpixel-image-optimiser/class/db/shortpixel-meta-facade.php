@@ -194,7 +194,7 @@ class ShortPixelMetaFacade {
         }        
     }
     
-    function incrementRetries($count = 1, $errorCode = -999, $errorMessage = '') {
+    function incrementRetries($count = 1, $errorCode = ShortPixelAPI::ERR_UNKNOWN, $errorMessage = '') {
         if($this->type == self::CUSTOM_TYPE) {
             $this->meta->setRetries($this->meta->getRetries() + $count);
         } else {
@@ -261,11 +261,11 @@ class ShortPixelMetaFacade {
     }
     
     public static function safeGetAttachmentUrl($id) {
-        $attURL = wp_get_attachment_url($id);
+        $attURL = wp_get_attachment_url($id);        
         if(!$attURL || !strlen($attURL)) {
             throw new Exception("Post metadata is corrupt (No attachment URL)");
         }
-        if ( !parse_url(WP_CONTENT_URL, PHP_URL_SCHEME) ) {//no absolute URLs used -> we implement a hack
+        if ( !parse_url($attURL, PHP_URL_SCHEME) ) {//no absolute URLs used -> we implement a hack
            return get_site_url() . $attURL;//get the file URL 
         }
         else {

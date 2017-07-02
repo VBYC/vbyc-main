@@ -189,25 +189,33 @@ var ShortPixel = function() {
         });
     }   
     
-    function successActions(id, type, thumbsCount, thumbsTotal, backupEnabled) {
+    function successActions(id, type, thumbsCount, thumbsTotal, backupEnabled, fileName) {
         if(backupEnabled == 1) {
             
-            var otherType;
-            if(type.length == 0) {
-                otherType = ShortPixel.DEFAULT_COMPRESSION == 1 ? 'glossy' : ShortPixel.DEFAULT_COMPRESSION == 2 ? 'lossless' : 'lossy';
-            }
-            else if(ShortPixel.DEFAULT_COMPRESSION == 0 || ShortPixel.DEFAULT_COMPRESSION == 2) {
-                otherType = (type == 'lossless' ? 'glossy' : 'lossless');
-            }
-            else otherType = (type == 'lossy' ? 'lossless' : 'lossy');
+            var successActions = jQuery('.sp-column-actions-template').clone();
 
+            if(!successActions.length) return false;           
             
-            return '<div class="sp-column-actions">' 
-             + (thumbsTotal > thumbsCount ? "<a class='button button-smaller button-primary' href=\"javascript:optimizeThumbs(" + id + ");\">" 
-                                            + _spTr.optXThumbs.format(thumbsTotal - thumbsCount) + "</a>" : "")
-             + (otherType.length ? "<a class='button button-smaller' href=\"javascript:reoptimize(" + id + ", '" + otherType + "');\">" + _spTr.reOptimizeAs.format(otherType) + "</a>" : "")
-             + "<a class='button button-smaller' href=\"admin.php?action=shortpixel_restore_backup&attachment_ID=" + id + ")\">" + _spTr.restoreBackup + "</a>"
-             + "</div>";
+            var otherTypes;
+            if(type.length == 0) {
+                otherTypes = ['lossy', 'lossless'];
+            } else {
+                otherTypes = ['lossy','glossy','lossless'].filter(function(el) {return !(el == type);});
+            }        
+            
+            successActions.html(successActions.html().replace(/__SP_ID__/g, id));
+            if(fileName.substr(fileName.lastIndexOf('.') + 1).toLowerCase() == 'pdf') {
+                jQuery('.sp-action-compare', successActions).remove();
+            }
+            if(thumbsCount == 0) {
+                successActions.html(successActions.html().replace('__SP_THUMBS_TOTAL__', thumbsTotal));
+            } else {
+                jQuery('.sp-action-optimize-thumbs', successActions).remove();
+                jQuery('.sp-dropbtn', successActions).removeClass('button-primary');
+            }
+            successActions.html(successActions.html().replace(/__SP_FIRST_TYPE__/g, otherTypes[0]));
+            successActions.html(successActions.html().replace(/__SP_SECOND_TYPE__/g, otherTypes[1]));
+            return successActions.html();
         } 
         return "";
     }
@@ -269,7 +277,7 @@ var ShortPixel = function() {
     
     function initFolderSelector() {
         jQuery(".select-folder-button").click(function(){
-            jQuery(".sp-folder-picker-shade").css("display", "block");
+            jQuery(".sp-modal-shade").css("display", "block");
             jQuery(".sp-folder-picker").fileTree({
                 script: ShortPixel.browseContent,
                 //folderEvent: 'dblclick',
@@ -277,17 +285,17 @@ var ShortPixel = function() {
                 //onlyFolders: true
             });
         });
-        jQuery(".sp-folder-picker-popup input.select-folder-cancel").click(function(){
-            jQuery(".sp-folder-picker-shade").css("display", "none");
+        jQuery(".shortpixel-modal input.select-folder-cancel").click(function(){
+            jQuery(".sp-modal-shade").css("display", "none");
         });
-        jQuery(".sp-folder-picker-popup input.select-folder").click(function(){
-            var subPath = jQuery("UL.jqueryFileTree LI.directory.selected A").attr("rel");
+        jQuery(".shortpixel-modal input.select-folder").click(function(){
+            var subPath = jQuery("UL.jqueryFileTree LI.directory.selected A").attr("rel").trim();
             if(subPath) {
                 var fullPath = jQuery("#customFolderBase").val() + subPath;
                 if(fullPath.slice(-1) == '/') fullPath = fullPath.slice(0, -1);
                 jQuery("#addCustomFolder").val(fullPath);
                 jQuery("#addCustomFolderView").val(fullPath);
-                jQuery(".sp-folder-picker-shade").css("display", "none");
+                jQuery(".sp-modal-shade").css("display", "none");
             } else {
                 alert("Please select a folder from the list.");
             }
@@ -357,6 +365,105 @@ var ShortPixel = function() {
     function recheckQuota() {
         window.location.href=window.location.href+(window.location.href.indexOf('?')>0?'&':'?')+'checkquota=1';
     }
+    
+    function openImageMenu(e) {
+            e.preventDefault();
+            //install (lazily) a window click event to close the menus
+            if(!this.menuCloseEvent) {
+                jQuery(window).click(function(e){
+                    if (!e.target.matches('.sp-dropbtn')) {
+                        jQuery('.sp-dropdown.sp-show').removeClass('sp-show');
+                    }
+                });
+                this.menuCloseEvent = true;
+            }
+            var shown = e.target.parentElement.classList.contains("sp-show");
+            jQuery('.sp-dropdown.sp-show').removeClass('sp-show');
+            if(!shown) e.target.parentElement.classList.add("sp-show");
+    }
+    
+    function loadComparer(id) {
+        this.comparerData.origUrl = false;
+        
+        if(this.comparerData.cssLoaded === false) {
+            jQuery('<link>')
+                .appendTo('head')
+                .attr({
+                    type: 'text/css', 
+                    rel: 'stylesheet',
+                    href: this.WP_PLUGIN_URL + '/res/css/twentytwenty.css'
+                });
+            this.comparerData.cssLoaded = 2;
+        }
+        if(this.comparerData.jsLoaded === false) {
+            jQuery.getScript(this.WP_PLUGIN_URL + '/res/js/jquery.twentytwenty.js', function(){
+                ShortPixel.comparerData.jsLoaded = 2;
+                if(ShortPixel.comparerData.origUrl.length > 0) {
+                    ShortPixel.displayComparerPopup(ShortPixel.comparerData.width, ShortPixel.comparerData.height, ShortPixel.comparerData.origUrl, ShortPixel.comparerData.optUrl);
+                }
+            });
+            this.comparerData.jsLoaded = 1;
+            jQuery(".sp-close-button").click(ShortPixel.closeComparerPopup);
+        }
+        if(this.comparerData.origUrl === false) {
+            jQuery.ajax({
+                type: "POST",
+                url: ShortPixel.AJAX_URL, 
+                data: { action : 'shortpixel_get_comparer_data', id : id }, 
+                success: function(response) {
+                    data = JSON.parse(response);
+                    jQuery.extend(ShortPixel.comparerData, data);
+                    if(ShortPixel.comparerData.jsLoaded == 2) {
+                        ShortPixel.displayComparerPopup(ShortPixel.comparerData.width, ShortPixel.comparerData.height, ShortPixel.comparerData.origUrl, ShortPixel.comparerData.optUrl);
+                    }
+                }
+            });
+            this.comparerData.origUrl = '';
+        }
+    }
+
+    function displayComparerPopup(width, height, imgOriginal, imgOptimized) {
+        //image sizes
+        var origWidth = width;
+        //depending on the sizes choose the right modal
+        var sideBySide = (height < 150 || width < 350);
+        var modal = jQuery(sideBySide ? '#spUploadCompareSideBySide' : '#spUploadCompare');
+        if(!sideBySide) {
+            jQuery("#spCompareSlider").html('<img class="spUploadCompareOriginal"/><img class="spUploadCompareOptimized"/>');
+        }
+        //calculate the modal size
+        width = Math.max(350, Math.min(800, (width < 350 ? (width + 25) * 2 : (height < 150 ? width + 25 : width))));
+        height = Math.max(150, (sideBySide ? (origWidth > 350 ? 2 * (height + 45) : height + 45) : height * width / origWidth));
+        //set modal sizes and display
+        jQuery(".sp-modal-body", modal).css("width", width);
+        jQuery(".shortpixel-slider", modal).css("width", width);
+        modal.css("width", width);
+        jQuery(".sp-modal-body", modal).css("height", height);
+        modal.css('display', 'block');
+        modal.parent().css('display', 'block');
+        if(!sideBySide) {
+            jQuery("#spCompareSlider").twentytwenty({slider_move: "mousemove"});
+        }
+        jQuery(document).on('keyup.sp_modal_active', ShortPixel.closeComparerPopup);
+        //change images srcs
+        var imgOpt = jQuery(".spUploadCompareOptimized", modal);
+        jQuery(".spUploadCompareOriginal", modal).attr("src", imgOriginal);
+        //these timeouts are for the slider - it needs a punch to work :)
+        setTimeout(function(){
+            jQuery(window).trigger('resize');
+        }, 1000);
+        imgOpt.load(function(){
+            jQuery(window).trigger('resize');
+        });
+        imgOpt.attr("src", imgOptimized);
+    }
+    
+    function closeComparerPopup(e) {
+        jQuery("#spUploadCompareSideBySide").parent().css("display", 'none');
+        jQuery("#spUploadCompareSideBySide").css("display", 'none');
+        jQuery("#spUploadCompare").css("display", 'none');
+        jQuery(document).unbind('keyup.sp_modal_active');
+    }
 
     return {
         setOptions          : setOptions,
@@ -385,7 +492,20 @@ var ShortPixel = function() {
         bulkShowError       : bulkShowError,
         removeBulkMsg       : removeBulkMsg,
         isCustomImageId     : isCustomImageId,
-        recheckQuota        : recheckQuota
+        recheckQuota        : recheckQuota,
+        openImageMenu       : openImageMenu,
+        menuCloseEvent      : false,
+        loadComparer        : loadComparer,
+        displayComparerPopup: displayComparerPopup,
+        closeComparerPopup  : closeComparerPopup,
+        comparerData        : {
+            cssLoaded   : false,
+            jsLoaded    : false,
+            origUrl     : false,
+            optUrl      : false,
+            width       : 0,
+            height      : 0
+        }
     }
 }();
 
@@ -400,7 +520,6 @@ function showToolBarAlert($status, $message) {
             }
             robo.addClass("shortpixel-alert");
             robo.addClass("shortpixel-quota-exceeded");
-            //jQuery("a", robo).attr("href", "http://shortpixel.com/login/" + ShortPixel.API_KEY);
             jQuery("a", robo).attr("href", "options-general.php?page=wp-shortpixel");
             //jQuery("a", robo).attr("target", "_blank");
             //jQuery("a div", robo).attr("title", "ShortPixel quota exceeded. Click to top-up");
@@ -590,7 +709,7 @@ function checkBulkProcessingCallApi(){
                         //for now, until 4.1
                         var successActions = ShortPixel.isCustomImageId(id) 
                             ? "" 
-                            : ShortPixel.successActions(id, data["Type"], data['ThumbsCount'], data['ThumbsTotal'], data["BackupEnabled"]);
+                            : ShortPixel.successActions(id, data["Type"], data['ThumbsCount'], data['ThumbsTotal'], data["BackupEnabled"], data['Filename']);
                             
                         setCellMessage(id, ShortPixel.successMsg(id, percent, data["Type"], data['ThumbsCount'], data['RetinasCount']), successActions);
                         var actions = jQuery(['restore', 'view', 'redolossy', 'redoglossy', 'redolossless']).not(['redo'+data["Type"]]).get();

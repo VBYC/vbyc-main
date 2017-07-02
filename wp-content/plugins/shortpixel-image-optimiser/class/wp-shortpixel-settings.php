@@ -26,6 +26,7 @@ class WPShortPixelSettings {
         'keepExif' => array('key' => 'wp-short-pixel-keep-exif', 'default' => 0),
         'CMYKtoRGBconversion' => array('key' => 'wp-short-pixel_cmyk2rgb', 'default' => 1),
         'createWebp' => array('key' => 'wp-short-create-webp', 'default' => null),
+        'createWebpMarkup' => array('key' => 'wp-short-pixel-create-webp-markup', 'default' => null),
         'optimizeRetina' => array('key' => 'wp-short-pixel-optimize-retina', 'default' => 1),
         'backupImages' => array('key' => 'wp-short-backup_images', 'default' => 1),
         'resizeImages' => array('key' => 'wp-short-pixel-resize-images', 'default' => false),
@@ -57,7 +58,7 @@ class WPShortPixelSettings {
         'httpProto' => array('key' => 'wp-short-pixel-protocol', 'default' => 'https'),
         'downloadProto' => array('key' => 'wp-short-pixel-download-protocol', 'default' => null),
         'mediaAlert' => array('key' => 'wp-short-pixel-media-alert', 'default' => null),
-        'dismissedNotices' => array('key' => 'wp-short-pixel-dismissed-notices', 'default' => null),
+        'dismissedNotices' => array('key' => 'wp-short-pixel-dismissed-notices', 'default' => array()),
         'activationDate' => array('key' => 'wp-short-pixel-activation-date', 'default' => null),
         'activationNotice' => array('key' => 'wp-short-pixel-activation-notice', 'default' => null),
         'mediaLibraryViewMode' => array('key' => 'wp-short-pixel-view-mode', 'default' => null),
@@ -82,8 +83,8 @@ class WPShortPixelSettings {
         'failedImages' => array('key' => 'wp-short-pixel-failed-imgs', 'default' => 0),
         'bulkProcessingStatus' => array('key' => 'bulkProcessingStatus', 'default' => null),
         
-        'priorityQueue' => array('key' => 'wp-short-pixel-priorityQueue', 'default' => null),
-        'prioritySkip' => array('key' => 'wp-short-pixel-prioritySkip', 'default' => null),
+        'priorityQueue' => array('key' => 'wp-short-pixel-priorityQueue', 'default' => array()),
+        'prioritySkip' => array('key' => 'wp-short-pixel-prioritySkip', 'default' => array()),
         
         //'' => array('key' => 'wp-short-pixel-', 'default' => null),
     );

@@ -21,7 +21,7 @@ class ShortPixelQueue {
         if(   !isset($_SESSION["wp-short-pixel-priorityQueue"]) //session is not defined
            || !(is_admin() && function_exists("is_user_logged_in") && is_user_logged_in())) { //or we're not in the admin - re-init each time
             //take the priority list from the options (we persist there the priority IDs from the previous session)
-            $prioQueueOpt = $this->settings->getOpt( 'wp-short-pixel-priorityQueue', array());//here we save the IDs for the files that need to be processed after an image upload for example
+            $prioQueueOpt = $this->settings->getOpt( 'priorityQueue', array());//here we save the IDs for the files that need to be processed after an image upload for example
             $_SESSION["wp-short-pixel-priorityQueue"] = array();
             foreach($prioQueueOpt as $ID) {
                 if(ShortPixelMetaFacade::isCustomQueuedId($ID)) {

@@ -1,12 +1,9 @@
 === ShortPixel Image Optimizer ===
-
 Contributors: ShortPixel 
 Tags: compress, image, compression, optimize, image optimizer, image compression, resize,  compress pdf, compress jpg, compress png, image compression
-
-
 Requires at least: 3.2.0
-Tested up to: 4.7
-Stable tag: 4.4.0
+Tested up to: 4.8
+Stable tag: 4.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +32,7 @@ Make an instant <a rel="friend" href="http://shortpixel.com/image-compression-te
 * compress JPG, PNG, GIF (still or animated) images and also PDF documents
 * no file size limit
 * option to freely convert any JPEG, PNG or GIF (even animated ones!) to **WebP** for more Google love. <a rel="friend" href="http://blog.shortpixel.com/how-webp-images-can-speed-up-your-site/" target="_blank">How to enable WebP?</a>
+* option to include the generated WebP images into the front-end pages by using the &lt;picture&gt; tag instead of &lt;img&gt;
 * compatible with WP Retina 2x - all **retina images** are automatically compressed. <a rel="friend" href="http://blog.shortpixel.com/how-to-use-optimized-retina-images-on-your-wordpress-site-for-best-user-experience-on-apple-devices/" target="_blank">How to benefit from Retina displays?</a>
 * optimize thumbnails as well as featured images
 * ability to optimize any image on your site including images in **NextGEN Gallery** and any other image gallery or slider
@@ -61,7 +59,7 @@ Make an instant <a rel="friend" href="http://shortpixel.com/image-compression-te
     
 **How much it costs?**
 ShortPixel comes with 100 free credits/month and additional credits can be bought with as little as $4.99 for 5,000 image credits.
-Check out <a rel="friend" href="https://shortpixel.com/pricing" target="_blank">our prices</a>
+Check out <a rel="friend" href="https://shortpixel.com/pricing" target="_blank">our prices</a>.
 
 > **Testimonials:**  
 > ★★★★★ **A Super Plugin works very well 62% reduction overall.** [robertvarns](https://wordpress.org/support/topic/a-super-plugin-works-very-well-62-reduction-overall/)   
@@ -71,6 +69,7 @@ Check out <a rel="friend" href="https://shortpixel.com/pricing" target="_blank">
 > ★★★★★ **Great image compression, solid plugin, equally great support.** [matters1959](https://wordpress.org/support/topic/support-shortpixel-image-optimizer/)  
 > [more testimonials](https://wordpress.org/support/plugin/shortpixel-image-optimiser/reviews/?filter=5)
 
+[youtube https://www.youtube.com/watch?v=5EbX0Hsy6j4]
 
 Help us spread a the word by recommending ShortPixel to your friends and collect 100 additional image credits for each referred sign up. Make money by promoting a great plugin with our <a href="https://shortpixel.com/free-sign-up-affiliate" target="_blank">50/50 affiliate program</a>.
 
@@ -83,7 +82,6 @@ Help us spread a the word by recommending ShortPixel to your friends and collect
 * LinkedIn <a href="https://www.linkedin.com/company/shortpixel" target="_blank">https://www.linkedin.com/company/shortpixel</a>
 
 **Keywords:** picture,  optimization, image editor, pngout, upload speed, shortpixel, compression, nextgen, nextgen gallery optimizer, jpegmini, webp, lossless, cwebp, media, jpegtran, image, image optimisation, image optimization, shrink, picture, photo, optimize photos, compress, performance, tinypng, crunch, pngquant, attachment, optimize, pictures, fast, images, image files, image quality, lossy, upload, kraken, resize, seo, smushit, optipng, kraken image optimizer, ewww, photo optimization, gifsicle, image optimizer, krakenio, png, gmagick, image optimize, pdf, pdf optimisation, pdf optimization, optimize pdf, optimise pdf, shrink pdf, jpg, jpeg, jpg optimisation, jpg optimization, optimize jpg, optimise jpg, shrink jpg, gif, animated gif, optimize gif, optimise gif, optimizer, optimiser, compresion, cruncher, image cruncher, compress png, compress jpg, compress jpeg, compress pdf, faster loading times, image optimiser, improve pagerank, optimise, optimize animated gif,  optimise jpeg, optimize jpeg, optimize png, optimise png, tinyjpg, short pixel, woocommerce compatible, wpml compatible, smush, imsanity, scale, wp smush, compress images, pdf compression, optimize images, shrink jpeg, compressor, faster website, google pagerank, imagify, prizm, optimus, zara, improve page speed, PageSpeed Insights, sitespeed, smaller images, tinyjpeg, wordpress compression, wordPress image tool, reduce image size, bandwidth, pics, keep exif, remove exif, speed up site, speed up website, compress thumbnails, optimize thumbnails
-
 
 == Installation ==
 
@@ -220,6 +218,32 @@ The ShortPixel team is here to help. <a href="https://shortpixel.com/contact">Co
 9. Check other optimized images status - themes or other plugins' images. (Media>Other Media)
 
 == Changelog ==
+
+= 4.5.3 =
+
+* fix Javascript error in bulk in some cases
+
+= 4.5.2 =
+
+* fix readme again
+
+= 4.5.1 =
+
+* fix readme
+
+= 4.5.0 =
+
+* replace img tags in front-end with picture tags, and include the webp images
+* actions menu in Media Library
+* option to compare the optimized (main) image with the original in Media Library
+
+= 4.4.2 =
+
+* fix wrong custom path in some cases
+
+= 4.4.1 =
+
+* fix warnings on PHP 7.1 for empty array settings.
 
 = 4.4.0 =
 
@@ -623,126 +647,3 @@ The ShortPixel team is here to help. <a href="https://shortpixel.com/contact">Co
 = 2.0.0 =
 
 * SP plugin uses API v2 and the processing speed is significantly improved
-
-= 1.6.10 =
-
-* Corrected a bug affecting option saving for some of the users.
-
-= 1.6.9 =
-
-* Optimize now option only appears when the image wasn't optimized
-
-= 1.6.8 =
-
-* Bulk Processing optimized to skip images that were already optimized with the same options when Bulk Processing is run multiple times
-* changed the place where original (backup) files are stored
-* extra check for missing(expired) processed images
-
-= 1.6.7 =
-
-* extra check for exif_imagetype function 
-
-= 1.6.6 =
-
-* changed method from GET to POST for API Key validation
-* bulk optimization text update
-
-= 1.6.5 =
-
-* plugin tested for WP 4.1
-
-= 1.6.4 =
-
-* API validation URL changed to v1
-
-= 1.6.3 =
-
-* fallback to http if plugin activation fails for https
-* added error mesage API Key validation fail
-
-= 1.6.2 =
-
-* extra check for images that return 3xx/4xx codes to be ignored
-* API Key validation (error) message is returned to user
-* error messages for images are displayed in the "ShortPixel Compression" column
-
-= 1.6.1 = 
-
-* fixed small upload glitch
-* added succes message upon bulk processing completion
-* improved image backup 
-* lossy option by default upon plugin installation
-
-= 1.6.0 =
-
-* images' requests for optimization are sent for all sizes upon image upload in media gallery
-* non-image (e.g. PDF files) are ignored now @ bulk processing
-* bulk optimization improved & some bugs fixed.
-* FAQ/Description small changes
-
-= 1.5.1 = 
-
-* readme changes
-
-= 1.5.0 =
-
-* pictures are removed from backup as well when deleted
-* restore backup warning/error fixed
-* fixed useless/bad AJAX requests that occured sometimes
-* added user agent to API Key validation for debugging purposes
-* Bulk Processing was freezing for some users, fixed this + added Cancel button
-
-= 1.4.1 =
-
-* optimize again overwrote the original image, fixed
-* fixed restore errors
-* changes to FAQ/Description texts
-
-= 1.4.0 =
-
-* Bulk image processing improved so it can optimize all the images in background while admin page is open
-* small changes in readme.txt description
-
-= 1.3.5 =
-
-* fixed broken link in settings page
-* updated FAQ
-* description updated
-
-= 1.3.2 =
-
-* fixed missing action link @ Bulk Processing
-* added more screenshots
-
-= 1.3.1 =
-
-* possible fix for API key validation failing
-* added backup and restore for images that are processed with shortpixel
-* optimize now feature on Media Library
-
-= 1.0.6 =
-
-* bulk processing runs in background now.
-
-= 1.0.5 =
-
-* extra check for the converted images to be safely copied from ShortPixel
-
-= 1.0.4 =
-
-* corrections and additions to readme.txt and wp-shortpixel.php
-
-= 1.0.3 =
-
-* minor bug fixes
-
-= 1.0.2 =
-
-* Updated Bulk editing to run in background
-* Updated default options
-* Added notifications on activation
-
-= 1.0 =
-
-* First working version
-

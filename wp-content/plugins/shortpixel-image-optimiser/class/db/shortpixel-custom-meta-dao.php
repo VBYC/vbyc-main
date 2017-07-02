@@ -427,6 +427,10 @@ class ShortPixelCustomMetaDao {
         foreach($failRows as $failLine) {
             $filesWithErrors['C-' . $failLine->id] = array('Name' => $failLine->name, 'Message' => $failLine->message, 'Path' => $failLine->path);
         }
+        
+        if(!isset($rows[0])) {
+            $rows[0] = (object)array('totalFiles' => 0, 'totalProcessedFiles' => 0, 'totalProcLossyFiles' => 0, 'totalProcGlossyFiles' => 0, 'totalProcLosslessFiles' => 0);
+        }
                 
         return array("totalFiles" => $rows[0]->totalFiles, "mainFiles" => $rows[0]->totalFiles, 
                      "totalProcessedFiles" => $rows[0]->totalProcessedFiles, "mainProcessedFiles" => $rows[0]->totalProcessedFiles,

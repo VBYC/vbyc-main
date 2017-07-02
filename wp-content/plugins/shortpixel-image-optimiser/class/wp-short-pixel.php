@@ -74,6 +74,7 @@ class WPShortPixel {
             
             add_action('wp_ajax_shortpixel_browse_content', array(&$this, 'browseContent'));
             add_action('wp_ajax_shortpixel_get_backup_size', array(&$this, 'getBackupSize'));
+            add_action('wp_ajax_shortpixel_get_comparer_data', array(&$this, 'getComparerData'));
         
             add_action( 'delete_attachment', array( &$this, 'handleDeleteAttachmentInBackup' ) );
             add_action( 'load-upload.php', array( &$this, 'handleCustomBulk'));
@@ -245,7 +246,17 @@ class WPShortPixel {
         }
     }
    
-    function shortPixelJS() { ?> 
+    function shortPixelJS() { 
+        require_once(ABSPATH . 'wp-admin/includes/screen.php');
+        $screen = get_current_screen();
+        if($screen->id == 'upload') {
+            //output the comparer html
+            $this->view->outputComparerHTML();
+            //render a template of the list cell to be used by the JS
+            $this->view->renderListCell("__SP_ID__", 'imgOptimized', true, true, "__SP_THUMBS_TOTAL__", true, true, 
+                                        array("__SP_FIRST_TYPE__", "__SP_SECOND_TYPE__"), "__SP_CELL_MESSAGE__", 'sp-column-actions-template');
+        }
+        ?> 
         <script type="text/javascript" >
             var ShortPixelConstants = {
                 STATUS_SUCCESS: <?php echo ShortPixelAPI::STATUS_SUCCESS; ?>,
@@ -260,16 +271,16 @@ class WPShortPixel {
                 STATUS_MAINTENANCE: <?php echo ShortPixelAPI::STATUS_MAINTENANCE; ?>,
                 WP_PLUGIN_URL: '<?php echo plugins_url( '', SHORTPIXEL_PLUGIN_FILE ); ?>',
                 WP_ADMIN_URL: '<?php echo admin_url(); ?>',
-                API_KEY: "<?php echo $this->_settings->apiKey; ?>",
+                API_KEY: "<?php echo(defined("SHORTPIXEL_HIDE_API_KEY") ? '' : $this->_settings->apiKey); ?>",
                 DEFAULT_COMPRESSION: <?php echo $this->_settings->compressionType; ?>,
                 MEDIA_ALERT: '<?php echo $this->_settings->mediaAlert ? "done" : "todo"; ?>',
                 FRONT_BOOTSTRAP: <?php echo $this->_settings->frontBootstrap && (!isset($this->_settings->lastBackAction) || (time() - $this->_settings->lastBackAction > 600)) ? 1 : 0; ?>,
                 AJAX_URL: '<?php echo admin_url('admin-ajax.php'); ?>'
             };
         </script> <?php
-        wp_enqueue_style('short-pixel.css', plugins_url('/res/css/short-pixel.css',SHORTPIXEL_PLUGIN_FILE) );
+        wp_enqueue_style('short-pixel.css', plugins_url('/res/css/short-pixel.css',SHORTPIXEL_PLUGIN_FILE), array(), SHORTPIXEL_IMAGE_OPTIMISER_VERSION);
         
-        wp_register_script('short-pixel.js', plugins_url('/res/js/short-pixel.js',SHORTPIXEL_PLUGIN_FILE) );
+        wp_register_script('short-pixel.js', plugins_url('/res/js/short-pixel.js',SHORTPIXEL_PLUGIN_FILE), array(), SHORTPIXEL_IMAGE_OPTIMISER_VERSION);
         $jsTranslation = array(
                 'optimizeWithSP' => __( 'Optimize with ShortPixel', 'shortpixel-image-optimiser' ),
                 'changeMLToListMode' => __( 'In order to access the ShortPixel Optimization actions and info, please change to {0}List View{1}List View{2}Dismiss{3}', 'shortpixel-image-optimiser' ),
@@ -306,7 +317,7 @@ class WPShortPixel {
         $id = 'short-pixel-notice-toolbar';
         $tooltip = __('ShortPixel optimizing...','shortpixel-image-optimiser');
         $icon = "shortpixel.png";
-        $successLink = $link = current_user_can( 'edit_others_posts')? 'upload.php?page=wp-short-pixel-bulk' : 'upload.php';
+        $successLink = $link = admin_url(current_user_can( 'edit_others_posts')? 'upload.php?page=wp-short-pixel-bulk' : 'upload.php');
         $blank = "";
         if($this->prioQ->processing()) {
             $extraClasses = " shortpixel-processing";
@@ -876,7 +887,7 @@ class WPShortPixel {
                 if(isset($result['Code'])) {
                     $itemHandler->incrementRetries(1, $result['Code'], $result["Message"]);
                 } else {
-                    $itemHandler->incrementRetries(1, -999, "Connection error (" . $result["Message"] . ")" );
+                    $itemHandler->incrementRetries(1, ShortPixelAPI::ERR_UNKNOWN, "Connection error (" . $result["Message"] . ")" );
                 }
             }
         }
@@ -950,7 +961,7 @@ class WPShortPixel {
     private function sendToProcessing($itemHandler, $compressionType = false, $onlyThumbs = false) {
         //WpShortPixelMediaLbraryAdapter::cleanupFoundThumbs($itemHandler);
         $URLsAndPATHs = $this->getURLsAndPATHs($itemHandler, NULL, $onlyThumbs);
-
+        
         $meta = $itemHandler->getMeta();
         //find thumbs that are not listed in the metadata and add them in the sizes array
         if($itemHandler->getType() == ShortPixelMetaFacade::MEDIA_LIBRARY_TYPE) {
@@ -1202,7 +1213,8 @@ class WPShortPixel {
                 $duplicates = ShortPixelMetaFacade::getWPMLDuplicates($attachmentID);
                 foreach($duplicates as $ID) {
                     $crtMeta = $attachmentID == $ID ? $meta : wp_get_attachment_metadata($ID);
-                    if(is_numeric($crtMeta["ShortPixelImprovement"]) && 0 + $crtMeta["ShortPixelImprovement"] < 5 && $this->_settings->under5Percent > 0) {
+                    if(   isset($crtMeta["ShortPixelImprovement"]) && is_numeric($crtMeta["ShortPixelImprovement"]) 
+                       && 0 + $crtMeta["ShortPixelImprovement"] < 5 && $this->_settings->under5Percent > 0) {
                         $this->_settings->under5Percent = $this->_settings->under5Percent - 1; // - (isset($crtMeta["ShortPixel"]["thumbsOpt"]) ? $crtMeta["ShortPixel"]["thumbsOpt"] : 0);
                     }
                     unset($crtMeta["ShortPixelImprovement"]);
@@ -1644,9 +1656,9 @@ class WPShortPixel {
         }
         
         $root = self::getCustomFolderBase();
+        
 
-        $postDir = rawurldecode($root.(isset($_POST['dir']) ? $_POST['dir'] : null ));
-
+        $postDir = rawurldecode($root.(isset($_POST['dir']) ? trim($_POST['dir']) : null ));
         // set checkbox if multiSelect set to true
         $checkbox = ( isset($_POST['multiSelect']) && $_POST['multiSelect'] == 'true' ) ? "<input type='checkbox' />" : null;
         $onlyFolders = ($_POST['dir'] == '/' || isset($_POST['onlyFolders']) && $_POST['onlyFolders'] == 'true' ) ? true : false;
@@ -1656,7 +1668,7 @@ class WPShortPixel {
 
             $files = scandir($postDir);
             $returnDir	= substr($postDir, strlen($root));
-
+            
             natcasesort($files);
 
             if( count($files) > 2 ) { // The 2 accounts for . and ..
@@ -1670,17 +1682,39 @@ class WPShortPixel {
                     $ext	= preg_replace('/^.*\./', '', $file);
 
                     if( file_exists($postDir . $file) && $file != '.' && $file != '..' ) {
-                        if( is_dir($postDir . $file) && (!$onlyFiles || $onlyFolders) )
-                            echo "<li class='directory collapsed'>{$checkbox}<a rel='" .$htmlRel. "/'>" . $htmlName . "</a></li>";
-                        else if (!$onlyFolders || $onlyFiles)
-                            echo "<li class='file ext_{$ext}'>{$checkbox}<a rel='" . $htmlRel . "'>" . $htmlName . "</a></li>";
+                        //KEEP the spaces in front of the rel values - it's a trick to make WP Hide not replace the wp-content path
+                        if( is_dir($postDir . $file) && (!$onlyFiles || $onlyFolders) ) {
+                            echo "<li class='directory collapsed'>{$checkbox}<a rel=' " .$htmlRel. "/'>" . $htmlName . "</a></li>";
+                        } else if (!$onlyFolders || $onlyFiles) {
+                            echo "<li class='file ext_{$ext}'>{$checkbox}<a rel=' " . $htmlRel . "'>" . $htmlName . "</a></li>";
                         }
                     }
+                }
 
-                    echo "</ul>";
+                echo "</ul>";
             }
         }
         die();
+    }
+    
+    public function getComparerData() {
+        if (!isset($_POST['id']) || !current_user_can( 'upload_files' ) && !current_user_can( 'edit_posts' ) )  {
+            wp_die(json_encode((object)array('origUrl' => false, 'optUrl' => false, 'width' => 0, 'height' => 0)));
+        }
+        
+        $ret = array();
+        $handle = new ShortPixelMetaFacade($_POST['id']);
+        $meta = $handle->getMeta();
+        $rawMeta = $handle->getRawMeta();
+        $backupUrl = content_url() . "/" . SP_UPLOADS_NAME . "/" . SP_BACKUP . "/";
+        $uploadsUrl = ShortPixelMetaFacade::getHomeUrl();
+        $urlBkPath = ShortPixelMetaFacade::returnSubDir($meta->getPath(), ShortPixelMetaFacade::MEDIA_LIBRARY_TYPE);
+        $ret['origUrl'] = $backupUrl . $urlBkPath . $meta->getName();
+        $ret['optUrl'] = $uploadsUrl . $urlBkPath . $meta->getName();
+        $ret['width'] = $rawMeta['width'];
+        $ret['height'] = $rawMeta['height']; 
+        
+        die(json_encode((object)$ret));
     }
     
     public static function getCustomFolderBase() {
@@ -1871,17 +1905,21 @@ class WPShortPixel {
                 }
                 
                 $this->_settings->createWebp = (isset($_POST['createWebp']) ? 1: 0);
+                $this->_settings->createWebpMarkup = (isset($_POST['createWebpMarkup']) ? 1: 0);
                 $this->_settings->optimizeRetina = (isset($_POST['optimizeRetina']) ? 1: 0);
                 $this->_settings->optimizePdfs = (isset($_POST['optimizePdfs']) ? 1: 0);
+                
+                //die(var_dump($_POST['excludePatterns']));
+                
                 if(isset($_POST['excludePatterns']) && strlen($_POST['excludePatterns'])) {
                     $patterns = array(); 
                     $items = explode(',', $_POST['excludePatterns']);
                     foreach($items as $pat) {
                         $parts = explode(':', $pat);
                         if(count($parts) == 1) {
-                            $patterns[] = array("type" =>"name", "value" => trim($pat));
+                            $patterns[] = array("type" =>"name", "value" => str_replace('\\\\','\\',trim($pat)));
                         } else {
-                            $patterns[] = array("type" =>trim($parts[0]), "value" => trim($parts[1]));
+                            $patterns[] = array("type" =>trim($parts[0]), "value" => str_replace('\\\\','\\',trim($parts[1])));
                         }
                     }
                     $this->_settings->excludePatterns = $patterns;
@@ -1930,7 +1968,7 @@ class WPShortPixel {
             }
         }
 
-        $showApiKey = (   is_main_site() || (function_exists("is_multisite") && is_multisite() && !defined("SHORTPIXEL_API_KEY"))
+        $showApiKey = (   (is_main_site() || (function_exists("is_multisite") && is_multisite() && !defined("SHORTPIXEL_API_KEY")))
                        && !defined("SHORTPIXEL_HIDE_API_KEY"));
         $editApiKey = !defined("SHORTPIXEL_API_KEY") && $showApiKey;
         
@@ -2178,7 +2216,7 @@ class WPShortPixel {
                 $renderData['bonus'] = ($data['ShortPixelImprovement'] < 5);
                 $renderData['backup'] = $this->getBackupFolderAny($file, $sizesCount? $data['sizes'] : array());
                 $renderData['type'] = isset($data['ShortPixel']['type']) ? $data['ShortPixel']['type'] : '';
-                $renderData['invType'] = ShortPixelAPI::getCompressionTypeName($this->getOtherCompressionType(ShortPixelAPI::getCompressionTypeCode($renderData['type'])));
+                $renderData['invType'] = ShortPixelAPI::getCompressionTypeName($this->getOtherCompressionTypes(ShortPixelAPI::getCompressionTypeCode($renderData['type'])));
                 $renderData['thumbsTotal'] = $sizesCount;
                 $renderData['thumbsOpt'] = isset($data['ShortPixel']['thumbsOpt']) ? $data['ShortPixel']['thumbsOpt'] : $sizesCount;
                 $renderData['thumbsMissing'] = isset($data['ShortPixel']['thumbsMissing']) ? $data['ShortPixel']['thumbsMissing'] : array();
@@ -2278,8 +2316,10 @@ class WPShortPixel {
     public function columns( $defaults ) {
         $defaults['wp-shortPixel'] = 'ShortPixel Compression';
         if(current_user_can( 'manage_options' )) {
-            $defaults['wp-shortPixel'] .= '&nbsp;<a href="options-general.php?page=wp-shortpixel#stats" title="' 
-                                       . __('ShortPixel Statistics','shortpixel-image-optimiser') . '"><span class="dashicons dashicons-dashboard"></span></a>';
+            $defaults['wp-shortPixel'] .= 
+                      '&nbsp;<a href="options-general.php?page=wp-shortpixel#stats" title="' 
+                    . __('ShortPixel Statistics','shortpixel-image-optimiser') 
+                    . '"><span class="dashicons dashicons-dashboard"></span></a>';
         }
         return $defaults;
     }
@@ -2389,7 +2429,7 @@ class WPShortPixel {
                 if(in_array($type, array("name", "path"))) {
                     $pattern = trim($item["value"]);
                     $target = $type == "name" ? ShortPixelAPI::MB_basename($path) : $path;
-                    if(   $pattern[0] == '/' && preg_match($pattern,  $target) //search as regex pattern if starts with a /
+                    if(   $pattern[0] == '/' && @preg_match($pattern, false) !== false && preg_match($pattern,  $target) //search as regex pattern if starts with a / and regex is valid
                        || $pattern[0] != '/' && strpos($target, $pattern) !== false) { //search as a substring if not
                         return false;
                     }
@@ -2525,15 +2565,8 @@ class WPShortPixel {
         return array('width' => max(100, $width), 'height' => max(100, $height));
     }
 
-    public function getOtherCompressionType($compressionType = false) {
-        $defCompType = 0 + $this->getCompressionType();
-        if($compressionType === false) {
-            return $defCompType == 1 ? 2 : $defCompType == 2 ? 0 : 1;
-        }
-        elseif($defCompType == 0 || $defCompType == 2) {
-            return (0 + $compressionType == 0 ? 2 : 0);
-        }
-        return $compressionType == 1 ? 0 : 1;
+    public function getOtherCompressionTypes($compressionType = false) {        
+        return array_values(array_diff(array(0, 1, 2), array(0 + $compressionType)));
     }    
     
 /*    public function getEncryptedData() {

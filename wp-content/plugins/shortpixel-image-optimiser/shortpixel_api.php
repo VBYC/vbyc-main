@@ -50,7 +50,7 @@ class ShortPixelAPI {
         }
         
         $requestParameters = array(
-            'plugin_version' => PLUGIN_VERSION,
+            'plugin_version' => SHORTPIXEL_IMAGE_OPTIMISER_VERSION,
             'key' => $this->_settings->apiKey,
             'lossy' => $compressionType === false ? $this->_settings->compressionType : $compressionType,
             'cmyk2rgb' => $this->_settings->CMYKtoRGBconversion,
@@ -651,6 +651,9 @@ class ShortPixelAPI {
     }
 
     static public function getCompressionTypeName($compressionType) {
+        if(is_array($compressionType)) {
+            return array_map(array('ShortPixelAPI', 'getCompressionTypeName'), $compressionType);
+        }
         return 0 + $compressionType == 2 ? 'glossy' : (0 + $compressionType == 1 ? 'lossy' : 'lossless');
     }
     

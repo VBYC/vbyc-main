@@ -47,7 +47,10 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 			}
 			if ( isset( $item['slug'] ) && 'google-analytics-dashboard-for-wp' == $item['slug'] ) {
 				// Only when a minor update is available
-				return ( $this->get_major_version( GADWP_CURRENT_VERSION ) == $this->get_major_version( $item['new_version'] ) );
+				if ( $this->get_major_version( GADWP_CURRENT_VERSION ) == $this->get_major_version( $item['new_version'] ) ) {
+					update_option( 'gadwp_got_updated', true );
+					return ( $this->get_major_version( GADWP_CURRENT_VERSION ) == $this->get_major_version( $item['new_version'] ) );
+				}
 			}
 			return $update;
 		}
@@ -86,6 +89,8 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 								'ga_dash_excludesa',
 								'ga_pagescrolldepth_tracking',
 								'tm_pagescrolldepth_tracking',
+								'ga_speed_samplerate',
+								'ga_user_samplerate',
 						);
 			foreach ( $numerics as $key ) {
 				if ( isset( $options[$key] ) ) {
@@ -131,6 +136,10 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 
 			if ( isset( $options['ga_speed_samplerate'] ) && ( $options['ga_speed_samplerate'] < 1 || $options['ga_speed_samplerate'] > 100 ) ) {
 				$options['ga_speed_samplerate'] = 1;
+			}
+
+			if ( isset( $options['ga_user_samplerate'] ) && ( $options['ga_user_samplerate'] < 1 || $options['ga_user_samplerate'] > 100 ) ) {
+				$options['ga_user_samplerate'] = 100;
 			}
 
 			if ( isset( $options['ga_cookieexpires'] ) && $options['ga_cookieexpires'] ) { // v4.9
@@ -212,7 +221,6 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 			if ( GADWP_CURRENT_VERSION != get_option( 'gadwp_version' ) ) {
 				$flag = true;
 				update_option( 'gadwp_version', GADWP_CURRENT_VERSION );
-				update_option( 'gadwp_got_updated', true );
 				$rebuild_token = json_decode( $this->options['ga_dash_token'] ); // v4.8.2
 				if ( is_object( $rebuild_token ) && ! isset( $rebuild_token->token_type ) ) {
 					if ( isset( $this->options['ga_dash_refresh_token'] ) ) {
@@ -289,6 +297,11 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 				$this->options['frontend_item_reports'] = $this->options['ga_dash_frontend_stats'];
 			}
 
+			if ( isset($this->options['ga_dash_tracking']) && 0 == $this->options['ga_dash_tracking'] ) { // v5.0.1
+				$this->options['ga_dash_tracking_type'] = 'disabled';
+				$flag = true;
+			}
+
 			$unsets = array( 	'ga_dash_jailadmins', // v4.7
 								'ga_tracking_code',
 								'ga_dash_tableid', // v4.9
@@ -358,6 +371,10 @@ if ( ! class_exists( 'GADWP_Config' ) ) {
 			if ( ! isset( $this->options['ga_event_affiliates'] ) ) {
 				$this->options['ga_event_affiliates'] = '/out/';
 				$flag = true;
+			}
+
+			if ( ! isset( $this->options['ga_user_samplerate'] ) ) {
+				$this->options['ga_user_samplerate'] = 100;
 			}
 
 			if ( ! isset( $this->options['ga_event_downloads'] ) ) {

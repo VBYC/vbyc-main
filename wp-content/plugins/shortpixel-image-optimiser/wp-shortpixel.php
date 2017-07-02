@@ -1,9 +1,9 @@
-<?php
+<?php 
 /**
  * Plugin Name: ShortPixel Image Optimizer
  * Plugin URI: https://shortpixel.com/
  * Description: ShortPixel optimizes images automatically, while guarding the quality of your images. Check your <a href="options-general.php?page=wp-shortpixel" target="_blank">Settings &gt; ShortPixel</a> page on how to start optimizing your image library and make your website load faster. 
- * Version: 4.4.0
+ * Version: 4.5.3
  * Author: ShortPixel
  * Author URI: https://shortpixel.com
  * Text Domain: shortpixel-image-optimiser
@@ -17,7 +17,7 @@ define('SHORTPIXEL_PLUGIN_FILE', __FILE__);
 
 define('SP_AFFILIATE_CODE', '');
 
-define('PLUGIN_VERSION', "4.4.0");
+define('SHORTPIXEL_IMAGE_OPTIMISER_VERSION', "4.5.3");
 define('SP_MAX_TIMEOUT', 10);
 define('SP_VALIDATE_MAX_TIMEOUT', 15);
 define('SP_BACKUP', 'ShortpixelBackups');
@@ -92,6 +92,101 @@ function shortPixelDeactivatePlugin () {
     require_once('wp-shortpixel-req.php');
     WPShortPixel::shortPixelDeactivatePlugin();    
 }
+
+
+/**
+* filter function to force wordpress to add our custom srcset values
+* @param array  $sources {
+*     One or more arrays of source data to include in the 'srcset'.
+*
+*     @type type array $width {
+*          @type type string $url        The URL of an image source.
+*          @type type string $descriptor The descriptor type used in the image candidate string,
+*                                        either 'w' or 'x'.
+*          @type type int    $value      The source width, if paired with a 'w' descriptor or a
+*                                        pixel density value if paired with an 'x' descriptor.
+*     }
+* }
+* @param array  $size_array    Array of width and height values in pixels (in that order).
+* @param string $image_src     The 'src' of the image.
+* @param array  $image_meta    The image meta data as returned by 'wp_get_attachment_metadata()'.
+* @param int    $attachment_id Image attachment ID.
+*/
+function sp_add_webp_image_srcset( $sources, $size_array, $image_src, $image_meta, $attachment_id ){
+	
+	// image base name		
+	$image_basename = wp_basename( $image_meta['file'] );
+	// upload directory info array
+	$upload_dir_info_arr = wp_upload_dir();
+	// base url of upload directory
+	$image_baseurl = $baseurl = $upload_dir_info_arr['baseurl'];
+        $image_basedir = $basedir = $upload_dir_info_arr['basedir'];
+	
+	// Uploads are (or have been) in year/month sub-directories.
+	if ( $image_basename !== $image_meta['file'] ) {
+		$dirname = dirname( $image_meta['file'] );
+		
+		if ( $dirname !== '.' ) {
+			$image_baseurl = trailingslashit( $baseurl ) . $dirname; 
+			$image_basedir = trailingslashit( $basedir ) . $dirname; 
+		}
+	}
+
+	$image_baseurl = trailingslashit( $image_baseurl );
+	$image_basedir = trailingslashit( $image_basedir );
+	// check whether our custom image size exists in image meta
+        foreach($image_meta['sizes'] as $key => $size) {
+            $fn = $size['file'];
+            $ext = pathinfo($fn, PATHINFO_EXTENSION);
+            $webp = substr($fn, 0, strlen($fn) - strlen($ext)) . 'webp';
+            if( file_exists($image_basedir .  $webp) ){
+                // add source value to create srcset
+                $sources[ 'webp-' . $size['width'] ] = array(
+                                 'url'        => $image_baseurl .  $webp,
+                                 'descriptor' => 'w',
+                                 'value'      => $size['width'],
+                );
+            }
+        }	
+	//return sources with new srcset value
+	return $sources;
+}
+//not really working, the srcset does not accept webp AND other type of image together. Below trying with <picture> ...
+//add_filter( 'wp_calculate_image_srcset', 'sp_add_webp_image_srcset', 10, 5 );
+
+
+
+
+//Picture generation, hooked on the_content filter
+function spConvertImgToPictureAddWebp($content) {
+    require_once('class/front/img-to-picture-webp.php');
+    //require_once('class/responsive-image.php');
+    return ImgToPictureWebp::convert($content);
+}
+function spAddPictureJs() {
+    // Don't do anything with the RSS feed.
+    if ( is_feed() || is_admin() ) { return; }
+    
+    echo '<script>'
+       . 'var spPicTest = document.createElement( "picture" );'
+       . 'if(!window.HTMLPictureElement && document.addEventListener) {'
+            . 'window.addEventListener("DOMContentLoaded", function() {'
+                . 'var scriptTag = document.createElement("script");'
+                . 'scriptTag.src = "' . plugins_url('/res/js/picturefill.min.js', __FILE__) . '";'
+                . 'document.body.appendChild(scriptTag);'
+            . '});'
+        . '}'
+       . '</script>';
+}
+//function spAddPicturefillJs() {
+//    wp_enqueue_script( 'picturefill', plugins_url('/res/js/picturefill.min.js', __FILE__),  null, null, true);
+//}
+if ( get_option('wp-short-pixel-create-webp-markup')) { 
+    add_filter( 'the_content', 'spConvertImgToPictureAddWebp' );
+    add_action( 'wp_head', 'spAddPictureJs');
+//    add_action( 'wp_enqueue_scripts', 'spAddPicturefillJs' );
+}
+
 
 if ( !function_exists( 'vc_action' ) || vc_action() !== 'vc_inline' ) { //handle incompatibility with Visual Composer
     add_action( 'init',  'shortpixelInit');
