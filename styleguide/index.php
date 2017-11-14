@@ -1,3 +1,4 @@
+<? include(dirname(dirname(__FILE__))."/includes/requirements.php"); ?> 
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -649,8 +650,8 @@
                 <tr>
                     <td class="sg-navbar sq-navigation-dropdown">
                    
-                        <? include("_template-includes/nav-main-toggle.php"); ?> 
-                        <? include("_template-includes/nav-main.php"); ?> 
+                        <? include(dirname(dirname(__FILE__))."/includes/nav-main-toggle.php"); ?> 
+                        <? include(dirname(dirname(__FILE__))."/includes/nav-main.php"); ?> 
               
                     </td>
                 </tr>
@@ -666,7 +667,7 @@
                 <tr>
                     <td class="sg-navbar sq-navigation-dropdown">
                    
-                        <? include("_template-includes/nav-footer.php"); ?> 
+                        <? include(dirname(dirname(__FILE__))."/includes/nav-footer.php"); ?> 
               
                     </td>
                 </tr>
@@ -682,7 +683,7 @@
                 <tr>
                     <td class="sg-navbar sq-navigation-dropdown">
                    
-                        <? include("_template-includes/nav-side.php"); ?> 
+                        <? include(dirname(dirname(__FILE__))."/includes/side-nav-template.php"); ?> 
               
                     </td>
                 </tr>
