@@ -1,7 +1,7 @@
 <?php
 
 class ShortPixelTools {
-    public static function parseJSON($data) {
+/*    public static function parseJSON($data) {
         if ( function_exists('json_decode') ) {
             $data = json_decode( $data );
         } else {
@@ -10,7 +10,7 @@ class ShortPixelTools {
             $data = $json->decode( $data );
         }
         return $data;
-    }
+    }*/
     
     public static function snakeToCamel($snake_case) {
         return str_replace(' ', '', ucwords(str_replace('_', ' ', $snake_case)));

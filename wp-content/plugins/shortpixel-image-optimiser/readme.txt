@@ -3,7 +3,7 @@ Contributors: ShortPixel
 Tags: compress, image, compression, optimize, image optimizer, image compression, resize,  compress pdf, compress jpg, compress png, image compression
 Requires at least: 3.2.0
 Tested up to: 4.8
-Stable tag: 4.5.3
+Stable tag: 4.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,8 +81,6 @@ Help us spread a the word by recommending ShortPixel to your friends and collect
 * Facebook <a href="https://www.facebook.com/ShortPixel" target="_blank">https://www.facebook.com/ShortPixel</a>
 * LinkedIn <a href="https://www.linkedin.com/company/shortpixel" target="_blank">https://www.linkedin.com/company/shortpixel</a>
 
-**Keywords:** picture,  optimization, image editor, pngout, upload speed, shortpixel, compression, nextgen, nextgen gallery optimizer, jpegmini, webp, lossless, cwebp, media, jpegtran, image, image optimisation, image optimization, shrink, picture, photo, optimize photos, compress, performance, tinypng, crunch, pngquant, attachment, optimize, pictures, fast, images, image files, image quality, lossy, upload, kraken, resize, seo, smushit, optipng, kraken image optimizer, ewww, photo optimization, gifsicle, image optimizer, krakenio, png, gmagick, image optimize, pdf, pdf optimisation, pdf optimization, optimize pdf, optimise pdf, shrink pdf, jpg, jpeg, jpg optimisation, jpg optimization, optimize jpg, optimise jpg, shrink jpg, gif, animated gif, optimize gif, optimise gif, optimizer, optimiser, compresion, cruncher, image cruncher, compress png, compress jpg, compress jpeg, compress pdf, faster loading times, image optimiser, improve pagerank, optimise, optimize animated gif,  optimise jpeg, optimize jpeg, optimize png, optimise png, tinyjpg, short pixel, woocommerce compatible, wpml compatible, smush, imsanity, scale, wp smush, compress images, pdf compression, optimize images, shrink jpeg, compressor, faster website, google pagerank, imagify, prizm, optimus, zara, improve page speed, PageSpeed Insights, sitespeed, smaller images, tinyjpeg, wordpress compression, wordPress image tool, reduce image size, bandwidth, pics, keep exif, remove exif, speed up site, speed up website, compress thumbnails, optimize thumbnails
-
 == Installation ==
 
 Let's get ShortPixel plugin running on your WordPress website:
@@ -148,6 +146,11 @@ Let's get ShortPixel plugin running on your WordPress website:
     define(‘SHORTPIXEL_API_KEY’, ‘APIKEY’)
     where ‘APIKEY’ is the API Key received upon sign up.
     If configured that way, the API key will be used for all the sites of the multisite but will only be visible on the main site’s Settings page, being hidden for the rest of the sites.
+
+= I am not the only one working in the WordPress Dashboard. How can I hide my API key? =
+    There is a simple way to hide the API key, all you need to do is to add these two lines in your wp-config.php:
+    define('SHORTPIXEL_API_KEY', '<<your api key here>>');
+    define('SHORTPIXEL_HIDE_API_KEY', true);
 
 = How much is a credit? =
     A credit is used each time ShortPixel optimizes an image or thumbnail by at least 5%. If we're not able to optimize an image or thumbnail by at least 5% then no credit will be used :-)
@@ -218,6 +221,15 @@ The ShortPixel team is here to help. <a href="https://shortpixel.com/contact">Co
 9. Check other optimized images status - themes or other plugins' images. (Media>Other Media)
 
 == Changelog ==
+
+= 4.6.0 =
+* add a filter option to the Other Media table
+* fixes in order to comply with WP plugin guidelines
+
+= 4.5.5 =
+* max thumbs constant - no more than this number of thumbs will be optimized in one pass
+* fix problem with webp <picture> tag when using Fusion Builder
+* really hide the API key everywhere when configured so
 
 = 4.5.3 =
 

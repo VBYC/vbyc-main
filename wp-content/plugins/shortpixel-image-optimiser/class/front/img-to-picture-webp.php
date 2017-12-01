@@ -1,10 +1,10 @@
 <?php
 /**
- * Class ImgToPictureWebp - convert an <img> tag to a <picture> tag and add the webp versions of the images
+ * Class ShortPixelImgToPictureWebp - convert an <img> tag to a <picture> tag and add the webp versions of the images
  * thanks to the Responsify WP plugin for some of the code
  */
 
-class ImgToPictureWebp {
+class ShortPixelImgToPictureWebp {
  
     public static function convert($content) {
         // Don't do anything with the RSS feed.
@@ -13,7 +13,7 @@ class ImgToPictureWebp {
         return preg_replace_callback('/<img[^>]*>/', function ($match) {
             // Do nothing with images that has the 'rwp-not-responsive' class.
             if ( strpos($match[0], 'sp-no-webp') ) { return $match[0]; }
-
+            
             $img = self::get_attributes($match[0]);
 
             $src = (isset($img['src'])) ? $img['src'] : false;
@@ -22,7 +22,9 @@ class ImgToPictureWebp {
             
             //check if there are webps
             $id = self::url_to_attachment_id( $src );
-            if(!$id) { return $match[0]; }
+            if(!$id) { 
+                return $match[0]; 
+            }
             
             $imageBase = dirname(get_attached_file($id)) . '/';
             

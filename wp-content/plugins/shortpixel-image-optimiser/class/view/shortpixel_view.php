@@ -585,7 +585,7 @@ class ShortPixelView {
             echo($this->ctrl->getVerifiedKey() ? "login/".(defined("SHORTPIXEL_HIDE_API_KEY") ? '' : $this->ctrl->getApiKey()) : "pricing");
             ?>" target="_blank" style="font-size:18px">
                 <?php _e('Upgrade now','shortpixel-image-optimiser');?>
-            </a> |
+            </a> | <a href="https://shortpixel.com/pricing#faq" target="_blank" style="font-size:18px"><?php _e('FAQ','shortpixel-image-optimiser');?> </a> | 
             <a href="https://shortpixel.com/contact/<?php //echo($this->ctrl->getEncryptedData());?>" target="_blank" style="font-size:18px"><?php _e('Support','shortpixel-image-optimiser');?> </a>
         </p>
         <?php if($notice !== null) { ?>
@@ -975,13 +975,13 @@ class ShortPixelView {
                     <th scope="row"><label for="excludePatterns"><?php _e('Exclude patterns','shortpixel-image-optimiser');?></label></th>
                     <td>
                         <input name="excludePatterns" type="text" id="excludePatterns" value="<?php echo( $excludePatterns );?>" class="regular-text" placeholder="<?php 
-                            _e('file:keepbig, path:/ignore_regex/i, size:1000x2000','shortpixel-image-optimiser');?>"> 
+                            _e('name:keepbig, path:/ignore_regex/i, size:1000x2000','shortpixel-image-optimiser');?>"> 
                         <?php _e('Exclude certain images from being optimized, based on patterns.','shortpixel-image-optimiser');?>
                         <p class="settings-info"> 
                             <?php _e('Add patterns separated by comma. A pattern consist of a <strong>type:value</strong> pair; the accepted types are '
-                                    . '<strong>"file"</strong>, <strong>"path"</strong> and <strong>"size"</strong>. '
+                                    . '<strong>"name"</strong>, <strong>"path"</strong> and <strong>"size"</strong>. '
                                     . 'A file will be excluded if it matches any of the patterns. '
-                                    . '<br>For a <strong>"file"</strong> pattern only the filename will be matched but for a <strong>"path"</strong>, '
+                                    . '<br>For a <strong>"name"</strong> pattern only the filename will be matched but for a <strong>"path"</strong>, '
                                     . 'all the path will be matched (useful for excluding certain subdirectories altoghether).'
                                     . 'For these you can also use regular expressions accepted by preg_match, but without "," or ":". '
                                     . 'A pattern will be considered a regex if it starts with a "/" and is valid. '
@@ -1124,7 +1124,7 @@ class ShortPixelView {
 
     public function renderCustomColumn($id, $data, $extended = false){ ?> 
         <div id='sp-msg-<?php echo($id);?>' class='column-wp-shortPixel'>
-
+            
             <?php switch($data['status']) {
                 case 'n/a': ?> 
                     <?php _e('Optimization N/A','shortpixel-image-optimiser');?> <?php
@@ -1183,7 +1183,9 @@ class ShortPixelView {
                                 . $missingThumbs; 
                     }
                     $this->renderListCell($id, $data['status'], $data['showActions'], 
-                            !$data['thumbsOpt'] && $data['thumbsTotal'], $data['thumbsTotal'], $data['backup'], $data['type'], $data['invType'], $successText);
+                            (!$data['thumbsOpt'] && $data['thumbsTotal']) //no thumb was optimized
+                            || (count($data['thumbsOptList']) && ($data['thumbsTotal'] - $data['thumbsOpt'] > 0)), $data['thumbsTotal'] - $data['thumbsOpt'], 
+                            $data['backup'], $data['type'], $data['invType'], $successText);
                     
                     break;
                 }
@@ -1205,7 +1207,7 @@ class ShortPixelView {
                 .($retinasOpt ? '<br>' . sprintf(__('+%s Retina images optimized','shortpixel-image-optimiser') , $retinasOpt) : '' ) ;
     }
     
-    public function renderListCell($id, $status, $showActions, $optimizeThumbs, $thumbsTotal, $backup, $type, $invType, $message, $extraClass = '') {
+    public function renderListCell($id, $status, $showActions, $optimizeThumbs, $thumbsRemain, $backup, $type, $invType, $message, $extraClass = '') {
         if($showActions) { ?>
             <div class='sp-column-actions <?php echo($extraClass);?>'>
                 <div class="sp-dropdown">
@@ -1216,7 +1218,7 @@ class ShortPixelView {
                         <?php } ?>
                         <?php if($optimizeThumbs) { ?>
                         <a class="sp-action-optimize-thumbs" href="javascript:optimizeThumbs(<?php echo($id)?>);" style="background-color:#0085ba;color:white;">
-                            <?php printf(__('Optimize %s  thumbnails','shortpixel-image-optimiser'),$thumbsTotal);?>
+                            <?php printf(__('Optimize %s  thumbnails','shortpixel-image-optimiser'),$thumbsRemain);?>
                         </a>
                         <?php }
                         if($backup) {

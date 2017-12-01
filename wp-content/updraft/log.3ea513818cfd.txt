@@ -1,0 +1,220 @@
+0000.000 (0) Opened log file at time: Fri, 25 Aug 2017 17:45:16 +0000 on http://vbyc.org
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.4 WP: 4.8 PHP: 5.6.31 (cgi-fcgi, Linux silverton 3.2.61-grsec-modsign #1 SMP Tue Aug 12 09:58:26 UTC 2014 x86_64) MySQL: 5.6.34 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 30.9M | 31.3M) multisite: N openssl: OpenSSL 1.0.1 14 Mar 2012 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 1007601.2 MB
+0000.005 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.006 (0) Semaphore (fd, wp_options) being initialised
+0000.024 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.027 (0) Set semaphore last lock (fd) time to 2017-08-25 17:45:16
+0000.028 (0) Semaphore lock (fd) complete
+0000.032 (0) Backup run: resumption=0, nonce=3ea513818cfd, begun at=1503683116 (0s ago), job type=backup
+0000.034 (0) Scheduling a resumption (1) after 300 seconds (1503683416) in case this run gets aborted
+0000.059 (0) Checking if we have a zip executable available
+0000.060 (0) Testing: /usr/bin/zip
+0000.071 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.073 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.074 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.075 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.076 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.087 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.089 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.100 (0) Working binary zip found: /usr/bin/zip
+0000.102 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.103 (0) Creation of backups of directories: beginning
+0000.106 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0003.470 (0) Total entities for the zip file: 322 directories, 1955 files (0 skipped as non-modified), 46.9 MB
+0003.472 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0003.498 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: size is now: 0.10 MB
+0003.506 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 100 files added (on-disk size: 73.2 KB)
+0003.511 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 200 files added (on-disk size: 73.2 KB)
+0003.516 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 300 files added (on-disk size: 73.2 KB)
+0003.522 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 400 files added (on-disk size: 73.2 KB)
+0003.527 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 500 files added (on-disk size: 73.2 KB)
+0003.528 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (23.9 MB, 1955 files batched, 501 (502) added so far); re-opening (prior size: 73.2 KB)
+0009.346 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: size is now: 10.80 MB
+0009.354 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 600 files added (on-disk size: 11042.4 KB)
+0009.360 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 700 files added (on-disk size: 11042.4 KB)
+0009.379 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 800 files added (on-disk size: 11042.4 KB)
+0009.390 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 900 files added (on-disk size: 11042.4 KB)
+0009.399 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1000 files added (on-disk size: 11042.4 KB)
+0009.405 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.8 MB, 1955 files batched, 501 (1003) added so far); re-opening (prior size: 11042.4 KB)
+0013.333 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: size is now: 13.00 MB
+0013.342 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1100 files added (on-disk size: 13286.7 KB)
+0013.355 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1200 files added (on-disk size: 13286.7 KB)
+0013.368 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1300 files added (on-disk size: 13286.7 KB)
+0013.395 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1400 files added (on-disk size: 13286.7 KB)
+0013.412 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1500 files added (on-disk size: 13286.7 KB)
+0013.419 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (15.4 MB, 1955 files batched, 501 (1504) added so far); re-opening (prior size: 13286.7 KB)
+0017.797 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: size is now: 17.10 MB
+0017.806 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1600 files added (on-disk size: 17559.3 KB)
+0017.812 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1700 files added (on-disk size: 17559.3 KB)
+0017.818 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1800 files added (on-disk size: 17559.3 KB)
+0017.824 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip.tmp: 1900 files added (on-disk size: 17559.3 KB)
+0021.896 (0) Created plugins zip (0) - 18318.5 KB in 21.8 s (840.7 KB/s) (sha1: ce27ed699968d495a17ec4784c0a8ffdafdf69eb, sha256: 8c872fcaf4d627ac790f519633b347860ec747524774246fe1d69e20a3f9a059)
+0021.900 (0) Beginning creation of dump of themes (split every: 400 MB)
+0022.511 (0) Total entities for the zip file: 35 directories, 316 files (0 skipped as non-modified), 12.9 MB
+0022.518 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0022.524 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0022.529 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0026.026 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip.tmp: size is now: 3.90 MB
+0026.108 (0) Created themes zip (0) - 3952.6 KB in 4.2 s (939.6 KB/s) (sha1: 95dbf28f51948dbd2279c3629dc07d0c20a87dcd, sha256: 8460a7952b33a6682ba6ae943900e6a1c286995381ddb6ae276bec8d0e897e2d)
+0026.111 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0026.112 (0) Looking for candidates to back up in: /home/vbyc_production/vbyc-main/wp-content/uploads
+0026.113 (0) finding files: 2015: adding to list (1)
+0026.114 (0) finding files: 2016: adding to list (2)
+0026.115 (0) finding files: 2017: adding to list (3)
+0026.116 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0028.790 (0) Total entities for the zip file: 11 directories, 2970 files (0 skipped as non-modified), 202.1 MB
+0028.799 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0028.804 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0028.810 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0028.815 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25 MB, 2970 files batched, 389 (389) added so far); re-opening (prior size: 0 KB)
+0033.948 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 25.10 MB
+0033.952 (0) A useful amount of data was added after this amount of zip processing: 8.1 s (normalised: 8.1 s, rate: 3173.1 KB/s)
+0033.955 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 400 files added (on-disk size: 25702.1 KB)
+0033.960 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 500 files added (on-disk size: 25702.1 KB)
+0033.965 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 600 files added (on-disk size: 25702.1 KB)
+0033.969 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25 MB, 2970 files batched, 265 (654) added so far); re-opening (prior size: 25702.1 KB)
+0038.086 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 50.20 MB
+0038.090 (0) A useful amount of data was added after this amount of zip processing: 4.2 s (normalised: 4.2 s, rate: 6088.2 KB/s)
+0038.092 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.2108080387115, normalised_time=4.2048261896861, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=37406159)
+0038.097 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 700 files added (on-disk size: 51396.9 KB)
+0038.102 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 800 files added (on-disk size: 51396.9 KB)
+0038.108 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 900 files added (on-disk size: 51396.9 KB)
+0038.113 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1000 files added (on-disk size: 51396.9 KB)
+0038.119 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1100 files added (on-disk size: 51396.9 KB)
+0038.123 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (26.6 MB, 2970 files batched, 501 (1155) added so far); re-opening (prior size: 51396.9 KB)
+0042.153 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 76.90 MB
+0042.159 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1200 files added (on-disk size: 78733 KB)
+0042.165 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1300 files added (on-disk size: 78733 KB)
+0042.170 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1400 files added (on-disk size: 78733 KB)
+0042.176 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1500 files added (on-disk size: 78733 KB)
+0042.181 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1600 files added (on-disk size: 78733 KB)
+0042.188 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (28.5 MB, 2970 files batched, 501 (1656) added so far); re-opening (prior size: 78733 KB)
+0044.899 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 105.50 MB
+0044.906 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1700 files added (on-disk size: 107982.7 KB)
+0044.911 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1800 files added (on-disk size: 107982.7 KB)
+0044.917 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 1900 files added (on-disk size: 107982.7 KB)
+0044.922 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2000 files added (on-disk size: 107982.7 KB)
+0044.927 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 35.7 MB added on this batch (36.7 MB, 2970 files batched, 436 (2092) added so far); re-opening (prior size: 107982.7 KB)
+0048.728 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 142.30 MB
+0048.732 (0) A useful amount of data was added after this amount of zip processing: 3.9 s (normalised: 3.7 s, rate: 9762.3 KB/s)
+0048.734 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.8531510829926, normalised_time=3.7418935934137, max_time=-1, data points known=0, old_max_bytes=37406159, new_max_bytes=59979512)
+0048.736 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2100 files added (on-disk size: 145691.3 KB)
+0048.742 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2200 files added (on-disk size: 145691.3 KB)
+0048.747 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2300 files added (on-disk size: 145691.3 KB)
+0048.753 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2400 files added (on-disk size: 145691.3 KB)
+0048.758 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2500 files added (on-disk size: 145691.3 KB)
+0048.764 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (45.5 MB, 2970 files batched, 501 (2593) added so far); re-opening (prior size: 145691.3 KB)
+0054.443 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: size is now: 187.90 MB
+0054.447 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2600 files added (on-disk size: 192405.3 KB)
+0054.453 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2700 files added (on-disk size: 192405.3 KB)
+0054.459 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2800 files added (on-disk size: 192405.3 KB)
+0054.465 (0) Zip: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip.tmp: 2900 files added (on-disk size: 192405.3 KB)
+0064.020 (0) Created uploads zip (0) - 207593.8 KB in 37.9 s (5477 KB/s) (sha1: 6d60170a988ab7ffec223d33cd743ad41c4baae2, sha256: c71fd7b2ea878c701c16d33b521e4a70affd44886c4f0b13d695cbbbacb95d9d)
+0064.024 (0) Beginning backup of other directories found in the content directory (index: 0)
+0064.025 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0064.026 (0) Looking for candidates to back up in: /home/vbyc_production/vbyc-main/wp-content
+0064.027 (0) finding files: ewww: adding to list (1)
+0064.028 (0) finding files: index.php: adding to list (2)
+0064.028 (0) finding files: plugins: skipping: this is the plugins directory
+0064.029 (0) finding files: themes: skipping: this is the themes directory
+0064.030 (0) finding files: updraft: skipping: this is the updraft directory
+0064.031 (0) finding files: uploads: skipping: this is the uploads directory
+0064.038 (0) Total entities for the zip file: 1 directories, 4 files (0 skipped as non-modified), 2.1 MB
+0064.285 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-others.zip.tmp: size is now: 1.00 MB
+0064.313 (0) Created others zip (0) - 1029.9 KB in 0.3 s (3678.6 KB/s) (sha1: b823063eed41d7030e29ad7f45f30f5b21d76170, sha256: 5625924eed3473b08b5bba80685205ddb3813c3eabbecde15e83a76ddf4c4805)
+0064.319 (0) Saving backup status to database (elements: 8)
+0064.336 (0) Beginning creation of database dump (WordPress DB)
+0064.340 (0) Testing: /usr/bin/mysqldump
+0064.443 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1184 bytes total)
+0064.446 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0064.453 (0) Table wp_options: Total expected rows (approximate): 347
+0064.539 (0) Table wp_options: Total rows added: 351 in 0.08 seconds
+0064.541 (0) Table wp_options: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_options.table.gz - 191.3 KB)
+0064.545 (0) Table wp_users: Total expected rows (approximate): 7
+0064.548 (0) Table wp_users: Total rows added: 7 in 0.00 seconds
+0064.549 (0) Table wp_users: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_users.table.gz - 1 KB)
+0064.554 (0) Table wp_usermeta: Total expected rows (approximate): 154
+0064.563 (0) Table wp_usermeta: Total rows added: 157 in 0.01 seconds
+0064.564 (0) Table wp_usermeta: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_usermeta.table.gz - 3.9 KB)
+0064.571 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0064.574 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0064.575 (0) Table wp_commentmeta: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0064.580 (0) Table wp_comments: Total expected rows (approximate): 0
+0064.583 (0) Table wp_comments: Total rows added: 0 in 0.00 seconds
+0064.584 (0) Table wp_comments: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_comments.table.gz - 0.5 KB)
+0064.589 (0) Table wp_links: Total expected rows (approximate): 0
+0064.592 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0064.593 (0) Table wp_links: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_links.table.gz - 0.4 KB)
+0064.611 (0) Table wp_postmeta: Total expected rows (approximate): 15941
+0064.780 (0) Table wp_postmeta: binary mysqldump finished (writes: 34) in 0.17 seconds
+0064.784 (0) Table wp_postmeta: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_postmeta.table.gz - 281.6 KB)
+0064.790 (0) Table wp_posts: Total expected rows (approximate): 726
+0064.931 (0) Table wp_posts: Total rows added: 856 in 0.14 seconds
+0064.934 (0) Table wp_posts: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_posts.table.gz - 46.2 KB)
+0064.958 (0) Table wp_term_relationships: Total expected rows (approximate): 223
+0064.970 (0) Table wp_term_relationships: Total rows added: 222 in 0.01 seconds
+0064.972 (0) Table wp_term_relationships: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_term_relationships.table.gz - 0.9 KB)
+0064.978 (0) Table wp_term_taxonomy: Total expected rows (approximate): 20
+0064.982 (0) Table wp_term_taxonomy: Total rows added: 20 in 0.00 seconds
+0064.983 (0) Table wp_term_taxonomy: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_term_taxonomy.table.gz - 0.6 KB)
+0064.988 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0064.993 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0064.995 (0) Table wp_termmeta: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_termmeta.table.gz - 0.4 KB)
+0065.001 (0) Table wp_terms: Total expected rows (approximate): 20
+0065.007 (0) Table wp_terms: Total rows added: 20 in 0.00 seconds
+0065.008 (0) Table wp_terms: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_terms.table.gz - 0.7 KB)
+0065.013 (0) Table wp_duplicator_packages: Total expected rows (approximate): 2
+0065.019 (0) Table wp_duplicator_packages: Total rows added: 2 in 0.01 seconds
+0065.021 (0) Table wp_duplicator_packages: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_duplicator_packages.table.gz - 1.5 KB)
+0065.040 (0) Table wp_ewwwio_images: Total expected rows (approximate): 3276
+0065.336 (0) Table wp_ewwwio_images: Total rows added: 3363 in 0.30 seconds
+0065.338 (0) Table wp_ewwwio_images: finishing file (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_ewwwio_images.table.gz - 73.9 KB)
+0065.343 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_options.table.gz (1/14): adding to final database dump
+0065.417 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_users.table.gz (2/14): adding to final database dump
+0065.422 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_usermeta.table.gz (3/14): adding to final database dump
+0065.437 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_commentmeta.table.gz (4/14): adding to final database dump
+0065.440 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_comments.table.gz (5/14): adding to final database dump
+0065.442 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_links.table.gz (6/14): adding to final database dump
+0065.447 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_postmeta.table.gz (7/14): adding to final database dump
+0065.534 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_posts.table.gz (8/14): adding to final database dump
+0065.566 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_term_relationships.table.gz (9/14): adding to final database dump
+0065.570 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_term_taxonomy.table.gz (10/14): adding to final database dump
+0065.571 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_termmeta.table.gz (11/14): adding to final database dump
+0065.573 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_terms.table.gz (12/14): adding to final database dump
+0065.576 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_duplicator_packages.table.gz (13/14): adding to final database dump
+0065.578 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db-table-wp_ewwwio_images.table.gz (14/14): adding to final database dump
+0065.641 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db.gz: finished writing out complete database file (512 KB)
+0065.660 (0) Total database tables backed up: 14 (backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db.gz, size: 615583, sha256)
+0065.670 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0065.671 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0065.672 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0065.673 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-others.zip: others: This file has not yet been successfully uploaded: will queue
+0065.674 (0) backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db.gz: db: This file has not yet been successfully uploaded: will queue
+0065.677 (0) Saving backup history. Total backup size: 226.1 MB
+0065.681 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0065.685 (0) Cloud backup selection (1/1): none (last)
+0065.686 (0) No remote despatch: user chose no remote backup service
+0065.689 (0) Recording as successfully uploaded: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-plugins.zip (d209c8740622f8c64800f75323d24058)
+0065.701 (0) Recording as successfully uploaded: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-themes.zip (fc20593a3e25b6e174c0f379ef2d5f58)
+0065.726 (0) Recording as successfully uploaded: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-uploads.zip (8aedb4c8a4abd02abc9284c5a891c732)
+0065.743 (0) Recording as successfully uploaded: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-others.zip (9d89dde891eb8d12d5835e0b62a0e938)
+0065.748 (0) Recording as successfully uploaded: backup_2017-08-25-1745_Van_Buren_Youth_Camp_3ea513818cfd-db.gz (bbc003da8926c6660eb3eb5f6f5e2ce0)
+0065.755 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0065.756 (0) Number of backup sets in history: 1; groups (db): 1
+0065.757 (0) Examining (for databases) backup set with group_id=0, nonce=3ea513818cfd, datestamp=1503683116 (Aug 25 2017 17:45:16)
+0065.758 (0) This backup set is the backup set just made, so will not be deleted.
+0065.758 (0) Number of backup sets in history: 1; groups (files): 1
+0065.759 (0) Examining (for files) backup set with nonce=3ea513818cfd, datestamp=1503683116 (Aug 25 2017 17:45:16)
+0065.760 (0) This backup set is the backup set just made, so will not be deleted.
+0065.761 (0) This backup set is the backup set just made, so will not be deleted.
+0065.761 (0) This backup set is the backup set just made, so will not be deleted.
+0065.761 (0) This backup set is the backup set just made, so will not be deleted.
+0065.761 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0065.762 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0065.769 (0) Resume backup (3ea513818cfd, 0): finish run
+0065.772 (0) Decremented the semaphore (fd) by 1
+0065.773 (0) Semaphore (fd) unlocked
+0065.774 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0065.779 (0) No email will/can be sent - the user has not configured an email address.
+0065.779 (0) The backup apparently succeeded and is now complete

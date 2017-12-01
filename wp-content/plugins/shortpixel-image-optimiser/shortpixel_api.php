@@ -121,7 +121,7 @@ class ShortPixelAPI {
      */
     public function parseResponse($response) {
         $data = $response['body'];
-        $data = ShortPixelTools::parseJSON($data);
+        $data = json_decode($data);
         return (array)$data;
     }
 
@@ -167,9 +167,9 @@ class ShortPixelAPI {
         }        
         $apiRetries = $this->_settings->apiRetries;
         
-        if( time() - $startTime > MAX_EXECUTION_TIME) 
+        if( time() - $startTime > SHORTPIXEL_MAX_EXECUTION_TIME2) 
         {//keeps track of time
-            if ( $apiRetries > MAX_API_RETRIES )//we tried to process this time too many times, giving up...
+            if ( $apiRetries > SHORTPIXEL_MAX_API_RETRIES )//we tried to process this time too many times, giving up...
             {
                 $itemHandler->incrementRetries(1, self::ERR_TIMEOUT, __('Timed out while processing.','shortpixel-image-optimiser'));
                 $this->_settings->apiRetries = 0; //fai added to solve a bug?
@@ -237,7 +237,7 @@ class ShortPixelAPI {
                 
                 $itemHandler->incrementRetries($incR, $err["Code"], $err["Message"]);
                 $meta = $itemHandler->getMeta();
-                if($meta->getRetries() >= MAX_FAIL_RETRIES) {
+                if($meta->getRetries() >= SHORTPIXEL_MAX_FAIL_RETRIES) {
                     $meta->setStatus($APIresponse[0]->Status->Code);
                     $meta->setMessage($APIresponse[0]->Status->Message);
                     $itemHandler->updateMeta($meta);
@@ -426,20 +426,20 @@ class ShortPixelAPI {
         {
             $source = $PATHs; //array with final paths for these files
 
-            if( !file_exists(SP_BACKUP_FOLDER) && !@mkdir(SP_BACKUP_FOLDER, 0777, true) ) {//creates backup folder if it doesn't exist
+            if( !file_exists(SHORTPIXEL_BACKUP_FOLDER) && !@mkdir(SHORTPIXEL_BACKUP_FOLDER, 0777, true) ) {//creates backup folder if it doesn't exist
                 return array("Status" => self::STATUS_FAIL, "Message" => __('Backup folder does not exist and it cannot be created','shortpixel-image-optimiser'));
             }
             //create subdir in backup folder if needed
-            @mkdir( SP_BACKUP_FOLDER . '/' . $fullSubDir, 0777, true);
+            @mkdir( SHORTPIXEL_BACKUP_FOLDER . '/' . $fullSubDir, 0777, true);
             
             foreach ( $source as $fileID => $filePATH )//create destination files array
             {
-                $destination[$fileID] = SP_BACKUP_FOLDER . '/' . $fullSubDir . self::MB_basename($source[$fileID]);     
+                $destination[$fileID] = SHORTPIXEL_BACKUP_FOLDER . '/' . $fullSubDir . self::MB_basename($source[$fileID]);     
             }
-            //die("IZ BACKUP: " . SP_BACKUP_FOLDER . '/' . $SubDir . var_dump($destination));
+            //die("IZ BACKUP: " . SHORTPIXEL_BACKUP_FOLDER . '/' . $SubDir . var_dump($destination));
             
             //now that we have original files and where we should back them up we attempt to do just that
-            if(is_writable(SP_BACKUP_FOLDER)) 
+            if(is_writable(SHORTPIXEL_BACKUP_FOLDER)) 
             {
                 foreach ( $destination as $fileID => $filePATH )
                 {
@@ -467,6 +467,7 @@ class ShortPixelAPI {
         $resize = $this->_settings->resizeImages;
         $retinas = 0;
         $thumbsOpt = 0;
+        $thumbsOptList = array();
         $webpSizes = array();
         
         if ( !empty($tempFiles) )
@@ -482,6 +483,7 @@ class ShortPixelAPI {
                 if(   ($tempFile['Status'] == self::STATUS_UNCHANGED || $tempFile['Status'] == self::STATUS_SUCCESS) && !$isRetina
                    && $targetFile !== $mainPath) {
                     $thumbsOpt++;
+                    $thumbsOptList[] = self::MB_basename($targetFile);
                 }
                 
                 if($tempFile['Status'] == self::STATUS_SUCCESS) { //if it's unchanged it will still be in the array but only for WebP (handled below)
@@ -517,7 +519,7 @@ class ShortPixelAPI {
 
                 $tempWebpFilePATH = $tempFile["WebP"];
                 if(file_exists($tempWebpFilePATH)) {
-                    $targetWebPFile = dirname($targetFile) . '/' . basename($targetFile, '.' . pathinfo($targetFile, PATHINFO_EXTENSION)) . ".webp";
+                    $targetWebPFile = dirname($targetFile) . '/' . self::MB_basename($targetFile, '.' . pathinfo($targetFile, PATHINFO_EXTENSION)) . ".webp";                
                     copy($tempWebpFilePATH, $targetWebPFile);
 
                     /* the webp thumbnails in metadata sizes is not working so deactivate for now
@@ -564,7 +566,8 @@ class ShortPixelAPI {
         $meta->setCompressedSize(@filesize($meta->getPath()));
         $meta->setKeepExif($this->_settings->keepExif);
         $meta->setTsOptimized(date("Y-m-d H:i:s"));
-        $meta->setThumbsOpt(($meta->getThumbsTodo() ||  $this->_settings->processThumbnails) ? $thumbsOpt : 0);
+        $meta->setThumbsOptList(array_unique(array_merge($meta->getThumbsOptList(), $thumbsOptList)));
+        $meta->setThumbsOpt(($meta->getThumbsTodo() ||  $this->_settings->processThumbnails) ? count($meta->getThumbsOptList()) : 0);
         $meta->setRetinasOpt($retinas);
         $meta->setThumbsTodo(false);
         //* Not yet as it doesn't seem to work... */$meta->addThumbs($webpSizes);

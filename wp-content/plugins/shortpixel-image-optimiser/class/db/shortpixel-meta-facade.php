@@ -58,6 +58,7 @@ class ShortPixelMetaFacade {
                             ? ($rawMeta["ShortPixel"]["type"] == 'glossy' ? 2 : ($rawMeta["ShortPixel"]["type"] == "lossy" ? 1 : 0) )
                             : null),
                     "thumbsOpt" =>(isset($rawMeta["ShortPixel"]["thumbsOpt"]) ? $rawMeta["ShortPixel"]["thumbsOpt"] : null),
+                    "thumbsOptList" =>(isset($rawMeta["ShortPixel"]["thumbsOptList"]) ? $rawMeta["ShortPixel"]["thumbsOptList"] : array()),
                     "thumbsMissing" =>(isset($rawMeta["ShortPixel"]["thumbsMissing"]) ? $rawMeta["ShortPixel"]["thumbsMissing"] : null),
                     "retinasOpt" =>(isset($rawMeta["ShortPixel"]["retinasOpt"]) ? $rawMeta["ShortPixel"]["retinasOpt"] : null),
                     "thumbsTodo" =>(isset($rawMeta["ShortPixel"]["thumbsTodo"]) ? $rawMeta["ShortPixel"]["thumbsTodo"] : false),
@@ -139,8 +140,10 @@ class ShortPixelMetaFacade {
                 //thumbs were processed if settings or if they were explicitely requested
                 if(null === $this->meta->getThumbsOpt()) {
                     unset($rawMeta['ShortPixel']['thumbsOpt']);
+                    unset($rawMeta['ShortPixel']['thumbsOptList']);
                 } else {
                     $rawMeta['ShortPixel']['thumbsOpt'] = $this->meta->getThumbsOpt();
+                    $rawMeta['ShortPixel']['thumbsOptList'] = $this->meta->getThumbsOptList();
                 }
                 
                 $thumbsMissing = $this->meta->getThumbsMissing();
@@ -266,7 +269,7 @@ class ShortPixelMetaFacade {
             throw new Exception("Post metadata is corrupt (No attachment URL)");
         }
         if ( !parse_url($attURL, PHP_URL_SCHEME) ) {//no absolute URLs used -> we implement a hack
-           return get_site_url() . $attURL;//get the file URL 
+           return self::getHomeUrl() . $attURL;//get the file URL 
         }
         else {
             return $attURL;//get the file URL
@@ -310,11 +313,21 @@ class ShortPixelMetaFacade {
                 $Tmp = explode("/", $uploadDir['basedir']);
                 $TmpCount = count($Tmp);
                 $StichString = $Tmp[$TmpCount-2] . "/" . $Tmp[$TmpCount-1];
-
+                
+                $count = 0;
                 foreach( $sizes as $thumbnailName => $thumbnailInfo ) {
+                    
                     if(strpos($thumbnailName, ShortPixelMeta::WEBP_THUMB_PREFIX) === 0) {
                         continue;
                     }
+                    
+                    if(in_array($thumbnailInfo['file'], $meta->getThumbsOptList())) {
+                        continue;
+                    }
+                    
+                    if($count >= SHORTPIXEL_MAX_THUMBS) break;
+                    $count++;                
+                    
                     $origPath = $tPath = str_replace(ShortPixelAPI::MB_basename($path), $thumbnailInfo['file'], $path);
                     if ( !file_exists($tPath) ) {
                         $tPath = $uploadDir['basedir'] . substr($tPath, strpos($tPath, $StichString) + strlen($StichString));
@@ -377,6 +390,8 @@ class ShortPixelMetaFacade {
         
         $parentId = get_post_meta ($id, '_icl_lang_duplicate_of', true );
         if($parentId) $id = $parentId;
+        
+        $mainFile = get_attached_file($id);
 
         $duplicates = $wpdb->get_col( $wpdb->prepare( "
             SELECT pm.post_id FROM {$wpdb->postmeta} pm
@@ -391,7 +406,9 @@ class ShortPixelMetaFacade {
             if(count($transGroupId)) {
                 $transGroup = $wpdb->get_results("SELECT element_id FROM {$wpdb->prefix}icl_translations WHERE trid = " . $transGroupId[0]->trid);
                 foreach($transGroup as $trans) {
-                    $duplicates[] = $trans->element_id;
+                    if($mainFile == get_attached_file($trans->element_id)){
+                        $duplicates[] = $trans->element_id;
+                    }
                 }
             }
         }
@@ -401,7 +418,7 @@ class ShortPixelMetaFacade {
     public static function pathToWebPath($path) {
         //$upl = wp_upload_dir();
         //return str_replace($upl["basedir"], $upl["baseurl"], $path);
-        return self::replaceHomePath($path, site_url()."/");
+        return self::replaceHomePath($path, self::getHomeUrl()."/");
     }
 
     public static function pathToRootRelative($path) {

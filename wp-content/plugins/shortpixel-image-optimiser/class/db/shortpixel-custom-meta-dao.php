@@ -205,7 +205,7 @@ class ShortPixelCustomMetaDao {
         $folder = new ShortPixelFolder(array("path" => $addedFolder), $this->excludePatterns);
         try {
             $folder->setFileCount($folder->countFiles());
-        } catch(SpFileRightsException $ex) {
+        } catch(ShortPixelFileRightsException $ex) {
             return $ex->getMessage();
         }
         if(ShortPixelMetaFacade::isMediaSubfolder($folder->getPath())) {
@@ -232,7 +232,7 @@ class ShortPixelCustomMetaDao {
         $addedPath = $folder->getPath();
         if($addedPath) {
             //first check if it does contain the Backups Folder - we don't allow that
-            if(ShortPixelFolder::checkFolderIsSubfolder(SP_BACKUP_FOLDER, $addedPath)) {
+            if(ShortPixelFolder::checkFolderIsSubfolder(SHORTPIXEL_BACKUP_FOLDER, $addedPath)) {
                 return __('This folder contains the ShortPixel Backups. Please select a different folder.','shortpixel-image-optimiser');
             }
             $customFolderPaths = array_map(array('ShortPixelFolder','path'), $this->getFolders());
@@ -312,15 +312,18 @@ class ShortPixelCustomMetaDao {
         $this->db->query($sql);
     }
     
-    public function getPaginatedMetas($hasNextGen, $count, $page, $orderby = false, $order = false) {
+    public function getPaginatedMetas($hasNextGen, $filters, $count, $page, $orderby = false, $order = false) {
         $sql = "SELECT sm.id, sm.name, sm.path folder, "
                 . ($hasNextGen ? "CASE WHEN ng.gid IS NOT NULL THEN 'NextGen' ELSE 'Custom' END media_type, " : "'Custom' media_type, ")
                 . "sm.status, sm.compression_type, sm.keep_exif, sm.cmyk2rgb, sm.resize, sm.resize_width, sm.resize_height, sm.message "
                 . "FROM {$this->db->getPrefix()}shortpixel_meta sm "
                 . "INNER JOIN  {$this->db->getPrefix()}shortpixel_folders sf on sm.folder_id = sf.id "
                 . ($hasNextGen ? "LEFT JOIN {$this->db->getPrefix()}ngg_gallery ng on sf.path = ng.path " : " ")
-                . "WHERE sf.status <> -1 "
-                . ($orderby ? "ORDER BY $orderby $order " : "")
+                . "WHERE sf.status <> -1 ";
+        foreach($filters as $field => $value) {
+            $sql .= " AND sm.$field " . $value->operator . " ". $value->value . " ";
+        }                
+        $sql  .= ($orderby ? "ORDER BY $orderby $order " : "")
                 . "LIMIT $count OFFSET " . ($page - 1) * $count;
                 
                 //die($sql);
@@ -350,10 +353,14 @@ class ShortPixelCustomMetaDao {
         return isset($res[0]->recCount) ? $res[0]->recCount : null;
     }
     
-    public function getCustomMetaCount() {
+    public function getCustomMetaCount($filters = array()) {
         $sql = "SELECT COUNT(sm.id) recCount FROM {$this->db->getPrefix()}shortpixel_meta sm "
             . "INNER JOIN  {$this->db->getPrefix()}shortpixel_folders sf on sm.folder_id = sf.id "
             . "WHERE sf.status <> -1 AND sm.status <> 3";
+        foreach($filters as $field => $value) {
+            $sql .= " AND sm.$field " . $value->operator . " ". $value->value . " ";
+        }
+            
         $res = $this->db->query($sql);
         return isset($res[0]->recCount) ? $res[0]->recCount : 0;
     }

@@ -156,12 +156,12 @@ class WpShortPixelMediaLbraryAdapter {
     }
     
     public static function countNonWebpSizes($sizes) {
-        $count = 0;
+        $uniq = array();
         foreach($sizes as $key => $val) {
             if (strpos($key, ShortPixelMeta::WEBP_THUMB_PREFIX) === 0) continue;
-            $count++;
+            $uniq[$val['file']] = $key;
         }
-        return $count;
+        return count($uniq);
     }
     
     public static function cleanupFoundThumbs($itemHandler) {

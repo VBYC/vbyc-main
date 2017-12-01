@@ -12,6 +12,7 @@ class ShortPixelMeta extends ShortPixelEntity{
     protected $compressionType;
     protected $compressedSize;
     protected $thumbsOpt;
+    protected $thumbsOptList;
     protected $thumbsMissing;
     protected $retinasOpt;
     protected $thumbsTodo;
@@ -138,6 +139,14 @@ class ShortPixelMeta extends ShortPixelEntity{
 
     function setThumbsOpt($thumbsOpt) {
         $this->thumbsOpt = $thumbsOpt;
+    }
+
+    function getThumbsOptList() {
+        return $this->thumbsOptList;
+    }
+
+    function setThumbsOptList($thumbsOptList) {
+        $this->thumbsOptList = $thumbsOptList;
     }
 
     function getThumbsMissing() {
