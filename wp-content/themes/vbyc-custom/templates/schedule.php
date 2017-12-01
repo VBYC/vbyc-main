@@ -155,7 +155,7 @@ Template Name: Schedule
 
                                         // End date
                                         if ($date_start !== $date_end) {
-                                            if (date('M', $date_end) == date('M', $date_end)) {
+                                            if (date('M', $date_end) == date('M', $date_start)) {
                                                 $date_end_display = date('-j' , $date_end);
                                             } else {
                                                $date_end_display = date(' - M j' , $date_end);
@@ -235,7 +235,7 @@ Template Name: Schedule
 
                                         // End date
                                         if ($date_start !== $date_end) {
-                                            if (date('M', $date_end) == date('M', $date_end)) {
+                                            if (date('M', $date_end) == date('M', $date_start)) {
                                                 $date_end_display = date('-j' , $date_end);
                                             } else {
                                                $date_end_display = date(' - M j' , $date_end);
