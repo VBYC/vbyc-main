@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('UPDRAFTPLUS_DIR')) die('No access.');
+if (!defined('UPDRAFTCENTRAL_CLIENT_DIR')) die('No access.');
 
 class UpdraftCentral_Comments_Commands extends UpdraftCentral_Commands {
 
@@ -347,9 +347,9 @@ class UpdraftCentral_Comments_Commands extends UpdraftCentral_Commands {
 	public function get_comment_filters() {
 		// Options for comment_types field
 		$comment_types = apply_filters('admin_comment_types_dropdown', array(
-					'comment' => __('Comments'),
-					'pings' => __('Pings'),
-				));
+			'comment' => __('Comments'),
+			'pings' => __('Pings'),
+		));
 				
 		// Options for comment_status field
 		$comment_statuses = array(
@@ -761,8 +761,8 @@ class UpdraftCentral_Comments_Commands extends UpdraftCentral_Commands {
 				if ($parent_comment) $comment->in_reply_to = $parent_comment->comment_author;
 			}
 
-			//We're formatting the comment_date to be exactly the same
-			//with that of WP Comments table (e.g. 2016/12/21 at 10:30 PM)
+			// We're formatting the comment_date to be exactly the same
+			// with that of WP Comments table (e.g. 2016/12/21 at 10:30 PM)
 
 			$comment->comment_date = date('Y/m/d \a\t g:i a', strtotime($comment->comment_date));
 

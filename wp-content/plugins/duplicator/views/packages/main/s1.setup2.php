@@ -12,25 +12,31 @@
 	input#package-name {padding:4px; height: 2em;  font-size: 1.2em;  line-height: 100%; width: 100%;   margin: 0 0 3px;}
 	label.lbl-larger {font-size:1.2em}
     /*ARCHIVE SECTION*/
-    form#dup-form-opts div.tabs-panel{max-height:550px; padding:10px; min-height:280px}
+    form#dup-form-opts div.tabs-panel{max-height:800px; padding:10px; min-height:280px}
     form#dup-form-opts ul li.tabs{font-weight:bold}
     ul.category-tabs li {padding:4px 15px 4px 15px}
     select#archive-format {min-width:100px; margin:1px 0 4px 0}
     span#dup-archive-filter-file {color:#A62426; display:none}
     span#dup-archive-filter-db {color:#A62426; display:none}
+	span#dup-archive-db-only {color:#A62426; display:none}
     div#dup-file-filter-items, div#dup-db-filter-items {padding:5px 0;}
 	div#dup-db-filter-items {font-stretch:ultra-condensed; font-family:Calibri; }
 	form#dup-form-opts textarea#filter-files {height:85px}
     div.dup-quick-links {font-size:11px; float:right; display:inline-block; margin-top:2px; font-style:italic}
     div.dup-tabs-opts-help {font-style:italic; font-size:11px; margin:10px 0 0 10px; color:#777}
-    table#dup-dbtables td {padding:1px 15px 1px 4px}
+    /* Tab: Database */
+    table#dup-dbtables td {padding:1px 7px 1px 4px}
+	label.core-table {color:#9A1E26;font-style:italic;font-weight:bold}
+	i.core-table-info {color:#9A1E26;font-style:italic;}
+	label.non-core-table {color:#000}
+	label.non-core-table:hover, label.core-table:hover {text-decoration:line-through}
 	table.dbmysql-compatibility td{padding:2px 20px 2px 2px}
 	div.dup-store-pro {font-size:12px; font-style:italic;}
 	div.dup-store-pro img {height:14px; width:14px; vertical-align:text-top}
 	div.dup-store-pro a {text-decoration:underline}
 	span.dup-pro-text {font-style:italic; font-size:12px; color:#555; font-style:italic }
 	div#dup-exportdb-items-checked, div#dup-exportdb-items-off {min-height:275px; display:none}
-	div#dup-exportdb-items-checked {padding: 5px; max-width:650px}
+	div#dup-exportdb-items-checked {padding: 5px; max-width:700px}
 
     /*INSTALLER SECTION*/
     div.dup-installer-header-1 {font-weight:bold; padding-bottom:2px; width:100%}
@@ -43,8 +49,10 @@
 	ul.add-menu-item-tabs li, ul.category-tabs li {padding:3px 30px 5px}
 </style>
 
-<form id="dup-form-opts" method="post" action="?page=duplicator&tab=new2<?php echo $retry_enabled ? '&retry=1' : '';?>" data-validate="parsley">
+<form id="dup-form-opts" method="post" action="?page=duplicator&tab=new2<?php echo "&retry={$retry_state}"; ?>" data-validate="parsley">
 <input type="hidden" id="dup-form-opts-action" name="action" value="">
+<?php wp_nonce_field('dup_form_opts', 'dup_form_opts_nonce_field', false); ?>
+
 <div>
 	<label for="package-name" class="lbl-larger"><b>&nbsp;<?php _e('Name', 'duplicator') ?>:</b> </label>
 	<div class="dup-notes-add">
@@ -92,10 +100,10 @@ STORAGE -->
 							<img src="<?php echo DUPLICATOR_PLUGIN_URL ?>assets/img/google_drive_64px.png" /> 
 							<img src="<?php echo DUPLICATOR_PLUGIN_URL ?>assets/img/ftp-64.png" /> 
 							<?php echo sprintf(__('%1$s, %2$s, %3$s, %4$s and other storage options available in', 'duplicator'), 'Amazon', 'Dropbox', 'Google Drive', 'FTP'); ?>
-							<a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=free_storage&utm_campaign=duplicator_pro" target="_blank"><?php _e('Professional', 'duplicator');?></a> 
+							<a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=free_storage&utm_campaign=duplicator_pro" target="_blank"><?php _e('Duplicator Pro', 'duplicator');?></a> 
 							<i class="fa fa-lightbulb-o" 
 								data-tooltip-title="<?php _e("Additional Storage:", 'duplicator'); ?>" 
-								data-tooltip="<?php _e('Professional allows you to create a package and then store it at a custom location on this server or to a cloud '
+								data-tooltip="<?php _e('Duplicator Pro allows you to create a package and then store it at a custom location on this server or to a cloud '
 										. 'based location such as Google Drive, Amazon, Dropbox or FTP.', 'duplicator'); ?>">
 							 </i>
 						</span>
@@ -115,7 +123,8 @@ ARCHIVE -->
         <i class="fa fa-file-archive-o"></i> <?php _e('Archive', 'duplicator') ?> &nbsp;
         <span style="font-size:13px">
             <span id="dup-archive-filter-file" title="<?php _e('File filter enabled', 'duplicator') ?>"><i class="fa fa-files-o"></i> <i class="fa fa-filter"></i> &nbsp;&nbsp;</span> 
-            <span id="dup-archive-filter-db" title="<?php _e('Database filter enabled', 'duplicator') ?>"><i class="fa fa-table"></i> <i class="fa fa-filter"></i></span>	
+            <span id="dup-archive-filter-db" title="<?php _e('Database filter enabled', 'duplicator') ?>"><i class="fa fa-table"></i> <i class="fa fa-filter"></i></span>
+			<span id="dup-archive-db-only" title="<?php _e('Archive Only the Database', 'duplicator') ?>"> <?php _e('Database Only', 'duplicator') ?> </span>
         </span>
         <div class="dup-box-arrow"></div>
     </div>		
@@ -135,6 +144,8 @@ ARCHIVE -->
                 <?php
 					$uploads = wp_upload_dir();
 					$upload_dir = DUP_Util::safePath($uploads['basedir']);
+					$filter_dir_count  = isset($Package->Archive->FilterDirs)  ? count(explode(";", $Package->Archive->FilterDirs)) -1  : 0;
+					$filter_file_count = isset($Package->Archive->FilterFiles) ? count(explode(";", $Package->Archive->FilterFiles)) -1 : 0;
                 ?>
            
 				<input type="checkbox"  id="export-onlydb" name="export-onlydb"  onclick="Duplicator.Pack.ExportOnlyDB()" <?php echo ($Package->Archive->ExportOnlyDB) ? "checked='checked'" :""; ?> />
@@ -150,7 +161,12 @@ ARCHIVE -->
 					</i>
 
 					<div id="dup-file-filter-items">
-						<label for="filter-dirs" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>"><?php _e("Directories", 'duplicator') ?>:</label>
+						<label for="filter-dirs" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>">
+							<?php
+								_e("Directories:", 'duplicator');
+								echo sprintf("<sup title='%s'>({$filter_dir_count})</sup>", __("Number of directories filtered", 'duplicator'));
+							?>
+						</label>
 						<div class='dup-quick-links'>
 							<a href="javascript:void(0)" onclick="Duplicator.Pack.AddExcludePath('<?php echo rtrim(DUPLICATOR_WPROOTPATH, '/'); ?>')">[<?php _e("root path", 'duplicator') ?>]</a>
 							<a href="javascript:void(0)" onclick="Duplicator.Pack.AddExcludePath('<?php echo rtrim($upload_dir, '/'); ?>')">[<?php _e("wp-uploads", 'duplicator') ?>]</a>
@@ -167,7 +183,12 @@ ARCHIVE -->
 						</div>
 						<textarea name="filter-exts" id="filter-exts" placeholder="ext1;ext2;ext3;"><?php echo esc_textarea($Package->Archive->FilterExts); ?></textarea>
 
-						<label class="no-select" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>"><?php _e("Files", 'duplicator') ?>:</label>
+						<label class="no-select" title="<?php _e("Separate all filters by semicolon", 'duplicator'); ?>">
+							<?php
+								_e("Files:", 'duplicator');
+								echo sprintf("<sup title='%s'>({$filter_file_count})</sup>", __("Number of files filtered", 'duplicator'));
+							?>
+						</label>
 						<div class='dup-quick-links'>
 							<a href="javascript:void(0)" onclick="Duplicator.Pack.AddExcludeFilePath('<?php echo rtrim(DUPLICATOR_WPROOTPATH, '/'); ?>')"><?php _e("(file path)", 'duplicator') ?></a>
 							<a href="javascript:void(0)" onclick="jQuery('#filter-files').val('')"><?php _e("(clear)", 'duplicator') ?></a>
@@ -182,24 +203,28 @@ ARCHIVE -->
 				</div>
 
 				<div id="dup-exportdb-items-checked"  style="<?php echo ($Package->Archive->ExportOnlyDB) ? 'block' : 'none'; ?>">
-					<?php 
+					<?php
+
+						if ($retry_state == '2') {
+							echo '<i style="color:maroon">';
+							_e("This option has automatically been checked because you have opted for a <i class='fa fa-random'></i> Two-Part Install Process.  Please complete the package build and continue with the ", 'duplicator');
+								printf('%s <a href="https://snapcreek.com/duplicator/docs/quick-start/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=host_interupt_2partlink&utm_campaign=build_issues#quick-060-q" target="faq">%s</a>.',
+								__('', 'duplicator'),
+								__('Quick Start Two-Part Install Instructions', 'duplicator'));
+							echo '</i><br/><br/>';
+						}
+
 						_e("<b>Overview:</b><br/> This advanced option excludes all files from the archive.  Only the database and a copy of the installer.php "
-						. "will be included in the archive.zip file. The option can be used for backing up and moving only the database. <i>Please note that this option is currently in *Beta*.</i>", 'duplicator');
-						
-						echo '<br/><br/>';
-
-						_e("<b><i class='fa fa-exclamation-circle'></i> Notice:</b><br/>  Installing only the database over an existing site may have unintended consequences.  "
-						 . "Be sure to know the state of your system before installing the database without the associated files. ", 'duplicator');
+						. "will be included in the archive.zip file. The option can be used for backing up and moving only the database.", 'duplicator');
 
 						echo '<br/><br/>';
 
-						_e("For example, if you have WordPress 4.6 on this site and you copy this sites database to a host that has WordPress 4.8 files then the source code of the files "
-							. " will not be in sync with the database causing possible errors.", 'duplicator');
-						
-						echo '<br/><br/>';
-						
-						_e("This can also be true of plugins and themes.   When moving only the database be sure to know the database will be compatible with ALL source code files."
-						. "  Please use this advanced feature with caution!", 'duplicator');
+						_e("<b><i class='fa fa-exclamation-circle'></i> Notice:</b><br/>", 'duplicator');
+
+						_e("Please use caution when installing only the database over an existing site and be sure the correct files correspond with the database. For example, "
+							. "if WordPress 4.6 is on this site and you copy the database to a host that has WordPress 4.8 files then the source code of the files will not be "
+							. "in sync with the database causing possible errors.  If you’re immediately moving the source files with the database then you can ignore this notice. "
+							. "Please use this advanced feature with caution!", 'duplicator');
 					?>
 					<br/><br/>
 				</div>
@@ -230,28 +255,36 @@ ARCHIVE -->
                     <a href="javascript:void(0)" id="dbnone" onclick="jQuery('#dup-dbtables .checkbox').prop('checked', false).trigger('click');">[ <?php _e('Exclude All', 'duplicator'); ?> ]</a>
                     <div style="white-space:nowrap">
 					<?php
+						$coreTables = DUP_Util::getWPCoreTables();
 						$tables = $wpdb->get_results("SHOW FULL TABLES FROM `" . DB_NAME . "` WHERE Table_Type = 'BASE TABLE' ", ARRAY_N);
 						$num_rows = count($tables);
-						echo '<table id="dup-dbtables"><tr><td valign="top">';
-						$next_row = round($num_rows / 3, 0);
+						$next_row = round($num_rows / 4, 0);
 						$counter = 0;
 						$tableList = explode(',', $Package->Database->FilterTables);
-						foreach ($tables as $table)
-						{
-							if (in_array($table[0], $tableList))
-							{
+
+						echo '<table id="dup-dbtables"><tr><td valign="top">';
+						foreach ($tables as $table) {
+
+							if (in_array($table[0], $coreTables)) {
+								$core_css = 'core-table';
+								$core_note = '*';
+							} else {
+								$core_css = 'non-core-table';
+								$core_note = '';
+							}
+
+							if (in_array($table[0], $tableList)) {
 								$checked = 'checked="checked"';
-								$css = 'text-decoration:line-through';
-							}
-							else
-							{
+								$css	 = 'text-decoration:line-through';
+							} else {
 								$checked = '';
-								$css = '';
+								$css	 = '';
 							}
-							echo "<label for='dbtables-{$table[0]}' style='{$css}'><input class='checkbox dbtable' $checked type='checkbox' name='dbtables[]' id='dbtables-{$table[0]}' value='{$table[0]}' onclick='Duplicator.Pack.ExcludeTable(this)' />&nbsp;{$table[0]}</label><br />";
+							echo  "<label for='dbtables-{$table[0]}' style='{$css}' class='{$core_css}'>"
+								. "<input class='checkbox dbtable' $checked type='checkbox' name='dbtables[]' id='dbtables-{$table[0]}' value='{$table[0]}' onclick='Duplicator.Pack.ExcludeTable(this)' />"
+								. "&nbsp;{$table[0]}{$core_note}</label><br />";
 							$counter++;
-							if ($next_row <= $counter)
-							{
+							if ($next_row <= $counter) {
 								echo '</td><td valign="top">';
 								$counter = 0;
 							}
@@ -260,6 +293,15 @@ ARCHIVE -->
 					?>
                     </div>	
                 </div>
+
+				<div class="dup-tabs-opts-help">
+					<?php
+						_e("Checked tables will be <u>excluded</u> from the database script. ", 'duplicator');
+						_e("Excluding certain tables can cause your site or plugins to not work correctly after install!<br/>", 'duplicator');
+						_e("<i class='core-table-info'> Use caution when excluding tables! It is highly recommended to not exclude WordPress core tables*, unless you know the impact.</i>", 'duplicator');
+					?>
+				</div>
+
 				<br/>
 				<?php _e("Compatibility Mode", 'duplicator') ?> &nbsp;
 				<i class="fa fa-question-circle" 
@@ -355,10 +397,10 @@ INSTALLER -->
 			<span class="dup-pro-text">
 				<img src="<?php echo DUPLICATOR_PLUGIN_URL ?>assets/img/cpanel-48.png" style="width:16px; height:12px" />
 				<?php _e("Create the database and users directly at install time with ", 'duplicator'); ?>
-				<a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=free_cpanel&utm_campaign=duplicator_pro" target="_blank"><?php _e('Professional', 'duplicator');?></a>
+				<a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_content=free_cpanel&utm_campaign=duplicator_pro" target="_blank"><?php _e('Duplicator Pro', 'duplicator');?></a>
 				<i class="fa fa-lightbulb-o"
 					data-tooltip-title="<?php _e("cPanel Access:", 'duplicator'); ?>" 
-					data-tooltip="<?php _e('If your server supports cPanel API access then you can create new databases and select existing ones with Duplicator Professional at install time.', 'duplicator'); ?>">
+					data-tooltip="<?php _e('If your server supports cPanel API access then you can create new databases and select existing ones with Duplicator Pro at install time.', 'duplicator'); ?>">
 				</i>
 			</span>
 		</div>
@@ -398,9 +440,19 @@ jQuery(document).ready(function ($)
 	Duplicator.Pack.ExportOnlyDB = function ()
 	{
 		$('#dup-exportdb-items-off, #dup-exportdb-items-checked').hide();
-		$("#export-onlydb").is(':checked')
-			? $('#dup-exportdb-items-checked').show()
-			: $('#dup-exportdb-items-off').show();
+		if ($("#export-onlydb").is(':checked')) {
+			$('#dup-exportdb-items-checked').show();
+			$('#dup-archive-db-only').show(100);
+			$('#dup-archive-filter-db').hide();
+			$('#dup-archive-filter-file').hide();
+		} else {
+			$('#dup-exportdb-items-off').show();
+			$('#dup-exportdb-items-checked').hide();
+			$('#dup-archive-db-only').hide();
+			Duplicator.Pack.ToggleFileFilters();
+		}
+
+		Duplicator.Pack.ToggleDBFilters();
 	};
 
 	/* Enable/Disable the file filter elements */
@@ -489,8 +541,8 @@ jQuery(document).ready(function ($)
 		}
 	}
 
-	<?php if ($retry_dbenabled) :?>
-		$('#dup-pack-archive-panel').show(500);
+	<?php if ($retry_state == '2') :?>
+		$('#dup-pack-archive-panel').show();
 		$('#export-onlydb').prop( "checked", true );
 	<?php endif; ?>
 	

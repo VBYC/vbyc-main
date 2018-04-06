@@ -70,7 +70,15 @@ $GLOBALS['REPLACE_LIST']
   ================================================================================================= */
 
 // Some machines don’t have this set so just do it here.
-date_default_timezone_set('UTC'); 
+date_default_timezone_set('UTC');
+
+//PATCH FOR IIS:  Does not support REQUEST_URI
+if (!isset($_SERVER['REQUEST_URI']))  {
+	$_SERVER['REQUEST_URI'] = substr($_SERVER['PHP_SELF'],0);
+	if (isset($_SERVER['QUERY_STRING']) && $_SERVER['QUERY_STRING'] != "") {
+		$_SERVER['REQUEST_URI'] .= '?' . $_SERVER['QUERY_STRING'];
+	}
+}
 
 //COMPARE VALUES
 $GLOBALS['DUPX_DEBUG']		= false;
@@ -85,6 +93,7 @@ $GLOBALS['FW_TABLEPREFIX']		= '%fwrite_wp_tableprefix%';
 $GLOBALS['FW_URL_OLD']			= '%fwrite_url_old%';
 $GLOBALS['FW_PACKAGE_NAME']		= '%fwrite_archive_name%';
 $GLOBALS['FW_PACKAGE_NOTES']	= '%fwrite_package_notes%';
+$GLOBALS['FW_PACKAGE_EST_SIZE']	= '%fwrite_package_size%';
 $GLOBALS['FW_SECURE_NAME']		= '%fwrite_secure_name%';
 $GLOBALS['FW_DBHOST']			= '%fwrite_dbhost%';
 $GLOBALS['FW_DBHOST']			= empty($GLOBALS['FW_DBHOST']) ? 'localhost' : $GLOBALS['FW_DBHOST'];
@@ -297,15 +306,15 @@ switch ($_POST['action_step']) {
 </div>
 
 <script>
-	/* Server Info Dialog*/
-	DUPX.showServerInfo = function()
-	{
-		modal({
-			type: 'alert',
-			title: 'Server Information',
-			text: $('#dialog-server-info').html()
-		});
-	}
+/* Server Info Dialog*/
+DUPX.showServerInfo = function()
+{
+	modal({
+		type: 'alert',
+		title: 'Server Information',
+		text: $('#dialog-server-info').html()
+	});
+}
 </script>
 
 </body>

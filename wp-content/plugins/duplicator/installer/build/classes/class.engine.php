@@ -123,7 +123,7 @@ class DUPX_UpdateEngine
 	 * @param mysql  $dbh			The db connection object
 	 * @param array  $list			Key value pair of 'search' and 'replace' arrays
 	 * @param array  $tables		The tables we want to look at
-	 * @param array  $fullsearch    Search every column reguardless of its data type
+	 * @param array  $fullsearch    Search every column regardless of its data type
 	 *
 	 * @return array Collection of information gathered during the run.
 	 */
@@ -146,8 +146,20 @@ class DUPX_UpdateEngine
 			'err_all' => 0
 		);
 
-		$walk_function = create_function('&$str', '$str = "`$str`";');
-
+        // Let's use anonymous function after PHP5.3.0 - is faster than create_function()
+        // create_function() is removed from PHP 7.2
+        if(DUPX_U::isVersion('5.3.0')) {
+            // Use "try catch" to avoid PHP notice or error below PHP5.3.0
+            try {
+                $walk_function = function () use (&$str) {
+                    $str = "`$str`";
+                };
+            }
+			catch (Exception $exc) {}
+        } else {
+            $walk_function = create_function('&$str', '$str = "`$str`";');
+        }
+        
 		$profile_start = DUPX_U::getMicrotime();
 		if (is_array($tables) && !empty($tables)) {
 
@@ -217,22 +229,30 @@ class DUPX_UpdateEngine
 						$where_sql	 = array();
 						$upd		 = false;
 						$serial_err	 = 0;
+                        $is_unkeyed = !in_array(true,$columns);
 
 						//Loops every cell
 						foreach ($columns as $column => $primary_key) {
 							$report['scan_cells'] ++;
-							$edited_data	 = $data_to_fix	 = $row[$column];
-							$base64coverted	 = false;
-							$txt_found		 = false;
+							$edited_data		= $data_to_fix = $row[$column];
+							$base64converted	= false;
+							$txt_found			= false;
+
+                            //Unkeyed table code
+                            //Added this here to add all columns to $where_sql
+                            //The if statement with $txt_found would skip additional columns
+                            if($is_unkeyed && ! empty($data_to_fix)) {
+                                $where_sql[] = $column.' = "'.mysqli_real_escape_string($dbh, $data_to_fix).'"';
+                            }
 
 							//Only replacing string values
-							if (!empty($row[$column]) && !is_numeric($row[$column])) {
+							if (!empty($row[$column]) && !is_numeric($row[$column]) && $primary_key != 1) {
 								//Base 64 detection
 								if (base64_decode($row[$column], true)) {
 									$decoded = base64_decode($row[$column], true);
 									if (self::isSerialized($decoded)) {
 										$edited_data	 = $decoded;
-										$base64coverted	 = true;
+										$base64converted	 = true;
 									}
 								}
 
@@ -247,12 +267,12 @@ class DUPX_UpdateEngine
 									continue;
 								}
 
-								//Replace logic - level 1: simple check on any string or serlized strings
+								//Replace logic - level 1: simple check on any string or serialized strings
 								foreach ($list as $item) {
 									$edited_data = self::recursiveUnserializeReplace($item['search'], $item['replace'], $edited_data);
 								}
 
-								//Replace logic - level 2: repair serilized strings that have become broken
+								//Replace logic - level 2: repair serialized strings that have become broken
 								$serial_check = self::fixSerialString($edited_data);
 								if ($serial_check['fixed']) {
 									$edited_data = $serial_check['data'];
@@ -265,7 +285,7 @@ class DUPX_UpdateEngine
 							if ($edited_data != $data_to_fix || $serial_err > 0) {
 								$report['updt_cells'] ++;
 								//Base 64 encode
-								if ($base64coverted) {
+								if ($base64converted) {
 									$edited_data = base64_encode($edited_data);
 								}
 								$upd_col[]	 = $column;
@@ -280,16 +300,22 @@ class DUPX_UpdateEngine
 
 						//PERFORM ROW UPDATE
 						if ($upd && !empty($where_sql)) {
-							$sql				 = "UPDATE `{$table}` SET ".implode(', ', $upd_sql).' WHERE '.implode(' AND ', array_filter($where_sql));
-							$result				 = mysqli_query($dbh, $sql) or $report['errsql'][]	 = mysqli_error($dbh);
-							//DEBUG ONLY:
-							DUPX_Log::info("\t{$sql}\n", 3);
+							$sql	= "UPDATE `{$table}` SET ".implode(', ', $upd_sql).' WHERE '.implode(' AND ', array_filter($where_sql));
+							$result	= mysqli_query($dbh, $sql);
 							if ($result) {
 								if ($serial_err > 0) {
-									$report['errser'][] = "SELECT ".implode(', ', $upd_col)." FROM `{$table}`  WHERE ".implode(' AND ', array_filter($where_sql)).';';
+									$report['errser'][] = "SELECT " . implode(', ', $upd_col) . " FROM `{$table}`  WHERE " . implode(' AND ', array_filter($where_sql)) . ';';
 								}
-								$report['updt_rows'] ++;
+								$report['updt_rows']++;
+							} else  {
+								$report['errsql'][]	 = ($GLOBALS["LOGGING"] == 1)
+									? 'DB ERROR: ' . mysqli_error($dbh)
+									: 'DB ERROR: ' . mysqli_error($dbh) . "\nSQL: [{$sql}]\n";
 							}
+
+							//DEBUG ONLY:
+							DUPX_Log::info("\t{$sql}\n", 3);
+
 						} elseif ($upd) {
 							$report['errkey'][] = sprintf("Row [%s] on Table [%s] requires a manual update.", $current_row, $table);
 						}

@@ -84,7 +84,7 @@ div.fb-like  {
 li.sp-conflict-plugins-list {
     line-height: 28px;
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 li.sp-conflict-plugins-list a.button {
     margin-left: 10px;
@@ -145,6 +145,8 @@ div.wrap.short-pixel-bulk-page .bulk-notice-container .bulk-notice-msg.bulk-erro
     border: 1px solid #b5914d;
     background-color: #ffe996;
     margin-right:20px;
+    position: relative;
+    z-index: 10;
 }
 div.wrap.short-pixel-bulk-page .bulk-notice-container .bulk-notice-msg.bulk-error.bulk-error-fatal {
     border: 1px solid #c32525;
@@ -257,9 +259,6 @@ li.shortpixel-toolbar-processing.shortpixel-alert > a.ab-item > div,
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1); 
     padding: 1px 12px;
 }
-.shortpixel-hide {
-    display:none;
-}
 .shortpixel-clearfix {
     width:100%;
     float:left;
@@ -284,7 +283,7 @@ div.shortpixel-modal {
     width: 30%; /* Could be more or less, depending on screen size */
     min-width: 300px; /* Could be more or less, depending on screen size */
 }
-div.shortpixel-modal .sp-close-button {
+div.shortpixel-modal .sp-close-button, div.shortpixel-modal .sp-close-upgrade-button {
     float: right;
     margin-top: 0px;
     background: transparent;
@@ -317,6 +316,7 @@ div.shortpixel-modal .sptw-modal-spinner {
     width:98%;
     background-color:white;
     padding:10px 10px 0;
+    position:relative;
     /*margin-top: 2em;*/
 }
 
@@ -414,6 +414,10 @@ div.shortpixel-modal .sptw-modal-spinner {
 }
 .wp-core-ui .bulk-play a.button .bulk-btn-txt span.total {
     font-size: 1.4em;
+}
+.short-pixel-notice-icon {
+    float:left;
+    margin: 10px 10px 10px 0;
 }
 .bulk-progress {
     padding: 20px 32px 17px;
@@ -544,6 +548,9 @@ p.settings-info {
     color: #818181;
     font-size:13px !important;
 }
+p.settings-info.shortpixel-settings-error {
+    color: #c32525;
+}
 
 /* TABS CONTROLS */
 article.sp-tabs {
@@ -592,6 +599,9 @@ article.sp-tabs section:nth-child(3) h2 {
 article.sp-tabs section:nth-child(4) h2 {
     left: 556px;
 }
+article.sp-tabs section:nth-child(5) h2 {
+    left: 738px;
+}
 article.sp-tabs section h2 a {
     display: block;
     width: 100%;
@@ -621,6 +631,10 @@ article.sp-tabs section h2 {
     transition: all 500ms ease;
 }
 */
+.shortpixel-help-link span.dashicons{
+    text-decoration: none;
+    margin-top: -1px;
+}
 /* Resources */
 @media(min-width: 1000px) {
     section#tab-resources .col-md-6 {
@@ -701,7 +715,8 @@ section#tab-resources p {
     top: 0px;
     left: -1px;
 }
-#wpadminbar .shortpixel-toolbar-processing.shortpixel-quota-exceeded .cssload-container{
+#wpadminbar .shortpixel-toolbar-processing.shortpixel-quota-exceeded .cssload-container,
+#wpadminbar .shortpixel-toolbar-processing.shortpixel-alert .cssload-container{
     display: none;
 }
 

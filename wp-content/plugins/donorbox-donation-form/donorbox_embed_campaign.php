@@ -6,7 +6,7 @@ Description: This plugin will embed Donorbox Donation Form to your site using sh
 Author: rebelidealist
 Author URI: https://donorbox.org
 Tags: donation, donations, nonprofit, nonprofits, fundraising, payment, payments, crowdfunding, campaign, stripe, campaigns, social causes, causes, credit card, credit cards
-Version: 6.1
+Version: 7.0
 License: GPLv2 or later.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -144,11 +144,11 @@ function generate_donorbox_iframe_src($info_details, $override_url) {
     // if parameter is there to add info, then append the attribute to iframe src
     if ($info_details === 'with-info') {
         $campaign_id = $campaign_id.'?show_content=true';
-        $style = 'style="max-width:500px; min-width:310px;"';
+        $style = 'style="max-width:100%; min-width:100%;"';
     }
 
     // generate the iframe code
-    $donorbox_iframe_embed_code = '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="'.$donorbox_domain.'/embed/'.$campaign_id.'" width="100%" '.$style.' seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no"></iframe>';
+    $donorbox_iframe_embed_code = '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="'.$donorbox_domain.'/embed/'.$campaign_id.'" width="100%" '.$style.' seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>';
     // return the embed code to calling event i.e. shortcode replacement
     return $donorbox_iframe_embed_code;
 }

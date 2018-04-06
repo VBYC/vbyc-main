@@ -6,7 +6,7 @@ require_once (DUPLICATOR_PLUGIN_PATH.'classes/package/class.pack.archive.zip.php
 require_once (DUPLICATOR_PLUGIN_PATH.'lib/forceutf8/Encoding.php');
 
 /**
- * Class for handleing archive setup and build process
+ * Class for handling archive setup and build process
  *
  * Standard: PSR-2 (almost)
  * @link http://www.php-fig.org/psr/psr-2
@@ -32,10 +32,12 @@ class DUP_Archive
     public $File;
     public $Format;
     public $PackDir;
-    public $Size          = 0;
-    public $Dirs          = array();
-    public $Files         = array();
+    public $Size        = 0;
+    public $Dirs        = array();
+    public $Files       = array();
     public $FilterInfo;
+    public $RecursiveLinks  = array();
+
     //PROTECTED
     protected $Package;
 	private $tmpFilterDirsAll = array();
@@ -297,6 +299,7 @@ class DUP_Archive
     {
         $this->FilterInfo->Dirs->Warning    = array();
         $this->FilterInfo->Dirs->Unreadable = array();
+        $this->FilterInfo->Dirs->AddonSites = array();
 
 		$utf8_key_list = array();
 		$unset_key_list = array();
@@ -326,6 +329,22 @@ class DUP_Archive
 				$utf8_key_list[] = $key;
 				$this->FilterInfo->Dirs->Warning[] = DUP_Encoding::toUTF8($val);
 			}
+
+			//Check for other WordPress installs
+            if ($name === 'wp-admin') {
+                $parent_dir = realpath(dirname($this->Dirs[$key]));
+                if ($parent_dir != realpath(DUPLICATOR_WPROOTPATH)) {
+                    if (file_exists("$parent_dir/wp-includes")) {
+                        if (file_exists("$parent_dir/wp-config.php")) {
+                            // Ensure we aren't adding any critical directories
+                            $parent_name = basename($parent_dir);
+                            if (($parent_name != 'wp-includes') && ($parent_name != 'wp-content') && ($parent_name != 'wp-admin')) {
+                                $this->FilterInfo->Dirs->AddonSites[] =  str_replace("\\", '/',$parent_dir);
+                            }
+                        }
+                    }
+                }
+            }
 
         }
 
@@ -425,7 +444,7 @@ class DUP_Archive
      *  - error 'too many files open' for recursion
      *  - $file->getExtension() is not reliable as it silently fails at least in php 5.2.17
      *  - issues with when a file has a permission such as 705 and trying to get info (had to fallback to pathinfo)
-     *  - basic conclusion wait on the SPL libs untill after php 5.4 is a requiremnt
+     *  - basic conclusion wait on the SPL libs until after php 5.4 is a requirments
      *  - tight recursive loop use caution for speed
      *
      * @return array	Returns an array of directories to include in the archive
@@ -447,22 +466,34 @@ class DUP_Archive
 				// if (is_dir($fullPath) && (is_link($fullPath) == false))
 				if (is_dir($fullPath)) {
 
-					$add = true;
-					//Directory filters
-					foreach ($this->tmpFilterDirsAll as $key => $val) {
-		
-						$trimmedFilterDir = rtrim($val, '/');
-						if ($fullPath == $trimmedFilterDir || strpos($fullPath, $trimmedFilterDir . '/') !== false) {
-							$add = false;
-							unset($this->tmpFilterDirsAll[$key]);
-							break;
-						}
-					}
+                    $add = true;
+                    if(!is_link($fullPath)){
+                        foreach ($this->tmpFilterDirsAll as $key => $val) {
+                            $trimmedFilterDir = rtrim($val, '/');
+                            if ($fullPath == $trimmedFilterDir || strpos($fullPath, $trimmedFilterDir . '/') !== false) {
+                                $add = false;
+                                unset($this->tmpFilterDirsAll[$key]);
+                                break;
+                            }
+                        }
+                    }else{
+                        //Convert relative path of link to absolute path
+                        chdir($fullPath);
+                        $link_path = realpath(readlink($fullPath));
+                        chdir(dirname(__FILE__));
 
-					if ($add) {
-						$this->getFileLists($fullPath);
-						$this->Dirs[] = $fullPath;
-					}
+                        $link_pos = strpos($fullPath,$link_path);
+                        if($link_pos === 0 && (strlen($link_path) <  strlen($fullPath))){
+                            $add = false;
+                            $this->RecursiveLinks[] = $fullPath;
+                            $this->FilterDirsAll[] = $fullPath;
+                        }
+                    }
+
+                    if ($add) {
+                        $this->getFileLists($fullPath);
+                        $this->Dirs[] = $fullPath;
+                    }
 				} else {
 					if ( ! (in_array(pathinfo($file, PATHINFO_EXTENSION), $this->FilterExtsAll)
 						|| in_array($fullPath, $this->FilterFilesAll))) {
