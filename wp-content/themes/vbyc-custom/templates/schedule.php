@@ -4,6 +4,9 @@ Template Name: Schedule
 
 <?php 
 
+    // TODO: Replace this static URL when I figure out how to make it poiunt at the Campminder stuff under Contact Info
+    $url_register = "https://vanburen.campintouch.com/ui/forms/application/camper/App";
+
     $sort_by = "date";
     $sort_by = "grade";
 
