@@ -33,8 +33,12 @@
     @include translate(0, -25%);
     @include transition-transform(0.3s ease-out);
   }
-  &.in .modal-dialog { @include translate(0, 0) }
+
+  &.in .modal-dialog {
+    @include translate(0, 0);
+  }
 }
+
 .modal-open .modal {
   overflow-x: hidden;
   overflow-y: auto;
@@ -51,11 +55,16 @@
 .modal-content {
   position: relative;
   background-color: $modal-content-bg;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  border: 1px solid $modal-content-fallback-border-color;
+
+  //old browsers fallback (ie8 etc)
   border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
-  @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+
+  @include box-shadow(0 3px 9px rgba(0, 0, 0, 0.5));
+
   background-clip: padding-box;
+
   // Remove focus outline from opened modal
   outline: 0;
 }
@@ -69,9 +78,15 @@
   left: 0;
   z-index: $zindex-modal-background;
   background-color: $modal-backdrop-bg;
+
   // Fade for backdrop
-  &.fade { @include opacity(0); }
-  &.in { @include opacity($modal-backdrop-opacity); }
+  &.fade {
+    @include opacity(0);
+  }
+
+  &.in {
+    @include opacity($modal-backdrop-opacity);
+  }
 }
 
 // Modal header
@@ -79,8 +94,10 @@
 .modal-header {
   padding: $modal-title-padding;
   border-bottom: 1px solid $modal-header-border-color;
+
   @include clearfix;
 }
+
 // Close icon
 .modal-header .close {
   margin-top: -2px;
@@ -102,19 +119,31 @@
 // Footer (for actions)
 .modal-footer {
   padding: $modal-inner-padding;
-  text-align: right; // right align buttons
+  text-align: right;
+
+  // right align buttons
   border-top: 1px solid $modal-footer-border-color;
-  @include clearfix; // clear it in case folks use .pull-* classes on buttons
+
+  // clear it in case folks use .pull-* classes on buttons
+  @include clearfix;
+
+  max-height: 21vh;
+  scroll-y: auto;
 
   // Properly space out buttons
   .btn + .btn {
     margin-left: 5px;
-    margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+    margin-bottom: 0;
+
+    // account for input[type="submit"] which gets the bottom margin like all other inputs
+ 
   }
+
   // but override that for button groups
   .btn-group .btn + .btn {
     margin-left: -1px;
   }
+
   // and override it for block buttons as well
   .btn-block + .btn-block {
     margin-left: 0;
@@ -137,14 +166,19 @@
     width: $modal-md;
     margin: 30px auto;
   }
+
   .modal-content {
-    @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+    @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
   }
 
   // Modal sizes
-  .modal-sm { width: $modal-sm; }
+  .modal-sm {
+    width: $modal-sm;
+  }
 }
 
 @media (min-width: $screen-md-min) {
-  .modal-lg { width: $modal-lg; }
+  .modal-lg {
+    width: $modal-lg;
+  }
 }
