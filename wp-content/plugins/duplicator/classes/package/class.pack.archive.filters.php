@@ -1,16 +1,22 @@
 <?php
+defined('ABSPATH') || defined('DUPXABSPATH') || exit;
 /**
  * The base class for all filter types Directories/Files/Extentions
  *
  * @package Duplicator
  * @subpackage classes/package
- * @since 1.1.0
  *
  */
+
+// Exit if accessed directly
+if (! defined('DUPLICATOR_VERSION')) exit;
+
 class DUP_Archive_Filter_Scope_Base
 {
     //All internal storage items that duplicator decides to filter
     public $Core     = array();
+    //Global filter items added from settings
+    public $Global = array();
     //Items when creating a package or template that a user decides to filter
     public $Instance = array();
 }
@@ -20,7 +26,6 @@ class DUP_Archive_Filter_Scope_Base
  *
  * @package Duplicator
  * @subpackage classes/package
- * @since 1.1.0
  *
  */
 class DUP_Archive_Filter_Scope_Directory extends DUP_Archive_Filter_Scope_Base
@@ -36,7 +41,6 @@ class DUP_Archive_Filter_Scope_Directory extends DUP_Archive_Filter_Scope_Base
  *
  * @package Duplicator
  * @subpackage classes/package
- * @since 1.1.0
  *
  */
 class DUP_Archive_Filter_Scope_File extends DUP_Archive_Filter_Scope_Directory
@@ -52,7 +56,6 @@ class DUP_Archive_Filter_Scope_File extends DUP_Archive_Filter_Scope_Directory
  *
  * @package Duplicator
  * @subpackage classes/package
- * @since 1.1.0
  *
  */
 class DUP_Archive_Filter_Info

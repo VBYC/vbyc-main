@@ -6,7 +6,7 @@ Description: This plugin will embed Donorbox Donation Form to your site using sh
 Author: rebelidealist
 Author URI: https://donorbox.org
 Tags: donation, donations, nonprofit, nonprofits, fundraising, payment, payments, crowdfunding, campaign, stripe, campaigns, social causes, causes, credit card, credit cards
-Version: 7.0
+Version: 7.1.1
 License: GPLv2 or later.
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -141,11 +141,16 @@ function generate_donorbox_iframe_src($info_details, $override_url) {
         $campaign_id = prev($path); // traceback to previous url segments
     }
 
-    // if parameter is there to add info, then append the attribute to iframe src
-    if ($info_details === 'with-info') {
-        $campaign_id = $campaign_id.'?show_content=true';
-        $style = 'style="max-width:100%; min-width:100%;"';
+    // append query parameters if present or if info details is required
+    $pars = Array();
+    if($info_details === 'with-info') {
+      $pars[] = 'show_content=true';
+      $style = 'style="max-width:100%; min-width:100%;"';
     }
+    if(isset($campaign_keys['query']) && $campaign_keys['query'])
+      $pars[] = $campaign_keys['query'];
+    if(!empty($pars))
+      $campaign_id .= '?' . implode('&', $pars);
 
     // generate the iframe code
     $donorbox_iframe_embed_code = '<script src="https://donorbox.org/widget.js" type="text/javascript"></script><iframe src="'.$donorbox_domain.'/embed/'.$campaign_id.'" width="100%" '.$style.' seamless="seamless" id="dbox-form-embed" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>';
