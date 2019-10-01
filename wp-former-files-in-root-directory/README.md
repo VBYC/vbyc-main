@@ -1,1 +1,0 @@
-# vbyc.org
