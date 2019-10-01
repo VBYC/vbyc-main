@@ -1,0 +1,65 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: January 15, 2018 1:53 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.30
+WORDPRESS:	4.8.1
+PHP INFO:	5.6.31 | SAPI: cgi-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (256M default) 
+MEMORY STACK: 32MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+TABLES: total:14 | filtered:0 | create:14 
+FILTERED: [] 
+SQL CREATED: 20170525_vanburenyouthcamp_65d7398199f857105634180115015020_database.sql 
+SQL FILE SIZE: 5.18MB (5434826) 
+SQL FILE TIME: 2018-01-15 01:53:25 
+SQL RUNTIME: 2.89 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /home/vbyc_production/vbyc-main 
+ARCHIVE FILE: 20170525_vanburenyouthcamp_65d7398199f857105634180115015020_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	941.67MB 
+STATS:	Dirs 955 | Files 9,155 
+SQL ADDED: 20170525_vanburenyouthcamp_65d7398199f857105634180115015020_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10110
+    [filename] => /home/vbyc_production/vbyc-main/wp-snapshots/tmp/20170525_vanburenyouthcamp_65d7398199f857105634180115015020_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 867.93MB 
+ARCHIVE RUNTIME: 132.88 sec. 
+MEMORY STACK: 35.5MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/home/vbyc_production/vbyc-main/wp-snapshots/tmp/20170525_vanburenyouthcamp_65d7398199f857105634180115015020_installer.php] 
+Added to archive 

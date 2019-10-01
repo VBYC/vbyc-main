@@ -1,0 +1,88 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: January 15, 2018 2:08 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.30
+WORDPRESS:	4.8.1
+PHP INFO:	5.6.31 | SAPI: cgi-fcgi
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (256M default) 
+MEMORY STACK: 31.5MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP(query limit - 100)
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+TABLES: total:14 | filtered:0 | create:14 
+FILTERED: [] 
+SQL CREATED: 20170525_vanburenyouthcamp_b45d77a63ba2a5217490180115020641_database.sql 
+SQL FILE SIZE: 5.19MB (5439330) 
+SQL FILE TIME: 2018-01-15 02:08:13 
+SQL RUNTIME: 3.06 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /home/vbyc_production/vbyc-main 
+ARCHIVE FILE: 20170525_vanburenyouthcamp_b45d77a63ba2a5217490180115020641_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	941.67MB 
+STATS:	Dirs 955 | Files 9,155 
+SQL ADDED: 20170525_vanburenyouthcamp_b45d77a63ba2a5217490180115020641_database.sql 
+Items archived [1955] flushing response. 
+Items archived [2956] flushing response. 
+Items archived [3957] flushing response. 
+Items archived [4958] flushing response. 
+Items archived [5959] flushing response. 
+Items archived [6960] flushing response. 
+Items archived [7961] flushing response. 
+Items archived [8962] flushing response. 
+Items archived [9963] flushing response. 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10110
+    [filename] => /home/vbyc_production/vbyc-main/wp-snapshots/tmp/20170525_vanburenyouthcamp_b45d77a63ba2a5217490180115020641_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 867.93MB 
+ARCHIVE RUNTIME: 111.68 sec. 
+MEMORY STACK: 35.25MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/home/vbyc_production/vbyc-main/wp-snapshots/tmp/20170525_vanburenyouthcamp_b45d77a63ba2a5217490180115020641_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 5.19MB 
+Installer File: 443.35KB 
+Archive File: 867.93MB  
+
+********************************************************************************
+RECORD ID:[4]
+TOTAL PROCESS RUNTIME: 117.24 sec.
+PEAK PHP MEMORY USED: 37.25MB
+DONE PROCESSING => 20170525_vanburenyouthcamp January 15, 2018 2:10 am
+ 
